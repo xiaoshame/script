@@ -41,7 +41,7 @@ class BaseInfo:
 
 CACHE = {}
 
-CACHE_STORE = r"D:/workspace/blog/script/push_to_gzh/article/cache.bin"
+CACHE_STORE = r"D:/workspace/script/push_to_gzh/article/cache.bin"
 
 def dump_cache():
     fp = open(CACHE_STORE, "wb")

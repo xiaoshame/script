@@ -241,6 +241,8 @@ def fix_image(content):
 def format_fix(content):
     content = content.replace("\n", "")
     content = re.sub(r'>\s+</strong>\s+<','></strong><', content)
+    content = re.sub(r'>\s+<strong>','><strong>', content)
+    content = re.sub(r'</strong>\s+<','</strong><', content)
     content = re.sub(r'>\s+<section','><section', content)
     
     content = content.replace("<code>", gen_css("code"))   ## 保障代码过长的代码换行

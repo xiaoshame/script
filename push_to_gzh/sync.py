@@ -293,7 +293,7 @@ def replace_links(content):
         print(orig)
         content = content.replace(orig, r[2])
     ### 添加参考资料
-    content = content + "\n" + gen_css("ref_header","参考资料")
+    content = content + "\n" + gen_css("ref_header1","参考资料")
     ### 引用链接垂直排列
     content += '''<span id="fn1" class="footnote-item" style="display: flex; flex-direction :column">'''
     index = 1

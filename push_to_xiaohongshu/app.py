@@ -1,9 +1,9 @@
-from selenium import webdriver
-import time
 import os.path
-import multiprocessing as mp
-from selenium.webdriver.common.by import By
+
 from PIL import Image
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
 
 def webshot(html_path,out_path): 
     options = webdriver.ChromeOptions()
@@ -11,8 +11,6 @@ def webshot(html_path,out_path):
     options.add_argument('--disable-gpu')
     driver = webdriver.Chrome(options=options)
     driver.maximize_window()
-    # 返回网页的高度的js代码
-    js_height = "return document.body.clientHeight"
 
     try:
         driver.get(html_path)
@@ -43,6 +41,8 @@ def webshot(html_path,out_path):
         cropped_image.save(out_path + "%d.png" % index)
         # height = 0
         # index = 0
+        # 返回网页的高度的js代码
+        # js_height = "return document.body.clientHeight"
         # current_height = driver.execute_script("return document.body.clientHeight")
         # total_height = driver.execute_script("return document.documentElement.scrollHeight")
         # while height < total_height:

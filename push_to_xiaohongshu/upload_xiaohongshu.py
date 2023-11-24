@@ -112,7 +112,7 @@ def publish_xiaohongshu_video(driver, mp4, index):
     input_data = driver.find_element("xpath", '//*[@placeholder="请选择日期"]')
     input_data.send_keys(Keys.CONTROL,'a')     #全选
     # input_data.send_keys(Keys.DELETE)
-    input_data.send_keys(get_publish_date(content,index))    
+    input_data.send_keys(get_publish_date())    
     time.sleep(3)
     # driver.find_element("xpath", '//*[text()="确定"]').click()
 

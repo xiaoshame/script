@@ -4,7 +4,6 @@ from PIL import Image
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from upload_xiaohongshu import get_driver,xiaohongshu_login,publish_xiaohongshu_image
-import time
 
 def html_to_png(html_path,out_path): 
     # options = webdriver.ChromeOptions()
@@ -52,16 +51,16 @@ def html_to_png(html_path,out_path):
 if __name__ == '__main__':
     _HTML = 'D:\\workspace\\script\\push_to_gzh\\article\\out\\index_cp_article_wx.html'
     _OUTFILE = 'D:\\workspace\\script\\push_to_xiaohongshu\\out\\'
-    title = ''   ## 小红书标题
-    describe = ''  ## 描述
-    keywords = ['#python','#礼物']  ## 标签
+    title = 'tips：关闭自动扣费服务'   ## 小红书标题
+    describe = "一般情况下，大部分APP自动续费扣费时间节点设置在到期前1天，消费者只要在到期前1天手动操作取消。但是也有少量APP的扣费时间节点较为模糊，更有个别APP竟然提前3天就扣费了。\n如果你不记得之前办理了哪些“自动续费”服务，那就不妨进入微信和支付宝的支付设置，在里面找到“扣费”的选项，就能看到通过微信和支付宝进行自动续费的服务，点击它们就能取消自动续费合约\n”微信：打开微信，点击【我的】—【服务】-【钱包】-【支付设置】-【自动续费】，检查和选择要关闭的扣款项目。\n支付宝：打开支付宝，点击【我的】—【设置】—【支付设置】—【自动扣款】，检查和选择要关闭的扣款项目。\n"  ## 描述
+    keywords = ['#小技巧','#tips','#自动扣费','#支付宝','#微信']  ## 标签
 
     # 首先创建一个保存截图的文件夹
     if not os.path.isdir(_OUTFILE):
         # 判断文件夹是否存在，如果不存在就创建一个
         os.makedirs(_OUTFILE)
     # 将html转换成png
-    html_to_png("file:///"+_HTML,_OUTFILE)
+    # html_to_png("file:///"+_HTML,_OUTFILE)
     try:
         driver = get_driver()
         xiaohongshu_login(driver=driver)

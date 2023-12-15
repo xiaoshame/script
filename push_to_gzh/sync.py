@@ -127,8 +127,8 @@ def get_images_from_markdown(content):
     images = []
     for line in lines:
         line = line.strip()
-        if 'featuredImage:' in line:
-            image = line.split('featuredImage:')[1].strip()
+        if 'featuredImage :' in line:
+            image = line.split('featuredImage :')[1].strip()
             images.append(image)  
         if  '![' in line and line.endswith(')'):
             image = line.split('(')[1].split(')')[0].strip()

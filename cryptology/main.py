@@ -1,26 +1,34 @@
 import wx
+import time
+from datetime import datetime,timezone,timedelta
 from base64 import b64decode,b64encode
 from hashlib import md5
 from Crypto.Cipher import AES
 from Crypto.Cipher import DES
 from Crypto.Util.Padding import pad, unpad
 
+
 class EncryptionFrame(wx.Frame):
     def __init__(self):
-        super().__init__(None, title="加解密", size=(820, 500))
-        self.app_icon = wx.Icon('favicon.ico', wx.BITMAP_TYPE_ICO)
-        self.SetIcon(self.app_icon)
+        super().__init__(None, title="常用工具", size=(820, 500))
+        # self.app_icon = wx.Icon('favicon.ico', wx.BITMAP_TYPE_ICO)
+        # self.SetIcon(self.app_icon)
 
         self.panel = wx.Panel(self)
-        
+
+        self.notebook = wx.Notebook(self.panel)
+
+        self.algorithm_table = wx.Panel(self.notebook)
+        self.time_table = wx.Panel(self.notebook)
+        ### 加解密页面
         # 算法选择相关组件
         self.algorithm_sizer = wx.BoxSizer(wx.HORIZONTAL)
-        self.algorithm_label = wx.StaticText(self.panel, label="选择算法:")
-        self.algorithm_combo = wx.ComboBox(self.panel, choices=["Base64", "MD5", "AES", "DES"], style=wx.CB_READONLY)
+        self.algorithm_label = wx.StaticText(self.algorithm_table, label="选择算法:")
+        self.algorithm_combo = wx.ComboBox(self.algorithm_table, choices=["Base64", "MD5", "AES", "DES"], style=wx.CB_READONLY)
         self.algorithm_combo.SetSelection(0) 
 
-        self.encrypt_button = wx.Button(self.panel, label="加密")
-        self.decrypt_button = wx.Button(self.panel, label="解密")
+        self.encrypt_button = wx.Button(self.algorithm_table, label="加密")
+        self.decrypt_button = wx.Button(self.algorithm_table, label="解密")
         self.algorithm_sizer.Add(self.algorithm_label, 0, wx.ALIGN_CENTER_VERTICAL|wx.RIGHT, 5)
         self.algorithm_sizer.Add(self.algorithm_combo, 0,wx.ALIGN_CENTER_VERTICAL|wx.RIGHT, 10)
         self.algorithm_sizer.Add(self.encrypt_button, 0, wx.ALIGN_CENTER_VERTICAL|wx.RIGHT, 10)
@@ -29,14 +37,14 @@ class EncryptionFrame(wx.Frame):
         # 输入输出文本相关组件
         self.text_sizer  = wx.BoxSizer(wx.HORIZONTAL)
         self.input_sizer = wx.BoxSizer(wx.VERTICAL)
-        self.input_label = wx.StaticText(self.panel, label="输入:")
-        self.input_text = wx.TextCtrl(self.panel,style = wx.TE_MULTILINE)
+        self.input_label = wx.StaticText(self.algorithm_table, label="输入:")
+        self.input_text = wx.TextCtrl(self.algorithm_table,style = wx.TE_MULTILINE)
         self.input_sizer.Add(self.input_label, 0, wx.ALL, 5)
         self.input_sizer.Add(self.input_text, 1,wx.EXPAND|wx.ALL)
 
         self.output_sizer = wx.BoxSizer(wx.VERTICAL)
-        self.output_label = wx.StaticText(self.panel, label="输出:")
-        self.output_text = wx.TextCtrl(self.panel, style = wx.TE_READONLY | wx.TE_MULTILINE)
+        self.output_label = wx.StaticText(self.algorithm_table, label="输出:")
+        self.output_text = wx.TextCtrl(self.algorithm_table, style = wx.TE_READONLY | wx.TE_MULTILINE)
         self.output_sizer.Add(self.output_label, 0, wx.ALL, 5)
         self.output_sizer.Add(self.output_text, 1, wx.EXPAND|wx.ALL)
         self.text_sizer.Add(self.input_sizer,1, wx.EXPAND|wx.ALL, 10)
@@ -45,26 +53,26 @@ class EncryptionFrame(wx.Frame):
         # AES/DES加密参数相关组件
         self.mode_sizer = wx.BoxSizer(wx.HORIZONTAL)
 
-        self.mode_label = wx.StaticText(self.panel, label="加密模式:")
-        self.mode_combo = wx.ComboBox(self.panel, choices=["ECB", "CBC", "CFB", "OFB"], style=wx.CB_READONLY)
+        self.mode_label = wx.StaticText(self.algorithm_table, label="加密模式:")
+        self.mode_combo = wx.ComboBox(self.algorithm_table, choices=["ECB", "CBC", "CFB", "OFB"], style=wx.CB_READONLY)
         self.mode_combo.SetSelection(0) 
 
-        self.padding_label = wx.StaticText(self.panel, label="填充:")
-        self.padding_combo = wx.ComboBox(self.panel, choices=["pkcs7", "x923","iso7816"], style=wx.CB_READONLY)
+        self.padding_label = wx.StaticText(self.algorithm_table, label="填充:")
+        self.padding_combo = wx.ComboBox(self.algorithm_table, choices=["pkcs7", "x923","iso7816"], style=wx.CB_READONLY)
         self.padding_combo.SetSelection(0) 
 
-        self.key_len_label = wx.StaticText(self.panel, label="秘钥长度:")
-        self.key_len_combo = wx.ComboBox(self.panel, choices=["128", "192", "256"], style=wx.CB_READONLY)
+        self.key_len_label = wx.StaticText(self.algorithm_table, label="秘钥长度:")
+        self.key_len_combo = wx.ComboBox(self.algorithm_table, choices=["128", "192", "256"], style=wx.CB_READONLY)
         self.key_len_combo.SetSelection(0) 
 
-        self.key_label = wx.StaticText(self.panel, label="秘钥:")
-        self.key_text = wx.TextCtrl(self.panel)
+        self.key_label = wx.StaticText(self.algorithm_table, label="秘钥:")
+        self.key_text = wx.TextCtrl(self.algorithm_table)
 
-        self.iv_label = wx.StaticText(self.panel, label="偏移量:")
-        self.iv_text = wx.TextCtrl(self.panel)
+        self.iv_label = wx.StaticText(self.algorithm_table, label="偏移量:")
+        self.iv_text = wx.TextCtrl(self.algorithm_table)
 
-        self.out_mode_label = wx.StaticText(self.panel, label="输出格式:")
-        self.out_mode_combo = wx.ComboBox(self.panel, choices=["hex"], style=wx.CB_READONLY)
+        self.out_mode_label = wx.StaticText(self.algorithm_table, label="输出格式:")
+        self.out_mode_combo = wx.ComboBox(self.algorithm_table, choices=["hex"], style=wx.CB_READONLY)
         self.out_mode_combo.SetSelection(0)
 
         self.mode_sizer.Add(self.mode_label, 0, wx.ALIGN_CENTER_VERTICAL|wx.RIGHT, 5)
@@ -91,12 +99,56 @@ class EncryptionFrame(wx.Frame):
         self.sizer.Add(self.mode_sizer, 0, wx.EXPAND|wx.ALL, 5)
         self.sizer.Add(self.text_sizer, 1, wx.ALL|wx.EXPAND, 5)
 
-        self.panel.SetSizer(self.sizer)
+        self.algorithm_table.SetSizer(self.sizer)
+
+        ### 时间戳页面
+        self.timestamp_sizer = wx.BoxSizer(wx.HORIZONTAL)
+
+        self.timestamp_label = wx.StaticText(self.time_table, label="时间戳:")
+        self.timestamp_input_text = wx.TextCtrl(self.time_table)
+        self.timestamp_button = wx.Button(self.time_table, label="转换")
+        self.timestamp_output_text = wx.TextCtrl(self.time_table)
+
+        self.timestamp_sizer.Add(self.timestamp_label, 0, wx.ALIGN_CENTER_VERTICAL|wx.RIGHT, 5)
+        self.timestamp_sizer.Add(self.timestamp_input_text, 1,wx.EXPAND|wx.ALL, 5)
+        self.timestamp_sizer.Add(self.timestamp_button, 0, wx.ALIGN_CENTER_VERTICAL|wx.RIGHT, 5)
+        self.timestamp_sizer.Add(self.timestamp_output_text, 1, wx.EXPAND|wx.ALL, 5)
+
+        self.timing_sizer = wx.BoxSizer(wx.HORIZONTAL)
+
+        self.timing_label = wx.StaticText(self.time_table, label="时间:")
+        self.timing_input_text = wx.TextCtrl(self.time_table)
+        self.timing_button = wx.Button(self.time_table, label="转换")
+        self.timing_output_text = wx.TextCtrl(self.time_table)
+
+        self.timing_sizer.Add(self.timing_label, 0, wx.ALIGN_CENTER_VERTICAL|wx.RIGHT, 5)
+        self.timing_sizer.Add(self.timing_input_text, 1, wx.EXPAND|wx.ALL, 5)
+        self.timing_sizer.Add(self.timing_button, 0, wx.ALIGN_CENTER_VERTICAL|wx.RIGHT, 5)
+        self.timing_sizer.Add(self.timing_output_text, 1, wx.EXPAND|wx.ALL, 5)
+        # 获取当前时间
+        current_time = datetime.now()
+        # 将当前时间转换为您想要的时间模式，例如：
+        formatted_time = current_time.strftime('%Y-%m-%d %H:%M:%S')
+        self.timing_input_text.SetValue(formatted_time)
+
+        self.time_sizer = wx.BoxSizer(wx.VERTICAL)
+        self.time_sizer.Add(self.timestamp_sizer, 0, wx.EXPAND|wx.ALL, 5)
+        self.time_sizer.Add(self.timing_sizer, 0, wx.EXPAND|wx.ALL, 5)
+        self.time_table.SetSizer(self.time_sizer)
+
+        self.notebook.AddPage(self.algorithm_table, "加解密")
+        self.notebook.AddPage(self.time_table, "时间戳")
+
+        sizer = wx.BoxSizer(wx.VERTICAL)
+        sizer.Add(self.notebook, 1, wx.EXPAND)
+        self.panel.SetSizer(sizer)
 
         self.algorithm_combo.Bind(wx.EVT_COMBOBOX, self.on_algorithm_change)
         self.mode_combo.Bind(wx.EVT_COMBOBOX, self.on_mode_change)
         self.encrypt_button.Bind(wx.EVT_BUTTON, self.OnEncrypt)
         self.decrypt_button.Bind(wx.EVT_BUTTON, self.OnDecrypt)
+        self.timestamp_button.Bind(wx.EVT_BUTTON, self.OnTimestamp)
+        self.timing_button.Bind(wx.EVT_BUTTON, self.OnTiming)
 
         self.Show()
 
@@ -187,7 +239,7 @@ class EncryptionFrame(wx.Frame):
                 window = item.GetWindow()
                 if window:  # 如果item是一个窗口
                     window.Hide()
-        self.panel.Layout()
+        self.algorithm_table.Layout()
 
     def on_mode_change(self, event):
         mode = self.mode_combo.GetValue()
@@ -197,7 +249,17 @@ class EncryptionFrame(wx.Frame):
         else:
             self.iv_label.Show()
             self.iv_text.Show()
-        self.panel.Layout()
+        self.algorithm_table.Layout()
+
+    def OnTimestamp(self, event):
+        timestamp_input = self.timestamp_input_text.GetValue()
+        datatime_output = timestamp_to_datetime(timestamp_input)
+        self.timestamp_output_text.SetValue(datatime_output)
+
+    def OnTiming(self,event):
+        timing_input = self.timing_input_text.GetValue()
+        timing_output = datetime_to_timestamp(timing_input)
+        self.timing_output_text.SetValue(str(timing_output))
 
 def base64_encode(text):
     # 将字符串编码为字节流
@@ -355,6 +417,48 @@ def des_decrypt(key, iv,data,padding,encrypt_mode):
     unpadded_data = unpad(decrypted_data, DES.block_size, style=padding)
 
     return unpadded_data.decode('utf-8')
+
+def timestamp_to_datetime(timestamp):
+    if len(timestamp) == 10:
+        return time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(int(timestamp)))
+    elif len(timestamp) == 13:
+        # 将毫秒时间戳转换为秒
+        seconds = int(timestamp) / 1000.0
+        # 提取毫秒部分（取整数部分将使末尾的零被忽略）
+        milliseconds = int(int(timestamp) % 1000)
+        # 创建UTC+8时区
+        beijing_timezone = timezone(timedelta(hours=8))
+        # 将时间戳转换为日期时间对象（以UTC+8时区显示）
+        date_time_obj = datetime.fromtimestamp(seconds, beijing_timezone)
+        # 格式化时间
+        return date_time_obj.strftime('%Y-%m-%d %H:%M:%S') + f'.{milliseconds}'
+    else:
+        return "时间戳长度不对"
+
+# 日期时间转换为时间戳（支持秒和毫秒）
+def datetime_to_timestamp(dt):
+
+    # 日期时间字符串
+    try:
+        if '.' in dt:
+            date_time_obj = datetime.strptime(dt, '%Y-%m-%d %H:%M:%S.%f')
+        else:
+            date_time_obj = datetime.strptime(dt, '%Y-%m-%d %H:%M:%S')
+    except Exception as e:
+        return e
+
+    # 假设你的日期时间是UTC，如果不是你需要相对于UTC调整它
+    # 如果是其他时区，你需要根据相应的时区进行转换
+    # 创建北京时间时区（UTC+8）
+    beijing_timezone = timezone(timedelta(hours=8))
+    date_time_obj = date_time_obj.replace(tzinfo=beijing_timezone)
+
+    # 转换为时间戳（从epoch开始计算的秒数）
+    if '.' in dt:
+        return int(round(date_time_obj.timestamp() * 1000))
+    else:
+        return int(date_time_obj.timestamp())
+
 
 if __name__ == "__main__":
     app = wx.App()

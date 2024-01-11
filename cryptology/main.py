@@ -1,5 +1,4 @@
 import wx
-import time
 from datetime import datetime,timezone,timedelta
 from base64 import b64decode,b64encode
 from hashlib import md5
@@ -420,7 +419,10 @@ def des_decrypt(key, iv,data,padding,encrypt_mode):
 
 def timestamp_to_datetime(timestamp):
     if len(timestamp) == 10:
-        return time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(int(timestamp)))
+        beijing_timezone = timezone(timedelta(hours=8))
+        # 将时间戳转换为日期时间对象（以UTC+8时区显示）
+        date_time_obj = datetime.fromtimestamp(int(timestamp), beijing_timezone)
+        return date_time_obj.strftime('%Y-%m-%d %H:%M:%S')
     elif len(timestamp) == 13:
         # 将毫秒时间戳转换为秒
         seconds = int(timestamp) / 1000.0

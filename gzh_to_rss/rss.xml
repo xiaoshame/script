@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:ns0="http://www.w3.org/2005/Atom" xmlns:ns1="http://purl.org/rss/1.0/modules/content/"
+    version="2.0">
+    <channel>
+        <title>公众号综合</title>
+        <link>https://xiaoqian713.live/</link>
+        <description>目前共380个，公开331个公众号</description>
+        <generator>Hugo 0.121.0 https://gohugo.io/</generator>
+        <language>zh-CN</language>
+        <managingEditor>xiaoshame1209@gmail.com (阿松)</managingEditor>
+        <webMaster>xiaoshame1209@gmail.com (阿松)</webMaster>
+        <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+        <lastBuildDate>Mon, 15 Jan 2024 10:00:43 +0000</lastBuildDate>
+        <ns0:link rel="self" type="application/rss+xml" href="https://xiaoqian713.live/get/extract/603/OEBPS/rss.xml" />
+    </channel>
+</rss>

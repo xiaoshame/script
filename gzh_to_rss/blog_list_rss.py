@@ -26,7 +26,15 @@ def get_list_name_url(html):
 def get_recent_article(url,channel,start_time,end_time):
     ## 获取对应XML信息
     try:
-        xml = requests.get(url=url, headers='').text
+        response = requests.get(url=url, headers={})
+        content_type = response.headers.get('Content-Type')
+
+        # 检查是否有charset=utf-8
+        if 'charset=utf-8' in content_type:
+            xml = response.text
+        else:
+        # 如果不是UTF-8，可以尝试手动转换编码
+            xml = response.content.decode('utf-8', errors='ignore')
     except requests.exceptions.SSLError as err:
         print('SSL Error. Adding custom certs to Certifi store...')
     # 加载XML文件,获取根元素
@@ -64,9 +72,12 @@ def get_blog_list(url,start_time,end_time):
     ## 获取不同博客名和对应RSS订阅地址
     name_list,url_list = get_list_name_url(html)
     # 创建或加载新的RSS文件树和根元素
-    rss = ET.parse('rss.xml')
+    rss = ET.parse(r'D:\workspace\script\gzh_to_rss\rss.xml')
     root = rss.getroot()
     channel = root.find('channel')
+    last_build_date = channel.find('lastBuildDate')
+    if last_build_date is not None:
+        last_build_date.text = end_time.strftime('%a, %d %b %Y %H:%M:%S %z')
     # channel = ET.SubElement(rss, 'channel')
     # 提交任务给线程池，并获取Future对象
     futures = []

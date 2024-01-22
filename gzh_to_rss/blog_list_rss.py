@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 import threading
 import requests
+import minio
 from bs4 import BeautifulSoup
 
 # 定义一个锁
@@ -58,8 +59,13 @@ def get_recent_article(url,channel,start_time,end_time):
                         pubDate = datetime.strptime(node.text, "%a, %d %b %Y %H:%M:%S %z").replace(tzinfo=None)
                     ## 将内容写入文件中
                     if pubDate > start_time and pubDate < end_time:
-                        channel.append(item)
-        return url + " successe"
+                        first_item = channel.find('item')
+                        if first_item is not None:
+                            channel.insert(list(channel).index(first_item), item)
+                        else:
+                        # 如果没有其他item元素，直接追加到channel元素
+                            channel.append(item)
+            return url + " successe"
     except ET.ParseError:
         return url + " fail"
 
@@ -76,8 +82,11 @@ def get_blog_list(url,start_time,end_time):
     root = rss.getroot()
     channel = root.find('channel')
     last_build_date = channel.find('lastBuildDate')
+    pubDate = channel.find('pubDate')
     if last_build_date is not None:
         last_build_date.text = end_time.strftime('%a, %d %b %Y %H:%M:%S %z')
+    if pubDate is not None:
+        pubDate.text = end_time.strftime('%a, %d %b %Y %H:%M:%S %z')
     # channel = ET.SubElement(rss, 'channel')
     # 提交任务给线程池，并获取Future对象
     futures = []
@@ -97,14 +106,24 @@ def get_blog_list(url,start_time,end_time):
     executor.shutdown()
     #将最终结果写入文件
     with lock:
-        rss.write('rss.xml', encoding='UTF-8', xml_declaration=True)
+        rss.write(r'D:\workspace\script\gzh_to_rss\rss.xml', encoding='UTF-8', xml_declaration=True)
+    print("write rss done")
+
+def up_data_minio(bucket: str):
+    minio_conf = {
+        'endpoint': '127.0.0.1:9000',
+        'access_key': 'xxxx',
+        'secret_key': 'xxxx',
+        'secure': False
+    }
+    client = minio.Minio(**minio_conf)
+    client.fput_object(bucket_name=bucket, object_name='rss.xml',file_path='rss.xml',content_type='text/xml')
+    print("syn rss.xml done")
 
 if __name__ == "__main__":
-    ## 查询前几天，不包含当天
-    days = 1
-    current_datetime= datetime.now()
-    # 设置时、分、秒为0，仅保留年、月、日
-    end_time = current_datetime.replace(hour=0, minute=0, second=0, microsecond=0)
-    start_time = end_time - timedelta(days=days)
+    end_time = datetime.now()
+    ## 定时查询
+    start_time = end_time - timedelta(hours=4)
     ## 获取最近一周内发表的文章
     get_blog_list("https://wechat2rss.xlab.app/posts/list/",start_time,end_time)
+    up_data_minio('rss')

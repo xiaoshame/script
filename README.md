@@ -35,6 +35,10 @@
 ### copyBook
 
 - [使用文档](./copyBook/README.md)
+- 丰富了爬虫脚本，支持24hbook.com,beitai.cc,shuqi.com
+    1. 24hbook.com格式为epub
+    2. beitai.cc下载格式为rar
+    3. shuqi.com勉强可用
 
 ### cryptology
 

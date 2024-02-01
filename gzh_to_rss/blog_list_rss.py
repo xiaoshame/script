@@ -121,8 +121,8 @@ def up_data_minio(bucket: str):
     print("syn rss.xml done")
 
 if __name__ == "__main__":
-    end_time = datetime.now()
     ## 定时查询
+    end_time = datetime.now()
     start_time = end_time - timedelta(hours=4)
     ## 获取最近一周内发表的文章
     get_blog_list("https://wechat2rss.xlab.app/posts/list/",start_time,end_time)

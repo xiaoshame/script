@@ -27,7 +27,7 @@ class BaseInfo:
         self.link = link.split('/')[-1]
         ### 摘要
         self.digest = self.fetch_attr(content, 'summary').strip().strip('"').strip('\'')
-        self.CONTENT_SOURCE_URL = 'https://xiaoshame.github.io/{}'.format(self.link)
+        self.CONTENT_SOURCE_URL = 'https://xiaoshame.github.io/posts/{}'.format(self.link)
      
     def fetch_attr(self,content, key):
         """

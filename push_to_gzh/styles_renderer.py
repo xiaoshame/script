@@ -208,10 +208,11 @@ class StyleRenderer(mistune.Renderer):
             return replace_return(html)
 
     # 表格
-    def table(self, text):
+    def table(self, header, text):
         if self.table_template is not None:
+            table_selector_ths = etree.HTML(header)
             table_selector = etree.HTML(text)
-            ths = table_selector.xpath('//tr/th')
+            ths = table_selector_ths.xpath('//tr/th')
             tds = table_selector.xpath('//tr/td')
             th_cell_list = []
             for index, value in enumerate(ths):

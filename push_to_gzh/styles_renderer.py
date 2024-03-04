@@ -126,7 +126,7 @@ class StyleRenderer(mistune.Renderer):
 
     # 图片
     def image(self, text, url, title=None):
-        src = self.safe_url(url)
+        src = self._safe_url(text)
         alt = escape(striptags(text))
         if self.image_template is not None:
             return self.image_template.render(src=src)

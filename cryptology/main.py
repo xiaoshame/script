@@ -1,11 +1,7 @@
 import wx
-from datetime import datetime,timezone,timedelta
-from base64 import b64decode,b64encode
-from hashlib import md5
-from Crypto.Cipher import AES
-from Crypto.Cipher import DES
-from Crypto.Util.Padding import pad, unpad
-
+from datetime import datetime
+from mytime import timestamp_to_datetime,datetime_to_timestamp
+from mycrypt import des_decrypt,aes_decrypt,md5_decode,base64_decode,des_encrypt,aes_encrypt,md5_encode,base64_encode
 
 class EncryptionFrame(wx.Frame):
     def __init__(self):
@@ -19,6 +15,8 @@ class EncryptionFrame(wx.Frame):
 
         self.algorithm_table = wx.Panel(self.notebook)
         self.time_table = wx.Panel(self.notebook)
+        self.format_table = wx.Panel(self.notebook)
+
         ### 加解密页面
         # 算法选择相关组件
         self.algorithm_sizer = wx.BoxSizer(wx.HORIZONTAL)
@@ -135,8 +133,12 @@ class EncryptionFrame(wx.Frame):
         self.time_sizer.Add(self.timing_sizer, 0, wx.EXPAND|wx.ALL, 5)
         self.time_table.SetSizer(self.time_sizer)
 
+        ### 格式化页面
+
+
         self.notebook.AddPage(self.algorithm_table, "加解密")
         self.notebook.AddPage(self.time_table, "时间戳")
+        self.notebook.AddPage(self.format_table,"格式化")
 
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(self.notebook, 1, wx.EXPAND)
@@ -259,208 +261,6 @@ class EncryptionFrame(wx.Frame):
         timing_input = self.timing_input_text.GetValue()
         timing_output = datetime_to_timestamp(timing_input)
         self.timing_output_text.SetValue(str(timing_output))
-
-def base64_encode(text):
-    # 将字符串编码为字节流
-    byte_data = text.encode('utf-8')
-    # 使用Base64进行编码
-    encoded_data = b64encode(byte_data)
-    # 将字节流转换为字符串
-    encoded_text = encoded_data.decode('utf-8')
-    return encoded_text
-
-def base64_decode(encoded_text):
-    # 将字符串转换为字节流
-    byte_data = encoded_text.encode('utf-8')
-    # 使用Base64进行解码
-    decoded_data = b64decode(byte_data)
-    # 将字节流转换为字符串
-    decoded_text = decoded_data.decode('utf-8')
-    return decoded_text
-
-def md5_encode(text):
-    """
-    MD5 加密
-    :param text: 待加密文本
-    :return: 加密后的文本
-    """
-    m = md5()
-    m.update(text.encode('utf-8'))
-    return m.hexdigest()
-
-def md5_decode(text):
-    """
-    MD5 解密
-    :param text: 待解密文本
-    :return: 解密后的文本
-    """
-    return "MD5 不支持解密"
-def customize_pad(s,BLOCK_SIZE):
-    return s + (BLOCK_SIZE - len(s) % BLOCK_SIZE) * bytes([0])
-
-def aes_encrypt(key, iv, data, block_size,padding,encrypt_mode):
-
-    if len(key) < block_size:
-        key = customize_pad(key, block_size)
-    else:
-        key = key[:block_size]
-    if len(iv) < AES.block_size:
-        iv = customize_pad(iv,AES.block_size)
-    else:
-        iv = iv[:AES.block_size]
-    
-    # 创建AES加密器"ECB", "CBC", "CFB", "OFB"
-    cipher = None
-    if encrypt_mode == "ECB":
-        cipher = AES.new(key, AES.MODE_ECB)
-    elif encrypt_mode == "CBC":
-        cipher = AES.new(key, AES.MODE_CBC, iv)
-    elif encrypt_mode == "CFB":
-        cipher = AES.new(key, AES.MODE_CFB, iv)
-    elif encrypt_mode == "OFB":
-        cipher = AES.new(key, AES.MODE_OFB, iv)
-    
-    # 对数据进行填充
-    padded_data = pad(data.encode('utf-8'), AES.block_size, style=padding)
-
-    # 加密数据
-    ciphertext = cipher.encrypt(padded_data)
-
-    return ciphertext.hex()
-
-
-def aes_decrypt(key, iv,data, block_size,padding,encrypt_mode):
-    if len(key) < block_size:
-        key = customize_pad(key, block_size)
-    else:
-        key = key[:block_size]
-    if len(iv) < AES.block_size:
-        iv = customize_pad(iv,AES.block_size)
-    else:
-        iv = iv[:AES.block_size]
-    # 创建AES解密器"ECB", "CBC", "CFB", "OFB"
-    cipher = None
-    if encrypt_mode == "ECB":
-        cipher = AES.new(key, AES.MODE_ECB)
-    elif encrypt_mode == "CBC":
-        cipher = AES.new(key, AES.MODE_CBC, iv)
-    elif encrypt_mode == "CFB":
-        cipher = AES.new(key, AES.MODE_CFB, iv)
-    elif encrypt_mode == "OFB":
-        cipher = AES.new(key, AES.MODE_OFB, iv)
-
-    # 解密数据
-    decrypted_data = cipher.decrypt(data)
-
-    # 去除填充
-    unpadded_data = unpad(decrypted_data, AES.block_size, style=padding)
-
-    return unpadded_data.decode('utf-8')
-
-def des_encrypt(key, iv, data,padding,encrypt_mode):
-
-    if len(key) < DES.block_size:
-        key = customize_pad(key, DES.block_size)
-    else:
-        key = key[:DES.block_size]
-    if len(iv) < DES.block_size:
-        iv = customize_pad(iv,DES.block_size)
-    else:
-        iv = iv[:DES.block_size]
-
-    # 创建DES加密器"ECB", "CBC", "CFB", "OFB"
-    cipher = None
-    if encrypt_mode == "ECB":
-        cipher = DES.new(key, DES.MODE_ECB)
-    elif encrypt_mode == "CBC":
-        cipher = DES.new(key, DES.MODE_CBC, iv)
-    elif encrypt_mode == "CFB":
-        cipher = DES.new(key, DES.MODE_CFB, iv)
-    elif encrypt_mode == "OFB":
-        cipher = DES.new(key, DES.MODE_OFB, iv)
-    
-    # 对数据进行填充
-    padded_data = pad(data.encode('utf-8'), DES.block_size, style=padding)
-
-    # 加密数据
-    ciphertext = cipher.encrypt(padded_data)
-
-    return ciphertext.hex()
-
-
-def des_decrypt(key, iv,data,padding,encrypt_mode):
-    if len(key) < DES.block_size:
-        key = customize_pad(key, DES.block_size)
-    else:
-        key = key[:DES.block_size]
-    if len(iv) < DES.block_size:
-        iv = customize_pad(iv,DES.block_size)
-    else:
-        iv = iv[:DES.block_size]
-
-    # 创建DES加密器"ECB", "CBC", "CFB", "OFB"
-    cipher = None
-    if encrypt_mode == "ECB":
-        cipher = DES.new(key, DES.MODE_ECB)
-    elif encrypt_mode == "CBC":
-        cipher = DES.new(key, DES.MODE_CBC, iv)
-    elif encrypt_mode == "CFB":
-        cipher = DES.new(key, DES.MODE_CFB, iv)
-    elif encrypt_mode == "OFB":
-        cipher = DES.new(key, DES.MODE_OFB, iv)
-
-    # 解密数据
-    decrypted_data = cipher.decrypt(data)
-
-    # 去除填充
-    unpadded_data = unpad(decrypted_data, DES.block_size, style=padding)
-
-    return unpadded_data.decode('utf-8')
-
-def timestamp_to_datetime(timestamp):
-    if len(timestamp) == 10:
-        beijing_timezone = timezone(timedelta(hours=8))
-        # 将时间戳转换为日期时间对象（以UTC+8时区显示）
-        date_time_obj = datetime.fromtimestamp(int(timestamp), beijing_timezone)
-        return date_time_obj.strftime('%Y-%m-%d %H:%M:%S')
-    elif len(timestamp) == 13:
-        # 将毫秒时间戳转换为秒
-        seconds = int(timestamp) / 1000.0
-        # 提取毫秒部分（取整数部分将使末尾的零被忽略）
-        milliseconds = int(int(timestamp) % 1000)
-        # 创建UTC+8时区
-        beijing_timezone = timezone(timedelta(hours=8))
-        # 将时间戳转换为日期时间对象（以UTC+8时区显示）
-        date_time_obj = datetime.fromtimestamp(seconds, beijing_timezone)
-        # 格式化时间
-        return date_time_obj.strftime('%Y-%m-%d %H:%M:%S') + f'.{milliseconds}'
-    else:
-        return "时间戳长度不对"
-
-# 日期时间转换为时间戳（支持秒和毫秒）
-def datetime_to_timestamp(dt):
-
-    # 日期时间字符串
-    try:
-        if '.' in dt:
-            date_time_obj = datetime.strptime(dt, '%Y-%m-%d %H:%M:%S.%f')
-        else:
-            date_time_obj = datetime.strptime(dt, '%Y-%m-%d %H:%M:%S')
-    except Exception as e:
-        return e
-
-    # 假设你的日期时间是UTC，如果不是你需要相对于UTC调整它
-    # 如果是其他时区，你需要根据相应的时区进行转换
-    # 创建北京时间时区（UTC+8）
-    beijing_timezone = timezone(timedelta(hours=8))
-    date_time_obj = date_time_obj.replace(tzinfo=beijing_timezone)
-
-    # 转换为时间戳（从epoch开始计算的秒数）
-    if '.' in dt:
-        return int(round(date_time_obj.timestamp() * 1000))
-    else:
-        return int(date_time_obj.timestamp())
-
 
 if __name__ == "__main__":
     app = wx.App()

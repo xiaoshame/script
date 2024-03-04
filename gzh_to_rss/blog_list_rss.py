@@ -122,8 +122,8 @@ def up_data_minio(bucket: str):
 
 if __name__ == "__main__":
     ## 定时查询
-    end_time = datetime.now()
-    start_time = end_time - timedelta(hours=4)
+    end_time = datetime.now() - timedelta(days=2)
+    start_time = end_time - timedelta(hours=12)
     ## 获取最近一周内发表的文章
     get_blog_list("https://wechat2rss.xlab.app/posts/list/",start_time,end_time)
     up_data_minio('rss')

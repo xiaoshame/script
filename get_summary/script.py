@@ -5,8 +5,11 @@ import inquirer
 import openai
 import requests
 import yaml
+import dashscope
+import random
 from dotenv import load_dotenv
 from inquirer import prompt
+from http import HTTPStatus
 
 # 用于存储满足条件的文件信息
 todo_files = []
@@ -73,7 +76,7 @@ def open_ai_summary(prompt):
         response =  openai.ChatCompletion.create(
             model="gpt-3.5-turbo-16k",
             messages=[
-                {"role": "system", "content": "请你充当一名编辑专家，总结文章的摘要。下面是具体要求：1.摘要只有两句话 2. 摘要总字数限制在100字以内。下文是文章的内容，请你总结它："},
+                {"role": "system", "content": "请你充当一名文字专家，总结文章的摘要。下面是具体要求：1.摘要一共两句话 2. 摘要总字数限制在100字以内。下文是文章的内容，请你总结它："},
                 {"role": "user", "content": prompt}
             ]
         )
@@ -98,6 +101,24 @@ def baidu_ai_summary(text: str):
     print("Use {} tokens.".format(usage_total_tokens))
     return result
 
+## 阿里API
+def ali_ai_summary(text: str):
+    messages = [
+        {'role': 'user', 'content': 'content":"你是一个文字专家，我提供了一篇文章,以---开始并结束 ' + text + '请对这段内容进行总结，字数不超过100字'}]
+    response = dashscope.Generation.call(
+        'qwen1.5-72b-chat',
+        messages=messages,
+        # set the random seed, optional, default to 1234 if not set
+        seed=random.randint(1, 10000),
+        result_format='message',  # set the result to be "message" format.
+    )
+    if response.status_code != HTTPStatus.OK:
+        print('Request id: %s, Status code: %s, error code: %s, error message: %s' % (
+            response.request_id, response.status_code,
+            response.code, response.message
+        ))
+    result = response.output.choices[0]['message']['content']
+    return result
 
 # 主程序
 if __name__ == '__main__':
@@ -108,7 +129,7 @@ if __name__ == '__main__':
         with open(file['file_path'], 'r', encoding='utf-8') as f:
             text = f.read()
             front_matter, markdown_content = separate_front_matter(text)
-            new_ai_summary = open_ai_summary("---".join(markdown_content))
+            new_ai_summary = ali_ai_summary("---".join(markdown_content)+"---")
             print(new_ai_summary)
             update_summary(file['file_path'],new_ai_summary)
 

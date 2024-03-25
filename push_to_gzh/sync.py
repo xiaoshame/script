@@ -255,6 +255,7 @@ def css_beautify(content):
     content = replace_links(content)
     content = format_fix(content)
     content = fix_image(content)
+    content = fix_image("文章不定期修改，因公众号无法同步修改，点击阅读原文阅读")
     content = gen_css("header") + content + "</section>"
     return content
 

@@ -48,7 +48,7 @@ def separate_front_matter(content):
             front_matter = yaml.safe_load(parts[1])
             markdown_content = parts[2:]
 
-    return front_matter, markdown_content
+    return front_matter, markdown_content[0]
 
 # 交互式选择文件
 def select_file():
@@ -102,9 +102,9 @@ def baidu_ai_summary(text: str):
     return result
 
 ## 阿里API
-def ali_ai_summary(text: str):
+def ali_ai_summary(title: str,text: str):
     messages = [
-        {'role': 'user', 'content': 'content":"你是一个文字专家，我提供了一篇文章,以---开始并结束 ' + text + '请对这段内容进行总结，字数不超过100字'}]
+        {'role': 'user', 'content': "请你充当一名文字专家，对文章进行总结100字以内。下文是文章的标题：" + title + "下面是内容，请你总结它：" + text}]
     response = dashscope.Generation.call(
         'qwen1.5-72b-chat',
         messages=messages,
@@ -126,11 +126,11 @@ if __name__ == '__main__':
     traverse_directory(target_directory)
 
     for file in todo_files:
-        with open(file['file_path'], 'r', encoding='utf-8') as f:
-            text = f.read()
-            front_matter, markdown_content = separate_front_matter(text)
-            new_ai_summary = ali_ai_summary("---".join(markdown_content)+"---")
-            print(new_ai_summary)
-            update_summary(file['file_path'],new_ai_summary)
+        # with open(file['file_path'], 'r', encoding='utf-8') as f:
+        #     text = f.read()
+        #     title, markdown_content = separate_front_matter(text)
+        new_ai_summary = ali_ai_summary(file['title'],file['content'])
+        print(new_ai_summary)
+        update_summary(file['file_path'],new_ai_summary)
 
     print('替换完毕')

@@ -3,8 +3,8 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 import threading
 import requests
-import minio
 from bs4 import BeautifulSoup
+from lib.file_manager import FileManager
 
 # 定义一个锁
 lock = threading.Lock()
@@ -109,21 +109,14 @@ def get_blog_list(url,start_time,end_time):
         rss.write(r'D:\workspace\script\gzh_to_rss\rss.xml', encoding='UTF-8', xml_declaration=True)
     print("write rss done")
 
-def up_data_minio(bucket: str):
-    minio_conf = {
-        'endpoint': '127.0.0.1:9000',
-        'access_key': 'xxxx',
-        'secret_key': 'xxxx',
-        'secure': False
-    }
-    client = minio.Minio(**minio_conf)
-    client.fput_object(bucket_name=bucket, object_name='rss.xml',file_path='rss.xml',content_type='text/xml')
-    print("syn rss.xml done")
+def up_data_filebrowser():
+    file_mgr = FileManager()
+    file_mgr.upload_file(remote_file_path="rss.xml", local_file_path="D:\\workspace\\script\\gzh_to_rss\\rss.xml", should_override=True)
 
 if __name__ == "__main__":
     ## 定时查询
-    end_time = datetime.now() - timedelta(days=2)
-    start_time = end_time - timedelta(hours=12)
+    end_time = datetime.now()
+    start_time = end_time - timedelta(days=1)
     ## 获取最近一周内发表的文章
     get_blog_list("https://wechat2rss.xlab.app/posts/list/",start_time,end_time)
-    up_data_minio('rss')
+    up_data_filebrowser()

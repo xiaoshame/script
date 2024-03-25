@@ -134,7 +134,7 @@ class EncryptionFrame(wx.Frame):
         self.time_table.SetSizer(self.time_sizer)
 
         ### 格式化页面
-
+        
 
         self.notebook.AddPage(self.algorithm_table, "加解密")
         self.notebook.AddPage(self.time_table, "时间戳")

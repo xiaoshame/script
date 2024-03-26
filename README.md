@@ -4,7 +4,7 @@
 - push_to_gzh: 同步文章到微信公众号脚本
 - push_to_xiaohongshu: 将html按照文章章节转换成图片，然后通过图文模式发布到小红书
 - copyBook: 小说爬虫脚本和Django图书网站，样式与一般网络小说网站类似
-- cryptology: windows日常加解密工具
+- cryptology: windows日常工具，包含加解密/时间戳转换/pdf合并
 - gzh_to_rss: 公众号内容转换成RSS,用于feedly订阅
 - xiaohongshu: 支持搜索小红书，搜索到的文章导出为execel
 
@@ -42,9 +42,8 @@
 
 ### cryptology
 
-1. 常用加解密算法工具
-2. 下载dist文件夹，即可运行
-3. 支持"Base64", "MD5", "AES", "DES"
+1. 编译后exe过大，上传不便,自行编译
+2. 控制台进入cryptology目录，执行pyinstaller.exe main.spec
 
 ### gzh_to_rss
 

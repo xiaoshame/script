@@ -3,7 +3,7 @@
 
 a = Analysis(
     ['main.py'],
-    pathex=[],
+    pathex=['D:\\workspace\\script\\cryptology'],
     binaries=[],
     datas=[],
     hiddenimports=[],
@@ -21,7 +21,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='crypt',
+    name='mytools',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -34,5 +34,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['favicon.ico']
+    icon=['favicon.ico'],
 )

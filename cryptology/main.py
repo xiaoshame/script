@@ -2,12 +2,13 @@ import wx
 from datetime import datetime
 from mytime import timestamp_to_datetime,datetime_to_timestamp
 from mycrypt import des_decrypt,aes_decrypt,md5_decode,base64_decode,des_encrypt,aes_encrypt,md5_encode,base64_encode
+from mypdf import merge_pdf
 
 class EncryptionFrame(wx.Frame):
     def __init__(self):
         super().__init__(None, title="常用工具", size=(820, 500))
-        # self.app_icon = wx.Icon('favicon.ico', wx.BITMAP_TYPE_ICO)
-        # self.SetIcon(self.app_icon)
+        self.app_icon = wx.Icon('./favicon.ico', wx.BITMAP_TYPE_ICO)
+        self.SetIcon(self.app_icon)
 
         self.panel = wx.Panel(self)
 
@@ -15,7 +16,7 @@ class EncryptionFrame(wx.Frame):
 
         self.algorithm_table = wx.Panel(self.notebook)
         self.time_table = wx.Panel(self.notebook)
-        self.format_table = wx.Panel(self.notebook)
+        self.pdf_table = wx.Panel(self.notebook)
 
         ### 加解密页面
         # 算法选择相关组件
@@ -133,12 +134,32 @@ class EncryptionFrame(wx.Frame):
         self.time_sizer.Add(self.timing_sizer, 0, wx.EXPAND|wx.ALL, 5)
         self.time_table.SetSizer(self.time_sizer)
 
-        ### 格式化页面
-        
+        ### PDF页面
+        # 创建垂直布局管理器
+        self.pdf_sizer = wx.BoxSizer(wx.HORIZONTAL)
+        # 创建列表框用于显示文件
+        self.pdf_file_listbox = wx.ListBox(self.pdf_table)
+        # 创建选择按钮
+        self.pdf_open_button = wx.Button(self.pdf_table, label='选择文件')
+        # 创建合并按钮
+        self.pdf_merge_button = wx.Button(self.pdf_table, label='合并')
+        # 创建列表框用于显示文件
+        self.pdf_output_text_ctrl = wx.TextCtrl(self.pdf_table)
+
+        # 将组件添加到布局管理器
+        self.pdf_sizer.Add(self.pdf_file_listbox, proportion=1, flag=wx.EXPAND|wx.LEFT|wx.RIGHT|wx.BOTTOM, border=10)
+        self.pdf_sizer.Add(self.pdf_open_button, flag=wx.ALL|wx.EXPAND, border=10)
+        self.pdf_sizer.Add(self.pdf_merge_button, flag=wx.ALL|wx.EXPAND, border=10)
+        self.pdf_sizer.Add(self.pdf_output_text_ctrl, proportion=1, flag=wx.EXPAND|wx.ALL, border=10)
+
+        self.pdf_open_button.Bind(wx.EVT_BUTTON, self.on_open_file)
+        self.pdf_merge_button.Bind(wx.EVT_BUTTON, self.on_merge_file)
+        # 设置面板使用布局管理器
+        self.pdf_table.SetSizer(self.pdf_sizer)
 
         self.notebook.AddPage(self.algorithm_table, "加解密")
         self.notebook.AddPage(self.time_table, "时间戳")
-        self.notebook.AddPage(self.format_table,"格式化")
+        self.notebook.AddPage(self.pdf_table,"PDF")
 
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(self.notebook, 1, wx.EXPAND)
@@ -261,6 +282,29 @@ class EncryptionFrame(wx.Frame):
         timing_input = self.timing_input_text.GetValue()
         timing_output = datetime_to_timestamp(timing_input)
         self.timing_output_text.SetValue(str(timing_output))
+
+    
+    def on_open_file(self, event):
+        # 创建文件选择对话框
+        with wx.FileDialog(self, "选择文件", wildcard="所有文件 (*.*)|*.*",
+                           style=wx.FD_OPEN | wx.FD_MULTIPLE) as fileDialog:
+            if fileDialog.ShowModal() == wx.ID_CANCEL:
+                return     # 用户取消操作
+            # 获取选择的文件路径
+            paths = fileDialog.GetPaths()
+            # 更新列表框内容
+            self.pdf_file_listbox.Set(paths)
+
+    def on_merge_file(self, event):
+        # 创建目录选择对话框
+        with wx.DirDialog(self, "选择保存路径", style=wx.DD_DEFAULT_STYLE) as dirDialog:
+            if dirDialog.ShowModal() == wx.ID_CANCEL:
+                return     # 用户取消操作
+            # 获取选择的目录
+            path = dirDialog.GetPath()
+            # 显示选择的目录在文本框中
+            self.pdf_output_text_ctrl.SetValue(path + "\merge.pdf")
+            merge_pdf(self.pdf_file_listbox.GetStrings(),path+"\merge.pdf")
 
 if __name__ == "__main__":
     app = wx.App()

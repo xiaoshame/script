@@ -4,7 +4,7 @@
 - push_to_gzh: 同步文章到微信公众号脚本
 - push_to_xiaohongshu: 将html按照文章章节转换成图片，然后通过图文模式发布到小红书
 - copyBook: 小说爬虫脚本和Django图书网站，样式与一般网络小说网站类似
-- cryptology: windows日常工具，包含加解密/时间戳转换/pdf合并
+- mytools: windows日常工具，包含加解密/时间戳转换/pdf合并/汇率查询
 - gzh_to_rss: 公众号内容转换成RSS,用于feedly订阅
 - xiaohongshu: 支持搜索小红书，搜索到的文章导出为execel
 

@@ -1,8 +1,12 @@
 import wx
 from datetime import datetime
+import configparser
+import threading
+
 from mytime import timestamp_to_datetime,datetime_to_timestamp
 from mycrypt import des_decrypt,aes_decrypt,md5_decode,base64_decode,des_encrypt,aes_encrypt,md5_encode,base64_encode
-from mypdf import merge_pdf
+from mypdf import merge_pdf,image_to_pdf
+from myrates import MyRates
 
 class EncryptionFrame(wx.Frame):
     def __init__(self):
@@ -17,6 +21,7 @@ class EncryptionFrame(wx.Frame):
         self.algorithm_table = wx.Panel(self.notebook)
         self.time_table = wx.Panel(self.notebook)
         self.pdf_table = wx.Panel(self.notebook)
+        self.rates_table = wx.Panel(self.notebook)
 
         ### 加解密页面
         # 算法选择相关组件
@@ -138,28 +143,78 @@ class EncryptionFrame(wx.Frame):
         # 创建垂直布局管理器
         self.pdf_sizer = wx.BoxSizer(wx.HORIZONTAL)
         # 创建列表框用于显示文件
-        self.pdf_file_listbox = wx.ListBox(self.pdf_table)
+        self.file_listbox = wx.ListBox(self.pdf_table)
         # 创建选择按钮
         self.pdf_open_button = wx.Button(self.pdf_table, label='选择文件')
         # 创建合并按钮
         self.pdf_merge_button = wx.Button(self.pdf_table, label='合并')
+        # 创建图片转PDF按钮
+        self.image_to_pdf_button = wx.Button(self.pdf_table, label='图片转PDF')
         # 创建列表框用于显示文件
         self.pdf_output_text_ctrl = wx.TextCtrl(self.pdf_table)
 
         # 将组件添加到布局管理器
-        self.pdf_sizer.Add(self.pdf_file_listbox, proportion=1, flag=wx.EXPAND|wx.LEFT|wx.RIGHT|wx.BOTTOM, border=10)
+        self.pdf_sizer.Add(self.file_listbox, proportion=1, flag=wx.EXPAND|wx.LEFT|wx.RIGHT|wx.BOTTOM, border=10)
         self.pdf_sizer.Add(self.pdf_open_button, flag=wx.ALL|wx.EXPAND, border=10)
         self.pdf_sizer.Add(self.pdf_merge_button, flag=wx.ALL|wx.EXPAND, border=10)
+        self.pdf_sizer.Add(self.image_to_pdf_button, flag=wx.ALL|wx.EXPAND, border=10)
         self.pdf_sizer.Add(self.pdf_output_text_ctrl, proportion=1, flag=wx.EXPAND|wx.ALL, border=10)
 
         self.pdf_open_button.Bind(wx.EVT_BUTTON, self.on_open_file)
         self.pdf_merge_button.Bind(wx.EVT_BUTTON, self.on_merge_file)
+        self.image_to_pdf_button.Bind(wx.EVT_BUTTON, self.on_image_to_pdf)
         # 设置面板使用布局管理器
         self.pdf_table.SetSizer(self.pdf_sizer)
+
+        ### 汇率页面
+        
+        # 创建ConfigParser对象
+        # 从配置文件读取初始选项列表
+        self.myrates = MyRates()
+        config = configparser.ConfigParser()
+        config.read('./config.ini', encoding='utf-8')
+        currency_choices_str = config.get('CurrencyNames', 'currency_choices')
+        self.currency_choices = [item.strip() for item in currency_choices_str.split(',')]
+        
+        self.rates_sizer = wx.BoxSizer(wx.HORIZONTAL)
+        # 创建ComboBox
+        self.rates_input_combo = wx.ComboBox(self.rates_table, choices=self.currency_choices, style=wx.CB_READONLY)
+        self.rates_input_label = wx.TextCtrl(self.rates_table,value="1")
+        self.rates_label = wx.StaticText(self.rates_table, label="->")
+        self.rates_output_combo = wx.ComboBox(self.rates_table, choices=self.currency_choices, style=wx.CB_READONLY)
+        self.rates_output_label = wx.TextCtrl(self.rates_table, style=wx.TE_READONLY)
+
+        self.rates_input_combo.SetMinSize(wx.Size(200, 50))
+        self.rates_input_combo.SetMaxSize(wx.Size(200, 50))
+
+        self.rates_output_combo.SetMinSize(wx.Size(200, 50))
+        self.rates_output_combo.SetMaxSize(wx.Size(200, 50))
+
+        self.rates_input_label.SetMinSize(wx.Size(100, 25))
+        self.rates_input_label.SetMaxSize(wx.Size(100, 25))
+
+        self.rates_output_label.SetMinSize(wx.Size(100, 25))
+        self.rates_output_label.SetMaxSize(wx.Size(100, 25))
+
+        self.rates_sizer.Add(self.rates_input_combo, 0, wx.EXPAND|wx.ALL,5)
+        self.rates_sizer.Add(self.rates_input_label, 0, wx.EXPAND|wx.ALL,5)
+        self.rates_sizer.Add(self.rates_label, 0, wx.EXPAND|wx.ALL,5)
+        self.rates_sizer.Add(self.rates_output_combo, 0, wx.EXPAND|wx.ALL,5)
+        self.rates_sizer.Add(self.rates_output_label, 0, wx.EXPAND|wx.ALL,5)
+        
+        # 绑定事件处理函数
+        self.rates_input_label.Bind(wx.EVT_CHAR, self.on_in_label_char)
+        self.rates_input_label.Bind(wx.EVT_TEXT, self.on_in_label_text)
+        self.rates_input_combo.Bind(wx.EVT_TEXT, self.on_in_combo_select)
+        self.rates_output_combo.Bind(wx.EVT_TEXT, self.on_out_combo_select)
+
+
+        self.rates_table.SetSizer(self.rates_sizer)
 
         self.notebook.AddPage(self.algorithm_table, "加解密")
         self.notebook.AddPage(self.time_table, "时间戳")
         self.notebook.AddPage(self.pdf_table,"PDF")
+        self.notebook.AddPage(self.rates_table,"汇率")
 
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(self.notebook, 1, wx.EXPAND)
@@ -293,7 +348,7 @@ class EncryptionFrame(wx.Frame):
             # 获取选择的文件路径
             paths = fileDialog.GetPaths()
             # 更新列表框内容
-            self.pdf_file_listbox.Set(paths)
+            self.file_listbox.Set(paths)
 
     def on_merge_file(self, event):
         # 创建目录选择对话框
@@ -304,7 +359,61 @@ class EncryptionFrame(wx.Frame):
             path = dirDialog.GetPath()
             # 显示选择的目录在文本框中
             self.pdf_output_text_ctrl.SetValue(path + "\merge.pdf")
-            merge_pdf(self.pdf_file_listbox.GetStrings(),path+"\merge.pdf")
+            merge_pdf(self.file_listbox.GetStrings(),path+"\merge.pdf")
+
+    def on_image_to_pdf(self,event):
+        # 创建目录选择对话框
+        with wx.DirDialog(self, "选择保存路径", style=wx.DD_DEFAULT_STYLE) as dirDialog:
+            if dirDialog.ShowModal() == wx.ID_CANCEL:
+                return     # 用户取消操作
+            # 获取选择的目录
+            path = dirDialog.GetPath()
+            # 显示选择的目录在文本框中
+            self.pdf_output_text_ctrl.SetValue(path)
+            image_to_pdf(self.file_listbox.GetStrings(),path)
+    
+    def on_in_label_char(self, event):
+        # 获取按键值
+        key_code = event.GetKeyCode()
+
+        # 如果按键是数字或者是删除键（ASCII码8），则允许输入
+        if chr(key_code).isdigit() or key_code == wx.WXK_BACK:
+            event.Skip()  # 允许事件继续传递
+
+
+    def on_in_label_text(self,event):
+        in_currency = self.rates_input_combo.GetValue()
+        out_currency = self.rates_output_combo.GetValue()
+        in_num = self.rates_input_label.GetValue()
+
+        if out_currency != "" and in_currency != "":
+            if in_num == "":
+                in_num = '0'
+            exchange_thread = threading.Thread(target=self.myrates.get_exchange_rate, args=(in_currency, out_currency, int(in_num),self.rates_output_label))
+            exchange_thread.start()
+
+    def on_in_combo_select(self, event):
+        # 当用户从下拉列表中选择一项时调用
+        in_currency = self.rates_input_combo.GetValue()
+        out_currency = self.rates_output_combo.GetValue()
+        in_num = self.rates_input_label.GetValue()
+        if out_currency != "" and in_currency != "":
+            if in_num == "":
+                in_num = '0'
+            exchange_thread = threading.Thread(target=self.myrates.get_exchange_rate, args=(in_currency, out_currency, int(in_num),self.rates_output_label))
+            exchange_thread.start()
+    def on_out_combo_select(self, event):
+        # 当用户从下拉列表中选择一项时调用
+        in_currency = self.rates_input_combo.GetValue()
+        out_currency = self.rates_output_combo.GetValue()
+        in_num = self.rates_input_label.GetValue()
+        if in_currency == "":
+            wx.MessageBox('选择想要计算的货币', '注意', wx.OK | wx.ICON_INFORMATION)
+            return
+        if in_num == "":
+            in_num = '0'
+        exchange_thread = threading.Thread(target=self.myrates.get_exchange_rate, args=(in_currency, out_currency, int(in_num),self.rates_output_label))
+        exchange_thread.start()
 
 if __name__ == "__main__":
     app = wx.App()

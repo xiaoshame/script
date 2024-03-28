@@ -3,7 +3,7 @@
 
 a = Analysis(
     ['main.py'],
-    pathex=['D:\\workspace\\script\\cryptology'],
+    pathex=['D:\\workspace\\script\\mytools'],
     binaries=[],
     datas=[],
     hiddenimports=[],

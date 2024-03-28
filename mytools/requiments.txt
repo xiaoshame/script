@@ -1,0 +1,6 @@
+wxpython
+pycryptodome
+PyPDF2
+reportlab
+requests
+pyinstaller

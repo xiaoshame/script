@@ -22,12 +22,12 @@ response = requests.get(url, headers=headers)
 if response.status_code == 200:
     config = configparser.ConfigParser()
     config.read('config.ini')
-    config['voice']={}
+    config['azure']={}
     # 输出返回的数据
     data = json.loads(response.text)
     for voice in data:
         if voice['Locale'] == 'zh-CN' or voice['Locale'] == 'zh-TW':
-            config['voice'][voice['DisplayName']] =voice['ShortName']
+            config['azure'][voice['DisplayName']] =voice['ShortName']
     with open('config.ini', 'w',encoding='utf-8') as configfile:
         config.write(configfile)
 else:

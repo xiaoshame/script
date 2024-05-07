@@ -2,7 +2,7 @@ import azure.cognitiveservices.speech as speechsdk
 import os
 import configparser
 
-class tts():
+class AzureTTs():
     def __init__(self):
         self.config = configparser.ConfigParser()
         self.config.read('config.ini')
@@ -17,5 +17,5 @@ class tts():
         return path,speech_synthesis_result
 
 if __name__ == "__main__":
-    text_to_tts = tts()
+    text_to_tts = AzureTTs()
     text_to_tts.speak("yunxia","2019/03/02上午有1/2的概率下暴雨所以有600人選擇3:30p.m.再出門,支付$500或￥600可以獲得代金券")

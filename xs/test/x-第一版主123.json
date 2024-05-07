@@ -1,0 +1,132 @@
+{
+	"x-第一版主123": {
+		"shupingHome": {
+			"actionID": "shupingHome",
+			"parserID": "DOM"
+		},
+		"authorId": "",
+		"weight": "5555",
+		"miniAppVersion": "2.53.2",
+		"chapterList": {
+			"actionID": "chapterList",
+			"validConfig": "",
+			"requestInfo": "@js:\nreturn {\"url\":result,\"webView\":true }",
+			"title": "//a",
+			"host": "https://www.6yydstxt426.com",
+			"httpHeaders": {
+				"Referer": "https://www.6yydstxt426.com",
+				"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63",
+				"cookie": "PHPSESSID=0ot6r6fi6v19bnooa5gr2hj2d3"
+			},
+			"list": "//div//li//a",
+			"responseFormatType": "html",
+			"parserID": "DOM",
+			"url": "//a/@href\n||@js:\r\nif (result.indexOf(\"java\") > -1) {\r\n    let tem = result.match(/\\('(.*?)','(.*?)','(.*?)'\\)/)\r\n    result = `/${tem[1]}/${tem[2]}/${tem[3]}.html`\r\n}\r\nreturn result"
+		},
+		"searchShudan": {
+			"actionID": "searchShudan",
+			"parserID": "DOM"
+		},
+		"relatedWord": {
+			"actionID": "relatedWord",
+			"parserID": "DOM"
+		},
+		"enable": 1,
+		"sourceName": "x-第一版主123",
+		"sourceType": "text",
+		"sourceUrl": "https://www.6yydstxt426.com",
+		"httpHeaders": {
+			"Referer": "https://www.6yydstxt426.com",
+			"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63",
+			"cookie": "PHPSESSID=0ot6r6fi6v19bnooa5gr2hj2d3"
+		},
+		"shudanDetail": {
+			"actionID": "shudanDetail",
+			"parserID": "DOM"
+		},
+		"lastModifyTime": "1685095454.629263",
+		"searchBook": {
+			"requestParamsEncode": "2147485234",
+			"author": "//p[2]/a\r\n||@js:\r\nreturn result.replace(\"辰东\", \"辰東\")",
+			"responseFormatType": "html",
+			"bookName": "//div/a",
+			"httpHeaders": {
+				"Referer": "https://www.6yydstxt426.com",
+				"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63",
+				"cookie": "PHPSESSID=0ot6r6fi6v19bnooa5gr2hj2d3"
+			},
+			"requestInfo": "@js:\n\r\nlet url = \"/s.php\"\r\nlet hp = {\n    \"objectType\": \"2\",\r\n    \"type\": \"articlename\",\n    \"s\": params.keyWord,\r\n}\n\r\nreturn {\r\n    \"url\": url,\r\n    \"POST\": true,\r\n    \"httpParams\": hp,\r\n    \"httpHeaders\": config.httpHeaders,\r\n    \"forbidCookie\": true,\r\n    \"cacheTime\": 600,\r\n}",
+			"host": "https://www.6yydstxt426.com",
+			"actionID": "searchBook",
+			"detailUrl": "//div/a/@href",
+			"validConfig": "",
+			"list": "//*[@*=\"bd\"]//li",
+			"parserID": "DOM"
+		},
+		"shupingList": {
+			"actionID": "shupingList",
+			"parserID": "DOM"
+		},
+		"chapterContent": {
+			"validConfig": "",
+			"actionID": "chapterContent",
+			"JSParser": "function functionName(config, params, result) {\r\n\r\n    var con = \"\"\r\n    //过滤图片文字\r\n    result = params.nativeTool.XPathParserWithSource(trs(result))\r\n    let txt_xpath = result.queryWithXPath(`//div[@id=\"chapterinfo\"]/text()`)\r\n    for (i in txt_xpath) {\r\n        con += txt_xpath[i].content() + \"\\n\\n\"\r\n    }\r\n    //解析下一页\r\n    let np = result.queryWithXPath(`//a[@class=\"curr\"]//following-sibling::a/@href`)\r\n    if (np.length > 0) {\r\n        np = np[0].content()\r\n        params.nativeTool.log(np)\r\n        if(np.indexOf(\"java\") > -1) {\r\n            let tem = np.match(/\\((.*?),(.*?),(.*?),(.*?)\\)/)\r\n            np = `/${tem[1]}/${tem[2]}/${tem[3]}_${tem[4]}.html`\r\n        }\r\n        return {\r\n            \"content\": con,\r\n            \"nextPageUrl\": np,\r\n            \"more\": true,\r\n            \"success\": true,\r\n            \"autoRequestMore\": true,\r\n        }\r\n    }\r\n    return {\r\n        \"content\": con,\r\n    }\r\n    function trs(str) {\r\n        let data = {'fzBwG0.png': '道', 'ksWEHN.png': '液', 'cJwvTO.png': '精', '9UCAQf.png': '子', 'BtUHWu.png': '部', 'FQf3kh.png': '情', 'AGSeds.png': '出', '3RejmJ.png': '催', 'f5Sl5W.png': '口', 'U6ETuf.png': '道', 'fn3SAp.png': '性', 'OrdXOa.png': '粗', 'ELBd6f.png': '口', '1X20Ty.png': '跳', 'DSYjBY.png': '色', 't30G4a.png': '进', 'EmvIwd.png': '点', 'B3uyZi.png': '口', '4fB9tq.png': '露', 'lq8Nt7.png': '爱', 'hz892M.png': '处', 'sVM2Qf.png': '高', 'BGhRQs.png': '干', 'nuG6Ks.png': '毛', 'vVJWmo.png': '强', '22up19.png': '触', 'SUtjYj.png': '高', '7KBXyo.png': '硬', 'Ijpxrq.png': '物', 'LioClJ.png': '体', 'cZFN2F.png': '下', 'mQRToV.png': '身', 'JIlF24.png': '出', 'OyMcY4.png': '情', 'Cf89ak.png': '美', 'ol0PKI.png': '腿', 'WEdPjy.png': '部', 'gJBIjo.png': '瓣', 'J0166n.png': '高', 'PHBYiz.png': '吟', 'YnGqSD.png': '强', 'tc0YA4.png': '荡', 'gTFRHz.png': '根', '1Gqg5n.png': '水', 'k7j7H8.png': '情', '2NZ49v.png': '流', 'du1N5w.png': '热', 'yF02AP.png': '水', 'T0v94f.png': '道', 'T0HGCo.png': '股', 'bfI8kL.png': '色', 'Vvdl2x.png': '头', 'w5f3cQ.png': '入', 'gEi1jH.png': '身', 'vs1Plo.png': '点', 'laxcov.png': '顶', 'v6hpZK.png': '处', 'I1G4ge.png': '催', 'BK7bSX.png': '水', 'c26SPT.png': '股', 'Lyiatc.png': '根', 'CzCfHT.png': '道', 'N7nFKM.png': '头', 'I1pnu0.png': '按', 'CmeBBJ.png': '喷', '9OcLmy.png': '跳', 'NSWNMw.png': '色', 'p1PGd7.png': '硬', 'qujoK7.png': '奴', 'rv3jS1.png': '物', 'zWdASR.png': '柱', 'vpAPLS.png': '胸', 'nSHTuk.png': '奴', 'CpYgjA.png': '情', 'tlzScv.png': '强', 'xlro17.png': '流', 'bVdhJz.png': '下', 'Y9Lpfz.png': '催', '3Hwl1H.png': '美', '7CuhmP.png': '入', '8x1iD4.png': '器', 'vljEVE.png': '感', '6HpCJE.png': '缝', 'cbg3dK.png': '水', 'I8L8bp.png': '欢', 'BQEdki.png': '精', 'ERPKzJ.png': '下', 'l4CgSl.png': '进', '7R2MBk.png': '流', '2BRoU9.png': '硬', 'kLDO7O.png': '点', '42cp7O.png': '性', 'xc9oWl.png': '做', '0nq0VY.png': '干', 'bCceR2.png': '虐', 'KDguTl.png': '核', 'Gcd4r1.png': '色', 'blNSnb.png': '高', 'pHF53O.png': '内', 'dAL6t6.png': '股', '6tOIJK.png': '器', 'HBvy8e.png': '子', 'GWC8b5.png': '滚', 'o5a6B7.png': '配', 'Csqmh8.png': '头', 'U0GaWS.png': '按', 'YTDoKI.png': '处', 'jGnJyk.png': '拔', 'i14WSg.png': '顶', 'AtG8KX.png': '欢', 'iphZH2.png': '子', 'nHbr7A.png': '热', '2IAUyo.png': '体', 'x0ifDw.png': '感', 'GcbZ5D.png': '吹', '62wAT9.png': '弄', 'LEaYe0.png': '头', 'U6WN3k.png': '入', '1Rqmzv.png': '进', 'APKJeI.png': '射', 'MpImJ0.png': '融', 'b5wzXI.png': '物', '0CFlIl.png': '含', 'OZyn8s.png': '宫', 'XDJiLf.png': '滚', 'icvlLW.png': '流', 'Q6iONP.png': '配', 'lKZcm0.png': '液', 'zteiXQ.png': '干', 'ihBR1Q.png': '荡', 'ZnAdae.png': '感', 'TaNl54.png': '下', 'hbDaMY.png': '体', 'bLdZI6.png': '魔', '495z5g.png': '身', 'DdpONj.png': '出', 'cUJHxq.png': '股', 'ilPY6c.png': '子', 'Q9pFnf.png': '内', 'RadXt3.png': '皮', 'qGCZTU.png': '出', '6h1Wm5.png': '入', 'JXCQTC.png': '融', 'LWh9YT.png': '坚', 'serxXI.png': '身', 'Bh99m9.png': '美', 'qqEApa.png': '感', 'rlXZQC.png': '内', 'bgtzVL.png': '缝', 'dVDBcz.png': '精', 'rzYDmE.png': '蛋', 'DyWqQS.png': '马', 'IC8rPT.png': '舌', 'o0c50b.png': '进', 'en0rfl.png': '瓣', 'NjzTh4.png': '内', 'lAIyGS.png': '跳', 'hF9P5B.png': '囊', '5KlE9q.png': '逼', '1ZeSOp.png': '强', 'EszBxk.png': '蛋', 'q6Z96G.png': '按', 'wYHuO9.png': '宫', '3HEXEr.png': '滚', 'CO8zut.png': '荡', 'JpT1Mm.png': '拔', 'A4Qfvt.png': '热', 'fFtkTA.png': '娇', 'x9QaDF.png': '舌', 'U0W9UH.png': '跳', '7i4BzH.png': '精', 'YkNkBi.png': '奴', '3hWTSj.png': '腿', 't3C8zJ.png': '洞', 'lXzqGt.png': '喉', 'JXHirG.png': '粗', 'BuJlIw.png': '奶', '2po3tg.png': '挺', 'labvz6.png': '欢', '2AMaij.png': '敏', 'jY124Z.png': '具', 'EBgJsY.png': '捏', 'WIPVZ4.png': '器', 'FkuEYc.png': '物', 'PV4Hqe.png': '潮', 'yWeWm4.png': '做', '6eCcMP.png': '洞', 'in45ZS.png': '管', 'uLc4HM.png': '露', 'tsrxQm.png': '敏', '7iGkNp.png': '奶', 'igQinJ.png': '暖', '3Ojemu.png': '射', 'lRYIUO.png': '部', 'lSikq4.png': '洞', 'aTpwyQ.png': '处', 'sStAd6.png': '根', 'jRSpiZ.png': '喉', 'H6pC1x.png': '滚', '6uLPPJ.png': '含', 'Qouttk.png': '蕊', 'dv9meP.png': '具', '8RAHon.png': '美', 'VrtVir.png': '擦', 'IOky3x.png': '喘', 'EuAtBp.png': '龟', 'VezNju.png': '奴', 'bruQOh.png': '核', 'bXXtdD.png': '部', 'gHEWsf.png': '坚', 'U6Z5wl.png': '露', 'dxlfkh.png': '点', 'F1dUlS.png': '具', 'J11xNk.png': '缝', '4qG1NW.png': '魔', 'pBvl3o.png': '管', '9pCJPI.png': '皮', 'Uz5uRT.png': '融', 'zmgJLS.png': '做', 'Agl4cK.png': '含', 'u3KNRc.png': '魔', 'WGUwU1.png': '皮', 's7iRyY.png': '口', '0Hrf9j.png': '拔', 'UPKJkj.png': '根', 'BXLfhV.png': '性', 'EW5hm5.png': '液', 'v1KpJ7.png': '胸', 'iQmeua.png': '做', 'KgRlsy.png': '蛋', '4Yv80l.png': '欲', 'NQv357.png': '顶', 'chEI2r.png': '射', 'soNwZr.png': '欢', 'Q9u4Hn.png': '腿', 'wg1roK.png': '爱', '1UVQIb.png': '挺', 'pZdo2p.png': '配', 'KrfOpe.png': '催', 'AMzQIa.png': '洞', 'FZjTfQ.png': '潮', 'PXnuUM.png': '毛', '45C3gz.png': '性', 'qgk8iF.png': '毛', 'cyXxkL.png': '硬', 'hMd6kd.png': '融', 'vOQlC3.png': '马', '9nsnIN.png': '干', 'GygYZo.png': '胸', 'hKqeSx.png': '具', 'J2nQLO.png': '逼', 'ZnDaS1.png': '食', 'M5Y2Vj.png': '胸', 'Tgho1H.png': '含', 'i7grsU.png': '体', '1O95j2.png': '滑', '484kLk.png': '魔', 'vP6o9L.png': '捏', 'ihBTEG.png': '器', 'wF2vul.png': '核', 'zBh4Mb.png': '挺', 'DAERk4.png': '顶', 'P2Horw.png': '吹', 'FCSRwT.png': '娇', 'VSybgj.png': '舌', 'qdv1O1.png': '弄', '0mUvs7.png': '管', 'uFWS3f.png': '操', 'OIHwGS.png': '烫', 'YTLWqK.png': '穴', 'WgeHJh.png': '喉', 'NLZtyZ.png': '赫', '3ZaKf5.png': '宫', 'Xh7gKv.png': '宫', '66lPty.png': '痒', '5uSX9g.png': '喷', 'VY9zC1.png': '露', 'SAZ5aD.png': '吹', 'a0A63i.png': '欲', 'ui0IuL.png': '慰', '9GHmu4.png': '擦', 'V6XABQ.png': '瘫', 'CsYeGT.png': '肥', 'NtKGQj.png': '滑', 'nXf7UP.png': '触', 'cxb6eb.png': '润', 'cquKbf.png': '雏', 'sev4Lw.png': '配', 'efGO2u.png': '喉', 'qt7nob.png': '马', '76cofH.png': '穴', 'KsqvDd.png': '爱', 'sy1Gqu.png': '烫', 'RtxmnH.png': '娇', 'IkQkE5.png': '赫', 'oXnHAc.png': '欲', 'I1yMcq.png': '喷', 'cvk50v.png': '勃', 'qlS3Sx.png': '软', 'SkEy20.png': '滑', 'fPaEnn.png': '伦', 'jpFqXS.png': '娇', 'KIpRtH.png': '泄', 'o7S5d9.png': '虐', 'xQQCgk.png': '伦', 'YaZg09.png': '泄', 'L6XTCm.png': '擦', 'nLH5KM.png': '喘', 'zXbnhs.png': '塞', 'DzGDxZ.png': '壁', 'mfVI32.png': '逼', '1kbQgJ.png': '触', 'V9vl76.png': '萄', 'TGKDXO.png': '虐', 'kAsuRJ.png': '食', 'S9opou.png': '擦', 'tgNIKD.png': '吹', 'YWkQCv.png': '慰', 'eSTXxY.png': '穴', 'jOA75k.png': '核', 'VQpKuW.png': '软', 'BjjWSW.png': '柱', 'MjsYMZ.png': '逼', 'rq3idu.png': '葡', 'rzJGLj.png': '荡', 'vTJ57L.png': '春', 'sJW11m.png': '骚', 'WKmkJt.png': '食', '3pvbHR.png': '粗', 'QlNi54.png': '柱', 'clF9yk.png': '润', '5ByEAD.png': '慰', 'uZFjND.png': '瘫', 'q5JsSG.png': '龟', 'GI19iE.png': '雏', 'cC6Vq3.png': '吟', 'EBRtNJ.png': '春', 'rP73LX.png': '按', 'GE46uh.png': '坚', '4aNpY9.png': '慰', 'RePYYJ.png': '敏', 'KzrjsT.png': '伦', 'wrWW0I.png': '裸', 'OB2TTN.png': '挺', 'ry48DM.png': '捅', '1sr79n.png': '坚', 'y145O6.png': '龟', 'lTtRxE.png': '尿', 'HJCH2o.png': '吟', 'QxMala.png': '毛', 'FrOIwe.png': '软', 'NT4eYi.png': '尿', 'en8f2a.png': '弄', 'HhAfau.png': '蛋', 'Yo3pKn.png': '液', 'k96uX6.png': '吟', '2kcOY4.png': '喘', 'ZqRaUS.png': '壁', 'M4y0ww.png': '皮', 'a65cWx.png': '揉', 'X8bbsB.png': '瘫', 'ZWHEyl.png': '喘', 'Ok4qzK.png': '操', 'Jsh8cM.png': '射', 'RdpiPv.png': '肥', 'Qo3Etd.png': '肠', 'IE2Lvr.png': '操', 'AMticx.png': '瓣', 'EJSYgs.png': '揉', 'HD4iVY.png': '痒', 'ULN2GC.png': '裸', '23m3Dk.png': '户', 'P4rFI8.png': '食', 'lHcxyV.png': '烫', 'xuBFbK.png': '壁', 'X3zaV8.png': '弄', 'lEiXgL.png': '捏', '5SE8r3.png': '泄', 'TALKff.png': '暖', 'ZTjfuD.png': '揉', 'QsbwjD.png': '拔', 't6RYkR.png': '敏', 'RtxpTW.png': '龟', 'ArDF2p.png': '户', 'g5nrVa.png': '奶', 'G0bitc.png': '戴', 'HWMgSX.png': '肠', 'ImDMvi.png': '雏', '47WXn9.png': '操', 'D95mg4.png': '勃', 'rTPCFr.png': '喷', 'gDzupV.png': '缝', 'lqBYN8.png': '粗', 'ZTK6lV.png': '热', 'T1v7mT.png': '春', '6SJ8r8.png': '马', 'REI2Ss.png': '痒', 'r6vGGp.png': '虐', 'OL7QcJ.png': '潮', 'wiv1sf.png': '裸', 'ZA3CQl.png': '欲', 'B9ibk9.png': '腿', 'tf4oej.png': '雏', 'eJuVHi.png': '舌', 'jD5SND.png': '捏', 'gzRWFd.png': '触', 'GfuyiM.png': '滑', 'w91HjI.png': '烫', 'E1EJAQ.png': '瓣', '5tIyci.png': '软', 'JpKmO2.png': '泄', 'ZKkjVL.png': '管', '5MJlvS.png': '宠', '5FEG8Q.png': '揉', 'MlPZuH.png': '爱', 'FuJOia.png': '潮', 'kQDZNr.png': '壁', 'Be8Kjb.png': '尿', '8n3R3m.png': '尿', 'eqfWNy.png': '暖', 'JQnh10.png': '肿', '2Bim4y.png': '柱', 'XrLMqV.png': '肥', 'Tjx8nx.png': '宠'}        \r\n        str = str.replace(/<.?strong>/gi,\"\").replace(/<meta.*?charset=.*?>/i,\"\")\r\n        for (let key in data) {\r\n            let reg = new RegExp(`<img src=\"${config.host}/wzbodyimg/${key}\">`, \"g\")\r\n            str = str.replace(reg, data[key])\r\n        }\r\n        return str\r\n    }\r\n}",
+			"requestInfo": "@js:\r\nreturn {\r\n    \"url\":result, \r\n    //\"webView\":\"\",\r\n    //\"webViewSkipUrls\": [\"js\"],\r\n}",
+			"moreKeys": {
+				"maxPage": 50
+			},
+			"host": "https://www.6yydstxt426.com",
+			"httpHeaders": {
+				"Referer": "https://www.6yydstxt426.com",
+				"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63",
+				"cookie": "PHPSESSID=0ot6r6fi6v19bnooa5gr2hj2d3"
+			},
+			"parserID": "DOM"
+		},
+		"desc": "摆烂版",
+		"shudanList": {},
+		"help": "内容第二页乱序",
+		"bookDetail": {
+			"cat": "//*[@*=\"og:novel:category\"]/@content",
+			"lastChapterTitle": "//*[@*=\"bd\"]//li[1]/a",
+			"responseFormatType": "html",
+			"httpHeaders": {
+				"Referer": "https://www.6yydstxt426.com",
+				"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63",
+				"cookie": "PHPSESSID=0ot6r6fi6v19bnooa5gr2hj2d3"
+			},
+			"host": "https://www.6yydstxt426.com",
+			"desc": "//*[@*=\"og:description\"]/@content\n||@js:\r\nreturn result.replace(/[\\r\\n]/g, \" \")",
+			"actionID": "bookDetail",
+			"wordCount": "//p[@*=\"info\"]/text()[3]\nreturn result.match(/(\\d+)/)[1]",
+			"validConfig": "",
+			"parserID": "DOM",
+			"cover": "//*[@*=\"og:image\"]/@content",
+			"status": "//*[@*=\"status is-serialize\"]\n||@js:\r\nif (result.indexOf(\"连载\") > -1) {\r\n    return 0\r\n}\r\nreturn 1"
+		},
+		"bookWorld": {
+			"分类": {
+				"author": "//p[2]/a\r\n||@js:\r\nreturn result.replace(\"辰东\", \"辰東\")",
+				"responseFormatType": "html",
+				"bookName": "//div/a",
+				"httpHeaders": {
+					"Referer": "https://www.6yydstxt426.com",
+					"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63",
+					"cookie": "PHPSESSID=0ot6r6fi6v19bnooa5gr2hj2d3"
+				},
+				"requestInfo": "@js:\r\n\r\nlet { _tpye, _sort, _status } = params.filters\r\nlet url = `/shuku/${_tpye}-${_sort}-${_status}-${params.pageIndex}.html`\r\n\r\nreturn {\r\n    \"url\": url,\r\n    \"httpHeaders\": config.httpHeaders,\r\n    \"forbidCookie\": true,\r\n    \"cacheTime\": 600,\r\n}",
+				"host": "https://www.6yydstxt426.com",
+				"actionID": "bookWorld",
+				"detailUrl": "//div/a/@href",
+				"moreKeys": {
+					"pageSize": 20,
+					"requestFilters": "_tpye\n全部::0\n海棠耽美::1\n耽美小说::2\n男男情色::3\n海棠言情::4\n言情小说::5\n百合小说::6\n高辣小说::7\n情欲小说::8\n精品小说::9\n评书品书::10\n私密趣事::11\n\n_sort\n最后更新::lastupdate\n总人气::allvisit\n月人气::monthvisit\n新书::postdate\n\n_status\n全部::0\n已完本::2\n连载中::1"
+				},
+				"validConfig": "",
+				"parserID": "DOM",
+				"_sIndex": 0,
+				"list": "//*[@*=\"bd\"]//li"
+			}
+		}
+	}
+}

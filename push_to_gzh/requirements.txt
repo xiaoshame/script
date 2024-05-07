@@ -1,0 +1,6 @@
+lxml==4.5.2
+Jinja2==2.11.2
+mistune==2.0.0a4
+WeRoBot==1.13.1
+Markdown==3.3.4
+pyquery==2.0.0

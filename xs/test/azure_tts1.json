@@ -1,0 +1,67 @@
+{
+    "语音设置-azure": {
+        "chapterContent": {
+            "actionID": "chapterContent",
+            "parserID": "DOM"
+        },
+        "enable": 1,
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "authorId": "",
+        "bookDetail": {
+            "actionID": "bookDetail",
+            "parserID": "DOM"
+        },
+        "bookWorld": {
+            "azure": {
+                "actionID": "bookWorld",
+                "validConfig": "",
+                "requestInfo": "@js:\n\nlet url=\"https://tts.xiaoshame1.pp.ua/tts/\";\nlet body={\n    voice_id:params.filters.type,\n};\nlet _conf={\n      key:'text',\n      body:body,\n      headers:{},\n      post:false,\n      url:url\n };\n\nparams.nativeTool.setCache(\"xsreader_voice_conf\",JSON.stringify(_conf));\nreturn config.host",
+                "bookName": "@js:\nlet regt=`\\n\\s*(.*?)::${params.filters.type}\\n`\nlet reg=new RegExp(regt)\nlet name=config.moreKeys.requestFilters.match(reg)[1]\nreturn \"当前语音：\"+name",
+                "detailUrl": "@js:\nreturn config.host",
+                "host": "http://captive.apple.com",
+                "_sIndex": 7,
+                "list": "//title",
+                "responseFormatType": "html",
+                "parserID": "DOM",
+                "moreKeys": {
+                    "pageSize": 30,
+                    "requestFilters": "type\n晓晓::Xiaoxiao\n云希::Yunxi\n云健::Yunjian\n晓伊::Xiaoyi\n云扬::Yunyang\n晓辰::Xiaochen\n晓涵::Xiaohan\n晓梦::Xiaomeng\n晓墨::Xiaomo\n晓秋::Xiaoqiu\n晓睿::Xiaorui\n晓双::Xiaoshuang\n晓晓 方言::Xiaoxiao Dialects\n晓晓 多语言::Xiaoxiao Multilingual\n晓颜::Xiaoyan\n晓悠::Xiaoyou\n晓甄::Xiaozhen\n云枫::Yunfeng\n云皓::Yunhao\n云夏::Yunxia\n云野::Yunye\n云泽::Yunze\n晓萱::Xiaoxuan\n曉臻::HsiaoChen\n雲哲::YunJhe\n曉雨::HsiaoYu"
+                }
+            }
+        },
+        "shudanList": {},
+        "sourceType": "text",
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "weight": "9999",
+        "sourceName": "语音设置-azure",
+        "sourceUrl": "http://captive.apple.com",
+        "miniAppVersion": "2.53.2",
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1695541859.065246",
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "searchBook": {
+            "actionID": "searchBook",
+            "parserID": "DOM"
+        },
+        "chapterList": {
+            "actionID": "chapterList",
+            "parserID": "DOM"
+        }
+    }
+}

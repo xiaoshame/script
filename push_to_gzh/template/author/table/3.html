@@ -1,0 +1,34 @@
+<table>
+    <tbody>
+        {#- 动态计算列宽，适应3列布局 -#}
+        {%- set width= (577 - 20 * 3) / 3 -%}
+        <tr>
+            {#- 生成表头 -#}
+            {%- for header in header_list -%}
+            <td width="{{ width }}" valign="top" style="word-break: break-all;" align="{{ header.align }}">
+                <span style="font-size: 15px;"><strong>{{ header.text }}<br></strong></span>
+            </td>
+            {%- endfor -%}
+        </tr>
+        
+        {#- 遍历详情列表，按照行数分割单元格 -#}
+        {%- for detail in detail_list -%}
+            {#- 每3项换一行 -#}
+            {%- if loop.index % 3 == 1 -%}
+            <tr>
+            {%- endif -%}
+            
+            <td width="{{ width }}" valign="top" style="word-break: break-all;" align="{{ detail.align }}">
+                {#- 根据条件设置不同样式 -#}
+                <span style="{% if loop.index % 3 == 1 %}color: rgb(255, 64, 129);{% else %}font-size: 14px;{% endif %}">
+                    <strong><span style="font-size: 14px;">{{ detail.text }}</span></strong>
+                </span>
+            </td>
+            
+            {#- 当达到每行最后一列或是列表末尾时，关闭<tr>标签 -#}
+            {%- if loop.index % 3 == 0 or loop.last -%}
+            </tr>
+            {%- endif -%}
+        {%- endfor -%}
+    </tbody>
+</table>

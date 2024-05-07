@@ -1,0 +1,305 @@
+# -*- coding: utf-8 -*-
+# !/usr/bin/env python
+"""
+-------------------------------------------------
+   File     : styles_renderer.py
+   Author   : CoderPig
+   date     : 2020-12-16 10:28 
+   Desc     : 样式渲染
+-------------------------------------------------
+"""
+import configparser
+import html
+import os
+import re
+import sync
+import markdown
+
+from markdown.extensions import codehilite
+import mistune
+from jinja2 import Environment, FileSystemLoader
+from lxml import etree
+
+from highlight.renderer_code import renderer_by_node
+
+
+# 表格单元格
+class Cell:
+    def __init__(self, text, align):
+        self.text = text
+        self.align = align
+
+
+class StyleRenderer(mistune.Renderer):
+    def __init__(self, style_file, template_dir):
+        super().__init__()
+        self.config = configparser.ConfigParser()
+        self.config.read(style_file, encoding='utf-8')
+        self.random_color_list = ['213, 15, 37', '51, 105, 232', '238, 178, 17', '15, 157, 88']
+        self.current_color_index = -1  # 当前颜色下标
+        self.items = self.config.items('style')
+        # 创建一个包加载器对象(也可以使用PackageLoader包加载器的方式加载)
+        self.env = Environment(loader=FileSystemLoader(template_dir))
+        # 模板加载
+        for item in self.items:
+            key = item[0]
+            value = item[1]
+            if key == 'h1':
+                self.h1_template = self.env.get_template('/h1/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'h2':
+                self.h2_template = self.env.get_template('/h2/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'h3':
+                self.h3_template = self.env.get_template('/h3/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'h4':
+                self.h4_template = self.env.get_template('/h4/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'h5':
+                self.h5_template = self.env.get_template('/h5/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'image':
+                self.image_template = self.env.get_template('/image/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'li':
+                self.li_template = self.env.get_template('/li/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'link':
+                self.link_template = self.env.get_template('/link/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'mac_window':
+                self.mac_window_template = self.env.get_template(
+                    '/mac_window/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'p':
+                self.p_template = self.env.get_template('/p/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'strong':
+                self.strong_template = self.env.get_template(
+                    '/strong/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'table':
+                self.table_template = self.env.get_template('/table/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'ul':
+                self.ul_template = self.env.get_template('/ul/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'blockquote':
+                self.blockquote_template = self.env.get_template(
+                    '/blockquote/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'codespan':
+                self.codespan_template = self.env.get_template(
+                    '/codespan/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'codestyle':
+                self.codestyle = value if value != 'None' else 'xcode'
+            elif key == 'header':
+                self.header_template = self.env.get_template(
+                    '/header/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'footer':
+                self.footer_template = self.env.get_template(
+                    '/footer/{}.html'.format(value)) if value != 'None' else None
+            elif key == 'background':
+                self.background_template = self.env.get_template(
+                    '/background/{}.html'.format(value)) if value != 'None' else None
+
+    # 分级标题
+    def header(self, inlink,level,text):
+        if level == 1:
+            if self.h1_template is not None:
+                return self.h1_template.render(text=text)
+            else:
+                return "<h{}>{}</h{}><br>".format(level, text, level)
+        elif level == 2:
+            if self.h2_template is not None:
+                if self.current_color_index != -1:
+                    self.current_color_index = (self.current_color_index + 1) % len(self.random_color_list)
+                else:
+                    self.current_color_index = 0
+                return self.h2_template.render(text=text, color=self.random_color_list[self.current_color_index])
+            else:
+                return "<h{}>{}</h{}><br>".format(level, text, level)
+        elif level == 3:
+            if self.h3_template is not None:
+                return self.h3_template.render(text=text, color=self.random_color_list[self.current_color_index])
+            else:
+                return "<h{}>{}</h{}><br>".format(level, text, level)
+        elif level == 4:
+            if self.h4_template is not None:
+                return self.h4_template.render(text=text, color=self.random_color_list[self.current_color_index])
+            else:
+                return "<h{}>{}</h{}><br>".format(level, text, level)
+        elif level == 5:
+            if self.h5_template is not None:
+                return self.h5_template.render(text=text, color=self.random_color_list[self.current_color_index])
+            else:
+                return "<h{}>{}</h{}><br>".format(level, text, level)    
+        else:
+            return "<h{}>{}</h{}><br>".format(level, text, level)
+
+    # 图片
+    def image(self, text, url, title=None):
+        src = self._safe_url(text)
+        alt = escape(striptags(text))
+        if self.image_template is not None:
+            return self.image_template.render(src=src)
+        else:
+            return '<img src="{}" alt="{}" {}/>'.format(
+                src, alt, 'title="' + escape_html(title) + '"' if title else None)
+
+    # 粗体
+    def double_emphasis(self, text):
+        if self.strong_template is not None:
+            return self.strong_template.render(text=text)
+        else:
+            return '<strong>{}</strong>'.format(text)
+
+    # 行内代码
+    def codespan(self, text):
+        if self.codespan_template is not None:
+            return self.codespan_template.render(text=text)
+        else:
+            return '<code>{}</code>'.format(escape(text))
+
+    # 列表
+    def list(self, text,ordered, start=None):
+        if self.ul_template is not None:
+            return self.ul_template.render(text=text)
+        else:
+            if ordered:
+                return '<ol{}>\n{}</ol>\n'.format(' start=' + str(start) + '' if start is not None else '', text)
+            return '<ul>\n{}</ul>\n'.format(text)
+
+    # 列表项
+    def list_item(self, text):
+        if self.li_template is not None:
+            return self.li_template.render(text=text)
+        else:
+            return '<li>{}</li>\n'.format(text)
+
+    # 链接
+    def link(self, link=None, title=None,text=None):
+        if self.link_template is not None:
+            return self.link_template.render(link=link, text=text)
+        else:
+            if text is None:
+                text = link
+            s = '<a href="{}"'.format(self._safe_url(link))
+            if title:
+                s += ' title="{}"'.format(escape_html(title))
+            return s + '>{}</a>'.format((text or link))
+
+    # 段落
+    def paragraph(self, text):
+        if self.p_template is not None:
+            return self.p_template.render(text=text)
+        else:
+            return '<p>{}</p>\n'.format(text)
+
+    # 代码块
+    def block_code(self, code, info=None):
+        if self.mac_window_template is not None:
+            highlight_result = renderer_by_node(code, self.codestyle, info)
+            return self.mac_window_template.render(text=highlight_result)
+        else:
+            exts = ['markdown.extensions.extra', 
+            'markdown.extensions.tables',
+            'markdown.extensions.toc', 
+            'markdown.extensions.sane_lists',
+            codehilite.makeExtension(
+                guess_lang=False,
+                noclasses=True,
+                pygments_style='friendly'
+            ),]
+            if info is not None:
+                info = info.strip()
+            lang = ''
+            if info:
+                lang = info.split(None, 1)[0]
+            code = "```"+ lang + '\n' + code + "\n```\n"
+            html = markdown.markdown(code, extensions=exts)
+            return replace_return(html)
+
+    # 表格
+    def table(self, header, text):
+        if self.table_template is not None:
+            table_selector_ths = etree.HTML(header)
+            table_selector = etree.HTML(text)
+            ths = table_selector_ths.xpath('//tr/th')
+            tds = table_selector.xpath('//tr/td')
+            th_cell_list = []
+            for index, value in enumerate(ths):
+                style = value.attrib.get('style')
+                if style is not None:
+                    style = style[11:]
+                text = value.text
+                th_cell_list.append(Cell(text, style))
+            td_cell_list = []
+            for index, value in enumerate(tds):
+                style = value.attrib.get('style')
+                if style is not None:
+                    style = style[11:]
+                text = value.text
+                td_cell_list.append(Cell(text, style))
+            return self.table_template.render(row_count=len(ths), header_list=th_cell_list, detail_list=td_cell_list)
+        else:
+            return text
+
+    # 头部
+    def toper(self):
+        if self.header_template is not None:
+            return self.header_template.render()
+        else:
+            return ''
+
+    # 尾部
+    def footer(self):
+        if self.footer_template is not None:
+            return self.footer_template.render()
+        else:
+            return ''
+
+    def _safe_url(self, url):
+        # 自定义 URL 安全性处理逻辑
+        # 在这里进行 URL 转义或其他安全性处理
+        safe_url = url.replace('<', '%3C').replace('>', '%3E')
+        return safe_url
+    
+    # 背景
+    def background(self, text):
+        if self.background_template is not None:
+            return self.background_template.render(text=text)
+        else:
+            return text
+
+    # 下划线
+    def thematic_break(self):
+        return ''
+
+def replace_return(s):
+    s = s.replace("\n", "<br  \>")
+    return s
+
+def escape(s, quote=True):
+    s = s.replace("&", "&amp;")
+    s = s.replace("<", "&lt;")
+    s = s.replace(">", "&gt;")
+    if quote:
+        s = s.replace('"', "&quot;")
+    return s
+
+
+def escape_html(s):
+    if html is not None:
+        return html.escape(html.unescape(s)).replace('&#x27;', "'")
+    return escape(s)
+
+_striptags_re = re.compile(r'(<!--.*?-->|<[^>]*>)')
+
+def striptags(s: str):
+    return _striptags_re.sub('', s)
+
+def render_article(content, style_ini_path, template_dir):
+    """
+    渲染文章
+
+    :param template_dir:
+    :param content: Markdown内容
+    :param style_ini_path:  配置文件路径
+    :param template_dir: 模板文件路径
+    :return: 渲染后带样式的HTML内容
+    """
+    render = StyleRenderer(os.path.join(os.path.split(os.path.realpath(__file__))[0], style_ini_path), template_dir)
+    ### 去掉---内容
+    content = "".join(content.split("---\n")[2:])
+    content_result = mistune.markdown(text=content,renderer=render)
+    content_result = sync.css_beautify(content_result)
+    return content_result
+    return render.background(text='{}{}{}'.format(render.header(), content_result, render.footer()))

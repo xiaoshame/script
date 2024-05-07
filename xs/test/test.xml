@@ -1,0 +1,6 @@
+<speak version='1.0' xml:lang='en-US'>
+    <voice xml:lang='zh-CN' xml:gender='Male'
+        name='zh-CN-YunjianNeural'>
+        I'm excited to try text to speech!
+    </voice>
+</speak>

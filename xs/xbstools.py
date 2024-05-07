@@ -79,5 +79,5 @@ def json_to_xbs(input,output):
         f.write(decode_data)
 
 if __name__ == '__main__':
-    xbs_to_json('D:\\workspace\\script\\xs\\test\\azure_tts.xbs' , 'D:\\workspace\\script\\xs\\test\\azure_tts1.json')
+    # xbs_to_json('D:\\workspace\\script\\xs\\test\\azure_tts.xbs' , 'D:\\workspace\\script\\xs\\test\\azure_tts1.json')
     json_to_xbs('D:\\workspace\\script\\xs\\test\\azure_tts1.json' , 'D:\\workspace\\script\\xs\\test\\azure_tts1.xbs')

@@ -1,5 +1,5 @@
 {
-    "语音设置-ali": {
+    "语音设置-edge": {
         "chapterContent": {
             "actionID": "chapterContent",
             "parserID": "DOM"
@@ -15,10 +15,10 @@
             "parserID": "DOM"
         },
         "bookWorld": {
-            "ali": {
+            "edge": {
                 "actionID": "bookWorld",
                 "validConfig": "",
-                "requestInfo": "@js:\n\nlet url=\"https://tts.xiaoshame1.pp.ua/ali_tts/\";\nlet body={\n    voice_id:params.filters.type,\n};\nlet _conf={\n      key:'text',\n      body:body,\n      headers:{},\n      post:false,\n      url:url\n };\n\nparams.nativeTool.setCache(\"xsreader_voice_conf\",JSON.stringify(_conf));\nreturn config.host",
+                "requestInfo": "@js:\n\nlet url=\"https://tts.xiaoshame1.pp.ua/edge_tts/\";\nlet body={\n    voice_id:params.filters.type,\n rate:20,\n};\nlet _conf={\n      key:'text',\n      body:body,\n      headers:{},\n      post:false,\n      url:url\n };\n\nparams.nativeTool.setCache(\"xsreader_voice_conf\",JSON.stringify(_conf));\nreturn config.host",
                 "bookName": "@js:\nlet regt=`\\n\\s*(.*?)::${params.filters.type}\\n`\nlet reg=new RegExp(regt)\nlet name=config.moreKeys.requestFilters.match(reg)[1]\nreturn \"当前语音：\"+name",
                 "detailUrl": "@js:\nreturn config.host",
                 "host": "http://captive.apple.com",
@@ -28,7 +28,7 @@
                 "parserID": "DOM",
                 "moreKeys": {
                     "pageSize": 30,
-                    "requestFilters": "type\n知锋_多情感::zhifeng_emo\n知冰_多情感::zhibing_emo\n知妙_多情感::zhimiao_emo\n知米_多情感::zhimi_emo\n知燕_多情感::zhiyan_emo\n知贝_多情感::zhibei_emo\n知甜_多情感::zhitian_emo\n阿斌::abin\n知小白::zhixiaobai\n知小夏::zhixiaoxia\n知小妹::zhixiaomei\n知柜::zhigui\n知硕::zhishuo\n艾夏::aixia\nCally::cally\n小云::xiaoyun\n小刚::xiaogang\n若兮::ruoxi\n思琪::siqi\n思佳::sijia\n思诚::sicheng\n艾琪::aiqi\n艾佳::aijia\n艾诚::aicheng\n艾达::aida\n宁儿::ninger\n瑞琳::ruilin\n思悦::siyue\n艾雅::aiya\n艾美::aimei\n艾雨::aiyu\n艾悦::aiyue\n艾婧::aijing\n小美::xiaomei\n艾娜::aina\n伊娜::yina\n思婧::sijing\n思彤::sitong\n小北::xiaobei\n艾彤::aitong\n艾薇::aiwei\n艾宝::aibao\nHarry::harry\nAbby::abby\nAndy::andy\nEric::eric\nEmily::emily\nLuna::luna\nLuca::luca\nWendy::wendy\nWilliam::william\nOlivia::olivia\n姗姗::shanshan\n小玥::chuangirl\nLydia::lydia\n艾硕::aishuo\n青青::qingqing\n翠姐::cuijie\n小泽::xiaoze\n智香::tomoka\n智也::tomoya\nAnnie::annie\n佳佳::jiajia\nIndah::indah\n桃子::taozi\n柜姐::guijie\nStella::stella\nStanley::stanley\nKenny::kenny\nRosa::rosa\nFarah::farah\n马树::mashu\n小仙::xiaoxian\n悦儿::yuer\n猫小美::maoxiaomei\n艾飞::aifei\n亚群::yaqun\n巧薇::qiaowei\n大虎::dahu\nava::ava\n艾伦::ailun\n杰力豆::jielidou\n老铁::laotie\n老妹::laomei\n艾侃::aikan\nTala::tala\nTien::tien\nBecca::becca\nKyong::Kyong\nmasha::masha\ncamila::camila\nperla::perla\n知猫::zhimao\n知媛::zhiyuan\n知雅::zhiya\n知悦::zhiyue\n知达::zhida\n知莎::zhistella\nKelly::kelly\nclara::clara\nhanna::hanna\nwaan::waan\nbetty::betty\nbeth::beth\ncindy::cindy\ndonna::donna\neva::eva\nbrian::brian"
+                    "requestFilters": "type\n云健::yunjian\n云希::yunxi\n晓晓::xiaoxiao\n晓伊::xiaoyi\n云夏::yunxia\n云扬::yunyang\n晓北::xiaobei\n晓妮::xiaoni"
                 }
             }
         },
@@ -39,7 +39,7 @@
             "parserID": "DOM"
         },
         "weight": "9999",
-        "sourceName": "语音设置-ali",
+        "sourceName": "语音设置-edge",
         "sourceUrl": "http://captive.apple.com",
         "miniAppVersion": "2.53.2",
         "shudanDetail": {

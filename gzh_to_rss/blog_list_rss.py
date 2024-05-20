@@ -109,6 +109,16 @@ def get_blog_list(url,start_time,end_time):
     executor.shutdown()
     #将最终结果写入文件
     with lock:
+        for item in channel.findall('item'):
+            node = item.find('pubDate')
+            if node is not None and node.text != "":
+                # 将日期时间字符串转换为时间对象
+                if node.text.endswith("GMT"):
+                    pubDate = datetime.strptime(node.text, "%a, %d %b %Y %H:%M:%S %Z").replace(tzinfo=None)
+                else:
+                    pubDate = datetime.strptime(node.text, "%a, %d %b %Y %H:%M:%S %z").replace(tzinfo=None)
+                if pubDate < end_time - timedelta(days=3):
+                    channel.remove(item)
         rss.write(r'D:\workspace\script\gzh_to_rss\rss.xml', encoding='UTF-8', xml_declaration=True)
     print("write rss done")
 
@@ -122,4 +132,4 @@ if __name__ == "__main__":
     start_time = end_time - timedelta(days=1)
     ## 获取最近一周内发表的文章
     get_blog_list("https://wechat2rss.xlab.app/list/all.html",start_time,end_time)
-    up_data_filebrowser()
+    # up_data_filebrowser()

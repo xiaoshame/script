@@ -1,9 +1,9 @@
 from fastapi import FastAPI,Query
 from fastapi.responses import FileResponse,StreamingResponse
 from pydantic import BaseModel
-from azure_speech_synthesis import AzureTTs
-from ali_speech_synthesis import AliTTs
-from edge_speech_synthesis import EdgeTTS
+from script.xs.tts.azure_speech_synthesis import AzureTTs
+from script.xs.tts.ali_speech_synthesis import AliTTs
+from script.xs.tts.edge_speech_synthesis import EdgeTTS
 import os
 import io
 import uvicorn

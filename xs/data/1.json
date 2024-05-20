@@ -1,0 +1,68 @@
+{
+    "4K影视": {
+      "enable": 1,
+      "shupingList": {
+        "actionID": "shupingList",
+        "parserID": "DOM"
+      },
+      "authorId": "",
+      "bookDetail": {
+        "actionID": "bookDetail",
+        "parserID": "DOM"
+      },
+      "shudanList": {},
+      "bookWorld": {},
+      "sourceType": "video",
+      "relatedWord": {
+        "actionID": "relatedWord",
+        "parserID": "DOM"
+      },
+      "weight": "9999",
+      "sourceName": "4K影视",
+      "sourceUrl": "https://www.4kvm.net",
+      "miniAppVersion": "2.53.2",
+      "shudanDetail": {
+        "actionID": "shudanDetail",
+        "parserID": "DOM"
+      },
+      "desc": "🦞",
+      "lastModifyTime": "1715859803.053870",
+      "shupingHome": {
+        "actionID": "shupingHome",
+        "parserID": "DOM"
+      },
+      "searchShudan": {
+        "actionID": "searchShudan",
+        "parserID": "DOM"
+      },
+      "searchBook": {
+        "validConfig": "",
+        "actionID": "searchBook",
+        "desc": "//div[@class=\"contenido\"]/p/text()",
+        "requestInfo": "@js:\nlet url = '/xssearch';\nreturn {'url':url, 'httpParams':{'s':params.keyWord}, 'forbidCookie':true};",
+        "detailUrl": "//div[@class=\"title\"]/a/@href",
+        "bookName": "//div[@class=\"title\"]/a/text()",
+        "host": "https://www.4kvm.net",
+        "list": "//div[@class=\"search-page\"]/div[@class=\"result-item\"]",
+        "responseFormatType": "html",
+        "parserID": "DOM",
+        "cover": "//div[@class=\"image\"]//a/img/@src"
+      },
+      "chapterList": {
+        "validConfig": "",
+        "responseFormatType": "html",
+        "parserID": "DOM",
+        "host": "https://www.4kvm.net",
+        "url": "//meta[@id=\"dooplay-ajax-counter\"]/@data-postid || @js: return config.host + \"/wp-json/dooplayer/v1/post/\" + result + \"?type=movie&source=1\";",
+        "actionID": "chapterList"
+      },
+      "chapterContent": {
+        "validConfig": "",
+        "content": "@js:\nlet urls=params.requestUrls\nlet url=\"获取\";\nfor(let i=urls.length-1;i>=0;i--){\n   if(/m3u8|mp4/.test(urls[i])){\n      url= urls[i]\n      break;\n   }\n}\nreturn url",
+        "host": "https://www.mandao.tv",
+        "parserID": "DOM",
+        "requestInfo": "@js:\nreturn {'url':result,'httpHeaders':config.httpHeaders, 'webView':true,cacheTime:0};",
+        "actionID": "chapterContent"
+      }
+    }
+}

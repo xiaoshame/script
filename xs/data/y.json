@@ -1,0 +1,143 @@
+{
+    "y-零点看书": {
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "authorId": "",
+        "weight": "9999",
+        "miniAppVersion": "2.53.2",
+        "chapterList": {
+            "actionID": "chapterList",
+            "validConfig": "",
+            "updateTime": "//*[@*=\"og:novel:update_time\"]/@content",
+            "title": "//a",
+            "host": "http://www.4006009900.com",
+            "httpHeaders": {
+                "Referer": "http://www.4006009900.com",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63"
+            },
+            "list": "//h2[contains(., \"正文\")]/following-sibling::div//li",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "url": "//a/@href"
+        },
+        "loginUrl": "http://www.4006009900.com",
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "enable": 1,
+        "sourceName": "y-零点看书",
+        "sourceType": "text",
+        "sourceUrl": "http://www.4006009900.com",
+        "httpHeaders": {
+            "Referer": "http://www.4006009900.com",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63"
+        },
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1686906165.079289",
+        "searchBook": {
+            "author": "//span[4]/a",
+            "actionID": "searchBook",
+            "validConfig": "",
+            "requestInfo": "@js:\r\n\r\nlet url=config.host + \"/ar.php\"\r\nlet hp= {\r\n    \"keyWord\":params.keyWord,\r\n}\r\n\r\nreturn {\r\n    \"url\": url,\r\n    //\"POST\": true,\r\n    \"httpParams\": hp,\r\n    \"httpHeaders\": config.httpHeaders,\r\n    \"forbidCookie\": true,\r\n    \"cacheTime\": 600,\r\n}",
+            "bookName": "//span[2]/a",
+            "detailUrl": "//span[2]/a/@href",
+            "host": "http://www.4006009900.com",
+            "httpHeaders": {
+                "Referer": "http://www.4006009900.com",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63"
+            },
+            "list": "//div[@class=\"row\"]//li[position()>1]",
+            "responseFormatType": "html",
+            "parserID": "DOM"
+        },
+        "chapterContent": {
+            "actionID": "chapterContent",
+            "content": "//div[@class=\"content\"]\n||@js:\r\nreturn ad(result)\r\nfunction ad(str) {\r\n    let ad_reg = /章节错误.*并刷新页面。|本章完/g\r\n    return str.replace(ad_reg, \"\")\r\n}",
+            "validConfig": "",
+            "moreKeys": {
+                "maxPage": 5
+            },
+            "host": "http://www.4006009900.com",
+            "httpHeaders": {
+                "Referer": "http://www.4006009900.com",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63"
+            },
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "nextPageUrl": "//a[contains(text(), \"下一页\")]/@href"
+        },
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "desc": "by manshe",
+        "password": "369369",
+        "shudanList": {},
+        "bookDetail": {
+            "actionID": "bookDetail",
+            "validConfig": "",
+            "status": "//*[@*=\"og:novel:status\"]/@content",
+            "parserID": "DOM",
+            "lastChapterTitle": "//*[@*=\"og:novel:lastest_chapter_name\"]/@content",
+            "host": "http://www.4006009900.com",
+            "cat": "//*[@*=\"og:novel:category\"]/@content",
+            "cover": "//*[@*=\"og:image\"]/@content",
+            "httpHeaders": {
+                "Referer": "http://www.4006009900.com",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63"
+            },
+            "desc": "//*[@*=\"og:description\"]/@content\n||@js:\r\nreturn result.replace(/[\\r\\n]/g, \" \")",
+            "responseFormatType": "html"
+        },
+        "bookWorld": {
+            "分类": {
+                "author": "//span[4]",
+                "responseFormatType": "html",
+                "bookName": "//span[2]/a",
+                "httpHeaders": {
+                    "Referer": "http://www.4006009900.com",
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63"
+                },
+                "requestInfo": "@js:\nlet {_type}=params.filters\nlet url=`http://www.4006009900.com/sort/${_type}/${params.pageIndex}.html`;\nreturn {\n    \"url\": url,\n    \"httpHeaders\": config.httpHeaders,\n    \"forbidCookie\": true,\n    \"cacheTime\": 600,\n}",
+                "host": "http://www.4006009900.com",
+                "actionID": "bookWorld",
+                "detailUrl": "//span[2]/a/@href",
+                "moreKeys": {
+                    "pageSize": 30,
+                    "requestFilters": "_type\n玄幻奇幻::1\n武侠仙侠::2\n都市言情::3\n历史军事::4\n科幻灵异::5\n网游竞技::6\n女生频道::7"
+                },
+                "validConfig": "",
+                "list": "//div[@class=\"row\"]//li",
+                "_sIndex": 0,
+                "parserID": "DOM"
+            },
+            "排行": {
+                "author": "//span[4]",
+                "responseFormatType": "html",
+                "bookName": "//span[2]/a",
+                "httpHeaders": {
+                    "Referer": "http://www.4006009900.com",
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63"
+                },
+                "requestInfo": "http://www.4006009900.com/ph/",
+                "host": "http://www.4006009900.com",
+                "actionID": "bookWorld",
+                "detailUrl": "//span[2]/a/@href",
+                "validConfig": "",
+                "list": "//div[@class=\"tab-bd\"]//li",
+                "_sIndex": 1,
+                "parserID": "DOM"
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "漫岛TV-视频来源不稳定": {
+        "bookWorld": {
+            "分类": {
+                "responseFormatType": "html",
+                "lastChapterTitle": "//p[@class=\"bz\"]",
+                "bookName": "//@alt",
+                "requestInfo": "@js:\r\nlet {_aa,_ab,_ac,_ad,_ae,_af}=params.filters\nlet url=`https://www.mandao.tv/search.php?page=${params.pageIndex}&searchtype=5&order=${_ae}&tid=${_af}&area=${_ac}&year=${_ab}&letter=&yuyan=&state=&money=&ver=${_ad}&jq=${_aa}`;\r\n\r\nreturn {url:url,'httpHeaders':config.httpHeaders}",
+                "host": "https://www.mandao.tv",
+                "actionID": "bookWorld",
+                "moreKeys": {
+                    "pageSize": 30,
+                    "requestFilters": "_af\n分类::0\n日本动漫::1\n国产动漫::2\n欧美动漫::3\n剧场电影::4\n次元影视::5\n\n_aa\n剧情::\n热血::%E7%83%AD%E8%A1%80\n科幻::%E7%A7%91%E5%B9%BB\n悬疑::%E6%82%AC%E7%96%91\n战斗::%E6%88%98%E6%96%97\n恋爱::%E6%81%8B%E7%88%B1\n冒险::%E5%86%92%E9%99%A9\n少女::%E5%B0%91%E5%A5%B3\n后宫::%E5%90%8E%E5%AE%AB\n校园::%E6%A0%A1%E5%9B%AD\n搞笑::%E6%90%9E%E7%AC%91\n奇幻::%E5%A5%87%E5%B9%\n治愈::%E6%B2%BB%E6%84%88\n神魔::%E7%A5%9E%E9%AD%94\n竞技::%E7%AB%9E%E6%8A%80\n运动::%E8%BF%90%E5%8A%A8\n机战::%E6%9C%BA%E6%88%98\n萝莉::%E8%90%9D%E8%8E%89\n励志::%E5%8A%B1%E5%BF%97\n百合::%E7%99%BE%E5%90%88\n耽美::%E8%80%BD%E7%BE%8E\n剧情::%E5%89%A7%E6%83%85\n\n_ab\n年份::\n2022::2022\n2021::2021\n2020::2020\n2019::2019\n2018::2018\n2017::2017\n2016::2016\n2015::2015\n2014::2014\n2013::2013\n2012::2012\n2011::2011\n2010::2010\n2009::2009\n2008::2008\n2007::2007\n2006::2006\n2005::2005\n2004::2004\n\n_ad\n版本::\nTV版::TV%E7%89%88\nOVA版::OVA%E7%89%88\n真人版::%E7%9C%9F%E4%BA%BA%E7%89%88\n其它::%E5%85%B6%E5%AE%83\n\n_ac\n地区::\n日本::%E6%97%A5%E6%9C%AC\n大陆::%E5%A4%A7%E9%99%86\n欧美::%E6%AC%A7%E7%BE%8E\n其他::%E5%85%B6%E4%BB%96\n\n_ae\n最新::time\n人气::hit"
+                },
+                "cover": "//@data-original",
+                "validConfig": "",
+                "detailUrl": "//a[@class=\"li-hv\"]/@href",
+                "_sIndex": 0,
+                "parserID": "DOM",
+                "list": "//ul/li"
+            }
+        },
+        "weight": "9999",
+        "miniAppVersion": "2.53.2",
+        "chapterList": {
+            "validConfig": "",
+            "actionID": "chapterList",
+            "title": "//@title",
+            "host": "https://www.mandao.tv",
+            "list": "//div[@id=\"stab_1_71\"]/ul/li",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "url": "//a/@href"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "enable": 1,
+        "sourceName": "漫岛TV-视频来源不稳定",
+        "sourceType": "video",
+        "sourceUrl": "https://www.mandao.tv",
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1666868711.084747",
+        "searchBook": {
+            "validConfig": "",
+            "actionID": "searchBook",
+            "requestInfo": "@js:\nlet url = '/search.php';\nreturn {'url':url, 'httpParams':{'searchword':params.keyWord}, 'forbidCookie':true};",
+            "detailUrl": "//a[@class=\"li-hv\"]/@href",
+            "bookName": "//@title",
+            "host": "https://www.mandao.tv",
+            "lastChapterTitle": "//p[@class=\"bz\"]",
+            "cover": "//@data-original",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "list": "//ul/li"
+        },
+        "chapterContent": {
+            "validConfig": "",
+            "content": "@js:\nlet urls=params.requestUrls\nlet url=\"获取\";\nfor(let i=urls.length-1;i>=0;i--){\n   if(/m3u8|mp4/.test(urls[i])){\n      url= urls[i]\n      break;\n   }\n}\nreturn url",
+            "host": "https://www.mandao.tv",
+            "parserID": "DOM",
+            "requestInfo": "@js:\nreturn {'url':result,'httpHeaders':config.httpHeaders, 'webView':true,cacheTime:0};",
+            "actionID": "chapterContent"
+        },
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "desc": "🦞",
+        "shudanList": {},
+        "authorId": "",
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "bookDetail": {
+            "validConfig": "",
+            "actionID": "bookDetail",
+            "status": "//dd",
+            "host": "https://www.mandao.tv",
+            "cat": "//dd[2]",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "desc": "//meta[@name=\"description\"]/@content"
+        }
+    }
+}

@@ -1,0 +1,140 @@
+{
+    "4k屋": {
+        "bookWorld": {
+            "动漫": {
+                "responseFormatType": "html",
+                "bookName": "//a[2]",
+                "requestInfo": "http://www.4kwudy.com/search.php?page=%@pageIndex&searchtype=5&tid=4",
+                "host": "http://www.4kwudy.com",
+                "actionID": "bookWorld",
+                "moreKeys": {
+                    "pageSize": 48
+                },
+                "detailUrl": "//a[1]/@href",
+                "validConfig": "",
+                "cover": "//@data-original",
+                "_sIndex": 3,
+                "list": "//ul[@class=\"fed-list-info fed-part-rows\"]/li",
+                "parserID": "DOM"
+            },
+            "综艺": {
+                "responseFormatType": "html",
+                "bookName": "//a[2]",
+                "requestInfo": "http://www.4kwudy.com/search.php?page=%@pageIndex&searchtype=5&tid=3",
+                "host": "http://www.4kwudy.com",
+                "actionID": "bookWorld",
+                "moreKeys": {
+                    "pageSize": 48
+                },
+                "detailUrl": "//a[1]/@href",
+                "validConfig": "",
+                "cover": "//@data-original",
+                "_sIndex": 2,
+                "list": "//ul[@class=\"fed-list-info fed-part-rows\"]/li",
+                "parserID": "DOM"
+            },
+            "电视剧": {
+                "responseFormatType": "html",
+                "bookName": "//a[2]",
+                "requestInfo": "http://www.4kwudy.com/search.php?page=%@pageIndex&searchtype=5&tid=2",
+                "host": "http://www.4kwudy.com",
+                "actionID": "bookWorld",
+                "moreKeys": {
+                    "pageSize": 48
+                },
+                "detailUrl": "//a[1]/@href",
+                "validConfig": "",
+                "cover": "//@data-original",
+                "_sIndex": 1,
+                "list": "//ul[@class=\"fed-list-info fed-part-rows\"]/li",
+                "parserID": "DOM"
+            },
+            "电影": {
+                "responseFormatType": "html",
+                "bookName": "//a[2]",
+                "requestInfo": "http://www.4kwudy.com/search.php?page=%@pageIndex&searchtype=5&tid=1",
+                "host": "http://www.4kwudy.com",
+                "actionID": "bookWorld",
+                "moreKeys": {
+                    "pageSize": 48
+                },
+                "detailUrl": "//a[1]/@href",
+                "validConfig": "",
+                "cover": "//@data-original",
+                "_sIndex": 0,
+                "list": "//ul[@class=\"fed-list-info fed-part-rows\"]/li",
+                "parserID": "DOM"
+            }
+        },
+        "weight": "9999",
+        "miniAppVersion": "2.53.2",
+        "chapterList": {
+            "validConfig": "",
+            "actionID": "chapterList",
+            "title": "//a",
+            "host": "http://www.4kwudy.com",
+            "list": "//ul[@class=\"stui-content__playlist  sort-list column8 clearfix\"]/li",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "url": "//a/@href"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "enable": 1,
+        "sourceName": "4k屋",
+        "sourceType": "video",
+        "sourceUrl": "http://www.4kwudy.com",
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1654246106.587470",
+        "searchBook": {
+            "validConfig": "",
+            "actionID": "searchBook",
+            "requestInfo": "@js:\n\nlet url=config.host+\"/search.php\";\n\nlet hh= {\n  \"User-Agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/13.0 Safari/604.1\"\n};\n\nlet hp= {'searchword':params.keyWord,'page':params.pageIndex,};\n\nreturn {'url':url, 'POST':false, 'httpParams':hp\n,\"httpHeaders\": config.httpHeaders,\nforbidCookie:true,cacheTime:3600};",
+            "detailUrl": "//a[1]/@href",
+            "bookName": "//a[2]",
+            "host": "http://www.4kwudy.com",
+            "list": "//ul[@class=\"fed-list-info fed-part-rows\"]/li",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "cover": "//@data-original"
+        },
+        "chapterContent": {
+            "validConfig": "",
+            "content": "|",
+            "host": "http://www.4kwudy.com",
+            "parserID": "DOM",
+            "requestInfo": "@js:\nlet pat=\".*\\\\.(m3u8).*\"\nreturn {'url':result,'httpHeaders':config.httpHeaders, 'webView':true,'sourceRegex':pat};",
+            "actionID": "chapterContent"
+        },
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "desc": "🦞",
+        "shudanList": {},
+        "authorId": "",
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "bookDetail": {
+            "validConfig": "",
+            "actionID": "bookDetail",
+            "status": "//meta[@property=\"og:video:update_date\"]/@content",
+            "host": "http://www.4kwudy.com",
+            "cat": "//meta[@property=\"og:video:class\"]/@content",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "desc": "//meta[@name=\"description\"]/@content"
+        }
+    }
+}

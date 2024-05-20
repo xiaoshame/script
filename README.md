@@ -64,6 +64,6 @@
 
 ### xs
 
-1. xbstools.py xbs json互转
-2. voice_list.py Azure TTS音色列表
-3. tts_server.py speech_synthesis.py config.ini 封装Azure TTS服务，对外提供接口
+1. xbstools.py提供xbs与json互转能力
+2. tts封装 Azure/Ali/Edge tts服务，voice_list.py获取Azure TTS音色列表
+3. data 包含部分源和js解析案例，提高编写源的效率

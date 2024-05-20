@@ -1,0 +1,388 @@
+{
+    "书旗小说": {
+        "chapterContent": {
+            "validConfig": "",
+            "parserID": "DOM",
+            "host": "https://www.shuqi.com",
+            "JSParser": "function functionName(config, jsparams, result)\n{\n\tif(jsparams.lastResponse)\n\t{\n\t\tvar data = JSON.parse(result);\n\t\tvar cpContent = decodeCont(data.ChapterContent);\n\t\treturn {'content':cpContent, 'removeHtmlKeys':'content'};\n\t}\n\n\tvar cid = jsparams.queryInfo.url.match(/cid=(\\d+)/)[1];\n\tvar regex = new RegExp('(\\\\?bookId=[^,]+chapterId=' + cid + '[^,]+num=[^,]+)&quot;');\n\tvar params = result.match(regex);\n\tif(params)\n\t{\n\t\tparams = params[1];\n\n\t\tvar prefix = result.match(/freeContUrlPrefix[^,]+;([^,]+)&quot;/)[1];\n\t\tif(prefix && prefix.length>0 && params.length>0){\n\t\t\tvar url = prefix + params;\n\t\t\turl = String(url).replace(/amp;/g, '');\n\t\t\treturn {'nextPageUrl':url, 'autoRequestMore':true, 'success':true, 'more':true};\n\t\t}\n\t}\n\treturn '无内容，vip章节？请尝试换源！';\n}\n\nfunction decodeCont(r) {\n  return (function(r) {\n    var o,\n      t,\n      e,\n      a,\n      n,\n      C,\n      h = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=',\n      d = '',\n      f = 0;\n    for (r = r.replace(/[^A-Za-z0-9\\+\\/\\=]/g, ''); f < r.length; )\n      (o =\n        (h.indexOf(r.charAt(f++)) << 2) |\n        ((a = h.indexOf(r.charAt(f++))) >> 4)),\n        (t = ((15 & a) << 4) | ((n = h.indexOf(r.charAt(f++))) >> 2)),\n        (e = ((3 & n) << 6) | (C = h.indexOf(r.charAt(f++)))),\n        (d += String.fromCharCode(o)),\n        64 != n && (d += String.fromCharCode(t)),\n        64 != C && (d += String.fromCharCode(e));\n    return (function(r) {\n      for (var o, t = '', e = 0, a = 0, n = 0; e < r.length; )\n        (a = r.charCodeAt(e)) < 128\n          ? ((t += String.fromCharCode(a)), e++)\n          : 191 < a && a < 224\n          ? ((n = r.charCodeAt(e + 1)),\n            (t += String.fromCharCode(((31 & a) << 6) | (63 & n))),\n            (e += 2))\n          : ((n = r.charCodeAt(e + 1)),\n            (o = r.charCodeAt(e + 2)),\n            (t += String.fromCharCode(\n              ((15 & a) << 12) | ((63 & n) << 6) | (63 & o)\n            )),\n            (e += 3));\n      return t;\n    })(d);\n  })(\n    (r = r\n      .split('')\n      .map(function(r) {\n        var o, t;\n        return r.match(/[A-Za-z]/)\n          ? ((o = Math.floor(r.charCodeAt(0) / 97)),\n            (t = (r.toLowerCase().charCodeAt(0) - 83) % 26 || 26),\n            String.fromCharCode(t + (0 == o ? 64 : 96)))\n          : r;\n      })\n      .join(''))\n  );\n}",
+            "actionID": "chapterContent"
+        },
+        "enable": 1,
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "bookDetail": {
+            "actionID": "bookDetail",
+            "parserID": "DOM"
+        },
+        "authorId": "",
+        "shudanList": {},
+        "bookWorld": {
+            "排行": {
+                "cat": "//div[1]/p[1]/span[2]",
+                "author": "//div[1]/p[1]/span[1]/a",
+                "responseFormatType": "html",
+                "bookName": "//div[1]/a[1]/h3",
+                "desc": "//div[1]/p[2]",
+                "requestInfo": "https://shuqi.com/ranklist?rank=%@filter&page=%@pageIndex",
+                "host": "https://www.shuqi.com",
+                "actionID": "bookWorld",
+                "detailUrl": "//div[1]/a[1]/@href",
+                "cover": "//a[1]/img/@src",
+                "moreKeys": {
+                    "pageSize": "10",
+                    "requestFilters": [
+                        {
+                            "items": [
+                                {
+                                    "title": "新书榜",
+                                    "value": "allNew"
+                                },
+                                {
+                                    "title": "完结榜",
+                                    "value": "allEnd"
+                                },
+                                {
+                                    "title": "字数榜",
+                                    "value": "allWords"
+                                },
+                                {
+                                    "title": "点击榜",
+                                    "value": "allClick"
+                                },
+                                {
+                                    "title": "收藏榜",
+                                    "value": "allStore"
+                                },
+                                {
+                                    "title": "订阅榜",
+                                    "value": "allOrder"
+                                },
+                                {
+                                    "title": "男点击榜",
+                                    "value": "boyClick"
+                                },
+                                {
+                                    "title": "女点击榜",
+                                    "value": "girlClick"
+                                },
+                                {
+                                    "title": "男收藏榜",
+                                    "value": "boyStore"
+                                },
+                                {
+                                    "title": "女收藏榜",
+                                    "value": "girlStore"
+                                },
+                                {
+                                    "title": "男订阅榜",
+                                    "value": "boyOrder"
+                                },
+                                {
+                                    "title": "女订阅榜",
+                                    "value": "girlOrder"
+                                },
+                                {
+                                    "title": "男人气榜",
+                                    "value": "boyhot"
+                                },
+                                {
+                                    "title": "女人气榜",
+                                    "value": "girlhot"
+                                },
+                                {
+                                    "title": "男新书榜",
+                                    "value": "boyNew"
+                                },
+                                {
+                                    "title": "女新书榜",
+                                    "value": "girlNew"
+                                },
+                                {
+                                    "title": "男完结榜",
+                                    "value": "boyEnd"
+                                },
+                                {
+                                    "title": "女完结榜",
+                                    "value": "girlEnd"
+                                },
+                                {
+                                    "title": "男更新榜",
+                                    "value": "boyUpdate"
+                                },
+                                {
+                                    "title": "女更新榜",
+                                    "value": "girlUpdate"
+                                }
+                            ],
+                            "key": "rank"
+                        }
+                    ]
+                },
+                "parserID": "DOM",
+                "validConfig": "",
+                "list": "//ul[@class='ranklist-ul']/li",
+                "_sIndex": 2
+            },
+            "女频": {
+                "cat": "//p[1]/span[1]",
+                "author": "//p[1]/a[1]/span[1]",
+                "responseFormatType": "html",
+                "bookName": "//a[1]/h3[1]",
+                "desc": "//a[1]/p[1]",
+                "requestInfo": "@js:\nlet url = 'https://shuqi.com/store';\nlet hp = {'sz':'female', 'tm':'0', 'page':params.pageIndex};\n\nlet filters = params.filters;\nif(filters.fc)\n\thp.fc = filters.fc;\nif(filters.st)\n\thp.st = filters.st;\nif(filters.wd)\n\thp.wd = filters.wd;\n\nreturn {'url':url, 'httpParams':hp};",
+                "host": "https://www.shuqi.com",
+                "actionID": "bookWorld",
+                "detailUrl": "//a[@target='_blank']/@href",
+                "cover": "//a[1]/img/@src",
+                "moreKeys": {
+                    "pageSize": "16",
+                    "requestFilters": [
+                        {
+                            "items": [
+                                {
+                                    "title": "全部",
+                                    "value": "0"
+                                },
+                                {
+                                    "title": "现言",
+                                    "value": "现代言情"
+                                },
+                                {
+                                    "title": "古言",
+                                    "value": "古代言情"
+                                },
+                                {
+                                    "title": "幻言",
+                                    "value": "幻想言情"
+                                }
+                            ],
+                            "key": "fc"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "title": "全部",
+                                    "value": "0"
+                                },
+                                {
+                                    "title": "30万以下",
+                                    "value": "6"
+                                },
+                                {
+                                    "title": "30到50万",
+                                    "value": "7"
+                                },
+                                {
+                                    "title": "50到100万",
+                                    "value": "8"
+                                },
+                                {
+                                    "title": "100到200万",
+                                    "value": "9"
+                                },
+                                {
+                                    "title": "200万以上",
+                                    "value": "10"
+                                }
+                            ],
+                            "key": "wd"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "title": "全部",
+                                    "value": "0"
+                                },
+                                {
+                                    "title": "连载",
+                                    "value": "1"
+                                },
+                                {
+                                    "title": "完结",
+                                    "value": "2"
+                                }
+                            ],
+                            "key": "st"
+                        }
+                    ]
+                },
+                "parserID": "DOM",
+                "validConfig": "",
+                "list": "//div[@class='store-content']/ul/li",
+                "_sIndex": 1
+            },
+            "男频": {
+                "cat": "//p[1]/span[1]",
+                "author": "//p[1]/a[1]/span[1]",
+                "responseFormatType": "html",
+                "bookName": "//a[1]/h3[1]",
+                "desc": "//a[1]/p[1]",
+                "requestInfo": "@js:\nlet url = 'https://shuqi.com/store';\nlet hp = {'sz':'male', 'tm':'0', 'page':params.pageIndex};\n\nlet filters = params.filters;\nif(filters.fc)\n\thp.fc = filters.fc;\nif(filters.st)\n\thp.st = filters.st;\nif(filters.wd)\n\thp.wd = filters.wd;\n\nreturn {'url':url, 'httpParams':hp};",
+                "host": "https://www.shuqi.com",
+                "actionID": "bookWorld",
+                "detailUrl": "//a[@target='_blank']/@href",
+                "cover": "//a[1]/img/@src",
+                "moreKeys": {
+                    "pageSize": "16",
+                    "requestFilters": [
+                        {
+                            "items": [
+                                {
+                                    "title": "全部",
+                                    "value": "0"
+                                },
+                                {
+                                    "title": "玄幻",
+                                    "value": "玄幻小说"
+                                },
+                                {
+                                    "title": "奇幻",
+                                    "value": "奇幻小说"
+                                },
+                                {
+                                    "title": "仙侠",
+                                    "value": "仙侠小说"
+                                },
+                                {
+                                    "title": "武侠",
+                                    "value": "武侠小说"
+                                },
+                                {
+                                    "title": "都市",
+                                    "value": "都市小说"
+                                },
+                                {
+                                    "title": "耽美",
+                                    "value": "耽美小说"
+                                },
+                                {
+                                    "title": "科幻",
+                                    "value": "科幻小说"
+                                },
+                                {
+                                    "title": "灵异",
+                                    "value": "灵异推理"
+                                },
+                                {
+                                    "title": "历史",
+                                    "value": "历史架空"
+                                },
+                                {
+                                    "title": "游戏",
+                                    "value": "游戏竞技"
+                                },
+                                {
+                                    "title": "竞技",
+                                    "value": "竞技体育"
+                                }
+                            ],
+                            "key": "fc"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "title": "全部",
+                                    "value": "0"
+                                },
+                                {
+                                    "title": "30万以下",
+                                    "value": "6"
+                                },
+                                {
+                                    "title": "30到50万",
+                                    "value": "7"
+                                },
+                                {
+                                    "title": "50到100万",
+                                    "value": "8"
+                                },
+                                {
+                                    "title": "100到200万",
+                                    "value": "9"
+                                },
+                                {
+                                    "title": "200万以上",
+                                    "value": "10"
+                                }
+                            ],
+                            "key": "wd"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "title": "全部",
+                                    "value": "0"
+                                },
+                                {
+                                    "title": "连载",
+                                    "value": "1"
+                                },
+                                {
+                                    "title": "完结",
+                                    "value": "2"
+                                }
+                            ],
+                            "key": "st"
+                        }
+                    ]
+                },
+                "parserID": "DOM",
+                "validConfig": "",
+                "list": "//div[@class='store-content']/ul/li",
+                "_sIndex": 0
+            }
+        },
+        "sourceUrl": "https://www.shuqi.com",
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "weight": "1000002",
+        "sourceName": "书旗小说",
+        "desc": "只用于看榜单",
+        "miniAppVersion": "2.53.2",
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1700387136.491601",
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "searchBook": {
+            "author": "//p[@class='book-autor']/a || //span[@class='bauthor'] || @replace:作者： || @replace:   著",
+            "responseFormatType": "html",
+            "bookName": "//h3[@class='ellipsis'] || //span[@class='bname']",
+            "desc": "//p[@class='book-newc'] || //p[@class='bookDesc']",
+            "requestInfo": "/search?keyword=%@keyWord&page=%@pageIndex",
+            "host": "https://www.shuqi.com",
+            "actionID": "searchBook",
+            "detailUrl": "//p[@class='bookTitle']/a/@href || //a[@target='_blank']/@href",
+            "moreKeys": {
+                "pageSize": 9
+            },
+            "cover": "//img[1]/@src",
+            "parserID": "DOM",
+            "validConfig": "",
+            "list": "//div[@class='matchbook']/div || //div[@class='searchlist-main']/ul/li"
+        },
+        "chapterList": {
+            "actionID": "chapterList",
+            "validConfig": "",
+            "requestInfo": "@js:\nlet url = params.queryInfo.detailUrl;\nlet index = url.indexOf('bid=');\nif(index>=0)\n\turl = url.substr(index+4);\nreturn 'https://www.shuqi.com' + url;",
+            "title": "//a",
+            "host": "https://www.shuqi.com",
+            "list": "//table//td",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "url": "//a/@href"
+        }
+    }
+}

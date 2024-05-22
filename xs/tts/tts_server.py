@@ -1,9 +1,9 @@
 from fastapi import FastAPI,Query
 from fastapi.responses import FileResponse,StreamingResponse
 from pydantic import BaseModel
-from script.xs.tts.azure_speech_synthesis import AzureTTs
-from script.xs.tts.ali_speech_synthesis import AliTTs
-from script.xs.tts.edge_speech_synthesis import EdgeTTS
+from azure_speech_synthesis import AzureTTs
+from ali_speech_synthesis import AliTTs
+from edge_speech_synthesis import EdgeTTS
 import os
 import io
 import uvicorn
@@ -45,13 +45,13 @@ async def edge_tts(voice_id: str = Query(None, description="The ID of the voice 
                      text: str = Query(None, description="The text to be synthesized"),
                      rate: int = Query(20, description="The speed of the voice")):
     text_to_speech = EdgeTTS()
-    audio_file_path = text_to_speech.speak(voice_id, remove_html(text),rate)
-    print(audio_file_path)
+    audio_file_path = text_to_speech.speak(voice_id, remove_html(text), rate)
     if os.path.isfile(audio_file_path):
-        # 使用 FileResponse 返回文件内容
-        return FileResponse(audio_file_path, filename="output.wav", media_type="audio/wav")
+        return StreamingResponse(open(audio_file_path, "rb"), media_type="audio/wav")
     else:
         return {"error": "File not found"}, 404
+
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
 

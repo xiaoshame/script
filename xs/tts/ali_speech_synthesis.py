@@ -1,7 +1,7 @@
 
 import os
 import configparser
-import script.xs.tts.ali_token as ali_token
+import ali_token as ali_token
 import time
 import requests
 import json

@@ -1,0 +1,147 @@
+{
+    "👾51漫画": {
+        "bookDetail": {
+            "actionID": "bookDetail",
+            "parserID": "DOM"
+        },
+        "weight": "1",
+        "miniAppVersion": "2.53.2",
+        "chapterList": {
+            "actionID": "chapterList",
+            "validConfig": "",
+            "title": "//a",
+            "host": "https://m.51sami.com",
+            "httpHeaders": {
+                "Referer": "https://m.51sami.com/",
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+            },
+            "list": "//ul[@class=\"Drama autoHeight\"]/li||@js:\nreturn result.reverse();",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "url": "//a/@href"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "enable": 0,
+        "sourceName": "👾51漫画",
+        "sourceType": "comic",
+        "sourceUrl": "https://m.51sami.com",
+        "httpHeaders": {
+            "Referer": "https://m.51sami.com/",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+        },
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1648354461.458778",
+        "searchBook": {
+            "cat": "//div[@class=\"itemTxt\"]/p/span[@class=\"pd\"]/text()||@js:\nreturn result.replace(/\\|/,\"\")",
+            "author": "//div[@class=\"itemTxt\"]/p[1]/text()",
+            "responseFormatType": "html",
+            "bookName": "//div[@class=\"itemTxt\"]/a/text()",
+            "httpHeaders": {
+                "Referer": "https://m.51sami.com/",
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+            },
+            "requestInfo": "@js:\n\nlet url=config.host+\"/search/\";\n\nlet hh= {\n  \"User-Agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/13.0 Safari/604.1\"\n};\n\nlet hp= {'keywords':params.keyWord,\n\"page\":params.pageIndex};\n\nreturn {'url':url, 'POST':false, 'httpParams':hp\n,\"httpHeaders\": hh,cacheTime:3600,webView:true};",
+            "host": "https://m.51sami.com",
+            "actionID": "searchBook",
+            "moreKeys": {
+                "pageSize": 36
+            },
+            "cover": "//div[@class=\"itemImg\"]//img/@src",
+            "validConfig": "",
+            "parserID": "DOM",
+            "list": "//div[@class=\"UpdateList\"]/div",
+            "detailUrl": "//div[@class=\"itemImg\"]/a/@href"
+        },
+        "chapterContent": {
+            "validConfig": "",
+            "content": "//div[@class=\"read_chapterDetail\"]//p[position()>2]/text()",
+            "actionID": "chapterContent",
+            "host": "https://m.51sami.com",
+            "httpHeaders": {
+                "Referer": "https://m.51sami.com/",
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+            },
+            "responseFormatType": "html",
+            "parserID": "DOM"
+        },
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "shudanList": {},
+        "authorId": "",
+        "bookWorld": {
+            "分类": {
+                "author": "//div[@class=\"booknews\"]/text() ||@js:\nreturn result.replace(/作者:/g,\"\");",
+                "responseFormatType": "html",
+                "bookName": "//a//img/@alt",
+                "desc": "//div/p",
+                "requestInfo": "@js:\nif(params.pageIndex==1){\n\nlet url =\"http://jpxs123.com/\"+params.filters.type\n\nlet hh= {\n  \"User-Agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/13.0 Safari/604.1\"\n}\nreturn {'url':url,\"httpHeaders\":hh};\n\n}else{\nlet url =\"http://jpxs123.com/\"+params.filters.type+\"/index_\"+params.pageIndex+\".html\"\n\nlet hh= {\n  \"User-Agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/13.0 Safari/604.1\"\n}\nreturn {'url':url,\"httpHeaders\":hh};\n\n}",
+                "host": "https://m.51sami.com",
+                "actionID": "bookWorld",
+                "detailUrl": "//a/@href",
+                "moreKeys": {
+                    "pageSize": 15,
+                    "requestFilters": [
+                        {
+                            "key": "type",
+                            "items": [
+                                {
+                                    "title": "科幻",
+                                    "value": "khjj"
+                                },
+                                {
+                                    "title": "都市",
+                                    "value": "dsxs"
+                                },
+                                {
+                                    "title": "玄幻",
+                                    "value": "xuanhuan"
+                                },
+                                {
+                                    "title": "历史",
+                                    "value": "lishi"
+                                },
+                                {
+                                    "title": "穿越架空",
+                                    "value": "cyjk"
+                                },
+                                {
+                                    "title": "鬼怪悬疑",
+                                    "value": "guihua"
+                                },
+                                {
+                                    "title": "同人",
+                                    "value": "tongren"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "cover": "//div[@class=\"pic\"]/img/@src",
+                "parserID": "DOM",
+                "validConfig": "",
+                "list": "//div[@class=\"books m-cols\"]/div[@class=\"bk\"]",
+                "httpHeaders": {
+                    "Referer": "https://m.51sami.com/",
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+                },
+                "status": "//div[@class=\"booknews\"]/label/text()"
+            }
+        },
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        }
+    }
+}

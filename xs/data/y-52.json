@@ -1,0 +1,133 @@
+{
+    "y-52书库": {
+        "bookWorld": {
+            "宝藏小说": {
+                "responseFormatType": "html",
+                "bookName": "//h3/a",
+                "httpHeaders": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+                },
+                "requestInfo": "@js:\nlet {_type}=params.filters\nlet url=`https://www.po5.net/${_type}_top100.html`;\nlet i=params.pageIndex;\nreturn {\r\n    \"url\": url,\r\n    \"httpHeaders\": config.httpHeaders,\r\n    \"cacheTime\": 600,\r\n}",
+                "host": "https://www.po5.net",
+                "actionID": "bookWorld",
+                "detailUrl": "//h3/a/@href",
+                "moreKeys": {
+                    "maxPage": 1,
+                    "requestFilters": "_type\n现代耽美排行::tuijian/xiandai\n穿越耽美排行::tuijian/chongsheng\n古架耽美排行::tuijian/gudai\nGL百合排行::tuijian/gl\n综漫同人排行::tuijian/bl\n言情排行::tuijian/yanqing\n其他宝藏排行::tuijian/QiTa"
+                },
+                "validConfig": "",
+                "parserID": "DOM",
+                "_sIndex": 1,
+                "list": "//ul/h3",
+                "desc": "//span[@class=\"note\"]"
+            },
+            "分类": {
+                "responseFormatType": "html",
+                "bookName": "//h2/a",
+                "httpHeaders": {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+                },
+                "requestInfo": "@js:\nlet {_type}=params.filters\nlet url=`https://www.po5.net/${_type}`;\nlet i=params.pageIndex;\nif (i > 1){\n    url =url+\"/index_\"+i+\".html\";\n} \n\nreturn {\r\n    \"url\": url,\r\n    \"httpHeaders\": config.httpHeaders,\r\n    \"cacheTime\": 600,\r\n}",
+                "host": "https://www.po5.net",
+                "actionID": "bookWorld",
+                "detailUrl": "//h2/a/@href",
+                "moreKeys": {
+                    "pageSize": 26,
+                    "requestFilters": "_type\n现代耽美::xiandaidushi\n穿越耽美::chongsheng\n古架耽美::jiakong\nGL百合::gl\n综漫同人::bl\n言情小说::yanqing\n男频小说::nan"
+                },
+                "validConfig": "",
+                "parserID": "DOM",
+                "_sIndex": 0,
+                "list": "//article[@class=\"excerpt\"]",
+                "desc": "//span[@class=\"note\"]"
+            }
+        },
+        "authorId": "",
+        "weight": "9999",
+        "miniAppVersion": "2.53.2",
+        "chapterList": {
+            "actionID": "chapterList",
+            "validConfig": "",
+            "title": "//a",
+            "host": "https://www.po5.net",
+            "httpHeaders": {
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+            },
+            "list": "//ul[@class=\"list clearfix\"]/li",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "url": "//a/@href"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "enable": 1,
+        "sourceName": "y-52书库",
+        "sourceType": "text",
+        "sourceUrl": "https://www.po5.net",
+        "httpHeaders": {
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+        },
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1682660403.814376",
+        "searchBook": {
+            "actionID": "searchBook",
+            "validConfig": "",
+            "requestInfo": "@js:\r\n\r\nlet url = \"https://www.po5.net/so/search.php\"\r\nlet hp = {\r\n    \"q\": params.keyWord,\r\n    \"p\": params.pageIndex,\n    \"m\":\"\",\n    \"f\":\"_all\",\r\n}\r\nhttps://www.po5.net/so/search.php?q=凡人&m=&f=_all&s=&p=2\r\nreturn {\r\n    \"url\": url,\r\n    \"httpParams\": hp,\r\n    \"httpHeaders\": config.httpHeaders,\r\n    \"cacheTime\": 600,\r\n}",
+            "bookName": "//a/h4|@js:\nlet arr = result.split('.');\nlet i = arr[1].split('_');\nu = i[1].split(' ');\nreturn i[0]",
+            "detailUrl": "//h2/a/@href",
+            "host": "https://www.po5.net",
+            "httpHeaders": {
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+            },
+            "moreKeys": {
+                "pageSize": 10
+            },
+            "responseFormatType": "html",
+            "list": "//article[@class=\"excerpt\"]",
+            "parserID": "DOM"
+        },
+        "chapterContent": {
+            "validConfig": "",
+            "content": "//div[@id=\"text\"]/p||//article[@class=\"article-content\"]/p/text()",
+            "actionID": "chapterContent",
+            "host": "https://www.po5.net",
+            "httpHeaders": {
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+            },
+            "responseFormatType": "html",
+            "parserID": "DOM"
+        },
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "desc": "by manshe",
+        "password": "manshe99",
+        "shudanList": {},
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "bookDetail": {
+            "validConfig": "",
+            "actionID": "bookDetail",
+            "host": "https://www.po5.net",
+            "httpHeaders": {
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+            },
+            "cat": "//article[@class=\"article-content\"]/p[3]/a[1]",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "desc": "//article[@class=\"article-content\"]/p[2]"
+        }
+    }
+}

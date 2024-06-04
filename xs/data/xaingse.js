@@ -106,24 +106,27 @@
 //     }
 // }
 
+(function anonymous(
+) {
+debugger
+})
 
+function functionName(config, params, result)
+{
+    let list = [];
+    let regex = /"([^"]+)">([^<]+)<\/a>[\s\S]*?<td class="odd">([^<]+)<\/td>/gim;
 
-// function functionName(config, params, result)
-// {
-//     let list = [];
-//     let regex = /"([^"]+)">([^<]+)<\/a>[\s\S]*?<td class="odd">([^<]+)<\/td>/gim;
+    params.nativeTool.log("111111111");
+    while (tem = regex.exec(result)) {
+        let bookInfo = {};
+		    bookInfo.detailUrl = "http://www.biqu520.net" + tem[1];
+        bookInfo.bookName = tem[2];
+        bookInfo.author = tem[3]
+		list.push(bookInfo);
+    }
 
-//     params.nativeTool.log("111111111");
-//     while (tem = regex.exec(result)) {
-//         let bookInfo = {};
-// 		bookInfo.detailUrl = "http://www.biqu520.net" + tem[1];
-//         bookInfo.bookName = tem[2];
-//         bookInfo.author = tem[3]
-// 		list.push(bookInfo);
-//     }
-
-//     return { list: list };
-// }
+    return { list: list };
+}
 
 // /////////////视频
 
@@ -159,266 +162,267 @@
 
 //meta[@id="dooplay-ajax-counter"]/@data-postid || @js: return params.responseUrl + "/wp-json/dooplayer/v1/post/" + result + "?type=movie&source=1";
 
-// 漫画章节列表
-// function functionName(config, params, result) {
-//     let list = [];
-//     let regex = /<li><a href="([^"]+)"><b>([^<]+)<\/b></gim;
-//     // let match = result.match(regex);
-//     while (tem = regex.exec(result)) {
-//         let chapterInfo = {};
-//         chapterInfo.title = tem[2];
-//         chapterInfo.url = tem[1];
-//         list.push(chapterInfo);
-//     }
+//漫画章节列表
+function functionName(config, params, result) {
+    let list = [];
+    let regex = /<li><a href="([^"]+)"><b>([^<]+)<\/b></gim;
+    // let match = result.match(regex);
+    while (tem = regex.exec(result)) {
+        let chapterInfo = {};
+        chapterInfo.title = tem[2];
+        chapterInfo.url = tem[1];
+        list.push(chapterInfo);
+    }
     
-//     return { list: list.reverse() };
-// }
+    return { list: list.reverse() };
+}
 
-// function functionName(config, params, result) {
-//     let regex = /\(\'([^\']+)\',([^,]+),([^,]+),([^,]+),([^,]+),([^,]+)\)/gim;
-//     while (tem = regex.exec(result)) {
-//         let content = [];
-//         let nextre = /'([A-Za-z0-9+/=]+)'\[/gim;
-//         tem_k = nextre.exec(tem[4]);
-//         let k = splic(tem_k[1], tem_k[1].length, 32).split("|");
-//         data = decode(tem[1], tem[2], tem[3], k);
-//         let imgrex = /\((\{[\s\S]*?)\)./gim;
-//         let img_tem = imgrex.exec(data);
-//         let img_json = JSON.parse(img_tem[1]);
-//         let img_count = img_json.count;
-//         let imglist = img_json.images;
-//         let sl_e = img_json.sl.e;
-//         let sl_m = img_json.sl.m;
-//         for (i = 0; i < img_count; i++) {
-//             content[i] =
-//                 "https://eu1.hamreus.com" +
-//                 imglist[i] +
-//                 "e=" +
-//                 sl_e +
-//                 "&m=" +
-//                 sl_m;
-//         }
-//         // // JSON.stringify({
-//         //     "content": content,
-//         //     "httpHeaders": config.httpHeaders
-//         // });
-//         return JSON.stringify({
-//             "content": content.join("\n"),
-//             "httpHeaders": config.httpHeaders
-//         });
-//         // return { "content": content.join("\n"),"httpHeaders": config.httpHeaders};
+//漫画url
+function functionName(config, params, result) {
+    let regex = /\(\'([^\']+)\',([^,]+),([^,]+),([^,]+),([^,]+),([^,]+)\)/gim;
+    while (tem = regex.exec(result)) {
+        let content = [];
+        let nextre = /'([A-Za-z0-9+/=]+)'\[/gim;
+        tem_k = nextre.exec(tem[4]);
+        let k = splic(tem_k[1], tem_k[1].length, 32).split("|");
+        data = decode(tem[1], tem[2], tem[3], k);
+        let imgrex = /\((\{[\s\S]*?)\)./gim;
+        let img_tem = imgrex.exec(data);
+        let img_json = JSON.parse(img_tem[1]);
+        let img_count = img_json.count;
+        let imglist = img_json.images;
+        let sl_e = img_json.sl.e;
+        let sl_m = img_json.sl.m;
+        for (i = 0; i < img_count; i++) {
+            content[i] =
+                "https://eu1.hamreus.com" +
+                imglist[i] +
+                "e=" +
+                sl_e +
+                "&m=" +
+                sl_m;
+        }
+        // // JSON.stringify({
+        //     "content": content,
+        //     "httpHeaders": config.httpHeaders
+        // });
+        return JSON.stringify({
+            "content": content.join("\n"),
+            "httpHeaders": config.httpHeaders
+        });
+        // return { "content": content.join("\n"),"httpHeaders": config.httpHeaders};
+    }
+}
+
+// function getBaseValue(alphabet, character) {
+//   var baseReverseDic = {};
+//   if (!baseReverseDic[alphabet]) {
+//     baseReverseDic[alphabet] = {};
+//     for (var i = 0; i < alphabet.length; i++) {
+//       baseReverseDic[alphabet][alphabet.charAt(i)] = i;
 //     }
+//   }
+//   return baseReverseDic[alphabet][character];
 // }
 
-function getBaseValue(alphabet, character) {
-  var baseReverseDic = {};
-  if (!baseReverseDic[alphabet]) {
-    baseReverseDic[alphabet] = {};
-    for (var i = 0; i < alphabet.length; i++) {
-      baseReverseDic[alphabet][alphabet.charAt(i)] = i;
-    }
-  }
-  return baseReverseDic[alphabet][character];
-}
+// function decompressFromBase64(input, index) {
+//   if (input == null) return "";
+//   if (input == "") return null;
+//   var keyStrBase64 =
+//     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+//   let value = getBaseValue(keyStrBase64, input.charAt(index));
+//   return value;
+// }
 
-function decompressFromBase64(input, index) {
-  if (input == null) return "";
-  if (input == "") return null;
-  var keyStrBase64 =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
-  let value = getBaseValue(keyStrBase64, input.charAt(index));
-  return value;
-}
+// function splic(input, length, resetValue) {
+//   var f = String.fromCharCode;
+//   var dictionary = [],
+//     next,
+//     enlargeIn = 4,
+//     dictSize = 4,
+//     numBits = 3,
+//     entry = "",
+//     result = [],
+//     i,
+//     w,
+//     bits,
+//     resb,
+//     maxpower,
+//     power,
+//     c,
+//     data = {
+//       val: decompressFromBase64(input, 0),
+//       position: resetValue,
+//       index: 1,
+//     };
+//   for (i = 0; i < 3; i += 1) {
+//     dictionary[i] = i;
+//   }
+//   bits = 0;
+//   maxpower = Math.pow(2, 2);
+//   power = 1;
+//   while (power != maxpower) {
+//     resb = data.val & data.position;
+//     data.position >>= 1;
+//     if (data.position == 0) {
+//       data.position = resetValue;
+//       data.val = decompressFromBase64(input, data.index++);
+//     }
+//     bits |= (resb > 0 ? 1 : 0) * power;
+//     power <<= 1;
+//   }
+//   switch ((next = bits)) {
+//     case 0:
+//       bits = 0;
+//       maxpower = Math.pow(2, 8);
+//       power = 1;
+//       while (power != maxpower) {
+//         resb = data.val & data.position;
+//         data.position >>= 1;
+//         if (data.position == 0) {
+//           data.position = resetValue;
+//           data.val = decompressFromBase64(input, data.index++);
+//         }
+//         bits |= (resb > 0 ? 1 : 0) * power;
+//         power <<= 1;
+//       }
+//       c = f(bits);
+//       break;
+//     case 1:
+//       bits = 0;
+//       maxpower = Math.pow(2, 16);
+//       power = 1;
+//       while (power != maxpower) {
+//         resb = data.val & data.position;
+//         data.position >>= 1;
+//         if (data.position == 0) {
+//           data.position = resetValue;
+//           data.val = decompressFromBase64(input, data.index++);
+//         }
+//         bits |= (resb > 0 ? 1 : 0) * power;
+//         power <<= 1;
+//       }
+//       c = f(bits);
+//       break;
+//     case 2:
+//       return "";
+//   }
+//   dictionary[3] = c;
+//   w = c;
+//   result.push(c);
+//   while (true) {
+//     if (data.index > length) {
+//       return "";
+//     }
+//     bits = 0;
+//     maxpower = Math.pow(2, numBits);
+//     power = 1;
+//     while (power != maxpower) {
+//       resb = data.val & data.position;
+//       data.position >>= 1;
+//       if (data.position == 0) {
+//         data.position = resetValue;
+//         data.val = decompressFromBase64(input, data.index++);
+//       }
+//       bits |= (resb > 0 ? 1 : 0) * power;
+//       power <<= 1;
+//     }
+//     switch ((c = bits)) {
+//       case 0:
+//         bits = 0;
+//         maxpower = Math.pow(2, 8);
+//         power = 1;
+//         while (power != maxpower) {
+//           resb = data.val & data.position;
+//           data.position >>= 1;
+//           if (data.position == 0) {
+//             data.position = resetValue;
+//             data.val = decompressFromBase64(input, data.index++);
+//           }
+//           bits |= (resb > 0 ? 1 : 0) * power;
+//           power <<= 1;
+//         }
+//         dictionary[dictSize++] = f(bits);
+//         c = dictSize - 1;
+//         enlargeIn--;
+//         break;
+//       case 1:
+//         bits = 0;
+//         maxpower = Math.pow(2, 16);
+//         power = 1;
+//         while (power != maxpower) {
+//           resb = data.val & data.position;
+//           data.position >>= 1;
+//           if (data.position == 0) {
+//             data.position = resetValue;
+//             data.val = decompressFromBase64(input, data.index++);
+//           }
+//           bits |= (resb > 0 ? 1 : 0) * power;
+//           power <<= 1;
+//         }
+//         dictionary[dictSize++] = f(bits);
+//         c = dictSize - 1;
+//         enlargeIn--;
+//         break;
+//       case 2:
+//         return result.join("");
+//     }
+//     if (enlargeIn == 0) {
+//       enlargeIn = Math.pow(2, numBits);
+//       numBits++;
+//     }
+//     if (dictionary[c]) {
+//       entry = dictionary[c];
+//     } else {
+//       if (c === dictSize) {
+//         entry = w + w.charAt(0);
+//       } else {
+//         return null;
+//       }
+//     }
+//     result.push(entry);
+//     dictionary[dictSize++] = w + entry.charAt(0);
+//     enlargeIn--;
+//     w = entry;
+//     if (enlargeIn == 0) {
+//       enlargeIn = Math.pow(2, numBits);
+//       numBits++;
+//     }
+//   }
+// }
 
-function splic(input, length, resetValue) {
-  var f = String.fromCharCode;
-  var dictionary = [],
-    next,
-    enlargeIn = 4,
-    dictSize = 4,
-    numBits = 3,
-    entry = "",
-    result = [],
-    i,
-    w,
-    bits,
-    resb,
-    maxpower,
-    power,
-    c,
-    data = {
-      val: decompressFromBase64(input, 0),
-      position: resetValue,
-      index: 1,
-    };
-  for (i = 0; i < 3; i += 1) {
-    dictionary[i] = i;
-  }
-  bits = 0;
-  maxpower = Math.pow(2, 2);
-  power = 1;
-  while (power != maxpower) {
-    resb = data.val & data.position;
-    data.position >>= 1;
-    if (data.position == 0) {
-      data.position = resetValue;
-      data.val = decompressFromBase64(input, data.index++);
-    }
-    bits |= (resb > 0 ? 1 : 0) * power;
-    power <<= 1;
-  }
-  switch ((next = bits)) {
-    case 0:
-      bits = 0;
-      maxpower = Math.pow(2, 8);
-      power = 1;
-      while (power != maxpower) {
-        resb = data.val & data.position;
-        data.position >>= 1;
-        if (data.position == 0) {
-          data.position = resetValue;
-          data.val = decompressFromBase64(input, data.index++);
-        }
-        bits |= (resb > 0 ? 1 : 0) * power;
-        power <<= 1;
-      }
-      c = f(bits);
-      break;
-    case 1:
-      bits = 0;
-      maxpower = Math.pow(2, 16);
-      power = 1;
-      while (power != maxpower) {
-        resb = data.val & data.position;
-        data.position >>= 1;
-        if (data.position == 0) {
-          data.position = resetValue;
-          data.val = decompressFromBase64(input, data.index++);
-        }
-        bits |= (resb > 0 ? 1 : 0) * power;
-        power <<= 1;
-      }
-      c = f(bits);
-      break;
-    case 2:
-      return "";
-  }
-  dictionary[3] = c;
-  w = c;
-  result.push(c);
-  while (true) {
-    if (data.index > length) {
-      return "";
-    }
-    bits = 0;
-    maxpower = Math.pow(2, numBits);
-    power = 1;
-    while (power != maxpower) {
-      resb = data.val & data.position;
-      data.position >>= 1;
-      if (data.position == 0) {
-        data.position = resetValue;
-        data.val = decompressFromBase64(input, data.index++);
-      }
-      bits |= (resb > 0 ? 1 : 0) * power;
-      power <<= 1;
-    }
-    switch ((c = bits)) {
-      case 0:
-        bits = 0;
-        maxpower = Math.pow(2, 8);
-        power = 1;
-        while (power != maxpower) {
-          resb = data.val & data.position;
-          data.position >>= 1;
-          if (data.position == 0) {
-            data.position = resetValue;
-            data.val = decompressFromBase64(input, data.index++);
-          }
-          bits |= (resb > 0 ? 1 : 0) * power;
-          power <<= 1;
-        }
-        dictionary[dictSize++] = f(bits);
-        c = dictSize - 1;
-        enlargeIn--;
-        break;
-      case 1:
-        bits = 0;
-        maxpower = Math.pow(2, 16);
-        power = 1;
-        while (power != maxpower) {
-          resb = data.val & data.position;
-          data.position >>= 1;
-          if (data.position == 0) {
-            data.position = resetValue;
-            data.val = decompressFromBase64(input, data.index++);
-          }
-          bits |= (resb > 0 ? 1 : 0) * power;
-          power <<= 1;
-        }
-        dictionary[dictSize++] = f(bits);
-        c = dictSize - 1;
-        enlargeIn--;
-        break;
-      case 2:
-        return result.join("");
-    }
-    if (enlargeIn == 0) {
-      enlargeIn = Math.pow(2, numBits);
-      numBits++;
-    }
-    if (dictionary[c]) {
-      entry = dictionary[c];
-    } else {
-      if (c === dictSize) {
-        entry = w + w.charAt(0);
-      } else {
-        return null;
-      }
-    }
-    result.push(entry);
-    dictionary[dictSize++] = w + entry.charAt(0);
-    enlargeIn--;
-    w = entry;
-    if (enlargeIn == 0) {
-      enlargeIn = Math.pow(2, numBits);
-      numBits++;
-    }
-  }
-}
+// function decode(p, a, c, k) {
+//   let d = {};
+//   let e = function (c) {
+//     return (
+//       (c < a ? "" : e(parseInt(c / a))) +
+//       ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+//     );
+//   };
+//   if (!"".replace(/^/, String)) {
+//     while (c--) d[e(c)] = k[c] || e(c);
+//     k = [
+//       function (e) {
+//         return d[e];
+//       },
+//     ];
+//     e = function () {
+//       return "\\w+";
+//     };
+//     c = 1;
+//   }
+//   while (c--)
+//     if (k[c]) p = p.replace(new RegExp("\\b" + e(c) + "\\b", "g"), k[c]);
+//   return p;
+// }
 
-function decode(p, a, c, k) {
-  let d = {};
-  let e = function (c) {
-    return (
-      (c < a ? "" : e(parseInt(c / a))) +
-      ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
-    );
-  };
-  if (!"".replace(/^/, String)) {
-    while (c--) d[e(c)] = k[c] || e(c);
-    k = [
-      function (e) {
-        return d[e];
-      },
-    ];
-    e = function () {
-      return "\\w+";
-    };
-    c = 1;
-  }
-  while (c--)
-    if (k[c]) p = p.replace(new RegExp("\\b" + e(c) + "\\b", "g"), k[c]);
-  return p;
-}
+// let input =
+//   'KwRgTMDMA+2DTekAchd6OmADAFke6AHAOwHNoB3AUwCM9oAXAQ3wGcYJp0Z1h2R2A2dgHZY6ROwCc0AJYBbekXJN2mdmHwAncgEkCU2tBC4N5AG5aAJtEHBBkSCoLkAHrQvQAxgAt6eWuXUAKnoANuRWwHzigmJePn7qbtCAWXKAgTmA5NaAgZGAFOqAvwmAQHqA836ApCGA0XKAhUqAAkaAIW6A7BaACtrQlAD2TQDWAHL0MmHNbW7WfKCSILwgAiAwABrApOIA+jIA8gBaAGoAigBCwSaCcwBiAF6U9OakpAaCIILiiHwgmGpMwY3BTe6tc+7u0EwMtABXJTuJoAgj6cBoVgqMC8DAGYZia7QTSnfwGbgPNBqADKAFkABJAA==';
+// let k = splic(input,input.length, 32).split('|');
 
-let input =
-  'KwRgTMDMA+2DTekAchd6OmADAFke6AHAOwHNoB3AUwCM9oAXAQ3wGcYJp0Z1h2R2A2dgHZY6ROwCc0AJYBbekXJN2mdmHwAncgEkCU2tBC4N5AG5aAJtEHBBkSCoLkAHrQvQAxgAt6eWuXUAKnoANuRWwHzigmJePn7qbtCAWXKAgTmA5NaAgZGAFOqAvwmAQHqA836ApCGA0XKAhUqAAkaAIW6A7BaACtrQlAD2TQDWAHL0MmHNbW7WfKCSILwgAiAwABrApOIA+jIA8gBaAGoAigBCwSaCcwBiAF6U9OakpAaCIILiiHwgmGpMwY3BTe6tc+7u0EwMtABXJTuJoAgj6cBoVgqMC8DAGYZia7QTSnfwGbgPNBqADKAFkABJAA==';
-let k = splic(input,input.length, 32).split('|');
+// data = decode(
+//   'T.P({"w":0,"v":"u","s":r,"q":"2","p":o,"n":x,"h":["/7/t/6-3/0/2/b.4.5","/7/t/6-3/0/2/j.4.5","/7/t/6-3/0/2/9.4.5","/7/t/6-3/0/2/i.4.5","/7/t/6-3/0/2/a.4.5","/7/t/6-3/0/2/c.4.5","/7/t/6-3/0/2/d.4.5","/7/t/6-3/0/2/f.4.5","/7/t/6-3/0/2/g.4.5","/7/t/6-3/0/2/l.4.5","/7/t/6-3/0/2/y.4.5","/7/t/6-3/0/2/H.4.5","/7/t/6-3/0/2/A.4.5","/7/t/6-3/0/2/R.4.5","/7/t/6-3/0/2/Q.4.5","/7/t/6-3/0/2/z.4.5","/7/t/6-3/0/2/O.4.5","/7/t/6-3/0/2/N.4.5","/7/t/6-3/0/2/M.4.5","/7/t/6-3/0/2/L.4.5","/7/t/6-3/0/2/K.4.5","/7/t/6-3/0/2/S.4.5","/7/t/6-3/0/2/I.4.5","/7/t/6-3/0/2/J.4.5","/7/t/6-3/0/2/8.4.5"],"G":8,"F":1,"E":"","D":{"e":C,"m":"B"}}).k();',
+//   56,56,k
+// );
 
-data = decode(
-  'T.P({"w":0,"v":"u","s":r,"q":"2","p":o,"n":x,"h":["/7/t/6-3/0/2/b.4.5","/7/t/6-3/0/2/j.4.5","/7/t/6-3/0/2/9.4.5","/7/t/6-3/0/2/i.4.5","/7/t/6-3/0/2/a.4.5","/7/t/6-3/0/2/c.4.5","/7/t/6-3/0/2/d.4.5","/7/t/6-3/0/2/f.4.5","/7/t/6-3/0/2/g.4.5","/7/t/6-3/0/2/l.4.5","/7/t/6-3/0/2/y.4.5","/7/t/6-3/0/2/H.4.5","/7/t/6-3/0/2/A.4.5","/7/t/6-3/0/2/R.4.5","/7/t/6-3/0/2/Q.4.5","/7/t/6-3/0/2/z.4.5","/7/t/6-3/0/2/O.4.5","/7/t/6-3/0/2/N.4.5","/7/t/6-3/0/2/M.4.5","/7/t/6-3/0/2/L.4.5","/7/t/6-3/0/2/K.4.5","/7/t/6-3/0/2/S.4.5","/7/t/6-3/0/2/I.4.5","/7/t/6-3/0/2/J.4.5","/7/t/6-3/0/2/8.4.5"],"G":8,"F":1,"E":"","D":{"e":C,"m":"B"}}).k();',
-  56,56,k
-);
-
-console.log(data);
+// console.log(data);

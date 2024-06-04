@@ -24,7 +24,7 @@ class BaseInfo:
         self.THUMB_MEDIA_ID = mediaId
         self.AUTHOR = '阿松日常'
         link = path.split(os.sep)[-2].lower()
-        self.link = link.split('/')[-1]
+        self.link = link.split('/content/posts/')[-1]
         ### 摘要
         self.digest = self.fetch_attr(content, 'summary').strip().strip('"').strip('\'')
         self.CONTENT_SOURCE_URL = 'https://xiaoshame.github.io/posts/{}'.format(self.link)

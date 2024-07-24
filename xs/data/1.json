@@ -1,68 +1,132 @@
 {
-    "4K影视": {
-      "enable": 1,
-      "shupingList": {
-        "actionID": "shupingList",
-        "parserID": "DOM"
-      },
-      "authorId": "",
-      "bookDetail": {
-        "actionID": "bookDetail",
-        "parserID": "DOM"
-      },
-      "shudanList": {},
-      "bookWorld": {},
-      "sourceType": "video",
-      "relatedWord": {
-        "actionID": "relatedWord",
-        "parserID": "DOM"
-      },
-      "weight": "9999",
-      "sourceName": "4K影视",
-      "sourceUrl": "https://www.4kvm.net",
-      "miniAppVersion": "2.53.2",
-      "shudanDetail": {
-        "actionID": "shudanDetail",
-        "parserID": "DOM"
-      },
-      "desc": "🦞",
-      "lastModifyTime": "1715859803.053870",
-      "shupingHome": {
-        "actionID": "shupingHome",
-        "parserID": "DOM"
-      },
-      "searchShudan": {
-        "actionID": "searchShudan",
-        "parserID": "DOM"
-      },
-      "searchBook": {
-        "validConfig": "",
-        "actionID": "searchBook",
-        "desc": "//div[@class=\"contenido\"]/p/text()",
-        "requestInfo": "@js:\nlet url = '/xssearch';\nreturn {'url':url, 'httpParams':{'s':params.keyWord}, 'forbidCookie':true};",
-        "detailUrl": "//div[@class=\"title\"]/a/@href",
-        "bookName": "//div[@class=\"title\"]/a/text()",
-        "host": "https://www.4kvm.net",
-        "list": "//div[@class=\"search-page\"]/div[@class=\"result-item\"]",
-        "responseFormatType": "html",
-        "parserID": "DOM",
-        "cover": "//div[@class=\"image\"]//a/img/@src"
-      },
-      "chapterList": {
-        "validConfig": "",
-        "responseFormatType": "html",
-        "parserID": "DOM",
-        "host": "https://www.4kvm.net",
-        "url": "//meta[@id=\"dooplay-ajax-counter\"]/@data-postid || @js: return config.host + \"/wp-json/dooplayer/v1/post/\" + result + \"?type=movie&source=1\";",
-        "actionID": "chapterList"
-      },
-      "chapterContent": {
-        "validConfig": "",
-        "content": "@js:\nlet urls=params.requestUrls\nlet url=\"获取\";\nfor(let i=urls.length-1;i>=0;i--){\n   if(/m3u8|mp4/.test(urls[i])){\n      url= urls[i]\n      break;\n   }\n}\nreturn url",
-        "host": "https://www.mandao.tv",
-        "parserID": "DOM",
-        "requestInfo": "@js:\nreturn {'url':result,'httpHeaders':config.httpHeaders, 'webView':true,cacheTime:0};",
-        "actionID": "chapterContent"
-      }
+    "💫零度书域": {
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "weight": "9999",
+        "miniAppVersion": "2.53.2",
+        "chapterList": {
+            "nextPageUrl": "//div[@id='list']//a[contains(text(),'下一页')]/@href",
+            "responseFormatType": "html",
+            "url": "//@href",
+            "httpHeaders": {
+                "Referer": "https://www.zerobook.me",
+                "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.50",
+                "Connection": "keep-alive"
+            },
+            "requestInfo": "@js:\r\nreturn result.replace(\"go\", \"index\").replace(\"/txt/\", \"/\")",
+            "title": "//dd",
+            "actionID": "chapterList",
+            "moreKeys": {
+                "maxPage": 100
+            },
+            "host": "https://www.zerobook.me",
+            "validConfig": "",
+            "list": "//a[@rel='chapter']",
+            "parserID": "DOM"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "enable": 1,
+        "sourceName": "💫零度书域",
+        "sourceUrl": "https://www.zerobook.me",
+        "httpHeaders": {
+            "Referer": "https://www.zerobook.me",
+            "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.50",
+            "Connection": "keep-alive"
+        },
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1698334241.307536",
+        "toTop": "1700841379.582543",
+        "searchBook": {
+            "validConfig": "",
+            "actionID": "searchBook",
+            "author": "//div[@class='btm']/a",
+            "requestInfo": "@js:\r\nlet url=config.host+\"/search/\";\r\nlet hp= {\r\n    \"searchkey\":params.keyWord,\r\n};\r\n\r\nreturn {\r\n    \"url\": url,\r\n    \"POST\": false,\n    //\"webView\":true,\r\n    \"httpParams\": hp,\r\n    \"httpHeaders\": config.httpHeaders,\r\n    \"forbidCookie\": true,\r\n    \"cacheTime\": 600,\r\n};",
+            "bookName": "//dl/dt/a",
+            "detailUrl": "//dl/dt/a/@href",
+            "host": "https://www.zerobook.me",
+            "httpHeaders": {
+                "Referer": "https://www.zerobook.me",
+                "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.50",
+                "Connection": "keep-alive"
+            },
+            "list": "//div[@class='item']",
+            "responseFormatType": "html",
+            "parserID": "DOM"
+        },
+        "chapterContent": {
+            "validConfig": "",
+            "content": "//div[@id='booktxt']/p/text() ||@js:return result.replace(/第.*章.*有声小说在线.*|.*更新最.*|.*有声小说.*/g, \"\")",
+            "actionID": "chapterContent",
+            "moreKeys": {
+                "maxPage": 5
+            },
+            "host": "https://www.zerobook.me",
+            "httpHeaders": {
+                "Referer": "https://www.zerobook.me",
+                "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.50",
+                "Connection": "keep-alive"
+            },
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "nextPageUrl": "//div[@class='bottem1']/a[contains(text(),'下一页')]/@href"
+        },
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "desc": "[加入QQ香色闺阁频道获取更多书源]",
+        "shudanList": {},
+        "password": "400109",
+        "bookDetail": {
+            "validConfig": "",
+            "actionID": "bookDetail",
+            "status": "//p[@class='visible-xs'][3]",
+            "host": "https://www.zerobook.me",
+            "httpHeaders": {
+                "Referer": "https://www.zerobook.me",
+                "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.50",
+                "Connection": "keep-alive"
+            },
+            "cover": "//div[@id='fmimg']/img/@data-original",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "desc": "//div[@id='intro']"
+        },
+        "bookWorld": {
+            "分类": {
+                "author": "//div[@class='btm']/a",
+                "responseFormatType": "html",
+                "bookName": "//dl/dt/a",
+                "httpHeaders": {
+                    "Referer": "https://www.zerobook.me",
+                    "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.50",
+                    "Connection": "keep-alive"
+                },
+                "requestInfo": "@js:\nlet {_type}=params.filters\nlet url=`https://www.zerobook.me${_type}${params.pageIndex}.html`;\n\nreturn {url:url,'httpHeaders':config.httpHeaders}",
+                "host": "https://www.zerobook.me",
+                "actionID": "bookWorld",
+                "detailUrl": "//dl/dt/a/@href",
+                "moreKeys": {
+                    "pageSize": 33,
+                    "requestFilters": "_type\n玄幻::/sort/xuanhuan/\n仙侠::/sort/xianxia/\n都市::/sort/dushi/\n军史::/sort/junshi/\n网游::/sort/wangyou/\n科幻::/sort/kehuan/\n灵异::/sort/lingyi/\n言情::/sort/yanqing/\n其他::/sort/qita/"
+                },
+                "validConfig": "",
+                "list": "//div[@class='item']",
+                "_sIndex": 0,
+                "parserID": "DOM"
+            }
+        }
     }
 }

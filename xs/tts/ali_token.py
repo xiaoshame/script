@@ -68,7 +68,7 @@ def get_token():
     access_key_secret = os.environ.get('ALIYUN_AK_SECRET')
     token, expire_time = AccessToken.create_token(access_key_id, access_key_secret)
     config = configparser.ConfigParser()
-    config.read('config.ini')
+    config.read('D:\\workspace\\script\\xs\\tts\\config.ini')
     config.set('ali', 'token', token)
     config.set('ali', 'expire_time', str(expire_time))
     config.write(open('config.ini', 'w'))

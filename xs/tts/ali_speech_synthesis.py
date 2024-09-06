@@ -13,7 +13,7 @@ class AliTTs:
 
     def get_token(self):
         self.config = configparser.ConfigParser()
-        self.config.read('config.ini')
+        self.config.read('D:\\workspace\\script\\xs\\tts\\config.ini')
         token = self.config['ali']['token']
         expire_time = self.config['ali']['expire_time']
         if float(expire_time) < time.time():

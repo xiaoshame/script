@@ -67,4 +67,6 @@ class EdgeTTS():
 
 if __name__ == "__main__":
     text_to_tts = EdgeTTS()
-    text_to_tts.speak("yunyang","2019/03/02上午有1/2的概率下暴雨所以有600人選擇3:30p.m.再出門,支付$500或￥600可以獲得代金券",20)
+    for key in voiceMap.keys():
+        text_to_tts.speak(key,"哈哈哈哈哈哈",20)
+    

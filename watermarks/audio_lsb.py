@@ -118,7 +118,7 @@ def extract_watermark(audio_file, bits_per_sample=1):
         return watermark_data
 
 # 使用示例
-watermark_data = "douyu@yyf"  # 要嵌入的水印数据
+watermark_data = "123456"  # 要嵌入的水印数据
 audio_file = "D:\\workspace\\script\\watermarks\\100024_10.wav"  # 输入音频文件名
 output_file = "D:\\workspace\\script\\watermarks\\watermarked.wav"  # 输出音频文件名
 embed_watermark(audio_file, watermark_data, output_file, bits_per_sample=1)

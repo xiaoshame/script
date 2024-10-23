@@ -47,7 +47,14 @@
 1. 编译后exe过大，上传不便,自行编译
 2. 控制台进入mytools目录，执行pyinstaller.exe main.spec
 
-### gzh_to_rss
+### rss
+
+#### follow
+
+1. follow网站拷贝https://api.follow.is/entries 接口返回的json信息
+2. 批量获取json中的rss 地址，替换为可用地址并合成opml文件，方便订阅
+
+#### gzh_to_rss
 
 1. 基于公众号转成rss的聚合服务[wechat2rss](https://github.com/ttttmr/wechat2rss)加工
 2. 定时分析聚合服务中更新的文章编写成RSS文件，通过minio服务提供文件访问

@@ -1,0 +1,10 @@
+<opml version="2.0">
+    <head>
+        <title>My RSS Feeds</title>
+    </head>
+    <body>
+        <outline type="rss" text="快乐星球 | 妹子图 | 收集器 - Telegram Channel"
+            description="#美女 #妹子 #精选 #全网 #中文快乐星球 @imeizi联系我们 @Shoujiqibot开眼精选 @Kaiyan所有资源出自互联网收集整理，本频道不参与制作，如果侵犯了您的合法权益，请联系我们删除。 - Powered by RSSHub"
+            xmlUrl="https://rsshub.owo.nz/telegram/channel/botmzt" />
+    </body>
+</opml>

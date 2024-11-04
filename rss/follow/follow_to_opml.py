@@ -8,25 +8,20 @@ import xml.etree.ElementTree as ET
 def build_opml(json_file_path, opml_body):
     with open(json_file_path, 'r', encoding='utf-8') as json_file:
         data = json.load(json_file)
-    rss_feeds = data['data']
+    rss_feeds = data['data'][0]['feeds']
     
     for rss_feed in rss_feeds:
-        url = rss_feed['feeds']['url']
+        url = rss_feed['url']
         if 'rsshub://' in url:
-            replaced_url = url.replace("rsshub://", "https://rsshub.owo.nz/")
-            url_exists = False
-            for outline in opml_body.findall('outline'):
-                if outline.get('xmlUrl') == replaced_url:
-                    url_exists = True
-                    break
-            if not url_exists:
-                outline_attribs = {
-                    "type": "rss",
-                    "text": rss_feed['feeds']['title'],
-                    "description": rss_feed['feeds']['description'],
-                    "xmlUrl": replaced_url
-                }
-                ET.SubElement(opml_body, "outline", attrib=outline_attribs)
+            replaced_url = url.replace("rsshub://", "https://rsshub.app/")
+
+            outline_attribs = {
+                "type": "rss",
+                "text": rss_feed['title'],
+                "description": rss_feed['description'],
+                "xmlUrl": replaced_url
+            }
+            ET.SubElement(opml_body, "outline", attrib=outline_attribs)
 
 # OPML的根元素和子元素
 opml_root = ET.Element("opml", version="2.0")

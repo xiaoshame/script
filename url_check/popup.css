@@ -1,0 +1,19 @@
+body {
+    width: 300px;
+    font-family: Arial, sans-serif;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin: 5px 0;
+  }
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  

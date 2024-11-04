@@ -81,7 +81,7 @@ def get_blog_list(url,start_time,end_time):
     ## 获取不同博客名和对应RSS订阅地址
     name_list,url_list = get_list_name_url(html)
     # 创建或加载新的RSS文件树和根元素
-    rss = ET.parse(r'D:\workspace\script\gzh_to_rss\rss.xml')
+    rss = ET.parse(r'D:\workspace\script\rss\gzh_to_rss\rss.xml')
     root = rss.getroot()
     channel = root.find('channel')
     last_build_date = channel.find('lastBuildDate')
@@ -119,7 +119,7 @@ def get_blog_list(url,start_time,end_time):
                     pubDate = datetime.strptime(node.text, "%a, %d %b %Y %H:%M:%S %z").replace(tzinfo=None)
                 if pubDate < end_time - timedelta(days=3):
                     channel.remove(item)
-        rss.write(r'D:\workspace\script\gzh_to_rss\rss.xml', encoding='UTF-8', xml_declaration=True)
+        rss.write(r'D:\workspace\script\rss\gzh_to_rss\rss.xml', encoding='UTF-8', xml_declaration=True)
     print("write rss done")
 
 def up_data_filebrowser():

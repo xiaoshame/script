@@ -9,6 +9,7 @@
 - xiaohongshu: 支持搜索小红书，搜索到的文章导出为execel
 - m3u8: mu38视频下载脚本
 - xs: 香色闺阁书源和语音tts相关脚本
+- url_check :chrome 书签有效性检测插件
 
 ## 脚本详情
 
@@ -74,3 +75,7 @@
 1. xbstools.py提供xbs与json互转能力
 2. tts封装 Azure/Ali/Edge tts服务，voice_list.py获取Azure TTS音色列表
 3. data 包含部分源和js解析案例，提高编写源的效率
+4. url_check.py 检测书源是否可用，需要配合xbstools.py使用
+
+### url_check
+1. chrome浏览器加载此文件夹即可安装，点击后检测书签是否可用，将不可用的书签罗列出来，方便删除

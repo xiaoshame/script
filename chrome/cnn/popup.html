@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Market Indicators Tracker</title>
+  <script src="chart.js"></script>
+  <style>
+    body {
+      width: 600px;
+      padding: 10px;
+    }
+    .chart-container {
+      margin-bottom: 20px;
+    }
+    .indicators-summary, .statistics-container {
+      background-color: #f5f5f5;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .indicator-item {
+      margin-bottom: 10px;
+    }
+    .actions {
+      margin: 15px 0;
+    }
+    .btn {
+      padding: 8px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .stats-box {
+      background-color: white;
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .stats-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .stats-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      padding: 3px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .stats-label {
+      color: #666;
+    }
+    .stats-value {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="indicators-summary" id="summary">
+    <h3>Current Market Status</h3>
+    <div class="indicator-item">
+      <strong>Fear & Greed Index:</strong> <span id="fearGreedStatus"></span>
+    </div>
+    <div class="indicator-item">
+      <strong>Market Momentum:</strong> <span id="momentumStatus"></span>
+    </div>
+  </div>
+
+  <div class="statistics-container">
+    <h3>Statistics (30-Day Period)</h3>
+    <div class="stats-grid">
+      <div class="stats-box">
+        <div class="stats-title">Fear & Greed Index</div>
+        <div class="stats-item">
+          <span class="stats-label">Average:</span>
+          <span class="stats-value" id="fearGreedAvg"></span>
+        </div>
+        <div class="stats-item">
+          <span class="stats-label">Maximum:</span>
+          <span class="stats-value" id="fearGreedMax"></span>
+        </div>
+        <div class="stats-item">
+          <span class="stats-label">Minimum:</span>
+          <span class="stats-value" id="fearGreedMin"></span>
+        </div>
+      </div>
+      <div class="stats-box">
+        <div class="stats-title">Market Momentum</div>
+        <div class="stats-item">
+          <span class="stats-label">Average:</span>
+          <span class="stats-value" id="momentumAvg"></span>
+        </div>
+        <div class="stats-item">
+          <span class="stats-label">Maximum:</span>
+          <span class="stats-value" id="momentumMax"></span>
+        </div>
+        <div class="stats-item">
+          <span class="stats-label">Minimum:</span>
+          <span class="stats-value" id="momentumMin"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button class="btn" id="exportBtn">Export Data</button>
+  </div>
+
+  <div class="chart-container">
+    <h3>Fear & Greed Index</h3>
+    <canvas id="fearGreedChart"></canvas>
+  </div>
+  <div class="chart-container">
+    <h3>Market Momentum (S&P500)</h3>
+    <canvas id="momentumChart"></canvas>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

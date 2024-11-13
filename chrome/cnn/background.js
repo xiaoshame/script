@@ -3,19 +3,29 @@ chrome.runtime.onInstalled.addListener(() => {
   chrome.alarms.create('fetchData', {
     periodInMinutes: 1440 // 24小时
   });
-  fetchAndStoreData(); // 首次安装时立即执行一次
+  checkAndFetchData(); // 首次安装时检查并获取数据
 });
 
 chrome.alarms.onAlarm.addListener((alarm) => {
   if (alarm.name === 'fetchData') {
-    fetchAndStoreData();
+    checkAndFetchData();
   }
 });
 
-function fetchAndStoreData() {
+function checkAndFetchData() {
   const today = new Date();
   const formattedDate = today.toISOString().split('T')[0];
 
+  chrome.storage.local.get(['scoreHistory'], function(result) {
+    const history = result.scoreHistory || [];
+    const lastRecord = history[history.length - 1];
+    if (!lastRecord || lastRecord.date !== formattedDate) {
+      fetchAndStoreData(formattedDate);
+    }
+  });
+}
+
+function fetchAndStoreData(formattedDate) {
   fetch(`https://production.dataviz.cnn.io/index/fearandgreed/graphdata/${formattedDate}`)
     .then(response => response.json())
     .then(jsonData => {
@@ -24,8 +34,8 @@ function fetchAndStoreData() {
       // 获取已存储的数据
       chrome.storage.local.get(['scoreHistory'], function (result) {
         let history = result.scoreHistory || [];
-        const todayExists = history.some(item => item.date === formattedDate);
-        if (!todayExists) {
+        // const todayExists = history.some(item => item.date === formattedDate);
+        // if (!todayExists) {
           // 添加新数据
           history.push({
             date: formattedDate,
@@ -42,7 +52,7 @@ function fetchAndStoreData() {
           chrome.storage.local.set({
             scoreHistory: history
           });
-        }
+        // }
 
       });
     })

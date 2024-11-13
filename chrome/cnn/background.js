@@ -16,7 +16,7 @@ function checkAndFetchData() {
   const today = new Date();
   const formattedDate = today.toISOString().split('T')[0];
 
-  chrome.storage.local.get(['scoreHistory'], function(result) {
+  chrome.storage.local.get(['scoreHistory'], function (result) {
     const history = result.scoreHistory || [];
     const lastRecord = history[history.length - 1];
     if (!lastRecord || lastRecord.date !== formattedDate) {
@@ -34,25 +34,23 @@ function fetchAndStoreData(formattedDate) {
       // 获取已存储的数据
       chrome.storage.local.get(['scoreHistory'], function (result) {
         let history = result.scoreHistory || [];
-        // const todayExists = history.some(item => item.date === formattedDate);
-        // if (!todayExists) {
-          // 添加新数据
-          history.push({
-            date: formattedDate,
-            fearGreedScore: fearGreedScore,
-            momentumScore: momentumScore,
-          });
+        // 添加新数据
+        history.push({
+          date: formattedDate,
+          fearGreedScore: fearGreedScore,
+          momentumScore: momentumScore,
+        });
 
-          // 只保留最近15天的数据
-          if (history.length > 30) {
-            history = history.slice(-30);
-          }
+        // 只保留最近15天的数据
+        if (history.length > 30) {
+          history = history.slice(-30);
+        }
 
-          // 存储更新后的数据
-          chrome.storage.local.set({
-            scoreHistory: history
-          });
-        // }
+        // 存储更新后的数据
+        chrome.storage.local.set({
+          scoreHistory: history
+        });
+
 
       });
     })

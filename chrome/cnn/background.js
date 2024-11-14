@@ -16,8 +16,10 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === 'checkAndFetchData') {
     checkAndFetchData();
+    sendResponse({status: 'success'});
   }
 });
+
 function checkAndFetchData() {
   const today = new Date();
   const formattedDate = today.toISOString().split('T')[0];

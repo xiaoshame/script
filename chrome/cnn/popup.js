@@ -25,10 +25,10 @@ function compareIndicators(history) {
 
 // 导出数据函数
 function exportData(history) {
-  const csvContent = "data:text/csv;charset=utf-8," 
+  const csvContent = "data:text/csv;charset=utf-8,"
     + "Date,Fear & Greed Score,Market Momentum Score\n"
     + history.map(item => `${item.date},${item.fearGreedScore},${item.momentumScore}`).join("\n");
-  
+
   const encodedUri = encodeURI(csvContent);
   const link = document.createElement("a");
   link.setAttribute("href", encodedUri);
@@ -72,11 +72,16 @@ function updateStatistics(stats) {
 }
 
 // 主要功能实现
-document.addEventListener('DOMContentLoaded', function() {
-  chrome.runtime.sendMessage({ action: 'checkAndFetchData' });
-  chrome.storage.local.get(['scoreHistory'], function(result) {
+document.addEventListener('DOMContentLoaded', function () {
+  chrome.runtime.sendMessage({ action: 'checkAndFetchData' }, response => {
+    displayData();
+  });
+});
+
+function displayData() {
+  chrome.storage.local.get(['scoreHistory'], function (result) {
     const history = result.scoreHistory || [];
-    
+
     // 如果没有数据，显示提示信息
     if (history.length === 0) {
       document.body.innerHTML = '<p>No data available yet. Please wait for the first data collection.</p>';
@@ -85,9 +90,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 更新当前状态显示
     const comparison = compareIndicators(history);
-    document.getElementById('fearGreedStatus').textContent = 
+    document.getElementById('fearGreedStatus').textContent =
       `${comparison.fearGreed.current} (${comparison.fearGreed.interpretation})`;
-    document.getElementById('momentumStatus').textContent = 
+    document.getElementById('momentumStatus').textContent =
       `${comparison.momentum.current} (${comparison.momentum.interpretation})`;
 
     // 计算并显示统计数据
@@ -117,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
       plugins: {
         tooltip: {
           callbacks: {
-            label: function(context) {
+            label: function (context) {
               const score = context.raw;
               return `${context.dataset.label}: ${score} (${getScoreInterpretation(score)})`;
             }
@@ -158,4 +163,4 @@ document.addEventListener('DOMContentLoaded', function() {
       options: chartOptions
     });
   });
-});
+}

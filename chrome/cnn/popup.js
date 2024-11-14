@@ -73,6 +73,7 @@ function updateStatistics(stats) {
 
 // 主要功能实现
 document.addEventListener('DOMContentLoaded', function() {
+  chrome.runtime.sendMessage({ action: 'checkAndFetchData' });
   chrome.storage.local.get(['scoreHistory'], function(result) {
     const history = result.scoreHistory || [];
     

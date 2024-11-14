@@ -1,7 +1,7 @@
 // 设置每天执行一次的定时任务
 chrome.runtime.onInstalled.addListener(() => {
   chrome.alarms.create('fetchData', {
-    periodInMinutes: 1440 // 24小时
+    periodInMinutes: 480 // 8小时
   });
   checkAndFetchData(); // 首次安装时检查并获取数据
 });
@@ -12,6 +12,12 @@ chrome.alarms.onAlarm.addListener((alarm) => {
   }
 });
 
+// 消息监听器
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.action === 'checkAndFetchData') {
+    checkAndFetchData();
+  }
+});
 function checkAndFetchData() {
   const today = new Date();
   const formattedDate = today.toISOString().split('T')[0];
@@ -42,8 +48,8 @@ function fetchAndStoreData(formattedDate) {
         });
 
         // 只保留最近15天的数据
-        if (history.length > 30) {
-          history = history.slice(-30);
+        if (history.length > 15) {
+          history = history.slice(-15);
         }
 
         // 存储更新后的数据

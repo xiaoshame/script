@@ -73,7 +73,13 @@ function updateStatistics(stats) {
 
 // 主要功能实现
 document.addEventListener('DOMContentLoaded', function () {
+  const timeout = setTimeout(() => {
+    console.log("Response not received. Executing displayData()");
+    displayData();  // 在超时后调用 displayData
+  }, 2000); // 设置一个2秒的超时
   chrome.runtime.sendMessage({ action: 'checkAndFetchData' }, response => {
+    clearTimeout(timeout);  // 清除超时
+    console.log("Response received. Executing displayData()");
     displayData();
   });
 });

@@ -71,23 +71,75 @@ function updateStatistics(stats) {
   document.getElementById('momentumMin').textContent = `${stats.momentum.min} (${getScoreInterpretation(stats.momentum.min)})`;
 }
 
+function checkAndFetchData() {
+  return new Promise((resolve, reject) => {
+    const today = new Date();
+    const formattedDate = today.toISOString().split('T')[0];
+    console.log('check and fetch data ' + formattedDate);
+    chrome.storage.local.get(['scoreHistory'], async function (result) {
+      const history = result.scoreHistory || [];
+      const lastRecord = history[history.length - 1];
+      if (!lastRecord || lastRecord.date !== formattedDate) {
+        try{
+          await fetchAndStoreData(formattedDate);
+          resolve();
+        }catch(error){
+          reject(error);
+        }
+      }else{
+        console.log('repeated requests');
+        resolve();
+      }
+    });
+  });
+}
+
+async function fetchAndStoreData(formattedDate) {
+  try {
+    const response = await fetch(`https://production.dataviz.cnn.io/index/fearandgreed/graphdata/${formattedDate}`);
+    const jsonData = await response.json()
+    console.log("execute fetchAndStoreData");
+    const fearGreedScore = jsonData.fear_and_greed.score;
+    const momentumScore = jsonData.market_momentum_sp500.score;
+    // 获取已存储的数据
+    chrome.storage.local.get(['scoreHistory'], function (result) {
+      let history = result.scoreHistory || [];
+      // 添加新数据
+      history.push({
+        date: formattedDate,
+        fearGreedScore: fearGreedScore,
+        momentumScore: momentumScore,
+      });
+
+      // 只保留最近15天的数据
+      if (history.length > 15) {
+        history = history.slice(-15);
+      }
+      console.log("set history length is" + history.length);
+      // 存储更新后的数据
+      chrome.storage.local.set({
+        scoreHistory: history
+      });
+    });
+  }
+  catch (error) {
+    console.error('Error fetching data:', error);
+  }
+}
+
 // 主要功能实现
 document.addEventListener('DOMContentLoaded', function () {
-  const timeout = setTimeout(() => {
-    console.log("Response not received. Executing displayData()");
-    displayData();  // 在超时后调用 displayData
-  }, 2000); // 设置一个2秒的超时
-  chrome.runtime.sendMessage({ action: 'checkAndFetchData' }, response => {
-    clearTimeout(timeout);  // 清除超时
-    console.log("Response received. Executing displayData()");
+  checkAndFetchData().then(() => {
     displayData();
+  }).catch(error => {
+    console.error('There was an error in checkAndFetchData:', error);
   });
 });
 
 function displayData() {
   chrome.storage.local.get(['scoreHistory'], function (result) {
     const history = result.scoreHistory || [];
-
+    console.log('history length is ' + history.length);
     // 如果没有数据，显示提示信息
     if (history.length === 0) {
       document.body.innerHTML = '<p>No data available yet. Please wait for the first data collection.</p>';

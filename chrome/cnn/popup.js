@@ -102,7 +102,7 @@ async function fetchAndStoreData(formattedDate) {
     const fearGreedScore = jsonData.fear_and_greed.score;
     const momentumScore = jsonData.market_momentum_sp500.score;
     // 获取已存储的数据
-    chrome.storage.local.get(['scoreHistory'], function (result) {
+    chrome.storage.local.get(['scoreHistory'], async function (result) {
       let history = result.scoreHistory || [];
       // 添加新数据
       history.push({
@@ -115,9 +115,9 @@ async function fetchAndStoreData(formattedDate) {
       if (history.length > 15) {
         history = history.slice(-15);
       }
-      console.log("set history length is" + history.length);
+      console.log("set history length is " + history.length);
       // 存储更新后的数据
-      chrome.storage.local.set({
+      await chrome.storage.local.set({
         scoreHistory: history
       });
     });

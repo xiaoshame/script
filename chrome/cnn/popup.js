@@ -82,7 +82,7 @@ function checkAndFetchData() {
       if (!lastRecord || lastRecord.date !== formattedDate) {
         try{
           await fetchAndStoreData(formattedDate);
-          resolve();
+          // resolve();
         }catch(error){
           reject(error);
         }
@@ -117,8 +117,12 @@ async function fetchAndStoreData(formattedDate) {
       }
       console.log("set history length is " + history.length);
       // 存储更新后的数据
-      await chrome.storage.local.set({
-        scoreHistory: history
+      chrome.storage.local.set({scoreHistory: history},function () {
+        if (chrome.runtime.lastError) {
+          reject(chrome.runtime.lastError);
+        } else {
+          resolve();
+        }
       });
     });
   }

@@ -4,3 +4,4 @@ PyPDF2
 reportlab
 requests
 pyinstaller
+pubsub

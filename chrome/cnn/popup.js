@@ -80,13 +80,12 @@ function checkAndFetchData() {
       const history = result.scoreHistory || [];
       const lastRecord = history[history.length - 1];
       if (!lastRecord || lastRecord.date !== formattedDate) {
-        try{
-          await fetchAndStoreData(formattedDate);
-          // resolve();
-        }catch(error){
+        try {
+          fetchAndStoreData(formattedDate).then(resolve).catch(reject);
+        } catch (error) {
           reject(error);
         }
-      }else{
+      } else {
         console.log('repeated requests');
         resolve();
       }
@@ -94,42 +93,88 @@ function checkAndFetchData() {
   });
 }
 
-async function fetchAndStoreData(formattedDate) {
-  try {
-    const response = await fetch(`https://production.dataviz.cnn.io/index/fearandgreed/graphdata/${formattedDate}`);
-    const jsonData = await response.json()
-    console.log("execute fetchAndStoreData");
-    const fearGreedScore = jsonData.fear_and_greed.score;
-    const momentumScore = jsonData.market_momentum_sp500.score;
-    // 获取已存储的数据
-    chrome.storage.local.get(['scoreHistory'], async function (result) {
-      let history = result.scoreHistory || [];
-      // 添加新数据
-      history.push({
-        date: formattedDate,
-        fearGreedScore: fearGreedScore,
-        momentumScore: momentumScore,
-      });
+function fetchAndStoreData(formattedDate) {
+  return fetch(`https://production.dataviz.cnn.io/index/fearandgreed/graphdata/${formattedDate}`)
+    .then((response) => response.json())
+    .then((jsonData) => {
+      console.log("execute fetchAndStoreData");
+      const fearGreedScore = jsonData.fear_and_greed.score;
+      const momentumScore = jsonData.market_momentum_sp500.score;
 
-      // 只保留最近15天的数据
-      if (history.length > 15) {
-        history = history.slice(-15);
-      }
-      console.log("set history length is " + history.length);
-      // 存储更新后的数据
-      chrome.storage.local.set({scoreHistory: history},function () {
-        if (chrome.runtime.lastError) {
-          reject(chrome.runtime.lastError);
-        } else {
-          resolve();
-        }
+      return new Promise((resolve, reject) => {
+        chrome.storage.local.get(['scoreHistory'], (result) => {
+          let history = result.scoreHistory || [];
+
+          // Add new data
+          history.push({
+            date: formattedDate,
+            fearGreedScore: fearGreedScore,
+            momentumScore: momentumScore,
+          });
+
+          // Keep only the last 15 days of data
+          if (history.length > 15) {
+            history = history.slice(-15);
+          }
+          console.log("set history length is " + history.length);
+
+          // Store the updated data
+          chrome.storage.local.set({ scoreHistory: history }, function () {
+            if (chrome.runtime.lastError) {
+              console.error('Error setting data:', chrome.runtime.lastError);
+              reject(chrome.runtime.lastError);
+            } else {
+              console.log("chrome.storage.local.set success");
+              resolve();
+            }
+          });
+        });
       });
+    })
+    .catch((error) => {
+      console.error('Error fetching data:', error);
+      throw error; // Re-throw the error to propagate it in the Promise chain
     });
-  }
-  catch (error) {
-    console.error('Error fetching data:', error);
-  }
 }
+
+// async function fetchAndStoreData(formattedDate) {
+//   try {
+//     const response = await fetch(`https://production.dataviz.cnn.io/index/fearandgreed/graphdata/${formattedDate}`);
+//     const jsonData = await response.json();
+//     console.log("execute fetchAndStoreData");
+//     const fearGreedScore = jsonData.fear_and_greed.score;
+//     const momentumScore = jsonData.market_momentum_sp500.score;
+//     // 获取已存储的数据
+//     chrome.storage.local.get(['scoreHistory'], async function (result) {
+//       let history = result.scoreHistory || [];
+//       // 添加新数据
+//       history.push({
+//         date: formattedDate,
+//         fearGreedScore: fearGreedScore,
+//         momentumScore: momentumScore,
+//       });
+
+//       // 只保留最近15天的数据
+//       if (history.length > 15) {
+//         history = history.slice(-15);
+//       }
+//       console.log("set history length is " + history.length);
+//       // 存储更新后的数据
+//       chrome.storage.local.set({scoreHistory: history},function () {
+//         if (chrome.runtime.lastError) {
+//           console.log("chrome.storage.local.set error");
+//           reject(chrome.runtime.lastError);
+//         } else {
+//           console.log("chrome.storage.local.set success");
+//           resolve();
+//         }
+//       });
+//     });
+//   }
+//   catch (error) {
+//     console.error('Error fetching data:', error);
+//   }
+// }
 
 // 主要功能实现
 document.addEventListener('DOMContentLoaded', function () {

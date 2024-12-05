@@ -1,0 +1,96 @@
+{
+    " uua视频": {
+        "chapterContent": {
+            "validConfig": "",
+            "parserID": "DOM",
+            "host": "https://www.uaa.com",
+            "content": "@js:return params.queryInfo.url",
+            "actionID": "chapterContent"
+        },
+        "enable": 1,
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "bookDetail": {
+            "actionID": "bookDetail",
+            "validConfig": "",
+            "host": "https://www.uaa.com",
+            "cover": "//*[@class=\"vodImg\"]/img/@src",
+            "responseFormatType": "json",
+            "desc": "//*[@class=\"vodplayinfo\"][1]/text()",
+            "parserID": "DOM"
+        },
+        "shudanList": {},
+        "bookWorld": {
+            "a": {
+                "responseFormatType": "json",
+                "author": "$.uploader",
+                "bookName": "$.title",
+                "desc": "$.brief",
+                "requestInfo": "@js:\nlet {_type}=params.filters\nlet url=`https://www.uaa.com/api/video/app/video/search?orderType=${_type}&page=${params.pageIndex}&size=25`;\n\nreturn {url:url,}",
+                "host": "https://www.uaa.com",
+                "actionID": "bookWorld",
+                "moreKeys": {
+                    "pageSize": 30,
+                    "requestFilters": "_type\n111::1\n222::6\n\n_bb\n::"
+                },
+                "cover": "$.coverUrl",
+                "validConfig": "",
+                "list": "$.model.data",
+                "_sIndex": 0,
+                "parserID": "DOM",
+                "detailUrl": "$.id || @js: return \"123\"+result;"
+            }
+        },
+        "sourceUrl": "https://www.uaa.com",
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "weight": "33",
+        "sourceName": " uua视频",
+        "sourceType": "video",
+        "miniAppVersion": "2.53.2",
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1730872841.850916",
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "searchBook": {
+            "responseFormatType": "json",
+            "author": "$.uploader",
+            "bookName": "$.title",
+            "desc": "$.brief",
+            "requestInfo": "/api/video/app/video/search?page=%@pageIndex&size=30&keyword=%@keyWord&orderType=3",
+            "host": "https://www.uaa.com",
+            "actionID": "searchBook",
+            "detailUrl": "$.id || @js:\"https://www.uaa.com/api/video/app/video/catalog/\"+result",
+            "moreKeys": {
+                "maxPage": 10
+            },
+            "validConfig": "",
+            "list": "$.model.data",
+            "parserID": "DOM",
+            "cover": "$.coverUrl"
+        },
+        "chapterList": {
+            "actionID": "chapterList",
+            "validConfig": "",
+            "title": "$.title",
+            "host": "https://www.uaa.com",
+            "list": "$.model.menus..children.*||$.model.menus",
+            "responseFormatType": "json",
+            "parserID": "DOM",
+            "url": "https://www.uaa.com/api/video/app/video/chapter?id={{$.id}}&offset=0&viewId=16758385134915627"
+        }
+    }
+}

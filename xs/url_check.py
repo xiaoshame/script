@@ -35,7 +35,7 @@ if __name__ == '__main__':
         'https': 'http://127.0.0.1:1081'
     }
     # 读取JSON文件
-    with open('D:\\workspace\\script\\xs\\data\\sourceModelList.json', 'r',encoding='utf-8') as file:
+    with open('D:\\workspace\\script\\xs\\data\\919.json', 'r',encoding='utf-8') as file:
         data = json.load(file)
     entries_list = list(data.items())
     total_entries = len(entries_list)
@@ -53,7 +53,7 @@ if __name__ == '__main__':
                 invalid_url_count += 1
             completed_count += 1
             print(f"Progress: {completed_count}/{total_entries} ({(completed_count / total_entries) * 100:.2f}%), Invalid URLs: {invalid_url_count}")
-    # 讲可用的json 保存到新的文件中
-    with open("D:\\workspace\\script\\xs\\data\\sourceModelList_new.json", "w",encoding='utf-8') as f:
+    # 将可用的json 保存到新的文件中
+    with open("D:\\workspace\\script\\xs\\data\\919_new.json", "w",encoding='utf-8') as f:
         json.dump(available_entries, f, ensure_ascii=False, indent=4)
 

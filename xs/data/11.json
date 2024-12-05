@@ -1,0 +1,126 @@
+{
+    "北川影视": {
+        "bookWorld": {
+            "电影": {
+                "lastChapterTitle": "//div[@class=\"module-item-note\"]",
+                "responseFormatType": "html",
+                "bookName": "//@alt",
+                "httpHeaders": {
+                    "Cookie": "__51vcke__Je6CQ6ufMIdFbPVn=e5ad8eed-e5c7-5312-9715-1e538db8e581;__51vuft__Je6CQ6ufMIdFbPVn=1675525522371;__vtins__Je6CQ6ufMIdFbPVn=%7B%22sid%22%3A%20%225ee82b6e-4a7e-5d43-b0f5-0245f33f1f5d%22%2C%20%22vd%22%3A%2010%2C%20%22stt%22%3A%201583499%2C%20%22dr%22%3A%201471%2C%20%22expires%22%3A%201675573496244%2C%20%22ct%22%3A%201675571696244%7D __51uvsct__Je6CQ6ufMIdFbPVn=4;mac_history_mxpro=%5B%7B%22vod_name%22%3A%22%E6%83%B3%E8%A6%81%E6%88%90%E4%B8%BA%E5%BD%B1%E4%B9%8B%E5%AE%9E%E5%8A%9B%E8%80%85%EF%BC%81%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F549347-1-1%2F%22%2C%22vod_part%22%3A%22%E7%AC%AC01%E9%9B%86%22%7D%2C%7B%22vod_name%22%3A%22%E6%B7%B1%E6%B5%B7%E5%B7%A8%E8%9F%92%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F592927-2-1%2F%22%2C%22vod_part%22%3A%221080P%22%7D%2C%7B%22vod_name%22%3A%22%E5%88%AB%E5%BD%93%E6%AC%A7%E5%B0%BC%E9%85%B1%E4%BA%86%EF%BC%81%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F589464-2-5%2F%22%2C%22vod_part%22%3A%22%E7%AC%AC05%E9%9B%86%22%7D%5D;PHPSESSID=teaqramkdp4mdppnp90ugtkcp5;mx_style=white;showBtn=true;X_CACHE_KEY=5973fd97eb93d26eeae57e1695444087",
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+                },
+                "requestInfo": "@js:\nlet {_aa,_ab,_ac,_ad}=params.filters\nlet url=`/vodshow/${_aa}-${_ab}-${_ad}------${params.pageIndex}---${_ac}/`;\n\nreturn {url:url}",
+                "host": "https://bczhuiju.com",
+                "actionID": "bookWorld",
+                "detailUrl": "//a/@href",
+                "cover": "//@data-original",
+                "moreKeys": {
+                    "pageSize": 20,
+                    "requestFilters": "_aa\n电影::1\n剧集::2\n综艺::3\n动漫::4\n\n_ab\n地区::\n大陆::%E5%A4%A7%E9%99%86\n香港::%E9%A6%99%E6%B8%AF\n台湾::%E5%8F%B0%E6%B9%BE\n美国::%E7%BE%8E%E5%9B%BD\n日本::%E6%97%A5%E6%9C%AC\n韩国::%E9%9F%A9%E5%9B%BD\n印度::%E5%8D%B0%E5%BA%A6\n英国::%E8%8B%B1%E5%9B%BD\n法国::%E6%B3%95%E5%9B%BD\n瑞典::%E7%91%9E%E5%85%B8\n俄罗斯::%E4%BF%84%E7%BD%97%E6%96%AF\n泰国::%E6%B3%B0%E5%9B%BD\n\n_ac\n年份::\n2023::2023\n2022::2022\n2021::2021\n2020::2020\n2019::2019\n2018::2018\n2017::2017\n2016::2016\n2015::2015\n2014::2014\n2013::2013\n2012::2012\n2011::2011\n2010::2010\n2009::2009\n2008::2008\n2007::2007\n2006::2006\n2005::2005\n2004::2004\n\n_ad\n时间::time\n人气::hits\n评分::score"
+                },
+                "parserID": "DOM",
+                "_sIndex": 0,
+                "list": "//*[@*=\"module-poster-item module-item\"]",
+                "validConfig": ""
+            }
+        },
+        "authorId": "",
+        "weight": "9999",
+        "miniAppVersion": "2.53.2",
+        "chapterList": {
+            "JSParser": "function functionName(config, jsparams, result) {\n    let ts = result.updateTime.split(\"\\n\");\n    let list = [];\n    for (let i = 0; i < ts.length; i++) {\n        if (\"url\" in result[\"list\"][i]) {\n            let title = result[\"list\"][i][\"title\"];\n            let titles = title.split(\"\\n\");\n            let urls = result[\"list\"][i][\"url\"].split(\"\\n\");\n            for (let j = 0; j < titles.length; j++) {\n                list.push({\"title\": ts[i] + \"-\" + titles[j], \"url\": urls[j]})\n            }\n        }\n    }\n    return {\"updateTime\": \"\", \"list\": list};}",
+            "responseFormatType": "html",
+            "url": "//a/@href",
+            "httpHeaders": {
+                "Cookie": "__51vcke__Je6CQ6ufMIdFbPVn=e5ad8eed-e5c7-5312-9715-1e538db8e581;__51vuft__Je6CQ6ufMIdFbPVn=1675525522371;__vtins__Je6CQ6ufMIdFbPVn=%7B%22sid%22%3A%20%225ee82b6e-4a7e-5d43-b0f5-0245f33f1f5d%22%2C%20%22vd%22%3A%2010%2C%20%22stt%22%3A%201583499%2C%20%22dr%22%3A%201471%2C%20%22expires%22%3A%201675573496244%2C%20%22ct%22%3A%201675571696244%7D __51uvsct__Je6CQ6ufMIdFbPVn=4;mac_history_mxpro=%5B%7B%22vod_name%22%3A%22%E6%83%B3%E8%A6%81%E6%88%90%E4%B8%BA%E5%BD%B1%E4%B9%8B%E5%AE%9E%E5%8A%9B%E8%80%85%EF%BC%81%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F549347-1-1%2F%22%2C%22vod_part%22%3A%22%E7%AC%AC01%E9%9B%86%22%7D%2C%7B%22vod_name%22%3A%22%E6%B7%B1%E6%B5%B7%E5%B7%A8%E8%9F%92%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F592927-2-1%2F%22%2C%22vod_part%22%3A%221080P%22%7D%2C%7B%22vod_name%22%3A%22%E5%88%AB%E5%BD%93%E6%AC%A7%E5%B0%BC%E9%85%B1%E4%BA%86%EF%BC%81%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F589464-2-5%2F%22%2C%22vod_part%22%3A%22%E7%AC%AC05%E9%9B%86%22%7D%5D;PHPSESSID=teaqramkdp4mdppnp90ugtkcp5;mx_style=white;showBtn=true;X_CACHE_KEY=5973fd97eb93d26eeae57e1695444087",
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+            },
+            "requestInfo": "@js:\n\nreturn {'url':result, 'webView':true};",
+            "title": "//a",
+            "actionID": "chapterList",
+            "host": "https://bczhuiju.com",
+            "validConfig": "",
+            "list": "//div[@class=\"module-play-list\"]",
+            "parserID": "DOM",
+            "updateTime": "//@data-dropdown-value"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "enable": 1,
+        "sourceName": "北川影视",
+        "sourceType": "video",
+        "sourceUrl": "https://bczhuiju.com",
+        "httpHeaders": {
+            "Cookie": "__51vcke__Je6CQ6ufMIdFbPVn=e5ad8eed-e5c7-5312-9715-1e538db8e581;__51vuft__Je6CQ6ufMIdFbPVn=1675525522371;__vtins__Je6CQ6ufMIdFbPVn=%7B%22sid%22%3A%20%225ee82b6e-4a7e-5d43-b0f5-0245f33f1f5d%22%2C%20%22vd%22%3A%2010%2C%20%22stt%22%3A%201583499%2C%20%22dr%22%3A%201471%2C%20%22expires%22%3A%201675573496244%2C%20%22ct%22%3A%201675571696244%7D __51uvsct__Je6CQ6ufMIdFbPVn=4;mac_history_mxpro=%5B%7B%22vod_name%22%3A%22%E6%83%B3%E8%A6%81%E6%88%90%E4%B8%BA%E5%BD%B1%E4%B9%8B%E5%AE%9E%E5%8A%9B%E8%80%85%EF%BC%81%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F549347-1-1%2F%22%2C%22vod_part%22%3A%22%E7%AC%AC01%E9%9B%86%22%7D%2C%7B%22vod_name%22%3A%22%E6%B7%B1%E6%B5%B7%E5%B7%A8%E8%9F%92%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F592927-2-1%2F%22%2C%22vod_part%22%3A%221080P%22%7D%2C%7B%22vod_name%22%3A%22%E5%88%AB%E5%BD%93%E6%AC%A7%E5%B0%BC%E9%85%B1%E4%BA%86%EF%BC%81%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F589464-2-5%2F%22%2C%22vod_part%22%3A%22%E7%AC%AC05%E9%9B%86%22%7D%5D;PHPSESSID=teaqramkdp4mdppnp90ugtkcp5;mx_style=white;showBtn=true;X_CACHE_KEY=5973fd97eb93d26eeae57e1695444087",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+        },
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1676611333.836895",
+        "searchBook": {
+            "cat": "//div[@class=\"module-card-item-class\"]",
+            "lastChapterTitle": "//div[@class=\"module-item-note\"]",
+            "responseFormatType": "html",
+            "bookName": "//@alt",
+            "desc": "//div[@class=\"module-info-item\"]/div||@js:\nreturn result.replace(/\\s+/g,\"\");",
+            "requestInfo": "@js:\nvar url =`https://bczhuiju.com/vodsearch/page/${params.pageIndex}/wd/${encodeURI(params.keyWord)}/`\nreturn {url:url,\"webView\":true};",
+            "host": "https://bczhuiju.com",
+            "actionID": "searchBook",
+            "detailUrl": "//div[@class=\"module-card-item module-item\"]/a/@href",
+            "moreKeys": {
+                "pageSize": 16
+            },
+            "validConfig": "",
+            "cover": "//@data-original",
+            "parserID": "DOM",
+            "list": "//div[@class=\"module-items module-card-items\"]/div",
+            "httpHeaders": {
+                "Cookie": "__51vcke__Je6CQ6ufMIdFbPVn=e5ad8eed-e5c7-5312-9715-1e538db8e581;__51vuft__Je6CQ6ufMIdFbPVn=1675525522371;__vtins__Je6CQ6ufMIdFbPVn=%7B%22sid%22%3A%20%225ee82b6e-4a7e-5d43-b0f5-0245f33f1f5d%22%2C%20%22vd%22%3A%2010%2C%20%22stt%22%3A%201583499%2C%20%22dr%22%3A%201471%2C%20%22expires%22%3A%201675573496244%2C%20%22ct%22%3A%201675571696244%7D __51uvsct__Je6CQ6ufMIdFbPVn=4;mac_history_mxpro=%5B%7B%22vod_name%22%3A%22%E6%83%B3%E8%A6%81%E6%88%90%E4%B8%BA%E5%BD%B1%E4%B9%8B%E5%AE%9E%E5%8A%9B%E8%80%85%EF%BC%81%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F549347-1-1%2F%22%2C%22vod_part%22%3A%22%E7%AC%AC01%E9%9B%86%22%7D%2C%7B%22vod_name%22%3A%22%E6%B7%B1%E6%B5%B7%E5%B7%A8%E8%9F%92%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F592927-2-1%2F%22%2C%22vod_part%22%3A%221080P%22%7D%2C%7B%22vod_name%22%3A%22%E5%88%AB%E5%BD%93%E6%AC%A7%E5%B0%BC%E9%85%B1%E4%BA%86%EF%BC%81%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F589464-2-5%2F%22%2C%22vod_part%22%3A%22%E7%AC%AC05%E9%9B%86%22%7D%5D;PHPSESSID=teaqramkdp4mdppnp90ugtkcp5;mx_style=white;showBtn=true;X_CACHE_KEY=5973fd97eb93d26eeae57e1695444087",
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+            }
+        },
+        "chapterContent": {
+            "validConfig": "",
+            "content": "@js:\nlet url = String(result);\nlet url_index = url.indexOf('url=');\nif (url_index != -1) {\n    url = url.substring(url_index + 4);\n}\n\nreturn url.replace('&jump=','');",
+            "actionID": "chapterContent",
+            "requestInfo": "@js:\nlet pat=\".*\\\\.(m3u8|mp4).*\";\nreturn {'url':result,'httpHeaders':config.httpHeaders, 'webView':true,'sourceRegex':pat,cacheTime:0};",
+            "host": "https://bczhuiju.com",
+            "httpHeaders": {
+                "Cookie": "__51vcke__Je6CQ6ufMIdFbPVn=e5ad8eed-e5c7-5312-9715-1e538db8e581;__51vuft__Je6CQ6ufMIdFbPVn=1675525522371;__vtins__Je6CQ6ufMIdFbPVn=%7B%22sid%22%3A%20%225ee82b6e-4a7e-5d43-b0f5-0245f33f1f5d%22%2C%20%22vd%22%3A%2010%2C%20%22stt%22%3A%201583499%2C%20%22dr%22%3A%201471%2C%20%22expires%22%3A%201675573496244%2C%20%22ct%22%3A%201675571696244%7D __51uvsct__Je6CQ6ufMIdFbPVn=4;mac_history_mxpro=%5B%7B%22vod_name%22%3A%22%E6%83%B3%E8%A6%81%E6%88%90%E4%B8%BA%E5%BD%B1%E4%B9%8B%E5%AE%9E%E5%8A%9B%E8%80%85%EF%BC%81%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F549347-1-1%2F%22%2C%22vod_part%22%3A%22%E7%AC%AC01%E9%9B%86%22%7D%2C%7B%22vod_name%22%3A%22%E6%B7%B1%E6%B5%B7%E5%B7%A8%E8%9F%92%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F592927-2-1%2F%22%2C%22vod_part%22%3A%221080P%22%7D%2C%7B%22vod_name%22%3A%22%E5%88%AB%E5%BD%93%E6%AC%A7%E5%B0%BC%E9%85%B1%E4%BA%86%EF%BC%81%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F589464-2-5%2F%22%2C%22vod_part%22%3A%22%E7%AC%AC05%E9%9B%86%22%7D%5D;PHPSESSID=teaqramkdp4mdppnp90ugtkcp5;mx_style=white;showBtn=true;X_CACHE_KEY=5973fd97eb93d26eeae57e1695444087",
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+            },
+            "parserID": "DOM"
+        },
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "password": "745208",
+        "shudanList": {},
+        "desc": "🦞",
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "bookDetail": {
+            "validConfig": "",
+            "actionID": "bookDetail",
+            "host": "https://bczhuiju.com",
+            "httpHeaders": {
+                "Cookie": "__51vcke__Je6CQ6ufMIdFbPVn=e5ad8eed-e5c7-5312-9715-1e538db8e581;__51vuft__Je6CQ6ufMIdFbPVn=1675525522371;__vtins__Je6CQ6ufMIdFbPVn=%7B%22sid%22%3A%20%225ee82b6e-4a7e-5d43-b0f5-0245f33f1f5d%22%2C%20%22vd%22%3A%2010%2C%20%22stt%22%3A%201583499%2C%20%22dr%22%3A%201471%2C%20%22expires%22%3A%201675573496244%2C%20%22ct%22%3A%201675571696244%7D __51uvsct__Je6CQ6ufMIdFbPVn=4;mac_history_mxpro=%5B%7B%22vod_name%22%3A%22%E6%83%B3%E8%A6%81%E6%88%90%E4%B8%BA%E5%BD%B1%E4%B9%8B%E5%AE%9E%E5%8A%9B%E8%80%85%EF%BC%81%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F549347-1-1%2F%22%2C%22vod_part%22%3A%22%E7%AC%AC01%E9%9B%86%22%7D%2C%7B%22vod_name%22%3A%22%E6%B7%B1%E6%B5%B7%E5%B7%A8%E8%9F%92%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F592927-2-1%2F%22%2C%22vod_part%22%3A%221080P%22%7D%2C%7B%22vod_name%22%3A%22%E5%88%AB%E5%BD%93%E6%AC%A7%E5%B0%BC%E9%85%B1%E4%BA%86%EF%BC%81%22%2C%22vod_url%22%3A%22https%3A%2F%2Fbczhuiju.com%2Fvodplay%2F589464-2-5%2F%22%2C%22vod_part%22%3A%22%E7%AC%AC05%E9%9B%86%22%7D%5D;PHPSESSID=teaqramkdp4mdppnp90ugtkcp5;mx_style=white;showBtn=true;X_CACHE_KEY=5973fd97eb93d26eeae57e1695444087",
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36"
+            },
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "desc": "//meta[@name=\"description\"]/@content"
+        }
+    }
+}

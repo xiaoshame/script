@@ -114,7 +114,7 @@ debugger
 function functionName(config, params, result)
 {
     let list = [];
-    let regex = /"([^"]+)">([^<]+)<\/a>[\s\S]*?<td class="odd">([^<]+)<\/td>/gim;
+    let regex = '/<script[^>]*type="application/json">([^<]*)</script>/gim';
 
     params.nativeTool.log("111111111");
     while (tem = regex.exec(result)) {
@@ -147,6 +147,23 @@ function functionName(config, params, result)
 //     return { list: list };
 // }
 
+// 章节列表
+function functionName(config, params, result) {
+    let list = [];
+    xpath = '//script[@class="wp-playlist-script"]';
+    xresult = params.nativeTool.XPathParserWithSource(result);
+    let txt_xpath = xresult.queryWithXPath(xpath);
+    for (let i in txt_xpath) {
+        let chapterInfo = {};
+        let jsonData = JSON.parse(txt_xpath[i].content());
+        chapterInfo.title = "mp4";
+        chapterInfo.url = "https://v.ddys.pro/" + jsonData.tracks[0].src0;
+        list.push(chapterInfo);
+    }
+
+    return { list: list };
+}
+
 // // 获取流地址
 // function functionName(config, params, result) {
 //     let regex = /url:'([^']+\.(?:m3u8|mp4))'/;
@@ -165,7 +182,7 @@ function functionName(config, params, result)
 //漫画章节列表
 function functionName(config, params, result) {
     let list = [];
-    let regex = /<li><a href="([^"]+)"><b>([^<]+)<\/b></gim;
+    let regex = '<script[^>]*type="application/json">([^<]*)</script>';
     // let match = result.match(regex);
     while (tem = regex.exec(result)) {
         let chapterInfo = {};

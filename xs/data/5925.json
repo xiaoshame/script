@@ -1,0 +1,172 @@
+{
+    "番茄小说5925": {
+        "bookWorld": {
+            "男生": {
+                "cat": "$.tags",
+                "author": "$.author",
+                "lastChapterTitle": "$.lastChapterTitlde",
+                "responseFormatType": "json",
+                "bookName": "$.book_name",
+                "desc": "$.abstract",
+                "requestInfo": "@js:\nlet {_id}=params.filters\nlet url=`https://novel.snssdk.com/api/novel/channel/homepage/new_category/book_list/v1/?app_version=4.6.0&device_platform=android&aid=1319&app_name=super&parent_enterfrom=novel_channel_category.tab.&channel=ppx_wy_and_gaox_d_5&version_code=460&version_name=4.6.0&word_count=9&genre_type=0&creation_status=9&offset=${((params.pageIndex-1)*100)}&limit=100&gender=1&category_id=${_id}`;\n\nreturn {url:url,'httpHeaders':config.httpHeaders}",
+                "host": "https://api5-normal-sinfonlineb.fqnovel.com",
+                "actionID": "bookWorld",
+                "detailUrl": "$.book_id",
+                "cover": "$.thumb_url",
+                "validConfig": "",
+                "list": "$.data.data.*",
+                "_sIndex": 0,
+                "parserID": "DOM",
+                "moreKeys": {
+                    "maxPage": 100,
+                    "requestFilters": "_id\n 都市::1\n玄幻::7\n灵异::100\n战神::27\n神医::26\n悬疑::10\n悬疑灵异::751\n穿越::37\n重生::36\n都市脑洞::262\n都市修真::124\n系统::19\n赘婿::25\n神豪::20\n都市日常::261\n种田::23\n历史::12\n打脸::522\n都市生活::2\n历史古代::273\n西游::373\n天才::90\n诸天万界::71\n鉴宝::17\n都市种田::263\n推理::61\n架空::452\n科幻::8\n东方玄幻::511\n武侠::16\n特种兵::375\n盗墓::81\n剑道::80\n空间::44\n无敌::384\n三国::67\n外卖::75\n奶爸::42\n乡村::11\n同人::538\n末世::68\n都市异能::516\n海岛::40\n游戏体育::746\n二次元::39\n洪荒::66\n求生::379\n体育::15\n大唐::73\n明朝::126\n扮猪吃虎::93\n历史脑洞::272\n星际::77\n校花::385\n直播::69\n年代::79\n家庭::125\n宠物::74\n网游::372\n衍生同人::718\n娱乐圈::43\n开局::453\n职场::127\n大小姐::519\n大秦::377\n单女主::389\n抗战谍战::504\n聊天群::381\n美食::78\n末日求生::515\n搞笑轻松::778\n悬疑脑洞::539\n修仙::517\n反派::369\n腹黑::92\n电竞::508\n学霸::82\n影视小说::45\n都市青春::396\n异世大陆::512\n特工::518\n官场::788\n无限流::70\n游戏主播::509\n大佬::520\n女帝::378\n灵气复苏::514\n神探::506\n武将::497\n火影::368\n无女主::391\n龙珠::376\n宋朝::501\n钓鱼::493\n皇帝::498\n穿书::382\n囤物资::494\n漫威::374\n生活::48\n高武世界::513\n海贼::370\n奥特同人::367\n战争::97\n神奇宝贝::371\n断层::500\n惊悚::322\n宫廷侯爵::502\n九叔::383\n综漫::465\n文学小说::47\n谍战::507\n成功励志::56\n国运::496\n双重生::524\n克苏鲁::705\n清朝::503\n四合院::495\n文化历史::62"
+                },
+                "wordCount": "$.word_number",
+                "httpHeaders": {
+                    "Cookie": "novel_web_id=7074737950051205925",
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0"
+                }
+            },
+            "女频": {
+                "cat": "$.tags",
+                "author": "$.author",
+                "lastChapterTitle": "$.lastChapterTitlde",
+                "responseFormatType": "json",
+                "bookName": "$.book_name",
+                "desc": "$.abstract",
+                "requestInfo": "@js:\nlet {_id}=params.filters\nlet url=`https://novel.snssdk.com/api/novel/channel/homepage/new_category/book_list/v1/?app_version=4.6.0&device_platform=android&aid=1319&app_name=super&parent_enterfrom=novel_channel_category.tab.&channel=ppx_wy_and_gaox_d_5&version_code=460&version_name=4.6.0&word_count=9&genre_type=0&creation_status=9&offset=((${params.pageIndex}-1)*100)&limit=100&gender=0&category_id=${_id}`;\n\nreturn {url:url,'httpHeaders':config.httpHeaders}",
+                "host": "https://api5-normal-sinfonlineb.fqnovel.com",
+                "actionID": "bookWorld",
+                "detailUrl": "$.book_id",
+                "cover": "$.thumb_url",
+                "validConfig": "",
+                "list": "$.data.data.*",
+                "_sIndex": 1,
+                "parserID": "DOM",
+                "moreKeys": {
+                    "maxPage": 100,
+                    "requestFilters": "_id\n 现代言情::3\n豪门总裁::29\n古代言情::5\n宠妻::30\n甜宠::96\n穿越::37\n宫斗宅斗::246\n霸总::748\n萌宝::28\n王妃::85\n重生::36\nHE::484\n幻想言情::32\n都市生活::2\n腹黑::92\n豪门世家::473\n种田::23\n豪门爽文::745\n现言脑洞::267\n玄幻言情::248\n嫡女::88\n职场婚恋::750\n医术::247\n打脸::522\n虐渣::457\n空间::44\n女强::86\n日久生情::474\n娱乐圈::43\n家庭::125\n团宠::94\n今穿古::463\n皇后::84\n灵异::100\n天才::90\n闪婚::466\n校园::4\n系统::19\n公主::83\n独宠::460\n马甲::266\n虐文::95\n婚恋::34\n契约婚姻::471\n护短::458\n年代::79\n悬疑::10\n一见钟情::477\n悬疑恋爱::747\n古言脑洞::253\n前世今生::523\n青梅竹马::387\n大佬::520\n毒医::491\n快穿::24\n带球跑::479\n学霸::82\n影视小说::45\n冰山::468\n病娇::380\n精灵::89\n大小姐::519\n扮猪吃虎::93\n明星::486\n相爱相杀::483\n无敌::384\n乡村::11\n情有独钟::456\n推理::61\n替身::470\n美食::78\n强强::478\n破镜重圆::475\n穿书::382\n反派::369\n将军::492\n皇叔::87\n异世穿越::464\n医生::487\n无CP::392\n二次元::39\n兽世::72\n民国::390\n逃婚::480\n双面::469\n双重生::524\n直播::69\n女扮男装::388\n搞笑轻松::778\n职场::127\n盗墓::81\n古灵精怪::459\n末世::68\n古穿今::462\n暗恋::482\n双向奔赴::476\n律师::488\n隐婚::467\n天作之合::455\n现言萌宝::489\n清穿::76\n双洁::702\n可盐可甜::454\n星际::77\n作精::521\n厨娘::490\n双男主::275\n同人::538\n悬疑脑洞::539\n武侠::16\n现言复仇::268\n游戏体育::746\n科幻::8\n衍生同人::718\n囤物资::494\n都市日常::261\n群穿::461\n电竞::508\n游戏主播::509\n职场商战::485\n双女主::704\n文学小说::47\n综漫::465\n四合院::495\n文化历史::62\n生活::48\n战争::97\n逃荒::557\n成功励志::56\n抗战谍战::504"
+                },
+                "wordCount": "$.word_number",
+                "httpHeaders": {
+                    "Cookie": "novel_web_id=7074737950051205925",
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0"
+                }
+            },
+            "出版": {
+                "cat": "$.tags",
+                "author": "$.author",
+                "lastChapterTitle": "$.lastChapterTitlde",
+                "responseFormatType": "json",
+                "bookName": "$.book_name",
+                "desc": "$.abstract",
+                "requestInfo": "@js:\nlet {_id}=params.filters\nlet url=`https://novel.snssdk.com/api/novel/channel/homepage/new_category/book_list/v1/?app_version=4.6.0&device_platform=android&aid=1319&app_name=super&parent_enterfrom=novel_channel_category.tab.&channel=ppx_wy_and_gaox_d_5&version_code=460&version_name=4.6.0&word_count=9&genre_type=160&creation_status=9&offset=${((params.pageIndex-1)*100)}&limit=100&category_id=${_id}`;\n\nreturn {url:url,'httpHeaders':config.httpHeaders}",
+                "host": "https://api5-normal-sinfonlineb.fqnovel.com",
+                "actionID": "bookWorld",
+                "detailUrl": "$.book_id",
+                "cover": "$.thumb_url",
+                "validConfig": "",
+                "list": "$.data.data.*",
+                "_sIndex": 2,
+                "parserID": "DOM",
+                "moreKeys": {
+                    "maxPage": 100,
+                    "requestFilters": "_id\n文学小说::47\n现代言情::3\n现实小说::400\n经济管理::53\n社会科学::50\n诗歌散文::46\n文化历史::62\n成功励志::56\n历史传记::404\n人文社科::405\n当代文学::399\n经典国学::423\n文学理论::401\n个人成长::410\n古代言情::5\n生活::48\n腹黑::92\n人际交往::412\n中国名著::98\n中国历史::402\n宫斗宅斗::246\n都市::1\n都市日常::261\n都市生活::2\n历史::12\n玄幻言情::248\n精灵::89\n家庭::125\n王妃::85\n亲子家教::415\n职场::127\n职场婚恋::750\n豪门总裁::29\n影视小说::45\n甜宠::96\n宠妻::30\n心理学::407\n玄幻::7\n悬疑::10\n推理::61\n文化艺术::413\n幻想言情::32\n思维智商::411\n公主::83\n保健养生::416\n穿越::37\n外国文学::397\n人物传记::409\n世界历史::403\n两性::274\n武侠::16\n校园::4\n外国名著::99\n美食休闲::419\n政治军事::408\n哲学宗教::406\n风水占卜::421\n国学::116\n科技::52\n娱乐圈::43\n法律::142\n教育::54\n成人教育::722\n历史古代::273\n种田::23\n现言脑洞::267\n战争::97\n天才::90\n灵异::100\n家居旅游::420\n重生::36\n青梅竹马::387\n科幻::8\n直播::69\n悬疑灵异::751\n古言脑洞::253\n古代文学::398\n民国::390\n盗墓::81\n都市脑洞::262\n豪门爽文::745\n官场::788\n霸总::748\n年代::79\n学霸::82\n明朝::126\n时尚美妆::418"
+                },
+                "wordCount": "$.word_number",
+                "httpHeaders": {
+                    "Cookie": "novel_web_id=7074737950051205925",
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0"
+                }
+            }
+        },
+        "weight": "9999",
+        "miniAppVersion": "2.53.2",
+        "chapterList": {
+            "actionID": "chapterList",
+            "validConfig": "",
+            "requestInfo": "https://fanqienovel.com/api/reader/directory/detail?bookId=%@result",
+            "title": "$.title",
+            "host": "https://api5-normal-sinfonlineb.fqnovel.com",
+            "httpHeaders": {
+                "Cookie": "novel_web_id=7074737950051205925",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0"
+            },
+            "list": "$..chapterListWithVolume[*].*",
+            "responseFormatType": "json",
+            "parserID": "DOM",
+            "url": "$.itemId"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "enable": 1,
+        "sourceName": "番茄小说5925",
+        "sourceUrl": "https://api5-normal-sinfonlineb.fqnovel.com",
+        "httpHeaders": {
+            "Cookie": "novel_web_id=7074737950051205925",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0"
+        },
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1726099711.664214",
+        "toTop": "1715509265.111470",
+        "searchBook": {
+            "cat": "$.tags",
+            "author": "$.author",
+            "lastChapterTitle": "$.lastChapterTitlde",
+            "responseFormatType": "json",
+            "bookName": "$.book_name",
+            "desc": "$.abstract",
+            "requestInfo": "@js:\nlet KEY=encodeURI(params.keyWord)\nlet url=`https://api5-normal-sinfonlineb.fqnovel.com/reading/bookapi/search/page/v/?query=${KEY}&aid=1967&channel=0&os_version=0&device_type=0&device_platform=0&iid=466614321180296&passback=${((params.pageIndex-1)*10)}&version_code=999`;\nreturn {url:url}",
+            "host": "https://api5-normal-sinfonlineb.fqnovel.com",
+            "actionID": "searchBook",
+            "detailUrl": "$.book_id",
+            "cover": "$.thumb_url",
+            "validConfig": "",
+            "list": "$..book_data[0]",
+            "parserID": "DOM",
+            "moreKeys": {
+                "maxPage": 10
+            },
+            "httpHeaders": {
+                "Cookie": "novel_web_id=7074737950051205925",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0"
+            }
+        },
+        "chapterContent": {
+            "validConfig": "",
+            "content": "//div[@class='muye-reader-content noselect']//p/text()\n||@js:\n\nfunction interpreter(cc) {const CODE_ST = 58344;\nconst CODE_ED = 58715;\nconst charset = ['D', '在', '主', '特', '家', '军', '然', '表', '场', '4', '要', '只', 'v', '和', '?', '6', '别', '还', 'g',\n'现', '儿', '岁', '?', '?', '此', '象', '月', '3', '出', '战', '工', '相', 'o', '男', '直', '失', '世', 'F',\n'都', '平', '文', '什', 'V', 'O', '将', '真', 'T', '那', '当', '?', '会', '立', '些', 'u', '是', '十', '张',\n'学', '气', '大', '爱', '两', '命', '全', '后', '东', '性', '通', '被', '1', '它', '乐', '接', '而', '感',\n'车', '山', '公', '了', '常', '以', '何', '可', '话', '先', 'p', 'i', '叫', '轻', 'M', '士', 'w', '着', '变',\n'尔', '快', 'l', '个', '说', '少', '色', '里', '安', '花', '远', '7', '难', '师', '放', 't', '报', '认',\n'面', '道', 'S', '?', '克', '地', '度', 'I', '好', '机', 'U', '民', '写', '把', '万', '同', '水', '新', '没',\n'书', '电', '吃', '像', '斯', '5', '为', 'y', '白', '几', '日', '教', '看', '但', '第', '加', '候', '作',\n'上', '拉', '住', '有', '法', 'r', '事', '应', '位', '利', '你', '声', '身', '国', '问', '马', '女', '他',\n'Y', '比', '父', 'x', 'A', 'H', 'N', 's', 'X', '边', '美', '对', '所', '金', '活', '回', '意', '到', 'z',\n'从', 'j', '知', '又', '内', '因', '点', 'Q', '三', '定', '8', 'R', 'b', '正', '或', '夫', '向', '德', '听',\n'更', '?', '得', '告', '并', '本', 'q', '过', '记', 'L', '让', '打', 'f', '人', '就', '者', '去', '原', '满',\n'体', '做', '经', 'K', '走', '如', '孩', 'c', 'G', '给', '使', '物', '?', '最', '笑', '部', '?', '员', '等',\n'受', 'k', '行', '一', '条', '果', '动', '光', '门', '头', '见', '往', '自', '解', '成', '处', '天', '能',\n'于', '名', '其', '发', '总', '母', '的', '死', '手', '入', '路', '进', '心', '来', 'h', '时', '力', '多',\n'开', '已', '许', 'd', '至', '由', '很', '界', 'n', '小', '与', 'Z', '想', '代', '么', '分', '生', '口',\n'再', '妈', '望', '次', '西', '风', '种', '带', 'J', '?', '实', '情', '才', '这', '?', 'E', '我', '神', '格',\n'长', '觉', '间', '年', '眼', '无', '不', '亲', '关', '结', '0', '友', '信', '下', '却', '重', '己', '老',\n'2', '音', '字', 'm', '呢', '明', '之', '前', '高', 'P', 'B', '目', '太', 'e', '9', '起', '稜', '她', '也',\n'W', '用', '方', '子', '英', '每', '理', '便', '四', '数', '期', '中', 'C', '外', '样', 'a', '海', '们',\n'任'];\nlet bias = cc - 58344;\nif (bias < 0 || bias >= charset.length || charset[bias] === '?') {\nreturn String.fromCharCode(cc);\n}\nreturn charset[bias];\n}\n\nfunction r_content(content) {\n    let newText = '';\n    try {\n        for (var text of content) {\n            let len = text.length;\n\n            for (var ind = 0; ind < len; ind++) {\n                let cc = text.charCodeAt(ind);\n                var ch = text.charAt(ind);\n                if (cc >= 58344 && cc <= 58715) {\n                    ch = interpreter(cc);\n                }\n                newText += ch;\n            }\n        }\n    } catch(err) {\n        console.log(err);\n    }\n    return newText;\n};\n\nlet data=r_content(result);\n\nlet xml = params.nativeTool.XPathParserWithSource(data);\n\nlet text_list=xml.queryWithXPath('//p/text()');\nlet con='';\nfor (i in text_list){con += text_list[i].content()+'\\n';}\nreturn con",
+            "actionID": "chapterContent",
+            "requestInfo": "@js:return{\"url\": 'https://fanqienovel.com/reader/'+result+'?enter_from=reader'}",
+            "host": "https://api5-normal-sinfonlineb.fqnovel.com",
+            "httpHeaders": {
+                "Cookie": "novel_web_id=7074737950051205925",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0"
+            },
+            "responseFormatType": "html",
+            "parserID": "DOM"
+        },
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "password": "147258369",
+        "shudanList": {},
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "bookDetail": {
+            "actionID": "bookDetail",
+            "parserID": "DOM"
+        }
+    }
+}

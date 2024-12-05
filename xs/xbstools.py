@@ -79,5 +79,8 @@ def json_to_xbs(input,output):
         f.write(decode_data)
 
 if __name__ == '__main__':
-    xbs_to_json('D:\\workspace\\script\\xs\\data\\xs_qubook.xbs' , 'D:\\workspace\\script\\xs\\data\\xs_qubook.json')
-    # json_to_xbs('D:\\workspace\\script\\xs\\data\\sourceModelList.json' , 'D:\\workspace\\script\\xs\\data\\sourceModelList.xbs')
+    xbs_to_json('D:\\workspace\\script\\xs\\data\\5925.xbs' , 'D:\\workspace\\script\\xs\\data\\5925.json')
+    # json_to_xbs('D:\\workspace\\script\\xs\\data\\22.json' , 'D:\\workspace\\script\\xs\\data\\22.xbs')
+
+
+    

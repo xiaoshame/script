@@ -9,7 +9,7 @@
 - xiaohongshu: 支持搜索小红书，搜索到的文章导出为execel
 - m3u8: mu38视频下载脚本
 - xs: 香色闺阁书源和语音tts相关脚本
-- chrome :自己写的chrome插件，目前包含无效书签检测，CNN Fear & Greed Index Tracker
+- chrome :自己写的chrome脚本和插件
 
 ## 脚本详情
 
@@ -80,3 +80,6 @@
 ### chrome
 1. url_check，浏览器加载此文件夹即可安装，点击后检测书签是否可用，将不可用的书签罗列出来，方便删除
 2. cnn，浏览器加载此文件夹即可安装，点击后展示CNNFear & Greed Index曲线图，刚安装只有1天的数据
+3. get-cookies,获取当前页面cookies,fork https://github.com/kairi003/Get-cookies.txt-LOCALLY/ 调整而来
+4. markdown ，将markdown内容转换成chrome可导入的书签文件
+5. seckill，自动化点击插件，还未修复完

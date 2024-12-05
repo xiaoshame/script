@@ -1,0 +1,74 @@
+{
+    "低端影视": {
+        "chapterContent": {
+            "validConfig": "",
+            "content": "@js:\nreturn params.queryInfo.url;",
+            "host": "https://ddys.pro/",
+            "parserID": "DOM",
+            "requestInfo": "@js:\nreturn 'https://www.baidu.com/';",
+            "actionID": "chapterContent"
+        },
+        "enable": 1,
+        "authorId": "",
+        "bookDetail": {
+            "actionID": "bookDetail",
+            "parserID": "DOM"
+        },
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "bookWorld": {},
+        "shudanList": {},
+        "desc": "🐿",
+        "sourceUrl": "https://ddys.pro/",
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "sourceType": "video",
+        "sourceName": "低端影视",
+        "weight": "99",
+        "miniAppVersion": "2.52.0",
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1638158230.895792",
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "searchBook": {
+            "cat": "//span[@class=\"cat-links\"]/a/text()",
+            "author": "",
+            "responseFormatType": "html",
+            "bookName": "//h2[@class=\"post-title\"]/a/text()",
+            "desc": "",
+            "requestInfo": "@js:\nlet url ='https://ddys.pro/?s='+params.keyWord+'&post_type=post&'\nlet hp ={\"User-Agent\":\"Dalvik/2.1.0 (Linux; U; Android 10; VOG-AL00 Build/HUAWEIVOG-AL00)\"}\nreturn {\"url\":encodeURI(url),\"httpHeaders\":hp};",
+            "host": "https://ddys.pro/",
+            "actionID": "searchBook",
+            "detailUrl": "//h2[@class=\"post-title\"]/a/@href",
+            "cover": "",
+            "validConfig": "",
+            "parserID": "DOM",
+            "list": "//main[@id=\"main\"]//div[@class=\"row\"]",
+            "status": ""
+        },
+        "chapterList": {
+            "validConfig": "",
+            "JSParser": "",
+            "host": "https://ddys.pro/",
+            "parserID": "DOM",
+            "requestInfo": "",
+            "actionID": "chapterList",
+            "list": "//script[@class=\"wp-playlist-script\"]",
+            "title": "高清",
+            "url": "%@js return \"https://v.ddys.pro/\"+ result[\"tracks\"][\"src0\"];"
+        }
+    }
+}

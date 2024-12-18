@@ -147,15 +147,6 @@ function functionName(config, params, result)
     return { list: list };
 }
 
-@js:
-
-let {_type}=params.filters;
-let data = `${_type}`;
-let uri = encodeURI(data);
-let url=`https://rss.detools.dev/twitter/media/` + uri;
-
-return {url:url,}
-
 // /////////////视频
 
 // // 章节列表

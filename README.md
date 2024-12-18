@@ -76,6 +76,7 @@
 2. tts封装 Azure/Ali/Edge tts服务，voice_list.py获取Azure TTS音色列表
 3. data 包含部分源和js解析案例，提高编写源的效率
 4. url_check.py 检测书源是否可用，需要配合xbstools.py使用
+5. ydstools.py 提供yds与json互转能力
 
 ### chrome
 1. url_check，浏览器加载此文件夹即可安装，点击后检测书签是否可用，将不可用的书签罗列出来，方便删除

@@ -1,0 +1,70 @@
+{
+    "👾高清B视频源": {
+        "chapterContent": {
+            "validConfig": "",
+            "content": "@js:\nreturn params.queryInfo.url;",
+            "host": "https://api.kunyu77.com/",
+            "parserID": "DOM",
+            "requestInfo": "@js:\nreturn 'https://www.baidu.com/';",
+            "actionID": "chapterContent"
+        },
+        "enable": 1,
+        "authorId": "",
+        "bookDetail": {
+            "actionID": "bookDetail",
+            "parserID": "DOM"
+        },
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "bookWorld": {},
+        "shudanList": {},
+        "sourceUrl": "https://api.kunyu77.com/",
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "sourceType": "video",
+        "sourceName": "👾高清B视频源",
+        "weight": "99",
+        "miniAppVersion": "2.52.0",
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1638158230.895792",
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "searchBook": {
+            "cat": "vod_class",
+            "author": "starName",
+            "responseFormatType": "json",
+            "bookName": "videoName",
+            "desc": "brief",
+            "requestInfo": "@js:\nlet url ='https://api.kunyu77.com/api.php/provide/searchVideo?searchName='+params.keyWord+'&pg=1&'\nlet hp ={\"User-Agent\":\"Dalvik/2.1.0 (Linux; U; Android 10; VOG-AL00 Build/HUAWEIVOG-AL00)\"}\nreturn {\"url\":encodeURI(url),\"httpHeaders\":hp};",
+            "host": "https://api.kunyu77.com/",
+            "actionID": "searchBook",
+            "detailUrl": "videoUrls||@js:\n\nlet list=[];\nfor(var i =0;i<result.length;i++){\n    if(result[i].indexOf('$$$')!=-1){\n        let tmp=result[i].split('$$$')[0];\n        list.push(tmp);\n        break;\n    }else{\n        list.push(result[i]);\n    }\n}\nreturn list.toString();",
+            "cover": "videoCover",
+            "validConfig": "",
+            "parserID": "DOM",
+            "list": "data",
+            "status": "msg"
+        },
+        "chapterList": {
+            "validConfig": "",
+            "JSParser": "function functionName(config, params, result)\n{\n\tlet list = [];\n      let chaplist = params.queryInfo.detailUrl.split(',');\n      for(var i=0;i<chaplist.length;i++){\n            let chapterInfo = {};\n            let tmp = chaplist[i].split('$');\n            chapterInfo.title=tmp[0];\n            chapterInfo.url =tmp[1];\n            list.push(chapterInfo);\n      }\n\treturn {'list':list};\n}",
+            "host": "https://api.kunyu77.com/",
+            "parserID": "DOM",
+            "requestInfo": "@js:\nreturn 'http://www.baidu.com/';",
+            "actionID": "chapterList"
+        }
+    }
+}

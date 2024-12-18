@@ -111,57 +111,74 @@
 debugger
 })
 
+function replaceQuotes(params,str) {
+
+    let tmp = params.stringByObject(str);
+    tmp = tmp.replace(/[“]/g, "'");
+    tmp = tmp.replace(/[”]/g, "'");
+    tmp = tmp.replace(/["]/g,"'");
+    params.nativeTool.log(tmp);
+    return tmp;
+}
+
 function functionName(config, params, result)
 {
     let list = [];
-    let regex = '/<script[^>]*type="application/json">([^<]*)</script>/gim';
-
-    params.nativeTool.log("111111111");
-    while (tem = regex.exec(result)) {
+    const items = result['author']['channel']['item'];
+    for (let i = 0; i < items.length;i++) {
         let bookInfo = {};
-		    bookInfo.detailUrl = "http://www.biqu520.net" + tem[1];
-        bookInfo.bookName = tem[2];
-        bookInfo.author = tem[3]
-		list.push(bookInfo);
+        bookInfo.bookName = items[i]['title'];
+        bookInfo.bookName = replaceQuotes(params,bookInfo.bookName);
+        bookInfo.author = params.keyWord;
+        let description = items[i]['description'];
+        let mp4Index = description.indexOf('.mp4?');
+        if(mp4Index !== -1){
+            let srcIndex = description.indexOf('src="');
+            if (srcIndex !== -1) {
+                let startIndex = srcIndex + 'src="'.length;
+                let endIndex = description.indexOf('"', startIndex);
+                let srcValue = description.substring(startIndex, endIndex);
+                bookInfo.detailUrl = params.responseUrl;
+                bookInfo.data_url = srcValue;
+            }
+            list.push(bookInfo);
+        }
     }
-
     return { list: list };
 }
+
+@js:
+
+let {_type}=params.filters;
+let data = `${_type}`;
+let uri = encodeURI(data);
+let url=`https://rss.detools.dev/twitter/media/` + uri;
+
+return {url:url,}
 
 // /////////////视频
 
 // // 章节列表
-// function functionName(config, params, result) {
-//     let list = [];
-//     xpath = "//meta[@id=\"dooplay-ajax-counter\"]/@data-postid";
-//     xresult = params.nativeTool.XPathParserWithSource(result);
-//     let txt_xpath = xresult.queryWithXPath(xpath);
-//     for (i in txt_xpath) {
-//         postid = txt_xpath[i].content();
-//         let chapterInfo = {};
-//         chapterInfo.title = "hls";
-//         chapterInfo.url = url = config.host + "/artplayer?mvsource=0&id=" + postid + "&type=hls";
-//         list.push(chapterInfo);
-//     }
-
-//     return { list: list };
-// }
+function functionName(config, params, result) {
+    let list = [];
+    params.nativeTool.log(result);
+    return { list: list };
+}
 
 // 章节列表
 function functionName(config, params, result) {
     let list = [];
-    xpath = '//script[@class="wp-playlist-script"]';
-    xresult = params.nativeTool.XPathParserWithSource(result);
-    let txt_xpath = xresult.queryWithXPath(xpath);
-    for (let i in txt_xpath) {
-        let chapterInfo = {};
-        let jsonData = JSON.parse(txt_xpath[i].content());
-        chapterInfo.title = "mp4";
-        chapterInfo.url = "https://v.ddys.pro/" + jsonData.tracks[0].src0;
-        list.push(chapterInfo);
-    }
-
+    let chapterInfo = {};
+    chapterInfo.title = '高清';
+    params.nativeTool.log(params);
+    chapterInfo.url =  params.queryInfo.data_url;
+    list.push(chapterInfo);
     return { list: list };
+}
+
+// 获取流地址
+function functionName(config, params, result) {
+    return {'response':params.queryInfo.data_url, 'removeHtmlKeys':'response'};
 }
 
 // // 获取流地址
@@ -178,6 +195,8 @@ function functionName(config, params, result) {
 
 
 //meta[@id="dooplay-ajax-counter"]/@data-postid || @js: return params.responseUrl + "/wp-json/dooplayer/v1/post/" + result + "?type=movie&source=1";
+@js:return 'https://www.baidu.com';
+@js:return params.queryInfo.url;
 
 //漫画章节列表
 function functionName(config, params, result) {

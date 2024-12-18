@@ -1,0 +1,99 @@
+{
+    "X": {
+        "bookWorld": {
+            "分类": {
+                "cat": "",
+                "author": "",
+                "lastChapterTitle": "",
+                "responseFormatType": "",
+                "bookName": "",
+                "desc": "",
+                "requestInfo": "@js:\nlet {_user}=params.filters\nlet url=`https://rss.detools.dev/twitter/media/${_user}`;\n\nreturn {url:url,'httpHeaders':config.httpHeaders}",
+                "host": "https://rss.detools.dev/twitter/media/",
+                "actionID": "bookWorld",
+                "detailUrl": "",
+                "cover": "",
+                "validConfig": "",
+                "list": "",
+                "_sIndex": 1,
+                "parserID": "DOM",
+                "moreKeys": {
+                    "maxPage": 100,
+                    "requestFilters": "user\\n新华社::XinhuaChinese\\nBBC中文::bbcchinese\\nQVQ558::QVQ558\\n桃羞杏让::Qiaofei69\\n巧妹AV::qiaomeiAV\\n橘子海::juzihaiya\\nABinKomg::ABinKomg\\nariellefun::ariellefun\\n 3p小花猫::threesomecat\\nbxfqxx::bxfqxx\\n性瘾小野猫::MeeuXym\\n星星姐姐::XXJJ9977\\n甜诱baby::moment1am\\n夏日炎炎::dingziku008\\n貂蝉::diaochan12345\\n骚妻分享::yingzi_123\\nXingyinxiaoma::Xingyinxiaoma\\n在逃公主::kurizard1\\nHebe::nodokine4v\\n南瓜AV::NanGuaAV\\n\\ntype\\n媒体::media\\n推文::tweets\\n亮点::highlights\\n喜欢::likes"
+                }
+            }
+        },
+        "weight": "9999",
+        "miniAppVersion": "2.53.2",
+        "chapterList": {
+            "actionID": "chapterList",
+            "validConfig": "",
+            "requestInfo": "",
+            "title": "",
+            "host": "https://rss.detools.dev/twitter/media/",
+            "list": "",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "url": ""
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "enable": 1,
+        "sourceName": "X",
+        "sourceUrl": "https://rss.detools.dev/twitter/media/",
+        "httpHeaders": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+        },
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1726099711.664214",
+        "toTop": "1715509265.111470",
+        "searchBook": {
+            "cat": "",
+            "author": "",
+            "lastChapterTitle": "",
+            "responseFormatType": "json",
+            "bookName": "",
+            "desc": "",
+            "requestInfo": "@js:\nlet KEY=encodeURI(params.keyWord)\nlet url=`https://rss.detools.dev/twitter/media/${KEY}`;\n\nreturn {url:url,'httpHeaders':config.httpHeaders}",
+            "host": "https://rss.detools.dev/twitter/media/",
+            "actionID": "searchBook",
+            "detailUrl": "",
+            "cover": "",
+            "validConfig": "",
+            "list": "",
+            "parserID": "DOM",
+            "moreKeys": ""
+        },
+        "chapterContent": {
+            "validConfig": "",
+            "content": "",
+            "actionID": "",
+            "requestInfo": "",
+            "host": "https://rss.detools.dev/twitter/media/",
+            "responseFormatType": "html",
+            "parserID": "DOM"
+        },
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "shudanList": {},
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "bookDetail": {
+            "actionID": "bookDetail",
+            "parserID": "DOM"
+        }
+    }
+}

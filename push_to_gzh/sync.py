@@ -295,11 +295,12 @@ def replace_links(content):
     ### 添加参考资料
     content = content + "\n" + gen_css("ref_header1","参考资料")
     ### 引用链接垂直排列
-    content += '''<span id="fn1" class="footnote-item" style="display: flex; flex-direction :column">'''
+                    
+    content += '''<span style="display: flex;flex-direction :column;">'''
     index = 1
     for r in refs:
         l = r[2]
-        line = gen_css("ref_link", index, r[1], r[0])
+        line = gen_css("ref_link1", index, r[1], r[0])
         index += 1
         content += line + "\n"
     content += '</span>'

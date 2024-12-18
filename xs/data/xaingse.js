@@ -178,9 +178,15 @@ function functionName(config, params, result) {
 
 // 获取流地址
 function functionName(config, params, result) {
-    return {'response':params.queryInfo.data_url, 'removeHtmlKeys':'response'};
+    return {'response':params.queryInfo.data_url};
 }
 
+//获取流地址，比较有意思 没有换行，无法播放
+@js:
+return 'https://www.baidu.com';
+
+@js:
+return params.queryInfo.url;
 // // 获取流地址
 // function functionName(config, params, result) {
 //     let regex = /url:'([^']+\.(?:m3u8|mp4))'/;
@@ -195,8 +201,6 @@ function functionName(config, params, result) {
 
 
 //meta[@id="dooplay-ajax-counter"]/@data-postid || @js: return params.responseUrl + "/wp-json/dooplayer/v1/post/" + result + "?type=movie&source=1";
-@js:return 'https://www.baidu.com';
-@js:return params.queryInfo.url;
 
 //漫画章节列表
 function functionName(config, params, result) {

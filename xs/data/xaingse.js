@@ -62,24 +62,27 @@
 //     return { list: list };
 // }
 
-// /* 无用 */
-// function functionName(config, params, result)
-// {
-//     let list = [];
-//     crypto_code = ""
-//     let reg = /<\s*a\s+onclick="read\((.*?)\)">(.*?)<\/a>/gim;
-//     let regex = /\/(\d+)_(\d+)_(\d+)\.shtml/;
-//     tem1 = regex.exec(params.queryInfo.detailUrl);
-//     while ((tem = reg.exec(result))) {
-//         let chapterInfo = {};
-//         chapterInfo.title = tem[2];
-//         result = CryptoJS.HmacMD5(tem1[2], tem1[2]);
-//         chapterInfo.url = "https://www.bqxs520.com/load.html?v1#"+tem1[2]+"-"+tem1[3]+"-"+tem[1]+"-0";
-//         list.push(chapterInfo);
-//     }
+//解密
 
-//     return { list: list };
-// }
+
+function functionName(config, params, result)
+{
+    let list = [];
+    let key = CryptoJS.enc.Base64.parse("ZjA0MWM0OTcxNGQzOTkwOA==");
+    let iv = CryptoJS.enc.Base64.parse("MDEyMzQ1Njc4OWFiY2RlZg==");
+    for(i in result.data.list){
+        let chapterInfo = {};
+        params.nativeTool.log(i);
+        chapterInfo.title = result.data.list[i].chapterName;
+        chapterInfo.url = CryptoJS.AES.decrypt(result.data.list[i].path,key, {
+                        iv: iv,
+                        mode: CryptoJS.mode.CBC,
+                        padding: CryptoJS.pad.Pkcs7}).toString(CryptoJS.enc.Utf8);   
+        chapterInfo.updateTime = result.data.list[i].updatedAt;
+        list.push(chapterInfo);
+    }
+    return { list: list };
+}
 
 // function functionName(config, params, result) {
 //     let list = [];
@@ -128,7 +131,7 @@ function functionName(config, params, result)
     for (let i = 0; i < items.length;i++) {
         let bookInfo = {};
         bookInfo.bookName = items[i]['title'];
-        bookInfo.bookName = replaceQuotes(params,bookInfo.bookName);
+        bookInfo.desc = items[i]['title'];
         bookInfo.author = params.keyWord;
         let description = items[i]['description'];
         let mp4Index = description.indexOf('.mp4?');
@@ -140,6 +143,13 @@ function functionName(config, params, result)
                 let srcValue = description.substring(startIndex, endIndex);
                 bookInfo.detailUrl = params.responseUrl;
                 bookInfo.data_url = srcValue;
+            }
+            let jpgIndex = description.indexOf('poster="');
+            if (jpgIndex !== -1) {
+                let jpgstartIndex = jpgIndex + 'poster="'.length;
+                let jpgendIndex = description.indexOf('"', jpgstartIndex);
+                let jpgValue = description.substring(jpgstartIndex, jpgendIndex);
+                bookInfo.cover = jpgValue;
             }
             list.push(bookInfo);
         }
@@ -172,10 +182,32 @@ function functionName(config, params, result) {
     return {'response':params.queryInfo.data_url};
 }
 
-//获取流地址，比较有意思 没有换行，无法播放
-@js:
-return 'https://www.baidu.com';
 
+function functionName(config, params, result) {
+    let list = [];
+    xpath = '//script[@class="wp-playlist-script"]';
+    xresult = params.nativeTool.XPathParserWithSource(result);
+    let txt_xpath = xresult.queryWithXPath(xpath);
+    for (let i in txt_xpath) {
+        let jsonData = JSON.parse(txt_xpath[i].content());
+        for (let j in jsonData.tracks) {
+            let chapterInfo = {};
+            chapterInfo.title = j.toString();
+            chapterInfo.url = "https://v.ddys.mov" + jsonData.tracks[j].src0;
+            list.push(chapterInfo);
+        }
+    }
+
+    return { list: list };
+}
+
+
+// 有的流地址有播放环境，可以使用"webview": true 将播放环境集成到应用中
+
+@js:
+return { "url": params.queryInfo.detailUrl, "webview": true};
+
+//获取流地址，比较有意思 没有换行，无法播放
 @js:
 return params.queryInfo.url;
 // // 获取流地址

@@ -74,9 +74,10 @@
 
 1. xbstools.py提供xbs与json互转能力
 2. tts封装 Azure/Ali/Edge tts服务，voice_list.py获取Azure TTS音色列表
-3. data 包含部分源和js解析案例，提高编写源的效率
+3. data 包含部分源和js解析案例，提高编写源的效率，香色中未集成CryptoJS，需要使用时，需要放入js解析中
 4. url_check.py 检测书源是否可用，需要配合xbstools.py使用
 5. ydstools.py 提供yds与json互转能力
+6. test.js 用于测试香色中js解析模块对应js代码运行是否正常
 
 ### chrome
 1. url_check，浏览器加载此文件夹即可安装，点击后检测书签是否可用，将不可用的书签罗列出来，方便删除

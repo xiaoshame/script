@@ -90,44 +90,46 @@ function checkAndFetchData() {
 }
 
 function fetchAndStoreData(formattedDate) {
-  return new Promise((resolve, reject) => {
-    fetch(`https://production.dataviz.cnn.io/index/fearandgreed/graphdata/${formattedDate}`)
-      .then(response => response.json())
-      .then(jsonData => {
-        // const response = await fetch(`https://production.dataviz.cnn.io/index/fearandgreed/graphdata/${formattedDate}`);
-        // const jsonData = await response.json();
-        const fearGreedScore = jsonData.fear_and_greed.score;
-        const momentumScore = jsonData.market_momentum_sp500.score;
-        // 获取已存储的数据
-        chrome.storage.local.get(['scoreHistory'], function (result) {
-          let history = result.scoreHistory || [];
-          // 添加新数据
-          history.push({
-            date: formattedDate,
-            fearGreedScore: fearGreedScore,
-            momentumScore: momentumScore,
-          });
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await fetch(`https://production.dataviz.cnn.io/index/fearandgreed/graphdata/${formattedDate}`);
 
-          // 只保留最近15天的数据
-          if (history.length > 15) {
-            history = history.slice(-15);
-          }
-          console.log("set history length is " + history.length);
-          // 存储更新后的数据
-          chrome.storage.local.set({ scoreHistory: history }, function () {
-            if (chrome.runtime.lastError) {
-              console.log("chrome.storage.local.set error");
-              reject(chrome.runtime.lastError);
-            } else {
-              console.log("chrome.storage.local.set success");
-              resolve();
-            }
-          });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const jsonData = await response.json();
+      const fearGreedScore = jsonData.fear_and_greed.score;
+      const momentumScore = jsonData.market_momentum_sp500.score;
+      // 获取已存储的数据
+      chrome.storage.local.get(['scoreHistory'], function (result) {
+        let history = result.scoreHistory || [];
+        // 添加新数据
+        history.push({
+          date: formattedDate,
+          fearGreedScore: fearGreedScore,
+          momentumScore: momentumScore,
         });
-      }).catch(error => {
+
+        // 只保留最近15天的数据
+        if (history.length > 15) {
+          history = history.slice(-15);
+        }
+        console.log("set history length is " + history.length);
+        // 存储更新后的数据
+        chrome.storage.local.set({ scoreHistory: history }, function () {
+          if (chrome.runtime.lastError) {
+            console.log("chrome.storage.local.set error");
+            reject(chrome.runtime.lastError);
+          } else {
+            console.log("chrome.storage.local.set success");
+            resolve();
+          }
+        });
+      });
+    }catch (error){
       console.error('Error fetching data:', error);
       reject(error);
-    });
+    }
   });
 }
 

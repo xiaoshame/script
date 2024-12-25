@@ -1,0 +1,22 @@
+ddys.py::DemoSiteTests::test_demo_site
+--------------------------------------------------------------------
+Last Page: https://ddys.pro/?s=%E5%86%B0%E9%9B%AA%E5%A5%87%E7%BC%98&post_type=post
+ Duration: 15.50s
+  Browser: Chrome 131.0.6778.141
+   Driver: chromedriver 131.0.6778.204
+Timestamp: 1734600954  (Unix Timestamp)
+     Date: Thursday, 19 December 2024
+     Time: 5:35:54 PM  (中国标准时间, UTC+08:00)
+--------------------------------------------------------------------
+Traceback:
+  File "D:\workspace\script\m3u8\ddys.py", line 18, in test_demo_site
+    self.wait_for_element_present("article.post")
+  File "d:\anaconda3\envs\wechat\Lib\site-packages\seleniumbase\fixtures\base_case.py", line 9466, in wait_for_element_present
+    return page_actions.wait_for_element_present(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\anaconda3\envs\wechat\Lib\site-packages\seleniumbase\fixtures\page_actions.py", line 446, in wait_for_element_present
+    timeout_exception(NoSuchElementException, message)
+  File "d:\anaconda3\envs\wechat\Lib\site-packages\seleniumbase\fixtures\page_actions.py", line 267, in timeout_exception
+    raise exc(msg)
+Exception: Message: 
+ Element {article.post} was not present after 10 seconds!

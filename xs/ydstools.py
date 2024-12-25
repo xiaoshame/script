@@ -187,9 +187,9 @@ def json_to_yds(input,output):
 
 if __name__ == '__main__':
 
-    encrypt_yds_to_json('D:\\workspace\\script\\xs\\data\\ydSource.yds' , 'D:\\workspace\\script\\xs\\data\\ydSource.json')
+    # encrypt_yds_to_json('D:\\workspace\\script\\xs\\data\\ydSource.yds' , 'D:\\workspace\\script\\xs\\data\\ydSource.json')
     # encrypt_json_to_yds('D:\\workspace\\script\\xs\\data\\1.json' , 'D:\\workspace\\script\\xs\\data\\222.yds')
-    # yds_to_json('D:\\workspace\\script\\xs\\data\\bilibili.yds' , 'D:\\workspace\\script\\xs\\data\\bilibili.json')
+    yds_to_json('D:\\workspace\\script\\xs\\data\\44444.yds' , 'D:\\workspace\\script\\xs\\data\\44444.json')
     # json_to_yds('D:\\workspace\\script\\xs\\data\\bilibili.json' , 'D:\\workspace\\script\\xs\\data\\bilibili_.yds')
 
 

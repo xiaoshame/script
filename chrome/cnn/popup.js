@@ -128,7 +128,7 @@ function fetchAndStoreData(formattedDate) {
       });
     }catch (error){
       console.error('Error fetching data:', error);
-      reject(error);
+      throw(error);
     }
   });
 }

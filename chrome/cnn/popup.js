@@ -19,6 +19,10 @@ function compareIndicators(history) {
     momentum: {
       current: latest.momentumScore,
       interpretation: getScoreInterpretation(latest.momentumScore)
+    },
+    vix:{
+      current: latest.vixScore,
+      interpretation: latest.vixTrend
     }
   };
 }
@@ -50,6 +54,11 @@ function calculateStats(history) {
       avg: average(history.map(h => h.momentumScore)),
       max: Math.max(...history.map(h => h.momentumScore)),
       min: Math.min(...history.map(h => h.momentumScore))
+    },
+    vix: {
+      avg: average(history.map(h => h.vixScore)),
+      max: Math.max(...history.map(h => h.vixScore)),
+      min: Math.min(...history.map(h => h.vixScore))
     }
   };
 }
@@ -69,6 +78,11 @@ function updateStatistics(stats) {
   document.getElementById('momentumAvg').textContent = `${stats.momentum.avg}`;
   document.getElementById('momentumMax').textContent = `${stats.momentum.max} (${getScoreInterpretation(stats.momentum.max)})`;
   document.getElementById('momentumMin').textContent = `${stats.momentum.min} (${getScoreInterpretation(stats.momentum.min)})`;
+  
+  // VIX统计
+  document.getElementById('vixAvg').textContent = `${stats.vix.avg}`;
+  document.getElementById('vixMax').textContent = `${stats.vix.max}`;
+  document.getElementById('vixMin').textContent = `${stats.vix.min}`;
 }
 
 function checkAndFetchData() {
@@ -92,6 +106,7 @@ function checkAndFetchData() {
 function fetchAndStoreData(formattedDate) {
   return new Promise(async (resolve, reject) => {
     try {
+      // 获取Fear & Greed数据
       const response = await fetch(`https://production.dataviz.cnn.io/index/fearandgreed/graphdata/${formattedDate}`);
 
       if (!response.ok) {
@@ -100,6 +115,27 @@ function fetchAndStoreData(formattedDate) {
       const jsonData = await response.json();
       const fearGreedScore = jsonData.fear_and_greed.score;
       const momentumScore = jsonData.market_momentum_sp500.score;
+
+      // 获取VIX数据
+      const vixResponse = await fetch('https://cn.investing.com/indices/volatility-s-p-500', {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+      });
+      
+      if (!vixResponse.ok) {
+        throw new Error(`HTTP error! status: ${vixResponse.status}`);
+      }
+      
+      const vixText = await vixResponse.text();
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(vixText, 'text/html');
+      const vixElement = doc.querySelector('dd[data-test="prevClose"] span.key-info_dd-numeric__ZQFIs span:nth-child(2)');
+      const vixValue = vixElement ? parseFloat(vixElement.textContent) : null;
+      // 获取趋势信息
+      const trendElement = doc.querySelector('.mb-6.mt-1.rounded-full.text-center.font-semibold');
+      const vixTrend = trendElement ? trendElement.textContent.trim() : '未知';
+
       // 获取已存储的数据
       chrome.storage.local.get(['scoreHistory'], function (result) {
         let history = result.scoreHistory || [];
@@ -108,6 +144,8 @@ function fetchAndStoreData(formattedDate) {
           date: formattedDate,
           fearGreedScore: fearGreedScore,
           momentumScore: momentumScore,
+          vixScore: vixValue,
+          vixTrend: vixTrend
         });
 
         // 只保留最近15天的数据
@@ -158,7 +196,9 @@ function displayData() {
       `${comparison.fearGreed.current} (${comparison.fearGreed.interpretation})`;
     document.getElementById('momentumStatus').textContent =
       `${comparison.momentum.current} (${comparison.momentum.interpretation})`;
-
+      // 更新VIX状态显示
+    document.getElementById('vixStatus').textContent = 
+      `${comparison.vix.current} (${comparison.vix.interpretation})`;
     // 计算并显示统计数据
     const stats = calculateStats(history);
     updateStatistics(stats);
@@ -169,6 +209,7 @@ function displayData() {
     const dates = history.map(item => item.date);
     const fearGreedScores = history.map(item => item.fearGreedScore);
     const momentumScores = history.map(item => item.momentumScore);
+    const vixScores = history.map(item => item.vixScore);
 
     // 图表配置选项
     const chartOptions = {
@@ -188,7 +229,15 @@ function displayData() {
           callbacks: {
             label: function (context) {
               const score = context.raw;
-              return `${context.dataset.label}: ${score} (${getScoreInterpretation(score)})`;
+              const label = context.dataset.label;
+              // 根据不同的图表类型返回不同格式的tooltip
+              if (label.includes('VIX')) {
+                // VIX指数不需要解释函数
+                return `${label}: ${score}`;
+              } else {
+                // Fear & Greed 和 Market Momentum 使用解释函数
+                return `${label}: ${score} (${getScoreInterpretation(score)})`;
+              }
             }
           }
         }
@@ -221,6 +270,23 @@ function displayData() {
           label: 'Market Momentum (S&P500)',
           data: momentumScores,
           borderColor: 'rgb(255, 99, 132)',
+          tension: 0.1
+        }]
+      },
+      options: chartOptions
+    });
+    
+    
+    // 添加VIX图表
+    const vixCtx = document.getElementById('vixChart').getContext('2d');
+    new Chart(vixCtx, {
+      type: 'line',
+      data: {
+        labels: dates,
+        datasets: [{
+          label: 'VIX Index',
+          data: vixScores,
+          borderColor: 'rgb(153, 102, 255)',
           tension: 0.1
         }]
       },

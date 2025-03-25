@@ -1,10 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "Fear & Greed Index Tracker",
-  "version": "1.1.0",
+  "name": "Fear & Greed Index Tracker & VIX",
+  "version": "1.2.0",
   "description": "Track CNN's Fear & Greed Index daily",
   "permissions": [
     "https://production.dataviz.cnn.io/*",
+    "*://*.investing.com/*",
     "storage",
     "alarms"
   ],

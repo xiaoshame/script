@@ -1,14 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss version="2.0">
-    <channel>
-        <title>公众号综合</title>
-        <link>https://xiaoqian713.live/</link>
-        <description>目前共380个，公开331个公众号</description>
-        <generator>Hugo 0.121.0 https://gohugo.io/</generator>
-        <language>zh-CN</language>
-        <managingEditor>xiaoshame1209@gmail.com (阿松)</managingEditor>
-        <webMaster>xiaoshame1209@gmail.com (阿松)</webMaster>
-        <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
-        <lastBuildDate>Mon, 19 Aug 2024 09:33:20 </lastBuildDate>
-    </channel>
-</rss>
+<opml version="1.0">
+    <head>
+        <title>安全技术公众号 created by tmr [https://wechat2rs.xlab.app]</title>
+    </head>
+    <body>
+        <outline text="阿里云设计中心" title="阿里云设计中心" type="rss" xmlUrl="https://wechat2rss.xlab.app/feed/31e04606d37f684059e23a8fd3e05f1db0186495.xml">
+        </outline>
+    </body>
+</opml>

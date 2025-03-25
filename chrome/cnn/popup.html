@@ -64,6 +64,11 @@
     .stats-value {
       font-weight: bold;
     }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;  /* 修改为三列布局 */
+      gap: 15px;  /* 稍微减小间距以适应三列 */
+    }
   </style>
 </head>
 <body>
@@ -74,6 +79,9 @@
     </div>
     <div class="indicator-item">
       <strong>Market Momentum:</strong> <span id="momentumStatus"></span>
+    </div>
+    <div class="indicator-item">
+      <strong>VIX Index:</strong> <span id="vixStatus"></span>
     </div>
   </div>
 
@@ -110,6 +118,21 @@
           <span class="stats-value" id="momentumMin"></span>
         </div>
       </div>
+      <div class="stats-box">
+        <div class="stats-title">VIX Index</div>
+        <div class="stats-item">
+          <span class="stats-label">Average:</span>
+          <span class="stats-value" id="vixAvg"></span>
+        </div>
+        <div class="stats-item">
+          <span class="stats-label">Maximum:</span>
+          <span class="stats-value" id="vixMax"></span>
+        </div>
+        <div class="stats-item">
+          <span class="stats-label">Minimum:</span>
+          <span class="stats-value" id="vixMin"></span>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -124,6 +147,10 @@
   <div class="chart-container">
     <h3>Market Momentum (S&P500)</h3>
     <canvas id="momentumChart"></canvas>
+  </div>
+  <div class="chart-container">
+    <h3>VIX Volatility Index</h3>
+    <canvas id="vixChart"></canvas>
   </div>
 
   <script src="popup.js"></script>

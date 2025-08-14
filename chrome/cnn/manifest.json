@@ -1,22 +1,18 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Fear & Greed Index Tracker & VIX",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Track CNN's Fear & Greed Index daily",
   "permissions": [
-    "https://production.dataviz.cnn.io/*",
-    "*://*.investing.com/*",
     "storage",
     "alarms"
   ],
+  "host_permissions": [
+    "https://production.dataviz.cnn.io/*",
+    "*://*.investing.com/*"
+  ],
   "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": true
-  },
-  "browser_action": {
-    "default_popup": "popup.html"
+    "service_worker": "background.js"
   },
   "action": {
     "default_popup": "popup.html",

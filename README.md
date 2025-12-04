@@ -9,7 +9,8 @@
 - xiaohongshu: 支持搜索小红书，搜索到的文章导出为execel
 - m3u8: mu38视频下载脚本
 - xs: 香色闺阁书源和语音tts相关脚本
-- chrome :自己写的chrome脚本和插件
+- chrome: 自己写的chrome脚本和插件
+- qinglong: 自己日常使用的青龙脚本
 
 ## 脚本详情
 
@@ -88,3 +89,4 @@
 
 ### qinglong
 1. qdii_parser.py, LOF基金套利信息通知，代码中通知到zulip，自行修改为其他渠道
+2. hxsy.py, iOS 收费APP网站打卡

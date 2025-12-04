@@ -85,3 +85,6 @@
 3. get-cookies,获取当前页面cookies,fork https://github.com/kairi003/Get-cookies.txt-LOCALLY/ 调整而来
 4. markdown ，将markdown内容转换成chrome可导入的书签文件
 5. seckill，自动化点击插件，还未修复完
+
+### qinglong
+1. qdii_parser.py, LOF基金套利信息通知，代码中通知到zulip，自行修改为其他渠道

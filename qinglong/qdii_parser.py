@@ -7,11 +7,10 @@ import re
 from bs4 import BeautifulSoup
 from typing import List, Dict
 import json
-from datetime import datetime
 
 # Zulip webhook 配置
 # 注意：该 Webhook 采用 Zabbix 格式，需要 topic, to, content 字段
-ZULIP_WEBHOOK_URL = "***********"
+ZULIP_WEBHOOK_URL = "************"
 # 默认发送目标频道（请根据您的 Zulip 频道名称修改）
 TARGET_ZULIP_STREAM = "基金套利通知" 
 
@@ -152,9 +151,6 @@ def output_results(high_premium_funds: List[Dict], threshold: float = 3.0) -> No
     """
     输出结果并发送到Zulip（使用Zabbix webhook格式）
     """
-    current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    has_latest_premium = any('latest_premium' in fund for fund in high_premium_funds)
-
     # --- 构建 Zabbix Webhook 格式的消息 ---
     if not high_premium_funds:
         # 正常情况
@@ -167,15 +163,12 @@ def output_results(high_premium_funds: List[Dict], threshold: float = 3.0) -> No
         severity = "High"
         status = "PROBLEM"
         item = "代码 基金名 实时溢价 最新溢价 限购额度"
-        trigger = f"高溢价基金数量：{len(high_premium_funds)} 支"
+        trigger = f"高溢价基金数量：{len(high_premium_funds)} 支 (溢价率 >= {threshold}%)"
         
         # 构建基金列表信息
         funds_info = []
         for fund in high_premium_funds:
-            info = f"{fund['code']} {fund['name']} {fund['raw_real_time_premium']}"
-            if has_latest_premium:
-                info += f" {fund.get('raw_latest_premium', '-')}"
-            info += f" {fund['purchase_limit']}"
+            info = f"{fund['code']} {fund['name']} {fund.get('raw_real_time_premium', 'N/A')} {fund.get('raw_latest_premium', 'N/A')} {fund['purchase_limit']}"
             funds_info.append(info)
         item += "\n" + "\n".join(funds_info)
 
@@ -249,8 +242,8 @@ def main():
     threshold_value = 3.0
     high_premium_funds = filter_high_premium_funds(all_funds, threshold=threshold_value)
     
-    # 按实时溢价率降序排序
-    high_premium_funds.sort(key=lambda x: x['real_time_premium'], reverse=True)
+    # 按实时溢价率降序排序（None值排在最后）
+    high_premium_funds.sort(key=lambda x: x['real_time_premium'] if x['real_time_premium'] is not None else float('-inf'), reverse=True)
     
     # 输出结果
     output_results(high_premium_funds, threshold=threshold_value)

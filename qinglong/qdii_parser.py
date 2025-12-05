@@ -133,15 +133,18 @@ def parse_percentage(text: str) -> float:
 
 def filter_high_premium_funds(funds: List[Dict], threshold: float = 3.0) -> List[Dict]:
     """
-    筛选实时溢价率大于阈值的基金
+    筛选实时溢价率或最新溢价率大于等于阈值的基金
     """
     result = []
     for fund in funds:
         real_time_premium = fund['real_time_premium']
+        latest_premium = fund.get('latest_premium')
         
-        if real_time_premium is not None and real_time_premium > threshold:
+        # 如果实时溢价率或最新溢价率大于等于阈值，则纳入结果
+        if (real_time_premium is not None and real_time_premium >= threshold) or \
+           (latest_premium is not None and latest_premium >= threshold):
             result.append(fund)
-    
+        
     return result
 
 

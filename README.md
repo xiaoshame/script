@@ -90,3 +90,4 @@
 ### qinglong
 1. qdii_parser.py, LOF基金套利信息通知，代码中通知到zulip，自行修改为其他渠道
 2. hxsy.py, iOS 收费APP网站打卡
+3. weather_to_zulip.py,获取最近7天天气

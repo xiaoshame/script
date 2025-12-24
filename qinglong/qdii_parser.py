@@ -133,11 +133,17 @@ def parse_percentage(text: str) -> float:
 def filter_high_premium_funds(funds: List[Dict], threshold: float = 3.0) -> List[Dict]:
     """
     筛选实时溢价率或最新溢价率大于等于阈值的基金
+    同时过滤掉限额为无限制的基金
     """
     result = []
     for fund in funds:
         real_time_premium = fund['real_time_premium']
         latest_premium = fund.get('latest_premium')
+        purchase_limit = fund.get('purchase_limit', '')
+        
+        # 过滤掉限额为无限制的基金
+        if purchase_limit in ['无限制', '无', '-', '']:
+            continue
         
         # 如果实时溢价率或最新溢价率大于等于阈值，则纳入结果
         if (real_time_premium is not None and real_time_premium >= threshold) or \
@@ -168,7 +174,15 @@ def output_results(high_premium_funds: List[Dict], threshold: float = 3.0) -> No
         # 构建基金列表信息
         funds_info = []
         for fund in high_premium_funds:
-            info = f"{fund['code']} {fund['name']} {fund.get('raw_real_time_premium', 'N/A')} {fund.get('raw_latest_premium', 'N/A')} {fund['purchase_limit']}"
+            # 处理实时溢价率显示
+            raw_real_time = fund.get('raw_real_time_premium', '')
+            real_time_display = 'N/A' if raw_real_time in ['', '-'] or fund.get('real_time_premium') is None else raw_real_time
+            
+            # 处理最新溢价率显示
+            raw_latest = fund.get('raw_latest_premium', '')
+            latest_display = 'N/A' if raw_latest in ['', '-'] or fund.get('latest_premium') is None else raw_latest
+            
+            info = f"{fund['code']} {fund['name']} {real_time_display} {latest_display} {fund['purchase_limit']}"
             funds_info.append(info)
         item += "\n" + "\n".join(funds_info)
 

@@ -19,10 +19,17 @@ import sync
 # bm.md 服务配置
 BM_MD_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'bm.md')
 # 使用官方 bm.md API 服务
-BM_MD_API_URL = "https://bm.md/api/markdown/render"
+# BM_MD_API_URL = "https://bm.md/api/markdown/render"
+BM_MD_API_URL = "https://bm-md-git-master-xiaoshames-projects.vercel.app/api/markdown/render"
 # 本地开发服务器 URL (备用)
 # BM_MD_API_URL = "http://localhost:2663/api/markdown/render"
 BM_MD_PROCESS = None
+
+# 代理配置
+PROXIES = {
+    "http": "http://127.0.0.1:1080",
+    "https": "http://127.0.0.1:1080"
+}
 
 # 可用的 Markdown 样式
 MARKDOWN_STYLES = [
@@ -48,7 +55,8 @@ def is_service_running():
             BM_MD_API_URL,
             json={"markdown": "test"},
             headers={'Content-Type': 'application/json'},
-            timeout=10
+            timeout=10,
+            proxies=PROXIES
         )
         return response.status_code == 200
     except:
@@ -108,7 +116,8 @@ def render_markdown(
             BM_MD_API_URL,
             json=payload,
             headers={'Content-Type': 'application/json'},
-            timeout=30
+            timeout=30,
+            proxies=PROXIES
         )
         
         if response.status_code == 200:

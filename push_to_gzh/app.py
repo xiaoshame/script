@@ -69,6 +69,6 @@ if __name__ == '__main__':
             print("输出文件 →", out_file_path)
             cp_utils.write_file(renderer_content, out_file_path)
             
-            # if sync.upload_media_news(renderer_content, baseinfo, token):
-            #     sync.cache_update(md_file_path)
-            #     print("sync " + md_file_path + " to wechat successful")
+            if sync.upload_media_news(renderer_content, baseinfo, token):
+                sync.cache_update(md_file_path)
+                print("sync " + md_file_path + " to wechat successful")

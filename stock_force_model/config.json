@@ -1,0 +1,84 @@
+{
+    "stocks": [
+        {
+            "symbol": "513130",
+            "name": "恒生科技指数",
+            "entity_type": "index",
+            "enabled": true
+        },
+        {
+            "symbol": "563360",
+            "name": "A500指数",
+            "entity_type": "index",
+            "enabled": true
+        },
+        {
+            "symbol": "563530",
+            "name": "卫星ETF",
+            "entity_type": "index",
+            "enabled": true
+        }
+    ],
+    "rss_sources": [
+        {
+            "name": "财联社热点",
+            "url": "https://rsshub.rss.zgdnz.cc/cls/hot",
+            "enabled": true,
+            "category": "财经",
+            "priority": 1,
+            "description": "财联社热点新闻"
+        },
+        {
+            "name": "证券时报",
+            "url": "https://qkwgpmlusiqd.us-east-1.clawcloudrun.com/feed/MP_WXS_2394131000.atom",
+            "enabled": true,
+            "category": "财经",
+            "priority": 2,
+            "format": "atom",
+            "description": "证券时报公众号"
+        },
+        {
+            "name": "金十数据",
+            "url": "https://rsshub.rss.zgdnz.cc/jin10",
+            "enabled": true,
+            "category": "财经",
+            "priority": 3,
+            "description": "金十快讯"
+        },
+        {
+            "name": "华尔街见闻",
+            "url": "https://rsshub.rss.zgdnz.cc/wallstreetcn/news/global",
+            "enabled": false,
+            "category": "财经",
+            "priority": 4,
+            "description": "华尔街见闻全球要闻"
+        },
+        {
+            "name": "东方财富",
+            "url": "https://rsshub.rss.zgdnz.cc/eastmoney/report",
+            "enabled": false,
+            "category": "财经",
+            "priority": 5,
+            "description": "东方财富研报"
+        }
+    ],
+    "database": {
+        "path": "rss_news.db",
+        "max_age_days": 30
+    },
+    "analysis": {
+        "max_items_per_source": 100,
+        "batch_size": 999,
+        "request_delay": 0.5,
+        "max_concurrent_requests": 2
+    },
+    "llm": {
+        "enabled": true,
+        "provider": "gemini",
+        "api_key": "${GEMINI_API_KEY}",
+        "base_url": "https://gc.doyo.tv",
+        "model": "gemini-3-flash-preview",
+        "timeout": 30,
+        "description": "大模型配置，api_key可以使用${GEMINI_API_KEY}引用环境变量"
+    }
+}

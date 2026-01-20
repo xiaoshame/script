@@ -13,7 +13,9 @@ import os
 import os.path
 
 
-def get_config(section, key):
+def get_config(section, key, fallback=None):
     config = configparser.ConfigParser()
     config.read(os.path.join(os.path.split(os.path.realpath(__file__))[0], 'config.ini'), encoding='utf8')
+    if fallback is not None:
+        return config.get(section, key, fallback=fallback)
     return config.get(section, key)

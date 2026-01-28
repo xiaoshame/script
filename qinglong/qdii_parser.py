@@ -87,6 +87,9 @@ def parse_html(html: str, include_latest_premium: bool = True) -> List[Dict[str,
                 # 申购限额 (倒数第4列，索引 -4)
                 purchase_limit = cells[-4].get_text(strip=True)
                 
+                # 申购费 (倒数第3列，索引 -3)
+                purchase_fee = cells[-3].get_text(strip=True)
+                
                 # 解析溢价率数值
                 real_time_premium = parse_percentage(real_time_premium_text)
                 
@@ -96,6 +99,7 @@ def parse_html(html: str, include_latest_premium: bool = True) -> List[Dict[str,
                     'table_type': table_type,
                     'real_time_premium': real_time_premium,
                     'purchase_limit': purchase_limit,
+                    'purchase_fee': purchase_fee,
                     'raw_real_time_premium': real_time_premium_text,
                 }
                 
@@ -168,7 +172,7 @@ def output_results(high_premium_funds: List[Dict], threshold: float = 3.0) -> No
         # 警报情况
         severity = "High"
         status = "PROBLEM"
-        item = "代码 基金名 实时溢价 最新溢价 限购额度"
+        item = "代码 基金名 实时溢价 最新溢价 限购额度 申购费"
         trigger = f"高溢价基金数量：{len(high_premium_funds)} 支 (溢价率 >= {threshold}%)"
         
         # 构建基金列表信息
@@ -182,7 +186,10 @@ def output_results(high_premium_funds: List[Dict], threshold: float = 3.0) -> No
             raw_latest = fund.get('raw_latest_premium', '')
             latest_display = 'N/A' if raw_latest in ['', '-'] or fund.get('latest_premium') is None else raw_latest
             
-            info = f"{fund['code']} {fund['name']} {real_time_display} {latest_display} {fund['purchase_limit']}"
+            # 获取申购费
+            purchase_fee = fund.get('purchase_fee', 'N/A')
+            
+            info = f"{fund['code']} {fund['name']} {real_time_display} {latest_display} {fund['purchase_limit']} {purchase_fee}"
             funds_info.append(info)
         item += "\n" + "\n".join(funds_info)
 

@@ -11,6 +11,7 @@
 - xs: 香色闺阁书源和语音tts相关脚本
 - chrome: 自己写的chrome脚本和插件
 - qinglong: 自己日常使用的青龙脚本
+- tq: 泰坦之旅百科 - Flask Web 应用
 
 ## 脚本详情
 
@@ -92,3 +93,8 @@
 1. qdii_parser.py, LOF基金套利信息通知，代码中通知到zulip，自行修改为其他渠道
 2. hxsy.py, iOS 收费APP网站打卡
 3. weather_to_zulip.py,获取最近7天天气
+
+### tq
+1. 获取泰坦之旅chm资料，解压到本地
+2. 使用大模型分析本地资料，并编写前后端代码，方便在网页上查看
+3. python app.py启动服务，通过ip:5000或者绑定域名进行查看 

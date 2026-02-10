@@ -1,0 +1,196 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>范例5：进阶的地形</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南005.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="泰坦之旅游戏模组制作指南007.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">范例5：进阶的地形</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　范例5：进阶的地形 <BR><BR> 
+　　接下来我们要学分区绘图、水、河流、通行禁止区域。 <BR><BR> 
+　　5.0.1 检查环境 <BR><BR> 
+　　1)打开Editor编辑器。 <BR><BR> 
+　　2)选择mod ‘Tutorial05’。 <BR><BR> 
+　　3)在Editor Mode中打开'Tutorial-Mountain_Stream_Terrain.lvl'。 <BR><BR> 
+　　你可以看到地图中有个很大的高原，中间有一个峡谷。我们要在山峰上使用一些烟雾让它看起来高耸入天。 <BR><BR> 
+　　5.1 分区绘图 <BR><BR> 
+　　现在要介绍分区绘图工具(Sector Paint Tool)。所谓的分区(sector)是指一个地区范围，当玩家进入这个地区范围内时，游戏世界的环境效果会改变。在这个范例中，我们要运用烟雾效果和光线效果。我们要的效果就是当玩家进入高原时，山峰会被烟雾掩蔽。 <BR><BR> 
+　　5.1.1 建立一个新的分区图层 <BR><BR> 
+　　1)首先选择分区绘图工具(Sector Paint Tool)。 <BR><BR> 
+　　注意：烟雾效果不会出现在分区的范围内。当玩家进入该分区之后，烟雾效果是出现在分区以外的所有地方。我们要的效果是：当玩家进入高原后，高原以外的地方都布满烟雾，因此我们要在高原上画上分区。 <BR><BR> 
+　　2)按下’New’产生一个新的烟雾／光线分区图层(Fog/Lighting sector layer)。 这时会产生一个叫作’New Sector Style’的分区，现在我们将它的名字改成比较有意义名字。 <BR><BR> 
+　　3)在Style Name的文字方块中键入”Mountain Fog”。 <BR><BR> 
+　　5.1.2 分区的运作 先介绍分区是如何运作的。 <BR><BR> 
+　　1)点选’Mountain Fog’图层。 <BR><BR> 
+　　2)在你要画上分区的地方，点按滑鼠左键。 你应该可以注意到，画面正中央有一个黑色球体物件，编辑器利用此物件来决定你正位于哪个分区内。 <BR><BR> 
+　　3)移动摄影机，让黑色球体位于你所画的分区外面。 在烟雾／光线选项视窗(Fog/Lighting Options Pane)中，有高度烟雾(Height Fog)与深度烟雾(Depth Fog)。 <BR><BR> 
+　　4)在深度烟雾(Depth Fog)里面，将密度(Density)调成0.50。 <BR><BR> 
+　　5)移动摄影机，让黑色球体进入你所画的分区里面。 你会发现整个背景都出现了半透明的烟雾。 <BR><BR> 
+　　6)再将黑色球体移到分区外面。 烟雾消失了，你在游戏中就是这样的效果。当主角进入分区后，烟雾效果就会出现，当主角离开分区后，烟雾效果就会消失。 <BR><BR> 
+　　5.1.2 画上烟雾图层 <BR><BR> 
+　　我们要让主角进入高原后，整个背景都充满烟雾，所以我们只要在高原上画上烟雾分区。 <BR><BR> 
+　　1)选择你刚建立的分区图层。 <BR><BR> 
+　　2)将整个高原都画上烟雾分区。 <BR><BR> 
+　　现在，主角进入高原后，烟雾效果就会启动，但是现在的烟雾效果是除了高原外所有地方的烟雾密度都一样。比较好的效果是让高原看起来是耸立于云端的。为了达到这个效果，我们需要使用高度烟雾(height fog)。高度烟雾能够让烟雾的密度依高度来变化。 <BR><BR> 
+　　3)首先将深度烟雾(Depth Fog)里面的密度(Density)调成0。 <BR><BR> 
+　　4)将高度烟雾(Height Fog)里面的密度(Density)调成0.99。 <BR><BR> 
+　　5)将高度烟雾(Height Fog)里面的底部高度(Bottom Height)设为1。 <BR><BR> 
+　　6)将高度烟雾(Height Fog)里面的顶端高度(Top Height)设为10。 <BR><BR> 
+　　现在烟雾密度会依高度的变化，从99%的不透明到完全透明，看起来就像高原位于云层之上的效果。 <BR><BR> 
+　　5.2 水 <BR><BR> 
+　　我们已经学会了造云，现在来造池溏。 <BR><BR> 
+　　5.2.1 建立一个新的水类型 <BR><BR> 
+　　1)选择水工具(Water Tool)。 <BR><BR> 
+　　如同我们在建立地形材质的步骤，我们必须先建立水的类型。 　 <BR><BR> 
+　　2)在水类型视窗(Water Types Pane)里面，按下’Add’，出现一个’newWaterType0’。 <BR><BR> 
+　　3)双击刚才建立的’newWaterType0’，出现水类型编辑器(The Water Type Editor)的视窗。 <BR><BR> 
+　　4)在Name栏位中填入”Standard Water”。 <BR><BR> 
+　　5)按下’OK’。 <BR><BR> 
+　　5.2.1 画出水 <BR><BR> 
+　　就像高原一样，水也是被画在一个特定高度。水的高度取得方法跟高原的高度很像。 <BR><BR> 
+　　1)先按住’Shift’键，在河岸的岩石与草皮之间按下滑鼠左键。 <BR><BR> 
+　　水的高度会被设成你选择的那个点的高度。你也可以按住Control键并上下移动滑鼠来设定水的高度。 <BR><BR> 
+　　2)点按左键并移动滑鼠画出水的表面。将整个池溏都画上水的表面，不用担心河流的部份，我们等一下会用河流工具来处理。 <BR><BR> 
+　　3)要删除水的表面，只要在水的类型(Water Types)中选择’None’，将之画在你要删除的地方即可。 <BR><BR> 
+　　5.3 河流 <BR><BR> 
+　　5.3.1 建立河流 <BR><BR> 
+　　我们已经有池溏了，接着在山谷中建立一条河流。 <BR><BR> 
+　　1)选择河流工具(River Tool)。 <BR><BR> 
+　　河流工具(River Tool)有点难处理，因为它不是被画出来的，而是根据你设置的控制点来形成河流。每一个控制点(control point)都有贝兹控制器(bezier handle)用来设置河流的转弯角度。 <BR><BR> 
+　　2)选择一个水类型(water type)。 <BR><BR> 
+　　假如你没有选择任何一个水类型的话，你就不能设置控制点。你也许需要产生一个新的水类型以便能河流工具。你也可以产生一个新的水类型来建立不不同流向的水。 <BR><BR> 
+　　3)按着Shift键即进入控制点建立模式(point creation mode)。 <BR><BR> 
+　　4)Shilt键不放开，点按滑鼠左键可以设置控制点。 <BR><BR> 
+　　5)当设置控制点之后就会进入控制线延伸状态，按住滑鼠左键不放并移动，依你的需求决定控制线的位置及长度。 <BR><BR> 
+　　6)建立了一个控制点之后，放开滑鼠左键；接着到另一个地方按下滑鼠左键建立新的控制点。 <BR><BR> 
+　　7)如果你觉得新产生的控制点设得不好，你可以按倒退键(Backspace)删除最后一个控制点。 <BR><BR> 
+　　8)沿着地图中的峡谷地形建立好一系列的控制点，这些控制点所连成的线就会形成河流。 <BR><BR> 
+　　9)要建立新的河流，你只要放开Shift键，接着在其它地方再按一次Shift键就可以建立新的河流。 <BR><BR> 
+　　5.3.2 编辑河流 <BR><BR> 
+　　设置完控制点之后，你可能觉得某些控制点需要重新修正。 <BR><BR> 
+　　1)将滑鼠移到控制点的中心位置，滑鼠图示会变成四向指标。 <BR><BR> 
+　　2)点按左键并移动滑鼠可以移动控制点。 <BR><BR> 
+　　3)将滑鼠移到控制点的上方或下方，滑鼠图示会变成上下指标。 <BR><BR> 
+　　4)点按左键并移动滑鼠可以提高或降低河流的高度。 　　 <BR><BR> 
+　　5)将滑鼠移到控制点的左边或右边，滑鼠图示会变成左右指标。 <BR><BR> 
+　　6)点按左键并移动滑鼠可以改变河流的宽度。 <BR><BR> 
+　　7)将滑鼠移到控制点的贝兹控制器(bezier handle)，滑鼠图示会变成绕圈指标。 <BR><BR> 
+　　8)点按左键并移动滑鼠可以改变河流的弯曲度。 <BR><BR> 
+　　9)在编辑某一个控制点时，你也可以按键盘上的’[‘和’]’来改变河流的宽度。 <BR><BR> 
+　　5.4通行禁止区域 <BR><BR> 
+　　这里要介绍通行禁止区域工具(Movement Blocking Zone Tool)。利用这个工具来设定哪些区域是玩家不能进入的。 <BR><BR> 
+　　5.4.1 画上通行禁止区域 <BR><BR> 
+　　此工具的笔刷使用方法跟地形的笔刷工具一样。 <BR><BR> 
+　　1)于平面区域编辑视窗(Level Edit Pane)中，将笔刷画(滑鼠左键)在你不想让玩家行走的区域。 <BR><BR> 
+　　2)你可以用键盘上的’[‘和’]’键来改变笔刷的宽度。 <BR><BR> 
+　　3)下图中，我们不想让玩家走进悬崖里面，所以我们在悬崖旁边画上通行禁止区域。 <BR><BR> 
+　　完成后，别忘了重建你的路网(见1.5.1小节)并储存档案，之后到Art Manger建置(Build)你的地图。<!--/HTMLBUILERPART0--></font></DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南005.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="泰坦之旅游戏模组制作指南007.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

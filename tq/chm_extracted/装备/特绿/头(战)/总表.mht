@@ -1,0 +1,2160 @@
+MIME-Version: 1.0
+X-Document-Type: Worksheet
+Content-Location: file:///C:/859623C8/file9288.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 11">
+<link rel=3DFile-List href=3D"file9288.files/filelist.xml">
+<link rel=3DEdit-Time-Data href=3D"file9288.files/editdata.mso">
+<link rel=3DOLE-Object-Data href=3D"file9288.files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>&#26381;&#21153;&#22120;</o:Author>
+  <o:LastAuthor>&#24494;&#36719;&#29992;&#25143;</o:LastAuthor>
+  <o:Created>2007-09-11T02:53:27Z</o:Created>
+  <o:LastSaved>2010-05-23T19:39:07Z</o:LastSaved>
+  <o:Company>&#38738;&#23707;&#32593;&#24433;&#30005;&#23376;&#20449;&#2468=
+7;&#26377;&#38480;&#20844;&#21496;</o:Company>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:\5E38\89C4;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	font-weight:700;
+	text-align:center;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl25
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	text-align:center;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl26
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl28
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;}
+.xl29
+	{mso-style-parent:style0;
+	color:red;
+	font-size:9.0pt;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:Selected/>
+     <x:TopRowVisible>48</x:TopRowVisible>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>48</x:ActiveRow>
+       <x:ActiveCol>1</x:ActiveCol>
+       <x:RangeSelection>$1:$65536</x:RangeSelection>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+    <x:QueryTable>
+     <x:Name>. TQIT OUT_&#35013;&#22791;_&#29305;&#32511;_&#22836;_&#25112;=
+_CN</x:Name>
+     <x:AutoFormatFont/>
+     <x:AutoFormatPattern/>
+     <x:QuerySource>
+      <x:QueryType>OLEDB</x:QueryType>
+      <x:CommandText>&quot;TQIT&quot;.&quot;dbo&quot;.&quot;OUT_&#35013;&#2=
+2791;_&#29305;&#32511;_&#22836;_&#25112;_CN&quot;</x:CommandText>
+      <x:CommandType>Table</x:CommandType>
+      <x:Maintain/>
+      <x:Connection>Provider=3DSQLOLEDB.1;Integrated Security=3DSSPI;Persis=
+t Security Info=3DTrue;Initial Catalog=3DTQIT;Data Source=3D.;Use Procedure=
+ for Prepare=3D1;Auto Translate=3DTrue;Packet Size=3D4096;Workstation ID=3D=
+SERVER;Use Encryption for Data=3DFalse;Tag with column collation when possi=
+ble=3DFalse</x:Connection>
+      <x:SourceConnectionFile>C:\Documents and Settings\xxd\My Documents\&#=
+25105;&#30340;&#25968;&#25454;&#28304;\. TQIT OUT_&#35013;&#22791;_&#29305;=
+&#32511;_&#22836;_&#25112;_CN.odc</x:SourceConnectionFile>
+      <x:RobustConnect>0</x:RobustConnect>
+      <x:VersionLastEdit>2</x:VersionLastEdit>
+      <x:VersionLastRefresh>2</x:VersionLastRefresh>
+     </x:QuerySource>
+     <x:RefreshInfo>
+      <x:NextId>11</x:NextId>
+      <x:ColumnInfo>
+       <x:Id>1</x:Id>
+       <x:Name>&#38590;&#24230;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>2</x:Id>
+       <x:Name>&#20013;&#25991;&#21517;&#31216;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>3</x:Id>
+       <x:Name>&#29289;&#21697;&#31561;&#32423;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>4</x:Id>
+       <x:Name>&#38656;&#35201;&#21147;&#37327;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>5</x:Id>
+       <x:Name>&#38656;&#35201;&#25935;&#25463;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>6</x:Id>
+       <x:Name>&#23646;&#24615;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>7</x:Id>
+       <x:Name>&#33521;&#25991;&#21517;&#31216;</x:Name>
+      </x:ColumnInfo>
+      <x:DeletedTitle>n_Difficulty</x:DeletedTitle>
+      <x:DeletedTitle>n_Order2</x:DeletedTitle>
+      <x:DeletedTitle>n_flag</x:DeletedTitle>
+     </x:RefreshInfo>
+    </x:QueryTable>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>8415</x:WindowHeight>
+  <x:WindowWidth>14715</x:WindowWidth>
+  <x:WindowTopX>360</x:WindowTopX>
+  <x:WindowTopY>360</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+ <x:ExcelName>
+  <x:Name>_._TQIT_OUT_&#35013;&#22791;_&#29305;&#32511;_&#22836;_&#25112;_C=
+N</x:Name>
+  <x:SheetIndex>1</x:SheetIndex>
+  <x:Formula>=3DSheet1!$A$1:$G$49</x:Formula>
+ </x:ExcelName>
+</xml><![endif]-->
+</head>
+
+<body link=3Dblue vlink=3Dpurple class=3Dxl28>
+
+<table x:str border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D796 style=
+=3D'border-collapse:
+ collapse;table-layout:fixed;width:597pt'>
+ <col class=3Dxl27 width=3D38 style=3D'mso-width-source:userset;mso-width-a=
+lt:1216;
+ width:29pt'>
+ <col class=3Dxl28 width=3D111 style=3D'mso-width-source:userset;mso-width-=
+alt:3552;
+ width:83pt'>
+ <col class=3Dxl28 width=3D64 span=3D3 style=3D'mso-width-source:userset;ms=
+o-width-alt:
+ 2048;width:48pt'>
+ <col class=3Dxl28 width=3D311 style=3D'mso-width-source:userset;mso-width-=
+alt:9952;
+ width:233pt'>
+ <col class=3Dxl28 width=3D144 style=3D'mso-width-source:userset;mso-width-=
+alt:4608;
+ width:108pt'>
+ <tr class=3Dxl27 height=3D19 style=3D'height:14.25pt'>
+  <td height=3D19 class=3Dxl24 width=3D38 style=3D'height:14.25pt;width:29p=
+t'><a
+  name=3D"_._TQIT_OUT_&#35013;&#22791;_&#29305;&#32511;_&#22836;_&#25112;_C=
+N">&#38590;&#24230;</a></td>
+  <td class=3Dxl24 width=3D111 style=3D'border-left:none;width:83pt'>&#2001=
+3;&#25991;&#21517;&#31216;</td>
+  <td class=3Dxl24 width=3D64 style=3D'border-left:none;width:48pt'>&#29289=
+;&#21697;&#31561;&#32423;</td>
+  <td class=3Dxl24 width=3D64 style=3D'border-left:none;width:48pt'>&#38656=
+;&#35201;&#21147;&#37327;</td>
+  <td class=3Dxl24 width=3D64 style=3D'border-left:none;width:48pt'>&#38656=
+;&#35201;&#25935;&#25463;</td>
+  <td class=3Dxl24 width=3D311 style=3D'border-left:none;width:233pt'>&#236=
+46;&#24615;</td>
+  <td class=3Dxl24 width=3D144 style=3D'border-left:none;width:108pt'>&#335=
+21;&#25991;&#21517;&#31216;</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl25 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20808;&#39537;&#32773;&#30340;&#22836;&#39592;&#24125;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>4</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>56</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>68</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>28
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    25% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    +5 &#25935;&#25463;<br>
+    <br>
+    +20 &#29983;&#21629;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Outrider's
+  Skullcap</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#27515;&#20129;&#32534;&#32455;&#32773;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>9</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>80</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>35
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 4 ~ 8
+  &#31359;&#21050;&#21453;&#20987;<br>
+    <br>
+    10% &#27602;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Deathweaver's
+  Helmet</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20991;&#30707;&#24037;&#20043;&#20896;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>12</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>72</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>127</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>38
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    12% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +8 &#26234;&#21147;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Stonebinder's
+  Crown</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl25 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#21736;&#20853;&#30340;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>12</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>114</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>40
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    8% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    12% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +8 &#25935;&#25463;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Sentinel's
+  Helm</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#27515;&#20129;&#20043;&#32764;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>16</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>82</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>156</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>60
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +15 &#25935;&#25463;<br>
+    <br>
+    5% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Deathwing
+  Helmet</td>
+ </tr>
+ <tr height=3D45 style=3D'height:33.75pt'>
+  <td height=3D45 class=3Dxl25 width=3D38 style=3D'height:33.75pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20129;&#28789;&#30340;&#30343;&#20896;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>17</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>186</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>68
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +1 &#21040;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Revenant
+  Crown</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#22855;&#24322;&#38754;&#20855;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>22</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>223</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>80
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 24 ~ 48
+  &#27602;&#32032;&#20260;&#23475;&#21453;&#20987;&#22312;6.0&#31186;&#2086=
+9;<br>
+    <br>
+    20% &#31359;&#21050;&#25269;&#25239;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Exotic
+  Mask</td>
+ </tr>
+ <tr height=3D285 style=3D'height:213.75pt'>
+  <td height=3D285 class=3Dxl25 width=3D38 style=3D'height:213.75pt;border-=
+top:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#32769;&#40736;&#30340;&#24125;&#23376;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>22</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>245</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>88
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +25% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#33268;&#30450;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    &#19968;&#20010;&#39764;&#26415;&#24072;&#30340;&#25226;&#25103;&#21364=
+;&#24102;&#26377;&#26684;&#22806;&#37034;&#24694;<br>
+    <br>
+  =20
+  &#30340;&#29992;&#24515;&#65292;&#38378;&#20809;&#31881;&#33268;&#30450;&=
+#38468;&#36817;&#30340;&#25932;&#20154;&#65292;<br>
+    <br>
+    &#21066;&#24369;&#20182;&#20204;&#20351;&#29992;&#27494;&#22120;&#25915=
+;&#20987;&#30340;&#33021;&#21147;&#65292;&#38388;<br>
+    <br>
+    &#25509;&#36855;&#24785;&#20182;&#20204;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#33539=
+;&#22260;<br>
+    <br>
+    53 &#27861;&#21147;&#28040;&#32791;<br>
+    <br>
+    15.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36817;<br>
+    <br>
+    &#25915;&#20987;&#26102;&#19981;&#38468;&#21152;&#31181;&#26063;&#20260=
+;&#23475;<br>
+    <br>
+    <br>
+    <br>
+    3.8 &#31859;&#33539;&#22260;<br>
+    <br>
+    30.0% &#26426;&#29575;&#21457;&#21160; 3.0 ~ 8.0
+  &#31186;&#28151;&#20081;<br>
+    <br>
+    30% &#26426;&#29575;&#25915;&#20987;&#22833;&#35823; &#25345;&#32493; 8=
+.0
+  &#31186;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>The
+  Rat's Hat</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl25 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#30423;&#21290;&#30340;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>24</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>191</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>68
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    7 ~ 12 &#31359;&#21050;&#21453;&#20987;<br>
+    <br>
+    20% &#20912;&#20919;&#25239;&#24615;<br>
+    <br>
+    +50 &#29983;&#21629;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Marauder's
+  Helm</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#25112;&#20105;&#20043;&#29579;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>25</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>280</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>100
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +25 &#21147;&#37327;<br>
+    <br>
+    +25 &#25935;&#25463;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Warlord's
+  Helm</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#22763;&#20853;&#25252;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>289</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>101
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    40% &#22833;&#34880;&#24615;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    40% &#26127;&#30561;&#25269;&#25239;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Soldier's
+  Skullplate</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20166;&#20174;&#25252;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>312</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>112
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 20
+  &#20260;&#23475;&#20943;&#23569;&#21453;&#20987; &#25345;&#32493; 3.0
+  &#31186;<br>
+    <br>
+    40% &#26127;&#30561;&#25269;&#25239;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Myrmidon's
+  Skullplate</td>
+ </tr>
+ <tr height=3D255 style=3D'height:191.25pt'>
+  <td height=3D255 class=3Dxl25 width=3D38 style=3D'height:191.25pt;border-=
+top:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#22070;&#21713;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>319</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>114
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +50 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#25112;&#20105;&#21495;&#35282;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    50% &#20960;&#29575;&#22312;&#29983;&#21629;&#20540;&#20302;&#19979;&#2=
+6102;&#21551;&#21160;<br>
+    <br>
+  =20
+  &#25112;&#20105;&#21495;&#35282;&#30340;&#32988;&#21033;&#21628;&#21796;&=
+#21487;&#20196;&#25932;&#20154;&#26242;&#26102;<br>
+    <br>
+    &#26127;&#36855;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#33539;&=
+#22260;<br>
+    <br>
+    52 &#27861;&#21147;&#28040;&#32791;<br>
+    <br>
+    18.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36817;<br>
+    <br>
+  =20
+  &#25915;&#20987;&#26102;&#19981;&#38468;&#21152;&#31181;&#26063;&#20260;&=
+#23475;<br>
+    <br>
+    <br>
+    <br>
+    8.0 &#31859;&#33539;&#22260;<br>
+    <br>
+    1.5 ~ 3.0 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Alala</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#26114;&#32435;&#26222;&#33713;&#29305;&#30340;&#20415;&#30420;<=
+/td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>324</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>115
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    40% &#25216;&#33021;&#20013;&#26029;&#20445;&#25252;<br>
+    <br>
+    15% &#20803;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Anaplekte's
+  Skullcap</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl25 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#38463;&#22270;&#20811;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>327</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>120
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    5% &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +6% &#21147;&#37327;<br>
+    <br>
+    +6% &#25935;&#25463;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Atouk</td>
+ </tr>
+ <tr height=3D330 style=3D'height:247.5pt'>
+  <td height=3D330 class=3Dxl25 width=3D38 style=3D'height:247.5pt;border-t=
+op:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20122;&#20811;&#23433;&#23068;&#30340;&#38754;&#20855;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>340</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>135
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +100 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021;
+  :&#38463;&#23572;&#24211;&#20420;&#32445;&#26031;&#20043;&#33021;&#37327;=
+&#30462;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    2%
+  &#20960;&#29575;&#22312;&#25215;&#21463;&#36817;&#25112;&#20260;&#23475;&=
+#26102;&#21551;&#21160;<br>
+    <br>
+  =20
+  &#19968;&#36947;&#33021;&#37327;&#22330;&#21560;&#25910;&#25152;&#26377;&=
+#25915;&#20987;&#30340;&#20260;&#23475;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#20809;&#29615;&#12289;&#24378;&=
+#21270;&#12289;&#21560;&#25910;&#30462;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    100 &#20260;&#23475;&#21560;&#25910;<br>
+    <br>
+    &#20445;&#25252;&#25269;&#25239; :<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#29289;&#29702;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#20912;&#20919;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#27969;&#34880;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#28779;&#28976;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#27602;&#32032;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#31359;&#21050;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span>&#20803;&#32=
+032;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#27963;&#21147;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span>&#38378;&#30=
+005;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Alcyoneus'
+  Mask</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl25 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20808;&#39537;&#32773;&#30340;&#22836;&#39592;&#24125;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>33</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>111</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>264</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>155
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    50% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    +15 &#25935;&#25463;<br>
+    <br>
+    +40 &#29983;&#21629;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Outrider's
+  Skullcap</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#27515;&#20129;&#32534;&#32455;&#32773;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>36</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>353</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>160
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 12 ~ 15
+  &#31359;&#21050;&#21453;&#20987;<br>
+    <br>
+    20% &#27602;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Deathweaver's
+  Helmet</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20991;&#30707;&#24037;&#20043;&#20896;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>39</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>120</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>297</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>165
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +16 &#26234;&#21147;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Stonebinder's
+  Crown</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl25 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#21736;&#20853;&#30340;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>39</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>371</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>170
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    16% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    20% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +16 &#25935;&#25463;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Sentinel's
+  Helm</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#27515;&#20129;&#20043;&#32764;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>40</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>122</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>303</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>185
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +20 &#25935;&#25463;<br>
+    <br>
+    7% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Deathwing
+  Helmet</td>
+ </tr>
+ <tr height=3D45 style=3D'height:33.75pt'>
+  <td height=3D45 class=3Dxl25 width=3D38 style=3D'height:33.75pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20129;&#28789;&#30340;&#30343;&#20896;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>42</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>390</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>205
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +1 &#21040;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Revenant
+  Crown</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#22855;&#24322;&#38754;&#20855;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>45</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>408</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>220
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 72 ~ 90
+  &#27602;&#32032;&#20260;&#23475;&#21453;&#20987;&#22312;6.0&#31186;&#2086=
+9;<br>
+    <br>
+    30% &#31359;&#21050;&#25269;&#25239;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Exotic
+  Mask</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl25 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#30423;&#21290;&#30340;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>46</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>385</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>185
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    7 ~ 12 &#31359;&#21050;&#21453;&#20987;<br>
+    <br>
+    30% &#20912;&#20919;&#25239;&#24615;<br>
+    <br>
+    +70 &#29983;&#21629;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Marauder's
+  Helm</td>
+ </tr>
+ <tr height=3D285 style=3D'height:213.75pt'>
+  <td height=3D285 class=3Dxl25 width=3D38 style=3D'height:213.75pt;border-=
+top:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#32769;&#40736;&#30340;&#24125;&#23376;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>46</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>429</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>245
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +25% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#33268;&#30450;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    &#19968;&#20010;&#39764;&#26415;&#24072;&#30340;&#25226;&#25103;&#21364=
+;&#24102;&#26377;&#26684;&#22806;&#37034;&#24694;<br>
+    <br>
+  =20
+  &#30340;&#29992;&#24515;&#65292;&#38378;&#20809;&#31881;&#33268;&#30450;&=
+#38468;&#36817;&#30340;&#25932;&#20154;&#65292;<br>
+    <br>
+    &#21066;&#24369;&#20182;&#20204;&#20351;&#29992;&#27494;&#22120;&#25915=
+;&#20987;&#30340;&#33021;&#21147;&#65292;&#38388;<br>
+    <br>
+    &#25509;&#36855;&#24785;&#20182;&#20204;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#33539=
+;&#22260;<br>
+    <br>
+    53 &#27861;&#21147;&#28040;&#32791;<br>
+    <br>
+    15.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36817;<br>
+    <br>
+    &#25915;&#20987;&#26102;&#19981;&#38468;&#21152;&#31181;&#26063;&#20260=
+;&#23475;<br>
+    <br>
+    <br>
+    <br>
+    3.8 &#31859;&#33539;&#22260;<br>
+    <br>
+    30.0% &#26426;&#29575;&#21457;&#21160; 3.0 ~ 8.0
+  &#31186;&#28151;&#20081;<br>
+    <br>
+    30% &#26426;&#29575;&#25915;&#20987;&#22833;&#35823; &#25345;&#32493; 8=
+.0
+  &#31186;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>The
+  Rat's Hat</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#25112;&#20105;&#20043;&#29579;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>46</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>488</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>270
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +30 &#21147;&#37327;<br>
+    <br>
+    +30 &#25935;&#25463;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Warlord's
+  Helm</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#22763;&#20853;&#25252;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>439</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>498
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    60% &#22833;&#34880;&#24615;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    60% &#26127;&#30561;&#25269;&#25239;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Soldier's
+  Skullplate</td>
+ </tr>
+ <tr height=3D255 style=3D'height:191.25pt'>
+  <td height=3D255 class=3Dxl25 width=3D38 style=3D'height:191.25pt;border-=
+top:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#22070;&#21713;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>448</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>268
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +100 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#25112;&#20105;&#21495;&#35282;
+  &#31561;&#32423;&#65306;2<br>
+    <br>
+    50% &#20960;&#29575;&#22312;&#29983;&#21629;&#20540;&#20302;&#19979;&#2=
+6102;&#21551;&#21160;<br>
+    <br>
+  =20
+  &#25112;&#20105;&#21495;&#35282;&#30340;&#32988;&#21033;&#21628;&#21796;&=
+#21487;&#20196;&#25932;&#20154;&#26242;&#26102;<br>
+    <br>
+    &#26127;&#36855;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#33539;&=
+#22260;<br>
+    <br>
+    54 &#27861;&#21147;&#28040;&#32791;<br>
+    <br>
+    18.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36817;<br>
+    <br>
+  =20
+  &#25915;&#20987;&#26102;&#19981;&#38468;&#21152;&#31181;&#26063;&#20260;&=
+#23475;<br>
+    <br>
+    <br>
+    <br>
+    8.4 &#31859;&#33539;&#22260;<br>
+    <br>
+    1.5 ~ 3.5 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Alala</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20166;&#20174;&#25252;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>455</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>530
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 30
+  &#20260;&#23475;&#20943;&#23569;&#21453;&#20987; &#25345;&#32493; 3.0
+  &#31186;<br>
+    <br>
+    60% &#26127;&#30561;&#25269;&#25239;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Myrmidon's
+  Skullplate</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl25 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#38463;&#22270;&#20811;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>470</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>312
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    7% &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +8% &#21147;&#37327;<br>
+    <br>
+    +8% &#25935;&#25463;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Atouk</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#26114;&#32435;&#26222;&#33713;&#29305;&#30340;&#20415;&#30420;<=
+/td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>470</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>307
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    60% &#25216;&#33021;&#20013;&#26029;&#20445;&#25252;<br>
+    <br>
+    25% &#20803;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Anaplekte's
+  Skullcap</td>
+ </tr>
+ <tr height=3D330 style=3D'height:247.5pt'>
+  <td height=3D330 class=3Dxl25 width=3D38 style=3D'height:247.5pt;border-t=
+op:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20122;&#20811;&#23433;&#23068;&#30340;&#38754;&#20855;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>477</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>327
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +150 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021;
+  :&#38463;&#23572;&#24211;&#20420;&#32445;&#26031;&#20043;&#33021;&#37327;=
+&#30462;
+  &#31561;&#32423;&#65306;2<br>
+    <br>
+    2%
+  &#20960;&#29575;&#22312;&#25215;&#21463;&#36817;&#25112;&#20260;&#23475;&=
+#26102;&#21551;&#21160;<br>
+    <br>
+  =20
+  &#19968;&#36947;&#33021;&#37327;&#22330;&#21560;&#25910;&#25152;&#26377;&=
+#25915;&#20987;&#30340;&#20260;&#23475;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#20809;&#29615;&#12289;&#24378;&=
+#21270;&#12289;&#21560;&#25910;&#30462;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    300 &#20260;&#23475;&#21560;&#25910;<br>
+    <br>
+    &#20445;&#25252;&#25269;&#25239; :<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#29289;&#29702;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#20912;&#20919;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#27969;&#34880;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#28779;&#28976;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#27602;&#32032;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#31359;&#21050;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span>&#20803;&#32=
+032;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#27963;&#21147;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span>&#38378;&#30=
+005;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Alcyoneus'
+  Mask</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl25 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20808;&#39537;&#32773;&#30340;&#22836;&#39592;&#24125;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>52</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>140</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>369</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>350
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    75% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    +25 &#25935;&#25463;<br>
+    <br>
+    +80 &#29983;&#21629;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Outrider's
+  Skullcap</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#27515;&#20129;&#32534;&#32455;&#32773;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>54</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>485</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>370
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 19 ~ 22
+  &#31359;&#21050;&#21453;&#20987;<br>
+    <br>
+    30% &#27602;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Deathweaver's
+  Helmet</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20991;&#30707;&#24037;&#20043;&#20896;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>55</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>144</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>385</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>350
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    28% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +24 &#26234;&#21147;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Stonebinder's
+  Crown</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl25 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#21736;&#20853;&#30340;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>55</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>486</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>360
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    24% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    28% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +24 &#25935;&#25463;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Sentinel's
+  Helm</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#27515;&#20129;&#20043;&#32764;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>56</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>146</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>391</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>385
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +25 &#25935;&#25463;<br>
+    <br>
+    9% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Deathwing
+  Helmet</td>
+ </tr>
+ <tr height=3D45 style=3D'height:33.75pt'>
+  <td height=3D45 class=3Dxl25 width=3D38 style=3D'height:33.75pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20129;&#28789;&#30340;&#30343;&#20896;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>57</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>508</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>445
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +2 &#21040;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Revenant
+  Crown</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#22855;&#24322;&#38754;&#20855;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>60</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>512</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>440
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 114 ~ 132
+  &#27602;&#32032;&#20260;&#23475;&#21453;&#20987;&#22312;6.0&#31186;&#2086=
+9;<br>
+    <br>
+    40% &#31359;&#21050;&#25269;&#25239;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Exotic
+  Mask</td>
+ </tr>
+ <tr height=3D285 style=3D'height:213.75pt'>
+  <td height=3D285 class=3Dxl25 width=3D38 style=3D'height:213.75pt;border-=
+top:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#32769;&#40736;&#30340;&#24125;&#23376;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>60</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>538</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>500
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +25% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#33268;&#30450;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    &#19968;&#20010;&#39764;&#26415;&#24072;&#30340;&#25226;&#25103;&#21364=
+;&#24102;&#26377;&#26684;&#22806;&#37034;&#24694;<br>
+    <br>
+  =20
+  &#30340;&#29992;&#24515;&#65292;&#38378;&#20809;&#31881;&#33268;&#30450;&=
+#38468;&#36817;&#30340;&#25932;&#20154;&#65292;<br>
+    <br>
+    &#21066;&#24369;&#20182;&#20204;&#20351;&#29992;&#27494;&#22120;&#25915=
+;&#20987;&#30340;&#33021;&#21147;&#65292;&#38388;<br>
+    <br>
+    &#25509;&#36855;&#24785;&#20182;&#20204;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#33539=
+;&#22260;<br>
+    <br>
+    53 &#27861;&#21147;&#28040;&#32791;<br>
+    <br>
+    15.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36817;<br>
+    <br>
+    &#25915;&#20987;&#26102;&#19981;&#38468;&#21152;&#31181;&#26063;&#20260=
+;&#23475;<br>
+    <br>
+    <br>
+    <br>
+    3.8 &#31859;&#33539;&#22260;<br>
+    <br>
+    30.0% &#26426;&#29575;&#21457;&#21160; 3.0 ~ 8.0
+  &#31186;&#28151;&#20081;<br>
+    <br>
+    30% &#26426;&#29575;&#25915;&#20987;&#22833;&#35823; &#25345;&#32493; 8=
+.0
+  &#31186;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>The
+  Rat's Hat</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl25 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#30423;&#21290;&#30340;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>61</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>491</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>375
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    7 ~ 12 &#31359;&#21050;&#21453;&#20987;<br>
+    <br>
+    40% &#20912;&#20919;&#25239;&#24615;<br>
+    <br>
+    +90 &#29983;&#21629;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Marauder's
+  Helm</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#25112;&#20105;&#20043;&#29579;&#22836;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>62</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>551</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>535
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +35 &#21147;&#37327;<br>
+    <br>
+    +35 &#25935;&#25463;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Warlord's
+  Helm</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#22763;&#20853;&#25252;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>543</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>255
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    80% &#22833;&#34880;&#24615;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    80% &#26127;&#30561;&#25269;&#25239;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Soldier's
+  Skullplate</td>
+ </tr>
+ <tr height=3D255 style=3D'height:191.25pt'>
+  <td height=3D255 class=3Dxl25 width=3D38 style=3D'height:191.25pt;border-=
+top:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#22070;&#21713;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>545</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>504
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +150 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#25112;&#20105;&#21495;&#35282;
+  &#31561;&#32423;&#65306;3<br>
+    <br>
+    50% &#20960;&#29575;&#22312;&#29983;&#21629;&#20540;&#20302;&#19979;&#2=
+6102;&#21551;&#21160;<br>
+    <br>
+  =20
+  &#25112;&#20105;&#21495;&#35282;&#30340;&#32988;&#21033;&#21628;&#21796;&=
+#21487;&#20196;&#25932;&#20154;&#26242;&#26102;<br>
+    <br>
+    &#26127;&#36855;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#33539;&=
+#22260;<br>
+    <br>
+    56 &#27861;&#21147;&#28040;&#32791;<br>
+    <br>
+    18.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36817;<br>
+    <br>
+  =20
+  &#25915;&#20987;&#26102;&#19981;&#38468;&#21152;&#31181;&#26063;&#20260;&=
+#23475;<br>
+    <br>
+    <br>
+    <br>
+    8.8 &#31859;&#33539;&#22260;<br>
+    <br>
+    1.5 ~ 3.9 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Alala</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20166;&#20174;&#25252;&#30420;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>556</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>276
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 40
+  &#20260;&#23475;&#20943;&#23569;&#21453;&#20987; &#25345;&#32493; 3.0
+  &#31186;<br>
+    <br>
+    80% &#26127;&#30561;&#25269;&#25239;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Myrmidon's
+  Skullplate</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl25 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#38463;&#22270;&#20811;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>582</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>600
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    9% &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +10% &#21147;&#37327;<br>
+    <br>
+    +10% &#25935;&#25463;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Atouk</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#26114;&#32435;&#26222;&#33713;&#29305;&#30340;&#20415;&#30420;<=
+/td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>583</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>595
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    80% &#25216;&#33021;&#20013;&#26029;&#20445;&#25252;<br>
+    <br>
+    35% &#20803;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Anaplekte's
+  Skullcap</td>
+ </tr>
+ <tr height=3D330 style=3D'height:247.5pt'>
+  <td height=3D330 class=3Dxl25 width=3D38 style=3D'height:247.5pt;border-t=
+op:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl26 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20122;&#20811;&#23433;&#23068;&#30340;&#38754;&#20855;</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>600</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>615
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +200 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021;
+  :&#38463;&#23572;&#24211;&#20420;&#32445;&#26031;&#20043;&#33021;&#37327;=
+&#30462;
+  &#31561;&#32423;&#65306;3<br>
+    <br>
+    2%
+  &#20960;&#29575;&#22312;&#25215;&#21463;&#36817;&#25112;&#20260;&#23475;&=
+#26102;&#21551;&#21160;<br>
+    <br>
+  =20
+  &#19968;&#36947;&#33021;&#37327;&#22330;&#21560;&#25910;&#25152;&#26377;&=
+#25915;&#20987;&#30340;&#20260;&#23475;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#20809;&#29615;&#12289;&#24378;&=
+#21270;&#12289;&#21560;&#25910;&#30462;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    500 &#20260;&#23475;&#21560;&#25910;<br>
+    <br>
+    &#20445;&#25252;&#25269;&#25239; :<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#29289;&#29702;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#20912;&#20919;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#27969;&#34880;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#28779;&#28976;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#27602;&#32032;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#31359;&#21050;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span>&#20803;&#32=
+032;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;
+  </span>&#27963;&#21147;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span>&#38378;&#30=
+005;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Alcyoneus'
+  Mask</td>
+ </tr>
+ <tr height=3D19 style=3D'height:14.25pt'>
+  <td height=3D19 class=3Dxl27 style=3D'height:14.25pt;border-top:none'>&#1=
+2288;</td>
+  <td class=3Dxl28 style=3D'border-top:none;border-left:none'>&#12288;</td>
+  <td class=3Dxl28 style=3D'border-top:none;border-left:none'>&#12288;</td>
+  <td class=3Dxl28 style=3D'border-top:none;border-left:none'>&#12288;</td>
+  <td class=3Dxl28 style=3D'border-top:none;border-left:none'>&#12288;</td>
+  <td class=3Dxl28 style=3D'border-top:none;border-left:none'>&#12288;</td>
+  <td class=3Dxl28 style=3D'border-top:none;border-left:none'>&#12288;</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl29 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20234;&#26031;&#29595;&#20029;&#26031;&#30340;&#22836;&#30420;<=
+br>
+    (&#19981;&#21487;&#20986;&#29616;)</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>245</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>80
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +20% &#27602;&#32032;&#20260;&#23475;<br>
+    <br>
+    40% &#27602;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Ismene's
+  Helm</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl29 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20234;&#26031;&#29595;&#20029;&#26031;&#30340;&#22836;&#30420;<=
+br>
+    (&#19981;&#21487;&#20986;&#29616;)</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>412</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>215
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +30% &#27602;&#32032;&#20260;&#23475;<br>
+    <br>
+    60% &#27602;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Ismene's
+  Helm</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl25 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl29 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#20234;&#26031;&#29595;&#20029;&#26031;&#30340;&#22836;&#30420;<=
+br>
+    (&#19981;&#21487;&#20986;&#29616;)</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>509</td>
+  <td class=3Dxl26 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl26 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>422
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +40% &#27602;&#32032;&#20260;&#23475;<br>
+    <br>
+    80% &#27602;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl26 width=3D144 style=3D'border-top:none;border-left:none;wi=
+dth:108pt'>Ismene's
+  Helm</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D38 style=3D'width:29pt'></td>
+  <td width=3D111 style=3D'width:83pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+  <td width=3D311 style=3D'width:233pt'></td>
+  <td width=3D144 style=3D'width:108pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

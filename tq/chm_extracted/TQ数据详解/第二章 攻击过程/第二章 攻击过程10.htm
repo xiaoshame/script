@@ -1,0 +1,155 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>第十一节：延迟实施过程中的伤害叠加</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="第二章%20攻击过程09.htm">上一页</a> <a href="第二章%20攻击过程.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> </td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">第十一节：延迟实施过程中的伤害叠加</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　前面曾经说过，在一次攻击中的所有伤害（不论是否同一种类），在伤害实施之前均是不会相互叠加的。实际上，即使在伤害实施阶段，任意两个伤害之间也都不会相互叠加，这一点可以利用伤害吸收BUG来证明。而本节所谓的“叠加”，说的主要是在两次以上的攻击中，延迟实施阶段的相互影响。由于延迟实施必然会涉及到一段持续时间，而在该时间范围内，又有可能遭遇第二次攻击，并带来第二次的延迟实施，这时就存在着这两次攻击的延迟实施之间的相互影响问题。<BR><BR> 
+　　1、　　持续杀伤类伤害以及生命吸取、法力吸取、生命吸取反击、法力吸取反击<BR><BR> 
+　　在同一次攻击内，所有伤害都是独立实施的，这点前节已经详细解释过。假若在延迟实施过程中，又遇到了第二次攻击，则对于两次攻击中的同种类的伤害，在每隔0.1秒进行一次的实施中，将选择数值较高的那次攻击进行实施。举例如下：<BR><BR> 
+　　假若第一次攻击中，包含三个持续毒素伤害，分别是：<BR><BR> 
+　　a) 每秒100点，持续3秒<BR><BR> 
+　　b) 每秒20点，持续6秒<BR><BR> 
+　　c) 每秒50点，持续20秒<BR><BR> 
+　　而第二次攻击在第一次攻击结束后2秒时发生，并且在第二次攻击中，包含两个持续毒素伤害，分别是：<BR><BR> 
+　　d) 每秒80点，持续3秒<BR><BR> 
+　　e) 每秒60点，持续30秒<BR><BR> 
+　　则延迟实施的结果为（仍以第一击的的打击瞬间为时间起点。注意第二击比第一击晚2秒）：<BR><BR> 
+　　0 ~ 2秒内：第二次攻击尚未发生，因此是第一次攻击的三个毒素伤害进行实施。<BR><BR> 
+　　2 ~ 3秒内：第一次攻击的三个毒素伤害，每秒伤害总和是170点（100 + 20 + 50），即：在每0.1秒进行一次的实施中，每次将总共削减17点生命；而第二次攻击的两个毒素伤害，每秒伤害总和是140点（80 + 60），即：在每0.1秒进行一次的实施中，每次将总共削减14点生命；由于17 &gt; 14，故在这段时间范围内，每次实施都将是第一次攻击被选中，进行三个毒素伤害的延迟实施，而第二次攻击则被放弃（两个毒素伤害均不实施）。<BR><BR> 
+　　3 ~ 5秒内：此时第一次攻击中的伤害a已经持续时间结束，只剩下b、c两个伤害，每秒伤害总和是70点（20 + 50），因此在每0.1秒一次的实施中，将削减7点生命；而在这段时间内，第二次攻击的伤害总和仍是每次14点（第二次攻击是从2秒后开始的，因此其中的伤害d是在2 ~ 5秒的时间范围内有效），由于7 &lt; 14，故这段时间范围内，第二次攻击被选中，而第一次攻击则被放弃。<BR><BR> 
+　　5 ~ 6秒内：此时第二次攻击中的伤害d也已经持续时间结束，只剩下伤害e；而　　第一次攻击仍有伤害b和伤害c处于持续时间内。同样的计算可知，这段时间内，又将是第一次攻击被选中实施，而第二次攻击被放弃。<BR><BR> 
+　　6 ~ 20秒内：第一次攻击中的b已经持续时间结束，只剩下c。与第二次攻击中的E相比，第一次攻击将被放弃。<BR><BR> 
+　　20 ~ 32秒内：第一次攻击中的所有伤害均已持续时间结束，只剩下第二次攻击被继续实施。<BR><BR> 
+　　注意：<BR><BR> 
+　　在两次攻击中，只有相同种类的伤害才会用上述算法进行比较和筛选，不同种类的则相互之见毫无影响。例如，假若第一次攻击是燃烧伤害，第二次攻击是电击伤害，则两次攻击各实施各的，互不干扰；而假若第二次攻击中既有电击伤害也有燃烧伤害的话，那么两次攻击中燃烧伤害的实施需要经过上述算法进行，而电击伤害仍不受影响。<BR><BR> 
+　　在延迟实施过程中（即攻击结束后），所有反击型伤害的“反击型”特征消失——也就是说，它们被看做与相应的主动型伤害是同种类。假若一次主动攻击造成的伤害是燃烧伤害，紧接着一次反击造成的是燃烧反击伤害，那么这两者在实施时，会被看作是同一种伤害，按最大值实施，而不是各实施各的。每种反击型伤害的对应主动型伤害见第三章。<BR><BR> 
+　　两次攻击中，每种伤害种类的实施的选择都是独立的。例如，假若两次攻击中都包含燃烧伤害和电击伤害，则在某一次实施中，有可能是燃烧伤害选中了第一次攻击中的伤害进行实施，而电击伤害却选中了第二次攻击中的伤害进行实施。<BR><BR> 
+　　实施的选择是以攻击为单位的，因此在一次特定的实施中，某个攻击中的所有同类伤害，要么全都实施，要么一个都不实施。<BR><BR> 
+　　实施选择过程中，比较的基础是由瞬间实施的第二步所确定下来的实施数据。例如，在前例中，假若第一次攻击是由某个特定种族发动的，而被攻击方具有425点的、针对该种族的种族伤害降低，则第一次攻击的所有三个伤害，前2.5秒的每秒伤害都会变成零（425 / (100 + 20 + 50) = 425 / 170 = 2.5）；而4假若第二次攻击不是由同一个种族发动的（不受种族伤害降低影响），那么在2 ~ 2.5秒内，由于第一次攻击的每秒伤害总和为零，　　因此将是第二次攻击被选中；而在2.5 ~ 3秒内，则仍将是第一次攻击被选中。<BR><BR> 
+　　实际上，之所以会在瞬间实施过程中存在一个用来确定实施数据的第二步，就是因为后续的攻击有可能是由不同种族的生物发动，不预先算出来的话，就没法相互比较了。而伤害吸收却没有这个问题，只与伤害种类有关，而伤害实施的选择也只与伤害种类有关，两者并不矛盾，因此也就没有必要预先算好了。<BR><BR> 
+　　2、　　属性伤害：<BR><BR> 
+　　在一次攻击内，同种类的属性伤害是独立作用的。当被攻击方需要用到某个数值时（比如抗性），该时刻有几个同种类的属性伤害在持续时间内，就把这几个属性伤害的值加起来一起发生作用。例如，一次攻击中包含一个“30%的百分比降低全部抗性、持续3秒”的伤害和一个“20%的百分比降低全部抗性、持续5秒”的伤害，而被攻击方的原抗性是40%，那么，当被攻击方在攻击结束后2秒的时候，其抗性是：40% * (1 - (30% + 20%)) = 40% * (1 - 50%) = 20%，而在攻击结束后4秒的时候，就变成：40% * (1 - 20%) = 32%。<BR><BR> 
+　　对于两次攻击，假若都包含相同种类的属性伤害的话，则也需要选择其中之一来实施。选择的方法与持续杀伤类伤害完全相同，只不过是用各次攻击中属性伤害的主伤害数值的总和来进行比较而已。<BR><BR> 
+　　3、　　状态伤害与技能打断<BR><BR> 
+　　虽然根据伤害独立性原理，各伤害都是完全独立地起作用的，不过，如果同时在两个相同状态伤害的持续时间内，即使两个伤害同时生效，跟只有一个伤害生效也不会有任何区别，例如，同时有两个眩晕伤害存在，也不会导致对方晕倒在地。因此，在一次攻击内，同种类的状态伤害，仅仅选择其中最大的一个（即持续时间最长）来实施即可。<BR><BR> 
+　　同样，对于两次攻击中的同种类的状态伤害，也完全可以认为是独立生效的，只有所有状态伤害的持续时间均已结束，被攻击方才有可能从该状态中恢复出来。<BR><BR> 
+　　一个比较特殊的伤害种类是“昏睡”，这个伤害在持续时间内，可以被攻击所终止。因此，对于这种伤害，不存在两次攻击如何“叠加”的问题（除非在削弱敌方技能中附带昏睡伤害）。 <!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="第二章%20攻击过程09.htm">上一页</a> <a href="第二章%20攻击过程.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> </td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

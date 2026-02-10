@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="gbk">
+  <script>
+    function reset_main_frameset_height() {
+      frmset = document.getElementById("main_frameset")
+      if (window.innerWidth < 1130) {
+        frmset.rows = "72px,*"
+      } else {
+        frmset.rows = "48px,*"
+      }
+    }
+    window.onload = function() {
+      reset_main_frameset_height()
+    }
+    window.onresize = function () {
+      reset_main_frameset_height()
+    }
+  </script>
+</head>
+<frameset id="main_frameset" border=1px rows="48px,*">
+  <frame src="./toc.html">
+  <frame name="showframe" src="./Equipments/ItemRelic.html">
+</frameset>
+
+</html>

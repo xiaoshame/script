@@ -1,0 +1,219 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>TQ解析心得之四：游戏数据库</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="TQ解析心得002.htm">上一页</a> <a href="TQ解析心得.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="TQ解析心得004.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">TQ解析心得之四：游戏数据库</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->
+　　首先声明一下，我并没有把游戏数据库里的所有内容全部弄清楚，因此，这篇心得里，凡是我已经弄明白的部分，我会大体介绍一下，至于我还没涉足过的部分，在这里就不提了。<BR><BR> 
+　　要想深入研究游戏数据库的内容，建议先做一点准备工作：<BR><BR> 
+　　1、使用TQVault把整套数据库（包括TQ和IT的）解压缩。注意，这需要500M以上的硬盘空间。由于IT在查找数据库记录文件时，先在IT的database.arz里找，找不到的话再去TQ的database.arz里找，因此假若把解开后的IT数据库全部复制到解开的TQ数据库的同一目录下，覆盖所有重复的文件，就可以得到一套完整的、用于IT的数据库记录文件。一般我只关心IT，因此在我的机器上是这么做的。假若你想同时兼顾TQ和IT的话，建议你在把IT的数据文件复制到TQ的数据文件目录里之前，先复制一套TQ的数据记录文件。这样的话，你大约需要1G的硬盘空间。<BR><BR> 
+　　2、用ArtManager新建一个MOD并退出，然后把整套解开的数据库记录放在该MOD源文件目录的database目录下。再进入ArtManager，并选择该MOD之后（由于数据库记录较多，可能需要数秒到数分钟的调入时间。建议使用高速硬盘），换到Database页面，就可以利用内嵌编辑器浏览各个数据库记录文件了。<BR><BR> 
+　　3、由于在使用ArtManager浏览的时候，有时会不小心把原始记录改掉（反正我做过好几次这种蠢事）。为了保证不发生这种错误，建议把该MOD的整个database目录的访问权限改成所有人都只能“读取和运行”（当然，如果你的分区是FAT32，就当我没说）。<BR><BR> 
+　　游戏数据库中的所有记录文件都放在records目录下，共分为数十个子目录。下面是各子目录的大体内容（可能不是很准确）：<BR><BR> 
+　　controllers、xpack\ai controllers：用来描述各角色（怪物、玩家、宠物、NPC等）的行为方式（例如活动范围、激怒几率、逃跑倾向等）。其中xpack\ai controllers\autocast_items中描述了IT中各种自动触发装备（例如神器）的触发方式与几率等。<BR><BR> 
+　　controls：用来描述出生点。<BR><BR> 
+　　creature、xpack\creatures：用来描述各种角色（怪物、玩家、宠物、NPC等）。<BR><BR> 
+　　dialog、xpack\dialog：用来描述各种对话窗口。<BR><BR> 
+　　effects、xpack\effects：用来描述各种效果（例如火、冰等）。<BR><BR> 
+　　game、xpack\game：游戏的一些基本设定。其中大部分是关于装备的需求公式（力量、敏捷、智力、等级等）。其中game中的各子目录内的内容完全无用。<BR><BR> 
+　　ingameui、ui、ui load tables、xpack\ui：用来描述游戏中的各用户界面，包括字体、各种窗口（例如人物属性窗口）等。<BR><BR> 
+　　item、xpack\item：用来描述包括装备在内的各种物品，包括掉率表、词缀生成表等。<BR><BR> 
+　　lights：用来描述各种光源（决定游戏中的光照效果）。<BR><BR> 
+　　menu、xpack\menu：用来描述游戏主菜单。<BR><BR> 
+　　partical：用来描述一些“粒子运动”类的效果（如烟雾等）。<BR><BR> 
+　　particals：似乎无用。怀疑是目录名弄错了。<BR><BR> 
+　　poi、xpack\poi：用来描述（洞穴之类的）各种出入口。<BR><BR> 
+　　proxies boss：BOSS生成器（代理）。为了使游戏有一定变化，往往并不是在地图上直接放置某个怪物、BOSS或箱子等，而是放置一个相应的生成器。该生成器决定了分别以多大的几率生成哪些类型、级别、等级的怪物或箱子。这样，每次玩家在进入同一个区域的时候，会碰到哪些怪物、是否存在精英、怪物的等级是多少等，都要看运气了。BOSS生成器就是用来产生BOSS的。<BR><BR> 
+　　proxies egypy、proxies greek、proxies orient、xpack\proxieshades：分别是埃及、希腊、东方、冥殿的怪物生成器。<BR><BR> 
+　　proxies quest：任务怪生成器。<BR><BR> 
+　　quest、xpack\quest：描述各种与任务相关的东西，例如任务的位置、奖励等。配合QuestEditor使用。xpack\quest中还包含了冥殿的BOSS和任务怪生成器、任务的触发区域、任务NPC和任务物品等。<BR><BR> 
+　　sandbox、xpack\sandbox：完全无用（开发人员用来做测试的一些数据）。<BR><BR> 
+　　scenerybabylon、sceneryegypt、scenerygreece、sceneryolyupus、sceneryorient、xpack\sceneryhades、xpack\scenerymedit：分别用来描述巴比伦、埃及、希腊、奥林匹斯山、东方、冥殿及（medit？？？）几个场景中的各种物体，例如树、草、石头、城墙、篱笆。。。<BR><BR> 
+　　skills、xpack\skills：用来描述各种技能，包括玩家的和怪物的。<BR><BR> 
+　　sl：不清楚，怀疑无用。<BR><BR> 
+　　sounds、xpack\sounds：用来描述各种声音。<BR><BR> 
+　　terraintype、xpack\terraintextures：用来描述各种地貌，例如沙漠、草地、沼泽、海滩。。。<BR><BR> 
+　　triggers：用来描述任务的触发区域。<BR><BR> 
+　　underground、xpack\sceneryunderground：用来描述各种洞穴中的物体。<BR><BR> 
+　　watertype：用来描述水面波纹之类。<BR><BR> 
+　　上述内容中，比较重要的部分（其实是我比较熟悉的部分）是：<BR><BR> 
+　　creature、xpack\creatures：描述角色<BR><BR> 
+　　item、xpack\item：描述物品<BR><BR> 
+　　skills、xpack\skills：描述技能<BR><BR> 
+　　game、xpack\game：游戏设定<BR><BR> 
+　　creature、xpack\creatures目录：<BR><BR> 
+　　包含以下几个子目录：<BR><BR> 
+　　ambient、xpack\creatures：猫狗牛羊鱼虾之类纯装饰用的动物。<BR><BR> 
+　　device：各种机关。只有creature下有该目录，xpack\creatures下没有。资料片的机关放在xpack\item\traps。<BR><BR> 
+　　monster：各种怪物。使用各子目录分类存放。<BR><BR> 
+　　npc：各种NPC。其下除了各场景的目录外，有几个子目录为特定类型的人物：merchant(s)——商人，spellreallocators、mystics——技能洗点，caravan——商队（箱子），enchanter——神器合成。<BR><BR> 
+　　pc：玩家人物。原版使用creature\pc下的malepc01.dbr和femalepc01.dbr（分别为男性和女性），资料片使用xpack\creatures\pc下的这两个文件。另外，creature\pc下有一个文件playerlevels.dbr，用于指定升级所需经验点数的计算公式。<BR><BR> 
+　　item、xpack\item：<BR><BR> 
+　　两者目录结构略有不同：<BR><BR> 
+　　item\animalrelics、xpack\item\charms：符咒。<BR><BR> 
+　　item\containers、xpack\containers：各种箱子，包括箱子的生成器（代理）、掉率表等。其中内部名为sarcophagi的子目录为棺材（可能出现机关的那种）。<BR><BR> 
+　　item\equip*、xpack\item\equipment*：分类存放各种装备。子目录default、old、teams下的文件统统没用。文件名中以“c##_”（#为数字）开头的为普通装备，“m_”开头为特殊装备，“mi_”开头为特绿装备，“u_”开头为唯一武器或战士护甲，“um_”开头为唯一法师护甲，“us_”开头为唯一套装武器或战士护甲，“usm_”开头为唯一套装法师护甲。<BR><BR> 
+　　item\lootmagicalaffixes、xpack\item\lootmagicalaffixes：各种前缀和后缀的属性、各前缀和后缀的出现几率表、符咒、遗物和神器的合成奖励属性以及几率表等。<BR><BR> 
+　　item\loottables、xpack\loottables：各种装备的分类掉率表。<BR><BR> 
+　　item\merchants、xpack\item\merchants：各商人所出售的装备种类、数量、几率表。<BR><BR> 
+　　item\miscellaneous：各种杂物（药水、染色剂、火把、金币生成器等）。<BR><BR> 
+　　item\questitems：任务物品及掉率表。资料片的任务物品在xpack\quests\objects\items，掉率表在xpack\loottables。<BR><BR> 
+　　xpack\item\questitems：任务物体（任务相关，但不能拣起来的东西，例如大蘑菇）。<BR><BR> 
+　　item\relics、xpack\item\relics：遗物。<BR><BR> 
+　　item\sets、xpack\item\sets：套装描述（由哪些装备组成以及套装奖励）。<BR><BR> 
+　　item\shrines、xpack\item\shrines：各种祭坛，以及祭坛生成器。祭坛的作用是：使触摸者短时间内拥有一个技能光环。<BR><BR> 
+　　item\teleporters：传送器？<BR><BR> 
+　　xpack\item\artifacts：各种神器。其中包含一个子目录arcaneformulae，用于存放各种神器配方的记录。<BR><BR> 
+　　xpack\item\gravestones：玩家死亡后的墓碑。<BR><BR> 
+　　xpack\item\geysers：不清楚。<BR><BR> 
+　　xpack\item\parchments：羊皮纸。<BR><BR> 
+　　xpack\item\petbonus：无用。<BR><BR> 
+　　xpack\item\scrolls：卷轴<BR><BR> 
+　　xpack\item\traps：资料片中的机关。<BR><BR> 
+　　skills、xpack\skills：<BR><BR> 
+　　用来存放几乎所有的技能描述。由于所有的宠物都是由技能召唤的，因此几乎所有的宠物的描述也都在这里。<BR><BR> 
+　　对于玩家的技能，每个专精各有一个目录：<BR><BR> 
+　　defensive：防御<BR><BR> 
+　　earth：大地<BR><BR> 
+　　hunting：狩猎<BR><BR> 
+　　medicine：药物（游戏中未出现，似乎是做了以后又被放弃了，但没有从数据库内删除）。<BR><BR> 
+　　nature：自然<BR><BR> 
+　　spirit：死灵<BR><BR> 
+　　stealth：盗贼<BR><BR> 
+　　storm：风暴<BR><BR> 
+　　warfare：战斗<BR><BR> 
+　　dream：梦幻<BR><BR> 
+　　其它目录主要有：<BR><BR> 
+　　boss skills、bossskills：BOSS技能<BR><BR> 
+　　item skills、equipment skills：装备所带的技能。<BR><BR> 
+　　monster skills、monsterskills：怪物技能。<BR><BR> 
+　　shine、shine skills：祭坛技能。注意不同场景下同名称的祭坛的技能属性是不同的。<BR><BR> 
+　　misc：内有一个用于修正不同难度下宠物伤害的被动技能（pet_difficultydamagescaling.dbr）。大多数宠物均有该技能（否则高难度下宠物的攻击力就太弱了）。另一个文件playattackanimation.dbr无用。<BR><BR> 
+　　xpack\skills\artifactskills：神器技能。<BR><BR> 
+　　xpack\skills\scroll skills：卷轴技能。<BR><BR> 
+　　xpack\skills\quest skills：除questskilltree.dbr外，其它文件无用。该目录本来应该是存放资料片冥殿场景中的任务奖励技能（注意，某些任务奖励——例如+5%所有伤害——实际上是赋予玩家一个被动技能）。但后来任务奖励技能改成放在records\xpack\quests\rewards下面，并且任务奖励的内容也被大幅修改。从该目录下的questskilltree.dbr中的内容可以看出，此次改动得乱七八糟（估计是改得十分匆忙）。冥殿两大任务奖励BUG也都源于此。其它三个场景的任务奖励属性都在record\quests\rewards下面（例如抗性奖励）。<BR><BR> 
+　　game、xpack\game：<BR><BR> 
+　　游戏的一些主要设定。大部分都在game目录下，xpack\game目录下只有一个gameengine.dbr，用于资料片中（原版使用game目录下的gameengine.dbr）。<BR><BR> 
+　　该目录中最主要的设定文件就是gameengine.dbr。该文件的主要设定内容以后再讲。<BR><BR> 
+　　目录中以“itemcost”开头的文件都是一些缺省的装备需求和价格计算的公式。虽然有些装备的需求是直接写在装备文件里的，但大部分装备的需求是通过这些公式计算出来的。<BR><BR> 
+　　目录中有三个以“gamebalanceattributes.dbr”结尾的难度修正文件，分别是monstergamebalanceattributes.dbr、petgamebalanceattributes.dbr、playergamebalanceattributes.dbr，分别针对怪物、宠物和玩家。虽然这三个并不是技能，但其发挥作用的方式等同于一种被动技能，例如，普通、史诗、传奇难度下，宠物相当于分别拥有不同等级的petgamebalanceattributes技能（多玩家连网时也不一样）。实际上，对于大多数普通怪物和一些宠物而言，三个不同难度下的属性（例如生命值等）都是完全一样的，并没有做三套不同的数据（当然想做的话是可以做的），之所以有难度上的差别，仅仅是靠这几个gamebalanceattributes来调整，因此，这个文件中调整的内容是相当多的。具体各难度的调整情况，见泰坦立方中各“难度强化”目录下的内容。<BR><BR> 
+　　另外几个文件中，combatequations.dbr是一些与战斗相关的计算公式，包括力量、敏捷、智力对各种伤害的加成、战斗能力、防御能力及暴击的计算、护甲吸收公式、盾牌格挡公式等。其中盾牌格挡的计算BUG（伤害主值超过格挡值后无损通过）就是这里的公式写错了。healthmanaregen.dbr是生命、法力恢复速度相关的公式和设置。bonussharing.dbr和gamerules.dbr似乎是多人游戏中各人如何分配经验值和金钱之类的东西，不过具体怎么使用的我没测试过。其它一些文件就不太清楚了，有些可能是没用的。<!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="TQ解析心得002.htm">上一页</a> <a href="TQ解析心得.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="TQ解析心得004.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

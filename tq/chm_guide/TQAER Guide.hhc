@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="前言">
+		<param name="Local" value="preface.htm">
+		<param name="ImageNumber" value="21">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="任务图电子书 v1.54">
+		<param name="Local" value="map_index.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第一章 科林斯">
+			<param name="Local" value="map_01.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第二章 海涅堡">
+			<param name="Local" value="map_02.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第三章 格劳堡">
+			<param name="Local" value="map_03.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第四章 斯坎迪亚">
+			<param name="Local" value="map_04.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第五章 黑暗大地">
+			<param name="Local" value="map_05.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第六章 阿斯加德">
+			<param name="Local" value="map_06.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第七章 巨人国">
+			<param name="Local" value="map_06.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第八章 火焰国">
+			<param name="Local" value="map_08.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="主次要任务攻略 v1.54">
+		<param name="Local" value="text_index.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第一章 科林斯">
+			<param name="Local" value="text_01.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第二章 海涅堡">
+			<param name="Local" value="text_02.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第三章 格劳堡">
+			<param name="Local" value="text_03.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第四章 斯坎迪亚">
+			<param name="Local" value="text_04.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第五章 黑暗大地">
+			<param name="Local" value="text_05.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第六章 阿斯加德">
+			<param name="Local" value="text_06.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第七章 巨人国">
+			<param name="Local" value="text_07.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="第八章 火焰国">
+			<param name="Local" value="text_08.htm">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

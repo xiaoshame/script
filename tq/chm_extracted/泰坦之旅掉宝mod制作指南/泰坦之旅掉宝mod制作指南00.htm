@@ -1,0 +1,225 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>泰坦之旅掉宝mod制作指南</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9">  </td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">泰坦之旅掉宝mod制作指南</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->&nbsp;&nbsp;&nbsp; 
+首先说说思路吧，本文介绍的终极掉宝mod是指定某些怪物以极大几率装备自己想要得极品装备，从而提高刷装备效率，就是打一个小怪就能收集齐全极品装备。范例中的指定哈迪斯宫殿里的亡魂之女 
+- 枪兵100%几率装备浩劫之凶恶的索里奥长枪，凿石工护腕，追踪者兜帽和一面紫盾。 <br>
+<br>
+　　然后介绍一下mod的制作工具，在游戏目录下有一些模型制作工具，这就是用来制作Titan Quest游戏工具，他们的功能十分强大！Art 
+Manager是模组管理中心，Editor是游戏世界编辑器，Quest Editor是任务编辑器，本文主要用到Art Manager。 <br>
+<br>
+　　以下是我的mod制作指南。其实用Quest Editor更简单一些，不过我比较喜欢用Art Manager进行编辑。（因为Art 
+Manager有用途比较广泛）　<br>
+<br>
+　　作者：Shadow_Witch=　　<br>
+<br>
+　　一：设定目录 <br>
+<br>
+　　第一次运行Art Manager，会出现一个画面要我们设定目录，你可以用预设值就好。Working 
+directory就是工作目录，随便设都可以，Building directory是档案所在目录一定不能改，Tools 
+directory是工具所在目录一般不要改。 <br>
+<br>
+　　接下来OK。 <br>
+<br>
+　　二：工具简介 <br>
+<br>
+　　进入Art Manager后，会看到Art Manager有三个工作区域组成，左上的显示文件路径，右上的是文件，下面的是操作信息。 <br>
+<br>
+　　最上面的工具栏里有File,Edit,Mod,Build,Database,Archive,Tools,View,Help。其中Mod,Build,Database比较常用。 
+<br>
+<br>
+　　下面的工作区域里有三个选项，Sources,Assets,Database。Sources,Assets都和地图文件有关，制作mod主要用到database。　<br>
+<br>
+　　三：详细制作方法（范例）： <br>
+<br>
+　　第一步：最上面的工具栏里选择Help，下拉菜单里选Install Tutorials...安装范例。 <br>
+<br>
+　　第二步：最上面的工具栏里选择Mod，下拉菜单里选Select，Tutoria01。下面的工作区域选Database选项。这是左上的工作区域里会显示Tutoria01\database。 
+<br>
+<br>
+　　第三步：最上面的工具栏里选择Database，下拉菜单里选Import Record...，这是会弹出一个Select 
+Files窗口，选择你要导入的数据文件，这个窗口以后要经常用到。 <br>
+<br>
+　　这里我先导入亡魂之女 - 
+枪兵的数据。选择records\xpack\creatures\monster\melinoe\am_spearrunner_38.dbr，点击OK，然后同样方法导入records\xpack\creatures\monster\melinoe\am_spearrunner_40.dbr，因为游戏中有两种亡魂之女 
+- 
+枪兵。这时左上的工作区域就有文件了，展开文件至最后一级melinoe目录下，右上的工作区域里就出现了两个文件，am_spearrunner_38.dbr，am_spearrunner_40.dbr。 
+<br>
+<br>
+　　第四步：双击am_spearrunner_38.dbr，进入Editing 
+Record菜单。这个菜单有左右两个工作区域，左面是目录，右面的是文件的数据。其中比较重要的是Character Bio,Skill 
+Tree，Character Bio包含了怪物的抗性，生命，法力等重要属性，有兴趣的话可以改一改试试。Skill Tree是怪物的技能树。 <br>
+<br>
+　　目录中最重要的是最下面的Initial Equipment，就是怪物的装备情况。展开Initial 
+Equipment，下面会出现Head（头）,Torso（躯干）,Lower Body（腿）,Forearm（臂）,Finger 1,Finger 
+2,Right Hand,Left Hand,Misc选项。点击Right 
+Hand，右面会显示怪物该部位装备几率，ChanceToEquipRightHand就是装备武器几率，后面的值是100%，说明怪物100%几率装备武器，chanceToEquipRightHandItem1,3,5后面的值就是装备Item1,3,5的相对几率，Item1一般为普通装备，Item3一般为特绿装，Item5一般为蓝紫装，原始的值是5000，20，4，也就是说怪物装备普通装备，特绿装，蓝紫装得相对几率是5000：20：4。如果仅是提高掉宝率的话可以提高是chanceToEquipRightHandItem3,5后面的权重。　<br>
+<br>
+　　第五步（指定紫装的掉落）：现在开始就开始修改装备几率了，如果指定怪物必掉指定紫装比如追踪者兜帽的话，可以点击左面目录里的Head，双击ChanceToEquipHead后面的值，0改为100，下面chanceToEquipHeadItem1后的值改为5000，双击lootHeadItem1，新窗口中选new,添加装备，双击下面的value，粘贴追踪者兜帽的数据库文件records\item\equipmenthelm\us_l_tracker'sarmor.dbr。 
+<br>
+<br>
+　　这样这种怪物就会100%几率装备追踪者兜帽了。 <br>
+<br>
+　　其他装备类似，一般方法是将该部位的装备几率改成100,只留chanceToEquipItem1有value,其他装备的value一律为0，然后lootItem1中只添加所需数据的数据库文件。 
+<br>
+<br>
+　　第六步（随机紫装掉落）：为使怪物随机掉落紫装，必须借助LootTable文件，怪物lootItem5中的数据就是LootTable文件，这是可以将chanceToEquipItem1,3的value改成0，就可以随机掉紫装了，不过有时怪物lootItem5为空。所以还是要清楚LootTable的使用。 
+<br>
+<br>
+　　所有紫装生成器都在Records\XPack\Item\LootTables下，Import 
+Record...时，会看到这个目录下会有各部位的的名字，比如torso,head,这些文件夹下一级会有commondynamic,monster，unique等文件夹，unique下就是对应部位的紫装生成器，带n的使普通难度的，带e的是史诗的，l的是传说的。 
+<br>
+<br>
+　　比如为使亡魂之女 - 
+枪兵随机掉紫盾，采用如下方法：chanceToEquipLightHand的值改为100，chanceToEquipLightHandItem5的值改为5000，双击lootLightHandItem5，new，双击1的value，添加Records\XPack\Item\LootTables\Shields\Unique\Shield_L01.dbr。之后怪物就会随机掉落紫装了。 
+<br>
+<br>
+　　第七步（随机词缀的特绿装掉落）：由于特绿装备带有词缀，用第五步的方法是怪物装备特绿装备是行不通的，因为这样做不会生成词缀。为使怪物掉落带有词缀的特绿装，需要对LootTable进行修改。 
+<br>
+<br>
+　　例如为使亡魂之女 - 
+枪兵装备凿石工护腕，采用如下方法：双击打开am_spearrunner_38.dbr，察看它Forearm装备情况，将ChanceToEquipForearm的值改为100，ChanceToEquipForearmItem1的值保留，其他的ChanceToEquipForearmItem清零。察看它的lootForearmItem1，有三个值，其中第三个是传说难度的item，复制这个值Records\XPack\Item\LootTables\Arms\CommonDynamic\Armband_L01b.dbr。退出Editing 
+Record菜单Import 
+Record...导入这个文件。在左上的工作区展开Records\XPack\Item\LootTables\Arms\CommonDynamic，得到Armband_L01b.dbr。双击Armband_L01b.dbr打开。选择左面的config，右面的bothPrefixSuffix的值改为100，下面的noPrefixSuffix等值都改成0，Prefix是前缀的意思，Suffix是后缀的意思，这个修改目的是使装备100%几率生成双词缀。改完后选左面的loot，右面的值就是随机生成的装备，已总共有五个，删掉其中四个，剩一个讲其改为records\item\equipmentarmband\mi_l_gorgonarcher.dbr，即凿石工护腕的数据库文件，这样生成的凿石工护腕就一定有前后缀了。　<br>
+<br>
+　　第八步（指定词缀的特绿装掉落）：由于词缀文件存放在原版游戏database中，为使掉落的特绿装所带的词缀固定下来，需要对原版游戏的database进行修改。 
+<br>
+<br>
+　　比如为使亡魂之女 - 
+枪兵100%几率装备浩劫之凶恶的索里奥长枪，采用如下方法：双击records\xpack\creatures\monster\melinoe\am_spearrunner_38.dbr，同前方法使亡魂之女 
+- 
+枪兵100%几率装备武器，ChanceToEquipRightHanditem1的值保留，其他的ChanceToEquipRightHanditem清零。察看它的lootRightHandItem1，有三个值，其中第三个是传说难度的item，复制这个值Records\XPack\Item\LootTables\Weapons\CommonDynamic\Spear_L01b.dbr，菜单Import 
+Record...导入这个文件。在左上的工作区展开Records\XPack\Item\LootTables\Weapons\CommonDynamic，得到Spear_L01b.dbr，双击Spear_L01b.dbr打开。选择左面的config，右面的bothPrefixSuffix的值改为100，下面的noPrefixSuffix等值都改成0，改完后选左面的loot，右面的值改为records\xpack\item\equipmentweapons\spear\mi_l_melinoe.dbr（索里奥的长枪的数据库文件），选择左面的Randomizer 
+Prefix,右面的工作区有这么几个值：prefixRandomizerChance,他的值是100，不用改。下面prefixRandomizerWeight1的值改成0，prefixRandomizerWeight2的值改成100，复制prefixRandomizerName2的值Records\item\lootmagicalaffixes\prefix\tablesweapons\SpearB_L03.dbr。 
+<br>
+<br>
+　　这两个文件是词缀生成器，为矛类武器生成词缀用的，它是原始游戏database的文件，为了导入它，需要以退为进。左面的Randomizer 
+Suffix下可以察看后缀的生成器，suffixRandomizerWeight1的值改成0，suffixRandomizerWeight2的值改成100，记下prefixRandomizerName2的值Records\item\lootmagicalaffixes\suffix\tablesweapon\SpearB_L03.dbr。然后退出Art 
+Manager，将原版游戏的database文件(27,176,960 
+字节)覆盖到资料片的database文件夹下（注意备份资料片的database)，然后再进入Art Manager，就可以导入原版游戏中的数据了。 <br>
+<br>
+　　展开Records\item\lootmagicalaffixes\prefix\tablesweapons，双击SpearB_L03.dbr，选择Randomizer，右面就是词缀及其相对几率了，RandomizerName是词缀的数据库文件，下面的RandomizerWeight就是权重，找到Records\Item\LootMagicalAffixes\Prefix\Default\Rare_OA%Dmg_07.dbr（凶恶的前缀），将其下面的Weight改成5000，这样的话索里奥的长枪就回以比较大的几率生成凶恶的前缀，为保险的话可以将其他Weight都改成0，以确保凶恶的前缀出现率为100%。同理，展开Records\item\lootmagicalaffixes\suffix\tablesweapon，双击SpearB_L03.dbr，浩劫之后缀为Records\Item\LootMagicalAffixes\Suffix\Default\Rare_%DamageStun_03.dbr，更改其权重即可。这样的话就可以生成浩劫之凶恶的索里奥长枪了。　<br>
+<br>
+　　第九步：如果你上面的步骤都只是am_spearrunner_38.dbr的话，再把am_spearrunner_40.dbr也改成和am_spearrunner_38.dbr一样的装备武器几率。哈迪斯宫殿有两种亡魂之女 
+- 枪兵，这两种亡魂之女 - 枪兵的装备武器几率都要修改。 <br>
+<br>
+　　全部修改完后，选择最上面的工具栏里的Build。然后退出Art Manager。在My Games\Titan Quest - Immortal 
+Throne\custommaps\tutorial01\database下找到Tutorial01.arz，用资料片的database.arc改名覆盖，替换这个文件。然后重新进入Art 
+Manager，Build，这时会弹出一个窗口，询问是否删除Tutorial01.arz中多余的文件，选择no to 
+all。Build完后Tutorial01.arz改名为database.arc，这就是我们要制作的mod。 <br>
+<br>
+　　第十步：database.arc覆盖到资料片的database文件夹下。进入游戏去哈迪斯宫殿找亡魂之女 - 枪兵要装备吧</font></DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9">  </td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

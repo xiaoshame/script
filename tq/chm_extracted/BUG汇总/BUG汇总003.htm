@@ -1,0 +1,174 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>技能</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="BUG汇总002.htm">上一页</a> <a href="BUG汇总.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="BUG汇总004.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">技能</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<TABLE width=100% border=1 id="table8" bordercolor="#000000">
+  <TBODY>
+  <TR>
+    <TD width=120></TD>
+  <TR>
+    <TH>Bug Code</TH>
+    <TH>说&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 明</TH></TR>
+  <TR>
+    <TD>BUG_SKL_001(F)</TD>
+    <TD>由于技能类别及使用方式错误，导致战斗专精的“胜利之光”（Triumph）技能完全无效。现修正。</TD></TR>
+  <TR>
+    <TD>BUG_SKL_002(A)</TD>
+    <TD>死灵专精的“时间创伤”（Ravages of Time）技能中的属性“-XX% 伤害”（-XX% Damage）和“-XX% 
+      穿刺伤害”（-XX% Pierce Damage）无效。这是由于该技能的前提技能“死亡寒意”（Deathchill 
+      Aura）属于攻击型削弱技能（游戏中原有的所有削弱类技能皆为攻击型削弱技能），所有攻击类属性均被视做“向对方发动的攻击”，因此该属性被理解为“在对对方发动的每秒一次的攻击中，物理伤害和穿刺伤害分别降低XX%”，而不是降低对方发动的攻击中的物理伤害和穿刺伤害。该BUG是由于游戏设计中的概念本身自相矛盾所导致，因此不可能修正。一个替代方案是将“死亡寒意”修改为被动型削弱技能，此时攻击类属性将被视做对对方的削弱，因此“时间创伤”的所有属性将均生效，但“死亡寒意”中的属性“XX% 
+      减少敌人生命值”（XX% Reduction to Enemy's 
+      Health）将无效。另一种替代方案是将“时间创伤”变成一种独立的被动型削弱技能，从而不再与“死亡寒意”的属性冲突，但“时间创伤”将需要单独手动施放
+	（施放时和施放后无特效、无光环），其作用范围仅依赖于该技能自身等级，与“死亡寒意”的等级无关
+	，并且“骨疽”（Necrosis）技能将由“时间创伤”启动，而不是像原来那样由“死亡寒意”启动（即：成为“时间创伤”的进阶，而不是“死亡寒意”的进阶
+	，因此“骨疽”的作用半径同样由“时间创伤”的等级决定）；另外还有一个副作用就是：所有怪物所拥有的“时间创伤”和“骨疽”技能都因为不能施展而导致无效。此处
+	给出了第二种替代方案。</TD></TR>
+  <TR>
+    <TD>BUG_SKL_003(A)</TD>
+    <TD>对于所有召唤进阶技能（由玩家升级，但由宠物使用的技能），当利用装备或祭坛使技能等级超过最大等级（玩家在该技能上所能投入的最大技能点数）时，技能页面能显示正确的技能属性，但实际上宠物却仅使用最大等级的属性。该BUG属于代码错误，是由于程序员误把最大等级当作了极限等级（利用装备和祭坛，该技能所能达到的最高等级）来使用造成的。目前尚无法修正。一个替代方案是将所有这些技能的最大等级都改成与其极限等级（最大等级+4）相等，但这会造成在不使用装备和祭坛的情况下就能获得极限等级的技能属性。<br>
+	该BUG所涉及到的技能有：<BR>&nbsp;&nbsp;&nbsp; 大地专精中的“地火燃烧”（Inner 
+      Fire）、野火（Wildfire）和“变形术”（Metamorphosis）；<BR>&nbsp;&nbsp;&nbsp; 盗贼专精中的“陷阱强化”（Improved Firing 
+      Mechanism）；<BR>&nbsp;&nbsp;&nbsp; 风暴专精中的“风暴之眼”（Eye of the Storm）；<BR>&nbsp;&nbsp;&nbsp; 梦幻之境中的“催眠凝视”（Hypnotic 
+      Gaze）和“控制心神”（Master Mind）；<BR>&nbsp;&nbsp;&nbsp; 狩猎专精中的“引爆”（Detonate）；<BR>&nbsp;&nbsp;&nbsp; 死灵专精中的“死亡新星”（Death 
+      Nova）、“鬼魂壳甲”（Wraith Shell）和“神秘气流”（Arcane 
+      Blast）；<BR>&nbsp;&nbsp;&nbsp; 战斗专精中的“胜利之光”（Triumph）；<BR>&nbsp;&nbsp;&nbsp; 自然专精中的“刺痛的荨麻”（Stinging 
+      Nettle）、“抓破”（Maul）、“生存本能”（Survival Instinct）、“团队之力”（Strength of the 
+      Pack）、“繁茂之盾”（Overgrowth）和“自然之怒“（Nature's Wrath）。</TD></TR>
+  <TR>
+    <TD>BUG_SKL_004</TD>
+    <TD>自然专精的“疲劳”（Fatigue）技能中的属性：“-XX 
+      伤害”（-XX Damage）无效。这是由于该技能的前提技能“瘟疫”（Plague）属于攻击型削弱技能，因此该属性被理解为对对方每秒发动一次物理伤害数值为-XX的攻击，由于其数值为负，显然无效（不可能替对方加血）。该BUG是由于游戏设计中的概念本身自相矛盾所导致，因此不可能修正。即使将该技能修改为被动型虚弱技能，该属性也只能被理解为：每当对方使用武器发动攻击时，额外会附带数值为-XX的物理伤害。根据伤害独立性原理，该伤害将独立作用，与同次攻击中发动的其它伤害无关，不可能起到“削弱同次攻击中的物理伤害”的作用。同时又由于其值为负，因此依然无效。故该BUG也不可能存在替代方案。</TD></TR>
+  <TR>
+    <TD>BUG_SKL_005(F)</TD>
+    <TD>自然专精的“召唤仙女”（Sylvan Nymph）技能所召唤出的宠物在19级和20级时其最大穿刺伤害低于18级时的值。现修正。</TD></TR>
+  <TR>
+    <TD>BUG_SKL_006(F)</TD>
+    <TD>自然专精的“自然之怒”（Nature's 
+      Wrath）技能16级的数据部分缺失（主要是最大元素伤害），现修正（根据之前各级别的递增规律，最大元素伤害被设置为235）。</TD></TR>
+  <TR>
+    <TD>BUG_SKL_007(F)</TD>
+    <TD>由于数据错误，导致死灵专精的“神秘学识”（Arcane Lore）技能属性中，“+XX% 加快投射速度”（+XX% Increase in 
+      Projectile Speed）无效。现修正。</TD></TR>
+  <TR>
+    <TD>BUG_SKL_008(F)</TD>
+    <TD>盗贼专精的“陷阱大师”（Rapid 
+      Construction）技能的最大/极限等级被误写为8/12，导致11、12级与10级完全相同。现修正为6/10（数据库中根本没有11、12级的数据，而且从数值上看，原始设计也应当是极限为10级）。</TD></TR>
+  <TR>
+    <TD>BUG_SKL_009(F)</TD>
+    <TD>风暴专精的“伤害反弹”（Reflection）技能的最大/极限等级被误写为8/12，导致11、12级与10级完全相同。现修正为6/10（数据库中根本没有11、12级的数据，而且从数值上看，原始设计也应当是极限为10级）。</TD></TR>
+</TBODY></TABLE>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="BUG汇总002.htm">上一页</a> <a href="BUG汇总.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="BUG汇总004.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>范例9：建立触发器</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南009.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="泰坦之旅游戏模组制作指南011.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">范例9：建立触发器</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　范例9：建立触发器 <BR><BR> 
+　　任务(Quest)被放在quest档案中。一个quest档案会包含许多触发器(trigger)，触发器用来控制任务的流程。每一个触发器会包含许多的状况(condition)和行动(action)，当触发器的所有状况被满足后，行动就会被执行。在此范例中，我们要设定一个触发器，内容是当主角进入某个区域后，他会得到10点经验值。 <BR><BR> 
+　　9.1触发器 <BR><BR> 
+　　9.1.1 任务档案 <BR><BR> 
+　　这个触发器会包含一部份之前已存在的任务。 <BR><BR> 
+　　1)打开Quest Editor。 <BR><BR> 
+　　2)到’File -&gt; Select Mod…’选择’Tutorial09’。 <BR><BR> 
+　　3)到’File-&gt;Open…’开启工作目录中的'CustomMaps -&gt; Tutorial09 -&gt; source -&gt; Quests -&gt; Tutorial-Experience_Trigger.qst'。 <BR><BR> 
+　　点按Files视窗(Pane)中的’Experience Trigger’，你会看到一个”Only One Setp”。 <BR><BR> 
+　　9.1.2 产生触发器 <BR><BR> 
+　　1)选择Script Data视窗中的’Only One Step’。 <BR><BR> 
+　　2)在工具列中按’Create New Trigger’按钮。 <BR><BR> 
+　　在’Only One Step’的底下就会出现一个新的触发器。 <BR><BR> 
+　　3)选择刚建立的触发器。 <BR><BR> 
+　　4)你可以看到在营幕下面方的属性视窗(Properties Pane)中，出现属性清单。 <BR><BR> 
+　　5)将新的触发器的Name改成”The Trigger”。 <BR><BR> 
+　　9.2状况 <BR><BR> 
+　　一个触发器会包含许多的状况(condition)和行动(action)，当触发器的所有状况被满足后，行动就会被执行。我们先来设置触发器的状况，当主角进入一个特定区域后，状况会被启动。 <BR><BR> 
+　　1)点按刚建立的’The trigger’下方的’Conditions’。 <BR><BR> 
+　　2)按’Create New Condition’按钮。 <BR><BR> 
+　　出现一个Add New Condition视窗，里面有各种状况可以选择。 <BR><BR> 
+　　3)选择’Enter Bounding Volume’。 <BR><BR> 
+　　4)按下’OK’按钮。 <BR><BR> 
+　　当主角进入一个边界体(bounding volume)时，状况会被启动(满足)，先来设置边界体。 <BR><BR> 
+　　5)在Scrip Data视窗中，选择’Enter Bounding Volume’。 <BR><BR> 
+　　在下方的属性视窗中，有一个BaseDatabaseRecord属性，这就是设置边界体的地方。 <BR><BR> 
+　　6)点按BaseDatabaseRecord属性的栏位。 <BR><BR> 
+　　你可以手动输入路径，也可以用旁边的’…’按钮来选择。只要先在右边的资产选择视窗(Asset Chooser Pane)中，选择你要的项目，再按这个’…’按钮，它就会自动将路径填入。 <BR><BR> 
+　　7)在资产选择视窗(Asset Chooser Pane)中，选择’Database -&gt; triggers -&gt; Tutorial-Sphere_OF_Experience.dbr’。 <BR><BR> 
+　　8)按下BaseDatabaseRecord属性的栏位旁的’…’按钮。 <BR><BR> 
+　　Tutorial-Sphere_OF_Experience的路径已经设好了。当主角进入这个边界体后，状况会被启动(满足)，接着我们要设置行动(action)。 <BR><BR> 
+　　9.3行动 <BR><BR> 
+　　9.3.1 产生行动 <BR><BR> 
+　　1) 选择触发器下方的’Actions’。 <BR><BR> 
+　　2)按下工具列的’Create New Action’按钮。 <BR><BR> 
+　　出现一个’Add New Action’视窗，它列出了所有可用的行动类型。 <BR><BR> 
+　　3)选择’Give Player N,N,N Experience’。 <BR><BR> 
+　　4)按’OK’。 <BR><BR> 
+　　现在这个触发器设定为：当主角进入这个区域后，可以得到经验值。现在来设定经验值的数目。 <BR><BR> 
+　　5)选择刚建立的’Give Player N,N,N Experience’。 <BR><BR> 
+　　在属性视窗中，你可以看到三个属性栏位：<BR><BR> 
+　　ExperienceEpic、<BR><BR> 
+　　ExperienceLegendary、 <BR><BR> 
+　　ExperienceNormal。它代表主角在各种不同游戏难度<BR><BR> 
+　　(Epic、Legendary、Normal)中，会得到的经验值数目。 <BR><BR> 
+　　6)你可以依个人喜好填入数字，我填100。 <BR><BR> 
+　　9.4储存并建置任务 <BR><BR> 
+　　9.4.1 储存并建置任务档案 <BR><BR> 
+　　现在我们已经产生了任务(quest)，现在我们要储存并建置它。 <BR><BR> 
+　　1)在选单中点按’File -&gt; Save’，储存完成后，接着要建置它。 <BR><BR> 
+　　2)打开Art Manager。 <BR><BR> 
+　　3)选择Mod’Tutorial09’。 <BR><BR> 
+　　4)点按建置(Build)。 <BR><BR> 
+　　5)打开Editor编辑器，选择Tutorial09里面maps资料夹中的.wrl档案。 <BR><BR> 
+　　6)在选单中，点按’Quests -&gt; Select Files…’，按下’Add’按钮并选择’ Tutorial-Experience_Trigger.qst’。 <BR><BR> 
+　　7)储存这个平面区域后，回到Art Manager中，再次执行建置(build)。 <BR><BR> 
+　　9.4.2 测试你的触发器 <BR><BR> 
+　　1)进入游戏中。 <BR><BR> 
+　　2)选择’ Tutorial09 ~ Tutorial-Sphere_of_Experience.map’地图。 <BR><BR> 
+　　3)让主角进入地图中间圆型的地方。如果状况满足了，则你会得到经验值点数。 <BR><BR> 
+　　(译：你要在地图中设立一个出生点(spawn point)，才能够进入游戏中。) <!--/HTMLBUILERPART0--></font></DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南009.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="泰坦之旅游戏模组制作指南011.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

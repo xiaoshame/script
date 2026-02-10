@@ -1,0 +1,153 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>范例8：区域之间的传送</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南008.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="泰坦之旅游戏模组制作指南010.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">范例8：区域之间的传送</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　范例8：区域之间的传送 <BR><BR> 
+　　网格区域与网格区域之间、网格区域与地面区域之间需要靠传送门(Portal)来连接，传送门就是区域与区域之间相连的门。还有另一种可以将主角瞬间移动到特定地点的方法就是透过传送触发器(teleport trigger)。 <BR><BR> 
+　　8.0.1设定 <BR><BR> 
+　　1)打开Editor编辑器。 <BR><BR> 
+　　2)选择mod’Tutorial08’。 <BR><BR> 
+　　3)在Editor Mode中打开’ Tutorial-Connecting_To_Dungeons_Terrain.lvl’。 <BR><BR> 
+　　你可以看到有一个地面(terrain)区域与一个网格(grid)区域。地面区域有一个山洞。 <BR><BR> 
+　　8.1传送门 <BR><BR> 
+　　8.1.1产生一个传送门 <BR><BR> 
+　　有多种不同物件类型的传送门，其中一个就是’records -&gt; underground -&gt; naturalcave -&gt; greecedngentrance_a01_ext.dbr'，它是位于悬崖壁旁的山洞型状的物件。另外我们还要在网格中产生另一个传送门，让两个传送门相互连接。 <BR><BR> 
+　　1)选择网格工具(grid tool)。 <BR><BR> 
+　　2)选择网格’Tutorial-Connecting_To_Dungeons_Grid.lvl’。 <BR><BR> 
+　　在网格中建立传送门的方法之一，就是使用内含传送门功能的物件。但是，我们也可以利用网格的特征(feature)来建立传送门。(如果你忘记什么是特征，请看范例6) <BR><BR> 
+　　3)你会发现有一块地板不见了。你必须将山洞入口的特征放在一个没有地板的地方。 <BR><BR> 
+　　4)在特征清单(feature list)中选择’ GreeceNatCave_EntranceG_Int01’。 　　 <BR><BR> 
+　　5)将它放在缺口的地方。你也许会发现它的方向是错的，你可以按方向键’左’或’右’来改变它的方向。 <BR><BR> 
+　　8.1.2连结两个传送门 <BR><BR> 
+　　1)选择传送门工具(portal tool)。 <BR><BR> 
+　　2)在连结传送门视窗(Link Portals Pane)中，先点按上方的’…’按钮。 <BR><BR> 
+　　3)接着点按地面区域中的悬崖旁的山泂入口(黄色的地方)。 你会发现在’…’按钮旁边的文字方块中出现了传送点号码。 <BR><BR> 
+　　4)按着点按下方的’…’按钮。 <BR><BR> 
+　　5)点按网格区域中的入口特征位置(黄色的地方)。 <BR><BR> 
+　　6)在连结传送门视窗(Link Portals Pane)中，点按’Link’按钮。 在每一个传送门上，会出现该传送门所在的地图名称。现在传送门被连结完成了。 <BR><BR> 
+　　7)重建所有路网与地图。 <BR><BR> 
+　　8)储存所有档案。 <BR><BR> 
+　　9)打开Art Manager。 <BR><BR> 
+　　10)找到’Tutorial08\assets’资料夹中的’ Tutorial-Connecting_To_Dungeon.map’点按右键选择Build。 <BR><BR> 
+　　现在你可以到游戏中试试看，传送门用来连结这两个区域。 <BR><BR> 
+　　8.2瞬间移动 <BR><BR> 
+　　还有一个可以让主角在各地图间移动的方法，叫作瞬间移动(teleport)，它是透过触发器(trigger)将主角移动到(N、N、N)位置，我会在之后的范例中介绍它的内容，现在先来看如何取得(N、N、N)坐标位置。 <BR><BR> 
+　　8.2.1 取得瞬间移动的坐标 <BR><BR> 
+　　1)在Editor编辑器中打开一个世界(world)。 <BR><BR> 
+　　2)在Editor Mode中打开一个平面区域(level)。 <BR><BR> 
+　　3)将你的摄影机移动到你想要查询的坐标位置。 <BR><BR> 
+　　4)在选单中，选择’Camara -&gt; Locate Coords’。 <BR><BR> 
+　　接着会弹出一个视窗秀出目前所在的X、Y、Z坐标位置。 <!--/HTMLBUILERPART0--></font></DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南008.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="泰坦之旅游戏模组制作指南010.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

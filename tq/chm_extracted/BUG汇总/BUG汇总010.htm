@@ -1,0 +1,174 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>游戏中的算法</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="BUG汇总009.htm">上一页</a> <a href="BUG汇总.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="BUG汇总011.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">游戏中的算法</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<TABLE width=100% border=1 id="table8" bordercolor="#000000">
+  <TBODY>
+  <TR>
+    <TD width=120></TD>
+  <TR>
+    <TH>Bug Code</TH>
+    <TH>说&nbsp;&nbsp;&nbsp; 明</TH></TR>
+  <TR>
+    <TD>BUG_ALG_001(F)</TD>
+    <TD>在伤害值大于盾牌的格挡值时，盾牌格挡的计算公式被错误地写成了：<br>
+&nbsp;&nbsp;&nbsp; 格挡后伤害 = 格挡前伤害 - (盾牌格挡值 * ((100 - 盾牌吸收率) 
+      / 100))。<br>
+	由于游戏中的所有盾牌的吸收率均为100%，该公式导致盾牌格挡发生时，如果伤害大于盾牌的格挡值，则该公式相当于：<br>
+&nbsp;&nbsp;&nbsp; 格挡后伤害 = 
+      格挡前伤害。<br>
+	这表示当伤害值大于盾牌的格挡值格档没有任何作用。现将公式修正为：<br>
+&nbsp;&nbsp;&nbsp; 格挡后伤害 = 格挡前伤害 - (盾牌格挡值 * (盾牌吸收率 / 
+      100))。<br>
+	当盾牌吸收率为100%时，修正后的公式相当于：<br>
+&nbsp;&nbsp;&nbsp; 格挡后伤害 = 格挡前伤害 - 盾牌格挡值。</TD></TR>
+  <TR>
+    <TD height="45">BUG_ALG_002</TD>
+    <TD height="45">元素伤害（Elemental Damage）由1/3的火焰伤害（Fire Damage）、1/3的冰冷伤害（Cold 
+      Damage）和1/3的闪电伤害（Lightning 
+      Damage）构成，但这些伤害与普通的火焰伤害、冰冷伤害和闪电伤害的区别在于——它们不能被智力（Intelligence）加成。这应当是由于程序员遗漏所造成的。</TD></TR>
+  <TR>
+    <TD>BUG_ALG_003</TD>
+    <TD>对于所有吸收盾类型的技能，当某次攻击中的某项伤害（或者每隔0.1秒实施一次的持续型伤害）数值大于吸收盾剩余的可吸收伤害数值时，该伤害仍然会被完全吸收，即：只要还有吸收盾存在，那么它一定能完全地吸收掉一项伤害，无论该伤害的数值比它能吸收的数值大多少。该BUG可用来证明持续型伤害在持续作用时间内依然是完全独立（不相互叠加）的。</TD></TR>
+  <TR>
+    <TD>BUG_ALG_004</TD>
+    <TD>当百分比损血抗性和燃烧法力造成伤害抗性为0时，这两种抗性不能被“XX 降低抗性 持续 Y.Y 秒”（XX Reduced 
+      Resistance for Y.Y Seconds）或“XX% 降低抗性 持续 Y.Y 秒”（XX% Reduced Resistance for 
+      Y.Y Seconds）所降低。因此，BOSS的这两种抗性可以被降低，但普通怪物却不行。</TD></TR>
+  <TR>
+    <TD>BUG_ALG_005</TD>
+    <TD>火焰伤害（Fire Damage）、冰冷伤害（Cold Damage）和闪电伤害（Lightning 
+      Damage）及其对应的持续版本：燃烧伤害（Burn Damage）、 冰冻伤害（Frostburn Damage）和电击伤害（Electrical 
+      Burn Damage）均可被智力（Intelligence）加成，活力伤害（Vitality 
+      Damage）也能被智力加成，但它所对应的持续版本：衰老（Vitality Decay）却不能被智力加成。</TD></TR>
+  <TR>
+    <TD>BUG_ALG_006</TD>
+    <TD>撕裂（Wound Damage）、恐惧（Fear）仅在技能中有效，在装备上无效。但在装备上的撕裂反击（Wound 
+      Retaliation）却有效。</TD></TR>
+  <TR>
+    <TD>BUG_ALG_007</TD>
+    <TD>伤害“XX 降低护甲 持续 Y.Y 秒”（XX Reduced Armor for Y.Y 
+    Seconds）的加成无效，并且在界面上也不显示。</TD></TR>
+  <TR>
+    <TD>BUG_ALG_008</TD>
+    <TD>在所有的攻击型削弱技能（游戏中原有的削弱技能均为攻击型）中，所有攻击参数均被视为对对方发起的、每秒一次的攻击。该攻击并不使用攻击方装备和技能中所附带的伤害加成，却使用被攻击方的伤害加成，即：该攻击被视为被攻击方自己对自己发起的攻击。但该攻击的种族类型却仍由攻击方的种族决定，而不是由被攻击方的种族决定，并且该攻击还能够附带攻击方当前生效的特定种族伤害，而不是附带被攻击方的特定种族伤害。举例：一个亡灵对一个恶魔施放了一个攻击型削弱技能（例如瘟疫），则对于该技能所附带的每秒一次的攻击（例如毒素伤害）：恶魔方的伤害加成（来自装备或者技能）有效，亡灵方的伤害加成无效；恶魔方的“+XX% 
+      减少来自 亡灵 的伤害”（+XX% Less Damage from Undead）有效，“+XX% 减少来自 恶魔 的伤害”（+XX% Less 
+      Damage from Demons）无效；亡灵方的“+XX 伤害对 恶魔”（+XX Damage to 
+      Demons）生效；恶魔方当前承受的“XX% 降低伤害 持续 Y.Y 秒”（XX% Reduced Damage for Y.Y 
+      Seconds）生效，但亡灵方的无效。对于攻击本身就带有这类伤害的削弱技能——例如自然专精中的“疲劳”（Fatigue）技能，这会使得其最终效果变得极其复杂，想要得出一个准确的计算公式的话起码需要写满一整张A4纸。这种削弱技能的概念实在过于混乱。</TD></TR>
+</TBODY></TABLE> 
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="BUG汇总009.htm">上一页</a> <a href="BUG汇总.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="BUG汇总011.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

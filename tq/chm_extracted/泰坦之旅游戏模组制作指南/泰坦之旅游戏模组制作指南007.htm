@@ -1,0 +1,161 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>范例6：地牢和网格</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南006.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="泰坦之旅游戏模组制作指南008.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">范例6：地牢和网格</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　范例6：地牢和网格 <BR><BR> 
+　　到目前为止，我们所介绍的功能都是在户外环境使用的。Titan Quest还有另一种游戏环境就是网格(grid)，网格是设置地板与墙壁的地基，它适合用在户内或是地牢类型的平面区域。<BR><BR> 
+　　网格有三个主要的元件：<BR><BR> 
+　　地板(floor)、就是玩家可以在上面行走的区域<BR><BR> 
+　　墙壁(walls)、可以用来制作迷宫<BR><BR> 
+　　特征(features)。是地牢的另一种观点，特征可以跟地板或墙壁结合在一起，特征通常会有入口，入口可以用来连接不同的区域，后面会介绍。 　　<BR><BR> 
+　　6.0.1检查环境 <BR><BR> 
+　　1)打开Editor编辑器 <BR><BR> 
+　　2)选择mod ‘Tutorial06’。 <BR><BR> 
+　　3)在Editor Mode中打开’ Tutorial-Dungeon_Crawl_Grid.lvl’，你会看到一个地牢，里面已建置了地板和墙壁。 <BR><BR> 
+　　6.1网格系统 <BR><BR> 
+　　6.1.1选择系统 <BR><BR> 
+　　1)选择网格编辑工具(grid edit tool)。 <BR><BR> 
+　　你会看到画面中出现紫色背景的网格，这代表网格平面区域的范围。地板(floor)和墙壁(walls)只能画在这个网格平面区域的范围内。 要设计网格的第一个步骤就是选择一个网格系统(system)。一个网格系统就是一个布景套件，每个网格系统中都有不同的地板、墙壁、特征样式(译：就像Windows的布景主题一样，每个布景主题中都有不同的背景图案、滑鼠指标图示、视窗样式等)。现在让我们来改变这个地牢的网格系统。 <BR><BR> 
+　　2)点按网格类型视窗(Grid Types Pane)中System栏位旁的’…’图示。 <BR><BR> 
+　　3)选择Records -&gt; Underground -&gt; Egypt -&gt; EgyptCrypt.dbr。 这个地牢的的外观会立刻改变。 　　 <BR><BR> 
+　　6.2网格的操作 <BR><BR> 
+　　6.2.1画地板 <BR><BR> 
+　　我们先来画地板，在网格类型视窗(Grid Types Pane)中有一个Floor选取视窗。 <BR><BR> 
+　　1)在Floor选取视窗中选择’Floor’。 当你要清除地板时，你就要选择’ No Floor’。 <BR><BR> 
+　　2)点按滑鼠左键并移动就可以在网格上画出地板。 <BR><BR> 
+　　6.2.2 画墙壁 <BR><BR> 
+　　画墙壁跟画地板很像。在网格类型视窗(Grid Types Pane)中有一个Walls选视窗。 <BR><BR> 
+　　1)在Walls选取视窗中选择’Wall’。 <BR><BR> 
+　　当你要清除墙壁时，你就要选择’ No Wall’。 <BR><BR> 
+　　2)点按滑鼠左键并移动就可以在网格上画出墙壁。 <BR><BR> 
+　　6.2.3 画特征 <BR><BR> 
+　　特征就是门。网格类型视窗(Grid Types Pane)中有一个Features选取视窗。 <BR><BR> 
+　　1)在Features选取视窗中选择’ Dng_Egypt01_Base_EntranceG_Int01’。 <BR><BR> 
+　　2)点按滑鼠左键就可以在网格上画出特征。(译：方向键左、右可以调整方向)。 <BR><BR> 
+　　6.2.4 注意 <BR><BR> 
+　　如果你要建立多楼层的地牢，请使用楼梯(staircase)。 <BR><BR> 
+　　6.3完成你的网格世界 <BR><BR> 
+　　6.3.1 在网格上设置物件 物件(object)也可以设置在网格上。 <BR><BR> 
+　　1)选择物件设置工具(Object Placement Tool)。 <BR><BR> 
+　　2)在目录视窗(Directory Pane)中选择一个物件。 <BR><BR> 
+　　3)在网格中点按滑鼠左键就可以设置该物件。 <BR><BR> 
+　　6.3建置你的网格世界 <BR><BR> 
+　　网格世界的建置跟地形世界的建置方法相同。 <BR><BR> 
+　　1)建置(Build)所有的路网和地图。 <BR><BR> 
+　　2)储存所有档案。 <BR><BR> 
+　　3)将.wrl和.lvl装进.map档中。 <BR><BR> 
+　　记住：假如你的网格分成好几个楼层，那所有的楼层的.lvl档也都要装进.map中。 <BR><BR> 
+　　4)建置.map。 <!--/HTMLBUILERPART0--></font></DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南006.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="泰坦之旅游戏模组制作指南008.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

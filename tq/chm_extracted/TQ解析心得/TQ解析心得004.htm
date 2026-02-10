@@ -1,0 +1,140 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>TQ解析心得之五：数据库记录文件格式</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="TQ解析心得003.htm">上一页</a> <a href="TQ解析心得.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="TQ解析心得005.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">TQ解析心得之五：数据库记录文件格式</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->
+　　数据库记录文件都是纯文本文件，用记事本即可打开，其格式非常简单，每个文件都是由若干行组成，每行都由一个关键字与其对应值构成，关键字与值之间由逗号分隔，值的末尾也由逗号结束，例如：<BR><BR> 
+　　characterLife,1000,<BR><BR> 
+　　表示生命值为1000（或者生命值+1000）。有时，一个关键字可对应多个值，此时多个值之间用分号分隔，例如，在某个怪物的记录文件中：<BR><BR> 
+　　characterLife,1000;2000;3000,<BR><BR> 
+　　表示在三种不同难度下，该怪物的基础生命值分别是1000、2000和3000。对于不同类型的记录文件，关键字所对应的多个值的用法也不同。对于怪物（包括宠物），每个关键字最多对应三个值，分别用于三种不同难度，而对于技能，每个关键字可对应N个值，分别用于1~N级的技能。值如果多写了几个，例如在怪物数据中给某个关键字写了四个值，或者在一个最高只有10级的技能中给某个关键字写了12个值，这并不会产生错误，仅仅是多余的值用不到而已；值如果少写了几个，则剩余要用的值都用最后一个，例如怪物数据中某个关键字只写了两个值的话，那么传奇难度将使用史诗难度的值；而假若一个共有10级的技能数据中某个关键字只写了8个值的话，那么第9级和第10级都会使用第8级的值（当然仅限于该关键字，其它关键字并不受影响）。<BR><BR> 
+　　值的种类主要有两种：一种是数，一种是字符串。其中数又分为整数和实数，前者主要用于一些有关数量的场合，例如碎片数量等，后者则是一些可以有小数的数值，例如生命、法力、伤害之类（虽然在界面上看到的这些数值一般都是整数，但在游戏内部却都是以实数形式存储的，如果原本的生命值是1000点，在受到一个0.5点的伤害之后，将剩余999.5点）。另外，还有一种特殊的整数，用来表示布尔型（逻辑型）数据，其取值只能是1或者0，分别表示“是”和“否”。例如，物品数据中的关键字“cannotPickUpMultiple”（是否能拣起多个），如果取值为1，则不能同时拣起两个以上，如果是0则没有这个限制。<BR><BR> 
+　　字符串主要分为四种：文字代号、特定值、文件名及一般字符串。<BR><BR> 
+　　其中文字代号主要用于界面的文字显示，为了使游戏能够轻易地更换语言种类，并没有把界面上显示的文字直接记录在这里，而是把需要显示的文字的代号记录下来，至于该代号对应的文字是什么，就看各个Text_&lt;语言简称&gt;.arc中怎么写了。例如，某个怪物“description”关键字（表示怪物在界面上显示的名字）的值是“tagMonsterName004”，而“tagMonsterName004”在原始的Text_EN.arc中表示的文字是“Chimera”（在解开后的TQ的Text_EN.arc中的Monster.txt中，第8行：tagMonsterName004=Chimera），而汉化后的Text_EN.arc中，“tagMonsterName004”所表示的文字却被改成了“奇美拉”，于是汉化后界面上就显示“奇美拉”了。<BR><BR> 
+　　特定值指的是该关键字只能在特定的几个值中选取，例如怪物数据中的关键字“monsterClassification”（表示怪物级别），其取值只能是Common、Champion、Hero、Boss、Quest这五种，分别表示普通（名字为白色）、高级（名字为黄色）、精英（名字为桔黄色，并且头顶有颗星）、BOSS（名字为红色）四种级别的怪物和任务怪（名字为紫色，并且有一圈光环环绕）。除了字符串有这类限定取值的情况外，有少数数值也有限定取值的情况（即只能在几个特定数值内选一个，不能随意取值）。<BR><BR> 
+　　文件名指的是该关键字的值是某个文件的名称（包括相对路径），有可能是另一个数据库记录文件，也有可能是某个资源文件。例如，怪物数据中关键字“skillName1”的值就是一个数据库记录文件名，用来指明该怪物的第一种技能是数据库中的哪个技能记录文件，而该技能的具体内容则在技能记录文件中描述，并不在怪物记录文件中。而怪物数据中的“mesh”关键字的值则是一个3D模型的文件名，用来指明该怪物使用哪个3D模型。由于包含相对路径的文件名一般都比较长，经常有写错的情况出现，例如冥殿的所有商店和箱子里的护腿都不带后缀的BUG，就是因为把后缀表数据库记录文件的文件名给写错了。<BR><BR> 
+　　所有的数据库记录文件中都含有一个关键字：templateName，它的值是模版文件名。这个关键字在游戏中没有任何用处，仅用于ArtManager，用来指明在ArtManager中编辑该记录文件时使用哪个模版文件。另外，几乎所有的数据库记录文件都包含一个关键字：Class，它的值用于指明该记录文件是一种什么类型的记录，例如，其值为“Monster”表示该记录文件是一种怪物的数据，值为“ArmorJewelry_Amulet”表示该记录文件是一条项链的数据，等等。游戏在打开一个数据记录文件时，首先找到这个关键字的值，以确定该文件是一种什么文件，并以此来决定下面进行什么处理。战斗专精中的技能“胜利之光”，就是因为这个Class的值写错了（应当是削弱类技能，却被写成了攻击类技能），才导致其属性无效。<BR><BR> 
+　　尽管数据记录文件的格式十分简单，但大多数数据记录文件中的关键字实在太多，而且没有任何顺序，用记事本一类的文本编辑器打开的话，很难找到想要改动的那个。另外，即使用记事本改完了，要想压缩成arz文件，还得靠ArtManager。因此，编辑这种文件都是用ArtManager，而不是记事本。上面讲述这种文件格式的目的，主要是为了便于编写程序进行解析，而不是为了手工编辑。<BR><BR> 
+　　用ArtManager打开一个数据记录文件时，ArtManager首先找到其中的“templateName”，并调入其值所指定的模版文件。模版文件指明了该数据记录文件有共包含哪些关键字、每个关键字的值都分别属于什么类型（整数、实数、逻辑型、字符串、文件名等）、缺省值是什么，等等，并且还将各关键字分组，以便查找。如果ArtManager在调入某个数据记录文件进行编辑时，发现该文件中包含相应模版文件中没有描述过的关键字，则会自动将这些关键字从数据记录文件中删除。而假若根本找不到对应的模版文件的话，则完全无法编辑。不仅在编辑时实行这种检查，甚至在用ArtManager进行压缩的时候，也要用模版文件检查一遍，并自动把“不识别”的关键字和文件删除，因此，没有正确的模版文件，即使用记事本编辑完了，仅仅使用ArtManager来压缩打包都不可能。<BR><BR> 
+　　尽管比对应模版中多出来的关键字会被ArtManager自动删除，但比对应模版中的关键字少却没有关系。实际上，对于字符串类型的关键字，如果其值为空，就可以不写，例如，假若某种怪物没有任何技能，则其“skillName1”、“skillName2”等关键字将根本不在其数据记录文件中出现。而对于数值型的关键字，如果不写就表示该值是零。例如，对于某件装备，“defensiveStun,0.000000,”跟直接删掉这行是一样的，都表示该装备不具有眩晕抗性。<BR><BR> 
+　　用ArtManager对数据库记录文件进行编辑时，其编辑窗口类似于Windows的资源管理器，其左侧是树状结构的关键字分组（类似于目录），右侧是选定组中的关键字及其值（类似于目录中的文件）。分组信息是从模版文件中提取出的，其目的仅仅是为了在编辑时查找关键字方便，数据库记录文件本身是不存在什么关键字的分组的。窗口右侧的部分又分四栏，其中第一栏是关键字，第四栏是对应值，第二、三栏是值的类型。第四栏为空表示该文件中没有包含这个关键字。如果某个关键字只能有一个值（第二栏不是“array”），则在第四栏上双击即可直接编辑，否则就会再打开一个窗口，用来输入多个值（通过弹出窗口中的“New”和“delete”来添加新值和删除某个值）。如果是在第一栏上双击，则不论是否输入多值，都会弹出一个窗口，此时即使是多个值，也只写在弹出窗口第一行的“Value”栏内（多个值之间用分号分隔，与数据库记录文件内的写法一样，不过最后一个值的后面不需要跟逗号）。这个主要是为了方便整套值的复制。<!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="TQ解析心得003.htm">上一页</a> <a href="TQ解析心得.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="TQ解析心得005.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

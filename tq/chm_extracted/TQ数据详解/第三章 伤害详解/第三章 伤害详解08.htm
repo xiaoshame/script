@@ -1,0 +1,215 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>第九节 反击型持续杀伤伤害</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="第三章%20伤害详解07.htm">上一页</a> <a href="第三章%20伤害详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第三章%20伤害详解09.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">第九节 反击型持续杀伤伤害</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　与主动型持续杀伤伤害类似，不过只能被反击发动。<BR><BR> 
+　　所有这类伤害的主伤害数值都是每秒伤害值，而不是界面上显示的总伤害值（每秒伤害值 = 总伤害值 / 持续时间）。所有这类伤害的次伤害数值都是持续时间。<BR><BR> 
+　　注意：<BR><BR> 
+　　当持续时间为一秒时，持续时间部分：“在Y.Y秒内”（over Y.Y Seconds）在界面上会被写成“每秒”（per Second）。<BR><BR> 
+　　所有这类伤害都有一个唯一的相应加成。但这些加成在游戏界面里均没有正确的文字描述，显然在原始游戏中不可能被玩家所拥有，但某些怪物可能会有其中某些加成，并且有效。如果自编地图并给玩家也设置了这些加成的话，界面上将显示诸如“TagNotFound:”之类的错误信息，但并不影响其加成效果。<BR><BR> 
+　　本类加成分为增加主伤害数值和增加次伤害数值（持续时间）两部分，增加持续时间的部分称为持续时间加成。<BR><BR> 
+　　本类伤害的实施方式见第二章。<BR><BR> 
+　　本类共有7种。对应加成也是7种。<BR><BR> 
+　　1、　　撕裂反击<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 撕裂伤害反击在Y.Y秒内<BR><BR> 
+　　界面英文：XX Wound Retaliation over Y.Y Seconds<BR><BR> 
+　　相应加成：撕裂反击加成。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 撕裂反击加成%)<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 撕裂反击持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：物理抗性。<BR><BR> 
+　　被攻击方有效持续时间降低：撕裂持续时间降低。<BR><BR> 
+　　延迟实施阶段等价主动型伤害种类：撕裂伤害。<BR><BR> 
+　　注意：<BR><BR> 
+　　虽然“撕裂伤害”仅在技能中有效，但“撕裂反击”却并不限于技能，在任何装备上也同样有效。<BR><BR> 
+　　2、　　冰冻反击<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 冰冻反击在Y.Y秒内<BR><BR> 
+　　界面英文：XX Frostburn Retaliation over Y.Y Seconds<BR><BR> 
+　　相应加成：冰冻反击加成。<BR><BR> 
+　　注意：<BR><BR> 
+　　不是界面上写着“+XX% 冰冻反击”（+XX% Frostburn Retaliation）的那个。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 冰冻反击加成%)<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 冰冻反击持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：冰冷抗性。<BR><BR> 
+　　被攻击方有效持续时间降低：冰冻持续时间降低。<BR><BR> 
+　　延迟实施阶段等价主动型伤害种类：冰冻伤害。<BR><BR> 
+　　3、　　燃烧反击<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 燃烧反击在Y.Y秒内<BR><BR> 
+　　界面英文：XX Burn Retaliation over Y.Y Seconds<BR><BR> 
+　　相应加成：燃烧反击加成。<BR><BR> 
+　　注意：<BR><BR> 
+　　不是界面上写着“+XX% 燃烧反击”（+XX% Burn Retaliation）的那个。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 燃烧反击加成%)<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 燃烧反击持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：火焰抗性。<BR><BR> 
+　　被攻击方有效持续时间降低：燃烧持续时间降低。<BR><BR> 
+　　延迟实施阶段等价主动型伤害种类：燃烧伤害。<BR><BR> 
+　　4、　　电击反击<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 电击反击在Y.Y秒内<BR><BR> 
+　　界面英文：XX Electrical Burn Retaliation over Y.Y Seconds<BR><BR> 
+　　相应加成：电击反击加成。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 电击反击加成%)<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 电击反击持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：闪电抗性。<BR><BR> 
+　　被攻击方有效持续时间降低：电击持续时间降低。<BR><BR> 
+　　延迟实施阶段等价主动型伤害种类：电击伤害。<BR><BR> 
+　　5、　　持续毒素反击<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 毒素伤害反击在Y.Y秒内<BR><BR> 
+　　界面英文：XX Poison Retaliation over Y.Y Seconds<BR><BR> 
+　　相应加成：持续性毒素反击加成。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 持续性毒素反击加成%)<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 持续性毒素反击持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：毒素抗性。<BR><BR> 
+　　被攻击方有效持续时间降低：毒素持续时间降低。<BR><BR> 
+　　延迟实施阶段等价主动型伤害种类：持续毒素伤害。<BR><BR> 
+　　6、　　生命流失反击<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 衰老反击在Y.Y秒内<BR><BR> 
+　　界面英文：XX Vitality Decay Retaliation over Y.Y Seconds<BR><BR> 
+　　相应加成：生命流失反击加成。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 生命流失反击加成%)<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 生命流失反击持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：活力抗性。<BR><BR> 
+　　被攻击方有效持续时间降低：生命流失持续时间降低。<BR><BR> 
+　　延迟实施阶段等价主动型伤害种类：生命流失伤害。<BR><BR> 
+　　7、　　流血反击<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 流血伤害反击在Y.Y秒内<BR><BR> 
+　　界面英文：XX Bleeding Damage Retaliation over Y.Y Seconds<BR><BR> 
+　　相应加成：流血反击加成。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 流血反击加成%)<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 流血反击持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：流血抗性。<BR><BR> 
+　　被攻击方有效持续时间降低：流血持续时间降低。<BR><BR> 
+　　延迟实施阶段等价主动型伤害种类：流血伤害。 <!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="第三章%20伤害详解07.htm">上一页</a> <a href="第三章%20伤害详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第三章%20伤害详解09.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

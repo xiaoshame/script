@@ -1,0 +1,187 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>TQ解析心得之二：TQ文件体系（二）</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="TQ解析心得000.htm">上一页</a> <a href="TQ解析心得.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="TQ解析心得002.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">TQ解析心得之二：TQ文件体系（二）</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->
+　　TQ和IT的存档文件分别存放在“我的文档\My Games\Titan Quest”和“我的文档\My Games\Titan Quest - Immortal Throne”目录下。如果没有更改“我的文档”的位置的话，应该是在“C:\Documents and Settings\&lt;windows登录用户名&gt;\My Documents”处（windows2000以上）。注意：每个登录用户都有一套存档。一旦更换了登录用户名，存档的位置也同时更换。<BR><BR> 
+　　TQ和IT存档目录的内容是相似的。下面不再区分TQ和IT存档目录。<BR><BR> 
+　　直接放在存档目录下的文件是一些错误日志、工具软件的设置文件（*.ini）、运行统计等（如果没有运行过工具软件的话，这些文件都可能不存在）。<BR><BR> 
+　　存档目录有以下几个子目录：<BR><BR> 
+　　CustomMaps：用于存放自定义游戏（已经生成好的）。只有放在这里的自定义游戏，在游戏中才能看到。每个自定义游戏一个目录。<BR><BR> 
+　　SaveData：用于存放游戏存档，其中又包括三个子目录：Main（用来存储主游戏的人物存档）、User（用来存储自定义游戏的人物存档）、Sys（公共储物箱。TQ没有该目录）。<BR><BR> 
+　　Screenshots：存放游戏截屏（游戏中通过PrintScreen键截屏）。<BR><BR> 
+　　Settings：用于存储游戏的各选项设置和键盘定义。<BR><BR> 
+　　Working：ArtManager工作目录，包括CustomMaps和Database两个子目录。其中CustomMaps中包含各个自定义游戏的源文件（每个自定义游戏一个目录）；Database目录下只有一个子目录：Templates，用于存放编辑数据库记录所需要的模版。<BR><BR> 
+　　关于人物存档：<BR><BR> 
+　　每个人物一个存档目录，主游戏的位于SaveData\Main中，自定义游戏的位于SaveData\User中。存档的目录名为下划线加人物名，例如一个叫“ABC”的人物，其存档目录为：_ABC。存档目录下的文件有：Player.chr（人物存档主文件），IT人物还有winsys.dxb、winsys.dxg两个文件（私人储物箱）。存档目录下的目录有：各地图的存档目录（用于记录人物已经走过地图的哪些部分，完成哪些任务等），以及一个Backup目录。对于主游戏而言，地图的存档目录只有一个（因为只有一个地图）：Levels_World_World01.map，而对于自定义游戏（一般来说，每个自定义游戏一张地图），这个人物玩过哪些地图，就有几个地图存档目录。<BR><BR> 
+　　一个地图存档目录下又分三个子目录：Normal、Epic、Legendary，分别对应三个难度。每个难度下，存放任务记录文件和一个目录：fow。其中任务记录文件记录了人物完成任务的情况，其中又以map.dat、Quest.myw、QuestToken.myw三个文件为主，假若你在完成一个任务之前备份这三个文件，当你完成任务后再还原回来，则该任务又成为没有完成的状态（不过不影响已获得的任务奖励，因为任务奖励是存储在Player.chr里的，不是在任务文件内）。其它的那些QUE文件还不是太清楚，可能是记录了各个任务的具体完成进度。目录fow下存放着地图上战争迷雾（fog of war）的当前状态（也就是人物已经探过哪些地方）。如果把该目录删除的话，则整个地图又回到没探过的状态（只影响战争迷雾，已经到过的传送点照样可以使用）。<BR><BR> 
+　　存档目录下的Backup目录的结构与存档目录相同，也是有一个Player.chr（不过即使在IT中也没有私人储物箱文件，应该是IronLore做漏了），再加上各地图的存档目录，不过地图的存档目录里只存储各难度的map.dat、Quest.myw、QuestToken.myw，不再存储*.QUE和fow。顾名思义，Backup目录的作用是备份，这个备份是游戏自动进行的。不过，不要指望你的人物死掉一次后，还能从这个备份中找回没死时的存档，因为程序在存盘时是主存档与备份同时存储的，因此，在正常情况下，主存档与备份存档永远是一样的。但是，假若游戏在存储主存档的时候出错（例如死机之类），游戏就不会再去存储备份，此时就可以从备份中找回正确的存档。<BR><BR> 
+　　对于一个人物来说，只有Player.chr是最基本的，其它文件都可以没有（或者删掉）。如果没有winsys.dxb、winsys.dxg两个文件，启动IT并调入人物后，游戏会自动帮你再生成一套（不过当然是空箱子，而且是没扩展过的）。如果没有地图存档目录，那么人物的所有任务都变成起始状态（什么任务都没完成过），地图也是完全没探过的状态，不过依然不影响已开启的传送点，因为哪些传送点已开启是记录在Player.chr里的。另外，由于三个难度的任务与地图都是一样的，因此，对于同一个地图，可以通过难度之间的记录相互拷贝的方式来改变某个难度的任务完成情况、战争迷雾状态等。例如，假若普通难度下任务完成得一切正常，但在史诗难度时，某个任务（可能因为制作地图的时候任务做得有问题导致）无论如何进行不下去，比如该开的门却没开之类，实在没办法的话，可以把普通难度下的任务存档复制到史诗难度。不过这样一来，所有剩下的那些任务也就都变成“已完成”状态，任务奖励也就都泡汤了。<BR><BR> 
+　　由于一个人物只要有Player.chr就可以正常进入游戏，因此很多人使用这个文件来相互传递装备。接收者只要根据人物的角色名建立一个相应的人物存档目录（注意主游戏与自定义游戏的人物存档位置不同），把Player.chr放进去即可。不过，主游戏与自定义游戏的人物存档是不同的，不能混用（可以用TQDefiler之类软件改一下）。<BR><BR> 
+　　关于Player.chr：<BR><BR> 
+　　通过TQDefiler之类修改器，几乎可以修改Player.chr中的所有内容，因此就不在这里说了，只是讲一下装备的修改方法。要想直接修改Player.chr，必须使用16进制编辑器（例如UltraEdit之类）。另外，由于TQ的存档使用CRC校验，因此TQ的存档修改完之后需要用软件修复一下（例如TQDefiler）。IT已经放弃了对存档的校验，因此不存在这个问题。<BR><BR> 
+　　人物存档中的所有装备，都是以如下结构来存储的：<BR><BR> 
+　　baseName<BR><BR> 
+　　prefixName<BR><BR> 
+　　suffixName<BR><BR> 
+　　relicName<BR><BR> 
+　　relicBonus<BR><BR> 
+　　seed<BR><BR> 
+　　var1<BR><BR> 
+　　其中前5项都是对应的数据库记录文件名，baseName是该装备本身，prefixName是前缀，suffixName是后缀，relicName是镶嵌物，relicBonus是镶嵌物的合成奖励。另两项中，seed是该装备对应的随机数种子，在装备生成的时候产生，决定了装备以及前后缀的各项属性值围绕基础值的随机波动，例如“堕落者”的基础属性为“60 降低抗性 持续 3.0 秒”，实际上各把堕落者的属性可能有“64 降低抗性”的，也有“53 降低抗性”的，这个差异就是由seed决定的。相同seed的堕落者，其属性一定是完全相同的（但不同seed的堕落者属性却有可能相同）。另外，属性的波动情况是由装备、前后缀及seed共同决定的。例如，对于某一个seed值的浩劫之石青战锤，后缀“浩劫之”（基础属性为“+40%伤害”）的属性是“+46% 伤害”，而假若给这把锤另外添上一个前缀的话，此时“浩劫之”的属性就有可能变成“+37% 伤害”，如果再换一个前缀，或者把石青战锤换成弗格，“浩劫之”的属性还可能会发生变化。因此，想要总结出哪个seed值能够使“浩劫之”的属性最高是徒劳的。不过，绝大多数没有前后缀的唯一装备却可以用seed值完全决定属性值，因此，假若有人有一把“68 降低抗性”的堕落者的话，你用不着问他要装备，只要他告诉你他那把堕落者的seed值，然后你再把你自己那把的seed值改掉就好（当然前提是你也要有一把）。<BR><BR> 
+　　最后一项var1是镶嵌物的碎片数量。没有镶嵌物的时候该项无意义。<BR><BR> 
+　　下面以“浩劫之”“石青战锤”镶嵌2片“阿喀琉斯的勇猛[大]”为例来说明一件装备的具体存储方式：<BR><BR> 
+　　1、4字节整数：08000000（字符串"baseName"的字符数）<BR><BR> 
+　　2、8字节字符：baseName<BR><BR> 
+　　3、4字节整数：2F000000（字符串"xpack\item\equipmentweapons\club\c08_club01.dbr"的字符数）<BR><BR> 
+　　4、47字节字符：xpack\item\equipmentweapons\club\c08_club01.dbr（“石青战锤”的数据库记录文件名）<BR><BR> 
+　　5、4字节整数：0A000000（字符串"prefixName"的字符数）<BR><BR> 
+　　6、10字节字符：prefixName<BR><BR> 
+　　7、4字节整数：00000000（没有前缀）<BR><BR> 
+　　8、4字节整数：0A000000（字符串"suffixName"的字符数）<BR><BR> 
+　　9、10字节字符：suffixName<BR><BR> 
+　　10、4字节整数：46000000（字符串"records\item\lootmagicalaffixes\suffix\default\rare_%damagestun_03.dbr"的字符数）<BR><BR> 
+　　11、70字节字符：records\item\lootmagicalaffixes\suffix\default\rare_%damagestun_03.dbr（“浩劫之”的数据库记录文件名）<BR><BR> 
+　　12、4字节整数：09000000（字符串"relicName"的字符数）<BR><BR> 
+　　13、9字节字符：relicName<BR><BR> 
+　　14、4字节整数：2F000000（字符串"records\item\relics\03_act1_valorofachilles.dbr"的字符数）<BR><BR> 
+　　15、47字节字符：records\item\relics\03_act1_valorofachilles.dbr（“阿喀琉斯的勇猛[大]”的数据库记录文件名）<BR><BR> 
+　　16、4字节整数：0A000000（字符串"relicBonus"的字符数）<BR><BR> 
+　　17、9字节字符：relicBonus<BR><BR> 
+　　18、4字节整数：00000000（没有合成奖励）<BR><BR> 
+　　19、4字节整数：04000000（字符串"seed"的字符数）<BR><BR> 
+　　20、4字节字符：seed<BR><BR> 
+　　21、4字节整数：2C540000（seed值。十进制的21548）<BR><BR> 
+　　22、4字节整数：04000000（字符串"var1"的字符数）<BR><BR> 
+　　23、4字节字符：var1<BR><BR> 
+　　24、4字节整数：02000000（镶嵌物碎片数）<BR><BR> 
+　　所有装备、前后缀、镶嵌物及合成奖励所对应的数据库记录文件名可查阅泰坦立方。<BR><BR> 
+　　如果想给上例中的装备加上一个前缀“凶恶的”，先查出“凶恶的”对应数据库文件名为“records\item\lootmagicalaffixes\prefix\default\rare_oa%dmg_07.dbr”，该文件名一共是67个字符，因此将上述第7部分中的4字节整数改为43000000（67的16进制表示），表示后面跟着一串67个字符的字符串。然后在第8部分之前插入上述文件名即可。<BR><BR> 
+　　尽管游戏中所能产生的装备是有一定规则限制的（例如绝大多数唯一装备是不可能带有前后缀的，也不可能带有镶嵌物），但在这里进行直接修改的话，却没有任何限制，例如你可以改出一把镶着“阿喀琉斯的勇猛[大]”的浩劫之凶恶的堕落者。甚至没有人规定前缀必须放在前缀的位置上，例如假若你不喜欢“浩劫之”，你也可以弄一把“凶恶的凶恶的堕落者”（前后缀都是“凶恶的”），甚至——如果你实在喜欢“凶恶的”，你可以把合成奖励也使用“凶恶的”（用“凶恶的”对应的数据库文件名填在合成奖励处即可），尽管正常的合成是不可能出现这个奖励的。即使没有合成完整镶嵌物，也一样可以有奖励。同样，即使已经是完整的镶嵌物，也可以没有奖励，一切就看你填不填“relicBonus”部分了。至于镶嵌物是否完整，那就看var1的值了，只要达到该镶嵌物的最大数量（符咒5块遗物3块），就是完整的。如果var1超过镶嵌物的最大数量，游戏会自动当成最大数量来处理，因此把var1改成8块跟3块是一样的，并不能得到8片“阿喀琉斯的勇猛[大]”的属性。<BR><BR> 
+　　关于IT中的储物箱文件：<BR><BR> 
+　　私人的储物箱文件位于人物的存档目录下，与Player.chr放在一起。公共储物箱文件放在SaveData\Sys下面。储物箱都是由两个文件构成：winsys.dxb和winsys.dxg。非常让人讨厌的是，这两个文件中存储了该文件本身的全路径，例如公共储物箱文件winsys.dxb中就包含内容“C:\Documents and Settings\&lt;windows登录用户名&gt;\My Documents\My Games\Titan Quest - Immortal Throne\SaveData\Sys\winsys.dxb”，进入游戏的时候，一旦程序检查发现该文件的全路径与文件内部所记录的全路径有区别，游戏就会立刻清空该文件，于是你在里面储存的所有装备也就全都蒸发了。也就是说，要想把这个文件拷贝到另一个地方使用，必须先修改其内容。由于换用不同的机器、重做系统等情况下，&lt;windows登录用户名&gt;往往是不一样的，因此必须修改储物箱文件。手工修改基本是不可能的，因为文件中还带有CRC校验，只能用工具软件来改，例如使用TQDefiler。<BR><BR> 
+　　关于自定义游戏：<BR><BR> 
+　　自定义游戏放在CustomMaps里面，如果你从别人那里得到一个自定义游戏，需要把它放在CustomMaps里面才能被游戏找到（如果没有CustomMaps目录就自己建一个。注意TQ和IT各自使用各自的CustomMaps目录）。CustomMaps中，每个自定义游戏一个目录，目录名就是自定义游戏的名称，例如一个叫“MyITGame”的自定义游戏，其目录名就是“MyITGame”。每个自定义游戏的目录下面有两个子目录：database和resources，前者用来存放游戏自定义的数据库记录文件（已被压缩成ARZ格式），后者用来存放游戏自定义的资源文件（被压缩成ARC格式，如Map.arc，Quest.arc等）。除ARC与ARZ文件外，其它文件在游戏过程中都是不需要的（一般是ArtManager产生的中间文件，或者压缩之前的文件），可以删除。<BR><BR> 
+　　在载入自定义游戏的时候，运行方式与载入主游戏类似，也是先从地图开始。一般的自定义游戏都带有自定义地图，对于少数没有自定义地图的，程序会调入主游戏的地图来代替。对于地图上的物体，程序会先搜索自定义游戏里的数据库（放在自定义游戏目录的database子目录下），如果找不到，再去搜索游戏的主数据库（被压缩成database.arz的那个。对于IT，先搜索IT的，还找不到的话再搜索TQ的）。同样，对于数据库记录中指定使用的资源文件，也是先在自定义游戏的压缩文件中搜索，找不到的情况下再去搜索游戏本身的压缩文件。根据这样一种运行方式，可以在自定义游戏的数据库中存放一个与主数据库中相同文件名（包括相对路径）、但数据却被修改过的数据记录文件，当游戏需要用到这个文件的时候，使用的就会是自定义游戏中设定的数据，而不再是主游戏中的数据。同样，也可以使用与主游戏中同名的资源文件来使游戏使用自定义游戏中所设定的资源，例如新的行走动画、3D模型、贴图或者叫喊声。如果这个自定义游戏本身不带地图的话（游戏会自动用主游戏的地图代替），我们就可以使用新的设定来玩主游戏的地图（例如堤丰的生命值加倍，或者“凶恶”词缀+100%伤害，等等）。这可能是为什么有时自定义游戏也被叫做MOD的原因之一。当然，这并未修改主游戏，仅仅是在该自定义游戏中才有这样的效果。<BR><BR> 
+　　虽然看起来上面所说的方式是个做MOD的不错的办法，至少各个MOD以及主游戏之间都可以共存，想玩哪个玩哪个，可惜的是，并不是所有MOD都是可以这样做的。虽然“原则上”对于需要用到的一条数据库记录文件，程序会先去搜索自定义游戏中的压缩文件，但并不总是如此，对于有些数据库记录文件，程序只会使用主游戏的数据库记录文件，永远不会到自定义游戏中的压缩文件里去找，例如技能的数据库记录文件。因此，假若你想改变游戏中的技能数据，那么除了直接修改主游戏的database.arz之外，别无它法——也就是说，不可能仅在某个特定的自定义游戏中使用改变过的技能数据、同时其它的游戏又不受影响。<BR><BR> 
+　　究竟哪些数据库记录文件，程序不会到自定义游戏中去找，目前还没有完全弄清，不过，已经明确知道，怪物和装备对应的数据库记录文件，程序是会到自定义游戏中找的，而对于技能以及一些游戏设定的数据库记录文件，程序则肯定不会到自定义游戏中去找。资源文件是否也存在类似问题尚不清楚。<!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="TQ解析心得000.htm">上一页</a> <a href="TQ解析心得.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="TQ解析心得002.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>第五节 主动型属性伤害</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="第三章%20伤害详解03.htm">上一页</a> <a href="第三章%20伤害详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第三章%20伤害详解05.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">第五节 主动型属性伤害</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　本类伤害并不会造成被攻击方生命值的降低，但会导致其它属性的降低（例如抗性、速度等），或者直接降低对方的伤害输出。这种降低并不是永久的，而是只在一定时间内有效，因此，本类伤害必然都存在一个次伤害数值——持续时间。<BR><BR> 
+　　本类伤害中，只有一部分种类的伤害存在对应的伤害加成。加成形式有两种，一种是只增加主伤害数值，另一种在增加主伤害数值的基础上，还增加次伤害数值（持续时间）。增加持续时间的这部分称为持续时间加成。<BR><BR> 
+　　对于本类伤害，被攻击方均无相应的持续时间降低。<BR><BR> 
+　　本类伤害并不是直接实施到被攻击方的属性上的，而是作为被攻击方的当前状态之一被记录下来（只要还在持续时间之内），每当被攻击方需要使用相关属性时（例如需要用到抗性、速度，或者进行伤害输出），它就会参与运算。详细的实施方式见第二章。各种属性的计算公式见第五章。<BR><BR> 
+　　本类共有13种。对应加成有5种。<BR><BR> 
+　　1、　　减慢攻击<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX% 减慢攻击 持续 Y.Y 秒<BR><BR> 
+　　界面英文：XX% Slower Attack for Y.Y Seconds<BR><BR> 
+　　主伤害数值：减慢百分比，即界面形式中百分号前的“XX”。<BR><BR> 
+　　减慢攻击加成形式：<BR><BR> 
+　　界面中文：+XX% 减慢攻击<BR><BR> 
+　　+XX% 减慢攻击 增加 +YY% 的持续时间<BR><BR> 
+　　界面英文：+XX% Slow Attack<BR><BR> 
+　　+XX% Slow Attack with +YY% Improved Duration<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 减慢攻击加成%) <BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 减慢攻击持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：缓慢抗性。<BR><BR> 
+　　伤害实施：主伤害数值影响被攻击方的攻击速度。<BR><BR> 
+　　2、　　减慢移动<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX% 减慢速度 持续 Y.Y 秒<BR><BR> 
+　　界面英文：XX% Slower Movement for Y.Y Seconds<BR><BR> 
+　　主伤害数值：减慢百分比，即界面形式中百分号前的“XX”。<BR><BR> 
+　　注意：<BR><BR> 
+　　“减慢移动”与“减慢全部速度”的基础伤害形式在中文界面上无法区分。<BR><BR> 
+　　减慢移动加成形式：<BR><BR> 
+　　界面中文：+XX% 减慢速度<BR><BR> 
+　　+XX% 减慢速度 增加 +YY% 的持续时间<BR><BR> 
+　　界面英文：+XX% Slow Movement<BR><BR> 
+　　+XX% Slow Movement with +YY% Improved Duration<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 减慢移动加成%) <BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 减慢移动持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：缓慢抗性。<BR><BR> 
+　　伤害实施：主伤害数值影响被攻击方的移动速度。<BR><BR> 
+　　3、　　减慢全部速度<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX% 减慢速度 持续 Y.Y 秒<BR><BR> 
+　　界面英文：XX% Slowed for Y.Y Seconds<BR><BR> 
+　　主伤害数值：减慢百分比，即界面形式中百分号前的“XX”。<BR><BR> 
+　　注意：<BR><BR> 
+　　“减慢全部速度”与“减慢移动”的基础伤害形式在中文界面上无法区分。<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间<BR><BR> 
+　　被攻击方有效抗性：缓慢抗性。<BR><BR> 
+　　伤害实施：主伤害数值影响被攻击方的攻击速度、移动速度和施法速度。<BR><BR> 
+　　4、　　降低战斗能力<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 降低战斗能力 持续 Y.Y 秒<BR><BR> 
+　　界面英文：XX Reduced Offensive Ability for Y.Y Seconds<BR><BR> 
+　　主伤害数值：战斗能力的降低值，即界面形式中的“XX”。<BR><BR> 
+　　降低战斗能力加成形式：<BR><BR> 
+　　界面中文：+XX% 战斗能力<BR><BR> 
+　　+XX% 战斗能力 增加 +YY% 的持续时间<BR><BR> 
+　　界面英文：+XX% Offensive Ability<BR><BR> 
+　　+XX% Offensive Ability with +YY% Improved Duration<BR><BR> 
+　　注意：<BR><BR> 
+　　无持续时间加成部分时，与增加自身战斗能力的加成在界面上无法区分。在原始游戏中，“降低战斗能力加成”基本不出现。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 降低战斗能力加成%) <BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 降低战斗能力持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：无。<BR><BR> 
+　　伤害实施：主伤害数值影响被攻击方的战斗能力。<BR><BR> 
+　　5、　　降低防御能力<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 降低防御能力 持续 Y.Y 秒<BR><BR> 
+　　界面英文：XX Reduced Defensive Ability for Y.Y Seconds<BR><BR> 
+　　主伤害数值：防御能力的降低值，即界面形式中的“XX”。<BR><BR> 
+　　降低防御能力加成形式：<BR><BR> 
+　　界面中文：+XX% 防御能力<BR><BR> 
+　　+XX% 防御能力 增加 +YY% 的持续时间<BR><BR> 
+　　界面英文：+XX% Defensive Ability<BR><BR> 
+　　+XX% Defensive Ability with +YY% Improved Duration<BR><BR> 
+　　注意：<BR><BR> 
+　　无持续时间加成部分时，与增加自身防御能力的加成在界面上无法区分。在原始游戏中，“降低防御能力加成”基本不出现。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 降低防御能力加成%) <BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 降低防御能力持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：无。<BR><BR> 
+　　伤害实施：主伤害数值影响被攻击方的防御能力。<BR><BR> 
+　　6、　　降低物理伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 降低物理伤害 持续 Y.Y 秒<BR><BR> 
+　　界面英文：XX Reduced Physical Damage for Y.Y Seconds<BR><BR> 
+　　主伤害数值：物理伤害的降低值，即界面形式中的“XX”。<BR><BR> 
+　　降低物理伤害加成<BR><BR> 
+　　界面中文：+XX% 减少物理伤害<BR><BR> 
+　　+XX% 减少物理伤害 增加 +YY% 的持续时间<BR><BR> 
+　　界面英文：+XX% Reduced Physical Damage<BR><BR> 
+　　+XX% Reduced Physical Damage with +YY% Improved Duration<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 降低物理伤害加成%) <BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 降低物理伤害持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：无。<BR><BR> 
+　　伤害实施：主伤害数值降低其后被攻击方的伤害输出。可影响的伤害种类为：物理伤害，转换穿刺伤害。<BR><BR> 
+　　7、　　降低护甲<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 降低护甲 持续 Y.Y 秒<BR><BR> 
+　　界面英文：XX Reduced Armor for Y.Y Seconds<BR><BR> 
+　　主伤害数值：护甲的降低值，即界面形式中的“XX”。<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间<BR><BR> 
+　　被攻击方有效抗性：无。<BR><BR> 
+　　伤害实施：主伤害数值影响被攻击方的护甲值。被攻击方的所有部位的护甲值均会受到相同的影响。<BR><BR> 
+　　8、　　降低全部伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 降低伤害 持续 Y.Y 秒<BR><BR> 
+　　界面英文：XX Reduced Damage for Y.Y Seconds<BR><BR> 
+　　主伤害数值：伤害的降低值，即界面形式中的“XX”。<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间<BR><BR> 
+　　注意：<BR><BR> 
+　　上述第一式中，等号右侧的“降低全部伤害”是指攻击方在本次攻击发起前所受到的、来自敌方的“降低全部伤害”伤害，并且攻击方在发动攻击时，仍处于该伤害的持续时间之内。这与本次攻击中发动的“降低全部伤害”伤害不是一回事。<BR><BR> 
+　　被攻击方有效抗性：无。<BR><BR> 
+　　伤害实施：<BR><BR> 
+　　主伤害数值降低其后被攻击方的伤害输出。被攻击方除“额外伤害”和“特定种族伤害”之外的所有主动型伤害的伤害输出均受其影响。<BR><BR> 
+　　9、　　百分比降低全部伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX% 降低伤害 持续 Y.Y 秒<BR><BR> 
+　　界面英文：XX% Reduced Damage for Y.Y Seconds<BR><BR> 
+　　主伤害数值：伤害降低的百分比，即界面形式中百分号前的“XX”。<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间<BR><BR> 
+　　注意：<BR><BR> 
+　　上述第一式中，等号右侧的“百分比降低全部伤害”是指攻击方在本次攻击发起前所受到的、来自敌方的“百分比降低全部伤害”伤害，并且攻击方在发动攻击时，仍处于该伤害的持续时间之内。这与本次攻击中发动的“百分比降低全部伤害”伤害不是一回事。<BR><BR> 
+　　被攻击方有效抗性：无。<BR><BR> 
+　　伤害实施：<BR><BR> 
+　　主伤害数值降低其后被攻击方的伤害输出。被攻击方除“额外伤害”和“特定种族伤害”之外的所有主动型伤害的伤害输出均受其影响。<BR><BR> 
+　　10、　　降低全部抗性<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 降低抗性 持续 Y.Y 秒<BR><BR> 
+　　界面英文：XX Reduced Resistance for Y.Y Seconds<BR><BR> 
+　　主伤害数值：抗性的降低值，即界面形式中的“XX”。<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间<BR><BR> 
+　　被攻击方有效抗性：无。<BR><BR> 
+　　伤害实施：主伤害数值影响被攻击方的抗性。可影响除状态抗性之外的所有抗性。<BR><BR> 
+　　11、　　百分比降低全部抗性<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX% 降低抗性 持续 Y.Y 秒<BR><BR> 
+　　界面英文：XX% Reduced Resistance for Y.Y Seconds<BR><BR> 
+　　主伤害数值：抗性降低的百分比，即界面形式中百分号前的“XX”。<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间<BR><BR> 
+　　被攻击方有效抗性：无。<BR><BR> 
+　　伤害实施：主伤害数值影响被攻击方的抗性。可影响除状态抗性之外的所有抗性。<BR><BR> 
+　　12、　　百分比攻击失误<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX% 机率发动攻击 持续 Y.Y 秒<BR><BR> 
+　　界面英文：XX% Chance to Fumble attacks for Y.Y Seconds<BR><BR> 
+　　主伤害数值：攻击失误的百分比，即界面形式中百分号前的“XX”。<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间<BR><BR> 
+　　被攻击方有效抗性：无。<BR><BR> 
+　　伤害实施：<BR><BR> 
+　　在此后的持续时间内，导致被攻击方所发动的所有近战攻击有一定几率失误，所有投射攻击（包括远程攻击和投射类技能攻击）有一定几率偏离目标（与目标中心偏离一定角度）。主伤害数值即这个失误率。对于近战攻击，攻击失误不算做攻击失败，因此仍然会引发反击或反弹。近战攻击失误的判定在躲避检定阶段，一旦近战攻击失误，则不会受到任何伤害；而对于远程或投射攻击，一旦投射偏离目标（没有射中），则算做攻击失败，不会引发反弹。不过，即使在偏离目标的情况下，主动凑到投射物上、或者距离投射发起者太近，或者处于投射物爆炸的有效范围内，还是会被射中和受到伤害的，因此主伤害数值并不表示“不被对方射中”的几率。<BR><BR> 
+　　13、　　百分比投射失误<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX% 机率降低准确率 持续 Y.Y 秒<BR><BR> 
+　　界面英文：XX% Chance of Impaired Aim for Y.Y Seconds<BR><BR> 
+　　主伤害数值：投射失误的百分比，即界面形式中百分号前的“XX”。<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间<BR><BR> 
+　　被攻击方有效抗性：无。<BR><BR> 
+　　伤害实施：该伤害是“百分比攻击失误”的简化版，只对远程攻击和投射攻击有效，效果与“百分比攻击失误”相同。 <!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="第三章%20伤害详解03.htm">上一页</a> <a href="第三章%20伤害详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第三章%20伤害详解05.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

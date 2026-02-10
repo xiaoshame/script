@@ -1,0 +1,203 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>范例1：基本的导览与物件设置</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南001.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="泰坦之旅游戏模组制作指南003.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">范例1：基本的导览与物件设置</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　范例1：基本的导览与物件设置 <BR><BR> 
+　　第一个范例就是要教你如何制作一个可以在游戏中使用的平面区域(level)。在这里我们不打算使用很复杂的功能，我们只会设计一场小战役来跟几只怪物对打。 <BR><BR> 
+　　1.0.1 在Editor中读取一个世界(World) <BR><BR> 
+　　开启Editor会弹出一个画面要你选择所要开启的世界。 <BR><BR> 
+　　1)在Mod name的下拉式选单中，选择Tutorial01。 <BR><BR> 
+　　2)点选”Maps”树状目录底下的”Tutorial-Basic_Navigation.wrl”。 <BR><BR> 
+　　3)按下OK。 <BR><BR> 
+　　1.1 Editor的导览 <BR><BR> 
+　　1.1.2 布置模式(Layout Mode)的导览 <BR><BR> 
+　　当世界被读取之后，你首先会来到Layout Mode的画面。在这里你可以看到整个世界，以及所有的平面区域。一个平面区域(level)代表整个世界的一小块区域，它可以像拼盘一样的移动。将整个世界分割成许多平面区域的好处就是可以让游戏运行的更流畅，我们不需要一次就将整个世界的资料都载入到记忆体中，我们只载入目前所需要用到的平面区域。 <BR><BR> 
+　　假如你的世界很大，你可能就要移动Layout Mode中的摄影机以得到较好的视野：<BR><BR> 
+　　1)按住滑鼠右键并移动滑鼠可以改变摄影机在世界中的位置；<BR><BR> 
+　　2)按住滑鼠中键(或滚轮键)并移动滑鼠可以让摄影机绕着世界转；3)转动滑鼠滚轮可以放大或缩小。 <BR><BR> 
+　　1.1.3 编辑一个平面区域 <BR><BR> 
+　　１）选择Layout mode画面中的那个正方体，你会发现它变亮并且出现它的名字。Layout mode用来布置平面区域时，可以看出平面区域之间是否有突兀或是别扭的接合处。要编辑平面区域，就要进入编辑模式(Editor Mode)。有两种方法可以进入Editor Mode： <BR><BR> 
+　　方法一：在Layout Mode中 <BR><BR> 
+　　a)先选择你所要编辑的平面区域。 <BR><BR> 
+　　b)接着按下面那个图示即可进入Ediotr Mode。 <BR><BR> 
+　　方法二：在Editor Mode中 <BR><BR> 
+　　a)选择画面下方的Editor Mode标签。 <BR><BR> 
+　　b)在Editor Mode的右上角有一个下拉视窗，选择你所要编辑的平面区域。 <BR><BR> 
+　　1.1.4 编辑模式(Editor Mode)的导览 <BR><BR> 
+　　现在你可以看到长满草的地面，就像下面的那张图。这个平面区域就是我们要编辑的，你可以移动摄影机调整视野。 <BR><BR> 
+　　1) 按住滑鼠右键并移动滑鼠可以改变摄影机的位置。 <BR><BR> 
+　　2) 按住滑鼠中键(或滚轮键)并移动滑鼠向左或向右可以让摄影机对着画面中心旋转。 <BR><BR> 
+　　3) 转动滑鼠滚轮可以放大或缩小。 <BR><BR> 
+　　1.2 物件的设置 <BR><BR> 
+　　1.2.1 物件设置的例子 <BR><BR> 
+　　现在我们要在平面区域上设置一些物件，于平面区域编辑视窗(Level Edit Pane)中，先选择物件的类型，接着选择所要设置的地点。<BR><BR> 
+　　我们先来设置一些satyr (怪物名称)： <BR><BR> 
+　　1)选择物件设置工具(Object Placement Tool)。 <BR><BR> 
+　　2)在左边的目录视窗(directory pane)中，选择 records -&gt; creature -&gt; monster -&gt; satyr -&gt; am_peltast02。 <BR><BR> 
+　　3)接着滑鼠点按平面区域编辑视窗(Level Edit Pane)中的地面，即可将satyr设置于此。 <BR><BR> 
+　　4)再设置另一个satyr(依照步骤2与步骤3的方式)。 <BR><BR> 
+　　1.2.2 删除物件 <BR><BR> 
+　　删除物件相当简单： <BR><BR> 
+　　1)选择一个物件。 <BR><BR> 
+　　2)按下键盘的Delete键。 <BR><BR> 
+　　1.3 物件的移动 <BR><BR> 
+　　那我们怎么要怎么移动物件呢？有三个移动物件的方法：横向移动、垂直移动、旋转。 <BR><BR> 
+　　1.3.1 横向移动物件 <BR><BR> 
+　　横向移动物件到别处。 <BR><BR> 
+　　1)在物件上点按滑鼠左键，在物件的底部会出现移动指标。 <BR><BR> 
+　　2)将滑鼠移到圈圈的最中间(打叉的地方)，你会发现滑鼠指标的图案变成四向指标。 <BR><BR> 
+　　3)当上面这个四向指标出现后，你就可以按下滑鼠左键并拖曳这个物件。 <BR><BR> 
+　　1.3.2 垂直移动物件 <BR><BR> 
+　　垂直移动可以改变物件距离地面的高度。 <BR><BR> 
+　　1)选择一个物件。 <BR><BR> 
+　　2)将滑鼠移到移动指标的内部圆圈边线上，你可以发现滑鼠指标图案变成上下指标。 <BR><BR> 
+　　3)此时按下滑鼠左键并向上或向下移动，即可改变物件距离地面的高度。 <BR><BR> 
+　　1.3.3 旋转物件 <BR><BR> 
+　　旋转物件可以改变物件的方面。 <BR><BR> 
+　　1)选择一个物件。 <BR><BR> 
+　　2)将滑鼠移到移动指标的外部圆圈边线上，你可以发现滑鼠指标图案变成绕圈指标。 <BR><BR> 
+　　3)此时按下滑鼠左键并左右移动，即可改变物件的方向。 <BR><BR> 
+　　1.4 出生点 <BR><BR> 
+　　现在我们有敌人了，但是我们的主角要出现在哪里呢？出生点(spawn point)就是主角出现的地方。当游戏开始后，主角就会出现在出生点，请不要把出生点跟重生点(respawn point)搞混了。重生点是主角死亡后出现的地方，我们会在范例7详细说明重生点。如果没有设置重生点，则主角死亡后会出现在出生点。你至少要在世界中设立一个出生点，否则你的主角永远不会出现。 <BR><BR> 
+　　1.4.1 设置出生点 <BR><BR> 
+　　1)在目录视窗(directory pane)中选择 records -&gt; controls. <BR><BR> 
+　　2)选择spawnplayer物件。spawnplayer物件的使用方法跟其它物件一样。 <BR><BR> 
+　　3)接着滑鼠点按平面区域编辑视窗(Level Edit Pane)中的地面，即可将出生点设置于此。 <BR><BR> 
+　　1.5 完成你的世界与平面区域 <BR><BR> 
+　　我们已经设置好所需要的物件了，让我们更进一步地研究这个游戏。有一些事情我们要先去做：在Editor中，必须建立路网(pathing meshes)和地图(maps)。路网(pathing meshes)决定了哪些地方是主角与怪物们可以走的，哪些地方是不可以走的；地图(maps)在这里是指游戏中玩家看到的小地图。这两个东西都是在Layout Mode中设定。每当你编辑或移动了地图上的某个物件，你就必须重新建立路网和地图。 <BR><BR> 
+　　1.5.1 建立路网 <BR><BR> 
+　　1)点按视窗下方的Layout Mode标签进入Layout Mode。 <BR><BR> 
+　　2)在选单中点按Build -&gt; Rebuild All Pathing。接着会出现一个进度视窗告诉你处理进度。 <BR><BR> 
+　　3)点按OK关闭Level Progress视窗。 <BR><BR> 
+　　1.5.2 建立地图 <BR><BR> 
+　　1)在Layout Mode的选单中点按Build -&gt; Rebuild All Maps。接着会出现一个进度视窗告诉你处理进度。 <BR><BR> 
+　　1.5.3 储存之前的修改 <BR><BR> 
+　　1)点按选单中的File -&gt; Save All，一但储存完成后，我们在Editor中的工作就算完成了。但是还有一些工作要去完成。 <BR><BR> 
+　　1.6 建立一个map <BR><BR> 
+　　接下来的工作我们要使用Art Manager。大部分的情况下，我们会用Art Manager将原始来源资料(.wrl、.jpg)转换成Titan Quest所使用的档案格式(.tex、.map)Titan Quest的游戏环境资讯是从.map档案中读取的。要制作map，设计者必须使用一个.wrl档与数个.lvl档，将它们转换成一个Map。为了避免现在就接触到这个复杂的东西，我们已经准备好了一个.map档，里面包含了.wrl与.lvl。 <BR><BR> 
+　　1.6.1 建立一个.map的例子 <BR><BR> 
+　　先找出.map的所在处。 <BR><BR> 
+　　1) 打开Art Manager，点按选单中的Mod -&gt; Select -&gt; Tutorial01。 <BR><BR> 
+　　2)在目录视窗(Directory Pane)中选择Assets标签，展开”Maps”资料夹并点选” Tutorial-Basic_Navigation.map”。 <BR><BR> 
+　　3)点按选单中的Build -&gt; Build，你会看到营幕下方的状态视窗(Status Pane)有一些资讯，当Art Manager完成.map档的处理后，它会告诉你处理所花费的时间。 ]<BR><BR> 
+　　1.7 开始玩你的地图 <BR><BR> 
+　　现在，我们的地图已经设定好了，让我们进入Titan Quest中玩玩看。 <BR><BR> 
+　　1.7.1 玩自订的地图 <BR><BR> 
+　　1)开启Titan Quest游戏。 <BR><BR> 
+　　2)在主选单中，选择开始自订任务(Play Custom Quest)。 <BR><BR> 
+　　3)选择“Tutorial01 ~ tutorial_basic-navigation.map”。 <BR><BR> 
+　　4)按下开始(Start)。 <BR><BR> 
+　　注：如果你在最初设定目录时，Build directory是设在自订的目录，那你就必须将建好的自订地图资料夹全部复制到C:\Documents and Settings\{你的帐户名称}\My Documents\My Games\Titan Quest\custommaps才可在自订任务中看到你的地图。 <!--/HTMLBUILERPART0--></font></DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南001.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="泰坦之旅游戏模组制作指南003.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

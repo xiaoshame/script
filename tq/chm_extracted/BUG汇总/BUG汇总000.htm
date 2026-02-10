@@ -1,0 +1,173 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>整个游戏</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"> <a href="BUG汇总.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="BUG汇总001.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">整个游戏</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table9">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<TABLE width=100% border=1 id="table10" bordercolor="#000000">
+  <TBODY>
+  <TR>
+    <TD width=120></TD>
+  <TR>
+    <TH>Bug Code</TH>
+    <TH>说&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 明</TH></TR>
+  <TR>
+    <TD>BUG_ALL_001(F)</TD>
+    <TD>修正了若干数据库本身的BUG。这些BUG修正与否在游戏中的表现是完全一样的，例如某个陷阱佩带了一枚不存在的戒指，或者某个怪物有0%的几率使用一种不存在的技能之类。修正这些BUG的主要目的是为了让数据库不至于
+	显得过于混乱。但对这类BUG也仅仅是在遇到的时候顺手修正，因此仍会剩余很多，甚至可能仅修正了一小部分。</TD></TR>
+  <TR>
+    <TD>BUG_ALL_002(F)</TD>
+    <TD>修正了若干对游戏影响极小的BUG，例如某NPC的发型错误，某只鸟扇动翅膀的音效错误，或者一些对物品掉率有微小影响的链接错误之类。由于这类BUG数量较多，且基本对游戏无实质影响、或对游戏的影响很难被识别，故不再单独罗列。</TD></TR>
+  <TR>
+    <TD>BUG_ALL_003(F)</TD>
+    <TD>由于“降低冷却时间加成”与“降低法力消耗加成”其含义较为费解，界面上与“降低冷却时间”和“降低法力消耗”无法分辨，而且在游戏中也很少使用，因此统一把游戏中涉及到的“降低冷却时间加成”与“降低法力消耗加成”修改为“降低冷却时间”和“降低法力消耗”（数值不变）。共修改以下几处：<BR>&nbsp;&nbsp;&nbsp; 1、三个难度下遗物“金羊毛”（Golden 
+      Fleece）的属性。<BR>&nbsp;&nbsp;&nbsp; 2、卷轴“神圣的大法师的暴怒”（Divine Scroll of the Archmage's 
+      Fury）中的“-25% 冷却时间”（-25% Recharge）和“-50% 法力消耗”（-50% Energy 
+      Cost）。<BR>&nbsp;&nbsp;&nbsp; 3、所有“控制神坛”（Shrine of Mastery）的“-35% 法力消耗”（-35% Energy 
+      Cost）。注意：奥林匹斯山“堤丰 ~ 神的祸根”（Typhon ~ Bane of the 
+      Gods）周围的“控制神坛”除外（那个“控制神坛”不提供法力消耗降低）。</TD></TR>
+  <TR>
+    <TD>BUG_ALL_004(F)</TD>
+    <TD>由于“抗性加成”及“持续时间降低加成”比较难以理解，界面形式难以分辨，并且极少用到，故统一将之修正为“抗性”和“持续时间降低”（数值不变）。共涉及三件装备：<BR>&nbsp;&nbsp;&nbsp; 1、唯一
+	战系护腿“拉美西斯胫甲”（Ramses' 
+      Greaves）。原属性为“15.0% 机率发动 +50% 火焰抗性”（15.0% Chance of +50% Fire 
+      Resistance），其含义为：如果原有火焰抗性是20%，则佩带该装备后，每次受到攻击时有15%的几率火焰抗性会达到20% * (1 + 50%) 
+	= 30%。现改为“15.0% 机率发动 50% 火焰抗性”（15.0% Chance of 50% Fire Resistance），含义为：如果原有火焰抗性是20%，则佩带该装备后，每次受到攻击时有15%的几率火焰抗性会达到20% + 50% = 
+      70%。<BR>&nbsp;&nbsp;&nbsp; 2、唯一战系护腿“黑暗爬行者”（Murk Crawlers）。原属性为“+50% 减少中毒持续时间”（+50% Poison 
+      Duration Reduction）。其含义为：如果原有“20% 减少毒素伤害持续时间”，则佩带该装备后将变成20% * (1 + 50%) = 
+      30%。现修正为“50% 减少毒素伤害持续时间”（50% Reduction in Poison Duration），其含义为：如果原有“20% 
+      减少毒素伤害持续时间”，则佩带该装备后将变成 20% + 50% = 70%。<BR>&nbsp;&nbsp;&nbsp; 3、唯一法系头盔“阴影之冠”（Umbral 
+      Crown）。原属性为“+15% 活力伤害抗性”（+15% Vitality Damage 
+      Resistance），其含义为：如果你有活力抗性是20%，则佩带该装备后，活力抗性将达到20% * (1 + 15%) = 
+      23%。现修正为“15% 活力伤害抵抗”（15% Vitality Damage 
+      Resistance），其含义为：如果原有活力抗性是20%，则佩带该装备后，活力抗性将达到20% + 15% = 35%。</TD></TR>
+  <TR>
+    <TD>BUG_ALL_005(F)</TD>
+    <TD>持续毒素伤害加成与瞬间毒素伤害加成在界面上无法区分。由于瞬间毒素伤害在游戏中极少使用，故将瞬间毒素伤害加成统一修改为持续毒素伤害加成（数值不变）。<BR>被修改的内容包括：<BR>&nbsp;&nbsp;&nbsp; 三个难度下
+	遗物“神农的黑色药”（Shen-Nong's 
+      Dark Medicine）的合成奖励之一；<BR>&nbsp;&nbsp;&nbsp; 套装“格拜尔陶蒂”（Gebel 
+      Tjauti）的套装奖励；<BR>&nbsp;&nbsp;&nbsp; 三个难度下的战系特绿头盔“伊斯玛丽斯的头盔”（Ismene's Helm）；<BR>&nbsp;&nbsp;&nbsp; 神器“伊希斯的结”（Knot of 
+      Isis）；<BR>&nbsp;&nbsp;&nbsp; 神器“血腥之毒蛇”（Crimson Viper）；<BR>&nbsp;&nbsp;&nbsp; 神器“祖母绿之翎”（Emerald 
+      Quill）；<BR>&nbsp;&nbsp;&nbsp; 神器“亡魂的经文匣”（Phylactery of Shadows）；<BR>&nbsp;&nbsp;&nbsp; 神器“掠夺者阴影”（Raven's 
+      Shadow）；<BR>&nbsp;&nbsp;&nbsp; 神器“孙悟空的火眼金睛”（Golden Eye of Sun Wukong）；<BR>&nbsp;&nbsp;&nbsp; 神器“黑豹的雕像”（Effigy of 
+      the Panther）；<BR>&nbsp;&nbsp;&nbsp; 神器“毒蛇之歌”（Song of the Serpent）；<BR>&nbsp;&nbsp;&nbsp; 战斗神坛（Battle 
+      Marker）；<BR>注：游戏中所有可被玩家拥有的瞬间毒素伤害仅在以下几处出现：<BR>&nbsp;&nbsp;&nbsp; 唯一矛“亵渎者”（Defiler）；<BR>&nbsp;&nbsp;&nbsp; 唯一剑“伏羲的尾巴”（Fu 
+      Xi's Tail）；<BR>&nbsp;&nbsp;&nbsp; 唯一剑“凌丹”（Lindane）的附带技能；<BR>&nbsp;&nbsp;&nbsp; 
+	自然专精的技能“瘟疫”（Plague）</TD></TR>
+</TBODY></TABLE>
+</DIV></td>
+</tr>
+</table>
+<p align="center"><img src="N01.GIF" width="600" height="17" align="center"><br>
+</DIV></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"> <a href="BUG汇总.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="BUG汇总001.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

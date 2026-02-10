@@ -1,0 +1,307 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>第三节 主动型瞬间杀伤伤害</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="第三章%20伤害详解01.htm">上一页</a> <a href="第三章%20伤害详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第三章%20伤害详解03.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">第三节 主动型瞬间杀伤伤害</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　唯一作用就是造成敌方生命值降低。本类伤害均无次伤害数值。<BR><BR> 
+　　本类伤害共12种。对应伤害加成8种。<BR><BR> 
+　　1、　　物理伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 伤害<BR><BR> 
+　　界面英文：XX Damage<BR><BR> 
+　　主伤害数值：伤害点数，即界面形式中的“XX”。<BR><BR> 
+　　物理加成形式：<BR><BR> 
+　　界面中文：+XX% 伤害<BR><BR> 
+　　界面英文：+XX% Damage<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　1)　　武器本身的基础伤害：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 物理加成% + 所有伤害加成%) * (1 + 力量 / 500) + 力量 * 0.04<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低物理伤害 - 降低全部伤害<BR><BR> 
+　　2)　　其它来源的基础伤害：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 物理加成% + 所有伤害加成%)<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低物理伤害 - 降低全部伤害<BR><BR> 
+　　简单来说，就是只有武器本身的基础物理伤害能够被力量所加成。所谓“武器本身的基础物理伤害”，不包括武器上的镶嵌物的基础物理伤害（武器上若带有某个包含基础物理伤害的词缀，则该词缀中的基础物理伤害部分无效，界面上也不显示该项基础物理伤害，例如后缀“灭绝之”的“24 伤害”无效）。<BR><BR> 
+　　注意：<BR><BR> 
+　　当武器上带有穿刺比时，该武器本身所带的基础物理伤害的伤害输出不按上式计算。具体计算见3。<BR><BR> 
+　　注意：<BR><BR> 
+　　盾牌属于武器，因此盾牌上自带的物理伤害是能够被力量加成的。<BR><BR> 
+　　被攻击方有效抗性：物理抗性。<BR><BR> 
+　　伤害实施：主伤害数值即为被攻击方的生命值扣减数值。<BR><BR> 
+　　2、　　穿刺伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 穿刺伤害<BR><BR> 
+　　界面英文：XX Piercing Damage<BR><BR> 
+　　主伤害数值：伤害点数，即界面形式中的“XX”。<BR><BR> 
+　　穿刺加成形式：<BR><BR> 
+　　界面中文：+XX% 穿刺伤害<BR><BR> 
+　　界面英文：+XX% Pierce Damage<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 穿刺加成% + 所有伤害加成%)<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　被攻击方有效抗性：穿刺抗性。<BR><BR> 
+　　伤害实施：主伤害数值即为被攻击方的生命值扣减数值。<BR><BR> 
+　　3、　　转换穿刺伤害（仅存在于带物理伤害的武器上）<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX% 穿刺<BR><BR> 
+　　界面英文：XX% Piercing<BR><BR> 
+　　主伤害数值：见下。<BR><BR> 
+　　穿刺转换加成形式：<BR><BR> 
+　　界面中文：+XX% 穿刺<BR><BR> 
+　　界面英文：+XX% Piercing<BR><BR> 
+　　转换穿刺伤害是唯一一个在基础伤害中不显含主伤害数值的伤害。它界面中的那个百分比被称为穿刺比，其作用是将所在的武器上的物理伤害转化一部分成为穿刺伤害。穿刺比只能存在于武器上，位于其它地方的均无效。但穿刺转换加成则可以位于任何位置，包括技能中。穿刺比只能转换武器本身所带的物理伤害，对于武器上的镶嵌物中所含的物理伤害不产生影响。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　对于带有穿刺比的武器，其本身所带的基础物理伤害的伤害输出计算也与其它物理伤害不同：<BR><BR> 
+　　令：A = 武器基础伤害主伤害数值 * (1 + 物理加成% + 所有伤害加成%) * (1 + 力量 / 500) + 力量 * 0.04<BR><BR> 
+　　B = A * (1 -穿刺比% * (1 + 穿刺转换加成%))，若B &lt; 0，则令B = 0。<BR><BR> 
+　　C = A * 穿刺比% * (1+ 穿刺转换加成%)，若C &gt; A，则令C = A。<BR><BR> 
+　　1)　　物理伤害部分：<BR><BR> 
+　　主伤害数值 = B * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低物理伤害 - 降低全部伤害<BR><BR> 
+　　2)　　穿刺伤害部分：<BR><BR> 
+　　令：D = C * (1 + 穿刺加成% + 所有伤害加成%) * (1 + 敏捷 / 1000) + 敏捷 * 0.03<BR><BR> 
+　　主伤害数值 = D * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低物理伤害 - 降低全部伤害<BR><BR> 
+　　从上述公式可以看出，在武器上的基础物理伤害经过相应的伤害加成和力量加成之后，被按照穿刺比和穿刺转换加成分成两部分，其中物理伤害的部分继续进行剩余的运算后输出（除了被中途分掉一部分外，与不含穿刺比的武器上的物理伤害的计算没什么区别）；而被分出来的穿刺部分，居然再次被当作了基础伤害，被相应的伤害加成与敏捷再次加成。因此，对于穿刺部分，力量、敏捷、物理加成、穿刺加成均有作用，而“所有伤害加成”甚至被使用了两遍！<BR><BR> 
+　　注意：<BR><BR> 
+　　所谓的“敏捷可以加成穿刺伤害”是一种很含混的说法，实际上敏捷只能够加成“转换穿刺伤害”，对于标准的穿刺伤害，敏捷是没有加成作用的（不论来源于何处，甚至来源于武器也不行）。<BR><BR> 
+　　在伤害被分成两部分之后，就变成了两个完全独立的伤害，从此相互之间再无关系。其中分出的物理伤害部分与其它标准的物理伤害没有任何区别，而穿刺伤害部分却并非真正的穿刺伤害。首先，在伤害输出公式中可以看到，即使对于穿刺部分，当前处于持续时间之内的“降低物理伤害”也是生效的（在纯粹的穿刺伤害公式中无此项）；其次，暴击检定对该伤害有效（见第二章中关于暴击检定的部分）。也就是说，其实这部分伤害还带有某些物理伤害的特征。不过，在经过暴击检定的步骤之后，该伤害就变成了纯粹的穿刺伤害，再也没有任何物理伤害的特征了，例如护甲对其不起作用，而被攻击方对于该伤害的有效抗性也是穿刺抗性。<BR><BR> 
+　　4、　　冰冷伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 冰冷伤害<BR><BR> 
+　　XX 基本冰冷伤害（注：仅存在于法杖上）<BR><BR> 
+　　界面英文：XX Cold Damage<BR><BR> 
+　　XX Base Cold Damage（注：仅存在于法杖上）<BR><BR> 
+　　主伤害数值：伤害点数，即界面形式中的“XX”。<BR><BR> 
+　　冰冷加成形式：<BR><BR> 
+　　界面中文：+XX% 冰冷伤害<BR><BR> 
+　　界面英文：+XX% Cold Damage<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 冰冷加成% + 所有伤害加成%) * (1 + 智力 / 650) + 智力 * 0.025<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　被攻击方有效抗性：冰冷抗性。<BR><BR> 
+　　伤害实施：主伤害数值即为被攻击方的生命值扣减数值。<BR><BR> 
+　　5、　　火焰伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 火焰伤害<BR><BR> 
+　　XX 基本火焰伤害（注：仅存在于法杖上）<BR><BR> 
+　　界面英文：XX Fire Damage<BR><BR> 
+　　XX Base Fire Damage（注：仅存在于法杖上）<BR><BR> 
+　　主伤害数值：伤害点数，即界面形式中的“XX”。<BR><BR> 
+　　火焰加成形式：<BR><BR> 
+　　界面中文：+XX% 火焰伤害<BR><BR> 
+　　界面英文：+XX% Fire Damage<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 火焰加成% + 所有伤害加成%) * (1 + 智力 / 650) + 智力 * 0.025<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　被攻击方有效抗性：火焰抗性。<BR><BR> 
+　　伤害实施：主伤害数值即为被攻击方的生命值扣减数值。<BR><BR> 
+　　6、　　闪电伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 闪电伤害<BR><BR> 
+　　XX 基本闪电伤害（注：仅存在于法杖上）<BR><BR> 
+　　界面英文：XX Lightning Damage<BR><BR> 
+　　XX Base Lightning Damage（注：仅存在于法杖上）<BR><BR> 
+　　主伤害数值：伤害点数，即界面形式中的“XX”。<BR><BR> 
+　　闪电加成形式：<BR><BR> 
+　　界面中文：+XX% 闪电伤害<BR><BR> 
+　　界面英文：+XX% Lightning Damage<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 闪电加成% + 所有伤害加成%) * (1 + 智力 / 650) + 智力 * 0.025<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　被攻击方有效抗性：闪电抗性。<BR><BR> 
+　　伤害实施：主伤害数值即为被攻击方的生命值扣减数值。<BR><BR> 
+　　7、　　瞬间毒素伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 毒素伤害<BR><BR> 
+　　XX 基本毒素伤害（注：仅存在于法杖上。在原始游戏中不存在）<BR><BR> 
+　　界面英文：XX Poison Damage<BR><BR> 
+　　XX Base Poison Damage（注：仅存在于法杖上。在原始游戏中不存在）<BR><BR> 
+　　主伤害数值：伤害点数，即界面形式中的“XX”。<BR><BR> 
+　　瞬间性毒素加成形式：<BR><BR> 
+　　界面中文：+XX% 毒素伤害<BR><BR> 
+　　界面英文：+XX% Poison Damage<BR><BR> 
+　　注意：<BR><BR> 
+　　该加成与无持续时间加成的“持续性毒素加成”在界面上无法区分，但这两者完全不同，“持续性毒素加成”对“瞬间毒素伤害”无效，而“瞬间性毒素加成”也对“持续毒素伤害”无效。在原始游戏中，“瞬间性毒素加成”基本不出现。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 瞬间性毒素加成% + 所有伤害加成%)<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　被攻击方有效抗性：毒素抗性。<BR><BR> 
+　　伤害实施：主伤害数值即为被攻击方的生命值扣减数值。<BR><BR> 
+　　8、　　活力伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 活力伤害<BR><BR> 
+　　XX 基本活力伤害（注：仅存在于法杖上。在原始游戏中不存在）<BR><BR> 
+　　界面英文：XX Vitality Damage<BR><BR> 
+　　XX Base Vitality Damage（注：仅存在于法杖上。在原始游戏中不存在）<BR><BR> 
+　　主伤害数值：伤害点数，即界面形式中的“XX”。<BR><BR> 
+　　活力加成形式：<BR><BR> 
+　　界面中文：+XX% 活力伤害<BR><BR> 
+　　界面英文：+XX% Vitality Damage<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 活力加成% + 所有伤害加成%) * (1 + 智力 / 650) + 智力 * 0.025<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　被攻击方有效抗性：活力抗性。<BR><BR> 
+　　伤害实施：主伤害数值即为被攻击方的生命值扣减数值。<BR><BR> 
+　　9、　　元素伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 元素伤害<BR><BR> 
+　　界面英文：XX Elemental Damage<BR><BR> 
+　　严格来说，这根本不是一种特定的伤害形式，仅仅是界面上为了节约空间而采取的简写。一行“XX 元素伤害”相当于分别写“XX/3 冰冷伤害”、“XX/3 火焰伤害”、“XX/3 闪电伤害”三行，而且也确实是三个完全独立的基础伤害。不过，这种简写会带来一个副作用，那就是被简写过后的三个基础伤害，在计算伤害输出的时候，不能被智力加成（即在冰冷伤害、火焰伤害、闪电伤害的伤害输出公式中，“智力”用零代入）。怀疑这是一个BUG。这三个基础伤害在其它方面与正常的冰冷伤害、火焰伤害、闪电伤害无任何区别。<BR><BR> 
+　　正由于计算方法的略有差异，因此“元素伤害”也被计入了68种基本伤害之中。<BR><BR> 
+　　元素加成形式：<BR><BR> 
+　　界面中文：+XX% 元素伤害<BR><BR> 
+　　界面英文：+XX% Elemental Damage<BR><BR> 
+　　这个就完全是简写了，一行“+XX% 元素伤害”与分别写“+XX% 冰冷伤害”、“+XX% 火焰伤害”、“+XX% 闪电伤害”三行没有任何区别。因此，元素伤害加成并没有算做49种伤害加成之一。<BR><BR> 
+　　10、　　百分比损血伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX% 减少敌人生命值<BR><BR> 
+　　界面英文：XX% Reduction to Enemy's Health<BR><BR> 
+　　主伤害数值：损血百分比，即界面形式中，百分号之前的那个“XX”。<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　被攻击方有效抗性：活力抗性、百分比损血抗性。<BR><BR> 
+　　该伤害是涉及到两种抗性的特殊伤害之一。其在伤害修正阶段的计算，不适用第二章第九节中的伤害修正公式，而是采用下述公式：<BR><BR> 
+　　主伤害数值 = 原主伤害数值 * (1 - 活力抗性%) * (1 - 百分比损血抗性%) * (1 - 百分比种族伤害降低%)<BR><BR> 
+　　伤害实施：被攻击方的生命值扣减数值 = 被攻击方的当前生命值 * 主伤害数值%。<BR><BR> 
+　　11、　　额外伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 额外伤害<BR><BR> 
+　　界面英文：XX Bonus Damage<BR><BR> 
+　　主伤害数值：伤害点数，即界面形式中的“XX”。<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值<BR><BR> 
+　　被攻击方有效抗性：物理抗性。<BR><BR> 
+　　伤害实施：主伤害数值即为被攻击方的生命值扣减数值。<BR><BR> 
+　　12、　　特定种族伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：+XX 伤害对 AA<BR><BR> 
+　　界面英文：+XX Damage to AA<BR><BR> 
+　　主伤害数值：伤害点数，即界面形式中的“XX”。<BR><BR> 
+　　注意：<BR><BR> 
+　　该基础伤害只有当被攻击方属于特定种族时才可能被发动。<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值<BR><BR> 
+　　被攻击方有效抗性：无。<BR><BR> 
+　　伤害实施：主伤害数值即为被攻击方的生命值扣减数值。<BR><BR> 
+　　注：<BR><BR> 
+　　该类伤害与其它种类伤害的差别包括：发动的规律不同（见第一章第五节）、不受盾牌格挡作用的影响、不受被攻击方“百分比种族伤害降低”的影响（整个伤害修正步骤对其无效。见第二章第九节）。 <!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="第三章%20伤害详解01.htm">上一页</a> <a href="第三章%20伤害详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第三章%20伤害详解03.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

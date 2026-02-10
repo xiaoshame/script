@@ -1,0 +1,188 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>TQ解析心得之一：TQ文件体系（一）</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"> <a href="TQ解析心得.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="TQ解析心得001.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">TQ解析心得之一：TQ文件体系（一）</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->
+　　TQ及其资料片IT分别安装在两个不同目录里（以下分别称为“TQ主目录”和“IT主目录”）。两个主目录下分别放着各自的主运行文件和一些工具。<BR><BR> 
+　　对于TQ：<BR><BR> 
+　　主运行文件为：Titan Quest.exe<BR><BR> 
+　　主要辅助DLL：game.dll、engine.dll<BR><BR> 
+　　对于IT：<BR><BR> 
+　　主运行文件为：Tqit.exe<BR><BR> 
+　　主要辅助DLL：game.dll、engine.dll<BR><BR> 
+　　上述文件决定了TQ和IT的主要游戏特性，包括各种硬编码的游戏设定（比如各种伤害的计算方法）等。如果需要修改这些设定，需要对上述文件进行反向工程。许多不依赖游戏数据库的MOD（例如TQDefiler中集成的各种MOD）就是通过修改上述文件实现的。<BR><BR> 
+　　TQ主目录下的子目录有10个，其中：<BR><BR> 
+　　数据库目录一个：<BR><BR> 
+　　Database：只包含一个文件database.arz，存放TQ中所有游戏数据。<BR><BR> 
+　　资源目录三个：<BR><BR> 
+　　Audio：存放TQ中各种声音资源<BR><BR> 
+　　Text：存放TQ中各种文本资源，包括各种语言的版本，文件名分别是Text_&lt;语言简称&gt;.arc。汉化就是修改这里面的文件，用中文替换其中某种文字的版本（比如英文）。如果用汉化文件替换了Text_En.arc，那么当你在游戏的“语言选择”中选择“英文”的时候，就会显示中文，但假若你选择“意大利”文，则仍然会显示意大利文。<BR><BR> 
+　　Resources：存放TQ中的其它资源，包括各种字体、图片、3D模型、动画、效果、地图、任务，等等。<BR><BR> 
+　　辅助目录一个：<BR><BR> 
+　　Toolset：制作MOD的手册和MOD的教学示例，以及用于修改数据记录的模版（templates.arc）<BR><BR> 
+　　其它目录：<BR><BR> 
+　　EULA：版权声明<BR><BR> 
+　　Manual：游戏手册<BR><BR> 
+　　MilesRedist：不明用途<BR><BR> 
+　　Settings：游戏缺省设置。仅第一次运行TQ时，为了生成存放于用户存档目录下的游戏设置文件提供缺省值。游戏中真正使用的是游戏设置文件中的设置，而不是这里的。<BR><BR> 
+　　Videos：游戏片头动画。<BR><BR> 
+　　IT主目录下的子目录有9个，其中：<BR><BR> 
+　　数据库目录一个：<BR><BR> 
+　　Database：只包含一个文件database.arz，存放IT中所有新增的以及与TQ不同的游戏数据。<BR><BR> 
+　　资源目录一个：<BR><BR> 
+　　Resources：存放IT中各种与TQ不同的资源。其中文本资源也放在该目录下，而不是像TQ那样单独使用一个目录。Resources目录还有一个子目录：XPack，用于存放IT中新增的资源。<BR><BR> 
+　　辅助目录一个：<BR><BR> 
+　　Toolset：制作MOD的手册和MOD的教学示例，以及用于修改数据文件database.arz的模版（templates.arc）。这个目录的内容被THQ错误地发布成了与TQ中同样的文件，因此实际上不能用来修改TQIT的数据记录。下面的附件提供了修正过的Templates.arc文件。下载后直接将后缀改成arc，并覆盖Toolset中同名的文件即可。<BR><BR> 
+　　Templates.rar (240.14 KB) [该链接无效，1楼底有附件]<BR><BR> 
+　　其它目录：<BR><BR> 
+　　与TQ其它各目录的用途类似。额外多出的Patch目录仅在安装后第一次运行时使用（实际上是TQ升级到1.30的升级补丁），此后即可删除（包括其中的文件）。<BR><BR> 
+　　TQ与IT的数据库目录和资源目录存放了所有游戏中用到的数据和资源。每个资源都使用一个独立的资源文件来存储，例如某种怪物空手行走的动画是一个资源文件，而它转身的动画又是另一个资源文件，因此，资源文件的数量是极其庞大的，为减少对硬盘资源的占用，游戏把这些资源文件用ARC格式压缩到几十个压缩文件之内，这就是在资源目录下所看到的各个ARC文件，例如Creatures.arc内压缩了所有与怪物相关的资源（包括各种3D模型、动画、贴图等）。游戏中自带一个用来压缩、解压ARC格式的工具：rchiveTool.exe（在TQ和IT的主目录下）。不过，这个工具是命令行的，用起来很不方便。如果只想浏览一下各个压缩包里的内容，或者仅仅需要解压缩的话（比如想把游戏里的某些音乐提取出来），附件里有一个很简单的工具（下载后直接把后缀改成exe即可）。如果需要压缩的话（一般是要替换掉游戏中的某些资源文件，比如想更换游戏中的音乐，甚至增加一些资源等），就只好还是用ArchiveTool了。<BR><BR> 
+　　arcexplorer.rar (220 KB) [该链接无效，1楼底有附件]<BR><BR> 
+　　游戏的数据库是以大量的数据记录文件所构成的，并且同样被压缩起来，成为一个文件（database.arz。注意TQ和IT各有一个database.arz）。该文件是一种略微变形的ARC格式，由于格式的略有不同，数据库database.arz无法用ArchiveTool来压缩和解压。TQVault提供了一个功能，可以用来解压database.arz（资料片需要使用2.13Beta1版以后的版本。2.12版以前只能解压原版的database.arz。见http://www.titanquest.com.cn/bbs/thread-25243-1-1.html）。不过TQVault只能一次性全部解压，想要单独解压其中的某个文件、以及想要再压缩起来的话，就需要用ArtManager。关于ArtManager的使用以后再讲。<BR><BR> 
+　　由于所有的压缩文件（ARC和ARZ）都仅仅是一种硬盘上的存储方式，因此，以后除了特殊说明外，“资源文件”和“数据库记录文件”均是指存储于压缩文件内部的各个文件，而不是压缩文件本身（大家不妨当作所有的压缩文件均已被解开）。<BR><BR> 
+　　资源文件主要有以下几种：<BR><BR> 
+　　1、地图文件（*.map）<BR><BR> 
+　　2、任务文件（*.qst）<BR><BR> 
+　　3、声音和音乐文件（*.wav, *.mp3），文件格式——地球人都知道。<BR><BR> 
+　　4、字体文件（*.fnt），文件格式——标准windows字体格式。<BR><BR> 
+　　5、图象和贴图文件（*.tex），格式是一种略微变形的DDS（Direct Draw Surface）文件（加了个文件头，用来存储文件长度）。<BR><BR> 
+　　6、3D模型文件（*.msh）<BR><BR> 
+　　7、动画文件（*.amn）<BR><BR> 
+　　8、效果文件（*.pfx）<BR><BR> 
+　　9、着色（shader）文件（*.ssh）<BR><BR> 
+　　其中1、2为游戏的专用文件，分别由地图制作工具Editor.exe和任务制作工具QuestEditor.exe（均位于TQ和IT的主目录下）制作。不过，地图文件是经过ArtManager编译过的，因此已经无法再用Editor打开，如何打开并修改编译过的地图文件，还需要进一步研究。不过任务文件是还可以再打开的，有兴趣的话可以用QuestEditor打开看看，各个任务都是怎么做的（当然，如果愿意的话，也可以改改，然后再压缩回去）。<BR><BR> 
+　　3、4是标准的windows格式，5~9是配合DirectX使用的各种格式。由于我基本没有接触过DirectX开发，只有TEX文件我还能勉强打开看看，其它的几种我只是大体知道是DirectX使用的，其它的就都不懂了。有做3D游戏的朋友可以再给解释一下。<BR><BR> 
+　　数据库记录文件只有一种：*.dbr，格式是纯文本的，可以用记事本直接打开看。关于数据库记录文件的详细解析以后再讲。<BR><BR> 
+　　TQ和IT的运行流程大体如下：<BR><BR> 
+　　1、先找到地图文件。TQ和IT的地图文件位于各自的资源目录中的Levels.arc压缩包内，名叫World01.map。除了地形和任务之外，地图文件的主要内容大体上是这样的：坐标（X1，Y1）处有一个数据库记录文件A.dbr所描述的物体，（X2，Y2）处有一个B.dbr所描述的物体。。。等等。所有地图上放置的物体，包括树、草、石头、怪物、箱子。。。都是这么记录在地图文件里的。<BR><BR> 
+　　2、当程序读出地图的内容后，对于地图上记录的“某某坐标处有一个某某数据库记录文件所对应的物体”，程序就去搜索数据库，找到那个记录文件（*.dbr）。该文件会记载这个物体的种类（怪物还是树，等等），并记录该物体的表现形式，例如它的3D模型是哪个文件，贴图是哪个文件，动画是哪个文件，甚至包括它的行为方式，比如随机游走的范围、在原地停留的时间、发现敌人后的反应（假若这个物体会动的话，例如怪物），等等。<BR><BR> 
+　　3、根据数据库记录文件的内容，程序再到资源目录中，调入相应的3D模型、贴图、动画等文件，用来显示该物体，并按照数据库记录中所指定的方式行动。<BR><BR> 
+　　4、由于在安装资料片之后，原版仍可以运行，为了做到这一点，并且尽量减少硬盘占用，除了地图之外，其它数据和资源都是这样存放的：<BR><BR> 
+　　A、假若原版和资料片中都有、并且完全相同的数据库记录和资源，都放在原版相应目录下；<BR><BR> 
+　　B、假若是资料片新增的数据库记录和资源，则放在资料片的目录下；<BR><BR> 
+　　C、若原版和资料片中都有、但原版与资料片不同的数据库记录和资源，则在原版和资料片的目录下各放一份（不相同）。<BR><BR> 
+　　这样，当资料片的程序需要调入到某条数据库记录或者资源的时候，首先会在资料片的文件中查找，如果找不到，就会再到原版的文件中找。<BR><BR> 
+　　由于所有的数据库记录和资源都在硬盘上以压缩方式存放，而且所有的资源解压缩后均十分庞大（单地图解开后就有800余兆），不可能在程序启动时全部调入内存，只能随用随调（包括地图也是用到哪块调哪块），因此上述过程对硬盘和CPU的消耗非常大。同时这也导致了场景变换时会相当卡。<BR><BR> 
+　　————————————————————————————————<BR><BR> 
+　　关于汉化：<BR><BR> 
+　　由于IT资源目录下的Text_&lt;语言简称&gt;.arc仅包含了IT中新增的文本，因此完整的汉化必须同时替换TQ和IT资源目录下的、同一种语言的Text_&lt;语言简称&gt;.arc（例如Text_EN.arc），否则就会出现半中半英的问题。<!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"> <a href="TQ解析心得.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="TQ解析心得001.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

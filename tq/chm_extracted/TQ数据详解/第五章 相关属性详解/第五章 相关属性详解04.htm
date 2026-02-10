@@ -1,0 +1,151 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>第五节 护甲</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="第五章%20相关属性详解03.htm">上一页</a> <a href="第五章%20相关属性详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第五章%20相关属性详解05.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">第五节 护甲</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　伤害修正阶段的护甲吸收部分涉及到两个属性：“护甲值”和“护甲吸收率”。<BR><BR> 
+　　1、　　护甲值<BR><BR> 
+　　属性形式：<BR><BR> 
+　　界面中文：XX 护甲<BR><BR> 
+　　+XX 护甲<BR><BR> 
+　　界面英文：XX Armor<BR><BR> 
+　　+XX Armor<BR><BR> 
+　　上述两种界面形式中，第一种只出现在护甲上，是护甲本身的基础护甲值。第二种则可以出现在任何其它地方。<BR><BR> 
+　　一共有四个不同的护甲值，分别是头部护甲值、胸部护甲值、臂部护甲值和腿部护甲值。一次攻击针对哪个部位，就用哪个部位的护甲值进行护甲吸收的运算（见第二章“伤害修正”部分），例如针对头部的攻击就只有头部的护甲值起作用，与其它部位的护甲值无关。每个部位护甲上的基础护甲值都只是该部位的护甲值，例如：头部护甲上的“XX 护甲”实际上是“XX 头部护甲”。同样，某个部位护甲上的词缀中所附带的护甲值也仅仅是该部位的护甲值。除了这两种以外，其它任何来源的护甲值（包括来自于镶嵌在某部位护甲上的镶嵌物）都是所有部位的护甲值。例如，镶嵌于头部护甲上的野猪皮所附带的“+XX 护甲”，实际上相当于“+XX 头部护甲”、“+XX 胸部护甲”、“+XX 臂部护甲”、“+XX 腿部护甲”，而不是因为它镶在头部护甲上就仅仅相当于“+XX 头部护甲”。<BR><BR> 
+　　护甲加成形式：<BR><BR> 
+　　界面中文：+XX% 护甲防御<BR><BR> 
+　　界面英文：+XX% Armor Protection<BR><BR> 
+　　所有来源的护甲加成均是对所有部位的护甲都有效。<BR><BR> 
+　　当前护甲值计算：<BR><BR> 
+　　某部位当前护甲值 = 该部位护甲值 * (1 + 护甲加成%)<BR><BR> 
+　　其中：“该部位护甲值”指所有来源的、待计算部位的护甲值的总和。“护甲加成”指所有来源的护甲加成的总和。“护甲加成”的总和可以为负（假若存在当前生效的“削弱敌方型技能的话），但如果护甲加成小于负100，则该部位的当前护甲值为0（即当前护甲值不会为负值）。<BR><BR> 
+　　注意：<BR><BR> 
+　　界面上显示的“综合防御值”没有任何用处。通过鼠标悬停看到的各部位防御值（护甲值）常常也都是错误的。<BR><BR> 
+　　2、　　护甲吸收率<BR><BR> 
+　　该属性在界面上不显示。整个游戏只有一个统一的值，没有任何其它来源。在原始游戏中，该值为66，假若自己制作MOD的话，可以修改这个值。<BR><BR> 
+　　护甲吸收率加成形式：<BR><BR> 
+　　界面中文：+XX% 防御吸收<BR><BR> 
+　　界面英文：+XX% Armor Absorption<BR><BR> 
+　　当前护甲吸收率计算：<BR><BR> 
+　　当前护甲吸收率 = 护甲吸收率 * (1 + 护甲吸收率加成%)<BR><BR> 
+　　其中：“护甲吸收率加成”指所有来源的护甲吸收率加成的总和。<BR><BR> 
+　　由于在原始游戏中，护甲吸收率 = 66，因此只要护甲吸收率加成总和达到52%（66 * (1 + 52%) = 100），即可达到100%的护甲吸收。如果再高的话，则护甲是可以吸收掉比护甲值本身还高的伤害的。 <!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="第五章%20相关属性详解03.htm">上一页</a> <a href="第五章%20相关属性详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第五章%20相关属性详解05.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

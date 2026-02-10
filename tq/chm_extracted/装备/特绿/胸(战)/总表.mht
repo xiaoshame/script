@@ -1,0 +1,3182 @@
+MIME-Version: 1.0
+X-Document-Type: Worksheet
+Content-Location: file:///C:/859623C8/file9288.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 11">
+<link rel=3DFile-List href=3D"file9288.files/filelist.xml">
+<link rel=3DEdit-Time-Data href=3D"file9288.files/editdata.mso">
+<link rel=3DOLE-Object-Data href=3D"file9288.files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>&#26381;&#21153;&#22120;</o:Author>
+  <o:LastAuthor>&#24494;&#36719;&#29992;&#25143;</o:LastAuthor>
+  <o:Created>2007-09-11T03:14:08Z</o:Created>
+  <o:LastSaved>2010-05-23T19:41:35Z</o:LastSaved>
+  <o:Company>&#38738;&#23707;&#32593;&#24433;&#30005;&#23376;&#20449;&#2468=
+7;&#26377;&#38480;&#20844;&#21496;</o:Company>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:\5E38\89C4;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	text-align:center;}
+.xl25
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	font-weight:700;
+	text-align:center;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl26
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	text-align:center;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:RangeSelection>$A$1:$H$88</x:RangeSelection>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+    <x:QueryTable>
+     <x:Name>. TQIT OUT_&#35013;&#22791;_&#29305;&#32511;_&#33016;_&#25112;=
+_CN</x:Name>
+     <x:AutoFormatFont/>
+     <x:AutoFormatPattern/>
+     <x:QuerySource>
+      <x:QueryType>OLEDB</x:QueryType>
+      <x:CommandText>&quot;TQIT&quot;.&quot;dbo&quot;.&quot;OUT_&#35013;&#2=
+2791;_&#29305;&#32511;_&#33016;_&#25112;_CN&quot;</x:CommandText>
+      <x:CommandType>Table</x:CommandType>
+      <x:Maintain/>
+      <x:Connection>Provider=3DSQLOLEDB.1;Integrated Security=3DSSPI;Persis=
+t Security Info=3DTrue;Initial Catalog=3DTQIT;Data Source=3D.;Use Procedure=
+ for Prepare=3D1;Auto Translate=3DTrue;Packet Size=3D4096;Workstation ID=3D=
+SERVER;Use Encryption for Data=3DFalse;Tag with column collation when possi=
+ble=3DFalse</x:Connection>
+      <x:SourceConnectionFile>C:\Documents and Settings\xxd\My Documents\&#=
+25105;&#30340;&#25968;&#25454;&#28304;\. TQIT OUT_&#35013;&#22791;_&#29305;=
+&#32511;_&#33016;_&#25112;_CN.odc</x:SourceConnectionFile>
+      <x:RobustConnect>0</x:RobustConnect>
+      <x:VersionLastEdit>2</x:VersionLastEdit>
+      <x:VersionLastRefresh>2</x:VersionLastRefresh>
+     </x:QuerySource>
+     <x:RefreshInfo>
+      <x:NextId>11</x:NextId>
+      <x:ColumnInfo>
+       <x:Id>1</x:Id>
+       <x:Name>&#38590;&#24230;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>2</x:Id>
+       <x:Name>&#20013;&#25991;&#21517;&#31216;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>3</x:Id>
+       <x:Name>&#29289;&#21697;&#31561;&#32423;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>4</x:Id>
+       <x:Name>&#38656;&#35201;&#31561;&#32423;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>5</x:Id>
+       <x:Name>&#38656;&#35201;&#21147;&#37327;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>6</x:Id>
+       <x:Name>&#38656;&#35201;&#25935;&#25463;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>7</x:Id>
+       <x:Name>&#23646;&#24615;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>8</x:Id>
+       <x:Name>&#33521;&#25991;&#21517;&#31216;</x:Name>
+      </x:ColumnInfo>
+      <x:DeletedTitle>n_Difficulty</x:DeletedTitle>
+      <x:DeletedTitle>n_Order2</x:DeletedTitle>
+     </x:RefreshInfo>
+    </x:QueryTable>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>8415</x:WindowHeight>
+  <x:WindowWidth>14715</x:WindowWidth>
+  <x:WindowTopX>360</x:WindowTopX>
+  <x:WindowTopY>360</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+ <x:ExcelName>
+  <x:Name>_._TQIT_OUT_&#35013;&#22791;_&#29305;&#32511;_&#33016;_&#25112;_C=
+N</x:Name>
+  <x:SheetIndex>1</x:SheetIndex>
+  <x:Formula>=3DSheet1!$A$1:$H$88</x:Formula>
+ </x:ExcelName>
+</xml><![endif]-->
+</head>
+
+<body link=3Dblue vlink=3Dpurple>
+
+<table x:str border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D913 style=
+=3D'border-collapse:
+ collapse;table-layout:fixed;width:685pt'>
+ <col class=3Dxl24 width=3D38 style=3D'mso-width-source:userset;mso-width-a=
+lt:1216;
+ width:29pt'>
+ <col width=3D124 style=3D'mso-width-source:userset;mso-width-alt:3968;widt=
+h:93pt'>
+ <col width=3D64 span=3D4 style=3D'mso-width-source:userset;mso-width-alt:2=
+048;
+ width:48pt'>
+ <col width=3D311 style=3D'mso-width-source:userset;mso-width-alt:9952;widt=
+h:233pt'>
+ <col width=3D184 style=3D'mso-width-source:userset;mso-width-alt:5888;widt=
+h:138pt'>
+ <tr class=3Dxl24 height=3D19 style=3D'height:14.25pt'>
+  <td height=3D19 class=3Dxl25 width=3D38 style=3D'height:14.25pt;width:29p=
+t'><a
+  name=3D"_._TQIT_OUT_&#35013;&#22791;_&#29305;&#32511;_&#33016;_&#25112;_C=
+N">&#38590;&#24230;</a></td>
+  <td class=3Dxl25 width=3D124 style=3D'border-left:none;width:93pt'>&#2001=
+3;&#25991;&#21517;&#31216;</td>
+  <td class=3Dxl25 width=3D64 style=3D'border-left:none;width:48pt'>&#29289=
+;&#21697;&#31561;&#32423;</td>
+  <td class=3Dxl25 width=3D64 style=3D'border-left:none;width:48pt'>&#38656=
+;&#35201;&#31561;&#32423;</td>
+  <td class=3Dxl25 width=3D64 style=3D'border-left:none;width:48pt'>&#38656=
+;&#35201;&#21147;&#37327;</td>
+  <td class=3Dxl25 width=3D64 style=3D'border-left:none;width:48pt'>&#38656=
+;&#35201;&#25935;&#25463;</td>
+  <td class=3Dxl25 width=3D311 style=3D'border-left:none;width:233pt'>&#236=
+46;&#24615;</td>
+  <td class=3Dxl25 width=3D184 style=3D'border-left:none;width:138pt'>&#335=
+21;&#25991;&#21517;&#31216;</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20808;&#39537;&#32773;&#26463;&#33136;&#22806;&#34915;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>4</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>56</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>68</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>28
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    8% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +5 &#25935;&#25463;<br>
+    <br>
+    +20 &#29983;&#21629;<br>
+    <br>
+    +10% &#31227;&#21160;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Outrider's
+  Tunic</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#30044;&#29298;&#30340;&#38112;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>5</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>70</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>30
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    10% &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +2 &#21040; &#32958;&#19978;&#33146;&#32032;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Brute's
+  Plate</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#27515;&#20129;&#32534;&#32455;&#32773;&#30340;&#22771;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>9</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>80</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>35
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 4 ~ 8
+  &#31359;&#21050;&#21453;&#20987;<br>
+    <br>
+    +10 &#21147;&#37327;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Deathweaver's
+  Chitin</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#31192;&#32819;&#25191;&#27861;&#32773;&#30340;&#33016;&#30002;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>10</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>118</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>42
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +14 &#21147;&#37327;<br>
+    <br>
+    +10% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +14% &#20260;&#23475;&#23545; &#20861;&#20154;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Enforcer's
+  Cuirass</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20991;&#30707;&#24037;&#25252;&#32937;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>12</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>72</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>127</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>38
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +25 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    3% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Stonebinder's
+  Sash</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#21736;&#20853;&#33016;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>12</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>114</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>40
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +25 &#28857;&#25112;&#26007;&#33021;&#21147;<br>
+    <br>
+    +25 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Sentinel's
+  Cuirass</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#35962;&#30340;&#25252;&#33016;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>15</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>141</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>46
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +15 &#21147;&#37327;<br>
+    <br>
+    +15 &#25935;&#25463;<br>
+    <br>
+    +50 &#29983;&#21629;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Jackal's
+  Harness</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#24357;&#35834;&#38518;&#27931;&#26031;&#30340;&#25252;&#24515;&=
+#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>15</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>168</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>60
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +5% &#25252;&#30002;&#38450;&#24481;<br>
+    <br>
+    +60 &#29983;&#21629;<br>
+    <br>
+    +10% &#21147;&#37327;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Breastplate
+  of the Minotaur</td>
+ </tr>
+ <tr height=3D45 style=3D'height:33.75pt'>
+  <td height=3D45 class=3Dxl26 width=3D38 style=3D'height:33.75pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#36814;&#39118;&#22806;&#22871;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>16</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>80</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>162</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>58
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +10% &#20840;&#37096;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Windswept
+  Pack</td>
+ </tr>
+ <tr height=3D45 style=3D'height:33.75pt'>
+  <td height=3D45 class=3Dxl26 width=3D38 style=3D'height:33.75pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#36814;&#39118;&#25252;&#33016;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>16</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>147</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>50
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    15.0% &#26426;&#29575;&#21457;&#21160; 33
+  &#29983;&#21629;&#21560;&#21462;&#21453;&#20987;&#22312;3.0&#31186;&#2086=
+9;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Windswept
+  Harness</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#30563;&#24037;&#30340;&#26007;&#31735;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>17</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>15</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>186</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>68
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +16% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    8% &#38378;&#30005;&#25239;&#24615;<br>
+    <br>
+    +1 &#21040; &#39118;&#26292;&#20043;&#25163;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Overseer's
+  Mantle</td>
+ </tr>
+ <tr height=3D45 style=3D'height:33.75pt'>
+  <td height=3D45 class=3Dxl26 width=3D38 style=3D'height:33.75pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20129;&#28789;&#38112;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>17</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>186</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>68
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +1 &#21040;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Revenant
+  Plate</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#40060;&#20154;&#20043;&#33016;&#38112;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>22</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>187</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>46
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +100% &#27969;&#34880;&#20260;&#23475;<br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 15
+  &#27969;&#34880;&#20260;&#23475;&#21453;&#20987;&#22312;3.0&#31186;&#2086=
+9;<br>
+    <br>
+    +20 &#25935;&#25463;<br>
+    <br>
+    +20% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Ichthian
+  Aegis</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#22855;&#24322;&#38112;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>22</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>223</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>80
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 24 ~ 48
+  &#27602;&#32032;&#20260;&#23475;&#21453;&#20987;&#22312;6.0&#31186;&#2086=
+9;<br>
+    <br>
+    20% &#31359;&#21050;&#25269;&#25239;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Exotic
+  Armor</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#24681;'&#20381;&#22982;&#36203;&#30340;&#31661;&#34955;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>24</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>96</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>211</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>85
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    15% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    100% &#22833;&#34880;&#24615;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +10% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Quiver
+  of N'Imh</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#30423;&#21290;&#30340;&#26463;&#33136;&#24102;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>24</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>191</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>68
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20% &#20912;&#20919;&#25239;&#24615;<br>
+    <br>
+    +50 &#29983;&#21629;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Marauder's
+  Girdle</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#27969;&#28010;&#32773;&#30340;&#34924;&#34915;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>24</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>223</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>80
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +10% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    -20%
+  &#25152;&#26377;&#27494;&#22120;&#30340;&#25935;&#25463;&#35201;&#27714;<=
+br>
+    <br>
+    -20% &#36817;&#25112;&#27494;&#22120;&#30340;&#25935;&#25463;&#35201;&#=
+27714;<br>
+    <br>
+    -20%
+  &#29454;&#25163;&#27494;&#22120;&#30340;&#25935;&#25463;&#35201;&#27714;<=
+/td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Vagabond's
+  Shirt</td>
+ </tr>
+ <tr height=3D210 style=3D'height:157.5pt'>
+  <td height=3D210 class=3Dxl26 width=3D38 style=3D'height:157.5pt;border-t=
+op:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#32769;&#40736;&#30340;&#22806;&#22871;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>24</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>245</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>88
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +25% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#30420;&#30002;&#25484;&#25569;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    &#28165;&#26970;&#22914;&#20309;&#36866;&#24403;&#22320;&#35843;&#25972=
+;&#12289;&#36866;&#24212;&#30420;&#30002;&#33021;<br>
+    <br>
+  =20
+  &#22815;&#35753;&#20320;&#27604;&#19968;&#20010;&#26377;&#30528;&#21516;&=
+#26679;&#21147;&#37327;&#21364;&#26410;&#32463;<br>
+    <br>
+  =20
+  &#35757;&#32451;&#30340;&#25112;&#22763;&#31359;&#25140;&#26356;&#21402;&=
+#37325;&#30340;&#30420;&#30002;&#65292;&#20351;<br>
+    <br>
+    &#29992;&#26356;&#32467;&#23454;&#30340;&#30462;&#29260;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#24378;&#21270;&#12289;&#34987=
+;&#21160;<br>
+    <br>
+    +6% &#38450;&#24481;&#21560;&#25910;<br>
+    <br>
+    -8% &#30462;&#29260;&#30340;&#21147;&#37327;&#35201;&#27714;<br>
+    <br>
+    -8% &#25252;&#30002;&#30340;&#21147;&#37327;&#35201;&#27714;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>The
+  Rat's Pack</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#21059;&#20992;&#32972;&#25252;&#33016;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>24</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>261</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>92
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +23 &#21147;&#37327;<br>
+    <br>
+    +80 &#29983;&#21629;<br>
+    <br>
+    +50% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Razorback
+  Harness</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#25112;&#20105;&#39046;&#34966;&#30340;&#21326;&#26381;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>25</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>256</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>95
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +16 &#21147;&#37327;<br>
+    <br>
+    +20% &#20943;&#23569;&#26469;&#33258; &#37326;&#20861;
+  &#30340;&#20260;&#23475;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Warchief's
+  Garb</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#25112;&#20105;&#20043;&#29579;&#30340;&#22806;&#22871;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>25</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>280</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>100
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +25 &#21147;&#37327;<br>
+    <br>
+    +25 &#25935;&#25463;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Warlord's
+  Coat</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#31363;&#36156;&#30340;&#33016;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>27</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>102</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>232</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>85
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    15% &#28779;&#28976;&#25239;&#24615;<br>
+    <br>
+    20% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +16 &#25935;&#25463;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Prowler's
+  Cuirass</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20234;&#26031;&#29595;&#20029;&#26031;&#30340;&#33016;&#30002;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>245</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>80
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +20% &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    40% &#31359;&#21050;&#25269;&#25239;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Ismene's
+  Cuirass</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#38738;&#34521;&#33016;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>280</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>95
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    50% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +3% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Batrachos
+  Breastplate</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'
+  x:str=3D"&#22763;&#20853;&#25252;&#30002; ">&#22763;&#20853;&#25252;&#300=
+02;<span
+  style=3D'mso-spacerun:yes'>&nbsp;</span></td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>289</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>101
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    40% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +5% &#21560;&#25910;&#25915;&#20987;&#33021;&#37327;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Soldier's
+  Chitin</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20166;&#20174;&#36719;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>312</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>112
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    3.0% &#26426;&#29575;&#21457;&#21160; 100%
+  &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    40% &#31359;&#21050;&#25269;&#25239;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Myrmidon's
+  Chitin</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#21704;&#39532;&#26460;&#26031;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>319</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>114
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    30% &#20912;&#20919;&#25239;&#24615;<br>
+    <br>
+    +10.00 &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Homados</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#26114;&#32435;&#26222;&#33713;&#29305;&#30340;&#33016;&#30002;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>324</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>115
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    40% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    40% &#20943;&#23569;&#38519;&#38449;&#25345;&#32493;&#26102;&#38388;</t=
+d>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Anaplekte's
+  Cuirass</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#22885;&#35199;&#20420;&#27969;&#26031;&#30340;&#33016;&#30002;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>335</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>135
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    45% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +100 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Alcynoneus&#8217;
+  Breastplate</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20808;&#39537;&#32773;&#26463;&#33136;&#22806;&#34915;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>33</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>111</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>264</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>155
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    16% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +15 &#25935;&#25463;<br>
+    <br>
+    +40 &#29983;&#21629;<br>
+    <br>
+    +10% &#31227;&#21160;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Outrider's
+  Tunic</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#30044;&#29298;&#30340;&#38112;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>34</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>347</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>152
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    10% &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +3 &#21040; &#32958;&#19978;&#33146;&#32032;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Brute's
+  Plate</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#27515;&#20129;&#32534;&#32455;&#32773;&#30340;&#22771;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>36</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>353</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>160
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 12 ~ 15
+  &#31359;&#21050;&#21453;&#20987;<br>
+    <br>
+    +15 &#21147;&#37327;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Deathweaver's
+  Chitin</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#31192;&#32819;&#25191;&#27861;&#32773;&#30340;&#33016;&#30002;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>37</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>371</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>180
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +20 &#21147;&#37327;<br>
+    <br>
+    +10% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +21% &#20260;&#23475;&#23545; &#20861;&#20154;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Enforcer's
+  Cuirass</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20991;&#30707;&#24037;&#25252;&#32937;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>39</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>120</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>297</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>165
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +50 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    5% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Stonebinder's
+  Sash</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#21736;&#20853;&#33016;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>39</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>371</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>170
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +50 &#28857;&#25112;&#26007;&#33021;&#21147;<br>
+    <br>
+    +50 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Sentinel's
+  Cuirass</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#24357;&#35834;&#38518;&#27931;&#26031;&#30340;&#25252;&#24515;&=
+#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>40</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>385</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>188
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +5% &#25252;&#30002;&#38450;&#24481;<br>
+    <br>
+    +80 &#29983;&#21629;<br>
+    <br>
+    +10% &#21147;&#37327;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Breastplate
+  of the Minotaur</td>
+ </tr>
+ <tr height=3D45 style=3D'height:33.75pt'>
+  <td height=3D45 class=3Dxl26 width=3D38 style=3D'height:33.75pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#36814;&#39118;&#22806;&#22871;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>41</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>120</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>308</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>172
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +15% &#20840;&#37096;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Windswept
+  Pack</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#35962;&#30340;&#25252;&#33016;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>41</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>347</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>142
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +20 &#21147;&#37327;<br>
+    <br>
+    +20 &#25935;&#25463;<br>
+    <br>
+    +70 &#29983;&#21629;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Jackal's
+  Harness</td>
+ </tr>
+ <tr height=3D45 style=3D'height:33.75pt'>
+  <td height=3D45 class=3Dxl26 width=3D38 style=3D'height:33.75pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#36814;&#39118;&#25252;&#33016;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>41</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>353</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>152
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    15.0% &#26426;&#29575;&#21457;&#21160; 75
+  &#29983;&#21629;&#21560;&#21462;&#21453;&#20987;&#22312;3.0&#31186;&#2086=
+9;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Windswept
+  Harness</td>
+ </tr>
+ <tr height=3D45 style=3D'height:33.75pt'>
+  <td height=3D45 class=3Dxl26 width=3D38 style=3D'height:33.75pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20129;&#28789;&#38112;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>42</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>390</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>205
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +1 &#21040;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Revenant
+  Plate</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#30563;&#24037;&#30340;&#26007;&#31735;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>42</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>30</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>397</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>210
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +16% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    8% &#38378;&#30005;&#25239;&#24615;<br>
+    <br>
+    +1 &#21040; &#39118;&#26292;&#20043;&#25163;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Overseer's
+  Mantle</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#40060;&#20154;&#20043;&#33016;&#38112;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>45</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>381</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>186
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +100% &#27969;&#34880;&#20260;&#23475;<br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 15
+  &#27969;&#34880;&#20260;&#23475;&#21453;&#20987;&#22312;3.0&#31186;&#2086=
+9;<br>
+    <br>
+    +30 &#25935;&#25463;<br>
+    <br>
+    +30% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Ichthian
+  Aegis</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#22855;&#24322;&#38112;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>45</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>408</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>220
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 72 ~ 90
+  &#27602;&#32032;&#20260;&#23475;&#21453;&#20987;&#22312;6.0&#31186;&#2086=
+9;<br>
+    <br>
+    30% &#31359;&#21050;&#25269;&#25239;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Exotic
+  Armor</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#24681;'&#20381;&#22982;&#36203;&#30340;&#31661;&#34955;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>46</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>131</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>336</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>220
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    25% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    100% &#22833;&#34880;&#24615;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +15% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Quiver
+  of N'Imh</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#30423;&#21290;&#30340;&#26463;&#33136;&#24102;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>46</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>385</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>185
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    30% &#20912;&#20919;&#25239;&#24615;<br>
+    <br>
+    +70 &#29983;&#21629;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Marauder's
+  Girdle</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#27969;&#28010;&#32773;&#30340;&#34924;&#34915;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>46</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>404</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>215
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +10% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    -20%
+  &#25152;&#26377;&#27494;&#22120;&#30340;&#25935;&#25463;&#35201;&#27714;<=
+/td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Vagabond's
+  Shirt</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#25112;&#20105;&#39046;&#34966;&#30340;&#21326;&#26381;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>46</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>428</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>245
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +26 &#21147;&#37327;<br>
+    <br>
+    +40% &#20943;&#23569;&#26469;&#33258; &#37326;&#20861;
+  &#30340;&#20260;&#23475;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Warchief's
+  Garb</td>
+ </tr>
+ <tr height=3D210 style=3D'height:157.5pt'>
+  <td height=3D210 class=3Dxl26 width=3D38 style=3D'height:157.5pt;border-t=
+op:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#32769;&#40736;&#30340;&#22806;&#22871;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>46</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>429</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>245
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +25% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#30420;&#30002;&#25484;&#25569;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    &#28165;&#26970;&#22914;&#20309;&#36866;&#24403;&#22320;&#35843;&#25972=
+;&#12289;&#36866;&#24212;&#30420;&#30002;&#33021;<br>
+    <br>
+  =20
+  &#22815;&#35753;&#20320;&#27604;&#19968;&#20010;&#26377;&#30528;&#21516;&=
+#26679;&#21147;&#37327;&#21364;&#26410;&#32463;<br>
+    <br>
+  =20
+  &#35757;&#32451;&#30340;&#25112;&#22763;&#31359;&#25140;&#26356;&#21402;&=
+#37325;&#30340;&#30420;&#30002;&#65292;&#20351;<br>
+    <br>
+    &#29992;&#26356;&#32467;&#23454;&#30340;&#30462;&#29260;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#24378;&#21270;&#12289;&#34987=
+;&#21160;<br>
+    <br>
+    +6% &#38450;&#24481;&#21560;&#25910;<br>
+    <br>
+    -8% &#30462;&#29260;&#30340;&#21147;&#37327;&#35201;&#27714;<br>
+    <br>
+    -8% &#25252;&#30002;&#30340;&#21147;&#37327;&#35201;&#27714;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>The
+  Rat's Pack</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#21059;&#20992;&#32972;&#25252;&#33016;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>46</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>434</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>255
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +28 &#21147;&#37327;<br>
+    <br>
+    +100 &#29983;&#21629;<br>
+    <br>
+    +50% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Razorback
+  Harness</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#25112;&#20105;&#20043;&#29579;&#30340;&#22806;&#22871;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>46</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>488</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>270
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +30 &#21147;&#37327;<br>
+    <br>
+    +30 &#25935;&#25463;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Warlord's
+  Coat</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#31363;&#36156;&#30340;&#33016;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>48</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>134</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>347</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>230
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    15% &#28779;&#28976;&#25239;&#24615;<br>
+    <br>
+    30% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +26 &#25935;&#25463;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Prowler's
+  Cuirass</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20234;&#26031;&#29595;&#20029;&#26031;&#30340;&#33016;&#30002;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>412</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>215
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +30% &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    60% &#31359;&#21050;&#25269;&#25239;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Ismene's
+  Cuirass</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#38738;&#34521;&#33016;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>435</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>252
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    90% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +5% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Batrachos
+  Breastplate</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'
+  x:str=3D"&#22763;&#20853;&#25252;&#30002; ">&#22763;&#20853;&#25252;&#300=
+02;<span
+  style=3D'mso-spacerun:yes'>&nbsp;</span></td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>439</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>255
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    60% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +8% &#21560;&#25910;&#25915;&#20987;&#33021;&#37327;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Soldier's
+  Chitin</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#21704;&#39532;&#26460;&#26031;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>448</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>268
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    50% &#20912;&#20919;&#25239;&#24615;<br>
+    <br>
+    +10.00 &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Homados</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20166;&#20174;&#36719;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>455</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>276
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    5.0% &#26426;&#29575;&#21457;&#21160; 100%
+  &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    60% &#31359;&#21050;&#25269;&#25239;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Myrmidon's
+  Chitin</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#26114;&#32435;&#26222;&#33713;&#29305;&#30340;&#33016;&#30002;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>470</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>307
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    60% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    60% &#20943;&#23569;&#38519;&#38449;&#25345;&#32493;&#26102;&#38388;</t=
+d>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Anaplekte's
+  Cuirass</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#22885;&#35199;&#20420;&#27969;&#26031;&#30340;&#33016;&#30002;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>475</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>327
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    65% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +150 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Alcynoneus&#8217;
+  Breastplate</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20808;&#39537;&#32773;&#26463;&#33136;&#22806;&#34915;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>52</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>140</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>369</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>350
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    26% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +25 &#25935;&#25463;<br>
+    <br>
+    +80 &#29983;&#21629;<br>
+    <br>
+    +10% &#31227;&#21160;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Outrider's
+  Tunic</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#30044;&#29298;&#30340;&#38112;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>53</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>483</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>360
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    10% &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +3 &#21040; &#32958;&#19978;&#33146;&#32032;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Brute's
+  Plate</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#27515;&#20129;&#32534;&#32455;&#32773;&#30340;&#22771;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>54</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>485</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>370
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 19 ~ 22
+  &#31359;&#21050;&#21453;&#20987;<br>
+    <br>
+    +20 &#21147;&#37327;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Deathweaver's
+  Chitin</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#31192;&#32819;&#25191;&#27861;&#32773;&#30340;&#33016;&#30002;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>54</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>494</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>405
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +26 &#21147;&#37327;<br>
+    <br>
+    +10% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +28% &#20260;&#23475;&#23545; &#20861;&#20154;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Enforcer's
+  Cuirass</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20991;&#30707;&#24037;&#25252;&#32937;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>55</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>144</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>385</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>350
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +75 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    7% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Stonebinder's
+  Sash</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#21736;&#20853;&#33016;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>55</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>486</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>360
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +75 &#28857;&#25112;&#26007;&#33021;&#21147;<br>
+    <br>
+    +75 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Sentinel's
+  Cuirass</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#24357;&#35834;&#38518;&#27931;&#26031;&#30340;&#25252;&#24515;&=
+#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>56</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>503</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>415
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +5% &#25252;&#30002;&#38450;&#24481;<br>
+    <br>
+    +100 &#29983;&#21629;<br>
+    <br>
+    +10% &#21147;&#37327;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Breastplate
+  of the Minotaur</td>
+ </tr>
+ <tr height=3D45 style=3D'height:33.75pt'>
+  <td height=3D45 class=3Dxl26 width=3D38 style=3D'height:33.75pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#36814;&#39118;&#22806;&#22871;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>57</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>145</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>396</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>375
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +20% &#20840;&#37096;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Windswept
+  Pack</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#35962;&#30340;&#25252;&#33016;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>57</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>469</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>320
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +25 &#21147;&#37327;<br>
+    <br>
+    +25 &#25935;&#25463;<br>
+    <br>
+    +90 &#29983;&#21629;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Jackal's
+  Harness</td>
+ </tr>
+ <tr height=3D45 style=3D'height:33.75pt'>
+  <td height=3D45 class=3Dxl26 width=3D38 style=3D'height:33.75pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#36814;&#39118;&#25252;&#33016;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>57</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>471</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>320
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    15.0% &#26426;&#29575;&#21457;&#21160; 123
+  &#29983;&#21629;&#21560;&#21462;&#21453;&#20987;&#22312;3.0&#31186;&#2086=
+9;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Windswept
+  Harness</td>
+ </tr>
+ <tr height=3D45 style=3D'height:33.75pt'>
+  <td height=3D45 class=3Dxl26 width=3D38 style=3D'height:33.75pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20129;&#28789;&#38112;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>57</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>508</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>445
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +2 &#21040;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Revenant
+  Plate</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#30563;&#24037;&#30340;&#26007;&#31735;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>57</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>40</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>511</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>440
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +16% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    8% &#38378;&#30005;&#25239;&#24615;<br>
+    <br>
+    +1 &#21040; &#39118;&#26292;&#20043;&#25163;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Overseer's
+  Mantle</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#40060;&#20154;&#20043;&#33016;&#38112;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>60</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>488</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>375
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +100% &#27969;&#34880;&#20260;&#23475;<br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 15
+  &#27969;&#34880;&#20260;&#23475;&#21453;&#20987;&#22312;3.0&#31186;&#2086=
+9;<br>
+    <br>
+    +40 &#25935;&#25463;<br>
+    <br>
+    +40% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Ichthian
+  Aegis</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#22855;&#24322;&#38112;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>60</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>512</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>440
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 114 ~ 132
+  &#27602;&#32032;&#20260;&#23475;&#21453;&#20987;&#22312;6.0&#31186;&#2086=
+9;<br>
+    <br>
+    40% &#31359;&#21050;&#25269;&#25239;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Exotic
+  Armor</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#24681;'&#20381;&#22982;&#36203;&#30340;&#31661;&#34955;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>61</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>153</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>418</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>450
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    35% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    100% &#22833;&#34880;&#24615;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +20% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Quiver
+  of N'Imh</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#30423;&#21290;&#30340;&#26463;&#33136;&#24102;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>61</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>491</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>375
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    40% &#20912;&#20919;&#25239;&#24615;<br>
+    <br>
+    +90 &#29983;&#21629;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Marauder's
+  Girdle</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#27969;&#28010;&#32773;&#30340;&#34924;&#34915;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>61</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>511</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>440
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +10% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    -20%
+  &#25152;&#26377;&#27494;&#22120;&#30340;&#25935;&#25463;&#35201;&#27714;<=
+/td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Vagabond's
+  Shirt</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#25112;&#20105;&#39046;&#34966;&#30340;&#21326;&#26381;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>61</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>528</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>485
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +36 &#21147;&#37327;<br>
+    <br>
+    +60% &#20943;&#23569;&#26469;&#33258; &#37326;&#20861;
+  &#30340;&#20260;&#23475;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Warchief's
+  Garb</td>
+ </tr>
+ <tr height=3D210 style=3D'height:157.5pt'>
+  <td height=3D210 class=3Dxl26 width=3D38 style=3D'height:157.5pt;border-t=
+op:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#32769;&#40736;&#30340;&#22806;&#22871;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>61</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>538</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>500
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +25% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#30420;&#30002;&#25484;&#25569;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    &#28165;&#26970;&#22914;&#20309;&#36866;&#24403;&#22320;&#35843;&#25972=
+;&#12289;&#36866;&#24212;&#30420;&#30002;&#33021;<br>
+    <br>
+  =20
+  &#22815;&#35753;&#20320;&#27604;&#19968;&#20010;&#26377;&#30528;&#21516;&=
+#26679;&#21147;&#37327;&#21364;&#26410;&#32463;<br>
+    <br>
+  =20
+  &#35757;&#32451;&#30340;&#25112;&#22763;&#31359;&#25140;&#26356;&#21402;&=
+#37325;&#30340;&#30420;&#30002;&#65292;&#20351;<br>
+    <br>
+    &#29992;&#26356;&#32467;&#23454;&#30340;&#30462;&#29260;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#24378;&#21270;&#12289;&#34987=
+;&#21160;<br>
+    <br>
+    +6% &#38450;&#24481;&#21560;&#25910;<br>
+    <br>
+    -8% &#30462;&#29260;&#30340;&#21147;&#37327;&#35201;&#27714;<br>
+    <br>
+    -8% &#25252;&#30002;&#30340;&#21147;&#37327;&#35201;&#27714;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>The
+  Rat's Pack</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#21059;&#20992;&#32972;&#25252;&#33016;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>61</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>544</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>515
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +33 &#21147;&#37327;<br>
+    <br>
+    +120 &#29983;&#21629;<br>
+    <br>
+    +50% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Razorback
+  Harness</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#25112;&#20105;&#20043;&#29579;&#30340;&#22806;&#22871;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>61</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>551</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>535
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +35 &#21147;&#37327;<br>
+    <br>
+    +35 &#25935;&#25463;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Warlord's
+  Coat</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#31363;&#36156;&#30340;&#33016;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>63</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>156</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>429</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>470
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    15% &#28779;&#28976;&#25239;&#24615;<br>
+    <br>
+    40% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +36 &#25935;&#25463;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Prowler's
+  Cuirass</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20234;&#26031;&#29595;&#20029;&#26031;&#30340;&#33016;&#30002;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>509</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>422
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +40% &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    80% &#31359;&#21050;&#25269;&#25239;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Ismene's
+  Cuirass</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#38738;&#34521;&#33016;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>540</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>494
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    130% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +7% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Batrachos
+  Breastplate</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'
+  x:str=3D"&#22763;&#20853;&#25252;&#30002; ">&#22763;&#20853;&#25252;&#300=
+02;<span
+  style=3D'mso-spacerun:yes'>&nbsp;</span></td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>543</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>498
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    80% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +11% &#21560;&#25910;&#25915;&#20987;&#33021;&#37327;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Soldier's
+  Chitin</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#21704;&#39532;&#26460;&#26031;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>545</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>504
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    70% &#20912;&#20919;&#25239;&#24615;<br>
+    <br>
+    +10.00 &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Homados</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#20166;&#20174;&#36719;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>556</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>530
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    7.0% &#26426;&#29575;&#21457;&#21160; 100%
+  &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    80% &#31359;&#21050;&#25269;&#25239;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Myrmidon's
+  Chitin</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#26114;&#32435;&#26222;&#33713;&#29305;&#30340;&#33016;&#30002;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>583</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>595
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    80% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    80% &#20943;&#23569;&#38519;&#38449;&#25345;&#32493;&#26102;&#38388;</t=
+d>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Anaplekte's
+  Cuirass</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#22885;&#35199;&#20420;&#27969;&#26031;&#30340;&#33016;&#30002;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>590</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 width=3D311 style=3D'border-top:none;border-left:none;wi=
+dth:233pt'>615
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    85% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +200 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D184 style=3D'border-top:none;border-left:none;wi=
+dth:138pt'>Alcynoneus&#8217;
+  Breastplate</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D38 style=3D'width:29pt'></td>
+  <td width=3D124 style=3D'width:93pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+  <td width=3D311 style=3D'width:233pt'></td>
+  <td width=3D184 style=3D'width:138pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

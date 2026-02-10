@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
+    <title>泰坦之旅百科</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --primary: #8B6914;
+            --primary-light: #C49B30;
+            --bg-dark: #1a1a2e;
+            --bg-sidebar: #16213e;
+            --bg-content: #0f0f23;
+            --text: #e0e0e0;
+            --text-dim: #888;
+            --border: #333;
+            --accent: #f0c040;
+            --search-bg: #1e1e3a;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", -apple-system, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            display: flex;
+            height: 100vh;
+            height: 100dvh;
+            overflow: hidden;
+        }
+
+        /* ========== 侧边栏 ========== */
+        #sidebar {
+            width: 320px;
+            min-width: 280px;
+            background: var(--bg-sidebar);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            height: 100dvh;
+            flex-shrink: 0;
+            transition: margin-left 0.3s;
+        }
+
+        #sidebar-header {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+
+        #sidebar-header h1 {
+            font-size: 18px;
+            color: var(--accent);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        #search-box {
+            width: 100%;
+            padding: 9px 12px 9px 36px;
+            background: var(--search-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        #search-box:focus { border-color: var(--accent); }
+        #search-box::placeholder { color: var(--text-dim); }
+
+        .search-wrapper {
+            position: relative;
+        }
+        .search-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-dim);
+            font-size: 14px;
+            pointer-events: none;
+        }
+
+        /* ========== 数据源选择 ========== */
+        #source-bar {
+            display: flex;
+            border-bottom: 1px solid var(--border);
+            flex-shrink: 0;
+            overflow-x: auto;
+        }
+
+        .source-btn {
+            flex: 1;
+            min-width: 0;
+            padding: 10px 4px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-dim);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .source-btn:hover { color: var(--text); background: rgba(255,255,255,0.03); }
+        .source-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+        /* ========== 标签页 ========== */
+        #tab-bar {
+            display: flex;
+            border-bottom: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 8px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-dim);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .tab-btn:hover { color: var(--text); }
+        .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+        /* ========== 面板 ========== */
+        #panel-toc, #panel-search {
+            flex: 1;
+            overflow-y: auto;
+            padding: 6px;
+            display: none;
+        }
+
+        #panel-toc.active, #panel-search.active { display: block; }
+
+        /* ========== 目录树 ========== */
+        .tree-node { margin: 0; padding: 0; list-style: none; }
+
+        .tree-item {
+            cursor: pointer;
+            padding: 5px 8px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 13px;
+            color: var(--text);
+            transition: background 0.15s;
+            user-select: none;
+        }
+
+        .tree-item:hover { background: rgba(240, 192, 64, 0.1); }
+        .tree-item.active { background: rgba(240, 192, 64, 0.2); color: var(--accent); }
+
+        .tree-toggle {
+            width: 16px; height: 16px;
+            display: inline-flex;
+            align-items: center; justify-content: center;
+            font-size: 10px;
+            color: var(--text-dim);
+            flex-shrink: 0;
+            transition: transform 0.2s;
+        }
+
+        .tree-toggle.expanded { transform: rotate(90deg); }
+
+        .tree-children {
+            padding-left: 14px;
+            display: none;
+        }
+
+        .tree-children.expanded { display: block; }
+
+        /* ========== 搜索结果 ========== */
+        .search-result {
+            padding: 9px 10px;
+            border-radius: 6px;
+            margin-bottom: 4px;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+
+        .search-result:hover { background: rgba(240, 192, 64, 0.1); }
+
+        .search-result-title {
+            font-size: 13px;
+            color: var(--accent);
+            margin-bottom: 3px;
+            font-weight: 500;
+        }
+
+        .search-result-meta {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 3px;
+        }
+
+        .search-result-badge {
+            font-size: 10px;
+            padding: 1px 6px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+
+        .badge-source {
+            background: rgba(100, 140, 255, 0.15);
+            color: #8ab4ff;
+        }
+
+        .badge-category {
+            background: rgba(240, 192, 64, 0.1);
+            color: var(--primary-light);
+        }
+
+        .search-result-snippet {
+            font-size: 12px;
+            color: var(--text-dim);
+            line-height: 1.5;
+        }
+
+        .search-result-snippet mark {
+            background: rgba(240, 192, 64, 0.3);
+            color: var(--accent);
+            padding: 0 1px;
+            border-radius: 2px;
+        }
+
+        #search-status {
+            padding: 10px;
+            color: var(--text-dim);
+            font-size: 13px;
+            text-align: center;
+        }
+
+        /* ========== 主内容 ========== */
+        #main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        #breadcrumb {
+            padding: 8px 16px;
+            font-size: 12px;
+            color: var(--text-dim);
+            border-bottom: 1px solid var(--border);
+            flex-shrink: 0;
+            background: var(--bg-sidebar);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* ========== 上下页导航 ========== */
+        #page-nav {
+            display: none;
+            align-items: center;
+            padding: 4px 16px;
+            gap: 6px;
+            flex-shrink: 0;
+            background: var(--bg-dark);
+            border-bottom: 1px solid var(--border);
+        }
+        #page-nav button {
+            background: rgba(240,192,64,0.1);
+            border: 1px solid rgba(240,192,64,0.25);
+            color: var(--accent);
+            border-radius: 6px;
+            padding: 4px 14px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.15s;
+            white-space: nowrap;
+        }
+        #page-nav button:hover:not(:disabled) { background: rgba(240,192,64,0.25); }
+        #page-nav button:disabled { opacity: 0.3; cursor: default; }
+        #page-nav .nav-pos { font-size: 11px; color: var(--text-dim); min-width: 50px; text-align: center; }
+        #page-nav .nav-title { flex: 1; font-size: 12px; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: center; }
+
+        #breadcrumb .source-tag {
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: rgba(100, 140, 255, 0.15);
+            color: #8ab4ff;
+        }
+
+        #content-frame {
+            flex: 1;
+            border: none;
+            background: #fff;
+        }
+
+        #welcome {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            color: var(--text-dim);
+            padding: 20px;
+        }
+
+        #welcome h2 { font-size: 28px; color: var(--accent); }
+        #welcome p { font-size: 14px; max-width: 500px; text-align: center; line-height: 1.8; color: var(--text-dim); }
+
+        .welcome-sources {
+            display: flex;
+            gap: 16px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .welcome-source-card {
+            background: var(--bg-sidebar);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            min-width: 140px;
+        }
+
+        .welcome-source-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(240, 192, 64, 0.15);
+        }
+
+        .welcome-source-card .icon { font-size: 32px; margin-bottom: 8px; }
+        .welcome-source-card .name { font-size: 14px; color: var(--text); font-weight: 500; }
+        .welcome-source-card .desc { font-size: 11px; color: var(--text-dim); margin-top: 4px; }
+
+        .welcome-tips {
+            margin-top: 20px;
+            padding: 16px 24px;
+            background: rgba(240, 192, 64, 0.05);
+            border: 1px solid rgba(240, 192, 64, 0.15);
+            border-radius: 10px;
+            max-width: 480px;
+        }
+        .welcome-tips h3 { font-size: 13px; color: var(--accent); margin-bottom: 8px; }
+        .welcome-tips ul { font-size: 12px; line-height: 1.8; padding-left: 16px; color: var(--text-dim); }
+        .welcome-tips li { margin-bottom: 2px; }
+
+        /* ========== 侧边栏折叠 ========== */
+        #sidebar-toggle {
+            position: fixed;
+            left: 320px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            width: 18px; height: 44px;
+            background: var(--bg-sidebar);
+            border: 1px solid var(--border);
+            border-left: none;
+            border-radius: 0 5px 5px 0;
+            color: var(--text-dim);
+            cursor: pointer;
+            display: flex;
+            align-items: center; justify-content: center;
+            font-size: 11px;
+            transition: left 0.3s;
+        }
+
+        #sidebar-toggle:hover { color: var(--accent); }
+        body.sidebar-collapsed #sidebar { margin-left: -320px; }
+        body.sidebar-collapsed #sidebar-toggle { left: 0; }
+
+        /* ========== 滚动条 ========== */
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--text-dim); }
+
+        .loading { display: flex; align-items: center; justify-content: center; padding: 30px; }
+        .spinner {
+            width: 22px; height: 22px;
+            border: 3px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* ========== 移动端底部工具栏 ========== */
+        #mobile-bar {
+            display: none;
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            height: 50px;
+            background: var(--bg-sidebar);
+            border-top: 1px solid var(--border);
+            z-index: 200;
+            align-items: stretch;
+        }
+
+        #mobile-bar button {
+            flex: 1;
+            background: none;
+            border: none;
+            color: var(--text-dim);
+            font-size: 11px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+            transition: color 0.2s;
+        }
+        #mobile-bar button .mb-icon { font-size: 20px; }
+        #mobile-bar button.active { color: var(--accent); }
+
+        /* 移动端遮罩 */
+        #mobile-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 149;
+        }
+        #mobile-overlay.show { display: block; }
+
+        /* ========== 移动端响应式 ========== */
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+
+            #sidebar {
+                position: fixed;
+                left: 0; bottom: 50px;
+                width: 100% !important;
+                min-width: 0;
+                height: 60vh;
+                border-right: none;
+                border-top: 1px solid var(--border);
+                border-radius: 16px 16px 0 0;
+                z-index: 150;
+                transform: translateY(100%);
+                transition: transform 0.3s ease;
+            }
+            #sidebar.mobile-open {
+                transform: translateY(0);
+            }
+            body.sidebar-collapsed #sidebar {
+                margin-left: 0;
+                transform: translateY(100%);
+            }
+
+            #sidebar-toggle { display: none !important; }
+            #mobile-bar { display: flex; }
+
+            #main { height: calc(100vh - 50px); height: calc(100dvh - 50px); }
+
+            #sidebar-header h1 { font-size: 16px; margin-bottom: 8px; }
+
+            #search-box {
+                padding: 11px 14px 11px 36px;
+                font-size: 16px; /* 防止 iOS 缩放 */
+                border-radius: 10px;
+            }
+
+            .source-btn { padding: 10px 6px; font-size: 13px; }
+            .tab-btn { padding: 10px; font-size: 14px; }
+
+            .tree-item {
+                padding: 10px 10px;
+                font-size: 15px;
+                min-height: 42px;
+            }
+
+            .tree-toggle { width: 24px; height: 24px; font-size: 12px; }
+
+            .search-result { padding: 12px; }
+            .search-result-title { font-size: 15px; }
+            .search-result-snippet { font-size: 13px; }
+
+            #breadcrumb { padding: 6px 12px; font-size: 11px; }
+
+            #page-nav { padding: 3px 10px; gap: 4px; }
+            #page-nav button { padding: 4px 10px; font-size: 11px; }
+            #page-nav .nav-title { font-size: 11px; }
+            #page-nav .nav-pos { font-size: 10px; min-width: 40px; }
+
+            #welcome h2 { font-size: 22px; }
+            #welcome p { font-size: 13px; padding: 0 16px; }
+
+            .welcome-sources { gap: 10px; padding: 0 16px; }
+            .welcome-source-card { min-width: 100px; padding: 14px 16px; }
+            .welcome-source-card .icon { font-size: 26px; margin-bottom: 4px; }
+            .welcome-source-card .name { font-size: 12px; }
+            .welcome-source-card .desc { display: none; }
+
+            .welcome-tips { margin: 10px 16px; padding: 12px 16px; }
+
+            #content-frame { height: calc(100vh - 50px - 36px); height: calc(100dvh - 50px - 36px); }
+        }
+
+        @media (max-width: 400px) {
+            .source-btn { font-size: 12px; padding: 8px 3px; }
+            .tree-item { font-size: 14px; padding: 9px 8px; }
+            #sidebar { height: 65vh; }
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <div id="sidebar-header">
+            <h1>⚔️ 泰坦之旅百科</h1>
+            <div class="search-wrapper">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="search-box" placeholder="搜索技能、装备、怪物...">
+            </div>
+        </div>
+        <div id="source-bar"></div>
+        <div id="tab-bar">
+            <button class="tab-btn active" data-tab="toc">📚 目录</button>
+            <button class="tab-btn" data-tab="search">🔍 搜索</button>
+        </div>
+        <div id="panel-toc" class="active">
+            <div class="loading"><div class="spinner"></div></div>
+        </div>
+        <div id="panel-search">
+            <div id="search-status">输入关键词开始搜索</div>
+            <div id="search-results"></div>
+        </div>
+    </div>
+
+    <button id="sidebar-toggle" title="折叠/展开">◀</button>
+    <div id="mobile-overlay"></div>
+
+    <div id="mobile-bar">
+        <button id="mb-toc" class="active"><span class="mb-icon">📚</span>目录</button>
+        <button id="mb-search"><span class="mb-icon">🔍</span>搜索</button>
+        <button id="mb-prev"><span class="mb-icon">◀</span>上页</button>
+        <button id="mb-next"><span class="mb-icon">▶</span>下页</button>
+    </div>
+
+    <div id="main">
+        <div id="breadcrumb"></div>
+        <div id="page-nav">
+            <button id="btn-prev" disabled onclick="navPrev()">◀ 上一页</button>
+            <span class="nav-title" id="nav-title"></span>
+            <span class="nav-pos" id="nav-pos"></span>
+            <button id="btn-next" disabled onclick="navNext()">下一页 ▶</button>
+        </div>
+        <div id="welcome">
+            <h2>⚔️ 泰坦之旅百科全书</h2>
+            <p>选择下方数据源开始浏览，或在搜索框输入关键词搜索<br>
+            支持搜索职业、技能、装备、怪物、攻略等全部内容</p>
+            <div class="welcome-sources" id="welcome-sources"></div>
+            <div class="welcome-tips">
+                <h3>💡 使用提示</h3>
+                <ul>
+                    <li>点击左侧目录或上方数据源切换浏览不同内容</li>
+                    <li>使用搜索框支持多关键词搜索，如"风暴 技能"</li>
+                    <li>使用键盘 ← → 方向键翻页浏览</li>
+                    <li>手机和电脑均可使用，手机可横屏获得更佳体验</li>
+                </ul>
+            </div>
+        </div>
+        <iframe id="content-frame" style="display:none"></iframe>
+    </div>
+
+    <script>
+        let sources = [];
+        let currentSource = "";
+        let searchTimer = null;
+
+        // ========== 页面导航列表 ==========
+        let pageList = [];
+        let currentPageIdx = -1;
+
+        // ========== 初始化 ==========
+        document.addEventListener("DOMContentLoaded", async () => {
+            await loadSources();
+            initSearch();
+            initTabs();
+            initSidebarToggle();
+            listenFrameMessages();
+            // 键盘快捷键
+            document.addEventListener("keydown", (e) => {
+                if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
+                if (e.key === "ArrowLeft") navPrev();
+                if (e.key === "ArrowRight") navNext();
+            });
+        });
+
+        // ========== 数据源加载 ==========
+        async function loadSources() {
+            const resp = await fetch("/api/sources");
+            sources = await resp.json();
+
+            const bar = document.getElementById("source-bar");
+            sources.forEach((s, i) => {
+                const btn = document.createElement("button");
+                btn.className = "source-btn" + (i === 0 ? " active" : "");
+                btn.dataset.source = s.key;
+                btn.textContent = `${s.icon} ${s.name}`;
+                btn.addEventListener("click", () => selectSource(s.key));
+                bar.appendChild(btn);
+            });
+
+            const cards = document.getElementById("welcome-sources");
+            sources.forEach(s => {
+                const card = document.createElement("div");
+                card.className = "welcome-source-card";
+                card.innerHTML = `<div class="icon">${s.icon}</div><div class="name">${s.name}</div><div class="desc">${s.description || ''}</div>`;
+                card.addEventListener("click", () => selectSource(s.key));
+                cards.appendChild(card);
+            });
+
+            if (sources.length > 0) {
+                currentSource = sources[0].key;
+                loadTOC(currentSource);
+            }
+        }
+
+        function selectSource(key) {
+            currentSource = key;
+            document.querySelectorAll(".source-btn").forEach(b => {
+                b.classList.toggle("active", b.dataset.source === key);
+            });
+            switchTab("toc");
+            loadTOC(key);
+        }
+
+        // ========== 目录加载 ==========
+        async function loadTOC(sourceKey) {
+            const panel = document.getElementById("panel-toc");
+            panel.innerHTML = '<div class="loading"><div class="spinner"></div></div>';
+            try {
+                const resp = await fetch(`/api/toc/${sourceKey}`);
+                const data = await resp.json();
+                renderTree(data, panel, sourceKey);
+                pageList = [];
+                flattenTocPages(data, sourceKey, pageList);
+                currentPageIdx = -1;
+                updatePageNav();
+            } catch {
+                panel.innerHTML = '<div style="padding:20px;color:#f44">目录加载失败</div>';
+            }
+        }
+
+        function renderTree(nodes, container, sourceKey) {
+            container.innerHTML = "";
+            if (!nodes || nodes.length === 0) {
+                container.innerHTML = '<div style="padding:16px;color:var(--text-dim);text-align:center">暂无目录数据</div>';
+                return;
+            }
+            const ul = document.createElement("ul");
+            ul.className = "tree-node";
+            nodes.forEach(n => ul.appendChild(createTreeNode(n, sourceKey)));
+            container.appendChild(ul);
+        }
+
+        function createTreeNode(node, sourceKey) {
+            const li = document.createElement("li");
+            const hasChildren = node.children && node.children.length > 0;
+
+            const item = document.createElement("div");
+            item.className = "tree-item";
+            if (node.path) {
+                item.dataset.path = node.path;
+                item.dataset.source = sourceKey;
+            }
+
+            if (hasChildren) {
+                const toggle = document.createElement("span");
+                toggle.className = "tree-toggle";
+                toggle.textContent = "▶";
+                item.appendChild(toggle);
+            } else {
+                const sp = document.createElement("span");
+                sp.style.cssText = "width:16px;flex-shrink:0";
+                item.appendChild(sp);
+            }
+
+            const label = document.createElement("span");
+            label.textContent = node.name;
+            label.style.overflow = "hidden";
+            label.style.textOverflow = "ellipsis";
+            label.style.whiteSpace = "nowrap";
+            label.style.flex = "1";
+            item.appendChild(label);
+
+            item.addEventListener("click", (e) => {
+                e.stopPropagation();
+                if (hasChildren) {
+                    const ch = li.querySelector(":scope > .tree-children");
+                    const tg = item.querySelector(".tree-toggle");
+                    if (ch) { ch.classList.toggle("expanded"); tg.classList.toggle("expanded"); }
+                }
+                if (node.path) {
+                    loadPage(sourceKey, node.path, node.name);
+                }
+            });
+
+            li.appendChild(item);
+
+            if (hasChildren) {
+                const childCont = document.createElement("ul");
+                childCont.className = "tree-node tree-children";
+                node.children.forEach(c => childCont.appendChild(createTreeNode(c, sourceKey)));
+                li.appendChild(childCont);
+            }
+
+            return li;
+        }
+
+        // ========== 页面加载 ==========
+        function loadPage(sourceKey, path, title, fromNav) {
+            if (!path) return;
+            const frame = document.getElementById("content-frame");
+            const welcome = document.getElementById("welcome");
+            welcome.style.display = "none";
+            frame.style.display = "block";
+            frame.src = `/api/page/${sourceKey}?path=${encodeURIComponent(path)}`;
+
+            if (window._mobileCloseSidebar) window._mobileCloseSidebar();
+
+            if (!fromNav) {
+                const idx = pageList.findIndex(p => p.source === sourceKey && p.path === path);
+                if (idx >= 0) currentPageIdx = idx;
+            }
+            updatePageNav();
+
+            highlightTocItem(sourceKey, path);
+
+            const src = sources.find(s => s.key === sourceKey);
+            const pageName = (currentPageIdx >= 0 && pageList[currentPageIdx]) ? pageList[currentPageIdx].name : "";
+            const displayName = pageName || title || path.split("/").pop();
+            document.getElementById("breadcrumb").innerHTML =
+                `<span class="source-tag">${src ? src.icon + ' ' + src.name : sourceKey}</span>
+                 <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escapeHtml(displayName)}</span>`;
+        }
+
+        function highlightTocItem(sourceKey, path) {
+            document.querySelectorAll(".tree-item.active").forEach(el => el.classList.remove("active"));
+            document.querySelectorAll(".tree-item").forEach(item => {
+                if (item.dataset.path === path && item.dataset.source === sourceKey) {
+                    item.classList.add("active");
+                    let parent = item.parentElement;
+                    while (parent) {
+                        if (parent.classList && parent.classList.contains("tree-children") && !parent.classList.contains("expanded")) {
+                            parent.classList.add("expanded");
+                            const tg = parent.previousElementSibling?.querySelector(".tree-toggle");
+                            if (tg) tg.classList.add("expanded");
+                        }
+                        parent = parent.parentElement;
+                    }
+                    // 滚动到可见区域
+                    item.scrollIntoView({ block: "nearest", behavior: "smooth" });
+                }
+            });
+        }
+
+        // ========== iframe 内页面导航 ==========
+        function listenFrameMessages() {
+            window.addEventListener("message", (e) => {
+                if (e.data && e.data.type === "loadPage") {
+                    if (e.data.anchor) {
+                        const frame = document.getElementById("content-frame");
+                        const url = `/api/page/${e.data.source}?path=${encodeURIComponent(e.data.path)}`;
+                        frame.src = url;
+                        frame.onload = function() {
+                            try {
+                                frame.contentWindow.location.hash = e.data.anchor;
+                            } catch(ex) {}
+                            frame.onload = null;
+                        };
+                    } else {
+                        loadPage(e.data.source, e.data.path, "");
+                    }
+                }
+            });
+        }
+
+        // ========== 搜索 ==========
+        function initSearch() {
+            const input = document.getElementById("search-box");
+            input.addEventListener("input", () => {
+                clearTimeout(searchTimer);
+                searchTimer = setTimeout(() => doSearch(input.value), 400);
+            });
+            input.addEventListener("focus", () => {
+                if (input.value.trim()) switchTab("search");
+            });
+            input.addEventListener("keydown", (e) => {
+                if (e.key === "Enter") { clearTimeout(searchTimer); doSearch(input.value); }
+            });
+        }
+
+        async function doSearch(query) {
+            query = query.trim();
+            if (!query) {
+                document.getElementById("search-status").textContent = "输入关键词开始搜索";
+                document.getElementById("search-results").innerHTML = "";
+                return;
+            }
+            switchTab("search");
+            document.getElementById("search-status").innerHTML = '<div class="loading"><div class="spinner"></div></div>';
+            document.getElementById("search-results").innerHTML = "";
+
+            try {
+                const resp = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
+                const results = await resp.json();
+
+                if (results.length === 0) {
+                    document.getElementById("search-status").textContent = `未找到 "${query}" 相关结果`;
+                    return;
+                }
+
+                document.getElementById("search-status").textContent = `找到 ${results.length} 条结果`;
+                const container = document.getElementById("search-results");
+
+                results.forEach(r => {
+                    const div = document.createElement("div");
+                    div.className = "search-result";
+
+                    let snippet = escapeHtml(r.snippet);
+                    query.split(/\s+/).forEach(kw => {
+                        if (kw) snippet = snippet.replace(new RegExp(escapeRegExp(kw), "gi"), "<mark>$&</mark>");
+                    });
+
+                    div.innerHTML = `
+                        <div class="search-result-meta">
+                            <span class="search-result-badge badge-source">${escapeHtml(r.sourceName)}</span>
+                            <span class="search-result-badge badge-category">${escapeHtml(r.category)}</span>
+                        </div>
+                        <div class="search-result-title">${escapeHtml(r.title)}</div>
+                        <div class="search-result-snippet">${snippet}</div>`;
+                    div.addEventListener("click", () => loadPage(r.source, r.path, r.title));
+                    container.appendChild(div);
+                });
+            } catch {
+                document.getElementById("search-status").textContent = "搜索出错，请重试";
+            }
+        }
+
+        // ========== 标签页 ==========
+        function initTabs() {
+            document.querySelectorAll(".tab-btn").forEach(btn => {
+                btn.addEventListener("click", () => switchTab(btn.dataset.tab));
+            });
+        }
+
+        function switchTab(tab) {
+            document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+            const target = document.querySelector(`.tab-btn[data-tab="${tab}"]`);
+            if (target) target.classList.add("active");
+            document.getElementById("panel-toc").classList.toggle("active", tab === "toc");
+            document.getElementById("panel-search").classList.toggle("active", tab === "search");
+        }
+
+        // ========== 侧边栏折叠 ==========
+        function initSidebarToggle() {
+            const t = document.getElementById("sidebar-toggle");
+            t.addEventListener("click", () => {
+                document.body.classList.toggle("sidebar-collapsed");
+                t.textContent = document.body.classList.contains("sidebar-collapsed") ? "▶" : "◀";
+            });
+
+            const isMobile = () => window.innerWidth <= 768;
+            const sidebar = document.getElementById("sidebar");
+            const overlay = document.getElementById("mobile-overlay");
+
+            function mobileToggleSidebar(show, tab) {
+                if (show) {
+                    sidebar.classList.add("mobile-open");
+                    overlay.classList.add("show");
+                    if (tab) switchTab(tab);
+                    document.querySelectorAll("#mobile-bar button").forEach(b => b.classList.remove("active"));
+                    if (tab === "toc") document.getElementById("mb-toc").classList.add("active");
+                    if (tab === "search") document.getElementById("mb-search").classList.add("active");
+                } else {
+                    sidebar.classList.remove("mobile-open");
+                    overlay.classList.remove("show");
+                }
+            }
+
+            document.getElementById("mb-toc").addEventListener("click", () => {
+                const isOpen = sidebar.classList.contains("mobile-open");
+                const isToc = document.getElementById("panel-toc").classList.contains("active");
+                mobileToggleSidebar(!(isOpen && isToc), "toc");
+            });
+
+            document.getElementById("mb-search").addEventListener("click", () => {
+                const isOpen = sidebar.classList.contains("mobile-open");
+                const isSearch = document.getElementById("panel-search").classList.contains("active");
+                if (isOpen && isSearch) {
+                    mobileToggleSidebar(false);
+                } else {
+                    mobileToggleSidebar(true, "search");
+                    setTimeout(() => document.getElementById("search-box").focus(), 300);
+                }
+            });
+
+            document.getElementById("mb-prev").addEventListener("click", () => navPrev());
+            document.getElementById("mb-next").addEventListener("click", () => navNext());
+
+            overlay.addEventListener("click", () => mobileToggleSidebar(false));
+
+            window._mobileCloseSidebar = () => {
+                if (isMobile()) mobileToggleSidebar(false);
+            };
+        }
+
+        // ========== 上下页导航 ==========
+        function flattenTocPages(nodes, sourceKey, result) {
+            if (!nodes) return;
+            nodes.forEach(n => {
+                if (n.path) result.push({ source: sourceKey, path: n.path, name: n.name });
+                if (n.children) flattenTocPages(n.children, sourceKey, result);
+            });
+        }
+
+        function updatePageNav() {
+            const nav = document.getElementById("page-nav");
+            const btnPrev = document.getElementById("btn-prev");
+            const btnNext = document.getElementById("btn-next");
+            const posEl = document.getElementById("nav-pos");
+            const titleEl = document.getElementById("nav-title");
+            const mbPrev = document.getElementById("mb-prev");
+            const mbNext = document.getElementById("mb-next");
+
+            if (pageList.length === 0 || currentPageIdx < 0) {
+                nav.style.display = "none";
+                if (mbPrev) { mbPrev.disabled = true; mbPrev.style.opacity = '0.4'; }
+                if (mbNext) { mbNext.disabled = true; mbNext.style.opacity = '0.4'; }
+                return;
+            }
+            nav.style.display = "flex";
+            btnPrev.disabled = currentPageIdx <= 0;
+            btnNext.disabled = currentPageIdx >= pageList.length - 1;
+            posEl.textContent = `${currentPageIdx + 1} / ${pageList.length}`;
+            titleEl.textContent = pageList[currentPageIdx].name || "";
+            if (mbPrev) { mbPrev.disabled = currentPageIdx <= 0; mbPrev.style.opacity = currentPageIdx <= 0 ? '0.4' : '1'; }
+            if (mbNext) { mbNext.disabled = currentPageIdx >= pageList.length - 1; mbNext.style.opacity = currentPageIdx >= pageList.length - 1 ? '0.4' : '1'; }
+        }
+
+        function navPrev() {
+            if (currentPageIdx > 0) {
+                currentPageIdx--;
+                const p = pageList[currentPageIdx];
+                loadPage(p.source, p.path, p.name, true);
+            }
+        }
+
+        function navNext() {
+            if (currentPageIdx < pageList.length - 1) {
+                currentPageIdx++;
+                const p = pageList[currentPageIdx];
+                loadPage(p.source, p.path, p.name, true);
+            }
+        }
+
+        function escapeHtml(s) {
+            if (!s) return '';
+            const d = document.createElement("div");
+            d.textContent = s;
+            return d.innerHTML;
+        }
+        function escapeRegExp(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }
+    </script>
+</body>
+</html>

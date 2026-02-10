@@ -1,0 +1,323 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>范例12：任务</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南012.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> </td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">范例12：任务</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　范例12：任务 <BR><BR> 
+　　还记得范例4帮村民杀死怪物的任务吗？现在我们要进一步来看它是如何运作的。它实际上就是利用任务档案(quest file)，一个任务档案就是使用许多触发器来控制游戏的流程。我们将要设计一系列的事件：村民指派任务给主角、主角杀死怪物、村民给主角奖赏。 <BR><BR> 
+　　一个任务有四个主要的部份：阶段(step)、触发器(trigger)、状况(condition)、行动(action)。阶段就是将相关的触发器放在一起，让任务流程更容易明白；触发器是任务的核心部份，它包含了一系列的状况与行动，当状况被满足后，行动就会被执行。 <BR><BR> 
+　　12.0.1 设定 <BR><BR> 
+　　1)这个范例主要是利用Quest Editor，先打开Quest Editor。 <BR><BR> 
+　　12.1记号 <BR><BR> 
+　　记号(tokens)是用来追踪已经发生的事件。当接到一个重要任务时，主角就会被画上事件进度的记号。之后在进行任务时，触发器可以检查主角的记号来决定现在应该执行何种行动。 <BR><BR> 
+　　首先要产生一个tokens档案。在你的模组资料夹(应该是‘My Documents\My Games\Titan Quest\CustomMaps\&lt;模组名称&gt;\resources\Quests\’)底下产生一个空的’tokens.bin’档案，这个档案用来储存记号。产生这个档案最简单的方法就是直接到该目录底下，先建立一个新的文字档，再将它的档名改成’tokens.bin’。 <BR><BR> 
+　　12.1.1 产生一个记号 <BR><BR> 
+　　接下来，我们将产生一个记号，用来检查主角是否已经将怪物杀死了。 <BR><BR> 
+　　1)点按记号编辑(Token Editor)按钮。出现一个视窗，选择你的模组目录底下的tokens.bin。 <BR><BR> 
+　　2)点按’Create Token’。 <BR><BR> 
+　　3)在Add New Token视窗中的New Token栏位填上记号名称，这里我们填上’Tutorial_Satyr_Killed’。 <BR><BR> 
+　　4)按下’Ok’就可以看到这个记号被加到tokens档案中了。 <BR><BR> 
+　　12.2产生实际任务档案 <BR><BR> 
+　　12.2.1 产生一个任务 <BR><BR> 
+　　1)从选单中’File -&gt; New Quest Document’，或是点按新任务文件(New Quest Document)图示。 <BR><BR> 
+　　2)按下来要设定任务的属性。在档案视窗(Files Pane)中，选择刚建立的任务档案，接着到底下的属性视窗(Property Pane)。 <BR><BR> 
+　　3)将QuestName属性改为’Defeat The Satyr’。 <BR><BR> 
+　　下面的Reward属性就是当主角完成任务后可以得到的奖赏，在这里设定这些reward值，主角就可以知道他完成此任务后可以得到什么样的状赏。 <BR><BR> 
+　　4)将RewardGoldEpic属性设为200。 <BR><BR> 
+　　5)将RewardGoldLegendary属性设为300。 <BR><BR> 
+　　6)将RewardGoldNormal属性设为100。 <BR><BR> 
+　　注意：这些数字并不是真的给主角的奖赏，它只是显示在任务画面中。你必须使用行动(action)—”give X”来给玩家各种奖赏。 <BR><BR> 
+　　12.2.2 产生阶段 <BR><BR> 
+　　阶段(steps)就是将相关的任务触发器放在一起，让任务流程更容易明白。 <BR><BR> 
+　　1)点按’Create New Quest Step’按钮。 <BR><BR> 
+　　2)选择刚建立的阶段。 <BR><BR> 
+　　3)在属性视窗中，将此阶段的Name属性改成”Setup”。 <BR><BR> 
+　　接下来要再建立三个阶段。 <BR><BR> 
+　　4)点按’Create New Quest Step’按钮。 <BR><BR> 
+　　5)在属性视窗中，将此阶段的Name属性改成”Talk to the Villager”。 <BR><BR> 
+　　6)点按’Create New Quest Step’按钮。 <BR><BR> 
+　　7)在属性视窗中，将此阶段的Name属性改成”Kill the Satyr”。 <BR><BR> 
+　　8)点按’Create New Quest Step’按钮。 <BR><BR> 
+　　9)在属性视窗中，将此阶段的Name属性改成”Claim the Reward”。 <BR><BR> 
+　　12.2.3 产生用来设定的触发器 <BR><BR> 
+　　一个设定触发器(setup trigger)可以帮助你初始化任务中的物件。在这里我们要让村民(Tutorial-Quest_Villager)头上出现一个惊叹号，让主角可以知道此村民是一个主要目标(primary objective)。这个触发器会有一个状况(condition)，当地图被载入(Level Load)完成后此状况就会被启动(满足)，接着行动(action)会将此村民设成主要目标，他的头上就会出现惊叹号。 <BR><BR> 
+　　先来设定触发器。(译：如果你对底下的操作不熟的话，请回去看范例9) <BR><BR> 
+　　1)选择”Setup”阶段。 <BR><BR> 
+　　2)在工具列中点按’Create New Trigger’按钮。 <BR><BR> 
+　　3)将此触发器的名字改成”Set Up the Villager”。 <BR><BR> 
+　　接着我们要建立一个新的状况(condition)。 <BR><BR> 
+　　4)选择此触发器下方的’Conditions’。 <BR><BR> 
+　　5)在工具列中点按’Create New Condition’按钮。出现增加新的状况 (Add New Condition)视窗画面，画面中的状况项目都是用来触发行动(action)的。 <BR><BR> 
+　　6)选择’On Game Level Load’状况。 <BR><BR> 
+　　再来我们要产生行动，内容就是村民会被设成主要目标。 <BR><BR> 
+　　7)在工具列中点按’Create New Action’按钮。出现增加新的行动 (Add New Action)视窗画面 <BR><BR> 
+　　8)选择’Illuminate X as Primary’。这个行动会将某个东西设成主要(primary)，我们必须指定是哪个东西要设成主要。 <BR><BR> 
+　　9)选择刚建立的阶段。 <BR><BR> 
+　　10)在属性视窗中选择Npc属性。 <BR><BR> 
+　　11)在右边的资产选择视窗中，选择’ &lt;root&gt; -&gt; CustomMaps -&gt; Tutorial12 -&gt; database -&gt; Records -&gt; Tutorial-Quest_Villager.dbr’。 <BR><BR> 
+　　12)点按Npc属性旁边的’…’按钮，Tutorial-Quest_Villager.dbr的路径就会自动加到Npc属性栏中。 <BR><BR> 
+　　我们的第一个触发器已经完成了。 <BR><BR> 
+　　12.2.4 产生互动的触发器 <BR><BR> 
+　　现在主角可以得到任务了吗？当主角跟村民讲话时，主角的任务日志(Quest Log)就会更新。任务日志有两个部份：一个是概要(Summary)—列出了任务目标；另一个是对话(Dialog)—用来重拨此任务的对话内容。 <BR><BR> 
+　　首先产生触发器。 <BR><BR> 
+　　1)选择第二个阶段—”Talk to the Villager”。 <BR><BR> 
+　　2)点按’Create New Trigger’按钮。 <BR><BR> 
+　　3)将新建的触发器名字改成”Villager Gives Player Quest”。 <BR><BR> 
+　　4)为”Villager Gives Player Quest”触发器建立一个新的状况(condition)。 <BR><BR> 
+　　5)选择’On Interact with X’的状况类型。这个状况内容是：当主角与某个物件互动时，行动就会被执行。 <BR><BR> 
+　　6)选择刚建立的状况。 <BR><BR> 
+　　7)设定NPC属性为'Records \ Creature \ NPC \ Speaking \ Story \ Tutorial-Quest_Villager.dbr '。 <BR><BR> 
+　　8)为”Villageer Gives Player Quest”触发器建立一个行动(action)。 <BR><BR> 
+　　9)选择’Update This Quest’s Map Marker’的行动类型。这个任务目标就会在任务日志中更新。我们必须建立该目标的说话内容、地点、成功与否。目标的BulletPointTag属性就是在设定该任务目标出现在游戏时的名称。 <BR><BR> 
+　　10)将此行动的BulletPointTag属性设成”Kill The Monster”。 <BR><BR> 
+　　11)将此行动的DescriptionTag属性设成 ”There is a monster attacking the village. Go kill it.” <BR><BR> 
+　　12)将此行动的DeCompleteBulletPoint属性设成false。 <BR><BR> 
+　　最后我们要建立更新对话(Dialog)页中的任务日志(Quest Log)。 <BR><BR> 
+　　13)为”Villager Gives Player Quest”触发器建立一个新的行动(action)，行动类型选’Update This Quest’s Dialog tab to X’。 <BR><BR> 
+　　14)将此行动的DialogPak属性设成’ Tutorial12 \ database \ Records \ Tutorial-Villager_Dialog_A.dbr’。 <BR><BR> 
+　　12.2.5 产生死亡触发器 <BR><BR> 
+　　现在我们要产生一个控制杀死怪物的触发器：当主角杀死怪物后，主角会得到一个记号用来指出他已经杀死怪物了，而且任务日志中的目标也会更新，最后村民会被设成新的主要目标。 <BR><BR> 
+　　1)为’Kill The Satyr’阶段产生一个触发器。 <BR><BR> 
+　　2)将此触发器改名成”Get Credit for Killing the Monster”。 <BR><BR> 
+　　3)为”Get Credit for Killing the Monster”触发器建立一个新的状况。 <BR><BR> 
+　　4)选择’Kill Creature X’状况类型。 <BR><BR> 
+　　我们要设定哪一个怪物是要被杀死的。 <BR><BR> 
+　　5)将此状况中的CreatureDatabaseRecord属性设成’ Records \ Creature \ Monster \ Satyr \ Tutorial-Quest_Satyr.dbr’。 <BR><BR> 
+　　之后我们必须去检查主角是否杀死此怪物了，所以我们要给主角一个记号(Token)，用来标示他是否已经杀死怪物了。 <BR><BR> 
+　　6)为”Get Credit for Killing the Monster”触发器建立一个新的行动。 <BR><BR> 
+　　7)选择’Give Token X’行动类型。 <BR><BR> 
+　　8)选择你刚建立的行动。 <BR><BR> 
+　　9)在Token属性资料栏位中点按’…’按钮。 <BR><BR> 
+　　10)选择’tokens.bin’档案。 <BR><BR> 
+　　11)从记号视窗(Tokens Pane)中选择 ‘Tutorial-Satyr_Killed’。 <BR><BR> 
+　　接下来要将村民设成主要目标，让主角知道要回到找这个村民以完成任务。 <BR><BR> 
+　　12)为”Get Credit for Killing the Monster”触发器建立一个新的行动。 <BR><BR> 
+　　13)选择’Illuminate X as Primary’行动类型。 <BR><BR> 
+　　14)选择你刚建立的行动。 <BR><BR> 
+　　15)将Npc属性设成’ Records \ Creature \ NPC \ Speaking \ Story \ Tutorial-Quest_Villager.dbr’。 <BR><BR> 
+　　现在我们要将”Kill The Monster”目标设成完成。 <BR><BR> 
+　　16)为”Get Credit for Killing the Monster”触发器建立一个新的行动，类型选’Update This Quest’s Map Marker’。 <BR><BR> 
+　　17)将这个行动的BulletPointTag属性设定”Kill The Monster”。 <BR><BR> 
+　　18)将这个行动的DoCompleteBulletPoint属性设成True。 <BR><BR> 
+　　我们要再新增一个目标，告诉主角要回到村民那里。 <BR><BR> 
+　　19)为”Killing the Monster”触发器建立一个新的行动，类型选’Update This Quest’s Map Marker’。 <BR><BR> 
+　　20)将这个行动的BulletPointTag属性设成”Return To The Villager”。 <BR><BR> 
+　　接着要更新任务说明。 <BR><BR> 
+　　21)将这个行动的DescriptionTag属性设成”You have Killed the monster. Go Tell The Vilager”。 <BR><BR> 
+　　22)将DoCompleteBulletPoint属性设成False。 <BR><BR> 
+　　12.2.6 完成任务 <BR><BR> 
+　　现在主角可以回到村民那里要奖赏了。 <BR><BR> 
+　　1)为’Claim the Reward’阶段产生一个触发器 <BR><BR> 
+　　2)将此触发器的Name属性改为”Talk To Guy To Finish Quest”。 <BR><BR> 
+　　这个触发器的第一个状况发生在主角于村民交谈时。 <BR><BR> 
+　　3)为’Talk To Guy To Finish Quest’触发器建立一个新的状况，类型为’On Interact with X’。 <BR><BR> 
+　　4)将此新状况的Npc属性设为’ Records \ Creature \ NPC \ Speaking \ Story \ Tutorial-Quest_Villager.dbr’。 <BR><BR> 
+　　我们要先确定主角是否已经杀死怪物了，才能给他奖赏。 <BR><BR> 
+　　5)为’Talk To Guy To Finish Quest’触发器建立一个新的状况，类型为’Owns Token X’。 <BR><BR> 
+　　6)将此状况的Token属性设成’Tutorial_Satyr_Killed’。 <BR><BR> 
+　　现在我们要来修改村民的说话内容。 <BR><BR> 
+　　7)为’Talk To Guy To Finish Quest’触发器建立一个新的行动，类型为’Update X’s Dialog to X’。 <BR><BR> 
+　　8)将此行动的DialogPak属性设为'Tutorial12 \ database \ Records \ Tutorial-Villager_Dialog_B.dbr'。 <BR><BR> 
+　　9)将此行动的NPC属性设为’ Tutorial12 \ database \ Records \ Tutorial-Quest_Villager.dbr’。 <BR><BR> 
+　　现在我们将改变目标标志以反应主角成功地与村民交谈过了。 <BR><BR> 
+　　10)为’Talk To Guy To Finish Quest’触发器建立一个新的行动，类型为’Update This Quest’s Map Marker’。 <BR><BR> 
+　　11)将此行动的BulletPointTag属性设为 “Return To The Villager”。 <BR><BR> 
+　　12)将此行动的DoCompleteBulletPoint属性设为True。 <BR><BR> 
+　　因为村民承诺过，所以主角得到金钱奖赏。 <BR><BR> 
+　　13)为’Talk To Guy To Finish Quest’触发器建立一个新的行动，类型为’Give Player N,N,N gole’。 <BR><BR> 
+　　14)选择此新的行动。 <BR><BR> 
+　　15)将MoneyEpic属性设为200。 <BR><BR> 
+　　16)将MoneyLegendary属性设为300。 <BR><BR> 
+　　17)将MoneyNormal属性设为100。 <BR><BR> 
+　　将此任务标记为完成，避免主角重覆执行这个任务。 <BR><BR> 
+　　18)为’Talk To Guy To Finish Quest’触发器建立一个新的行动，类型为’Complete Quest Now’。 <BR><BR> 
+　　19)将此行动的QuestFile属性设为’ Tutorial12 \ assets \ Tutorial-Save_The_Village.qst’。 <BR><BR> 
+　　12.3让目标出现 <BR><BR> 
+　　技术上来说，这个任务在游戏中应该可以正常的运作。但是事实上，在你的任务日志中并不会出现任务目标而且主角的位置也不会出现在地图中。为此，我们需要建立地图标记(map marker)和表面图案(overlay)。地图标记是一个环状的图型出现在任务日志中的地图上。表面图案出现在地图标记里面，它写出主角目前所在的区域。地图标记必须连结到任务区域地图(quest location map)中。 <BR><BR> 
+　　12.3.1 产生一个表面图案 <BR><BR> 
+　　表面图案(overlay)会被地图标记所使用，所以我们先来产生表面图案。 <BR><BR> 
+　　1)打开Art Manager。 <BR><BR> 
+　　2)点按Database标签页。 <BR><BR> 
+　　3)在目录视窗中，选择资料夹’ database -&gt; Records -&gt; InGameUI -&gt; Player Quests -&gt; Map Markers’。 <BR><BR> 
+　　4)在右边的视窗中，复制(copy)’GreeceQ1_overlay.dbr’。 <BR><BR> 
+　　5)在目录视窗中，选择资料夹’Tutorial12 \ database -&gt; Records’。 <BR><BR> 
+　　6)在右边的视窗中，贴上(paste)’GreeceQ1_overlay.dbr’。 <BR><BR> 
+　　7)将’GreeceQ1_overlay.dbr’改名成’Tutorial-Save_The_Village_overlay.dbr’。 <BR><BR> 
+　　12.3.2 产生一个地图标记 <BR><BR> 
+　　1)打开Art Manager。 <BR><BR> 
+　　2)选择DataBase标签页。 <BR><BR> 
+　　3)在目录视窗中，选择资料夹’ database -&gt; Records -&gt; InGameUI -&gt; Player Quests -&gt; Map Markers’。 <BR><BR> 
+　　4)在右边的视窗中，复制(copy)’GreeceQ1.dbr’。 <BR><BR> 
+　　5)在目录视窗中，选择资料夹’Tutorial12 \ database -&gt; Records’。 <BR><BR> 
+　　6)在右边的视窗中，贴上(paste)’GreeceQ1.dbr’。 <BR><BR> 
+　　7)将’GreeceQ1.dbr’改名成’Tutorial-Save_The_Village.dbr’。接着要编辑‘Tutorial-Save_The_Village.dbr’。 <BR><BR> 
+　　8)滑鼠双击’ Tutorial-Save_The_Village.dbr’。 <BR><BR> 
+　　9)在阶级视窗(Hierarchy Pane)中选择’All Groups -&gt; Config’群组。 <BR><BR> 
+　　10)将questFile属性改成’ Tutorial12 \ assets \ Tutorial-Save_The_Village.qst’。 <BR><BR> 
+　　11)将dialogPakFile属性改成’ Tutorial12 \ database \ Records \ Tutorial-Villager_Dialog_B.dbr’。 <BR><BR> 
+　　12)将marketButtonOverlay属性改成’ CustomMaps \ Tutorial12 \ Records \ Tutorial-Save_The_Village_overlay.dbr’。 <BR><BR> 
+　　13)将markerDescriptionTag属性改成”Go Save The Village”。 <BR><BR> 
+　　12.3.3 产生一个任务区域地图 <BR><BR> 
+　　1)打开Art Manager。 <BR><BR> 
+　　2)选择DataBase标签页。 <BR><BR> 
+　　3)在目录视窗中，选择资料夹’ database -&gt; Records -&gt; InGameUI -&gt; Player Quests’。 <BR><BR> 
+　　4)在右边的视窗中，复制(copy)’QuestLocationMap1.dbr’。 <BR><BR> 
+　　5)在目录视窗中，选择资料夹’Tutorial12 \ database’。 <BR><BR> 
+　　6)在右边的视窗中，贴上(paste)’ QuestLocationMap1.dbr’。 <BR><BR> 
+　　7)将’ QuestLocationMap1.dbr’改名成’ Tutorial-Quest_Location_Map.dbr’。 接着要编辑‘Tutorial-Quest_Location_Map.dbr’。 <BR><BR> 
+　　8)滑鼠双击’ Tutorial-Quest_Location_Map.dbr’。 <BR><BR> 
+　　9)在阶级视窗(Hierarchy Pane)中选择’All Groups -&gt; Config’群组。 <BR><BR> 
+　　10)滑鼠双击mapMarkers属性。 <BR><BR> 
+　　跳出一个编辑变数视窗(Editing Variable Window)，我们要删掉所有旧的地图标记。 <BR><BR> 
+　　11)选择视窗底部表格中的一个实体。 <BR><BR> 
+　　12)在阵列编辑控制视窗(Array Editing Controls Pane)中点按’Delete’。 <BR><BR> 
+　　13)继续点按’Delete’直到所有的实体都被删除。 现在要加入我们刚才建立的新标记。 <BR><BR> 
+　　14)在阵列编辑控制视窗中点按’New’。 <BR><BR> 
+　　15)滑鼠双击刚建立的那一列中的value格子。 <BR><BR> 
+　　16)将你建立的地图标记的路径填入'Records \ InGameUI \ Player Quests\Map Markers \ Tutorial-Save_The_Village.dbr'。 <BR><BR> 
+　　17)点按’Apply’。 <BR><BR> 
+　　18)点按’OK’。 <BR><BR> 
+　　19)关闭编辑记录视窗。 <BR><BR> 
+　　它会问你是否要储存。 <BR><BR> 
+　　20)点按’Yes’。 <BR><BR> 
+　　12.4将任务放到地图中 <BR><BR> 
+　　12.4.1 放置任务物件 <BR><BR> 
+　　1)打开Editor编辑器。 <BR><BR> 
+　　2)打开’ custommaps \ Tutorial12 \ source \ Tutorial – Save_The_Village.wrl’。 <BR><BR> 
+　　3)在Editor Mode中打开’Tutorial-Save_The_Village_Terrain.lvl’。 <BR><BR> 
+　　4)选择物件设置工具。 <BR><BR> 
+　　现在要放置村民 <BR><BR> 
+　　5)在地面上放置’ CustomMaps -&gt; Tutorial12 -&gt; database -&gt; Records -&gt; Tutorial-Quest_Villager’。 <BR><BR> 
+　　现在要放置怪物。 <BR><BR> 
+　　6)在地面上放置’ CustomMaps -&gt; Tutorial12 -&gt; database -&gt; Records -&gt; Tutorial-Quest_Satyr’。 <BR><BR> 
+　　现在要放置出生点。 <BR><BR> 
+　　7)在地面上放置’ records -&gt; controls -&gt; spawnplayer’。 <BR><BR> 
+　　8)进入Layout Mode。 <BR><BR> 
+　　9)点按’Build -&gt; Rebuild All Maps’。 <BR><BR> 
+　　10)点按’Build -&gt; Rebuild All Pathing’。 <BR><BR> 
+　　11)点按’File -&gt; Save All’。 <BR><BR> 
+　　12.5完成建置 <BR><BR> 
+　　12.5.1 建置所有的东西 <BR><BR> 
+　　1)打开Art Manager。 <BR><BR> 
+　　2)点按’Build -&gt; Build Single Map…’。 <BR><BR> 
+　　3)在选择地图(Select Map)视窗中，选择’Tutorial12’。 <BR><BR> 
+　　4)点按’OK’。 <BR><BR> 
+　　范例12所有的资产都会被建置。 <BR><BR> 
+　　5)点按Database标签页。 <BR><BR> 
+　　6)在目录视窗中，选择’Tutorial12 \ database’。 <BR><BR> 
+　　7)在’ Tutorial12 \ database’上点按滑鼠右键。 <BR><BR> 
+　　8)选择’Build’。 <BR><BR> 
+　　范例12所有的资料库都会被建置。 <BR><BR> 
+　　现在你可以进入游戏中试试看这个任务的效果。 <!--/HTMLBUILERPART0--></font></DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南012.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> </td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

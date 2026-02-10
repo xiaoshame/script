@@ -1,0 +1,2414 @@
+MIME-Version: 1.0
+X-Document-Type: Worksheet
+Content-Location: file:///C:/525F8FC8/file4440.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 11">
+<link rel=3DFile-List href=3D"file4440.files/filelist.xml">
+<link rel=3DEdit-Time-Data href=3D"file4440.files/editdata.mso">
+<link rel=3DOLE-Object-Data href=3D"file4440.files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>&#26381;&#21153;&#22120;</o:Author>
+  <o:LastAuthor>JOYGAO</o:LastAuthor>
+  <o:Created>2007-09-10T08:48:21Z</o:Created>
+  <o:LastSaved>2009-08-26T14:28:39Z</o:LastSaved>
+  <o:Company>&#38738;&#23707;&#32593;&#24433;&#30005;&#23376;&#20449;&#2468=
+7;&#26377;&#38480;&#20844;&#21496;</o:Company>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:\5E38\89C4;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;}
+.xl25
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl26
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;}
+.xl27
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	white-space:normal;}
+.xl29
+	{mso-style-parent:style0;
+	color:red;
+	font-size:11.0pt;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl30
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl31
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-weight:700;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	text-align:left;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl32
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-weight:700;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl33
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>330</x:DefaultRowHeight>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:PaperSizeIndex>9</x:PaperSizeIndex>
+      <x:HorizontalResolution>200</x:HorizontalResolution>
+      <x:VerticalResolution>200</x:VerticalResolution>
+     </x:Print>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>3</x:ActiveRow>
+       <x:ActiveCol>3</x:ActiveCol>
+       <x:RangeSelection>$A$1:$F$155</x:RangeSelection>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+    <x:QueryTable>
+     <x:Name>. TQIT OUT_&#35013;&#22791;_&#21518;&#32512;_CN</x:Name>
+     <x:AutoFormatFont/>
+     <x:AutoFormatPattern/>
+     <x:QuerySource>
+      <x:QueryType>OLEDB</x:QueryType>
+      <x:CommandText>&quot;TQIT&quot;.&quot;dbo&quot;.&quot;OUT_&#35013;&#2=
+2791;_&#21518;&#32512;_CN&quot;</x:CommandText>
+      <x:CommandType>Table</x:CommandType>
+      <x:Maintain/>
+      <x:Connection>Provider=3DSQLOLEDB.1;Integrated Security=3DSSPI;Persis=
+t Security Info=3DTrue;Initial Catalog=3DTQIT;Data Source=3D.;Use Procedure=
+ for Prepare=3D1;Auto Translate=3DTrue;Packet Size=3D4096;Workstation ID=3D=
+SERVER;Use Encryption for Data=3DFalse;Tag with column collation when possi=
+ble=3DFalse</x:Connection>
+      <x:SourceConnectionFile>C:\Documents and Settings\xxd\My Documents\&#=
+25105;&#30340;&#25968;&#25454;&#28304;\. TQIT OUT_&#35013;&#22791;_&#21518;=
+&#32512;_CN.odc</x:SourceConnectionFile>
+      <x:RobustConnect>0</x:RobustConnect>
+      <x:VersionLastEdit>2</x:VersionLastEdit>
+      <x:VersionLastRefresh>2</x:VersionLastRefresh>
+     </x:QuerySource>
+     <x:RefreshInfo>
+      <x:NextId>9</x:NextId>
+      <x:ColumnInfo>
+       <x:Id>2</x:Id>
+       <x:Name>&#20013;&#25991;&#21517;&#31216;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>3</x:Id>
+       <x:Name>&#31181;&#31867;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>4</x:Id>
+       <x:Name>&#38656;&#35201;&#31561;&#32423;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>5</x:Id>
+       <x:Name>&#23646;&#24615;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>6</x:Id>
+       <x:Name>&#35013;&#22791;&#31181;&#31867;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>7</x:Id>
+       <x:Name>&#33521;&#25991;&#21517;&#31216;</x:Name>
+      </x:ColumnInfo>
+      <x:DeletedTitle>n_ID</x:DeletedTitle>
+      <x:DeletedTitle>n_Flag</x:DeletedTitle>
+     </x:RefreshInfo>
+    </x:QueryTable>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>8415</x:WindowHeight>
+  <x:WindowWidth>14715</x:WindowWidth>
+  <x:WindowTopX>360</x:WindowTopX>
+  <x:WindowTopY>360</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+ <x:ExcelName>
+  <x:Name>_._TQIT_OUT_&#35013;&#22791;_&#21518;&#32512;_CN</x:Name>
+  <x:SheetIndex>1</x:SheetIndex>
+  <x:Formula>=3DSheet1!$A$1:$F$161</x:Formula>
+ </x:ExcelName>
+</xml><![endif]-->
+</head>
+
+<body link=3Dblue vlink=3Dpurple class=3Dxl24>
+
+<table x:str border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D1277 style=
+=3D'border-collapse:
+ collapse;table-layout:fixed;width:958pt'>
+ <col class=3Dxl25 width=3D104 style=3D'mso-width-source:userset;mso-width-=
+alt:3328;
+ width:78pt'>
+ <col class=3Dxl24 width=3D104 span=3D2 style=3D'mso-width-source:userset;m=
+so-width-alt:
+ 3328;width:78pt'>
+ <col class=3Dxl24 width=3D308 style=3D'mso-width-source:userset;mso-width-=
+alt:9856;
+ width:231pt'>
+ <col class=3Dxl24 width=3D553 style=3D'mso-width-source:userset;mso-width-=
+alt:17696;
+ width:415pt'>
+ <col class=3Dxl24 width=3D104 span=3D251 style=3D'mso-width-source:userset=
+;mso-width-alt:
+ 3328;width:78pt'>
+ <tr class=3Dxl26 height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl31 width=3D104 style=3D'height:16.5pt;width:78p=
+t'><a
+  name=3D"_._TQIT_OUT_&#35013;&#22791;_&#21518;&#32512;_CN">&#20013;&#25991=
+;&#21517;&#31216;</a></td>
+  <td class=3Dxl32 width=3D104 style=3D'width:78pt'>&#31181;&#31867;</td>
+  <td class=3Dxl32 width=3D104 style=3D'width:78pt'>&#38656;&#35201;&#31561=
+;&#32423;</td>
+  <td class=3Dxl32 width=3D308 style=3D'width:231pt'>&#23646;&#24615;</td>
+  <td class=3Dxl32 width=3D553 style=3D'width:415pt'>&#35013;&#22791;&#3118=
+1;&#31867;</td>
+  <td class=3Dxl32 width=3D104 style=3D'width:78pt'>&#33521;&#25991;&#21517=
+;&#31216;</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#33021;&#21147;&#20043;(2)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+15
+  &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&#12289;&#39033;&=
+#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Ability(2)</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#31934;&#36890;&#20043;(2)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+25
+  &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&#12289;&#39033;&=
+#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Proficiency(2)</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#22825;&#36164;&#20043;(2)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>15</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+35
+  &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&#12289;&#39033;&=
+#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Endowment(2)</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#23041;&#21147;&#20043;(2)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>22</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+45
+  &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&#12289;&#39033;&=
+#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Prowess(2)</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#19987;&#23478;&#20043;(2)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>28</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+55
+  &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&#12289;&#39033;&=
+#38142;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Expertise(2)</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#25511;&#21046;&#20043;(2)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>38</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+65
+  &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&#12289;&#39033;&=
+#38142;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Mastery(2)</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#26080;&#19978;&#20043;(2)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>46</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+75
+  &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&#12289;&#39033;&=
+#38142;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Supremacy(2)</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#33021;&#21147;&#20043;(1)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+15
+  &#28857;&#25112;&#26007;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#3046=
+2;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&#25106;&#25351;&=
+#12289;&#30683;&#12289;&#39033;&#38142;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Ability(1)</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#31934;&#36890;&#20043;(1)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+25
+  &#28857;&#25112;&#26007;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#3046=
+2;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&#25106;&#25351;&=
+#12289;&#30683;&#12289;&#39033;&#38142;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Proficiency(1)</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#22825;&#36164;&#20043;(1)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>15</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+35
+  &#28857;&#25112;&#26007;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#3046=
+2;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&#25106;&#25351;&=
+#12289;&#30683;&#12289;&#39033;&#38142;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Endowment(1)</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#23041;&#21147;&#20043;(1)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>22</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+45
+  &#28857;&#25112;&#26007;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#3046=
+2;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&#25106;&#25351;&=
+#12289;&#30683;&#12289;&#39033;&#38142;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Prowess(1)</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#19987;&#23478;&#20043;(1)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>28</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+55
+  &#28857;&#25112;&#26007;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#3046=
+2;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&#25106;&#25351;&=
+#12289;&#30683;&#12289;&#39033;&#38142;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Expertise(1)</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#25511;&#21046;&#20043;(1)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>38</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+65
+  &#28857;&#25112;&#26007;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#3046=
+2;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&#25106;&#25351;&=
+#12289;&#30683;&#12289;&#39033;&#38142;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Mastery(1)</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#26080;&#19978;&#20043;(1)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>46</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+75
+  &#28857;&#25112;&#26007;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#3046=
+2;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&#25106;&#25351;&=
+#12289;&#30683;&#12289;&#39033;&#38142;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Supremacy(1)</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#28789;&#24039;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+5 &#25935;&#25463;</t=
+d>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Agility</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#25935;&#25463;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+11 &#25935;&#25463;</=
+td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Dexterity</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#31934;&#24039;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>12</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+18 &#25935;&#25463;</=
+td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Finesse</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#26426;&#25935;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>25</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+26 &#25935;&#25463;</=
+td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Adroitness</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#20248;&#38597;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>40</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+33 &#25935;&#25463;</=
+td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Grace</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#33021;&#37327;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+23 &#27861;&#21147;<b=
+r>
+    <br>
+    +6% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&#12289;&#39033;&=
+#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Energy</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#31934;&#31070;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+33 &#27861;&#21147;<b=
+r>
+    <br>
+    +9% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&#12289;&#39033;&=
+#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Spirit</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#26412;&#36136;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>12</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+43 &#27861;&#21147;<b=
+r>
+    <br>
+    +12% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&#12289;&#39033;&=
+#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Essence</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#27861;&#21147;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>25</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+53 &#27861;&#21147;<b=
+r>
+    <br>
+    +15% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&#12289;&#39033;&=
+#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Mana</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#26435;&#21147;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>40</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+90 &#27861;&#21147;<b=
+r>
+    <br>
+    +18% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&#12289;&#39033;&=
+#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Power</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#35265;&#35782;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+5 &#26234;&#21147;</t=
+d>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Insight</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#24605;&#36776;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+11 &#26234;&#21147;</=
+td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Reasoning</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#25935;&#38160;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>12</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+18 &#26234;&#21147;</=
+td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Acuity</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#39046;&#24735;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>25</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+26 &#26234;&#21147;</=
+td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Intellect</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#21338;&#23398;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>40</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+33 &#26234;&#21147;</=
+td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Erudition</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#25345;&#20037;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+60 &#29983;&#21629;</=
+td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#24339;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&=
+#12289;&#39033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Endurance</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#29983;&#21629;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+95 &#29983;&#21629;</=
+td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#24339;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&=
+#12289;&#39033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Life</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#24184;&#23384;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>15</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+145 &#29983;&#21629;<=
+/td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#24339;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&=
+#12289;&#39033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Survival</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#27963;&#21147;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>28</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+215 &#29983;&#21629;<=
+/td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#24339;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&=
+#12289;&#39033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Vitality</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#27704;&#24658;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>34</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+315 &#29983;&#21629;<=
+/td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#24339;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&=
+#12289;&#39033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Permanence</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#19981;&#26429;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>45</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+450 &#29983;&#21629;<=
+/td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#24339;&#12289;&#25106;&#25351;&#12289;&#22836;&#12289;&#33151;&=
+#12289;&#39033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Immortality</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#24378;&#22766;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+5 &#21147;&#37327;</t=
+d>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Brawn</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#21147;&#27668;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+11 &#21147;&#37327;</=
+td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Strength</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#21018;&#24378;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>12</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+18 &#21147;&#37327;</=
+td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Virility</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#32908;&#21147;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>25</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+26 &#21147;&#37327;</=
+td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Clout</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#26435;&#21033;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>40</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+33 &#21147;&#37327;</=
+td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&=
+#25106;&#25351;&#12289;&#30683;&#12289;&#22836;&#12289;&#33151;&#12289;&#39=
+033;&#38142;&#12289;&#33016;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Might</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#21644;&#35856;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>-8%
+  &#20919;&#21364;&#26102;&#38388; (&#27880;&#65306;&#26080;&#25928;)</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#30462;&#12289;&#2283=
+6;(&#27861;)&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Concentration</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#27785;&#24605;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>18</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>-13%
+  &#20919;&#21364;&#26102;&#38388; (&#27880;&#65306;&#26080;&#25928;)</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#30462;&#12289;&#2283=
+6;(&#27861;)&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Rumination</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#38598;&#20013;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>25</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>-18%
+  &#20919;&#21364;&#26102;&#38388; (&#27880;&#65306;&#26080;&#25928;)</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#30462;&#12289;&#2283=
+6;(&#27861;)&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Focus</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#24674;&#22797;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+35%
+  &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#22836;&#12289;&#33151;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Recovery</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#20877;&#29983;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+50%
+  &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#22836;&#12289;&#33151;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Rejuvenation</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#36824;&#21407;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>18</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+65%
+  &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#22836;&#12289;&#33151;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Restoration</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#22797;&#20852;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>25</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+80%
+  &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#22836;&#12289;&#33151;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Renewal</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#37325;&#29983;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>36</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+85%
+  &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3046=
+2;&#12289;&#22836;&#12289;&#33151;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Regeneration</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#24555;&#36895;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+8%
+  &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&=
+#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Quickness</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#36805;&#36895;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>15</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+15%
+  &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&=
+#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Haste</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#24613;&#36895;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>25</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+25%
+  &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&=
+#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Speed</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#36731;&#24555;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>40</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+35%
+  &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3818=
+0;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&=
+#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Alacrity</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#26053;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+10%
+  &#31227;&#21160;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33151;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Travel</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#26053;&#31243;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+20%
+  &#31227;&#21160;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33151;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Journeying</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#25112;&#24441;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>25</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+30%
+  &#31227;&#21160;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33151;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Campaigning</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#20445;&#25252;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>12</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+9%
+  &#25252;&#30002;&#38450;&#24481;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Protection</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#24199;&#25252;&#20043;(2)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>25</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+16%
+  &#25252;&#30002;&#38450;&#24481;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Shelter</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#23432;&#25252;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>40</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+23%
+  &#25252;&#30002;&#38450;&#24481;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Warding</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#39740;&#31070;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+50% &#20260;&#23475;&=
+#23545;
+  &#24694;&#39764;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Demonology</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#24043;&#26415;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+50% &#20260;&#23475;&=
+#23545;
+  &#20129;&#28789;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Necromancy</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#27585;&#28781;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>3
+  &#20260;&#23475;&#65288;&#27880;&#65306;&#23545;&#27494;&#22120;&#26080;&=
+#25928;&#65289;<br>
+    <br>
+    +14% &#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Destruction</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#23648;&#26432;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>12</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>7
+  &#20260;&#23475;&#65288;&#27880;&#65306;&#23545;&#27494;&#22120;&#26080;&=
+#25928;&#65289;<br>
+    <br>
+    +20% &#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Carnage</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#36418;&#36495;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>21</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>15
+  &#20260;&#23475;&#65288;&#27880;&#65306;&#23545;&#27494;&#22120;&#26080;&=
+#25928;&#65289;<br>
+    <br>
+    +27% &#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Devastation</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#28781;&#32477;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>36</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>24
+  &#20260;&#23475;&#65288;&#27880;&#65306;&#23545;&#27494;&#22120;&#26080;&=
+#25928;&#65289;<br>
+    <br>
+    +34% &#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Annihilation</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#33104;&#28866;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>13
+  &#38477;&#20302;&#25252;&#30002; &#25345;&#32493; 3.0 &#31186;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Decay</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#33104;&#34432;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>18</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>27
+  &#38477;&#20302;&#25252;&#30002; &#25345;&#32493; 3.0 &#31186;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Corrosion</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#20998;&#35299;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>25</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>58
+  &#38477;&#20302;&#25252;&#30002; &#25345;&#32493; 3.0 &#31186;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Dissolution</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#31881;&#30862;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>40</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>101
+  &#38477;&#20302;&#25252;&#30002; &#25345;&#32493; 3.0 &#31186;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Ruin</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#26197;&#30505;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>5.0%
+  &#26426;&#29575;&#21457;&#21160; 1.5 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Dazing</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#26197;&#20498;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>5.0%
+  &#26426;&#29575;&#21457;&#21160; 2.0 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Stunning</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#30251;&#30186;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>15</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>5.0%
+  &#26426;&#29575;&#21457;&#21160; 3.0 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Paralysis</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#25253;&#22797;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>15.0%
+  &#26426;&#29575;&#21457;&#21160; 7 ~ 11
+  &#29983;&#21629;&#21560;&#21462;&#21453;&#20987; &#27599;&#31186;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#30462;&#12289;&#2283=
+6;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Reprisal</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#24809;&#32602;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>18</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>15.0%
+  &#26426;&#29575;&#21457;&#21160; 12 ~ 18
+  &#29983;&#21629;&#21560;&#21462;&#21453;&#20987; &#27599;&#31186;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#30462;&#12289;&#2283=
+6;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Retribution</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#22797;&#20167;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>28</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>15.0%
+  &#26426;&#29575;&#21457;&#21160; 19 ~ 25
+  &#29983;&#21629;&#21560;&#21462;&#21453;&#20987; &#27599;&#31186;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#30462;&#12289;&#2283=
+6;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Vengeance</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#24040;&#38024;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>15.0%
+  &#26426;&#29575;&#21457;&#21160; 9 ~ 15 &#31359;&#21050;&#21453;&#20987;<=
+/td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#30462;&#12289;&#2283=
+6;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Needles</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#33606;&#26840;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>18</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>15.0%
+  &#26426;&#29575;&#21457;&#21160; 18 ~ 25 &#31359;&#21050;&#21453;&#20987;=
+</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#30462;&#12289;&#2283=
+6;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Thorns</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#40060;&#38057;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>28</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>15.0%
+  &#26426;&#29575;&#21457;&#21160; 28 ~ 35 &#31359;&#21050;&#21453;&#20987;=
+</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#30462;&#12289;&#2283=
+6;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Barbs</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#32426;&#24459;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>25%
+  &#26127;&#30561;&#25269;&#25239;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#2283=
+6;&#12289;&#33151;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Discipline</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#27589;&#21147;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>15</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>42%
+  &#26127;&#30561;&#25269;&#25239;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#2283=
+6;&#12289;&#33151;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Willpower</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#22362;&#38887;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>34</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>65%
+  &#26127;&#30561;&#25269;&#25239;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#2283=
+6;&#12289;&#33151;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Fortitude</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#24815;&#24615;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>25%
+  &#32531;&#24930;&#25269;&#25239;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#2283=
+6;&#12289;&#33151;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Inertia</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl33 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#21160;&#21147;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>15</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>42%
+  &#32531;&#24930;&#25269;&#25239;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#2283=
+6;&#12289;&#33151;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Momentum</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#20419;&#36827;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>34</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>65%
+  &#32531;&#24930;&#25269;&#25239;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#2283=
+6;&#12289;&#33151;&#12289;&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Impetus</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#22900;&#24441;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>&#25152;&#26377;&#2345=
+6;&#29289;:<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>+10 &#25252;&#30002;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>+40 &#29983;&#21629;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#25106;&#25351;&#1228=
+9;&#39033;&#38142;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Servitude</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#38215;&#21387;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>&#25152;&#26377;&#2345=
+6;&#29289;:<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>+25 &#25252;&#30002;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>+75 &#29983;&#21629;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#25106;&#25351;&#1228=
+9;&#39033;&#38142;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Subjugation</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#24378;&#21046;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>&#25152;&#26377;&#2345=
+6;&#29289;:<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>+40 &#25252;&#30002;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>+100 &#29983;&#21629;</t=
+d>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#25106;&#25351;&#1228=
+9;&#39033;&#38142;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Enslavement</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl33 width=3D104 style=3D'height:148.5pt;width:7=
+8pt'>&#36890;&#30021;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>25%
+  &#20943;&#23569;&#38519;&#38449;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    25% &#20943;&#23569;&#20912;&#20923;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    25% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    25% &#26127;&#30561;&#25269;&#25239;<br>
+    <br>
+    25% &#32531;&#24930;&#25269;&#25239;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33151;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Unhindered</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl33 width=3D104 style=3D'height:148.5pt;width:7=
+8pt'>&#33258;&#20027;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>15</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>35%
+  &#20943;&#23569;&#38519;&#38449;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    35% &#20943;&#23569;&#20912;&#20923;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    35% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    35% &#26127;&#30561;&#25269;&#25239;<br>
+    <br>
+    35% &#32531;&#24930;&#25269;&#25239;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33151;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Unconstrained</t=
+d>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl33 width=3D104 style=3D'height:148.5pt;width:7=
+8pt'>&#33258;&#30001;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>34</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>50%
+  &#20943;&#23569;&#38519;&#38449;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    50% &#20943;&#23569;&#20912;&#20923;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    50% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    50% &#26127;&#30561;&#25269;&#25239;<br>
+    <br>
+    50% &#32531;&#24930;&#25269;&#25239;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33151;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Unshackled</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#31283;&#23450;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>3</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>20%
+  &#21560;&#21462;&#27861;&#21147;&#25269;&#25239;<br>
+    <br>
+    30% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    &#27599;&#31186;+1.0&#28857;&#29983;&#21629;&#24674;&#22797;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#22836;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Stability</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#21487;&#38752;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>12</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>40%
+  &#21560;&#21462;&#27861;&#21147;&#25269;&#25239;<br>
+    <br>
+    50% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    &#27599;&#31186;+1.0&#28857;&#29983;&#21629;&#24674;&#22797;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#22836;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Solidity</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#38684;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>6
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    +8% &#20912;&#20919;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#25106;&#25351;&#12289;&#30683;&=
+#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Frost</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#20912;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>15</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>12
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    +13% &#20912;&#20919;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Ice</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#32467;&#26230;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>21</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>21
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    +18% &#20912;&#20919;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Rime</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#20908;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>36</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>28
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    +24% &#20912;&#20919;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Winter</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#28779;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>6
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    +8% &#28779;&#28976;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#25106;&#25351;&#12289;&#30683;&=
+#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Fire</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#28976;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>15</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>12
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    +13% &#28779;&#28976;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Flame</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#30827;&#30970;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>21</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>21
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    +18% &#28779;&#28976;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Sulfur</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#22320;&#29425;&#28779;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>36</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>28
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    +24% &#28779;&#28976;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Brimstone</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#38647;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>6
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +8% &#38378;&#30005;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#25106;&#25351;&#12289;&#30683;&=
+#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Thunder</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#38378;&#30005;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>15</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>12
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +13% &#38378;&#30005;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Lightning</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#26292;&#39118;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>21</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>21
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +18% &#38378;&#30005;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Storm</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#39118;&#26292;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>36</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>28
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +24% &#38378;&#30005;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Tempest</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#21534;&#21507;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>18</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>7
+  &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    7%
+  &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36523;&=
+#29983;&#21629;&#20540;&#22686;&#21152;<br>
+    <br>
+    +18% &#29983;&#21629;&#21560;&#21462;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#39033;&#38142;&=
+#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Feasting</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#36138;&#21507;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>32</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>17
+  &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    15%
+  &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36523;&=
+#29983;&#21629;&#20540;&#22686;&#21152;<br>
+    <br>
+    +35% &#29983;&#21629;&#21560;&#21462;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Devouring</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#28151;&#20081;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>11</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+20% &#20260;&#23475;<=
+br>
+    <br>
+    5.0% &#26426;&#29575;&#21457;&#21160; 1.5 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#21073;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Mayhem</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#28151;&#27788;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>21</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+30% &#20260;&#23475;<=
+br>
+    <br>
+    5.0% &#26426;&#29575;&#21457;&#21160; 2.0 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#21073;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Chaos</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#28009;&#21163;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>28</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+40% &#20260;&#23475;<=
+br>
+    <br>
+    5.0% &#26426;&#29575;&#21457;&#21160; 3.0 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#21073;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Havoc</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl33 width=3D104 style=3D'height:115.5pt;width:7=
+8pt'>&#21348;&#33725;&#26435;&#21147;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>11</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+30% &#20260;&#23475;<=
+br>
+    <br>
+    +8% &#21147;&#37327;<br>
+    <br>
+    +10% &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    &#27599;&#31186;-1.0&#28857;&#29983;&#21629;&#24674;&#22797;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#21073;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Reckless Power</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#36828;&#35265;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>11</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+10% &#26234;&#21147;<=
+br>
+    <br>
+    +10% &#27861;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#22836;(&#27861;)&#12=
+289;&#39033;&#38142;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Foresight</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#39044;&#20806;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>28</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+15% &#26234;&#21147;<=
+br>
+    <br>
+    +15% &#27861;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#22836;(&#27861;)&#12=
+289;&#39033;&#38142;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Augury</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#39044;&#35328;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>39</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+20% &#26234;&#21147;<=
+br>
+    <br>
+    +20% &#27861;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#22836;(&#27861;)&#12=
+289;&#39033;&#38142;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Divination</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#24199;&#25252;&#20043;(1)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>18</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+8%
+  &#25252;&#30002;&#38450;&#24481;<br>
+    <br>
+    +25 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#30462;&#12289;&#3301=
+6;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Refuge</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#25937;&#27982;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>28</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+13%
+  &#25252;&#30002;&#38450;&#24481;<br>
+    <br>
+    +35 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Asylum</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#36991;&#38590;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>45</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+18%
+  &#25252;&#30002;&#38450;&#24481;<br>
+    <br>
+    +45 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Sanctuary</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl33 width=3D104 style=3D'height:115.5pt;width:7=
+8pt'>&#26519;&#22320;&#20043;(1)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>11</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+20%
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +50% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +8% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;<br>
+    <br>
+    +35% &#20943;&#23569;&#26469;&#33258; &#37326;&#20861; &#30340;&#20260;=
+&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;&#12289;&#3301=
+6;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Glade(1)</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl33 width=3D104 style=3D'height:115.5pt;width:7=
+8pt'>&#26519;&#22320;&#20043;(2)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>11</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+20%
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +15% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    &#27599;&#31186;+1.0&#28857;&#29983;&#21629;&#24674;&#22797;<br>
+    <br>
+    +35% &#20943;&#23569;&#26469;&#33258; &#37326;&#20861; &#30340;&#20260;=
+&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33151;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Glade(2)</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#29422;&#40555;&#20043;(1)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>11</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>3
+  &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +21% &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +8% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Gryphon(1)</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#29422;&#40555;&#20043;(2)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>21</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>5
+  &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +21% &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +10% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Gryphon(2)</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#29422;&#40555;&#20043;(3)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>35</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>8
+  &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +21% &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +12% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Gryphon(3)</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#29422;&#40555;&#20043;(4)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>43</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>12
+  &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +21% &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +14% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Gryphon(4)</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#35809;&#35784;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>7</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+50%
+  &#27969;&#34880;&#20260;&#23475;<br>
+    <br>
+    +30% &#27602;&#32032;&#20260;&#23475; <br>
+    <br>
+    +11% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;(&#25112;)&#12=
+289;&#39033;&#38142;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Guile</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#39134;&#39532;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>7</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+15%
+  &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    18% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +15% &#31227;&#21160;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33151;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Pegasus</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#40060;&#40560;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>11</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>10
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +10% &#31359;&#21050;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#24339;&#12289;&#2107=
+3;&#12289;&#25106;&#25351;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Osprey</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#29483;&#22836;&#40560;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>21</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>16
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +15% &#31359;&#21050;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#24339;&#12289;&#2107=
+3;&#12289;&#25106;&#25351;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Owl</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#40560;&#38588;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>28</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>20
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +20% &#31359;&#21050;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#24339;&#12289;&#2107=
+3;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Hawk</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#29454;&#40560;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>35</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>28
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +25% &#31359;&#21050;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#24339;&#12289;&#2107=
+3;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Falcon</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#29467;&#40555;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>47</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>36
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +30% &#31359;&#21050;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#24339;&#12289;&#2107=
+3;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Eagle</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#37326;&#20861;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>11</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>30.0%
+  &#26426;&#29575;&#21457;&#21160; 10 ~ 16
+  &#31359;&#21050;&#21453;&#20987;<br>
+    <br>
+    +8% &#29983;&#21629;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Wilds</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#29432;&#29483;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>18</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+8%
+  &#20840;&#37096;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#39033;&#38142;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Cat</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#29470;&#29441;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>28</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+13%
+  &#20840;&#37096;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#39033;&#38142;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Lynx</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#29467;&#34382;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>45</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+18%
+  &#20840;&#37096;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#39033;&#38142;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Tiger</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#24040;&#39118;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>11</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+5% &#25935;&#25463;<b=
+r>
+    <br>
+    +15% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#30462;&#12289;&#2433=
+9;&#12289;&#30683;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Winds</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#35809;&#35745;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>15</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+15%
+  &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    8% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33218;(&#25112;)&#12=
+289;&#38180;&#12289;&#30462;&#12289;&#26023;&#12289;&#24339;&#12289;&#21073=
+;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Trickery</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#22280;&#22871;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>7</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+25%
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +15% &#31227;&#21160;&#36895;&#24230;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#24339;&#12289;&#3315=
+1;(&#25112;)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Hunt</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#37325;&#20987;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>35</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>3.0%
+  &#26426;&#29575;&#21457;&#21160; 75%
+  &#20943;&#23569;&#25932;&#20154;&#29983;&#21629;&#20540;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#25106;&#25351;&#1228=
+9;&#39033;&#38142;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Smiting</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#21344;&#26143;&#23478;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>25</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+5% &#26234;&#21147;<b=
+r>
+    <br>
+    +10% &#27861;&#21147;<br>
+    <br>
+    -15% &#20919;&#21364;&#26102;&#38388; (&#27880;&#65306;&#26080;&#25928;=
+)</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#22836;(&#27861;)</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Magus</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#24754;&#24808;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>31</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>12%
+  &#20943;&#23569;&#25932;&#20154;&#29983;&#21629;&#20540;<br>
+    <br>
+    10.0% &#26426;&#29575;&#21457;&#21160; 3.0 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Harrowing</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#20809;&#33635;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>8</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>5%
+  &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +3% &#22686;&#21152;&#32463;&#39564;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#22836;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Glory</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#21517;&#26395;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>28</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>8%
+  &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +3% &#22686;&#21152;&#32463;&#39564;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#22836;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Renown</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#20256;&#22855;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>44</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>12%
+  &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +3% &#22686;&#21152;&#32463;&#39564;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#22836;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Legends</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#30140;&#30171;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>22</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>60
+  &#30005;&#20987;&#20260;&#23475;&#22312;4.0&#31186;&#20869;<br>
+    <br>
+    15% &#20943;&#24930;&#20840;&#37096;&#36895;&#24230; &#25345;&#32493; 4=
+.0
+  &#31186;<br>
+    <br>
+    10% &#26426;&#29575;&#25915;&#20987;&#22833;&#35823; &#25345;&#32493; 4=
+.0 &#31186;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Pain</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#33510;&#24700;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>33</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>112
+  &#30005;&#20987;&#20260;&#23475;&#22312;4.0&#31186;&#20869;<br>
+    <br>
+    15% &#20943;&#24930;&#20840;&#37096;&#36895;&#24230; &#25345;&#32493; 4=
+.0
+  &#31186;<br>
+    <br>
+    12% &#26426;&#29575;&#25915;&#20987;&#22833;&#35823; &#25345;&#32493; 4=
+.0 &#31186;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Agony</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#25240;&#30952;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>44</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>220
+  &#30005;&#20987;&#20260;&#23475;&#22312;4.0&#31186;&#20869;<br>
+    <br>
+    15% &#20943;&#24930;&#20840;&#37096;&#36895;&#24230; &#25345;&#32493; 4=
+.0
+  &#31186;<br>
+    <br>
+    15% &#26426;&#29575;&#25915;&#20987;&#22833;&#35823; &#25345;&#32493; 4=
+.0 &#31186;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Torture</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#25937;&#25588;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>5</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>4.0%
+  &#26426;&#29575;&#21457;&#21160; 100%
+  &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#22836;&#12289;&#3301=
+6;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Succor</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#23433;&#24944;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>24</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>6.0%
+  &#26426;&#29575;&#21457;&#21160; 100%
+  &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#22836;&#12289;&#3301=
+6;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Solace</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl33 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#26242;&#32531;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>43</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>8.0%
+  &#26426;&#29575;&#21457;&#21160; 100%
+  &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#22836;&#12289;&#3301=
+6;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Respite</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#20896;&#20891;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>24</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+5%
+  &#25152;&#26377;&#20260;&#23475;<br>
+    <br>
+    +100 &#29983;&#21629;<br>
+    <br>
+    +100 &#27861;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Champions</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#33521;&#38596;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>34</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+7%
+  &#25152;&#26377;&#20260;&#23475;<br>
+    <br>
+    +250 &#29983;&#21629;<br>
+    <br>
+    +250 &#27861;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Heroes</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#20247;&#31070;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>42</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>+10%
+  &#25152;&#26377;&#20260;&#23475;<br>
+    <br>
+    +500 &#29983;&#21629;<br>
+    <br>
+    +500 &#27861;&#21147;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#33016;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of the Gods</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#24656;&#24598;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>18</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>15
+  &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    10.0% &#26426;&#29575;&#21457;&#21160; 3.0 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Terror</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#30171;&#33510;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>31</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>35
+  &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    10.0% &#26426;&#29575;&#21457;&#21160; 3.0 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Torment</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl33 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#22121;&#26790;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>45</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>60
+  &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    15.0% &#26426;&#29575;&#21457;&#21160; 3.0 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#38180;&#12289;&#2602=
+3;&#12289;&#24339;&#12289;&#21073;&#12289;&#30683;&#12289;&#26454;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Nightmares</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl33 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#25307;&#38598;&#20043;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt' x:num>35</td>
+  <td class=3Dxl30 width=3D308 style=3D'width:231pt'>&#25152;&#26377;&#2345=
+6;&#29289;:<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>20%
+  &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36523;&=
+#29983;&#21629;&#20540;&#22686;&#21152;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>+20%
+  &#25152;&#26377;&#20260;&#23475;</td>
+  <td class=3Dxl30 width=3D553 style=3D'width:415pt'>&#39033;&#38142;</td>
+  <td class=3Dxl30 width=3D104 style=3D'width:78pt'>of Convocation</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D104 style=3D'height:16.5pt;width:78p=
+t'>&#12288;</td>
+  <td colspan=3D5 class=3Dxl28 style=3D'mso-ignore:colspan'></td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl29 width=3D104 style=3D'height:49.5pt;width:78p=
+t'>&#24974;&#24680;&#20043;<br>
+    (&#19981;&#21487;&#20986;&#29616;)</td>
+  <td class=3Dxl28 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 align=3Dright width=3D104 style=3D'width:78pt' x:num>12<=
+/td>
+  <td class=3Dxl28 width=3D308 style=3D'width:231pt'>+25% &#20260;&#23475;&=
+#23545;
+  &#20861;&#20154;</td>
+  <td class=3Dxl28 width=3D553 style=3D'width:415pt' x:str=3D""></td>
+  <td class=3Dxl28 width=3D104 style=3D'width:78pt'>of Abominations</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl29 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#34584;&#34523;&#22899;&#30343;&#20043;<br>
+    (&#19981;&#21487;&#20986;&#29616;)</td>
+  <td class=3Dxl28 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 align=3Dright width=3D104 style=3D'width:78pt' x:num>12<=
+/td>
+  <td class=3Dxl28 width=3D308 style=3D'width:231pt'>+50% &#20260;&#23475;&=
+#23545;
+  &#37326;&#20861;</td>
+  <td class=3Dxl28 width=3D553 style=3D'width:415pt' x:str=3D""></td>
+  <td class=3Dxl28 width=3D104 style=3D'width:78pt'>of the Spider Queen</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl29 width=3D104 style=3D'height:33.0pt;width:78p=
+t'>&#36319;&#36394;&#20043;<br>
+    (&#19981;&#21487;&#20986;&#29616;)</td>
+  <td class=3Dxl28 width=3D104 style=3D'width:78pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 align=3Dright width=3D104 style=3D'width:78pt' x:num>12<=
+/td>
+  <td class=3Dxl28 width=3D308 style=3D'width:231pt'>+40% &#20260;&#23475;&=
+#23545;
+  &#26118;&#34411;</td>
+  <td class=3Dxl28 width=3D553 style=3D'width:415pt' x:str=3D""></td>
+  <td class=3Dxl28 width=3D104 style=3D'width:78pt'>of Tracking</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl29 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#21467;&#36870;&#32773;&#20043;<br>
+    (&#19981;&#21487;&#20986;&#29616;)</td>
+  <td class=3Dxl28 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl28 align=3Dright width=3D104 style=3D'width:78pt' x:num>30<=
+/td>
+  <td class=3Dxl28 width=3D308 style=3D'width:231pt'>25%
+  &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36523;&=
+#29983;&#21629;&#20540;&#22686;&#21152;<br>
+    <br>
+    33% &#38477;&#20302;&#25239;&#24615; &#25345;&#32493; 3.0 &#31186;<br>
+    <br>
+    +30 &#28857;&#25112;&#26007;&#33021;&#21147;</td>
+  <td class=3Dxl28 width=3D553 style=3D'width:415pt' x:str=3D""></td>
+  <td class=3Dxl28 width=3D104 style=3D'width:78pt'>of the Betrayer</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl29 width=3D104 style=3D'height:82.5pt;width:78=
+pt'>&#22622;&#22764;&#20043;<br>
+    (&#19981;&#21487;&#20986;&#29616;)</td>
+  <td class=3Dxl28 width=3D104 style=3D'width:78pt'>&#31232;&#26377;</td>
+  <td class=3Dxl28 align=3Dright width=3D104 style=3D'width:78pt' x:num>36<=
+/td>
+  <td class=3Dxl28 width=3D308 style=3D'width:231pt'>15%
+  &#29123;&#28903;&#27861;&#21147; (50%
+  &#29123;&#28903;&#27861;&#21147;&#24182;&#36896;&#25104;&#20260;&#23475;)=
+<br>
+    <br>
+    +15% &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    10.0% &#26426;&#29575;&#21457;&#21160; 5.0 &#31186;&#28151;&#20081;</td>
+  <td class=3Dxl28 width=3D553 style=3D'width:415pt' x:str=3D""></td>
+  <td class=3Dxl28 width=3D104 style=3D'width:78pt'>of the Siren</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D104 style=3D'width:78pt'></td>
+  <td width=3D104 style=3D'width:78pt'></td>
+  <td width=3D104 style=3D'width:78pt'></td>
+  <td width=3D308 style=3D'width:231pt'></td>
+  <td width=3D553 style=3D'width:415pt'></td>
+  <td width=3D104 style=3D'width:78pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

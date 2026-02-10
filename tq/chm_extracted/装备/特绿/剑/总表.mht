@@ -1,0 +1,768 @@
+MIME-Version: 1.0
+X-Document-Type: Worksheet
+Content-Location: file:///C:/859623C8/file9288.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 11">
+<link rel=3DFile-List href=3D"file9288.files/filelist.xml">
+<link rel=3DEdit-Time-Data href=3D"file9288.files/editdata.mso">
+<link rel=3DOLE-Object-Data href=3D"file9288.files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>&#26381;&#21153;&#22120;</o:Author>
+  <o:LastAuthor>&#24494;&#36719;&#29992;&#25143;</o:LastAuthor>
+  <o:Created>2007-09-11T02:46:15Z</o:Created>
+  <o:LastSaved>2010-05-23T19:33:42Z</o:LastSaved>
+  <o:Company>&#38738;&#23707;&#32593;&#24433;&#30005;&#23376;&#20449;&#2468=
+7;&#26377;&#38480;&#20844;&#21496;</o:Company>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:\5E38\89C4;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	text-align:center;}
+.xl25
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	font-weight:700;
+	text-align:center;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl26
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	text-align:center;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:RangeSelection>$A$1:$H$13</x:RangeSelection>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+    <x:QueryTable>
+     <x:Name>. TQIT OUT_&#35013;&#22791;_&#29305;&#32511;_&#21073;_CN</x:Na=
+me>
+     <x:AutoFormatFont/>
+     <x:AutoFormatPattern/>
+     <x:QuerySource>
+      <x:QueryType>OLEDB</x:QueryType>
+      <x:CommandText>&quot;TQIT&quot;.&quot;dbo&quot;.&quot;OUT_&#35013;&#2=
+2791;_&#29305;&#32511;_&#21073;_CN&quot;</x:CommandText>
+      <x:CommandType>Table</x:CommandType>
+      <x:Maintain/>
+      <x:Connection>Provider=3DSQLOLEDB.1;Integrated Security=3DSSPI;Persis=
+t Security Info=3DTrue;Initial Catalog=3DTQIT;Data Source=3D.;Use Procedure=
+ for Prepare=3D1;Auto Translate=3DTrue;Packet Size=3D4096;Workstation ID=3D=
+SERVER;Use Encryption for Data=3DFalse;Tag with column collation when possi=
+ble=3DFalse</x:Connection>
+      <x:SourceConnectionFile>C:\Documents and Settings\xxd\My Documents\&#=
+25105;&#30340;&#25968;&#25454;&#28304;\. TQIT OUT_&#35013;&#22791;_&#29305;=
+&#32511;_&#21073;_CN.odc</x:SourceConnectionFile>
+      <x:RobustConnect>0</x:RobustConnect>
+      <x:VersionLastEdit>2</x:VersionLastEdit>
+      <x:VersionLastRefresh>2</x:VersionLastRefresh>
+     </x:QuerySource>
+     <x:RefreshInfo>
+      <x:NextId>11</x:NextId>
+      <x:ColumnInfo>
+       <x:Id>1</x:Id>
+       <x:Name>&#38590;&#24230;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>2</x:Id>
+       <x:Name>&#20013;&#25991;&#21517;&#31216;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>3</x:Id>
+       <x:Name>&#29289;&#21697;&#31561;&#32423;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>4</x:Id>
+       <x:Name>&#38656;&#35201;&#31561;&#32423;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>5</x:Id>
+       <x:Name>&#38656;&#35201;&#21147;&#37327;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>6</x:Id>
+       <x:Name>&#38656;&#35201;&#25935;&#25463;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>7</x:Id>
+       <x:Name>&#23646;&#24615;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>8</x:Id>
+       <x:Name>&#33521;&#25991;&#21517;&#31216;</x:Name>
+      </x:ColumnInfo>
+      <x:DeletedTitle>n_Difficulty</x:DeletedTitle>
+      <x:DeletedTitle>n_Order2</x:DeletedTitle>
+     </x:RefreshInfo>
+    </x:QueryTable>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>8415</x:WindowHeight>
+  <x:WindowWidth>14715</x:WindowWidth>
+  <x:WindowTopX>360</x:WindowTopX>
+  <x:WindowTopY>360</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+ <x:ExcelName>
+  <x:Name>_._TQIT_OUT_&#35013;&#22791;_&#29305;&#32511;_&#21073;_CN</x:Name>
+  <x:SheetIndex>1</x:SheetIndex>
+  <x:Formula>=3DSheet1!$A$1:$H$13</x:Formula>
+ </x:ExcelName>
+</xml><![endif]-->
+</head>
+
+<body link=3Dblue vlink=3Dpurple>
+
+<table x:str border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D754 style=
+=3D'border-collapse:
+ collapse;table-layout:fixed;width:566pt'>
+ <col class=3Dxl24 width=3D38 style=3D'mso-width-source:userset;mso-width-a=
+lt:1216;
+ width:29pt'>
+ <col width=3D111 style=3D'mso-width-source:userset;mso-width-alt:3552;widt=
+h:83pt'>
+ <col width=3D64 span=3D4 style=3D'mso-width-source:userset;mso-width-alt:2=
+048;
+ width:48pt'>
+ <col width=3D211 style=3D'mso-width-source:userset;mso-width-alt:6752;widt=
+h:158pt'>
+ <col width=3D138 style=3D'mso-width-source:userset;mso-width-alt:4416;widt=
+h:104pt'>
+ <tr class=3Dxl24 height=3D19 style=3D'height:14.25pt'>
+  <td height=3D19 class=3Dxl25 width=3D38 style=3D'height:14.25pt;width:29p=
+t'><a
+  name=3D"_._TQIT_OUT_&#35013;&#22791;_&#29305;&#32511;_&#21073;_CN">&#3859=
+0;&#24230;</a></td>
+  <td class=3Dxl25 width=3D111 style=3D'border-left:none;width:83pt'>&#2001=
+3;&#25991;&#21517;&#31216;</td>
+  <td class=3Dxl25 width=3D64 style=3D'border-left:none;width:48pt'>&#29289=
+;&#21697;&#31561;&#32423;</td>
+  <td class=3Dxl25 width=3D64 style=3D'border-left:none;width:48pt'>&#38656=
+;&#35201;&#31561;&#32423;</td>
+  <td class=3Dxl25 width=3D64 style=3D'border-left:none;width:48pt'>&#38656=
+;&#35201;&#21147;&#37327;</td>
+  <td class=3Dxl25 width=3D64 style=3D'border-left:none;width:48pt'>&#38656=
+;&#35201;&#25935;&#25463;</td>
+  <td class=3Dxl25 width=3D211 style=3D'border-left:none;width:158pt'>&#236=
+46;&#24615;</td>
+  <td class=3Dxl25 width=3D138 style=3D'border-left:none;width:104pt'>&#335=
+21;&#25991;&#21517;&#31216;</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#27515;&#20129;&#32534;&#32455;&#32773;&#32930;&#23574;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>9</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>6</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>90</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>82</td>
+  <td class=3Dxl27 width=3D211 style=3D'border-top:none;border-left:none;wi=
+dth:158pt'
+  x:str=3D"18 ~ 22 &#20260;&#23475;&#13;&#10;20% &#31359;&#21050;&#13;&#10;=
+&#36895;&#24230;&#65306;0.45&#65288;&#22522;&#30784;&#25915;&#36895;&#65306=
+;102%&#65289;&#13;&#10;&#13;&#10;60 &#27602;&#32032;&#20260;&#23475;&#22312=
+;6.0&#31186;&#20869;&#13;&#10;5.0% &#26426;&#29575;&#21457;&#21160; +300% &=
+#27602;&#32032;&#20260;&#23475; ">18
+  ~ 22 &#20260;&#23475;<br>
+    <br>
+    20% &#31359;&#21050;<br>
+    <br>
+  =20
+  &#36895;&#24230;&#65306;0.45&#65288;&#22522;&#30784;&#25915;&#36895;&#653=
+06;102%&#65289;<br>
+    <br>
+    <br>
+    <br>
+    60 &#27602;&#32032;&#20260;&#23475;&#22312;6.0&#31186;&#20869;<br>
+    <br>
+    5.0% &#26426;&#29575;&#21457;&#21160; +300%
+  &#27602;&#32032;&#20260;&#23475;<span style=3D'mso-spacerun:yes'>&nbsp;</=
+span></td>
+  <td class=3Dxl27 width=3D138 style=3D'border-top:none;border-left:none;wi=
+dth:104pt'>Deathweaver's
+  Legtip</td>
+ </tr>
+ <tr height=3D105 style=3D'height:78.75pt'>
+  <td height=3D105 class=3Dxl26 width=3D38 style=3D'height:78.75pt;border-t=
+op:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#22934;&#20992;&#26449;&#27491;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>25</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>21</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>170</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>146</td>
+  <td class=3Dxl27 width=3D211 style=3D'border-top:none;border-left:none;wi=
+dth:158pt'>35
+  ~ 42 &#20260;&#23475;<br>
+    <br>
+    15% &#31359;&#21050;<br>
+    <br>
+  =20
+  &#36895;&#24230;&#65306;0.50&#65288;&#22522;&#30784;&#25915;&#36895;&#653=
+06;106%&#65289;<br>
+    <br>
+    <br>
+    <br>
+    +16 &#25935;&#25463;<br>
+    <br>
+    +30% &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    +15 &#28857;&#25112;&#26007;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D138 style=3D'border-top:none;border-left:none;wi=
+dth:104pt'>Sabertooth</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#26031;&#31185;&#37324;&#26031;&#30340;&#21093;&#30382;&#20992;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>30</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>25</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>195</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>166</td>
+  <td class=3Dxl27 width=3D211 style=3D'border-top:none;border-left:none;wi=
+dth:158pt'>47
+  ~ 50 &#20260;&#23475;<br>
+    <br>
+    15% &#31359;&#21050;<br>
+    <br>
+  =20
+  &#36895;&#24230;&#65306;0.50&#65288;&#22522;&#30784;&#25915;&#36895;&#653=
+06;106%&#65289;<br>
+    <br>
+    <br>
+    <br>
+    210 &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    3.0% &#26426;&#29575;&#21457;&#21160; +100%
+  &#27969;&#34880;&#20260;&#23475;</td>
+  <td class=3Dxl27 width=3D138 style=3D'border-top:none;border-left:none;wi=
+dth:104pt'>Schlilsh's
+  Skinner</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#31185;&#26031;&#22885;&#37324;&#26114;&#21059;&#20992;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>32</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>27</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>205</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>174</td>
+  <td class=3Dxl27 width=3D211 style=3D'border-top:none;border-left:none;wi=
+dth:158pt'>53
+  ~ 57 &#20260;&#23475;<br>
+    <br>
+    10% &#31359;&#21050;<br>
+    <br>
+  =20
+  &#36895;&#24230;&#65306;0.45&#65288;&#22522;&#30784;&#25915;&#36895;&#653=
+06;102%&#65289;<br>
+    <br>
+    <br>
+    <br>
+    5% &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36=
+523;&#29983;&#21629;&#20540;&#22686;&#21152;<br>
+    <br>
+    90 &#27861;&#21147;&#21560;&#21462;&#22312;3.0&#31186;&#20869;</td>
+  <td class=3Dxl27 width=3D138 style=3D'border-top:none;border-left:none;wi=
+dth:104pt'>Khthonion
+  Razor</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#27515;&#20129;&#32534;&#32455;&#32773;&#32930;&#23574;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>36</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>27</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>231</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>193</td>
+  <td class=3Dxl27 width=3D211 style=3D'border-top:none;border-left:none;wi=
+dth:158pt'
+  x:str=3D"68 ~ 75 &#20260;&#23475;&#13;&#10;20% &#31359;&#21050;&#13;&#10;=
+&#36895;&#24230;&#65306;0.45&#65288;&#22522;&#30784;&#25915;&#36895;&#65306=
+;102%&#65289;&#13;&#10;&#13;&#10;198 &#27602;&#32032;&#20260;&#23475;&#2231=
+2;6.0&#31186;&#20869;&#13;&#10;5.0% &#26426;&#29575;&#21457;&#21160; +300% =
+&#27602;&#32032;&#20260;&#23475; ">68
+  ~ 75 &#20260;&#23475;<br>
+    <br>
+    20% &#31359;&#21050;<br>
+    <br>
+  =20
+  &#36895;&#24230;&#65306;0.45&#65288;&#22522;&#30784;&#25915;&#36895;&#653=
+06;102%&#65289;<br>
+    <br>
+    <br>
+    <br>
+    198 &#27602;&#32032;&#20260;&#23475;&#22312;6.0&#31186;&#20869;<br>
+    <br>
+    5.0% &#26426;&#29575;&#21457;&#21160; +300%
+  &#27602;&#32032;&#20260;&#23475;<span style=3D'mso-spacerun:yes'>&nbsp;</=
+span></td>
+  <td class=3Dxl27 width=3D138 style=3D'border-top:none;border-left:none;wi=
+dth:104pt'>Deathweaver's
+  Legtip</td>
+ </tr>
+ <tr height=3D105 style=3D'height:78.75pt'>
+  <td height=3D105 class=3Dxl26 width=3D38 style=3D'height:78.75pt;border-t=
+op:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#22934;&#20992;&#26449;&#27491;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>46</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>32</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>271</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>223</td>
+  <td class=3Dxl27 width=3D211 style=3D'border-top:none;border-left:none;wi=
+dth:158pt'>83
+  ~ 90 &#20260;&#23475;<br>
+    <br>
+    15% &#31359;&#21050;<br>
+    <br>
+  =20
+  &#36895;&#24230;&#65306;0.50&#65288;&#22522;&#30784;&#25915;&#36895;&#653=
+06;106%&#65289;<br>
+    <br>
+    <br>
+    <br>
+    +26 &#25935;&#25463;<br>
+    <br>
+    +30% &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    +25 &#28857;&#25112;&#26007;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D138 style=3D'border-top:none;border-left:none;wi=
+dth:104pt'>Sabertooth</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#26031;&#31185;&#37324;&#26031;&#30340;&#21093;&#30382;&#20992;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>50</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>34</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>287</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>235</td>
+  <td class=3Dxl27 width=3D211 style=3D'border-top:none;border-left:none;wi=
+dth:158pt'>96
+  ~ 101 &#20260;&#23475;<br>
+    <br>
+    15% &#31359;&#21050;<br>
+    <br>
+  =20
+  &#36895;&#24230;&#65306;0.50&#65288;&#22522;&#30784;&#25915;&#36895;&#653=
+06;106%&#65289;<br>
+    <br>
+    <br>
+    <br>
+    90 &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    5.0% &#26426;&#29575;&#21457;&#21160; +100%
+  &#27969;&#34880;&#20260;&#23475;</td>
+  <td class=3Dxl27 width=3D138 style=3D'border-top:none;border-left:none;wi=
+dth:104pt'>Schlilsh's
+  Skinner</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#31185;&#26031;&#22885;&#37324;&#26114;&#21059;&#20992;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>52</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>35</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>295</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>241</td>
+  <td class=3Dxl27 width=3D211 style=3D'border-top:none;border-left:none;wi=
+dth:158pt'>107
+  ~ 112 &#20260;&#23475;<br>
+    <br>
+    10% &#31359;&#21050;<br>
+    <br>
+  =20
+  &#36895;&#24230;&#65306;0.45&#65288;&#22522;&#30784;&#25915;&#36895;&#653=
+06;102%&#65289;<br>
+    <br>
+    <br>
+    <br>
+    7% &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36=
+523;&#29983;&#21629;&#20540;&#22686;&#21152;<br>
+    <br>
+    135 &#27861;&#21147;&#21560;&#21462;&#22312;3.0&#31186;&#20869;</td>
+  <td class=3Dxl27 width=3D138 style=3D'border-top:none;border-left:none;wi=
+dth:104pt'>Khthonion
+  Razor</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#27515;&#20129;&#32534;&#32455;&#32773;&#32930;&#23574;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>54</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>36</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>311</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>253</td>
+  <td class=3Dxl27 width=3D211 style=3D'border-top:none;border-left:none;wi=
+dth:158pt'
+  x:str=3D"122 ~ 130 &#20260;&#23475;&#13;&#10;20% &#31359;&#21050;&#13;&#1=
+0;&#36895;&#24230;&#65306;0.45&#65288;&#22522;&#30784;&#25915;&#36895;&#653=
+06;102%&#65289;&#13;&#10;&#13;&#10;300 &#27602;&#32032;&#20260;&#23475;&#22=
+312;6.0&#31186;&#20869;&#13;&#10;5.0% &#26426;&#29575;&#21457;&#21160; +300=
+% &#27602;&#32032;&#20260;&#23475; ">122
+  ~ 130 &#20260;&#23475;<br>
+    <br>
+    20% &#31359;&#21050;<br>
+    <br>
+  =20
+  &#36895;&#24230;&#65306;0.45&#65288;&#22522;&#30784;&#25915;&#36895;&#653=
+06;102%&#65289;<br>
+    <br>
+    <br>
+    <br>
+    300 &#27602;&#32032;&#20260;&#23475;&#22312;6.0&#31186;&#20869;<br>
+    <br>
+    5.0% &#26426;&#29575;&#21457;&#21160; +300%
+  &#27602;&#32032;&#20260;&#23475;<span style=3D'mso-spacerun:yes'>&nbsp;</=
+span></td>
+  <td class=3Dxl27 width=3D138 style=3D'border-top:none;border-left:none;wi=
+dth:104pt'>Deathweaver's
+  Legtip</td>
+ </tr>
+ <tr height=3D105 style=3D'height:78.75pt'>
+  <td height=3D105 class=3Dxl26 width=3D38 style=3D'height:78.75pt;border-t=
+op:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#22934;&#20992;&#26449;&#27491;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>61</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>39</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>339</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>274</td>
+  <td class=3Dxl27 width=3D211 style=3D'border-top:none;border-left:none;wi=
+dth:158pt'>135
+  ~ 144 &#20260;&#23475;<br>
+    <br>
+    15% &#31359;&#21050;<br>
+    <br>
+  =20
+  &#36895;&#24230;&#65306;0.50&#65288;&#22522;&#30784;&#25915;&#36895;&#653=
+06;106%&#65289;<br>
+    <br>
+    <br>
+    <br>
+    +36 &#25935;&#25463;<br>
+    <br>
+    +30% &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    +35 &#28857;&#25112;&#26007;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D138 style=3D'border-top:none;border-left:none;wi=
+dth:104pt'>Sabertooth</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#26031;&#31185;&#37324;&#26031;&#30340;&#21093;&#30382;&#20992;<=
+/td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>65</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>41</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>355</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>286</td>
+  <td class=3Dxl27 width=3D211 style=3D'border-top:none;border-left:none;wi=
+dth:158pt'>147
+  ~ 152 &#20260;&#23475;<br>
+    <br>
+    15% &#31359;&#21050;<br>
+    <br>
+  =20
+  &#36895;&#24230;&#65306;0.50&#65288;&#22522;&#30784;&#25915;&#36895;&#653=
+06;106%&#65289;<br>
+    <br>
+    <br>
+    <br>
+    150 &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    7.0% &#26426;&#29575;&#21457;&#21160; +100%
+  &#27969;&#34880;&#20260;&#23475;</td>
+  <td class=3Dxl27 width=3D138 style=3D'border-top:none;border-left:none;wi=
+dth:104pt'>Schlilsh's
+  Skinner</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D111 style=3D'border-top:none;border-left:none;wi=
+dth:83pt'>&#31185;&#26031;&#22885;&#37324;&#26114;&#21059;&#20992;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>66</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>42</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>359</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>289</td>
+  <td class=3Dxl27 width=3D211 style=3D'border-top:none;border-left:none;wi=
+dth:158pt'>161
+  ~ 167 &#20260;&#23475;<br>
+    <br>
+    10% &#31359;&#21050;<br>
+    <br>
+  =20
+  &#36895;&#24230;&#65306;0.45&#65288;&#22522;&#30784;&#25915;&#36895;&#653=
+06;102%&#65289;<br>
+    <br>
+    <br>
+    <br>
+    9% &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36=
+523;&#29983;&#21629;&#20540;&#22686;&#21152;<br>
+    <br>
+    180 &#27861;&#21147;&#21560;&#21462;&#22312;3.0&#31186;&#20869;</td>
+  <td class=3Dxl27 width=3D138 style=3D'border-top:none;border-left:none;wi=
+dth:104pt'>Khthonion
+  Razor</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D38 style=3D'width:29pt'></td>
+  <td width=3D111 style=3D'width:83pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+  <td width=3D211 style=3D'width:158pt'></td>
+  <td width=3D138 style=3D'width:104pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

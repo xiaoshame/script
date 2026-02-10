@@ -1,0 +1,3273 @@
+MIME-Version: 1.0
+X-Document-Type: Worksheet
+Content-Location: file:///C:/64652FC8/file2968.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 11">
+<link rel=3DFile-List href=3D"file2968.files/filelist.xml">
+<link rel=3DEdit-Time-Data href=3D"file2968.files/editdata.mso">
+<link rel=3DOLE-Object-Data href=3D"file2968.files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>&#26381;&#21153;&#22120;</o:Author>
+  <o:LastAuthor>JOYGAO</o:LastAuthor>
+  <o:Created>2007-09-11T01:58:00Z</o:Created>
+  <o:LastSaved>2009-08-26T14:25:59Z</o:LastSaved>
+  <o:Company>&#38738;&#23707;&#32593;&#24433;&#30005;&#23376;&#20449;&#2468=
+7;&#26377;&#38480;&#20844;&#21496;</o:Company>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:\5E38\89C4;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	text-align:center;}
+.xl25
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-weight:700;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	text-align:left;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl26
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-weight:700;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:PaperSizeIndex>9</x:PaperSizeIndex>
+      <x:HorizontalResolution>200</x:HorizontalResolution>
+      <x:VerticalResolution>200</x:VerticalResolution>
+     </x:Print>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:RangeSelection>$A$1:$I$76</x:RangeSelection>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+    <x:QueryTable>
+     <x:Name>. TQIT OUT_&#35013;&#22791;_&#31070;&#22120;_CN</x:Name>
+     <x:AutoFormatFont/>
+     <x:AutoFormatPattern/>
+     <x:QuerySource>
+      <x:QueryType>OLEDB</x:QueryType>
+      <x:CommandText>&quot;TQIT&quot;.&quot;dbo&quot;.&quot;OUT_&#35013;&#2=
+2791;_&#31070;&#22120;_CN&quot;</x:CommandText>
+      <x:CommandType>Table</x:CommandType>
+      <x:Maintain/>
+      <x:Connection>Provider=3DSQLOLEDB.1;Integrated Security=3DSSPI;Persis=
+t Security Info=3DTrue;Initial Catalog=3DTQIT;Data Source=3D.;Use Procedure=
+ for Prepare=3D1;Auto Translate=3DTrue;Packet Size=3D4096;Workstation ID=3D=
+SERVER;Use Encryption for Data=3DFalse;Tag with column collation when possi=
+ble=3DFalse</x:Connection>
+      <x:SourceConnectionFile>C:\Documents and Settings\xxd\My Documents\&#=
+25105;&#30340;&#25968;&#25454;&#28304;\. TQIT OUT_&#35013;&#22791;_&#31070;=
+&#22120;_CN.odc</x:SourceConnectionFile>
+      <x:RobustConnect>0</x:RobustConnect>
+      <x:VersionLastEdit>2</x:VersionLastEdit>
+      <x:VersionLastRefresh>2</x:VersionLastRefresh>
+     </x:QuerySource>
+     <x:RefreshInfo>
+      <x:Sort/>
+      <x:HeaderRow/>
+      <x:NextId>13</x:NextId>
+      <x:ColumnInfo>
+       <x:SortKey>0</x:SortKey>
+       <x:Id>2</x:Id>
+       <x:Name>&#38590;&#24230;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:SortKey>0</x:SortKey>
+       <x:Id>3</x:Id>
+       <x:Name>&#31181;&#31867;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:SortKey>3</x:SortKey>
+       <x:Id>1</x:Id>
+       <x:Name>&#20013;&#25991;&#21517;&#31216;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:SortKey>0</x:SortKey>
+       <x:Id>4</x:Id>
+       <x:Name>&#38656;&#35201;&#31561;&#32423;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:SortKey>0</x:SortKey>
+       <x:Id>5</x:Id>
+       <x:Name>&#23646;&#24615;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:SortKey>0</x:SortKey>
+       <x:Id>6</x:Id>
+       <x:Name>&#25152;&#38656;&#32452;&#20214;1</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:SortKey>0</x:SortKey>
+       <x:Id>7</x:Id>
+       <x:Name>&#25152;&#38656;&#32452;&#20214;2</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:SortKey>0</x:SortKey>
+       <x:Id>8</x:Id>
+       <x:Name>&#25152;&#38656;&#32452;&#20214;3</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:SortKey>0</x:SortKey>
+       <x:Id>9</x:Id>
+       <x:Name>&#33521;&#25991;&#21517;&#31216;</x:Name>
+      </x:ColumnInfo>
+      <x:DeletedTitle>n_Difficulty</x:DeletedTitle>
+      <x:DeletedTitle>n_order2</x:DeletedTitle>
+     </x:RefreshInfo>
+    </x:QueryTable>
+    <x:Sorting>
+     <x:Sort>n_Difficulty</x:Sort>
+     <x:Sort>n_order2</x:Sort>
+     <x:Sort>&#20013;&#25991;&#21517;&#31216;</x:Sort>
+    </x:Sorting>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>8415</x:WindowHeight>
+  <x:WindowWidth>14715</x:WindowWidth>
+  <x:WindowTopX>360</x:WindowTopX>
+  <x:WindowTopY>360</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+ <x:ExcelName>
+  <x:Name>_._TQIT_OUT_&#35013;&#22791;_&#31070;&#22120;_CN</x:Name>
+  <x:SheetIndex>1</x:SheetIndex>
+  <x:Formula>=3DSheet1!$A$1:$I$76</x:Formula>
+ </x:ExcelName>
+</xml><![endif]-->
+</head>
+
+<body link=3Dblue vlink=3Dpurple>
+
+<table x:str border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D1358 style=
+=3D'border-collapse:
+ collapse;table-layout:fixed;width:1020pt'>
+ <col class=3Dxl24 width=3D38 span=3D2 style=3D'mso-width-source:userset;ms=
+o-width-alt:
+ 1216;width:29pt'>
+ <col width=3D142 style=3D'mso-width-source:userset;mso-width-alt:4544;widt=
+h:107pt'>
+ <col width=3D73 style=3D'mso-width-source:userset;mso-width-alt:2336;width=
+:55pt'>
+ <col width=3D291 style=3D'mso-width-source:userset;mso-width-alt:9312;widt=
+h:218pt'>
+ <col width=3D203 style=3D'mso-width-source:userset;mso-width-alt:6496;widt=
+h:152pt'>
+ <col width=3D178 style=3D'mso-width-source:userset;mso-width-alt:5696;widt=
+h:134pt'>
+ <col width=3D204 style=3D'mso-width-source:userset;mso-width-alt:6528;widt=
+h:153pt'>
+ <col width=3D191 style=3D'mso-width-source:userset;mso-width-alt:6112;widt=
+h:143pt'>
+ <tr class=3Dxl24 height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl25 width=3D38 style=3D'height:30.0pt;width:29pt=
+'><a
+  name=3D"_._TQIT_OUT_&#35013;&#22791;_&#31070;&#22120;_CN">&#38590;&#24230=
+;</a></td>
+  <td class=3Dxl26 width=3D38 style=3D'width:29pt'>&#31181;&#31867;</td>
+  <td class=3Dxl26 width=3D142 style=3D'width:107pt'>&#20013;&#25991;&#2151=
+7;&#31216;</td>
+  <td class=3Dxl26 width=3D73 style=3D'width:55pt'>&#38656;&#35201;&#31561;=
+&#32423;</td>
+  <td class=3Dxl26 width=3D291 style=3D'width:218pt'>&#23646;&#24615;</td>
+  <td class=3Dxl26 width=3D203 style=3D'width:152pt'>&#25152;&#38656;&#3245=
+2;&#20214;1</td>
+  <td class=3Dxl26 width=3D178 style=3D'width:134pt'>&#25152;&#38656;&#3245=
+2;&#20214;2</td>
+  <td class=3Dxl26 width=3D204 style=3D'width:153pt'>&#25152;&#38656;&#3245=
+2;&#20214;3</td>
+  <td class=3Dxl26 width=3D191 style=3D'width:143pt'>&#33521;&#25991;&#2151=
+7;&#31216;</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#22885;&#20869;&#3259=
+9;&#26031;&#30340;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>5</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+10%
+  &#26127;&#30561;&#20260;&#23475;<br>
+    <br>
+    40 &#27861;&#21147;&#21560;&#21462;&#22312;2.0&#31186;&#20869;<br>
+    <br>
+    4% &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    20% &#27963;&#21147;&#20260;&#23475;&#25269;&#25239;<br>
+    <br>
+    25% &#30505;&#26197;&#25269;&#25239;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#29=
+380;&#20420;&#23612;&#32034;&#26031;&#30340;&#37202;&#22218;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#39=
+740;&#24618;&#29289;&#36136;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#24=
+694;&#39764;&#34880;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Scroll of Oneiros</td>
+ </tr>
+ <tr height=3D330 style=3D'height:247.5pt'>
+  <td height=3D330 class=3Dxl27 width=3D38 style=3D'height:247.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#19981;&#22812;&#2004=
+3;&#32617;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>10</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>10 &#20260;&#23475;<br>
+    <br>
+    10 &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    21 &#27602;&#32032;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    40 &#27861;&#21147;&#21560;&#21462;&#22312;2.0&#31186;&#20869;<br>
+    <br>
+    20% &#27963;&#21147;&#20260;&#23475;&#25269;&#25239;<br>
+    <br>
+    25% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    +60 &#29983;&#21629;<br>
+    <br>
+    +10% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#38=
+463;&#21888;&#29705;&#26031;&#30340;&#21191;&#29467;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#34=
+649;&#34656;&#29273;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#27=
+602;&#28082;&#22218;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Shroud of Eternal Nigh=
+t</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl27 width=3D38 style=3D'height:82.5pt;width:29p=
+t'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#33485;&#30333;&#2004=
+3;&#26376;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>10</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>8
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +6% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +15 &#26234;&#21147;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#23=
+449;&#26031;&#30340;&#38713;&#38643;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#28=
+023;&#40863;&#22771;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#39=
+118;&#26292;&#22899;&#24043;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Pale Moon</td>
+ </tr>
+ <tr height=3D220 style=3D'height:165.0pt'>
+  <td height=3D220 class=3Dxl27 width=3D38 style=3D'height:165.0pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#27602;&#34503;&#2004=
+3;&#27468;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>20</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+6%
+  &#27602;&#32032;&#20260;&#23475;<br>
+    <br>
+    15.0% &#26426;&#29575;&#21457;&#21160; 30
+  &#27602;&#32032;&#20260;&#23475;&#21453;&#20987;&#22312;3.0&#31186;&#2086=
+9;<br>
+    <br>
+    +14 &#25252;&#30002;<br>
+    <br>
+    18% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    25% &#27602;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#20=
+309;&#38706;&#26031;&#20043;&#30524;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#30=
+828;&#32972;&#30002;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#33=
+258;&#28982;&#25252;&#30462;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Song of the Serpent</t=
+d>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl27 width=3D38 style=3D'height:115.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#29733;&#29632;&#2994=
+2;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>10</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>10
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    12% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +7% &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    +10 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#38=
+463;&#32819;&#24530;&#24357;&#26031;&#30340;&#24339;&#24358;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#32=
+431;&#27905;&#32701;&#27611;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#28=
+023;&#40863;&#22771;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Amber Flask</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#28151;&#27788;&#3143=
+5;&#26041;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>15</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>24
+  &#27602;&#32032;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    7% &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    15% &#27963;&#21147;&#20260;&#23475;&#25269;&#25239;<br>
+    <br>
+    20% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    +50 &#29983;&#21629;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#29=
+380;&#20420;&#23612;&#32034;&#26031;&#30340;&#37202;&#22218;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#27=
+602;&#28082;&#22218;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#24=
+694;&#39764;&#34880;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Chaos Cube</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#28872;&#29076;&#2004=
+3;&#29699;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>5</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>11 &#20260;&#23475;<br>
+    <br>
+    +6% &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    36 &#29123;&#28903;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    6% &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    5% &#28779;&#28976;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#26=
+222;&#32599;&#31859;&#20462;&#26031;&#20043;&#28779;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#37=
+326;&#29482;&#30382;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#30=
+828;&#32972;&#30002;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Molten Orb</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl27 width=3D38 style=3D'height:115.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#28789;&#39746;&#3907=
+6;&#25238;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>20</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+13% &#20260;&#23475;<=
+br>
+    <br>
+    13 &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    +13% &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    13%
+  &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36523;&=
+#29983;&#21629;&#20540;&#22686;&#21152;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#38=
+463;&#21162;&#27604;&#26031;&#30340;&#24868;&#24594;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#27=
+745;&#31229;&#33043;&#27700;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#29=
+436;&#29226;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Soul Shiver</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#38713;&#38643;&#2878=
+4;&#28908;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>20</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+14%
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    8% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +12 &#25935;&#25463;<br>
+    <br>
+    +75 &#29983;&#21629;<br>
+    <br>
+    +75 &#27861;&#21147;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#38=
+463;&#33945;&#25289;&#30340;&#33635;&#32768;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#22=
+899;&#22934;&#30382;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#30=
+828;&#32972;&#30002;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Cinderbolt</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#27700;&#26230;&#2004=
+3;&#27882;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>25</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+18%
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    +13% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +18% &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    75 &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    50% &#22833;&#34880;&#24615;&#20260;&#23475;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#29=
+577;&#24093;&#30340;&#24179;&#38745;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#21=
+073;&#40831;&#34382;&#29226;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#38=
+634;&#20154;&#27611;&#30382;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Crystal Tear</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl27 width=3D38 style=3D'height:115.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#27515;&#28789;&#2525=
+2;&#21355;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>5</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>18
+  &#29983;&#21629;&#20540;&#21560;&#21462;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    7% &#27963;&#21147;&#20260;&#23475;&#25269;&#25239;<br>
+    <br>
+    12.0% &#26426;&#29575;&#21457;&#21160; 50%
+  &#20260;&#23475;&#21453;&#24377;<br>
+    <br>
+    +20 &#28857;&#25112;&#26007;&#33021;&#21147;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#38=
+463;&#22522;&#31859;&#24503;&#20043;&#38236;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#34=
+649;&#34656;&#29273;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#38=
+684;&#20923;&#26032;&#26143;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Wraithguard</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#27515;&#20129;&#2404=
+0;&#21709;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>5</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>10 &#20260;&#23475;<br>
+    <br>
+    30 &#27602;&#32032;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    +30 &#29983;&#21629;<br>
+    <br>
+    +30 &#27861;&#21147;<br>
+    <br>
+    +15% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#38=
+463;&#21888;&#29705;&#26031;&#30340;&#21191;&#29467;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#39=
+740;&#24618;&#29289;&#36136;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#31=
+070;&#31192;&#21147;&#37327;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Deathrattle</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#22826;&#38451;&#3070=
+7;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>25</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+10% &#20260;&#23475;<=
+br>
+    <br>
+    +10% &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    +10% &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    25% &#28779;&#28976;&#25239;&#24615;<br>
+    <br>
+    25% &#25216;&#33021;&#20013;&#26029;&#20445;&#25252;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#40=
+857;&#29579;&#30340;&#39046;&#22495;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#36951;&#29289;]&#29=
+492;&#29579;&#30340;&#25103;&#27861;[&#23567;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#36=
+895;&#40857;&#29273;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Sunstone</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl27 width=3D38 style=3D'height:115.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#21059;&#20992;&#2138=
+5;&#29226;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>20</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>15
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +5% &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    33.0% &#26426;&#29575;&#21457;&#21160; 25
+  &#31359;&#21050;&#21453;&#20987;<br>
+    <br>
+    +5% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#22=
+622;&#29305;&#30340;&#20986;&#21334;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#29=
+436;&#29226;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#24=
+544;&#23454;&#32852;&#30431;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Razor Claw</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl27 width=3D38 style=3D'height:115.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#22825;&#28779;&#2240=
+2;&#39280;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>15</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>10
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +7% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    6 &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    +4% &#20840;&#37096;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#23=
+449;&#26031;&#30340;&#38713;&#38643;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#26=
+426;&#26800;&#37096;&#20214;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#39=
+740;&#24618;&#29289;&#36136;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Skyfire Pendant</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#25103;&#24324;&#2004=
+3;&#35302;&#35273;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>15</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+15 &#25252;&#30002;<b=
+r>
+    <br>
+    50% &#25216;&#33021;&#20013;&#26029;&#20445;&#25252;<br>
+    <br>
+    +10% &#27861;&#21147;<br>
+    <br>
+    +30% &#26045;&#23637;&#36895;&#24230;<br>
+    <br>
+    -5% &#27861;&#21147;&#28040;&#32791;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#37=
+329;&#32650;&#27611;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#37=
+326;&#29482;&#30382;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#30=
+772;&#22351;&#36710;&#36718;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Touch of the Fool</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl27 width=3D38 style=3D'height:115.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#26143;&#36784;&#2004=
+3;&#24515;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>10</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+4%
+  &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    30 &#29123;&#28903;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    4% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +4% &#20840;&#37096;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#26=
+222;&#32599;&#31859;&#20462;&#26031;&#20043;&#28779;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#34=
+649;&#34656;&#29273;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#21=
+191;&#22763;&#20043;&#27468;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Star Heart</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl27 width=3D38 style=3D'height:115.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#34880;&#24615;&#2937=
+8;&#26292;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>25</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>24 &#20260;&#23475;<br>
+    <br>
+    30 &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    +6% &#27969;&#34880;&#20260;&#23475;<br>
+    <br>
+    5% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#20=
+851;&#32701;&#30340;&#20161;&#24904;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#34=
+656;&#29492;&#29226;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#29=
+420;&#30524;&#24040;&#20154;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Bloodrage</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl27 width=3D38 style=3D'height:115.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#21494;&#20043;&#3904=
+2;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>15</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>20%
+  &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +30 &#27861;&#21147;<br>
+    <br>
+    +35 &#28857;&#25112;&#26007;&#33021;&#21147;<br>
+    <br>
+    -6% &#27861;&#21147;&#28040;&#32791;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#37=
+329;&#32650;&#27611;[&#23567;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#32=
+431;&#27905;&#32701;&#27611;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#31=
+070;&#31192;&#21147;&#37327;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Leafsong</td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#30563;&#20234;&#2450=
+3;&#30340;&#33457;&#20896;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>25</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>25%
+  &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +45 &#27861;&#21147;<br>
+    <br>
+    +50% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +45 &#28857;&#25112;&#26007;&#33021;&#21147;<br>
+    <br>
+    -8% &#27861;&#21147;&#28040;&#32791;<br>
+    <br>
+    +1 &#21040;&#33258;&#28982;&#19987;&#31934;
+  &#30340;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#21=
+494;&#20043;&#39042;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#27=
+700;&#26230;&#20043;&#27882;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#33=
+889;&#33796;&#30244;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Druidic Wreath</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#28789;&#39746;&#2686=
+5;&#38236;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>25</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+15%
+  &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    66 &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    25% &#28779;&#28976;&#25239;&#24615;<br>
+    <br>
+    +100 &#29983;&#21629;<br>
+    <br>
+    -8% &#27861;&#21147;&#28040;&#32791;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#20129;&#28789;&#26415;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5%
+  &#20960;&#29575;&#22312;&#25215;&#21463;&#20260;&#23475;&#26102;&#21551;&=
+#21160;<br>
+    <br>
+    &#21484;&#21796;&#19977;&#21517;&#19981;&#27515;&#25112;&#22763;&#26469=
+;&#20445;&#21355;&#29609;&#23478;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#21484;&#21796;<br>
+    <br>
+    240.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    6 &#21484;&#21796;&#19978;&#38480;<br>
+    <br>
+    &#19968;&#27425;&#21484;&#21796; 3 &#20010;<br>
+    <br>
+    &#25345;&#32493;&#26102;&#38388; 30.0 &#31186;<br>
+    <br>
+    &#21484;&#21796;&#29983;&#29289;&#65306;&#39607;&#39621;&#20166;&#20174=
+;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#25=
+103;&#24324;&#20043;&#35302;&#35273;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#22=
+826;&#38451;&#30707;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#38=
+414;&#32599;&#29579;&#30340;&#26432;&#25134;[&#23567;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Soul Prism</td>
+ </tr>
+ <tr height=3D286 style=3D'height:214.5pt'>
+  <td height=3D286 class=3Dxl27 width=3D38 style=3D'height:214.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#26790;&#24819;&#2004=
+3;&#20070;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>25</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+10%
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +20% &#26127;&#30561;&#20260;&#23475;<br>
+    <br>
+    +10% &#30005;&#20987;&#20260;&#23475;<br>
+    <br>
+    10% &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    50% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    100% &#26127;&#30561;&#25269;&#25239;<br>
+    <br>
+    +1 &#21040;&#26790;&#24187;&#20043;&#22659;
+  &#30340;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#22=
+885;&#20869;&#32599;&#26031;&#30340;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#19=
+981;&#22812;&#20043;&#32617;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#22=
+825;&#24594;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Book of Dreams</td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#19990;&#32426;&#3034=
+0;&#29378;&#24594;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>30</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+16%
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    10% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    10% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +5% &#30462;&#29260;&#26684;&#25377;<br>
+    <br>
+    +8% &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    +10% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#29=
+733;&#29632;&#29942;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#38=
+713;&#38643;&#28784;&#28908;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#36=
+203;&#20811;&#25176;&#30340;&#38452;&#24433;[&#23567;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Fury of the Ages</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#22825;&#22530;&#2004=
+3;&#30524;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>30</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+10%
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    +10% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    10% &#20912;&#20919;&#25239;&#24615;<br>
+    <br>
+    10% &#38378;&#30005;&#25239;&#24615;<br>
+    <br>
+    +15% &#20260;&#23475;&#23545; &#24694;&#39764;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#28023;&#21880;
+  &#31561;&#32423;&#65306;15<br>
+    <br>
+    100% &#20960;&#29575;&#22312;&#25915;&#20987;&#26102;&#21551;&#21160;<b=
+r>
+    <br>
+    &#21943;&#23556;&#20986;&#19977;&#32929;&#24378;&#21147;&#30340;&#20912=
+;&#27700;&#37325;&#20987;&#25932;&#20154;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#25237;&=
+#23556;&#12289;&#29615;&#22411;&#25237;&#23556;<br>
+    <br>
+    90.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    3 &#20010;<br>
+    <br>
+    38.0 &#20998;&#25955;&#35282;&#24230;<br>
+    <br>
+    100.0% &#26426;&#29575;&#31359;&#36879;&#25932;&#20154;<br>
+    <br>
+    280 ~ 300 &#20260;&#23475;<br>
+    <br>
+    440 ~ 460 &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    400 &#20912;&#20923;&#20260;&#23475;&#22312;2.0&#31186;&#20869;<br>
+    <br>
+    50% &#26426;&#29575;&#25915;&#20987;&#22833;&#35823; &#25345;&#32493; 3=
+.0
+  &#31186;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#22=
+825;&#28779;&#22402;&#39280;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#27=
+602;&#34503;&#20043;&#27468;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#30=
+171;&#33510;&#30340;&#28789;&#39746;[&#26222;&#36890;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Eye of the Heavens</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#38452;&#24433;&#3875=
+4;&#32617;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>30</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>15 &#20260;&#23475;<br>
+    <br>
+    45 &#27602;&#32032;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    +20 &#25935;&#25463;<br>
+    <br>
+    +30 &#29983;&#21629;<br>
+    <br>
+    +18% &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#26263;&#24433;&#27874;&#28059;
+  &#31561;&#32423;&#65306;12<br>
+    <br>
+    100%
+  &#20960;&#29575;&#22312;&#25215;&#21463;&#36817;&#25112;&#20260;&#23475;&=
+#26102;&#21551;&#21160;<br>
+    <br>
+    &#19968;&#32929;&#26263;&#40657;&#30340;&#27874;&#28010;&#20174;&#29609=
+;&#23478;&#30340;&#33050;&#21521;&#22806;&#25193;<br>
+    <br>
+  =20
+  &#25955;&#65292;&#20260;&#23475;&#25152;&#26377;&#37051;&#36817;&#30340;&=
+#25932;&#20154;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#33539=
+;&#22260;<br>
+    <br>
+    90.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    5.0 &#31859;&#33539;&#22260;<br>
+    <br>
+    399 ~ 453 &#20260;&#23475;<br>
+    <br>
+    97 &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    1.5 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#27=
+515;&#20129;&#24040;&#21709;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#28=
+151;&#27788;&#31435;&#26041;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#34=
+394;&#24369;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Shadow Veil</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl27 width=3D38 style=3D'height:115.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#32737;&#32736;&#3107=
+0;&#20687;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>35</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>10 &#20260;&#23475;<br>
+    <br>
+    +17% &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    +15 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    -8% &#27861;&#21147;&#28040;&#32791;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#37=
+329;&#32650;&#27611;[&#20013;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#36951;&#29289;]&#38=
+463;&#21888;&#29705;&#26031;&#30340;&#21191;&#29467;[&#20013;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#28=
+023;&#40863;&#22771;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Jade Idol</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#30127;&#29378;&#3034=
+0;&#36830;&#32467;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>40</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+10% &#20260;&#23475;<=
+br>
+    <br>
+    33.0% &#26426;&#29575;&#21457;&#21160; 30
+  &#31359;&#21050;&#21453;&#20987;<br>
+    <br>
+    +40 &#29983;&#21629;<br>
+    <br>
+    +40 &#27861;&#21147;<br>
+    <br>
+    +40 &#20260;&#23475;&#23545; &#20129;&#28789;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#22=
+622;&#29305;&#30340;&#20986;&#21334;[&#20013;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#36951;&#29289;]&#38=
+463;&#33945;-&#25289;&#30340;&#33635;&#32768;[&#20013;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#22=
+885;&#35199;&#37324;&#26031;&#20043;&#26609;[&#20013;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Nexus of Insanity</td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#40657;&#26263;&#2668=
+0;&#24515;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>35</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+10%
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    12 ~ 35 &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +10% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    30% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +15% &#26234;&#21147;<br>
+    <br>
+    +5% &#27861;&#21147;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#23=
+449;&#26031;&#30340;&#38713;&#38643;[&#20013;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#30=
+828;&#32972;&#30002;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#24=
+378;&#22823;&#30340;&#40560;&#36523;&#22899;&#22934;&#20043;&#21367;&#36724=
+;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Dark Core</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl27 width=3D38 style=3D'height:115.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#40657;&#27264;&#2640=
+8;&#29699;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>40</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>10.0%
+  &#26426;&#29575;&#21457;&#21160; 5.0
+  &#31186;&#25216;&#33021;&#25171;&#26029;<br>
+    <br>
+    90 &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    +30 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    7% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#20=
+851;&#32701;&#30340;&#20161;&#24904;[&#20013;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#36951;&#29289;]&#38=
+463;&#29790;&#26031;&#30340;&#24868;&#24594;[&#20013;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#21=
+073;&#40831;&#34382;&#29226;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Ebony Globe</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl27 width=3D38 style=3D'height:115.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#26543;&#33806;&#3193=
+4;&#31070;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>35</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+25%
+  &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    36 &#27602;&#32032;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    +60 &#27861;&#21147;<br>
+    <br>
+    +95% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#36=
+203;&#21345;&#33922;&#30340;&#26032;&#26376;[&#20013;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#27=
+602;&#28082;&#22218;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#24=
+378;&#22823;&#30340;&#22362;&#38887;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Spirit Blight</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#25504;&#22842;&#3277=
+3;&#38452;&#24433;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>40</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+20%
+  &#27602;&#32032;&#20260;&#23475;<br>
+    <br>
+    20% &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    +12% &#30462;&#29260;&#26684;&#25377;<br>
+    <br>
+    14.0% &#26426;&#29575;&#21457;&#21160; 50%
+  &#20260;&#23475;&#21453;&#24377;<br>
+    <br>
+    45% &#30505;&#26197;&#25269;&#25239;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#38=
+463;&#22522;&#31859;&#24503;&#20043;&#38236;[&#20013;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#28=
+023;&#40863;&#22771;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#24=
+378;&#22823;&#30340;&#20234;&#26031;&#20848;&#31070;&#28789;&#20043;&#21367=
+;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Raven's Shadow</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#38518;&#21046;&#2525=
+2;&#36523;&#31526;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>35</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+10%
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    54 &#29123;&#28903;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    +15 &#25252;&#30002;<br>
+    <br>
+    25% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +15 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#26=
+222;&#32599;&#31859;&#20462;&#26031;&#20043;&#28779;[&#20013;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#37=
+326;&#29482;&#30382;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#32=
+431;&#27905;&#32701;&#27611;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Earthen Talisman</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#20129;&#39746;&#3034=
+0;&#32463;&#25991;&#21283;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>35</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+15%
+  &#27602;&#32032;&#20260;&#23475;<br>
+    <br>
+    33
+  &#29983;&#21629;&#20540;&#21560;&#21462;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    54 &#27861;&#21147;&#21560;&#21462;&#22312;2.0&#31186;&#20869;<br>
+    <br>
+    7% &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    30% &#21560;&#21462;&#29983;&#21629;&#25269;&#25239;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#29=
+380;&#20420;&#23612;&#32034;&#26031;&#30340;&#37202;&#22218;[&#20013;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#34=
+649;&#34656;&#29273;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#39=
+740;&#24618;&#29289;&#36136;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Phylactery of Shadows<=
+/td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#32822;&#31267;&#2230=
+7;&#23481;&#20043;&#20876;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>40</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>10
+  &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +15% &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +25 &#25252;&#30002;<br>
+    <br>
+    +35 &#21147;&#37327;<br>
+    <br>
+    +25 &#26234;&#21147;<br>
+    <br>
+    +10% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#20=
+309;&#38706;&#26031;&#20043;&#30524;[&#20013;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#27=
+745;&#31229;&#33043;&#27700;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#24=
+378;&#22823;&#30340;&#21560;&#34880;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Tome of Transfiguratio=
+n</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#21484;&#21796;&#3277=
+3;&#22270;&#33150;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>40</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>25
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +6% &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +15% &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    +15 &#25935;&#25463;<br>
+    <br>
+    +50% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#20=
+234;&#24076;&#26031;&#30340;&#21313;&#23383;&#31456;[&#20013;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#22=
+899;&#22934;&#30382;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#29=
+436;&#29226;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Summoner's Totem</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl27 width=3D38 style=3D'height:115.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#31062;&#27597;&#3251=
+1;&#20043;&#32718;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>35</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>20
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +13% &#27602;&#32032;&#20260;&#23475;<br>
+    <br>
+    +18 &#25935;&#25463;<br>
+    <br>
+    +14% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#38=
+463;&#32819;&#24530;&#24357;&#26031;&#30340;&#24339;&#24358;[&#20013;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#33=
+268;&#30149;&#32701;&#27611;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#24=
+378;&#22823;&#30340;&#22320;&#38663;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Emerald Quill</td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#19981;&#26429;&#2004=
+3;&#29699;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>35</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+15% &#20260;&#23475;<=
+br>
+    <br>
+    +20% &#26127;&#30561;&#20260;&#23475;<br>
+    <br>
+    36
+  &#29983;&#21629;&#20540;&#21560;&#21462;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    30% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    +50 &#20260;&#23475;&#23545; &#20129;&#28789;<br>
+    <br>
+    +1 &#21040;&#26790;&#24187;&#20043;&#22659;
+  &#30340;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#28=
+151;&#27788;&#31435;&#26041;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#30=
+127;&#29378;&#30340;&#36830;&#32467;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#34=
+649;&#34656;&#29273;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Sphere of Eternity</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#22823;&#22320;&#2004=
+3;&#24515;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>40</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>30 ~ 60 &#20260;&#2347=
+5;<br>
+    <br>
+    +14% &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    +25 &#25252;&#30002;<br>
+    <br>
+    30% &#28779;&#28976;&#25239;&#24615;<br>
+    <br>
+    +28 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#28779;&#28976;&#25915;&#20987;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5% &#20960;&#29575;&#22312;&#25915;&#20987;&#26102;&#21551;&#21160;<br>
+    <br>
+    &#20174;&#22825;&#31354;&#20013;&#21484;&#26469;&#29123;&#28903;&#30340=
+;&#38504;&#30707;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25237;&#23556;&#12289;&#33853;&=
+#30707;<br>
+    <br>
+    90.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    2.0 &#31859;&#33539;&#22260;<br>
+    <br>
+    5 &#20010;<br>
+    <br>
+    100 ~ 120 &#20260;&#23475;<br>
+    <br>
+    190 ~ 210 &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    180 ~ 220 &#29123;&#28903;&#20260;&#23475;&#22312;2.0&#31186;&#20869;</=
+td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#22=
+826;&#38451;&#30707;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#28=
+872;&#29076;&#20043;&#29699;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31070;&#22120;]&#38=
+518;&#21046;&#25252;&#36523;&#31526;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Heart of Earth</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#30422;&#20122;&#2004=
+3;&#25163;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>40</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+13%
+  &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +25 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    +15% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;<br>
+    <br>
+    -9% &#27861;&#21147;&#28040;&#32791;<br>
+    <br>
+    +1 &#21040;&#33258;&#28982;&#19987;&#31934;
+  &#30340;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#21=
+494;&#20043;&#39042;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#32=
+737;&#32736;&#31070;&#20687;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#36=
+203;&#20811;&#25176;&#30340;&#38452;&#24433;[&#20013;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Hand of Gaia</td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#40857;&#33292;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>35</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+13%
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    60 &#29123;&#28903;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    +20 &#25252;&#30002;<br>
+    <br>
+    +26 &#26234;&#21147;<br>
+    <br>
+    +18 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    +1 &#21040;&#22823;&#22320;&#19987;&#31934;
+  &#30340;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#26=
+143;&#36784;&#20043;&#24515;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#38=
+518;&#21046;&#25252;&#36523;&#31526;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#24=
+378;&#22823;&#30340;&#21560;&#34880;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Dragontongue</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#29422;&#20043;&#2451=
+5;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>35</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>15%
+  &#31359;&#21050;&#25269;&#25239;<br>
+    <br>
+    20% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    13.0% &#26426;&#29575;&#21457;&#21160; 50%
+  &#20260;&#23475;&#21453;&#24377;<br>
+    <br>
+    +1 &#21040;&#38450;&#24481;&#19987;&#31934; &#30340;&#25152;&#26377;&#2=
+5216;&#33021;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#29422;&#21564;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5%
+  &#20960;&#29575;&#22312;&#25215;&#21463;&#36817;&#25112;&#20260;&#23475;&=
+#26102;&#21551;&#21160;<br>
+    <br>
+  =20
+  &#22823;&#21564;&#19968;&#22768;&#65292;&#30701;&#26102;&#38388;&#20869;&=
+#25552;&#39640;&#29609;&#23478;&#21644;&#21516;<br>
+    <br>
+    &#20276;&#30340;&#20316;&#25112;&#33021;&#21147;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#20809;&#29615;&#12289;&#33539=
+;&#22260;&#12289;&#24378;&#21270;<br>
+    <br>
+    120.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36817;<br>
+    <br>
+    <br>
+    <br>
+    10.0 &#31859;&#33539;&#22260;<br>
+    <br>
+    10.0 &#31186;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    +50% &#25152;&#26377;&#20260;&#23475;<br>
+    <br>
+    +50 &#25252;&#30002;<br>
+    <br>
+    +50% &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    &#27599;&#31186;+100.0&#28857;&#29983;&#21629;&#24674;&#22797;<br>
+    <br>
+    +150 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#28=
+872;&#29076;&#20043;&#29699;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#32=
+822;&#31267;&#22307;&#23481;&#20043;&#20876;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31070;&#22120;]&#25=
+504;&#22842;&#32773;&#38452;&#24433;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Lionheart</td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#24337;&#21531;&#3277=
+3;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>35</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>15 &#20260;&#23475;<br>
+    <br>
+    66 &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    9% &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    40% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    +36 &#21147;&#37327;<br>
+    <br>
+    +1 &#21040;&#25112;&#26007;&#19987;&#31934;
+  &#30340;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#27=
+602;&#34503;&#20043;&#27468;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#25=
+504;&#22842;&#32773;&#38452;&#24433;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#38=
+463;&#22522;&#31859;&#24503;&#20043;&#38236;[&#20013;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Kingslayer</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#22825;&#28779;&#3861=
+3;&#20687;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>35</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>9 ~ 36
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +10% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    10 &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    +20% &#26234;&#21147;<br>
+    <br>
+    +1 &#21040;&#39118;&#26292;&#19987;&#31934; &#30340;&#25152;&#26377;&#2=
+5216;&#33021;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#38378;&#30005;&#22868;&#33150;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    20% &#20960;&#29575;&#22312;&#25915;&#20987;&#26102;&#21551;&#21160;<br>
+    <br>
+  =20
+  &#21457;&#23556;&#20986;&#19968;&#36947;&#38378;&#30005;&#25915;&#20987;&=
+#25932;&#20154;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#27874;&=
+#21160;<br>
+    <br>
+    90.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    &#27874;&#21160;&#36215;&#22987;&#20110; 1.0 &#31859;&#22806;<br>
+    <br>
+    18.0 &#31859;&#27874;&#21160;&#20256;&#25773;&#36317;&#31163;<br>
+    <br>
+    1.0 &#31186;&#27874;&#21160;&#20256;&#25773;&#26102;&#38388;<br>
+    <br>
+    3.0 &#31859;&#27874;&#21160;&#36215;&#22987;&#23485;&#24230;<br>
+    <br>
+    6.0 &#31859;&#27874;&#21160;&#32467;&#26463;&#23485;&#24230;<br>
+    <br>
+    2800 ~ 3000 &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    15% &#20943;&#24930;&#20840;&#37096;&#36895;&#24230; &#25345;&#32493; 1=
+.5
+  &#31186;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#22=
+825;&#28779;&#22402;&#39280;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#40=
+657;&#26263;&#26680;&#24515;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#23=
+449;&#26031;&#30340;&#38713;&#38643;[&#20013;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Effigy of Skyfire</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#40092;&#34880;&#2345=
+3;&#30707;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>40</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>40
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +10% &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    33.0% &#26426;&#29575;&#21457;&#21160; 32
+  &#31359;&#21050;&#21453;&#20987;<br>
+    <br>
+    +6% &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    +1 &#21040;&#29417;&#29454;&#19987;&#31934;
+  &#30340;&#25152;&#26377;&#25216;&#33021;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#28909;&#34880;&#27832;&#33150;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    100% &#20960;&#29575;&#22312;&#29983;&#21629;&#20540;&#20302;&#19979;&#=
+26102;&#21551;&#21160;<br>
+    <br>
+  =20
+  &#22312;&#20351;&#38468;&#36817;&#25152;&#26377;&#23545;&#25163;&#30340;&=
+#34880;&#28082;&#27832;&#33150;&#20197;&#20260;<br>
+    <br>
+    &#23475;&#20182;&#20204;&#26102;&#65292;&#21516;&#26102;&#34917;&#20805=
+;&#29609;&#23478;&#30340;&#29983;&#21629;&#21147;<br>
+    <br>
+    &#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#33539;&=
+#22260;<br>
+    <br>
+    120.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    6.0 &#31859;&#33539;&#22260;<br>
+    <br>
+    1000 ~ 1150 &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    100% &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#=
+36523;&#29983;&#21629;&#20540;&#22686;&#21152;<br>
+    <br>
+    1170 &#27969;&#34880;&#20260;&#23475;&#22312;2.0&#31186;&#20869;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#21=
+059;&#20992;&#21385;&#29226;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#31=
+062;&#27597;&#32511;&#20043;&#32718;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31070;&#22120;]&#38=
+713;&#38643;&#28784;&#28908;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Blood Gem</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#34880;&#33125;&#2004=
+3;&#27602;&#34503;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>40</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>15 ~ 35 &#20260;&#2347=
+5;<br>
+    <br>
+    +12% &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +20% &#27602;&#32032;&#20260;&#23475;<br>
+    <br>
+    14% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +1 &#21040;&#30423;&#36156;&#19987;&#31934; &#30340;&#25152;&#26377;&#2=
+5216;&#33021;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#27602;&#34503;&#20043;&#29273;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5% &#20960;&#29575;&#22312;&#25215;&#21463;&#20260;&#23475;&#26102;&#21=
+551;&#21160;<br>
+    <br>
+  =20
+  &#21521;&#22235;&#26041;&#20843;&#38754;&#21457;&#23556;&#27602;&#38230;&=
+#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#25237;&=
+#23556;&#12289;&#29615;&#22411;&#25237;&#23556;<br>
+    <br>
+    90.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#20013;&#31561;<br>
+    <br>
+    &#31867;&#27494;&#22120;&#25915;&#20987;<br>
+    <br>
+    <br>
+    <br>
+    12 &#20010;<br>
+    <br>
+    360.0 &#20998;&#25955;&#35282;&#24230;<br>
+    <br>
+    200 ~ 210 &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    200 &#27969;&#34880;&#20260;&#23475;&#22312;2.0&#31186;&#20869;<br>
+    <br>
+    200 &#27602;&#32032;&#20260;&#23475;&#22312;2.0&#31186;&#20869;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#19=
+981;&#22812;&#20043;&#32617;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#25=
+504;&#22842;&#32773;&#38452;&#24433;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#34=
+656;&#29492;&#29226;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Crimson Viper</td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#26368;&#32456;&#2766=
+8;&#24687;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>40</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+10% &#20260;&#23475;<=
+br>
+    <br>
+    +15% &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    30% &#27963;&#21147;&#20260;&#23475;&#25269;&#25239;<br>
+    <br>
+    +9% &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    +38 &#20260;&#23475;&#23545; &#20129;&#28789;<br>
+    <br>
+    +1 &#21040;&#27515;&#28789;&#19987;&#31934;
+  &#30340;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#27=
+515;&#20129;&#24040;&#21709;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#20=
+129;&#39746;&#30340;&#32463;&#25991;&#21283;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#22=
+885;&#35199;&#37324;&#26031;&#20043;&#26609;[&#20013;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Final Breath</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#38463;&#32819;&#2930=
+5;&#24357;&#26031;&#30340;&#24367;&#26376;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>50</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+14%
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    33.0% &#26426;&#29575;&#21457;&#21160; 40
+  &#31359;&#21050;&#21453;&#20987;<br>
+    <br>
+    +30% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +20% &#20260;&#23475;&#23545; &#24694;&#39764;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021;
+  :&#38463;&#32819;&#24530;&#24357;&#26031;&#20043;&#25112;&#33310;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5% &#20960;&#29575;&#22312;&#25215;&#21463;&#20260;&#23475;&#26102;&#21=
+551;&#21160;<br>
+    <br>
+  =20
+  &#30701;&#26102;&#38388;&#20869;&#20197;&#31070;&#22307;&#19988;&#20248;&=
+#38597;&#30340;&#33310;&#27493;&#31227;&#21160;<br>
+    <br>
+    &#65292;&#20351;&#24471;&#20960;&#20046;&#27809;&#21487;&#33021;&#34987=
+;&#20987;&#20013;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#24378;&#21270;<br>
+    <br>
+    90.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    15.0 &#31186;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    +80% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    75% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;<br>
+    <br>
+    +75% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#19=
+990;&#32426;&#30340;&#29378;&#24594;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#40=
+092;&#34880;&#23453;&#30707;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#24=
+378;&#22823;&#30340;&#40560;&#36523;&#22899;&#22934;&#20043;&#21367;&#36724=
+;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Crescent Moon of Artem=
+is</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#38463;&#29790;&#2603=
+1;&#30340;&#40092;&#34880;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>50</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>25 &#20260;&#23475;<br>
+    <br>
+    +20% &#20260;&#23475;<br>
+    <br>
+    +40% &#27969;&#34880;&#20260;&#23475;<br>
+    <br>
+    +15% &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    +40 &#28857;&#25112;&#26007;&#33021;&#21147;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#34880;&#27882;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5%
+  &#20960;&#29575;&#22312;&#25215;&#21463;&#20260;&#23475;&#26102;&#21551;&=
+#21160;<br>
+    <br>
+    &#25112;&#31070;&#38463;&#29790;&#26031;&#22914;&#28779;&#28861;&#28909=
+;&#30340;&#34880;&#27882;&#27922;&#19979;&#22823;<br>
+    <br>
+  =20
+  &#22320;&#65294;&#23545;&#25509;&#35302;&#21040;&#30340;&#20154;&#37117;&=
+#36896;&#25104;&#20986;&#34880;&#21644;&#28779;<br>
+    <br>
+    &#28976;&#20260;&#23475;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#25237;&=
+#23556;&#12289;&#33539;&#22260;<br>
+    <br>
+    120.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36817;&#25112;<br>
+    <br>
+    <br>
+    <br>
+    8.0 &#31859;&#33539;&#22260;<br>
+    <br>
+    8.0 &#31186;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    975 &#27969;&#34880;&#20260;&#23475; &#27599;&#31186;<br>
+    <br>
+    176 ~ 198 &#29123;&#28903;&#20260;&#23475;&#22312;2.0&#31186;&#20869;</=
+td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#29=
+422;&#20043;&#24515;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#19=
+990;&#32426;&#30340;&#29378;&#24594;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#38=
+463;&#21888;&#29705;&#26031;&#30340;&#21191;&#29467;[&#20013;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Blood of Ares</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#22885;&#35199;&#3732=
+4;&#26031;&#30340;&#29287;&#26454;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>50</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>50
+  &#27861;&#21147;&#21560;&#21462;&#22312;2.0&#31186;&#20869;<br>
+    <br>
+    100% &#27963;&#21147;&#20260;&#23475;&#25269;&#25239;<br>
+    <br>
+    25% &#21560;&#21462;&#27861;&#21147;&#25269;&#25239;<br>
+    <br>
+    +30% &#20260;&#23475;&#23545; &#20129;&#28789;<br>
+    <br>
+    +50 &#20943;&#23569;&#26469;&#33258; &#20129;&#28789;
+  &#30340;&#20260;&#23475;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#27762;&#21462;&#28789;&#39746;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5% &#20960;&#29575;&#22312;&#25915;&#20987;&#26102;&#21551;&#21160;<br>
+    <br>
+  =20
+  &#23581;&#35797;&#27762;&#21462;&#25932;&#20154;&#30340;&#28789;&#39746;&=
+#65292;&#36896;&#25104;&#36275;&#20197;&#26432;<br>
+    <br>
+    &#27515;&#38500;&#20102;&#26368;&#24378;&#22823;&#30340;&#23545;&#25163=
+;&#20197;&#22806;&#22823;&#37096;&#20221;&#25932;<br>
+    <br>
+  =20
+  &#20154;&#30340;&#20260;&#23475;&#65292;&#24182;&#19988;&#23558;&#20182;&=
+#20204;&#30340;&#29983;&#21629;&#20256;<br>
+    <br>
+    &#36865;&#32473;&#29609;&#23478;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;<br>
+    <br>
+    75.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    1000 &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    100% &#20943;&#23569;&#25932;&#20154;&#29983;&#21629;&#20540;<br>
+    <br>
+    500%
+  &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36523;&=
+#29983;&#21629;&#20540;&#22686;&#21152;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#28=
+789;&#39746;&#26865;&#38236;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#26=
+368;&#32456;&#27668;&#24687;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#39=
+740;&#24618;&#29289;&#36136;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Crosier of Osiris</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#27874;&#22763;&#3903=
+9;&#30340;&#32593;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>50</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+15%
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    +15% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    25% &#20912;&#20919;&#25239;&#24615;<br>
+    <br>
+    25% &#38378;&#30005;&#25239;&#24615;<br>
+    <br>
+    +18% &#20260;&#23475;&#23545; &#24694;&#39764;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#27874;&#22622;&#20908;&#20043;&#325=
+93;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    100%
+  &#20960;&#29575;&#22312;&#29983;&#21629;&#20540;&#20302;&#19979;&#26102;&=
+#21551;&#21160;<br>
+    <br>
+  =20
+  &#20197;&#28023;&#31070;&#30340;&#21147;&#37327;&#25429;&#25417;&#19968;&=
+#22823;&#22534;&#24618;&#29289;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#25237;&=
+#23556;&#12289;&#21066;&#24369;&#12289;&#25429;&#32593;<br>
+    <br>
+    120.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    5.0 &#31859;&#33539;&#22260;<br>
+    <br>
+    4.0 &#31186;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    800 ~ 900 &#20912;&#20923;&#20260;&#23475; &#27599;&#31186;<br>
+    <br>
+    -33% &#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#22=
+825;&#22530;&#20043;&#30524;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#22=
+825;&#28779;&#38613;&#20687;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#23=
+449;&#26031;&#30340;&#38713;&#38643;[&#20013;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Poseidon's Net</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#24471;&#22696;&#2453=
+0;&#32819;&#30340;&#24951;&#24936;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>50</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>35%
+  &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +85% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    -16% &#27861;&#21147;&#28040;&#32791;<br>
+    <br>
+    +50 &#20943;&#23569;&#26469;&#33258; &#20861;&#20154;
+  &#30340;&#20260;&#23475;<br>
+    <br>
+    +50 &#20943;&#23569;&#26469;&#33258; &#37326;&#20861;
+  &#30340;&#20260;&#23475;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021;
+  :&#24471;&#22696;&#24530;&#32819;&#20043;&#25910;&#25104;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5%
+  &#20960;&#29575;&#22312;&#25215;&#21463;&#20260;&#23475;&#26102;&#21551;&=
+#21160;<br>
+    <br>
+  =20
+  &#24555;&#36895;&#24674;&#22797;&#29609;&#23478;&#20840;&#37096;&#29983;&=
+#21629;&#21644;&#33021;&#37327;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#24378;&#21270;<br>
+    <br>
+    120.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    15.0 &#31186;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    &#27599;&#31186;+50.0&#28857;&#29983;&#21629;&#24674;&#22797;<br>
+    <br>
+    &#27599;&#31186;+50.0&#28857;&#27861;&#21147;&#24674;&#22797;<br>
+    <br>
+    +400% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +400% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#30=
+563;&#20234;&#24503;&#30340;&#33457;&#20896;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#30=
+422;&#20122;&#20043;&#25163;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#33=
+889;&#33796;&#30244;[&#21490;&#35799;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Demeter's Bounty</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#36203;&#33778;&#2603=
+1;&#25176;&#26031;&#30340;&#21147;&#37327;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>50</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+30%
+  &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +100% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +100% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +40% &#20260;&#23475;&#23545; &#26426;&#20851;<br>
+    <br>
+    +40% &#20260;&#23475;&#23545; &#20608;&#20769;<br>
+    <br>
+    +1 &#21040;&#22823;&#22320;&#19987;&#31934;
+  &#30340;&#25152;&#26377;&#25216;&#33021;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#38081;&#25331; &#31561;&#32423;&#65=
+306;1<br>
+    <br>
+    10% &#20960;&#29575;&#22312;&#25915;&#20987;&#26102;&#21551;&#21160;<br>
+    <br>
+  =20
+  &#25552;&#21319;&#29609;&#23478;&#30340;&#36817;&#25112;&#33021;&#21147;&=
+#33267;&#33521;&#38596;&#30340;&#27700;&#24179;<br>
+    <br>
+    &#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#27494;&=
+#22120;<br>
+    <br>
+    90.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36817;&#25112;<br>
+    <br>
+    &#26377;&#25928;&#27494;&#22120;&#65306;&#26023;&#12289;&#38180;&#12289=
+;&#30683;&#12289;&#21073;<br>
+    <br>
+    <br>
+    <br>
+    4000 ~ 4100 &#20260;&#23475;<br>
+    <br>
+    4000 ~ 4100 &#28779;&#28976;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#40=
+857;&#33292;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#22=
+823;&#22320;&#20043;&#24515;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#24=
+378;&#22823;&#30340;&#22320;&#38663;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Might of Hephaestus</t=
+d>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#20234;&#24076;&#2603=
+1;&#30340;&#32467;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>50</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+30%
+  &#27602;&#32032;&#20260;&#23475;<br>
+    <br>
+    40% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +150% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +20% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;<br>
+    <br>
+    -10% &#27861;&#21147;&#28040;&#32791;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#27835;&#30103;&#28689;&#24067;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    100%
+  &#20960;&#29575;&#22312;&#29983;&#21629;&#20540;&#20302;&#19979;&#26102;&=
+#21551;&#21160;<br>
+    <br>
+  =20
+  &#24674;&#22797;&#29609;&#23478;&#21644;&#37051;&#36817;&#21516;&#20276;&=
+#20840;&#37096;&#29983;&#21629;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#20809;&#29615;&#12289;&#33539=
+;&#22260;&#12289;&#24378;&#21270;<br>
+    <br>
+    240.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    15.0 &#31859;&#33539;&#22260;<br>
+    <br>
+    1.0 &#31186;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    +10000.0 &#29983;&#21629;&#22238;&#22797;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#30=
+563;&#20234;&#24503;&#30340;&#33457;&#20896;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#30=
+422;&#20122;&#20043;&#25163;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#20=
+234;&#24076;&#26031;&#30340;&#21313;&#23383;&#31456;[&#20013;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Knot of Isis</td>
+ </tr>
+ <tr height=3D286 style=3D'height:214.5pt'>
+  <td height=3D286 class=3Dxl27 width=3D38 style=3D'height:214.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#40657;&#35961;&#3034=
+0;&#38613;&#20687;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>45</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+15%
+  &#27602;&#32032;&#20260;&#23475;<br>
+    <br>
+    15% &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    40% &#25216;&#33021;&#20013;&#26029;&#20445;&#25252;<br>
+    <br>
+    6% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +15% &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    -15%
+  &#25152;&#26377;&#27494;&#22120;&#30340;&#25935;&#25463;&#35201;&#27714;<=
+br>
+    <br>
+    -15% &#25252;&#30002;&#30340;&#25935;&#25463;&#35201;&#27714;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#29=
+492;&#29579;&#30340;&#25103;&#27861;[&#22823;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#37=
+326;&#29482;&#30382;[&#20256;&#22855;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#22=
+885;&#24503;&#20462;&#26031;&#30340;&#26426;&#26234;[&#22823;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Effigy of the Panther<=
+/td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#28779;&#28976;&#2004=
+3;&#33292;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>45</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+15%
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    +15% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    90 &#29123;&#28903;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    40% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +14% &#26234;&#21147;<br>
+    <br>
+    +10% &#27861;&#21147;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#26=
+222;&#32599;&#31859;&#20462;&#26031;&#20043;&#28779;[&#22823;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31526;&#21650;]&#32=
+431;&#27905;&#32701;&#27611;[&#20256;&#22855;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#31=
+070;&#22307;&#30340;&#19990;&#30028;&#26411;&#26085;&#20915;&#25112;&#20043=
+;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Tongue of Flame</td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#38647;&#20043;&#2533=
+1;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>45</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>18 ~ 45
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +15% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    20.0% &#26426;&#29575;&#21457;&#21160; 5.0
+  &#31186;&#25216;&#33021;&#25171;&#26029;<br>
+    <br>
+    108 &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    +9% &#27969;&#34880;&#20260;&#23475;<br>
+    <br>
+    90 &#27861;&#21147;&#21560;&#21462;&#22312;3.0&#31186;&#20869;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#23=
+449;&#26031;&#30340;&#38713;&#38643;[&#22823;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#36951;&#29289;]&#38=
+414;&#32599;&#29579;&#30340;&#26432;&#25134;[&#22823;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#38=
+463;&#29790;&#26031;&#30340;&#24868;&#24594;[&#22823;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Thunderfist</td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#36731;&#38754;&#3243=
+3;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>45</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>65
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    +20% &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    100% &#25216;&#33021;&#20013;&#26029;&#20445;&#25252;<br>
+    <br>
+    100% &#20943;&#23569;&#38519;&#38449;&#25345;&#32493;&#26102;&#38388;<b=
+r>
+    <br>
+    +50 &#25935;&#25463;<br>
+    <br>
+    +50 &#20260;&#23475;&#23545; &#20129;&#28789;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#22=
+885;&#35199;&#37324;&#26031;&#20043;&#26609;[&#22823;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#36951;&#29289;]&#22=
+612;&#23572;&#22612;&#32599;&#26031;&#30340;&#23506;&#24847;[&#22823;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#33=
+406;&#26480;&#20811;&#26031;&#30340;&#38050;&#38081;&#24847;&#24535;[&#2282=
+3;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Ethereal Veil</td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#23569;&#22899;&#2004=
+3;&#21563;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>45</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>35
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +15% &#25915;&#20987;&#36895;&#24230;<br>
+    <br>
+    +200% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +35 &#28857;&#25112;&#26007;&#33021;&#21147;<br>
+    <br>
+    +45 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    9% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#38=
+463;&#32819;&#24530;&#24357;&#26031;&#30340;&#24339;&#24358;[&#22823;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#36951;&#29289;]&#20=
+234;&#24076;&#26031;&#30340;&#21313;&#23383;&#31456;[&#22823;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#20=
+851;&#32701;&#30340;&#20161;&#24904;[&#22823;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Maiden's Kiss</td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#36739;&#23567;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#38134;&#24515;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>45</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+15%
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    +15% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    45% &#38378;&#30005;&#25239;&#24615;<br>
+    <br>
+    45% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +100 &#20943;&#23569;&#26469;&#33258; &#20129;&#28789;
+  &#30340;&#20260;&#23475;<br>
+    <br>
+    +100 &#20943;&#23569;&#26469;&#33258; &#24694;&#39764;
+  &#30340;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#36951;&#29289;]&#29=
+577;&#24093;&#30340;&#24179;&#38745;[&#22823;]</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#36951;&#29289;]&#29=
+632;&#23572;&#22622;&#31119;&#28037;&#30340;&#30524;&#27882;[&#22823;]</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#21367;&#36724;]&#31=
+070;&#22307;&#30340;&#31661;&#33310;&#20043;&#21367;&#36724;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Silver Heart</td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#21338;&#23398;&#3277=
+3;&#30340;&#35760;&#21495;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>45</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+15% &#20260;&#23475;<=
+br>
+    <br>
+    +15% &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +15% &#21147;&#37327;<br>
+    <br>
+    +15% &#25935;&#25463;<br>
+    <br>
+    +15% &#26234;&#21147;<br>
+    <br>
+    +15% &#20840;&#37096;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#32=
+737;&#32736;&#31070;&#20687;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#32=
+822;&#31267;&#22307;&#23481;&#20043;&#20876;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#26=
+426;&#26800;&#37096;&#20214;[&#20256;&#22855;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Symbol of the Polymath=
+</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#20717;&#29579;&#2004=
+3;&#25903;&#37197;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>45</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>60 &#20260;&#23475;<br>
+    <br>
+    +20% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    30 &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    +14% &#27969;&#34880;&#20260;&#23475;<br>
+    <br>
+    +16% &#21147;&#37327;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#22823;&#22320;&#25749;&#35010;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    10% &#20960;&#29575;&#22312;&#25915;&#20987;&#26102;&#21551;&#21160;<br>
+    <br>
+    &#38663;&#21160;&#22823;&#22320;&#65292;&#21521;&#23545;&#25163;&#20256=
+;&#36865;&#20986;&#19968;&#32929;&#20914;&#20987;<br>
+    <br>
+    &#27874;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#27874;&=
+#21160;<br>
+    <br>
+    120.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    &#27874;&#21160;&#36215;&#22987;&#20110; 1.0 &#31859;&#22806;<br>
+    <br>
+    12.0 &#31859;&#27874;&#21160;&#20256;&#25773;&#36317;&#31163;<br>
+    <br>
+    1.0 &#31186;&#27874;&#21160;&#20256;&#25773;&#26102;&#38388;<br>
+    <br>
+    2.0 &#31859;&#27874;&#21160;&#36215;&#22987;&#23485;&#24230;<br>
+    <br>
+    4.0 &#31859;&#27874;&#21160;&#32467;&#26463;&#23485;&#24230;<br>
+    <br>
+    3000 ~ 3100 &#20260;&#23475;<br>
+    <br>
+    6000 ~ 6100 &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    3.0 ~ 4.0 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#40=
+657;&#26263;&#26680;&#24515;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#38=
+647;&#20043;&#25331;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#22=
+612;&#37027;&#37117;&#26031;&#30340;&#20992;&#20995;[&#22823;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Tyrant's Fist</td>
+ </tr>
+ <tr height=3D286 style=3D'height:214.5pt'>
+  <td height=3D286 class=3Dxl27 width=3D38 style=3D'height:214.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#33635;&#35465;&#2035=
+1;&#32773;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>45</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>8%
+  &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    -21%
+  &#25152;&#26377;&#27494;&#22120;&#30340;&#25935;&#25463;&#35201;&#27714;<=
+br>
+    <br>
+    -21% &#25252;&#30002;&#30340;&#25935;&#25463;&#35201;&#27714;<br>
+    <br>
+    +7% &#22686;&#21152;&#32463;&#39564;<br>
+    <br>
+    +28% &#20943;&#23569;&#26469;&#33258; &#20129;&#28789;
+  &#30340;&#20260;&#23475;<br>
+    <br>
+    +28% &#20943;&#23569;&#26469;&#33258; &#24694;&#39764;
+  &#30340;&#20260;&#23475;<br>
+    <br>
+    +1 &#21040;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#40=
+657;&#35961;&#30340;&#38613;&#20687;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#38=
+134;&#24515;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31070;&#22120;]&#30=
+127;&#29378;&#30340;&#36830;&#32467;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Glorybringer</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#31070;&#31192;&#3034=
+0;&#38236;&#23376;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>45</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>100%
+  &#21560;&#21462;&#29983;&#21629;&#25269;&#25239;<br>
+    <br>
+    100% &#21560;&#21462;&#27861;&#21147;&#25269;&#25239;<br>
+    <br>
+    15.0% &#26426;&#29575;&#21457;&#21160; 50%
+  &#20260;&#23475;&#21453;&#24377;<br>
+    <br>
+    +22% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#38236;&#20043;&#22681;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5%
+  &#20960;&#29575;&#22312;&#25215;&#21463;&#20260;&#23475;&#26102;&#21551;&=
+#21160;<br>
+    <br>
+  =20
+  &#22312;&#29609;&#23478;&#21069;&#31569;&#36215;&#19968;&#36947;&#20445;&=
+#25252;&#30340;&#23631;&#38556;&#65292;&#19968;<br>
+    <br>
+  =20
+  &#27573;&#26102;&#38388;&#20869;&#21453;&#24377;&#22238;&#25932;&#20154;&=
+#30340;&#39764;&#27861;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#24378;&#21270;<br>
+    <br>
+    120.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    12.0 &#31186;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    150% &#20260;&#23475;&#21453;&#24377;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#38=
+134;&#24515;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#20=
+129;&#39746;&#30340;&#32463;&#25991;&#21283;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#38=
+463;&#22522;&#31859;&#24503;&#20043;&#38236;[&#22823;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Arcane Mirror</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#20803;&#32032;&#3034=
+0;&#24868;&#24594;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>45</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>10%
+  &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36523;&=
+#29983;&#21629;&#20540;&#22686;&#21152;<br>
+    <br>
+    +25% &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    25% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +30% &#21560;&#25910;&#25915;&#20987;&#33021;&#37327;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#20803;&#32032;&#28151;&#27788;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5% &#20960;&#29575;&#22312;&#25215;&#21463;&#20260;&#23475;&#26102;&#21=
+551;&#21160;<br>
+    <br>
+  =20
+  &#28779;&#33287;&#20912;&#30340;&#21407;&#22987;&#20803;&#32032;&#21147;&=
+#37327;&#22312;&#26997;&#24230;&#24375;&#22823;<br>
+    <br>
+  =20
+  &#30340;&#29190;&#28856;&#20013;&#30456;&#25758;&#22312;&#19968;&#36215;&=
+#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#33539;&=
+#22260;<br>
+    <br>
+    180.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    12.0 &#31859;&#33539;&#22260;<br>
+    <br>
+    3300 &#20912;&#20923;&#20260;&#23475;&#22312;2.0&#31186;&#20869;<br>
+    <br>
+    3300 &#29123;&#28903;&#20260;&#23475;&#22312;2.0&#31186;&#20869;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#28=
+779;&#28976;&#20043;&#33292;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#26=
+543;&#33806;&#31934;&#31070;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#38=
+463;&#21162;&#27604;&#26031;&#30340;&#24868;&#24594;[&#22823;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Elemental Rage</td>
+ </tr>
+ <tr height=3D198 style=3D'height:148.5pt'>
+  <td height=3D198 class=3Dxl27 width=3D38 style=3D'height:148.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#20255;&#22823;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#24449;&#26381;&#3277=
+3;&#30340;&#26631;&#35760;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>45</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>120
+  &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    40% &#25216;&#33021;&#20013;&#26029;&#20445;&#25252;<br>
+    <br>
+    16% &#22833;&#34880;&#24615;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    10% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;<br>
+    <br>
+    -10% &#27861;&#21147;&#28040;&#32791;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#40=
+657;&#27264;&#26408;&#29699;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#32=
+737;&#32736;&#31070;&#20687;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31526;&#21650;]&#28=
+023;&#40863;&#22771;[&#20256;&#22855;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Conqueror's Mark</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#38463;&#27874;&#3259=
+9;&#30340;&#19971;&#24358;&#29748;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>55</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>45 ~ 65%
+  &#29123;&#28903;&#27861;&#21147; (100%
+  &#29123;&#28903;&#27861;&#21147;&#24182;&#36896;&#25104;&#20260;&#23475;)=
+<br>
+    <br>
+    10.0% &#26426;&#29575;&#21457;&#21160; 5.0
+  &#31186;&#25216;&#33021;&#25171;&#26029;<br>
+    <br>
+    +15% &#21147;&#37327;<br>
+    <br>
+    +15% &#26234;&#21147;<br>
+    <br>
+    +10% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#38463;&#27874;&#32599;&#20043;&#274=
+68;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5% &#20960;&#29575;&#22312;&#25915;&#20987;&#26102;&#21551;&#21160;<br>
+    <br>
+  =20
+  &#20256;&#36865;&#20986;&#19968;&#32929;&#38899;&#27874;&#65292;&#22312;&=
+#20854;&#36335;&#24452;&#19978;&#30340;&#25932;<br>
+    <br>
+    &#20154;&#37117;&#20250;&#34987;&#38663;&#26127;&#21644;&#21463;&#21040=
+;&#20260;&#23475;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#27874;&=
+#21160;<br>
+    <br>
+    120.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    &#27874;&#21160;&#36215;&#22987;&#20110; 1.0 &#31859;&#22806;<br>
+    <br>
+    15.0 &#31859;&#27874;&#21160;&#20256;&#25773;&#36317;&#31163;<br>
+    <br>
+    2.0 &#31186;&#27874;&#21160;&#20256;&#25773;&#26102;&#38388;<br>
+    <br>
+    4.0 &#31859;&#27874;&#21160;&#36215;&#22987;&#23485;&#24230;<br>
+    <br>
+    10.0 &#31859;&#27874;&#21160;&#32467;&#26463;&#23485;&#24230;<br>
+    <br>
+    4000% &#29123;&#28903;&#27861;&#21147; (200%
+  &#29123;&#28903;&#27861;&#21147;&#24182;&#36896;&#25104;&#20260;&#23475;)=
+<br>
+    <br>
+    5.0 &#31186;&#25216;&#33021;&#25171;&#26029;<br>
+    <br>
+    5.0 &#31186;&#30505;&#26197;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#40=
+092;&#34880;&#23453;&#30707;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#19=
+990;&#32426;&#30340;&#29378;&#24594;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#38=
+463;&#29790;&#26031;&#30340;&#24868;&#24594;[&#22823;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Lyre of Apollo</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#22362;&#38887;&#2227=
+0;&#31456;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>55</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+18%
+  &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +20% &#21147;&#37327;<br>
+    <br>
+    +20% &#25935;&#25463;<br>
+    <br>
+    +40% &#20260;&#23475;&#23545; &#20861;&#20154;<br>
+    <br>
+    +100 &#20943;&#23569;&#26469;&#33258; &#20861;&#20154; &#30340;&#20260;=
+&#23475;<br>
+    <br>
+    +40% &#20260;&#23475;&#23545; &#37326;&#20861;<br>
+    <br>
+    +100 &#20943;&#23569;&#26469;&#33258; &#37326;&#20861;
+  &#30340;&#20260;&#23475;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#24052;&#26031;&#29305;&#30340;&#212=
+70;&#36523;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    100%
+  &#20960;&#29575;&#22312;&#29983;&#21629;&#20540;&#20302;&#19979;&#26102;&=
+#21551;&#21160;<br>
+    <br>
+    &#21484;&#21796;&#24052;&#26031;&#29305;&#30340;&#21270;&#36523;&#65292=
+;&#19968;&#21482;&#22914;&#22934;&#24618;&#33324;<br>
+    <br>
+  =20
+  &#30340;&#29422;&#23376;&#65292;&#21435;&#28040;&#28781;&#25932;&#20154;&=
+#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#21484;&#21796;<br>
+    <br>
+    240.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    1 &#21484;&#21796;&#19978;&#38480;<br>
+    <br>
+    &#19968;&#27425;&#21484;&#21796; 1 &#20010;<br>
+    <br>
+    &#25345;&#32493;&#26102;&#38388; 30.0 &#31186;<br>
+    <br>
+    &#21484;&#21796;&#29983;&#29289;&#65306;&#22307;&#30382;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#34=
+880;&#33125;&#20043;&#27602;&#34503;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#30=
+422;&#20122;&#20043;&#25163;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#21=
+738;&#21522;&#30340;&#35809;&#35745;[&#22823;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Sigil of Bast</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#38253;&#20043;&#3052=
+4;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>55</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+15% &#20260;&#23475;<=
+br>
+    <br>
+    +60% &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    60% &#28779;&#28976;&#25239;&#24615;<br>
+    <br>
+    +35% &#20260;&#23475;&#23545; &#26118;&#34411;<br>
+    <br>
+    +35% &#20943;&#23569;&#26469;&#33258; &#26118;&#34411;
+  &#30340;&#20260;&#23475;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#25289;&#20043;&#30524;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    100%
+  &#20960;&#29575;&#22312;&#29983;&#21629;&#20540;&#20302;&#19979;&#26102;&=
+#21551;&#21160;<br>
+    <br>
+  =20
+  &#20197;&#21482;&#20250;&#28903;&#28966;&#25932;&#20154;&#30340;&#28779;&=
+#28976;&#35206;&#30422;&#21608;&#36973;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#25237=
+;&#23556;&#12289;&#33539;&#22260;<br>
+    <br>
+    120.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    6.0 &#31859;&#33539;&#22260;<br>
+    <br>
+    15.0 &#31186;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    800 &#28779;&#28976;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#40=
+857;&#33292;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#22=
+823;&#22320;&#20043;&#24515;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31070;&#22120;]&#20=
+803;&#32032;&#30340;&#24868;&#24594;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Eye of Ra</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#39532;&#26460;&#2081=
+1;&#21629;&#36816;&#30340;&#31508;&#35760;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>55</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+40%
+  &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    +30% &#29983;&#21629;&#21560;&#21462;<br>
+    <br>
+    15% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +20% &#26234;&#21147;<br>
+    <br>
+    +45 &#20260;&#23475;&#23545; &#21484;&#21796;&#29289;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#21629;&#36816;&#20043;&#30462;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    100%
+  &#20960;&#29575;&#22312;&#29983;&#21629;&#20540;&#20302;&#19979;&#26102;&=
+#21551;&#21160;<br>
+    <br>
+    &#30701;&#26102;&#38388;&#20869;&#20351;&#29609;&#23478;&#23545;&#25152=
+;&#26377;&#24418;&#24335;&#30340;&#20260;&#23475;<br>
+    <br>
+    &#23436;&#20840;&#20813;&#30123;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#24378;&#21270;<br>
+    <br>
+    240.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    10.0 &#31186;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    300% &#20260;&#23475;&#21560;&#25910;<br>
+    <br>
+    300% &#20943;&#23569;&#38519;&#38449;&#25345;&#32493;&#26102;&#38388;<b=
+r>
+    <br>
+    300% &#20943;&#23569;&#30707;&#21270;&#25345;&#32493;&#26102;&#38388;<b=
+r>
+    <br>
+    300% &#20943;&#23569;&#20912;&#20923;&#25345;&#32493;&#26102;&#38388;<b=
+r>
+    <br>
+    300% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    300% &#26127;&#30561;&#25269;&#25239;<br>
+    <br>
+    300% &#32531;&#24930;&#25269;&#25239;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#26=
+368;&#32456;&#27668;&#24687;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#28=
+789;&#39746;&#26865;&#38236;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31070;&#22120;]&#21=
+338;&#23398;&#32773;&#30340;&#35760;&#21495;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Marduk's Tablet of Des=
+tiny</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#25705;&#23572;&#2999=
+5;&#26031;&#30340;&#26790;&#32593;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>55</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+20% &#20260;&#23475;<=
+br>
+    <br>
+    +20% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +20% &#27963;&#21147;&#20260;&#23475;<br>
+    <br>
+    +30% &#26127;&#30561;&#20260;&#23475;<br>
+    <br>
+    +20% &#30005;&#20987;&#20260;&#23475;<br>
+    <br>
+    100% &#26127;&#30561;&#25269;&#25239;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#26790;&#22659;&#39118;&#26292;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5% &#20960;&#29575;&#22312;&#25215;&#21463;&#20260;&#23475;&#26102;&#21=
+551;&#21160;<br>
+    <br>
+  =20
+  &#40657;&#26263;&#30340;&#26790;&#22659;&#20174;&#29609;&#23478;&#36523;&=
+#19978;&#25193;&#25955;&#24320;&#26469;&#65292;<br>
+    <br>
+  =20
+  &#20196;&#25932;&#20154;&#27785;&#30561;&#12290;&#24403;&#25932;&#20154;&=
+#37266;&#26469;&#26102;&#65292;&#20182;&#20204;<br>
+    <br>
+  =20
+  &#20250;&#36855;&#24785;&#12289;&#24656;&#24807;&#21644;&#31934;&#31070;&=
+#19981;&#25391;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#33539=
+;&#22260;<br>
+    <br>
+    90.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    <br>
+    <br>
+    10.0 &#31859;&#33539;&#22260;<br>
+    <br>
+    7.0 &#31186; &#26127;&#30561;<br>
+    <br>
+    50% &#20943;&#24930;&#20840;&#37096;&#36895;&#24230; &#25345;&#32493; 1=
+4.0 &#31186;<br>
+    <br>
+    80.0%
+  &#26426;&#29575;&#21457;&#21160;&#19979;&#21015;&#20043;&#19968;:<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>14.0
+  &#31186;&#24656;&#24807;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>14.0 &#31186;&#28151;&#2=
+0081;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#19=
+981;&#26429;&#20043;&#29699;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#26=
+790;&#24819;&#20043;&#20070;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31070;&#22120;]&#31=
+070;&#31192;&#30340;&#38236;&#23376;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Morpheus' Dreamweb</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#23385;&#24735;&#3135=
+4;&#30340;&#28779;&#30524;&#37329;&#30555;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>55</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+25%
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +40% &#27602;&#32032;&#20260;&#23475;<br>
+    <br>
+    +10% &#20803;&#32032;&#20260;&#23475;<br>
+    <br>
+    +50% &#30505;&#26197;&#20260;&#23475;<br>
+    <br>
+    +15% &#20840;&#37096;&#36895;&#24230;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#28789;&#39746;&#23567;&#20599;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5%
+  &#20960;&#29575;&#22312;&#25215;&#21463;&#20260;&#23475;&#26102;&#21551;&=
+#21160;<br>
+    <br>
+    &#20599;&#21462;&#37051;&#36817;&#25152;&#26377;&#25932;&#20154;&#30340=
+;&#33021;&#37327;&#65292;&#27599;&#19968;&#28857;<br>
+    <br>
+  =20
+  &#20599;&#21462;&#30340;&#33021;&#37327;&#37117;&#20250;&#20260;&#23475;&=
+#20182;&#20204;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#33539;&=
+#22260;<br>
+    <br>
+    90.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    10.0 &#31859;&#33539;&#22260;<br>
+    <br>
+    8000% &#29123;&#28903;&#27861;&#21147; (200%
+  &#29123;&#28903;&#27861;&#21147;&#24182;&#36896;&#25104;&#20260;&#23475;)=
+</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#34=
+880;&#33125;&#20043;&#27602;&#34503;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#38=
+452;&#24433;&#38754;&#32617;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31070;&#22120;]&#21=
+338;&#23398;&#32773;&#30340;&#35760;&#21495;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Golden Eye of Sun Wuko=
+ng</td>
+ </tr>
+ <tr height=3D242 style=3D'height:181.5pt'>
+  <td height=3D242 class=3Dxl27 width=3D38 style=3D'height:181.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#25176;&#29305;&#2004=
+3;&#33635;&#35465;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>55</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>100%
+  &#20943;&#23569;&#20912;&#20923;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    100% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    100% &#26127;&#30561;&#25269;&#25239;<br>
+    <br>
+    -20% &#20840;&#37096;&#23646;&#24615;&#35201;&#27714;<br>
+    <br>
+    +10% &#22686;&#21152;&#32463;&#39564;<br>
+    <br>
+    +1 &#21040;&#25152;&#26377;&#25216;&#33021;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#33=
+635;&#35465;&#20351;&#32773;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#26=
+790;&#24819;&#20043;&#20070;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#22=
+885;&#24503;&#20462;&#26031;&#30340;&#26426;&#26234;[&#22823;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Thoth's Glory</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#20234;&#26031;&#2261=
+2;&#30340;&#26143;&#36784;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>55</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>5.0%
+  &#26426;&#29575;&#21457;&#21160; 70%
+  &#20943;&#24930;&#20840;&#37096;&#36895;&#24230; &#25345;&#32493; 3.0
+  &#31186;<br>
+    <br>
+    15% &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    25% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +20% &#21147;&#37327;<br>
+    <br>
+    +20% &#25935;&#25463;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#24367;&#20992;&#24189;&#28789;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    100% &#20960;&#29575;&#22312;&#29983;&#21629;&#20540;&#20302;&#19979;&#=
+26102;&#21551;&#21160;<br>
+    <br>
+  =20
+  &#21484;&#21796;&#37197;&#22791;&#24367;&#20992;&#30340;&#38544;&#24418;&=
+#24189;&#28789;&#20026;&#29609;&#23478;&#32780;<br>
+    <br>
+    &#25112;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#21484;&#21796;<br>
+    <br>
+    240.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    1 &#21484;&#21796;&#19978;&#38480;<br>
+    <br>
+    &#19968;&#27425;&#21484;&#21796; 1 &#20010;<br>
+    <br>
+    &#25345;&#32493;&#26102;&#38388; 30.0 &#31186;<br>
+    <br>
+    &#21484;&#21796;&#29983;&#29289;&#65306;&#28789;&#39746;&#24367;&#20992=
+;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#20=
+717;&#29579;&#20043;&#25903;&#37197;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#29=
+422;&#20043;&#24515;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31070;&#22120;]&#24=
+449;&#26381;&#32773;&#30340;&#26631;&#35760;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Star of Ishtar</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#29577;&#30343;&#2282=
+3;&#24093;&#30340;&#25252;&#31526;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>55</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>50%
+  &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +15% &#21147;&#37327;<br>
+    <br>
+    +50 &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    -25% &#20919;&#21364;&#26102;&#38388;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#29577;&#24093;&#20043;&#20445;&#252=
+52;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5% &#20960;&#29575;&#22312;&#25915;&#20987;&#26102;&#21551;&#21160;<br>
+    <br>
+  =20
+  &#19968;&#27573;&#26102;&#38388;&#20869;&#20351;&#29609;&#23478;&#21644;&=
+#25152;&#26377;&#21516;&#20276;&#23545;&#20803;<br>
+    <br>
+  =20
+  &#32032;&#20260;&#23475;&#21644;&#36828;&#31243;&#27494;&#22120;&#20260;&=
+#23475;&#20813;&#30123;&#12290;<br>
+    <br>
+    <br>
+    <br>
+    &#25216;&#33021;&#31867;&#21035;&#65306;&#20809;&#29615;&#12289;&#33539=
+;&#22260;&#12289;&#24378;&#21270;<br>
+    <br>
+    200.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    15.0 &#31859;&#33539;&#22260;<br>
+    <br>
+    10.0 &#31186;&#25345;&#32493;&#26102;&#38388;<br>
+    <br>
+    300% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +100% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#24=
+337;&#21531;&#32773;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#24=
+449;&#26381;&#32773;&#30340;&#26631;&#35760;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#36951;&#29289;]&#29=
+577;&#24093;&#30340;&#24179;&#38745;[&#22823;]</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Talisman of the Jade E=
+mperor</td>
+ </tr>
+ <tr height=3D546 style=3D'height:409.5pt'>
+  <td height=3D546 class=3Dxl27 width=3D38 style=3D'height:409.5pt;width:29=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D38 style=3D'width:29pt'>&#22825;&#36176;</td>
+  <td class=3Dxl28 width=3D142 style=3D'width:107pt'>&#23449;&#26031;&#3034=
+0;&#22307;&#20687;</td>
+  <td class=3Dxl28 width=3D73 style=3D'width:55pt' x:num>55</td>
+  <td class=3Dxl28 width=3D291 style=3D'width:218pt'>+30%
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    +60% &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +40% &#30505;&#26197;&#20260;&#23475;<br>
+    <br>
+    60% &#38378;&#30005;&#25239;&#24615;<br>
+    <br>
+    100% &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    <br>
+    <br>
+    &#36171;&#20104;&#25216;&#33021; :&#22823;&#38647;&#38632;
+  &#31561;&#32423;&#65306;1<br>
+    <br>
+    5%
+  &#20960;&#29575;&#22312;&#25215;&#21463;&#20260;&#23475;&#26102;&#21551;&=
+#21160;<br>
+    <br>
+    &#22312;&#29609;&#23478;&#30340;&#22836;&#39030;&#19978;&#21484;&#21796=
+;&#19968;&#26421;&#21363;&#20351;&#22312;&#23460;<br>
+    <br>
+  =20
+  &#20869;&#20063;&#20250;&#20986;&#29616;&#30340;&#38647;&#38632;&#20113;&=
+#65292;&#37322;&#25918;&#20986;&#23449;&#26031;<br>
+    <br>
+    &#30340;&#38647;&#30005;&#25915;&#20987;&#25932;&#20154;&#12290;<br>
+    <br>
+    <br>
+    <br>
+  =20
+  &#25216;&#33021;&#31867;&#21035;&#65306;&#25915;&#20987;&#12289;&#38378;&=
+#30005;&#38142;&#24335;<br>
+    <br>
+    120.0 &#31186; &#20919;&#21364;<br>
+    <br>
+    &#26045;&#27861;&#36317;&#31163;&#65306;&#26368;&#36828;<br>
+    <br>
+    <br>
+    <br>
+    75.0%
+  &#20960;&#29575;&#21457;&#29983;&#30005;&#24359;&#24335;&#36339;&#36291;<=
+br>
+    <br>
+    8.0 &#31859;&#26368;&#22823;&#36339;&#36291;&#38388;&#38548;<br>
+    <br>
+    &#24433;&#21709;&#30446;&#26631;&#19978;&#38480;&#20026;10<br>
+    <br>
+    6300 ~ 7700 &#38378;&#30005;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D203 style=3D'width:152pt'>[&#31070;&#22120;]&#22=
+825;&#22530;&#20043;&#30524;</td>
+  <td class=3Dxl28 width=3D178 style=3D'width:134pt'>[&#31070;&#22120;]&#22=
+825;&#28779;&#38613;&#20687;</td>
+  <td class=3Dxl28 width=3D204 style=3D'width:153pt'>[&#31070;&#22120;]&#20=
+803;&#32032;&#30340;&#24868;&#24594;</td>
+  <td class=3Dxl28 width=3D191 style=3D'width:143pt'>Ikon of Zeus</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D38 style=3D'width:29pt'></td>
+  <td width=3D38 style=3D'width:29pt'></td>
+  <td width=3D142 style=3D'width:107pt'></td>
+  <td width=3D73 style=3D'width:55pt'></td>
+  <td width=3D291 style=3D'width:218pt'></td>
+  <td width=3D203 style=3D'width:152pt'></td>
+  <td width=3D178 style=3D'width:134pt'></td>
+  <td width=3D204 style=3D'width:153pt'></td>
+  <td width=3D191 style=3D'width:143pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>第一节 抗性分类和计算</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"> <a href="第四章%20抗性详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第四章%20抗性详解01.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">第一节 抗性分类和计算</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　当受到攻击时（无论是主动攻击、反击还是反弹），被攻击方都使用当前抗性代入伤害修正阶段的运算（见第二章中伤害修正部分）。在计算当前抗性时，被攻击方的所有装备、当前生效的强化己方技能中的抗性及抗性加成都将生效。注意，假若被攻击方当前被人施展了“削弱敌方”类型的技能，则削弱敌方技能带来的抗性和抗性加成与强化己方技能中的一样计算，即：削弱敌方技能的作用完全相当于强化技能，只不过一般来说其属性值都是负的而已。<BR><BR> 
+　　游戏中共有三大类23种抗性，12种抗性加成。三类抗性的分类以及计算当前抗性值的公式如下。<BR><BR> 
+　　注意：<BR><BR> 
+　　当同时存在多个同类的抗性与抗性加成时，先对抗性和抗性加成分别直接求和，然后再代入公式运算。<BR><BR> 
+　　1、　　普通抗性：<BR><BR> 
+　　除状态抗性与特殊抗性以外的其它抗性。对于其中任一种抗性：<BR><BR> 
+　　令：A = 抗性 + |抗性| * 抗性加成%<BR><BR> 
+　　当前抗性 = A - |A| * 百分比降低全部抗性% - 降低全部抗性<BR><BR> 
+　　若：当前抗性 &gt; 抗性上限，则：当前抗性 = 抗性上限<BR><BR> 
+　　式中的“抗性加成”指与“抗性”种类所对应的抗性加成总和。每一种抗性至多有一种抗性加成与其对应。某些抗性没有对应加成。<BR><BR> 
+　　上式中，|抗性|、|A|分别表示抗性和A的绝对值。由于第一式的“抗性”一项是把所有来源的抗性求和，假若被施放了“削弱敌方”型技能，则这个总和完全可能是负的（另外，某些抗性在史诗难度下-40，传奇难度下-100，实际上也相当于一个额外的强化己方技能。没有人规定强化己方就一定要是正的，正如同没有人规定削弱敌方就一定要是负的）。采用绝对值的原因是：假若“抗性”一项是负的（比如诗史难度的-40），那么在进行一个正的抗性加成后（比如加50%），不至于负得更多。不过这也带来另一个问题：假若抗性加成超过了100%，比如200%，结果就会比较有趣了——若“抗性”一项是0，则算出A还是等于0；若抗性一项是-100，结果算出的A反而会是100！也就是说“抗性”一项负得越多，加成完了以后就会正得越多。这个游戏实在是很奇妙。。。<BR><BR> 
+　　“百分比降低全部抗性”和“降低全部抗性”是被攻击方当前所承受的、仍在持续时间范围内的两种属性伤害。该伤害的实施方式见第二章中“延迟实施过程中的伤害叠加”部分。<BR><BR> 
+　　普通抗性的最终计算结果可以是负的。负抗性将会导致来自攻击方的伤害会在伤害修正阶段反而被扩大。<BR><BR> 
+　　原始游戏中，玩家的抗性上限为80，宠物和怪物无上限限制（不过，根据伤害修正公式，当前抗性超过100%以后就没有区别了，因为只要修正完以后的主伤害数值或次伤害数值小于零，该伤害就会被放弃）。自己制作MOD的话，可以修改这个上限。<BR><BR> 
+　　2、　　状态抗性：<BR><BR> 
+　　对各种状态伤害有效的抗性。这类抗性不受“百分比降低全部抗性”和“降低全部抗性”这两种属性伤害的影响。但“削弱敌方”型技能一样可以降低这类抗性，并且也可以降到负值。<BR><BR> 
+　　当前抗性 = 抗性 + |抗性| * 抗性加成%)<BR><BR> 
+　　若：当前抗性 &gt; 抗性上限，则：当前抗性 = 抗性上限<BR><BR> 
+　　式中“抗性加成”和“抗性上限”的含义同上。<BR><BR> 
+　　3、　　特殊抗性：<BR><BR> 
+　　只在三种特殊伤害（“百分比损血”、“燃烧法力”、“百分比损血反击”）的伤害修正计算中需要特别用到的抗性，共有两种。这类抗性没有对应的抗性加成。<BR><BR> 
+　　这类抗性不在界面上显示，并且在原始游戏中也不会被玩家所拥有。不过，假若通过自编地图或者MOD给玩家赋予了该抗性的话，仍然是有效果的。<BR><BR> 
+　　这类抗性的当前抗性计算公式为：<BR><BR> 
+　　当前抗性 = 抗性 - |抗性| * 百分比降低全部抗性% - 降低全部抗性<BR><BR> 
+　　若：当前抗性 &gt; 抗性上限，则：当前抗性 = 抗性上限<BR><BR> 
+　　上述公式有一个特例：假若“抗性”一项没有任何来源，则当前抗性 = 0，也就是说降抗伤害无效。不过，只要有一个来源（不论是在装备上还是在技能里），哪怕只有0.01，则按上述公式计算当前抗性。原始游戏中，BOSS都有该类抗性，而普通小怪没有，于是，只要有足够的降抗能力，就足以把BOSS的该类抗性降到负值，但对普通小怪却是无法降抗的（囧TZ……终于知道了什么才叫做创意无极限……）。<BR><BR> 
+　　在伤害修正阶段，除了抗性之外，对于某些带有持续时间的伤害，还有一类属性可以从另一个方面降低被攻击方所受的伤害。这就是“持续时间降低”。它的作用方式同抗性类似，不过是作用在次伤害数值——持续时间上。因此，在本章中，把这类属性也当作“广义的”抗性来看待。<BR><BR> 
+　　游戏中一共有9种“持续时间降低”，并且相应有9种“持续时间降低加成”。同抗性一样，“持续时间降低”及其加成均可来源于装备、当前生效的“强化己方”技能、被他人施展的“削弱敌方技能”。不过，没有任何属性伤害能对“持续时间降低”产生影响。<BR><BR> 
+　　在计算伤害修正时，同样需要将“当前持续时间降低”代入公式。“当前持续时间降低”的计算公式如下（多个来源的“持续时间降低”和“持续时间降低加成”同样需要先各自加起来后再代入公式）。<BR><BR> 
+　　当前持续时间降低 = 持续时间降低 + |持续时间降低| * 持续时间降低加成%。<BR><BR> 
+　　若：当前持续时间降低 &lt; 0，则：当前持续时间降低 = 0。<BR><BR> 
+　　其中，“持续时间降低加成”是指与“持续时间降低”种类对应的加成总和。与抗性不同，“当前持续时间降低”的计算结果不能为负值。 <!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"> <a href="第四章%20抗性详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第四章%20抗性详解01.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>范例11：使用新的资料库</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南011.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="泰坦之旅游戏模组制作指南013.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">范例11：使用新的资料库</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　范例11：使用新的资料库 <BR><BR> 
+　　在TitanQuest中的每个物件都有一笔资料库记录(database record)。一笔资料库记录(database record)就是一系列的资料，用来决定此物件的外观与行为。<BR><BR> 
+　　在此范例中，我们要产生一只巨大的乌龟，这只乌龟和一般的乌龟外型一样，但是它是一般乌龟的五倍大。 <BR><BR> 
+　　在Editor与Quest Editor编辑器中，你可以看到所有预设的资料库记录，你可以用它来设置物件、怪物、NPC、建筑物等等的东西。有时候你会想要修改它，底下将介绍如何将记录(records)汇到你的模组中。(译：我们要使用范例10所建立的模组) <BR><BR> 
+　　11.1.1 汇入资料库记录 <BR><BR> 
+　　你可以将Titan Quest预设的资料库记录汇入到你的模组中以便修改或是产生新的记录。在你的模组中的资料库记录会取代预设的资料库记录。 <BR><BR> 
+　　1)在Art Manager中，打开’Mod -&gt; Select -&gt; test1’ (假设test1是你在范例10所建立的模组名称)。<BR><BR> 
+　　2)选择DataBase标签页，执行’Mod -&gt; Import Record…’。这里可以浏览并选择一个你要汇入的记录 <BR><BR> 
+　　3)选择’records -&gt; creature -&gt; monster -&gt; giantturtle -&gt; am_snapper_08.dbr’并按下’OK’。 <BR><BR> 
+　　在DataBase标签页中你可以看到我们刚才汇入的纪录。 <BR><BR> 
+　　此汇入的纪录(am_snapper_08.dbr)是预设资料库纪录的复本，我们可以任意地修改它，而不会影响到原始资料库纪录中的资料。我们也可以改变它的目录位置。 <BR><BR> 
+　　4)在records上点按滑鼠右键选择’Create Directory…’。出现一个视窗输入’MyMonster’即可建立一个叫MyMonster的资料夹。我们要将’am_sanpper_08.dbr’搬到MyMonster资料夹方便管理。 <BR><BR> 
+　　5)在am_snapper_08.dbr上点按滑鼠右键选择’Copy’。 <BR><BR> 
+　　6)选择MyMonster资料夹，将刚才复制(copy)的物件贴(Paste)在右边的视窗中。 <BR><BR> 
+　　7)将MyMonster资料夹中的’am_snapper_08.dbr’改名(rename)成’GiantTurtle.dbr’。 <BR><BR> 
+　　我们要的物件已经放置好并改成容易记的名字了，原本records下的creature资料夹(包含里面的资料)就可以删除了。(注：要从最内部资料删起) <BR><BR> 
+　　11.1.2 编辑资料库记录 <BR><BR> 
+　　现在我们有一个新的物件(GiantTurtle.dbr)了，但是除了名字不同外，它跟原始的那个物件有何不同？我们之前说过要让它变成五倍大，所以我们要修改这个物件的属性资料。 <BR><BR> 
+　　1)滑鼠双击’GiantTurtle.dbr’ (或按右键选择’ Edit…’)进入编辑记录视窗(Editing Record window)。编辑记录视窗有左边是阶级视窗(Hierarchy Pane)，用来显示此物件的属性阶级关系；右边是属性视窗(Properties Pane)，用来显示属性资料。 <BR><BR> 
+　　2)我们要改的是All Groups -&gt; Actor Variables中的scale与actorRadius变数。<BR><BR> 
+　　scale决定此物件的大小；actorRadius决定此物件跟别的物件接触的距离范围。 <BR><BR> 
+　　3)在阶级视窗(Hierarchy Pane)中选择All Groups -&gt; Actor Variables类别。 <BR><BR> 
+　　4)将scale属性值改成5。 <BR><BR> 
+　　5)将actorRadius属性值变成5。 <BR><BR> 
+　　6)储存并关闭编辑记录视窗(Editing Record window)。 <BR><BR> 
+　　11.1.3 建置资料库记录 <BR><BR> 
+　　现在我们已经改变了资料库记录中的资料值，现在要将这些新的资料值建置到资料库中，以便游戏来读取。 <BR><BR> 
+　　1)选择’Test1\database’资料夹。 <BR><BR> 
+　　2)点按滑鼠右键选择’Build’。 <BR><BR> 
+　　现在新的资料库记录已经建置到资料库中，你可以在Editor编辑器中使用这个新的物件了。 <!--/HTMLBUILERPART0--></font></DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南011.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="泰坦之旅游戏模组制作指南013.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

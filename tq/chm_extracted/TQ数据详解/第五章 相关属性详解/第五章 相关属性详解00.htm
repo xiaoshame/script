@@ -1,0 +1,155 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>第一节 基本属性及计算</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"> <a href="第五章%20相关属性详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第五章%20相关属性详解01.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">第一节 基本属性及计算</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　除了本章后面部分专门讨论的属性之外，游戏中其它绝大多数属性的计算公式均为：<BR><BR> 
+　　当前属性值 = 属性值 * (1 + 属性加成%)。<BR><BR> 
+　　其中：<BR><BR> 
+　　1、　　“当前属性值”就是当前需要用到的属性值，2、　　例如物理伤害的伤害输出公式中，3、　　就需要用到“力量”这一属性的当前属性值；<BR><BR> 
+　　4、　　“属性值”指5、　　所有来源的该属性的值的总和。所谓“所有来源”，6、　　指7、　　的是人物自带、装备8、　　附带、当前生效的“强化己方”型技能附带、被他人施展的“削弱敌方”型技能附带。<BR><BR> 
+　　9、　　“属性加成”指10、　　所有来源的、对应于该属性的加成的总和。它的含义是一个百分比。<BR><BR> 
+　　举例：人物自身的最大生命值是300，装备一带有属性“+200 生命”，装备二带有属性“-50% 生命”，某强化己方技能带有属性“+30% 生命”（注意：所有这些属性实际上指的都是最大生命值），则：当前最大生命值 = 最大生命值 * (1 + 最大生命值加成%) = (300 + 200) * (1 + (-50% + 30%)) = 500 * 80% = 400。<BR><BR> 
+　　不论“属性值”还是“属性加成”，其每个来源都有可能有正有负，但在正常游戏范围内，除了某些特定的属性之外，“属性值”总和不会为负，“属性加成”的总和不会小于-100。只要在该限度范围内，则最终“当前属性值”的计算结果将一定大于零。如果在自编地图或者MOD中超出这个限度，则各种属性可能会有各自不同的结果。<BR><BR> 
+　　在与伤害相关的属性中，基本属性主要有：最大生命值、最大法力值、力量、智力、敏捷等。这些属性的界面形式非常简单，而且不会使人产生混淆，因此这里就不一一列举了。<BR><BR> 
+　　有两个比较特别的属性需要在这里提一下：生命恢复速度和法力恢复速度。这两个属性分别表示了每秒自动恢复多少生命和法力。<BR><BR> 
+　　1、　　生命恢复2、　　速度：<BR><BR> 
+　　属性形式：<BR><BR> 
+　　界面中文：每秒+X.X点生命恢复<BR><BR> 
+　　界面英文：+X.X Health Regeneration per second<BR><BR> 
+　　生命恢复速度加成形式：<BR><BR> 
+　　界面中文：+XX% 生命恢复速度<BR><BR> 
+　　界面英文：+XX% Health Regeneration<BR><BR> 
+　　3、　　法力恢复4、　　速度：<BR><BR> 
+　　属性形式：<BR><BR> 
+　　界面中文：每秒+X.X点法力恢复<BR><BR> 
+　　界面英文：+X.X Energy Regeneration per second<BR><BR> 
+　　生命恢复速度加成形式：<BR><BR> 
+　　界面中文：+XX% 法力恢复速度<BR><BR> 
+　　界面英文：+XX% Energy Regeneration<BR><BR> 
+　　这两个属性的特殊之处在于：其“属性值”总和可以为负，并且最终的“当前属性值”的计算结果也可以为负（意味着每秒自动降低生命或者法力）。其计算公式为：<BR><BR> 
+　　若：属性值 &gt; 0，则：当前属性值 = 属性值 * (1 + 属性加成%)。<BR><BR> 
+　　若：属性值 &lt; 0 并且 属性加成% &lt; 100%，则：当前属性值 = 属性值 + |属性值| * 属性加成%。其中“|属性值|”表示“属性值”的绝对值。<BR><BR> 
+　　若：属性值 &lt; 0 并且 属性加成% &gt; 100%，则：当前属性值 = 0，即每秒既不增加也不减少。<BR><BR> 
+　　跟前文一样，这里的“属性值”指的是所有来源的该属性的值的总和（所有来源的“生命恢复速度”或“法力恢复速度”的总和）。注意：“法力恢复速度”有一个界面上未直接标出的属性来源：当前智力 / 100。另外，对于玩家而言，两者各有一个界面上未直接标出的属性来源：玩家自带的“生命恢复速度”和“法力恢复速度”，均为1.0。<BR><BR> 
+　　注意：<BR><BR> 
+　　有些技能说明中包含“+X.X 生命回复”（+X.X Health Restored），这个不是生命恢复速度属性，而是给当前生命值直接加上X.X点（治疗）。<!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"> <a href="第五章%20相关属性详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第五章%20相关属性详解01.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

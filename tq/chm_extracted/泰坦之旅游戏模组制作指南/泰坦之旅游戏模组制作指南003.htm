@@ -1,0 +1,138 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>范例2：Art Manager的使用</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南002.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="泰坦之旅游戏模组制作指南004.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">范例2：Art Manager的使用</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　范例2：Art Manager的使用 <BR><BR> 
+　　Art Manager可以将原始资料(source data)转换成Titan Quest游戏可以读取的资料格式。Editor与Quest Editor所建立的资料就是原始资料，Art Manager将这些原始资料变成资产(asset)。Art Manager也用来产生资料库纪录(Database Records)，资料库纪绿就是将资产编排成可以在游戏中与玩家互动的物件之方法。 <BR><BR> 
+　　2.0.1 Art Manager的导览 <BR><BR> 
+　　1)打开Art Manger。 <BR><BR> 
+　　左边有一个目录视窗(Directory Pane)，它是用来浏览不同目录下的原始资料档、资产档、资料库档。目录视窗底下有三个标签可以用来切换原始资料(Soureces)、资产(Assets)、资料库(Database)。在目录视窗中点选资料夹之后，资料夹的内容会出现在右边的资料夹视窗(Folder Pane)。 <BR><BR> 
+　　最下方是状态视窗(Status Pane)，当Art Manager正在处理某些程序时，它可以秀出一些有用的资讯给使用者。 <BR><BR> 
+　　2.1 在Art Manager中建立资产 <BR><BR> 
+　　原始档(Source files)放在你的模组指定的资料夹中，或是放在Sources标签中的子资料夹里面。当你在Editor编辑器中选择模组时，它会自动将你的档案存在正确的目录中。 <BR><BR> 
+　　2.1.1 建立资产 <BR><BR> 
+　　通常，你可以自动产生资产。在Source标签页中，选择一个quest档或是world档，按滑鼠右键后，在快显式选单中就会有”Auto-Create Asset”的选项。点按后，就会在Asset标签页中产生相对应的资产档案(名字相同)。 <BR><BR> 
+　　1)开启Art Manager并选择Mod选单中的”Tutorial02”。 <BR><BR> 
+　　2)选择”Quests”资料夹，在” Tutorial-Save_The_Village.qst ”档案中按右键选择”Auto-Create Asset”。 <BR><BR> 
+　　3)接着会有一个视窗出现要你确认资产的名称，按下”Okay”后，在Assets标签页中就会出现资产档案。 <BR><BR> 
+　　你也可以手动产生资产： <BR><BR> 
+　　1)选择Assets标签。 <BR><BR> 
+　　2)建立要存放资产档案的资料夹。 <BR><BR> 
+　　3)选择此新的资料夹，再到右边的视窗中按右键。 <BR><BR> 
+　　4)选择”New”，接着选择要产生的资产类型。在这里你可以手动选择原始档(此例子中是Trigger/Quest)，接着资产档案就会被产生。 <BR><BR> 
+　　2.2 在Art Manager中建置 <BR><BR> 
+　　为了能够看见修改后的效果，你必需建置(build)你的资产档案，也就是将修改后的原始档(source files)，更新转换成Titan Quest可读取的资料库记录(Database Records)。一般而言，假如你修改了很多地方，你就必须重建整个模组，这不会花很多时间，只要点按选单中的Build -&gt; Build即可(注意：在Art Manager完成建置之前，不要关闭Art Manager)。 <BR><BR> 
+　　你也可以各别地建置资产和资料库记录，只要直接到各别的标签页中，在该项目或是资料夹上点按右键并选择Build即可。 <!--/HTMLBUILERPART0--></font></DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="泰坦之旅游戏模组制作指南002.htm">上一页</a> <a href="泰坦之旅游戏模组制作指南.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="泰坦之旅游戏模组制作指南004.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

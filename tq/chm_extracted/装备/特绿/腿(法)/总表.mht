@@ -1,0 +1,1216 @@
+MIME-Version: 1.0
+X-Document-Type: Worksheet
+Content-Location: file:///C:/859623C8/file9288.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 11">
+<link rel=3DFile-List href=3D"file9288.files/filelist.xml">
+<link rel=3DEdit-Time-Data href=3D"file9288.files/editdata.mso">
+<link rel=3DOLE-Object-Data href=3D"file9288.files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>&#26381;&#21153;&#22120;</o:Author>
+  <o:LastAuthor>&#24494;&#36719;&#29992;&#25143;</o:LastAuthor>
+  <o:Created>2007-09-11T03:01:37Z</o:Created>
+  <o:LastSaved>2010-05-23T19:39:54Z</o:LastSaved>
+  <o:Company>&#38738;&#23707;&#32593;&#24433;&#30005;&#23376;&#20449;&#2468=
+7;&#26377;&#38480;&#20844;&#21496;</o:Company>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:\5E38\89C4;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	font-weight:700;
+	text-align:center;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl25
+	{mso-style-parent:style0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl26
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	text-align:center;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	border:.5pt solid windowtext;}
+.xl29
+	{mso-style-parent:style0;
+	color:red;
+	font-size:9.0pt;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:Selected/>
+     <x:TopRowVisible>24</x:TopRowVisible>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:RangeSelection>$1:$65536</x:RangeSelection>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+    <x:QueryTable>
+     <x:Name>. TQIT OUT_&#35013;&#22791;_&#29305;&#32511;_&#33151;_&#27861;=
+_CN</x:Name>
+     <x:AutoFormatFont/>
+     <x:AutoFormatPattern/>
+     <x:QuerySource>
+      <x:QueryType>OLEDB</x:QueryType>
+      <x:CommandText>&quot;TQIT&quot;.&quot;dbo&quot;.&quot;OUT_&#35013;&#2=
+2791;_&#29305;&#32511;_&#33151;_&#27861;_CN&quot;</x:CommandText>
+      <x:CommandType>Table</x:CommandType>
+      <x:Maintain/>
+      <x:Connection>Provider=3DSQLOLEDB.1;Integrated Security=3DSSPI;Persis=
+t Security Info=3DTrue;Initial Catalog=3DTQIT;Data Source=3D.;Use Procedure=
+ for Prepare=3D1;Auto Translate=3DTrue;Packet Size=3D4096;Workstation ID=3D=
+SERVER;Use Encryption for Data=3DFalse;Tag with column collation when possi=
+ble=3DFalse</x:Connection>
+      <x:SourceConnectionFile>C:\Documents and Settings\xxd\My Documents\&#=
+25105;&#30340;&#25968;&#25454;&#28304;\. TQIT OUT_&#35013;&#22791;_&#29305;=
+&#32511;_&#33151;_&#27861;_CN.odc</x:SourceConnectionFile>
+      <x:RobustConnect>0</x:RobustConnect>
+      <x:VersionLastEdit>2</x:VersionLastEdit>
+      <x:VersionLastRefresh>2</x:VersionLastRefresh>
+     </x:QuerySource>
+     <x:RefreshInfo>
+      <x:NextId>11</x:NextId>
+      <x:ColumnInfo>
+       <x:Id>2</x:Id>
+       <x:Name>&#38590;&#24230;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>3</x:Id>
+       <x:Name>&#20013;&#25991;&#21517;&#31216;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>4</x:Id>
+       <x:Name>&#29289;&#21697;&#31561;&#32423;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>5</x:Id>
+       <x:Name>&#38656;&#35201;&#25935;&#25463;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>6</x:Id>
+       <x:Name>&#38656;&#35201;&#26234;&#21147;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>7</x:Id>
+       <x:Name>&#23646;&#24615;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>8</x:Id>
+       <x:Name>&#33521;&#25991;&#21517;&#31216;</x:Name>
+      </x:ColumnInfo>
+      <x:DeletedTitle>n_Difficulty</x:DeletedTitle>
+      <x:DeletedTitle>n_Order2</x:DeletedTitle>
+      <x:DeletedTitle>n_flag</x:DeletedTitle>
+     </x:RefreshInfo>
+    </x:QueryTable>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>8415</x:WindowHeight>
+  <x:WindowWidth>14715</x:WindowWidth>
+  <x:WindowTopX>360</x:WindowTopX>
+  <x:WindowTopY>360</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+ <x:ExcelName>
+  <x:Name>_._TQIT_OUT_&#35013;&#22791;_&#29305;&#32511;_&#33151;_&#27861;_C=
+N</x:Name>
+  <x:SheetIndex>1</x:SheetIndex>
+  <x:Formula>=3DSheet1!$A$1:$G$32</x:Formula>
+ </x:ExcelName>
+</xml><![endif]-->
+</head>
+
+<body link=3Dblue vlink=3Dpurple class=3Dxl28>
+
+<table x:str border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D650 style=
+=3D'border-collapse:
+ collapse;table-layout:fixed;width:489pt'>
+ <col class=3Dxl25 width=3D38 style=3D'mso-width-source:userset;mso-width-a=
+lt:1216;
+ width:29pt'>
+ <col class=3Dxl28 width=3D98 style=3D'mso-width-source:userset;mso-width-a=
+lt:3136;
+ width:74pt'>
+ <col class=3Dxl28 width=3D64 span=3D3 style=3D'mso-width-source:userset;ms=
+o-width-alt:
+ 2048;width:48pt'>
+ <col class=3Dxl28 width=3D124 style=3D'mso-width-source:userset;mso-width-=
+alt:3968;
+ width:93pt'>
+ <col class=3Dxl28 width=3D198 style=3D'mso-width-source:userset;mso-width-=
+alt:6336;
+ width:149pt'>
+ <tr class=3Dxl25 height=3D19 style=3D'height:14.25pt'>
+  <td height=3D19 class=3Dxl24 width=3D38 style=3D'height:14.25pt;width:29p=
+t'><a
+  name=3D"_._TQIT_OUT_&#35013;&#22791;_&#29305;&#32511;_&#33151;_&#27861;_C=
+N">&#38590;&#24230;</a></td>
+  <td class=3Dxl24 width=3D98 style=3D'border-left:none;width:74pt'>&#20013;=
+&#25991;&#21517;&#31216;</td>
+  <td class=3Dxl24 width=3D64 style=3D'border-left:none;width:48pt'>&#29289=
+;&#21697;&#31561;&#32423;</td>
+  <td class=3Dxl24 width=3D64 style=3D'border-left:none;width:48pt'>&#38656=
+;&#35201;&#25935;&#25463;</td>
+  <td class=3Dxl24 width=3D64 style=3D'border-left:none;width:48pt'>&#38656=
+;&#35201;&#26234;&#21147;</td>
+  <td class=3Dxl24 width=3D124 style=3D'border-left:none;width:93pt'>&#2364=
+6;&#24615;</td>
+  <td class=3Dxl24 width=3D198 style=3D'border-left:none;width:149pt'>&#335=
+21;&#25991;&#21517;&#31216;</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#34394;&#31354;&#35065;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>9</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>65</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>100</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>30
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    25% &#21560;&#21462;&#27861;&#21147;&#25269;&#25239;<br>
+    <br>
+    +20% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +25% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Ethereal
+  Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#20856;&#31036;&#29992;&#25252;&#33003;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>15</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>78</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>134</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>92
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    12% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +4% &#29983;&#21629;<br>
+    <br>
+    +25% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Ceremonial
+  Greaves</td>
+ </tr>
+ <tr height=3D90 style=3D'height:67.5pt'>
+  <td height=3D90 class=3Dxl26 width=3D38 style=3D'height:67.5pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#33832;&#34542;&#30340;&#35065;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>24</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>94</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>182</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>46
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20% &#20912;&#20919;&#25239;&#24615;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    -12% &#20919;&#21364;&#26102;&#38388;<br>
+    <br>
+    -5% &#20919;&#21364;&#26102;&#38388;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Shaman's
+  Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#22825;&#31809;&#30340;&#25252;&#33003;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>26</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>96</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>188</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>48
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    8% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    &#27599;&#31186;+0.5&#28857;&#27861;&#21147;&#24674;&#22797;<br>
+    <br>
+    +20% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Bandari's
+  Greaves</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#36808;&#31859;&#21513;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>111</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>232</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>54
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +15% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +30 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Myrmigki
+  Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#24043;&#21307;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>114</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>239</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>58
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    10% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +10% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Witch
+  Doctor's Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#31185;&#30340;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>115</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>240</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>59
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +50 &#27861;&#21147;<br>
+    <br>
+    +20% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Leggings
+  of Ker</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#26597;.&#21345;&#25289;&#30340;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>115</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>242</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>60
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +15% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +30 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Ch'kra's
+  Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#40657;&#26263;&#22899;&#29579;&#20043;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>115</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>242</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>60
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +10% &#25252;&#30002;&#38450;&#24481;<br>
+    <br>
+    +10% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>The
+  Night Mistress's Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#34394;&#31354;&#35065;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>36</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>124</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>273</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>92
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    35% &#21560;&#21462;&#27861;&#21147;&#25269;&#25239;<br>
+    <br>
+    +20% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +25% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Ethereal
+  Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#20856;&#31036;&#29992;&#25252;&#33003;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>41</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>134</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>301</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>115
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +8% &#29983;&#21629;<br>
+    <br>
+    +25% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Ceremonial
+  Greaves</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#33832;&#34542;&#30340;&#35065;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>46</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>137</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>313</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>128
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    30% &#20912;&#20919;&#25239;&#24615;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    -8% &#20919;&#21364;&#26102;&#38388;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Shaman's
+  Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#22825;&#31809;&#30340;&#25252;&#33003;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>47</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>138</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>316</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>132
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    15% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    &#27599;&#31186;+0.5&#28857;&#27861;&#21147;&#24674;&#22797;<br>
+    <br>
+    +20% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Bandari's
+  Greaves</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#36808;&#31859;&#21513;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>142</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>332</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>144
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +15% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +60 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Myrmigki
+  Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#24043;&#21307;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>143</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>337</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>152
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    20% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +10% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Witch
+  Doctor's Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#26597;.&#21345;&#25289;&#30340;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>143</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>339</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>154
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +15% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +60 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Ch'kra's
+  Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#31185;&#30340;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>143</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>339</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>154
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +75 &#27861;&#21147;<br>
+    <br>
+    +20% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Leggings
+  of Ker</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#40657;&#26263;&#22899;&#29579;&#20043;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>143</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>340</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>156
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +15% &#25252;&#30002;&#38450;&#24481;<br>
+    <br>
+    +10% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>The
+  Night Mistress's Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#34394;&#31354;&#35065;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>54</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>149</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>357</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>205
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    45% &#21560;&#21462;&#27861;&#21147;&#25269;&#25239;<br>
+    <br>
+    +20% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +25% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Ethereal
+  Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#20856;&#31036;&#29992;&#25252;&#33003;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>57</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>152</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>367</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>222
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    28% &#27602;&#32032;&#25239;&#24615;<br>
+    <br>
+    +12% &#29983;&#21629;<br>
+    <br>
+    +25% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Ceremonial
+  Greaves</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#33832;&#34542;&#30340;&#35065;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>61</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>160</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>389</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>258
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    40% &#20912;&#20919;&#25239;&#24615;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    -10% &#20919;&#21364;&#26102;&#38388;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Shaman's
+  Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#22825;&#31809;&#30340;&#25252;&#33003;&#30002;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>62</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>161</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>392</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>265
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    21% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    &#27599;&#31186;+0.5&#28857;&#27861;&#21147;&#24674;&#22797;<br>
+    <br>
+    +20% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Bandari's
+  Greaves</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#36808;&#31859;&#21513;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>166</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>412</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>282
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +15% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +90 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Myrmigki
+  Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#24043;&#21307;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>169</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>420</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>294
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    30% &#20803;&#32032;&#25239;&#24615;<br>
+    <br>
+    +10% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Witch
+  Doctor's Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#31185;&#30340;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>170</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>422</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>297
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +100 &#27861;&#21147;<br>
+    <br>
+    +20% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Leggings
+  of Ker</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#26597;.&#21345;&#25289;&#30340;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>170</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>423</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>298
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +15% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;<br>
+    <br>
+    +90 &#28857;&#38450;&#24481;&#33021;&#21147;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Ch'kra's
+  Leggings</td>
+ </tr>
+ <tr height=3D75 style=3D'height:56.25pt'>
+  <td height=3D75 class=3Dxl26 width=3D38 style=3D'height:56.25pt;border-to=
+p:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#40657;&#26263;&#22899;&#29579;&#20043;&#32465;&#33151;</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>170</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>425</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>300
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    +20% &#25252;&#30002;&#38450;&#24481;<br>
+    <br>
+    +10% &#31227;&#21160;&#36895;&#24230;<br>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>The
+  Night Mistress's Leggings</td>
+ </tr>
+ <tr height=3D19 style=3D'height:14.25pt'>
+  <td height=3D19 class=3Dxl26 width=3D38 style=3D'height:14.25pt;border-to=
+p:none;
+  width:29pt'>&#12288;</td>
+  <td class=3Dxl27 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#12288;</td>
+  <td class=3Dxl27 width=3D64 style=3D'border-top:none;border-left:none;wid=
+th:48pt'>&#12288;</td>
+  <td class=3Dxl27 width=3D64 style=3D'border-top:none;border-left:none;wid=
+th:48pt'>&#12288;</td>
+  <td class=3Dxl27 width=3D64 style=3D'border-top:none;border-left:none;wid=
+th:48pt'>&#12288;</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>&#12288;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>&#12288;</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#26222;&#36890;</td>
+  <td class=3Dxl29 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#34880;&#35806;&#20043;&#32465;&#33151;<br>
+    (&#19981;&#21487;&#20986;&#29616;)</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>117</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>251</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>68
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    40% &#26127;&#30561;&#25269;&#25239;<br>
+    <br>
+    +15% &#31227;&#21160;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Bloodborn
+  Leggings</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#21490;&#35799;</td>
+  <td class=3Dxl29 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#34880;&#35806;&#20043;&#32465;&#33151;<br>
+    (&#19981;&#21487;&#20986;&#29616;)</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>145</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>346</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>168
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    60% &#26127;&#30561;&#25269;&#25239;<br>
+    <br>
+    +15% &#31227;&#21160;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Bloodborn
+  Leggings</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl26 width=3D38 style=3D'height:45.0pt;border-top=
+:none;
+  width:29pt'>&#20256;&#22855;</td>
+  <td class=3Dxl29 width=3D98 style=3D'border-top:none;border-left:none;wid=
+th:74pt'>&#34880;&#35806;&#20043;&#32465;&#33151;<br>
+    (&#19981;&#21487;&#20986;&#29616;)</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>0</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>174</td>
+  <td class=3Dxl27 align=3Dright width=3D64 style=3D'border-top:none;border=
+-left:none;
+  width:48pt' x:num>435</td>
+  <td class=3Dxl27 width=3D124 style=3D'border-top:none;border-left:none;wi=
+dth:93pt'>312
+  &#25252;&#30002;<br>
+    <br>
+    <br>
+    <br>
+    80% &#26127;&#30561;&#25269;&#25239;<br>
+    <br>
+    +15% &#31227;&#21160;&#36895;&#24230;</td>
+  <td class=3Dxl27 width=3D198 style=3D'border-top:none;border-left:none;wi=
+dth:149pt'>Bloodborn
+  Leggings</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D38 style=3D'width:29pt'></td>
+  <td width=3D98 style=3D'width:74pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+  <td width=3D64 style=3D'width:48pt'></td>
+  <td width=3D124 style=3D'width:93pt'></td>
+  <td width=3D198 style=3D'width:149pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

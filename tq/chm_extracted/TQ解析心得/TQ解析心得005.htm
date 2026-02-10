@@ -1,0 +1,193 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>TQ解析心得之六：基本攻防属性</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="TQ解析心得004.htm">上一页</a> <a href="TQ解析心得.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> </td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">TQ解析心得之六：基本攻防属性</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->
+　　攻防属性是最基础的游戏属性数据，在技能、装备、词缀及生物等各种数据库记录文件中，都会涉及到其中的部分或全部，因此，先把这几样专门拿出来讲一下：<BR><BR> 
+　　一、攻击属性：<BR><BR> 
+　　分组名称（指ArtManager的数据库记录文件编辑器中，左侧的关键字分组，下同）：Offensive Parameters。<BR><BR> 
+　　其下又分三大类（三个子组）：<BR><BR> 
+　　Offensive Absolute：瞬时伤害<BR><BR> 
+　　Offensive Duration：持续伤害<BR><BR> 
+　　Offensive Influence：状态伤害<BR><BR> 
+　　以及两个特殊组：<BR><BR> 
+　　Offensive Global和Total Damage Modifier。<BR><BR> 
+　　在三大类之下，每类又有若干个组，分别对应各种伤害类型，例如Offensive Absolute\Offensive Fire为火焰伤害的组，Offensive Duration\Offensive Slow Fire为燃烧伤害的组。各组的名称一目了然，就不在这里一一解释了（实在英文不过关的去查金山词霸）。唯一稍微特殊一点的组是Offensive Absolute\Item Base Damage，它是法杖基础伤害的组，内含火、冰、电、毒、活力五种伤害的关键字及其数据，而不只是一种（由此可知，火焰等伤害其实都分别有两种，一种是法杖的基础伤害中的，另一种是其它来源的，包括装备、词缀、技能等。不过，这两种火焰伤害在游戏中的表现及计算方法没有任何区别，专门分开的目的大概仅仅是为了在界面上显示法杖属性时，能把法杖的基础伤害用白色写在第一行，而不会跟词缀等部分所带来的火焰伤害搅在一起分不清谁是谁。按理说其它武器的物理伤害也存在这个问题，应该也有个基础物理伤害才是，不过游戏对物理伤害换了个处理方式——所有武器上的词缀，其含有的物理伤害将无效，并且也不在界面上显示，从而保证了只有武器本身的物理伤害存在，因此也就可以毫无疑义地用白色写在第一行。因此，带后缀“地狱火之”的火系法杖，法杖本身的火焰伤害跟“地狱火之”所附带的28火焰伤害都是有效的，而带有后缀“灭绝之”的武器，就只有武器本身的物理伤害生效，“灭绝之”所附带的24伤害就被抹杀了。这种处理方式简直匪夷所思。另外，尽管有五种基础伤害，但游戏本身的装备库中，法杖却只做了火、冰、电三种，另两种没做）。<BR><BR> 
+　　在每个组的一套关键字（Offensive Absolute\Item Base Damage里有五套）中，前半截都是一样的，而后半截一共有如下几种（大多数组中都只有其中一部分）：<BR><BR> 
+　　Min、Max：伤害的最小值和最大值。若Max为零或空白，则为恒定伤害（相当于Max的值与Min相同）。<BR><BR> 
+　　DurationMin、DurationMax：持续时间的最小值和最大值。只存在于持续伤害中。若DurationMax为零或空白，则为恒定的持续时间（相当于DurationMax的值与DurationMin相同）。<BR><BR> 
+　　Chance：伤害的发动几率。若为0或空白，则表示一定发动。<BR><BR> 
+　　XOR、Global：含义在后面解释。<BR><BR> 
+　　Modifier：伤害加成。值的含义是百分比，例如30表示+30%的该类伤害。<BR><BR> 
+　　ModifierChance：伤害加成的发动几率。若为0或空白，则表示一定发动。<BR><BR> 
+　　DurationModifier：持续时间加成。只存在于持续伤害中。值的含义是百分比。例如40表示+40%的该类伤害持续时间。<BR><BR> 
+　　举例：在Offensive Duration\Offensive Slow Fire组中，Min=10，Max=20，DurationMin=30、DurationMax=40、Chance=50、Modifier=60、ModifierChance=70、DurationModifier=80，则表示：<BR><BR> 
+　　50%的几率发动10~20燃烧伤害 持续30~40秒<BR><BR> 
+　　70%几率发动+60%燃烧伤害 增加80%的持续时间<BR><BR> 
+　　Offensive Absolute\Offensive Mana Burn组（描述法力燃烧的属性）略有特殊之处：其中DrainMin、DrainMax分别为法力燃烧百分比的最小和最大值，DamageRatio为燃烧法力造成伤害的百分比。RatioAdder、RatioAdderChance是额外附加的燃烧法力造成伤害的百分比及其发动几率。注意，虽然DamageRatio跟RatioAdder都是燃烧法力造成伤害的百分比，但DamageRatio跟前面的DrainMin、DrainMax是一套的（界面上也写在一行内，DamageRatio写在括号里），如果本记录文件中DrainMin、DrainMax均为零，那么DamageRatio也无效，但RatioAdder却可以对其它部分中（例如另一件装备上）存在的DrainMin、DrainMax生效。<BR><BR> 
+　　Total Damage Modifier组表示所有伤害加成，其中的关键字与上述组相似，不过由于它仅仅是加成，没有基础伤害，因此它只有XOR、Global、Modifier和ModifierChance四种关键字。<BR><BR> 
+　　Offensive Global组与其它所有组中的XOR、Global关键字共同作用，用来描述同时发动或者选择发动的属性。其中Offensive Global组中只有一个关键字：OffensiveGlobalChance，表示发动几率。在其它组中，所有Global为1而XOR为0的组，其伤害及伤害加成都是按照OffensiveGlobalChance所设定的几率同时发动；所有Global为1而XOR为1的组，则按照OffensiveGlobalChance所设定的几率从中选择一种来发动。Global为0的组则是独立的，不受OffensiveGlobalChance的影响。<BR><BR> 
+　　二、反击属性：<BR><BR> 
+　　分组名称：Retaliation Parameters。<BR><BR> 
+　　反击属性的分类及关键字含义与攻击属性完全类似，只不过种类少了一些，在此不再重复。<BR><BR> 
+　　三、防御属性：<BR><BR> 
+　　分组名称：Defensive Parameters。<BR><BR> 
+　　该类主要是各种抗性。其下分5组，每组又分若干小组。绝大多数小组都分别对应一种抗性，每组的关键字中，前半截都是一样的，而后半截一共有如下几种（大多数组中都只有其中一部分）：<BR><BR> 
+　　&lt;空&gt;（只有前半截）：抗性。<BR><BR> 
+　　Chance：发动该抗性的几率。若为0或空白，则表示一定发动。<BR><BR> 
+　　Modifier：抗性加成（即在抗性总和的基础上再加一个百分比。如果抗性总和为0，那么即使加成再大，最终抗性也是0。如果抗性为负，则按抗性总和的绝对值进行加成。详见《伤害详解》）。<BR><BR> 
+　　ModifierChance：抗性加成的发动几率。若为0或空白，则表示一定发动。<BR><BR> 
+　　Duration：对应伤害的持续时间降低。<BR><BR> 
+　　DurationChance：发动持续时间降低的几率。若为0或空白，则表示一定发动。<BR><BR> 
+　　DurationModifier：持续时间降低的加成。注意：持续时间降低本身就是一个百分比，这个加成是对于该百分比的加成。例如：Duration=10，DurationModifier=50，则伤害的持续时间将降低10% * (1 + 50%) = 15%。<BR><BR> 
+　　DurationModifierChance：发动持续时间降低加成的几率。若为0或空白，则表示一定发动。<BR><BR> 
+　　几个特殊组及关键字的含义：<BR><BR> 
+　　Defensive Absolute\Defensive Protection：该组不是抗性，而是护甲。因此该组中也不存在持续时间的那一套。<BR><BR> 
+　　Defensive Absolute\Defensive Absorption：该组是护甲的吸收率。其中前两个关键字defensiveAbsorption和defensiveAbsorptionChance完全无用，游戏中使用的护甲吸收率是统一的（66%），并且写在GameEngine.dbr中（可以改动），不再使用写在这里的值。后两个关键字是护甲吸收率的加成及其发动几率，这两个值是有效的，防御专精中的技能“盔甲掌握”，设置的就是这里。<BR><BR> 
+　　Monster Defense：该组中有两种抗性：燃烧法力造成伤害抗性和百分比损血抗性。这两种抗性不会在界面上显示（其实不在界面上显示的抗性不止这两种）。虽然组名称上写了个“Monster”，但对任何角色（包括玩家）均是有效的。<BR><BR> 
+　　Defense Misc\Block：盾牌格挡几率的加成及发动几率。注意这里只有格挡率加成，而格挡值、格挡吸收率、格挡恢复时间均在盾牌记录文件中的一个特殊组内。<BR><BR> 
+　　Defense Misc\Reflect：伤害反弹比及反弹发动几率。<BR><BR> 
+　　四、角色属性：<BR><BR> 
+　　分组名称：Character Parameters。<BR><BR> 
+　　其下共分7组：<BR><BR> 
+　　1、Character Base Attributes<BR><BR> 
+　　该组只在武器记录文件中有效。只有两个关键字：characterBaseAttackSpeed表示武器的基础攻速，characterBaseAttackSpeedTag是基础攻速在界面上显示的文字代号（例如快、慢、极慢等）。注意，后者仅用于显示而已，前者才真正确定攻速。<BR><BR> 
+　　2、Character Bonus Attributes<BR><BR> 
+　　该组是角色的基础属性及加成，分别为：力、敏、智、生命、法力、力量加成、敏捷加成、智力加成、生命加成、法力加成、经验加成。<BR><BR> 
+　　3、Character Speed<BR><BR> 
+　　该组是角色的各种速度及加成，分别为：跑速、攻速、施展速度、跑速加成、攻速加成、施展速度加成及全部速度加成。注意：游戏所有技能及装备上的“+XX%某某速度”均是速度加成，而不是速度属性本身。只有两件装备写错：一是哈马杜斯，把攻速加成错写成了攻速，另一件是蛮族锥形胫甲，把跑速加成错写成了跑速。跑速、攻速、施展速度实际上是动画的放映速度，只应存在于生物的数据记录文件中，不同生物的动画时长不同，因此不同生物之间的放映速度没有相互比较的意义（攻速1.5的不见得比攻速1.0的快）。<BR><BR> 
+　　4、Character Regeneration<BR><BR> 
+　　该组是角色的生命、法力恢复速度属性，分别为：生命恢复、法力恢复、生命恢复加成、法力恢复加成。<BR><BR> 
+　　5、Character Ability<BR><BR> 
+　　该组是角色的各种能力，分别为：战斗能力、防御能力、战斗能力加成、防御能力加成、格挡恢复时间加成（是用来降低格挡恢复时间的。防御专精中的技能“快速防御”即是设置了此项）、吸收攻击能量（百分比）、避开攻击几率、躲避投射物几率。<BR><BR> 
+　　6、Character Reserve<BR><BR> 
+　　该组是关于法力上限扣减的属性，分别为：法力上限扣减、法力上限扣减的降低、法力上限扣减加成、法力上限扣减降低的加成。<BR><BR> 
+　　7、Requirement Reduction<BR><BR> 
+　　该组是关于降低各种装备的各种需求，其中第一个是降低全部属性要求，最后一个是降低等级要求，其它分别是降低所有武器、近战武器、猎手武器、杖类武器、盾牌、护甲、珠宝的力、敏、智要求。<BR><BR> 
+　　五、施法参数：<BR><BR> 
+　　分组名称：Skill Parameters。<BR><BR> 
+　　其下分两组：<BR><BR> 
+　　1、Skill Reduction<BR><BR> 
+　　该组是施法消耗方面的一些降低，包括冷却时间降低、冷却时间降低的发动几率、法力消耗的降低、法力消耗降低的发动几率、冷却时间降低的加成、冷却时间降低加成的发动几率、法力消耗降低的加成、法力消耗降低加成的发动几率。注意：虽然冷却时间降低、法力消耗降低本身都是百分比，但冷却时间降低的加成与法力消耗降低的加成仍是在该百分比的饿基础上加成。例如，冷却时间降低是10%，冷却时间降低的加成是20%，则最终的冷却时间降低是10% * (1 + 20%) = 12%，而不是30%。<BR><BR> 
+　　2、Projectile Bonus<BR><BR> 
+　　该组实际上并不是施法方面的参数（至少不仅仅与施法有关），不知为何被划分到了这里。该组只有两个关键字，分别表示投射速度加成与投射速度加成的发动几率。<!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="TQ解析心得004.htm">上一页</a> <a href="TQ解析心得.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> </td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

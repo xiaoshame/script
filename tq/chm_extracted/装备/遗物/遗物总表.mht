@@ -1,0 +1,1984 @@
+MIME-Version: 1.0
+X-Document-Type: Worksheet
+Content-Location: file:///C:/7051B3C8/file2632.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DExcel.Sheet>
+<meta name=3DGenerator content=3D"Microsoft Excel 11">
+<link rel=3DFile-List href=3D"file2632.files/filelist.xml">
+<link rel=3DEdit-Time-Data href=3D"file2632.files/editdata.mso">
+<link rel=3DOLE-Object-Data href=3D"file2632.files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>&#26381;&#21153;&#22120;</o:Author>
+  <o:LastAuthor>JOYGAO</o:LastAuthor>
+  <o:Created>2007-09-11T09:16:32Z</o:Created>
+  <o:LastSaved>2009-08-26T14:24:45Z</o:LastSaved>
+  <o:Company>&#38738;&#23707;&#32593;&#24433;&#30005;&#23376;&#20449;&#2468=
+7;&#26377;&#38480;&#20844;&#21496;</o:Company>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:\5E38\89C4;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	text-align:center;}
+.xl25
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-weight:700;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	text-align:left;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl26
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-weight:700;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl27
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	font-size:11.0pt;
+	font-family:\5FAE\8F6F\96C5\9ED1, sans-serif;
+	mso-font-charset:134;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:SimSun;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:PaperSizeIndex>9</x:PaperSizeIndex>
+      <x:HorizontalResolution>200</x:HorizontalResolution>
+      <x:VerticalResolution>200</x:VerticalResolution>
+     </x:Print>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:RangeSelection>$A$1:$G$91</x:RangeSelection>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+    <x:QueryTable>
+     <x:Name>. TQIT OUT_&#35013;&#22791;_&#36951;&#29289;_CN</x:Name>
+     <x:AutoFormatFont/>
+     <x:AutoFormatPattern/>
+     <x:QuerySource>
+      <x:QueryType>OLEDB</x:QueryType>
+      <x:CommandText>&quot;TQIT&quot;.&quot;dbo&quot;.&quot;OUT_&#35013;&#2=
+2791;_&#36951;&#29289;_CN&quot;</x:CommandText>
+      <x:CommandType>Table</x:CommandType>
+      <x:Maintain/>
+      <x:Connection>Provider=3DSQLOLEDB.1;Integrated Security=3DSSPI;Persis=
+t Security Info=3DTrue;Initial Catalog=3DTQIT;Data Source=3D.;Use Procedure=
+ for Prepare=3D1;Auto Translate=3DTrue;Packet Size=3D4096;Workstation ID=3D=
+SERVER;Use Encryption for Data=3DFalse;Tag with column collation when possi=
+ble=3DFalse</x:Connection>
+      <x:SourceConnectionFile>C:\Documents and Settings\xxd\My Documents\&#=
+25105;&#30340;&#25968;&#25454;&#28304;\. TQIT OUT_&#35013;&#22791;_&#36951;=
+&#29289;_CN.odc</x:SourceConnectionFile>
+      <x:RobustConnect>0</x:RobustConnect>
+      <x:VersionLastEdit>2</x:VersionLastEdit>
+      <x:VersionLastRefresh>2</x:VersionLastRefresh>
+     </x:QuerySource>
+     <x:RefreshInfo>
+      <x:NextId>10</x:NextId>
+      <x:ColumnInfo>
+       <x:Id>2</x:Id>
+       <x:Name>&#38590;&#24230;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>1</x:Id>
+       <x:Name>&#20013;&#25991;&#21517;&#31216;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>3</x:Id>
+       <x:Name>&#38262;&#23884;&#37096;&#20301;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>4</x:Id>
+       <x:Name>&#38656;&#35201;&#31561;&#32423;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>5</x:Id>
+       <x:Name>&#21333;&#29255;&#23646;&#24615;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>6</x:Id>
+       <x:Name>&#23436;&#25972;&#23646;&#24615;</x:Name>
+      </x:ColumnInfo>
+      <x:ColumnInfo>
+       <x:Id>7</x:Id>
+       <x:Name>&#33521;&#25991;&#21517;&#31216;</x:Name>
+      </x:ColumnInfo>
+      <x:DeletedTitle>n_Difficulty</x:DeletedTitle>
+     </x:RefreshInfo>
+    </x:QueryTable>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:DefaultRowHeight>285</x:DefaultRowHeight>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>8415</x:WindowHeight>
+  <x:WindowWidth>14715</x:WindowWidth>
+  <x:WindowTopX>360</x:WindowTopX>
+  <x:WindowTopY>360</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+ <x:ExcelName>
+  <x:Name>_._TQIT_OUT_&#35013;&#22791;_&#36951;&#29289;_CN</x:Name>
+  <x:SheetIndex>1</x:SheetIndex>
+  <x:Formula>=3DSheet1!$A$1:$G$91</x:Formula>
+ </x:ExcelName>
+</xml><![endif]-->
+</head>
+
+<body link=3Dblue vlink=3Dpurple>
+
+<table x:str border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D1339 style=
+=3D'border-collapse:
+ collapse;table-layout:fixed;width:1005pt'>
+ <col class=3Dxl24 width=3D50 style=3D'mso-width-source:userset;mso-width-a=
+lt:1600;
+ width:38pt'>
+ <col width=3D184 style=3D'mso-width-source:userset;mso-width-alt:5888;widt=
+h:138pt'>
+ <col width=3D144 style=3D'mso-width-source:userset;mso-width-alt:4608;widt=
+h:108pt'>
+ <col width=3D87 style=3D'mso-width-source:userset;mso-width-alt:2784;width=
+:65pt'>
+ <col width=3D266 style=3D'mso-width-source:userset;mso-width-alt:8512;widt=
+h:200pt'>
+ <col width=3D304 span=3D2 style=3D'mso-width-source:userset;mso-width-alt:=
+9728;
+ width:228pt'>
+ <tr height=3D20 style=3D'height:15.0pt'>
+  <td height=3D20 class=3Dxl25 width=3D50 style=3D'height:15.0pt;width:38pt=
+'><a
+  name=3D"_._TQIT_OUT_&#35013;&#22791;_&#36951;&#29289;_CN">&#38590;&#24230=
+;</a></td>
+  <td class=3Dxl26 width=3D184 style=3D'width:138pt'>&#20013;&#25991;&#2151=
+7;&#31216;</td>
+  <td class=3Dxl26 width=3D144 style=3D'width:108pt'>&#38262;&#23884;&#3709=
+6;&#20301;</td>
+  <td class=3Dxl26 width=3D87 style=3D'width:65pt'>&#38656;&#35201;&#31561;=
+&#32423;</td>
+  <td class=3Dxl26 width=3D266 style=3D'width:200pt'>&#21333;&#29255;&#2364=
+6;&#24615;</td>
+  <td class=3Dxl26 width=3D304 style=3D'width:228pt'>&#23436;&#25972;&#2364=
+6;&#24615;</td>
+  <td class=3Dxl26 width=3D304 style=3D'width:228pt'>&#33521;&#25991;&#2151=
+7;&#31216;</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#32819;&#2453=
+0;&#24357;&#26031;&#30340;&#24339;&#24358;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#24339;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>3</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>3
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +2% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>9
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +6% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Artemis' Bo=
+wstring</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#22522;&#3185=
+9;&#24503;&#20043;&#38236;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#3046=
+2;&#29260;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>3</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>3.0%
+  &#26426;&#29575;&#21457;&#21160; 50% &#20260;&#23475;&#21453;&#24377;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>9.0%
+  &#26426;&#29575;&#21457;&#21160; 50% &#20260;&#23475;&#21453;&#24377;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Archimedes'=
+ Mirror</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#21888;&#2970=
+5;&#26031;&#30340;&#21191;&#29467;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>3</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>5 &#20260;&#23475;<br>
+    <br>
+    +4% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>5 &#20260;&#23475;<br>
+    <br>
+    +12% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Valor o=
+f Achilles</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#29380;&#20420;&#2361=
+2;&#32034;&#26031;&#30340;&#37202;&#22218;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>3</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>2%
+  &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +15 &#29983;&#21629;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>6%
+  &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +45 &#29983;&#21629;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Dionysus' W=
+ineskin</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#36203;&#21345;&#3392=
+2;&#30340;&#26032;&#26376;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>3</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+4% &#27861;&#21147;<b=
+r>
+    <br>
+    +20% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+12% &#27861;&#21147;<=
+br>
+    <br>
+    +60% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Hecate's Cr=
+escent</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#36203;&#25289;&#2081=
+1;&#21202;&#26031;&#30340;&#21147;&#37327;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>3</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+4 &#21147;&#37327;</t=
+d>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+12 &#21147;&#37327;</=
+td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Herakles' M=
+ight</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#37329;&#32650;&#2761=
+1;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#36527;&#24178;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>3</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>-5%
+  &#27861;&#21147;&#28040;&#32791;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>-15%
+  &#27861;&#21147;&#28040;&#32791;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Golden =
+Fleece</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#26222;&#32599;&#3185=
+9;&#20462;&#26031;&#20043;&#28779;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>3</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+3%
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    12 &#29123;&#28903;&#20260;&#23475;&#22312;3.0&#31186;&#20869;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+9%
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    36 &#29123;&#28903;&#20260;&#23475;&#22312;3.0&#31186;&#20869;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Prometheus'=
+ Flame</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#23449;&#26031;&#3034=
+0;&#38713;&#38643;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>3</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>1 ~ 7
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +3% &#38378;&#30005;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>3 ~ 21
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +9% &#38378;&#30005;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Zeus' Thund=
+erbolt</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#33945;&#2528=
+9;&#30340;&#33635;&#32768;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>12</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+20 &#29983;&#21629;<b=
+r>
+    <br>
+    +20 &#27861;&#21147;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+60 &#29983;&#21629;<b=
+r>
+    <br>
+    +60 &#27861;&#21147;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Amun-Ra's G=
+lory</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#21162;&#2760=
+4;&#26031;&#30340;&#24868;&#24594;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>12</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>2%
+  &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36523;&=
+#29983;&#21629;&#20540;&#22686;&#21152;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>6%
+  &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36523;&=
+#29983;&#21629;&#20540;&#22686;&#21152;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Anubis' Wra=
+th</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22885;&#35199;&#3732=
+4;&#26031;&#20043;&#26609;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>12</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+8 &#20260;&#23475;&#2=
+3545;
+  &#20129;&#28789;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+24 &#20260;&#23475;&#=
+23545;
+  &#20129;&#28789;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Djed of=
+ Osiris</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#20309;&#38706;&#2603=
+1;&#20043;&#30524;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>12</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+4 &#25252;&#30002;<br>
+    <br>
+    +2% &#25252;&#30002;&#38450;&#24481;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+12 &#25252;&#30002;<b=
+r>
+    <br>
+    +6% &#25252;&#30002;&#38450;&#24481;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Udjat o=
+f Horus</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22622;&#29305;&#3034=
+0;&#20986;&#21334;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>12</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+6%
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    33.0% &#26426;&#29575;&#21457;&#21160; 12 &#31359;&#21050;&#21453;&#209=
+87;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+6%
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    33.0% &#26426;&#29575;&#21457;&#21160; 36 &#31359;&#21050;&#21453;&#209=
+87;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Set's Betra=
+yal</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#20234;&#24076;&#2603=
+1;&#30340;&#21313;&#23383;&#31456;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>12</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+30 &#29983;&#21629;<b=
+r>
+    <br>
+    +30% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+90 &#29983;&#21629;<b=
+r>
+    <br>
+    +90% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Ankh of=
+ Isis</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#20851;&#32701;&#3034=
+0;&#20161;&#24904;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#36527;&#24178;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>18</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+10
+  &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    2% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+30
+  &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    6% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Guan-Yu's G=
+race</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#27721;&#40664;&#2528=
+9;&#27604;&#27861;&#20856;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>18</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+6 &#26234;&#21147;</t=
+d>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+18 &#26234;&#21147;</=
+td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Code of=
+ Hammurabi</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl27 width=3D50 style=3D'height:82.5pt;width:38p=
+t'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#29492;&#29579;&#3034=
+0;&#25103;&#27861;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>18</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>2
+  &#38477;&#20302;&#25239;&#24615; &#25345;&#32493; 4.0 &#31186;<br>
+    <br>
+    5% &#25216;&#33021;&#20013;&#26029;&#20445;&#25252;<br>
+    <br>
+    2% &#20803;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>6
+  &#38477;&#20302;&#25239;&#24615; &#25345;&#32493; 4.0 &#31186;<br>
+    <br>
+    15% &#25216;&#33021;&#20013;&#26029;&#20445;&#25252;<br>
+    <br>
+    6% &#20803;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Monkey =
+King's
+  Trickery</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl27 width=3D50 style=3D'height:33.0pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#40857;&#29579;&#3034=
+0;&#39046;&#22495;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>18</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>8%
+  &#28779;&#28976;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>24%
+  &#28779;&#28976;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Domain =
+of the
+  Dragon-Kings</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#21738;&#21522;&#3034=
+0;&#35809;&#35745;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>18</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+6 &#25935;&#25463;</t=
+d>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+18 &#25935;&#25463;</=
+td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Li-Nezha's =
+Guile</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#31070;&#20892;&#3034=
+0;&#40657;&#33394;&#33647;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>18</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>42
+  &#27602;&#32032;&#20260;&#23475;&#22312;6.0&#31186;&#20869;<br>
+    <br>
+    4 &#38477;&#20302;&#25239;&#24615; &#25345;&#32493; 6.0 &#31186;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>126
+  &#27602;&#32032;&#20260;&#23475;&#22312;6.0&#31186;&#20869;<br>
+    <br>
+    12 &#38477;&#20302;&#25239;&#24615; &#25345;&#32493; 6.0 &#31186;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Shen-Nong's=
+ Dark
+  Medicine</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38414;&#32599;&#2957=
+9;&#30340;&#26432;&#25134;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>18</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>27
+  &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    +6% &#27969;&#34880;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>81
+  &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    +18% &#27969;&#34880;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Yen-Lo-Wang=
+'s
+  Bloodletting</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#29577;&#24093;&#3034=
+0;&#24179;&#38745;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>18</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>8%
+  &#38378;&#30005;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>24%
+  &#38378;&#30005;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Jade Em=
+peror's
+  Serenity</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl27 width=3D50 style=3D'height:82.5pt;width:38p=
+t'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#29790;&#2603=
+1;&#30340;&#24868;&#24594;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#33218;&#31456;&#2164=
+4;&#25163;&#38255;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>24</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>5.0%
+  &#26426;&#29575;&#21457;&#21160;:<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>150 &#20260;&#23475;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>3.0
+  &#31186;&#25216;&#33021;&#25171;&#26029;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>15.0%
+  &#26426;&#29575;&#21457;&#21160;:<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>150 &#20260;&#23475;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>3.0
+  &#31186;&#25216;&#33021;&#25171;&#26029;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Rage of=
+ Ares</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#33406;&#26480;&#2081=
+1;&#26031;&#30340;&#38050;&#38081;&#24847;&#24535;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>24</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>7%
+  &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    +2% &#29983;&#21629;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>21%
+  &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    +6% &#29983;&#21629;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Iron Wi=
+ll of Ajax</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22885;&#24503;&#2046=
+2;&#26031;&#30340;&#26426;&#26234;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#22836;&#37096;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>24</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+5% &#26234;&#21147;</=
+td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+15% &#26234;&#21147;<=
+/td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Cunning=
+ of
+  Odysseus</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#36203;&#20811;&#2517=
+6;&#30340;&#38452;&#24433;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#30462;&#29260;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>24</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+20
+  &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    +2% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+60
+  &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    +6% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Shade o=
+f Hector</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#29632;&#23572;&#2262=
+2;&#31119;&#28037;&#30340;&#30524;&#27882;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>24</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+15
+  &#20943;&#23569;&#26469;&#33258; &#20129;&#28789; &#30340;&#20260;&#23475=
+;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+45
+  &#20943;&#23569;&#26469;&#33258; &#20129;&#28789; &#30340;&#20260;&#23475=
+;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of Persephone'=
+s Tears</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22612;&#23572;&#2261=
+2;&#32599;&#26031;&#30340;&#23506;&#24847;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>24</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>11
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    5% &#20943;&#24930;&#20840;&#37096;&#36895;&#24230; &#25345;&#32493; 3.0
+  &#31186;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>33
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    15% &#20943;&#24930;&#20840;&#37096;&#36895;&#24230; &#25345;&#32493; 3=
+.0
+  &#31186;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Chill o=
+f Tartarus</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#26222;&#36890;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22612;&#37027;&#3711=
+7;&#26031;&#30340;&#20992;&#20995;[&#23567;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#3034=
+0;&#27494;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>24</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+3%
+  &#25152;&#26377;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+9%
+  &#25152;&#26377;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Essence of the Blade o=
+f Thanatos</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#32819;&#2453=
+0;&#24357;&#26031;&#30340;&#24339;&#24358;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#24339;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>27</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>8
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +3% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>24
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +9% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Artemis'=
+ Bowstring</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#22522;&#3185=
+9;&#24503;&#20043;&#38236;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#3046=
+2;&#29260;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>27</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>4.0%
+  &#26426;&#29575;&#21457;&#21160; 50% &#20260;&#23475;&#21453;&#24377;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>12.0%
+  &#26426;&#29575;&#21457;&#21160; 50% &#20260;&#23475;&#21453;&#24377;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Archimed=
+es' Mirror</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#21888;&#2970=
+5;&#26031;&#30340;&#21191;&#29467;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>27</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>15 &#20260;&#23475;<br>
+    <br>
+    +5% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>15 &#20260;&#23475;<br>
+    <br>
+    +15% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Valo=
+r of
+  Achilles</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#29380;&#20420;&#2361=
+2;&#32034;&#26031;&#30340;&#37202;&#22218;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>27</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>2%
+  &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +40 &#29983;&#21629;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>6%
+  &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +120 &#29983;&#21629;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Dionysus=
+' Wineskin</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#36203;&#21345;&#3392=
+2;&#30340;&#26032;&#26376;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>27</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+5% &#27861;&#21147;<b=
+r>
+    <br>
+    +30% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+15% &#27861;&#21147;<=
+br>
+    <br>
+    +90% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Hecate's=
+ Crescent</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#36203;&#25289;&#2081=
+1;&#21202;&#26031;&#30340;&#21147;&#37327;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>27</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+8 &#21147;&#37327;</t=
+d>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+24 &#21147;&#37327;</=
+td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Herakles=
+' Might</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#37329;&#32650;&#2761=
+1;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#36527;&#24178;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>27</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>-7%
+  &#27861;&#21147;&#28040;&#32791;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>-21%
+  &#27861;&#21147;&#28040;&#32791;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Gold=
+en Fleece</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#26222;&#32599;&#3185=
+9;&#20462;&#26031;&#20043;&#28779;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>27</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+3%
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    30 &#29123;&#28903;&#20260;&#23475;&#22312;3.0&#31186;&#20869;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+9%
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    90 &#29123;&#28903;&#20260;&#23475;&#22312;3.0&#31186;&#20869;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Promethe=
+us' Flame</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#23449;&#26031;&#3034=
+0;&#38713;&#38643;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>27</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>5 ~ 15
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +3% &#38378;&#30005;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>15 ~ 45
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +9% &#38378;&#30005;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Zeus' Th=
+underbolt</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#33945;-&#252=
+89;&#30340;&#33635;&#32768;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>30</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+40 &#29983;&#21629;<b=
+r>
+    <br>
+    +40 &#27861;&#21147;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+120 &#29983;&#21629;<=
+br>
+    <br>
+    +120 &#27861;&#21147;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Amun-Ra'=
+s Glory</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#21162;&#2760=
+4;&#26031;&#30340;&#24868;&#24594;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>30</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>3%
+  &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36523;&=
+#29983;&#21629;&#20540;&#22686;&#21152;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>9%
+  &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36523;&=
+#29983;&#21629;&#20540;&#22686;&#21152;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Anubis' =
+Wrath</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22885;&#35199;&#3732=
+4;&#26031;&#20043;&#26609;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>30</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>0.0 ~ 3.0
+  &#31186;&#30505;&#26197;<br>
+    <br>
+    +15 &#20260;&#23475;&#23545; &#20129;&#28789;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>0.0 ~ 3.0
+  &#31186;&#30505;&#26197;<br>
+    <br>
+    +45 &#20260;&#23475;&#23545; &#20129;&#28789;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Djed=
+ of Osiris</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#20309;&#38706;&#2603=
+1;&#20043;&#30524;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>30</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+7 &#25252;&#30002;<br>
+    <br>
+    +2% &#25252;&#30002;&#38450;&#24481;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+21 &#25252;&#30002;<b=
+r>
+    <br>
+    +6% &#25252;&#30002;&#38450;&#24481;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Udja=
+t of Horus</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22622;&#29305;&#3034=
+0;&#20986;&#21334;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>30</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+9%
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    33.0% &#26426;&#29575;&#21457;&#21160; 30 &#31359;&#21050;&#21453;&#209=
+87;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+9%
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    33.0% &#26426;&#29575;&#21457;&#21160; 90 &#31359;&#21050;&#21453;&#209=
+87;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Set's Be=
+trayal</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#20234;&#24076;&#2603=
+1;&#30340;&#21313;&#23383;&#31456;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>30</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+60 &#29983;&#21629;<b=
+r>
+    <br>
+    +35% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+180 &#29983;&#21629;<=
+br>
+    <br>
+    +105% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Ankh=
+ of Isis</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#20851;&#32701;&#3034=
+0;&#20161;&#24904;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#36527;&#24178;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>34</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+16
+  &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    2% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+48
+  &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    6% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Guan-Yu'=
+s Grace</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#27721;&#40664;&#2528=
+9;&#27604;&#27861;&#20856;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>34</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+9 &#26234;&#21147;</t=
+d>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+27 &#26234;&#21147;</=
+td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Code=
+ of
+  Hammurabi</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl27 width=3D50 style=3D'height:115.5pt;width:38=
+pt'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#29492;&#29579;&#3034=
+0;&#25103;&#27861;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>34</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>3
+  &#38477;&#20302;&#25239;&#24615; &#25345;&#32493; 4.0 &#31186;<br>
+    <br>
+    10.0% &#26426;&#29575;&#21457;&#21160;:<br>
+    <br>
+    8% &#25216;&#33021;&#20013;&#26029;&#20445;&#25252;<br>
+    <br>
+    2% &#20803;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>9
+  &#38477;&#20302;&#25239;&#24615; &#25345;&#32493; 4.0 &#31186;<br>
+    <br>
+    30.0% &#26426;&#29575;&#21457;&#21160;:<br>
+    <br>
+    24% &#25216;&#33021;&#20013;&#26029;&#20445;&#25252;<br>
+    <br>
+    6% &#20803;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Monk=
+ey King's
+  Trickery</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl27 width=3D50 style=3D'height:33.0pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#40857;&#29579;&#3034=
+0;&#39046;&#22495;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>34</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>10%
+  &#28779;&#28976;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>30%
+  &#28779;&#28976;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Doma=
+in of the
+  Dragon-Kings</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#21738;&#21522;&#3034=
+0;&#35809;&#35745;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>34</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+9 &#25935;&#25463;</t=
+d>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+27 &#25935;&#25463;</=
+td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Li-Nezha=
+'s Guile</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#31070;&#20892;&#3034=
+0;&#40657;&#33394;&#33647;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>34</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>60
+  &#27602;&#32032;&#20260;&#23475;&#22312;6.0&#31186;&#20869;<br>
+    <br>
+    5 &#38477;&#20302;&#25239;&#24615; &#25345;&#32493; 6.0 &#31186;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>180
+  &#27602;&#32032;&#20260;&#23475;&#22312;6.0&#31186;&#20869;<br>
+    <br>
+    15 &#38477;&#20302;&#25239;&#24615; &#25345;&#32493; 6.0 &#31186;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Shen-Non=
+g's Dark
+  Medicine</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38414;&#32599;&#2957=
+9;&#30340;&#26432;&#25134;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>34</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>39
+  &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    +6% &#27969;&#34880;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>117
+  &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    +18% &#27969;&#34880;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Yen-Lo-W=
+ang's
+  Bloodletting</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl27 width=3D50 style=3D'height:33.0pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#29577;&#24093;&#3034=
+0;&#24179;&#38745;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>34</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>10%
+  &#38378;&#30005;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>30%
+  &#38378;&#30005;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Jade=
+ Emperor's
+  Serenity</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl27 width=3D50 style=3D'height:82.5pt;width:38p=
+t'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#29790;&#2603=
+1;&#30340;&#24868;&#24594;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#33218;&#31456;&#2164=
+4;&#25163;&#38255;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>36</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>5.0%
+  &#26426;&#29575;&#21457;&#21160;:<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>300 &#20260;&#23475;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>3.0
+  &#31186;&#25216;&#33021;&#25171;&#26029;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>15.0%
+  &#26426;&#29575;&#21457;&#21160;:<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>300 &#20260;&#23475;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>3.0
+  &#31186;&#25216;&#33021;&#25171;&#26029;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Rage=
+ of Ares</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl27 width=3D50 style=3D'height:82.5pt;width:38p=
+t'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#33406;&#26480;&#2081=
+1;&#26031;&#30340;&#38050;&#38081;&#24847;&#24535;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>36</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>10%
+  &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    10% &#32531;&#24930;&#25269;&#25239;<br>
+    <br>
+    +2% &#29983;&#21629;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>30%
+  &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    30% &#32531;&#24930;&#25269;&#25239;<br>
+    <br>
+    +6% &#29983;&#21629;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Iron=
+ Will of
+  Ajax</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22885;&#24503;&#2046=
+2;&#26031;&#30340;&#26426;&#26234;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#22836;&#37096;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>36</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+7% &#26234;&#21147;</=
+td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+21% &#26234;&#21147;<=
+/td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Cunn=
+ing of
+  Odysseus</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#36203;&#20811;&#2517=
+6;&#30340;&#38452;&#24433;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#30462;&#29260;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>36</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+40
+  &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    +3% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+120
+  &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    +9% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Shad=
+e of
+  Hector</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#29632;&#23572;&#2262=
+2;&#31119;&#28037;&#30340;&#30524;&#27882;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>36</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+40
+  &#20943;&#23569;&#26469;&#33258; &#20129;&#28789; &#30340;&#20260;&#23475=
+;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+120
+  &#20943;&#23569;&#26469;&#33258; &#20129;&#28789; &#30340;&#20260;&#23475=
+;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of Persepho=
+ne's Tears</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22612;&#23572;&#2261=
+2;&#32599;&#26031;&#30340;&#23506;&#24847;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>36</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>15
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    5% &#20943;&#24930;&#20840;&#37096;&#36895;&#24230; &#25345;&#32493; 3.0
+  &#31186;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>45
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    15% &#20943;&#24930;&#20840;&#37096;&#36895;&#24230; &#25345;&#32493; 3=
+.0
+  &#31186;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Chil=
+l of
+  Tartarus</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#21490;&#35799;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22612;&#37027;&#3711=
+7;&#26031;&#30340;&#20992;&#20995;[&#20013;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#3034=
+0;&#27494;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>36</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+4%
+  &#25152;&#26377;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+12%
+  &#25152;&#26377;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Embodiment of the Blad=
+e of
+  Thanatos</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#32819;&#2453=
+0;&#24357;&#26031;&#30340;&#24339;&#24358;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#24339;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>38</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>14
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +4% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>42
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    +12% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Artemis'
+  Bowstring</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#22522;&#3185=
+9;&#24503;&#20043;&#38236;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#3046=
+2;&#29260;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>38</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>5.0%
+  &#26426;&#29575;&#21457;&#21160; 50% &#20260;&#23475;&#21453;&#24377;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>15.0%
+  &#26426;&#29575;&#21457;&#21160; 50% &#20260;&#23475;&#21453;&#24377;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Archime=
+des'
+  Mirror</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#21888;&#2970=
+5;&#26031;&#30340;&#21191;&#29467;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>38</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>25 &#20260;&#23475;<br>
+    <br>
+    +6% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>25 &#20260;&#23475;<br>
+    <br>
+    +18% &#25915;&#20987;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Val=
+or of
+  Achilles</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#29380;&#20420;&#2361=
+2;&#32034;&#26031;&#30340;&#37202;&#22218;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>38</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>2%
+  &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +75 &#29983;&#21629;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>6%
+  &#29289;&#29702;&#20260;&#23475;&#25239;&#24615;<br>
+    <br>
+    +225 &#29983;&#21629;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Dionysu=
+s'
+  Wineskin</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#36203;&#21345;&#3392=
+2;&#30340;&#26032;&#26376;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>38</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+6% &#27861;&#21147;<b=
+r>
+    <br>
+    +40% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+18% &#27861;&#21147;<=
+br>
+    <br>
+    +120% &#27861;&#21147;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Hecate'=
+s Crescent</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#36203;&#25289;&#2081=
+1;&#21202;&#26031;&#30340;&#21147;&#37327;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>38</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+12 &#21147;&#37327;</=
+td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+36 &#21147;&#37327;</=
+td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Herakle=
+s' Might</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#37329;&#32650;&#2761=
+1;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#36527;&#24178;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>38</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>-10%
+  &#27861;&#21147;&#28040;&#32791;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>-30%
+  &#27861;&#21147;&#28040;&#32791;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Gol=
+den Fleece</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#26222;&#32599;&#3185=
+9;&#20462;&#26031;&#20043;&#28779;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>38</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+3%
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    48 &#29123;&#28903;&#20260;&#23475;&#22312;3.0&#31186;&#20869;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+9%
+  &#28779;&#28976;&#20260;&#23475;<br>
+    <br>
+    144 &#29123;&#28903;&#20260;&#23475;&#22312;3.0&#31186;&#20869;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Prometh=
+eus' Flame</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#23449;&#26031;&#3034=
+0;&#38713;&#38643;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>38</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>7 ~ 25
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +3% &#38378;&#30005;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>21 ~ 75
+  &#38378;&#30005;&#20260;&#23475;<br>
+    <br>
+    +9% &#38378;&#30005;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Zeus' T=
+hunderbolt</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#33945;-&#252=
+89;&#30340;&#33635;&#32768;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>41</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+60 &#29983;&#21629;<b=
+r>
+    <br>
+    +60 &#27861;&#21147;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+180 &#29983;&#21629;<=
+br>
+    <br>
+    +180 &#27861;&#21147;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Amun-Ra=
+'s Glory</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#21162;&#2760=
+4;&#26031;&#30340;&#24868;&#24594;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>41</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>4%
+  &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36523;&=
+#29983;&#21629;&#20540;&#22686;&#21152;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>12%
+  &#25915;&#20987;&#20260;&#23475;&#36716;&#25442;&#20026;&#33258;&#36523;&=
+#29983;&#21629;&#20540;&#22686;&#21152;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Anubis'=
+ Wrath</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22885;&#35199;&#3732=
+4;&#26031;&#20043;&#26609;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>41</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>0.0 ~ 3.0
+  &#31186;&#30505;&#26197;<br>
+    <br>
+    +22 &#20260;&#23475;&#23545; &#20129;&#28789;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>0.0 ~ 3.0
+  &#31186;&#30505;&#26197;<br>
+    <br>
+    +66 &#20260;&#23475;&#23545; &#20129;&#28789;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Dje=
+d of
+  Osiris</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#20309;&#38706;&#2603=
+1;&#20043;&#30524;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>41</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+10 &#25252;&#30002;<b=
+r>
+    <br>
+    +2% &#25252;&#30002;&#38450;&#24481;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+30 &#25252;&#30002;<b=
+r>
+    <br>
+    +6% &#25252;&#30002;&#38450;&#24481;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Udj=
+at of
+  Horus</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22622;&#29305;&#3034=
+0;&#20986;&#21334;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>41</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+11%
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    33.0% &#26426;&#29575;&#21457;&#21160; 50 &#31359;&#21050;&#21453;&#209=
+87;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+11%
+  &#31359;&#21050;&#20260;&#23475;<br>
+    <br>
+    33.0% &#26426;&#29575;&#21457;&#21160; 150 &#31359;&#21050;&#21453;&#20=
+987;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Set's B=
+etrayal</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#20234;&#24076;&#2603=
+1;&#30340;&#21313;&#23383;&#31456;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>41</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+100 &#29983;&#21629;<=
+br>
+    <br>
+    +40% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+300 &#29983;&#21629;<=
+br>
+    <br>
+    +120% &#29983;&#21629;&#24674;&#22797;&#36895;&#24230;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Ank=
+h of Isis</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#20851;&#32701;&#3034=
+0;&#20161;&#24904;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#36527;&#24178;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>44</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+20
+  &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    2% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+60
+  &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    6% &#26426;&#29575;&#36991;&#24320;&#25915;&#20987;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Guan-Yu=
+'s Grace</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#27721;&#35871;&#2528=
+9;&#27604;&#27861;&#20856;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>44</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+12 &#26234;&#21147;</=
+td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+36 &#26234;&#21147;</=
+td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Cod=
+e of
+  Hammurabi</td>
+ </tr>
+ <tr height=3D154 style=3D'height:115.5pt'>
+  <td height=3D154 class=3Dxl27 width=3D50 style=3D'height:115.5pt;width:38=
+pt'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#29492;&#29579;&#3034=
+0;&#25103;&#27861;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>44</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>4
+  &#38477;&#20302;&#25239;&#24615; &#25345;&#32493; 4.0 &#31186;<br>
+    <br>
+    15.0% &#26426;&#29575;&#21457;&#21160;:<br>
+    <br>
+    12% &#25216;&#33021;&#20013;&#26029;&#20445;&#25252;<br>
+    <br>
+    2% &#20803;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>12
+  &#38477;&#20302;&#25239;&#24615; &#25345;&#32493; 4.0 &#31186;<br>
+    <br>
+    45.0% &#26426;&#29575;&#21457;&#21160;:<br>
+    <br>
+    36% &#25216;&#33021;&#20013;&#26029;&#20445;&#25252;<br>
+    <br>
+    6% &#20803;&#32032;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Mon=
+key King's
+  Trickery</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl27 width=3D50 style=3D'height:33.0pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#40857;&#29579;&#3034=
+0;&#39046;&#22495;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>44</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>12%
+  &#28779;&#28976;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>36%
+  &#28779;&#28976;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Dom=
+ain of the
+  Dragon-Kings</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#21738;&#21522;&#3034=
+0;&#35809;&#35745;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>44</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+12 &#25935;&#25463;</=
+td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+36 &#25935;&#25463;</=
+td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Li-Nezh=
+a's Guile</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#31070;&#20892;&#3034=
+0;&#40657;&#33394;&#33647;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>44</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>96
+  &#27602;&#32032;&#20260;&#23475;&#22312;6.0&#31186;&#20869;<br>
+    <br>
+    6 &#38477;&#20302;&#25239;&#24615; &#25345;&#32493; 6.0 &#31186;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>288
+  &#27602;&#32032;&#20260;&#23475;&#22312;6.0&#31186;&#20869;<br>
+    <br>
+    18 &#38477;&#20302;&#25239;&#24615; &#25345;&#32493; 6.0 &#31186;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Shen-No=
+ng's Dark
+  Medicine</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38414;&#32599;&#2957=
+9;&#30340;&#26432;&#25134;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>44</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>54
+  &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    +6% &#27969;&#34880;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>162
+  &#27969;&#34880;&#20260;&#23475;&#22312;3.0&#31186;&#20869;<br>
+    <br>
+    +18% &#27969;&#34880;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Yen-Lo-=
+Wang's
+  Bloodletting</td>
+ </tr>
+ <tr height=3D44 style=3D'height:33.0pt'>
+  <td height=3D44 class=3Dxl27 width=3D50 style=3D'height:33.0pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#29577;&#24093;&#3034=
+0;&#24179;&#38745;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>44</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>12%
+  &#38378;&#30005;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>36%
+  &#38378;&#30005;&#25239;&#24615;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Jade
+  Emperor's Serenity</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl27 width=3D50 style=3D'height:82.5pt;width:38p=
+t'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#38463;&#29790;&#2603=
+1;&#30340;&#24868;&#24594;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#33218;&#31456;&#2164=
+4;&#25163;&#38255;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>46</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>5.0%
+  &#26426;&#29575;&#21457;&#21160;:<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>450 &#20260;&#23475;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>3.0
+  &#31186;&#25216;&#33021;&#25171;&#26029;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>15.0%
+  &#26426;&#29575;&#21457;&#21160;:<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>450 &#20260;&#23475;<br>
+    <br>
+    <span style=3D'mso-spacerun:yes'>&nbsp; </span>3.0
+  &#31186;&#25216;&#33021;&#25171;&#26029;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Rag=
+e of Ares</td>
+ </tr>
+ <tr height=3D110 style=3D'height:82.5pt'>
+  <td height=3D110 class=3Dxl27 width=3D50 style=3D'height:82.5pt;width:38p=
+t'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#33406;&#26480;&#2081=
+1;&#26031;&#30340;&#38050;&#38081;&#24847;&#24535;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>46</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>13%
+  &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    13% &#32531;&#24930;&#25269;&#25239;<br>
+    <br>
+    +2% &#29983;&#21629;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>39%
+  &#30505;&#26197;&#25269;&#25239;<br>
+    <br>
+    39% &#32531;&#24930;&#25269;&#25239;<br>
+    <br>
+    +6% &#29983;&#21629;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Iro=
+n Will of
+  Ajax</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22885;&#24503;&#2046=
+2;&#26031;&#30340;&#26426;&#26234;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#22836;&#37096;&#2525=
+2;&#30002;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>46</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+10% &#26234;&#21147;<=
+/td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+30% &#26234;&#21147;<=
+/td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Cun=
+ning of
+  Odysseus</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#36203;&#20811;&#2517=
+6;&#30340;&#38452;&#24433;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#30462;&#29260;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>46</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+60
+  &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    +3% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+180
+  &#28857;&#38450;&#24481;&#33021;&#21147;<br>
+    <br>
+    +9% &#26426;&#29575;&#36530;&#36991;&#25237;&#23556;&#29289;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Sha=
+de of
+  Hector</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#29632;&#23572;&#2262=
+2;&#31119;&#28037;&#30340;&#30524;&#27882;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25106;&#25351;&#2164=
+4;&#39033;&#38142;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>46</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+60
+  &#20943;&#23569;&#26469;&#33258; &#20129;&#28789; &#30340;&#20260;&#23475=
+;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+180
+  &#20943;&#23569;&#26469;&#33258; &#20129;&#28789; &#30340;&#20260;&#23475=
+;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of Perseph=
+one's
+  Tears</td>
+ </tr>
+ <tr height=3D66 style=3D'height:49.5pt'>
+  <td height=3D66 class=3Dxl27 width=3D50 style=3D'height:49.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22612;&#23572;&#2261=
+2;&#32599;&#26031;&#30340;&#23506;&#24847;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#2749=
+4;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>46</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>20
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    5% &#20943;&#24930;&#20840;&#37096;&#36895;&#24230; &#25345;&#32493; 3.0
+  &#31186;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>60
+  &#20912;&#20919;&#20260;&#23475;<br>
+    <br>
+    15% &#20943;&#24930;&#20840;&#37096;&#36895;&#24230; &#25345;&#32493; 3=
+.0
+  &#31186;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Chi=
+ll of
+  Tartarus</td>
+ </tr>
+ <tr height=3D22 style=3D'height:16.5pt'>
+  <td height=3D22 class=3Dxl27 width=3D50 style=3D'height:16.5pt;width:38pt=
+'>&#20256;&#22855;</td>
+  <td class=3Dxl28 width=3D184 style=3D'width:138pt'>&#22612;&#37027;&#3711=
+7;&#26031;&#30340;&#20992;&#20995;[&#22823;]</td>
+  <td class=3Dxl28 width=3D144 style=3D'width:108pt'>&#25152;&#26377;&#3034=
+0;&#27494;&#22120;</td>
+  <td class=3Dxl28 width=3D87 style=3D'width:65pt' x:num>46</td>
+  <td class=3Dxl28 width=3D266 style=3D'width:200pt'>+5%
+  &#25152;&#26377;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>+15%
+  &#25152;&#26377;&#20260;&#23475;</td>
+  <td class=3Dxl28 width=3D304 style=3D'width:228pt'>Incarnation of the Bla=
+de of
+  Thanatos</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D50 style=3D'width:38pt'></td>
+  <td width=3D184 style=3D'width:138pt'></td>
+  <td width=3D144 style=3D'width:108pt'></td>
+  <td width=3D87 style=3D'width:65pt'></td>
+  <td width=3D266 style=3D'width:200pt'></td>
+  <td width=3D304 style=3D'width:228pt'></td>
+  <td width=3D304 style=3D'width:228pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

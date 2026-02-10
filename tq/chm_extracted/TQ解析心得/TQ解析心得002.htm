@@ -1,0 +1,211 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>TQ解析心得之三：自定义游戏制作及工具简介</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="TQ解析心得001.htm">上一页</a> <a href="TQ解析心得.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="TQ解析心得003.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">TQ解析心得之三：自定义游戏制作及工具简介</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->
+　　从本篇起，除特殊说明外，将主要讨论IT。<BR><BR> 
+　　关于自定义游戏的制作，游戏主目录下的Toolset目录中有很详细的说明文档——TQ Modders Guide.pdf，而且还包括一整套教学例程。当然，该文档是英文的，如果觉得英文读起来麻烦的话，thinkwzw还发过一份中文版的。不过他发的那个并不是单独开贴，而是在一篇帖子的回复里，找一下实在太费劲，所以我在这里重发一下：<BR><BR> 
+　　TQGuide_CHS.part1.rar (1.91 MB) <BR><BR> 
+　　TQGuide_CHS.part2.rar (1.91 MB) <BR><BR> 
+　　TQGuide_CHS.part3.rar (312.2 KB) [该组链接无效，1楼底有附件]<BR><BR> 
+　　既然已经有详细的教学文档，在这里我就不详细说了，只谈几个零碎的问题。<BR><BR> 
+　　除了主程序之外，游戏主目录下还有若干个可执行程序，主要的（确切的说，是我会用的）有三个：ArtManager.exe：顾名思义，是自定义游戏中所有资源（包括数据库记录）的管理器，用来管理整个自定义游戏的制作过程。好比程序员使用的集成开发环境。实际上，我觉得主游戏就是IronLore用它来开发的。<BR><BR> 
+　　Editor.exe：用来制作地图。<BR><BR> 
+　　QuestEditor.exe：用来制作任务。<BR><BR> 
+　　下列几个可执行程序估计是配合ArtManager使用的。它们应该是在ArtManager编译生成自定义游戏的时候自动调用（类似于集成开发环境自动调用编译器），因此一般不需要独立运行：<BR><BR> 
+　　AnimationCompiler.exe<BR><BR> 
+　　ArchiveTool.exe<BR><BR> 
+　　FontCompiler.exe<BR><BR> 
+　　MapCompiler.exe<BR><BR> 
+　　ModelCompiler.exe<BR><BR> 
+　　ShaderCompiler.exe<BR><BR> 
+　　TextureCompiler.exe<BR><BR> 
+　　当然，这些东西都是命令行的，也都可以脱离ArtManager单独运行。其中ArchiveTool.exe可能单独用到的机会比较多，因为它是用来压缩解压资源文件的（实际上压缩什么文件都可以，例如我修正过的Templates.arc就是用它压缩起来的。这个就没法利用ArtManager来调用了，只能单独运行ArchiveTool来压缩）。不带参数地运行ArchiveTool可以看到它的使用方法（不过写的稍微有点简略，可能需要试几次才能弄明白）。<BR><BR> 
+　　剩下的几个工具，老实说我也不知道怎么用，甚至干什么用的都不太清楚，有人知道的话不妨介绍一下：<BR><BR> 
+　　BitmapCreator.exe<BR><BR> 
+　　PSEditor.exe<BR><BR> 
+　　SourceServer.exe<BR><BR> 
+　　Viewer.exe<BR><BR> 
+　　既然ArtManager相当于集成开发环境，因此自定义游戏制作既是从这里开始，也是在这里结束，其大致流程如下：<BR><BR> 
+　　1、新建一个自定义游戏。<BR><BR> 
+　　2、创建/编辑各种资源，包括数据库记录、地图、任务、贴图、动画、音乐。。。其中数据库记录由ArtManager内嵌的编辑器编辑，其它资源的编辑则需要通过各种单独的编辑器来进行。<BR><BR> 
+　　3、对各种资源建立Asset（这个词实在是很难翻译）文件。如果熟悉编程的话可能比较好理解一点：这实际上是对各个资源源文件建立工程项目，用于向ArtManager指明，哪些资源源文件是包括在这个自定义游戏中的，以及它们分别该如何编译。只不过，一般工程文件只有一个，而Asset文件却是对每个资源建立一个，所有的Asset文件都放在特定的目录（及子目录）下，而在编译的时候，ArtManager会按照该目录下的所有Asset文件的指示对各资源文件进行逐一编译，并最终压缩打包。因此，假若你制作的资源没有建立相应的Asset文件（初学者很容易遗忘这一步），该资源是不会被包括在最终的自定义游戏中的。<BR><BR> 
+　　4、编译并生成自定义游戏。如果你是把TQ中所有的资源都重新制作了一遍的话，那么最后编译生成的就会是整套《泰坦之旅》。Ironlore大概就是这么做的——换句话说，主游戏其实也就是一个自定义游戏而已。<BR><BR> 
+　　在第一次使用ArtManager时，需要做几件事：<BR><BR> 
+　　1、菜单Tools-&gt;Options，出现选项对话框，主要是几个目录的设定：<BR><BR> 
+　　Working directory：工作目录，用来存放开发过程中的资源源文件。该目录缺省是在存档目录中的Working目录。个人建议把这个目录换个地方。通过菜单File-&gt;Set Working Folder同样可以设置这个目录。<BR><BR> 
+　　Build directory：最后生成的自定义游戏的存放目录。缺省是存档目录。自定义游戏生成的时候，会自动在该目录下建立一个名叫CustomMaps的目录，并在其下再建立与自定义游戏同名的目录，然后把生成的结果放于该目录下，这与自定义游戏运行时所需要的目录结构相同。建议不要修改这个目录，否则要测试你生成的游戏的时候，还要专门再去拷贝一遍。<BR><BR> 
+　　Tools directory：指定各工具程序所在的目录。缺省是游戏主目录。不要修改。<BR><BR> 
+　　Additional browse directories：缺省为空。我没用过。<BR><BR> 
+　　2、菜单Help-&gt;Install Templates。该功能将安装数据库记录模版文件（实际上是解压缩游戏主目录下的Toolset\Templates.arc），没有模版文件的话就无法编辑数据库记录。对于IT，建议先用修正的Templates.arc覆盖原始的Templates.arc（http://www.titanquest.com.cn/bbs/viewthread.php?tid=26178），然后再做这一步。模版文件放在工作目录下的Database\Templates目录中。<BR><BR> 
+　　3、如果想看看教学示例的话，还可以执行Help-&gt;Install Tutorials。这些示例都安装在工作目录的CustomMaps目录下，每个示例一个子目录。<BR><BR> 
+　　关于自定义游戏源文件的目录结构：<BR><BR> 
+　　所有自定义游戏的源文件都放在工作目录的CustomMaps目录下，每个自定义游戏一个子目录，目录名就是自定义游戏的名称。每个自定义游戏的目录下有三个子目录：assets、database、source。其中database用来放置数据库记录文件，source用来放置除数据库记录文件之外的所有其它资源文件，assets用来放置asset文件。当使用ArtManager新建一个自定义游戏的时候，这套目录结构会自动建立。<BR><BR> 
+　　关于自定义游戏和MOD：<BR><BR> 
+　　在本游戏中，一般所说的MOD有三种：<BR><BR> 
+　　1、通过反向工程直接修改游戏的可执行程序，从而达到修改游戏的效果，例如TQDefiler自带的那些MOD。<BR><BR> 
+　　2、通过修改游戏本身的数据库记录文件、资源文件来修改游戏的效果，例如各种掉宝MOD。<BR><BR> 
+　　3、通过自定义游戏来修改游戏的效果，例如不同的装备属性、怪物属性等，也可以有独立的地图。这些其实并未对原始游戏做任何修改，所有新增/修改的东西都仅在该自定义游戏内生效，严格来说实际上是不能叫做MOD的。不过，由于这一种跟第2种都采用相同的方法制作，因此往往也都混同起来，都叫MOD了。<BR><BR> 
+　　上述第2种的制作以后再谈（第1种我不会），在这里先用一个自定义游戏的简单例子，讲一下工具软件中的几个零碎的问题。<BR><BR> 
+　　1、在ArtManager中，菜单Mod-&gt;New，建立一个新的自定义游戏（MOD）。下次再打开这个MOD时，用Mod-&gt;Select-&gt;&lt;MOD名称&gt;。ArtManager左侧中部有三个Tab页，分别对应自定义游戏中的三个子目录：source、assets、database。这三个Tab页类似windows的资源管理器，创建新子目录和删除文件都可以在这里操作。起初source目录下只有Maps、Quests、Text三个子目录（分别用来放地图、任务和文本源文件），里面都是空的，assets和database页也是空的。<BR><BR> 
+　　2、运行Editor.exe，选择新建的那个MOD，新建一幅地图。新建的时候注意存储位置最好设在source/Maps里面。<BR><BR> 
+　　3、此时的地图还是完全空白的。通过菜单Region-&gt;Add New Terrain填加一块区域。注意目录最好也选择到source/Maps下面。另外，不知道是BUG还是什么原因，假若填加的区域小于128 x 128的话，以后进入游戏测试的时候，会一片漆黑，什么也看不到。因此这里最少也要填加128 x 128的区域（缺省是256 x 256）。<BR><BR> 
+　　4、用鼠标选中新增加的区域，按左上角的切换按钮（两个红色箭头）切换到编辑模式（Editor Mode）。<BR><BR> 
+　　5、对于任何自定义地图，唯一一个必须有的东西是角色的出生点。是你初次进入游戏所呆的位置。如果没有这个的话，你的人物根本就进不了游戏。这个东西对应的数据库记录文件是records\controls\spawnplayer.dbr，从右上侧数据库目录里找到并选中这个文件，然后摆在地图的某个位置上。<BR><BR> 
+　　6、剩下的事情就随便了，喜欢摆点什么、或者改变一下地形之类都可以。一般经常会用自定义游戏来拿装备，需要什么装备的话，只要在这里往地上一放（各装备对应的数据库文件名见泰坦立方），等新建一个人物进入该游戏后直接拣就可以，拣完以后再用TQVault倒出来。不过，唯一装备这么拣很方便，特绿之类的就有点问题了——这样拣到的没有词缀！解决的办法有两个：一是摆上能掉该装备的怪物（比如想要BUG甲，就摆一堆马查），然后进游戏刷，不过这么做跟直接在主游戏里刷也没什么区别；第二个方法就是先拣个没词缀的，然后用上一篇介绍的方法直接在人物存档里加词缀。<BR><BR> 
+　　7、通过屏幕左下的Tab页按钮切换回Layout Mode。菜单Build-&gt;Rebuild All Pathing，然后Build-&gt;Rebuild All Maps。存盘退出。<BR><BR> 
+　　8、重新回到ArtManager，此时source\Maps目录下已经有东西了。选择后缀为wrl的那个文件（这是地图的主文件），右键菜单选择Auto-Create Asset，程序就会自动生成这套地图的asset文件（放在assets\Maps目录下）。当然，也可以手工生成asset文件，方法是：在Assets页选择Maps目录（目录无所谓，为了分类清楚），在右侧右键菜单，选New-&gt;Map，然后选中刚做好的那个wrl文件即可。<BR><BR> 
+　　从右键的New菜单中可以看到，总共支持的资源种类有14种（由于没有asset文件就不可能被编译到最后的游戏中，因此游戏中只可能有这么多种类的资源了）：<BR><BR> 
+　　Texture：贴图，源文件格式是PSD（PhotoShop格式）或PGA，编译完成后成为TEX格式。<BR><BR> 
+　　Cube Map：含义及用途不明（源文件似乎是六幅图象）。<BR><BR> 
+　　Mesh：3D模型，源文件是MAX文件（3D Studio MAX格式）及MIF文件，编译完成后成为MSH格式。<BR><BR> 
+　　Animation：动画，源文件为MAX文件（3D Studio MAX格式）及AIF文件，编译完成后成为ANM格式。<BR><BR> 
+　　Shader：着色，源文件及编译完成后都是SSH格式（未做格式转换）。<BR><BR> 
+　　Bitmap：图象，源文件格式是PSD（PhotoShop格式）或PGA，编译完成后成为TEX格式。<BR><BR> 
+　　Font：字体，源文件是TTF文件，编译完成后为FNT。<BR><BR> 
+　　TextFile：文本（汉化包改的就是这个），源文件及编译完成后都是TXT格式（未做格式转换）。<BR><BR> 
+　　Trigger/Quest：任务，源文件及编译完成后都是QST格式（未做格式转换）。<BR><BR> 
+　　Particle：效果，源文件及编译完成后都是PFX格式（未做格式转换）。<BR><BR> 
+　　Map：地图，源文件为由地图编辑器生成的一组文件，编译完成后成为MAP文件。<BR><BR> 
+　　Binary：二进制文件，作用不明。<BR><BR> 
+　　Wave：声音文件，源文件及编译完成后都是WAV格式（未做格式转换）。<BR><BR> 
+　　MP3：音乐文件，源文件及编译完成后都是MP3格式（未做格式转换）。<BR><BR> 
+　　由上可以看出，游戏的图象与3D主要是通过PhotoShop和3D Studio MAX制作的，效果文件似乎是用PSEditor制作，但我不会用，着色文件就不清楚了。<BR><BR> 
+　　9、菜单Build-&gt;Build，进行编译和压缩。生成的自定义游戏中只有一个Maps.arc，放在MOD生成目录中的CustomMaps\&lt;MOD名称&gt;\resources目录下。该目录内还有一个Maps目录，里面有*.map的文件。这是经过编译、尚未进行压缩的地图文件，可以删除（包括Maps目录在内）。<BR><BR> 
+　　上述是做一个最简单的地图的过程，不论装备还是怪物都不过是直接摆上去。假若需要尝试一下修改过的装备或者怪物，就需要改数据库记录了。实际上，在进行一些测试的时候，经常会需要这么做。例如，想要测试“眩晕”这种伤害与哪些因素有关，游戏本身的各种装备、技能所能提供的眩晕时间实在太短，很难进行定量测试，于是可以把某件装备上改出足够长的眩晕（比如100秒），然后再看效果。<BR><BR> 
+　　下面是一个简单的例子：<BR><BR> 
+　　1、在地图上摆一把堕落者（records\item\equipmentweapon\club\u_l_saprosthecorrupter.dbr），在稍远一点的地方放一个怪物“萨堤 ~ 斥候”（records\creature\monster\satyr\am_pawn_01.dbr）。<BR><BR> 
+　　2、用ArtManager打开所需的MOD，菜单Database-&gt;Import Record，选择文件records\creature\monster\satyr\am_pawn_01.dbr。这实际上是从游戏的数据库压缩包database.arz中提取出来这个文件，然后复制到该MOD中的database文件夹下（包括整套相对路径）。用这种方法可以从database.arz中逐个提取感兴趣的文件来查看，而不需要把整个database.arz解压缩。<BR><BR> 
+　　3、在“Database”Tab页中，找到这个刚复制过来的文件，双击打开。<BR><BR> 
+　　4、在左侧目录树中选择Character Bio\Character Parameters\Character Bonus Attributes，然后在右侧的characterLife一项（生命值）上双击，在弹出的窗口中，把数值16改成100000（免得被堕落者一锤砸死）。然后再到左侧选择Character Bio\Natural Resistance，在右侧的defensiveStun一项（眩晕抗性）上双击，在弹出的窗口中点“New”（新建一个值），然后在下面的Value一栏内填入50。关闭并保存整个文件。<BR><BR> 
+　　5、下一步当然是把堕落者的数据库记录（records\item\equipmentweapon\club\u_l_saprosthecorrupter.dbr）提取出来进行修改。不过假若你使用的是IT中的ArtManager的话，你会发现根本找不到这个文件。原因很简单，IT中的ArtManager只会从IT里的database.arz中提取文件，而堕落者的数据库记录文件是在TQ里的database.arz中（“萨堤 ~ 斥候”的数据库记录之所以会在IT的database.arz中找到，是因为IT的该文件与TQ的不同，因此IT和TQ的database.arz中各有一份）。解决的办法有几个：一是用TQ里的ArtManager建一个MOD，把该记录文件提取出来，再拷过来；二是用TQVault直接把TQ的database.arz全解开，以后需要用哪个拷哪个。这两个方法都需要手工拷贝，需要特别注意的是：千万不要把相对路径弄错（从record开头），否则游戏会在你的MOD中找不到该文件（这并不会出错，只不过游戏会继续使用原来的数据，而不是你修改过的）。还有一种办法是：先退出ArtManager，把TQ的database.arz拷贝到IT的database目录中（注意先把IT的database.arz改名），再进入ArtManager，就可以正确地导入这个文件了。当然导完以后别忘了把IT的database.arz还原回来。<BR><BR> 
+　　6、双击打开堕落者的数据库记录文件，在左侧选择Offensive Parameters\Offensive Influence\Stun，在右侧offensiveStunMin一项（眩晕伤害最小值）上双击，在弹出的窗口中把值从0.000000改为100。再到左侧选择Offensive Parameters\Offensive Duration\Total Resistance Reduction Absolute，在右侧offensiveTotalResistanceReductionAbsoluteDurationMin一项（点数降抗的最小持续时间）上双击，把值从3.000000改为10000。关闭并保存整个文件。<BR><BR> 
+　　7、Build。生成的自定义游戏中多了一个ARZ文件（文件名与MOD名相同），放在MOD生成目录中的CustomMaps\&lt;MOD名称&gt;\database目录下。数据库记录的源文件也被原封不动地拷贝到了这里，不过也都可以删除（不明白为什么ArtManager非要再拷过来一份）。<BR><BR> 
+　　进入该自定义游戏（选普通难度，以免受难度强化的干扰），拣起堕落者，可以看见堕落者的属性中增加了一条：100.0 秒 眩晕，同时抗性降低的持续时间也从3秒变成了10000秒。装备好堕落者后（如果是新建人物拿不起堕落者，可以先用TQDefiler修改一下人物属性），找到那个萨堤斥候，打一下测试眩晕的时间（由于给萨堤斥候加了50%的眩晕抗性，应该是眩晕50秒）。等50秒眩晕过后，再打一下，可以测出仍是眩晕50秒。由于已经把堕落者的点数降抗持续时间改到了10000秒，因此第二下打下去的时候，一定在点数降抗生效的持续时间内，因此，第二下仍然只眩晕50秒的结果表明：眩晕抗性是不能被点数降抗所降低的。<BR><BR> 
+　　从上述例子可以看出，使用MOD可以很轻易地进行各种精确地测试。对于测试工作来说，制作MOD是一种不可或缺的手段。<BR><BR> 
+　　通过上面的方式改出来的数据库记录是存储在自定义游戏里的，只有进入该自定义游戏时才能生效，而在主游戏或其它自定义游戏里，堕落者的数据并不会发生变化。假若想要让所有的游戏都使用修改后的堕落者数据，就必须直接修改database.arz。想做到这一点很简单——ArtManager在压缩打包的时候，采用如下策略：<BR><BR> 
+　　1、若压缩包文件（&lt;MOD名称&gt;.arz）不存在，则生成一个新的。<BR><BR> 
+　　2、若已经存在该压缩包文件，则往该压缩包里添加需要压缩的文件，如果新添加的文件在原压缩包里已经有了，就把原来的文件替换掉。<BR><BR> 
+　　利用这个特性，我们可以把database.arz先拷贝到该MOD生成目录中的database目录下，并将其改名为&lt;MOD名称&gt;.arz，然后，在ArtManager进行Build的时候，就会直接往该压缩包里添加或更新文件，等Build完成后，再把名称改回database.arz，并将之放回原位即可（注意先备份原始的database.arz）。不过，在ArtManager压缩完成后，它会再检查一遍压缩包，如果发现压缩包里存在一些“多余的”（你的源文件里没有的）文件的话，它会问你是否要把这些文件从压缩包里删除，这时一定要回答“否”（否则压缩包里就只剩你修改过的几个文件了）。拿上述例子来说，假若你把IT中的database.arz用这个方法改掉，则database.arz中“萨堤 ~ 斥候”的数据被更新，而堕落者的数据却是新添加进去的（因为堕落者的数据本来在TQ的database.arz中），因此，改完后的database.arz会比原来稍微大一点点。假若你回头玩TQ，堕落者和“萨堤 ~ 斥候”都还是原来的数据。<BR><BR> 
+　　通过上述方法，不仅可以修改游戏的数据库，应该还可以修改游戏的其它资源（不过我都没试过）。这就是制作前文所述的第2种MOD的方法。<BR><BR> 
+　　前一篇中曾经提到过，对于某些数据库记录，游戏是不会到自定义游戏里去调用的，即使你确实把同名的记录放在自定义游戏里也没用，例如技能的数据库记录。假若想要测试技能的一些特性，例如想把震荡打击的眩晕伤害改到100秒来测试，就必须采用直接改database.arz的方式来进行。因此，对于测试工作来说，直接修改游戏数据的方法也是必须掌握的。<!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="TQ解析心得001.htm">上一页</a> <a href="TQ解析心得.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="TQ解析心得003.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

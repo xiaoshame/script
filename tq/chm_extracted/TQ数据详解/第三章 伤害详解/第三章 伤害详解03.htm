@@ -1,0 +1,240 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>第四节 主动型持续杀伤伤害</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="第三章%20伤害详解02.htm">上一页</a> <a href="第三章%20伤害详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第三章%20伤害详解04.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">第四节 主动型持续杀伤伤害</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　作用同样是使对方生命值下降，而且没有任何其它副作用。但这类是在攻击完成后的一定持续时间内使被攻击方的生命不断减少，而不是在攻击发生的瞬间一次性减少。<BR><BR> 
+　　所有这类伤害的主伤害数值都是每秒伤害值，而不是界面上显示的总伤害值（每秒伤害值 = 总伤害值 / 持续时间）。所有这类伤害的次伤害数值都是持续时间。<BR><BR> 
+　　注意：<BR><BR> 
+　　当持续时间为一秒时，持续时间部分：“在Y.Y秒内”（over Y.Y Seconds）在界面上会被写成“每秒”（per Second）。<BR><BR> 
+　　所有这类伤害都有一个唯一的相应加成。加成形式有两种，一种是只增加主伤害数值（即每秒伤害值），另一种在增加主伤害数值的基础上，还增加次伤害数值（持续时间）。增加持续时间的这部分称为持续时间加成。<BR><BR> 
+　　本类伤害的实施方式见第二章。<BR><BR> 
+　　本类共有7种。对应加成也是7种。<BR><BR> 
+　　1、　　撕裂伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 撕裂伤害在Y.Y秒内<BR><BR> 
+　　界面英文：XX Wound Damage over Y.Y Seconds<BR><BR> 
+　　注：<BR><BR> 
+　　该基础伤害只能出现在技能中（在装备上无效）。<BR><BR> 
+　　撕裂加成形式：<BR><BR> 
+　　界面中文：+XX% 撕裂伤害<BR><BR> 
+　　+XX% 撕裂伤害 增加 +YY% 的持续时间<BR><BR> 
+　　界面英文：+XX% Wound Damage<BR><BR> 
+　　+XX% Wound Damage with +YY% Improved Duration<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 撕裂加成% + 所有伤害加成%)<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 撕裂持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：物理抗性。<BR><BR> 
+　　被攻击方有效持续时间降低：撕裂持续时间降低。<BR><BR> 
+　　2、　　冰冻伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 冰冻伤害在Y.Y秒内<BR><BR> 
+　　界面英文：XX Frostburn Damage over Y.Y Seconds<BR><BR> 
+　　冰冻加成形式：<BR><BR> 
+　　界面中文：+XX% 冰冻伤害<BR><BR> 
+　　+XX% 冰冻伤害 增加 +YY% 的持续时间<BR><BR> 
+　　界面英文：+XX% Frostburn Damage<BR><BR> 
+　　+XX% Frostburn Damage with +YY% Improved Duration<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 冰冻加成% + 所有伤害加成%) * (1 + 智力 / 500)<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 冰冻持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：冰冷抗性。<BR><BR> 
+　　被攻击方有效持续时间降低：冰冻持续时间降低。<BR><BR> 
+　　3、　　燃烧伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 燃烧伤害在Y.Y秒内<BR><BR> 
+　　界面英文：XX Burn Damage over Y.Y Seconds<BR><BR> 
+　　燃烧加成形式：<BR><BR> 
+　　界面中文：+XX% 燃烧伤害<BR><BR> 
+　　+XX% 燃烧伤害 增加 +YY% 的持续时间<BR><BR> 
+　　界面英文：+XX% Burn Damage<BR><BR> 
+　　+XX% Burn Damage with +YY% Improved Duration<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 燃烧加成% + 所有伤害加成%) * (1 + 智力 / 500)<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 燃烧持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：火焰抗性。<BR><BR> 
+　　被攻击方有效持续时间降低：燃烧持续时间降低。<BR><BR> 
+　　4、　　电击伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 电击伤害在Y.Y秒内<BR><BR> 
+　　界面英文：XX Electrical Burn Damage over Y.Y Seconds<BR><BR> 
+　　电击加成形式：<BR><BR> 
+　　界面中文：+XX% 电击伤害<BR><BR> 
+　　+XX% 电击伤害 增加 +YY% 的持续时间<BR><BR> 
+　　界面英文：+XX% Electrical Burn Damage<BR><BR> 
+　　+XX% Electrical Burn Damage with +YY% Improved Duration<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 电击加成% + 所有伤害加成%) * (1 + 智力 / 500)<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 电击持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：闪电抗性。<BR><BR> 
+　　被攻击方有效持续时间降低：电击持续时间降低。<BR><BR> 
+　　5、　　持续毒素伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 毒素伤害在Y.Y秒内<BR><BR> 
+　　界面英文：XX Poison Damage over Y.Y Seconds<BR><BR> 
+　　持续性毒素加成形式：<BR><BR> 
+　　界面中文：+XX% 毒素伤害<BR><BR> 
+　　+XX% 毒素伤害 增加 +YY% 的持续时间<BR><BR> 
+　　界面英文：+XX% Poison Damage<BR><BR> 
+　　+XX% Poison Damage with +YY% Improved Duration<BR><BR> 
+　　注意：<BR><BR> 
+　　无持续时间加成部分时，该加成与“瞬间性毒素加成”在界面上无法区分。但这两者完全不同，“持续性毒素加成”对“瞬间毒素伤害”无效，而“瞬间性毒素加成”也对“持续毒素伤害”无效。在原始游戏中，“瞬间性毒素加成”基本不出现。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 持续性毒素加成% + 所有伤害加成%)<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 持续性毒素持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：毒素抗性。<BR><BR> 
+　　被攻击方有效持续时间降低：毒素持续时间降低。<BR><BR> 
+　　6、　　生命流失伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 衰老在Y.Y秒内<BR><BR> 
+　　界面英文：XX Vitality Decay over Y.Y Seconds<BR><BR> 
+　　生命流失加成形式：<BR><BR> 
+　　界面中文：+XX% 衰老<BR><BR> 
+　　+XX% 衰老 增加 +YY% 的持续时间<BR><BR> 
+　　界面英文：+XX% Vitality Decay<BR><BR> 
+　　+XX% Vitality Decay with +YY% Improved Duration<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 生命流失加成% + 所有伤害加成%)<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 生命流失持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：活力抗性。<BR><BR> 
+　　被攻击方有效持续时间降低：生命流失持续时间降低。<BR><BR> 
+　　7、　　流血伤害<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：XX 流血伤害在Y.Y秒内<BR><BR> 
+　　界面英文：XX Bleeding Damage over Y.Y Seconds<BR><BR> 
+　　流血加成形式：<BR><BR> 
+　　界面中文：+XX% 流血伤害<BR><BR> 
+　　+XX% 流血伤害 增加 +YY% 的持续时间<BR><BR> 
+　　界面英文：+XX% Bleeding Damage<BR><BR> 
+　　+XX% Bleeding Damage with +YY% Improved Duration<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 流血加成% + 所有伤害加成%)<BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　持续时间 = 基础伤害持续时间 * (1 + 流血持续时间加成%)<BR><BR> 
+　　被攻击方有效抗性：流血抗性。<BR><BR> 
+　　被攻击方有效持续时间降低：流血持续时间降低。 <!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="第三章%20伤害详解02.htm">上一页</a> <a href="第三章%20伤害详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第三章%20伤害详解04.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

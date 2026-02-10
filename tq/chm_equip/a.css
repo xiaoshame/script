@@ -1,0 +1,25 @@
+﻿
+*   {font-family: 'Times New Roman', '微软雅黑' ; font-size: 11pt}
+a   { text-decoration:none; }
+
+th { background-color: lightgray }
+table tr th { text-align: center}
+
+*.n {background-color: #f4f6f7}
+*.g {background-color: #d4efdf}
+*.e {background-color: #a1d6f1}
+*.l {background-color: #d7bde2}
+*.m {background-color: #fcf3cf}
+
+*.div-inline {float:left}
+*.div-inline th { white-space: nowrap; }
+
+/* *.div-inline a { font-family: 'SimSun'; font-size: 13pt }
+*.div-inline th { font-family: 'SimSun'; font-size: 13pt } */
+
+*.longtable {
+    max-height:300px;
+    width:100%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}

@@ -1,0 +1,201 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>第六节 主动型状态伤害</title>
+<style>
+<!--
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "隶书";
+	color: #846317;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 12pt;
+	font-family: "黑体";
+	color: #846317;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+	font-size: 12pt;
+	font-family: "宋体";
+	line-height: 16pt;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+-->
+</style>
+</head>
+<body bgcolor="#775915">
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="942" height="537">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td align="center" height="500" width="940" valign="top">
+<div align="center">
+<center>
+<table cellpadding="0" cellspacing="0" width="856" id="table1" height="46">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td height="46" align="center" valign="bottom" width="856">
+		<img border="0" src="TQ模板1.jpg" width="860" height="46"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" id="table2">
+<tr> 
+<td width="90%" bgcolor="#000000">
+<table border="0" cellspacing="1" width="100%"
+    cellpadding="6" height="150" id="table3">
+<tr> 
+<td width="100%" height="30" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table4">
+<tr> 
+<td width="61%" height="13"><p class="9">&nbsp;</td>
+<td width="39%"><p align="right" class="9"><a href="第三章%20伤害详解04.htm">上一页</a> <a href="第三章%20伤害详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第三章%20伤害详解06.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+<tr bgcolor="#DFE0D1"> 
+<td width="100%" height="21" bgcolor="#F3E2BA"> <div align="center" class="title_page">
+	<font face="黑体" size="5">第六节 主动型状态伤害</font></div></td>
+</tr>
+<tr bgcolor="#F5F7EE"> 
+<td width="100%" height="51" bgcolor="#FBF3E3">
+<table width="100%" height="261" border="0" cellpadding="0" cellspacing="0" id="table5">
+<tr>
+<td height="230" valign="top"><DIV class="content" align="left"> 
+<font style="font-size: 16pt"><br>
+</font>
+<font size="3" face="华文中宋"><!--HTMLBUILERPART0-->　　本类伤害会导致被攻击方进入一个特定的状态，通常是不能行动、不能攻击等。该状态并非永久性的，只能持续一定的时间，而这个持续时间即为该类伤害的主伤害数值。本类伤害均无次伤害数值。<BR><BR> 
+　　本类伤害不能被反弹。<BR><BR> 
+　　本类共有7种，对应伤害加成2种。<BR><BR> 
+　　1、　　眩晕<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：X.X 秒眩晕<BR><BR> 
+　　界面英文：X.X second(s) of Stun<BR><BR> 
+　　眩晕加成形式：<BR><BR> 
+　　界面中文：+XX% 眩晕伤害<BR><BR> 
+　　界面英文：+XX% Stun Damage<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 眩晕加成%) <BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　被攻击方有效抗性：眩晕抗性。<BR><BR> 
+　　伤害实施：导致被攻击方在一定时间内无法行动。<BR><BR> 
+　　2、　　冰封<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：X.X 秒冰冻<BR><BR> 
+　　界面英文：X.X second(s) of Freeze<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　被攻击方有效抗性：冰封抗性。<BR><BR> 
+　　伤害实施：导致被攻击方在一定时间内无法行动。<BR><BR> 
+　　3、　　石化<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：X.X 秒石化<BR><BR> 
+　　界面英文：X.X second(s) of Petrify<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　被攻击方有效抗性：石化抗性。<BR><BR> 
+　　伤害实施：导致被攻击方在一定时间内无法行动。<BR><BR> 
+　　4、　　混乱<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：X.X 秒混乱<BR><BR> 
+　　界面英文：X.X second(s) of Confusion<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　被攻击方有效抗性：混乱抗性。<BR><BR> 
+　　伤害实施：<BR><BR> 
+　　导致被攻击方在一定时间内失去攻击目标，进行胡乱移动和攻击。当对方处于混乱状态时，假若主动凑到其发出的攻击的攻击范围内，仍然会造成伤害。该伤害对玩家无效。<BR><BR> 
+　　5、　　恐惧<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：X.X 秒恐惧<BR><BR> 
+　　界面英文：X.X second(s) of Fear<BR><BR> 
+　　注：<BR><BR> 
+　　该基础伤害只能出现在技能中（在装备上无效）。<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　被攻击方有效抗性：恐惧抗性。<BR><BR> 
+　　伤害实施：导致被攻击方在一定时间内无法发动攻击。该伤害对玩家无效。<BR><BR> 
+　　6、　　意识控制<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：X.X 秒意识控制<BR><BR> 
+　　界面英文：X.X second(s) of Mind Control<BR><BR> 
+　　相应加成：无。<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　主伤害数值 = 基础伤害主伤害数值 * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　被攻击方有效抗性：意识控制抗性。<BR><BR> 
+　　伤害实施：<BR><BR> 
+　　导致被攻击方在一定时间内替攻击方战斗（类似攻击方的宠物）。该伤害只有在攻击方等级大于或等于被攻击方等级减五的时候才会有效。该伤害对玩家无效。<BR><BR> 
+　　7、　　昏睡<BR><BR> 
+　　基础伤害形式：<BR><BR> 
+　　界面中文：X.X 秒 昏睡<BR><BR> 
+　　界面英文：X.X second(s) of Sleep<BR><BR> 
+　　昏睡加成形式：<BR><BR> 
+　　界面中文：+XX% 昏睡伤害<BR><BR> 
+　　界面英文：+XX% Sleep Damage<BR><BR> 
+　　伤害输出计算：<BR><BR> 
+　　令：A = 基础伤害主伤害数值 * (1 + 昏睡加成%) <BR><BR> 
+　　主伤害数值 = A * (1 + 特定种族伤害加成%) * (1 - 百分比降低全部伤害%) - 降低全部伤害<BR><BR> 
+　　被攻击方有效抗性：昏睡抗性。<BR><BR> 
+　　伤害实施：<BR><BR> 
+　　导致被攻击方在一定时间内无法行动，但一旦受到攻击，则该状态终止。另外，向被攻击方施展削弱敌方类型的技能，也同样会使被攻击方的昏睡状态终止。不过，削弱敌方技能本身所附带的攻击（每秒发动一次）则不会导致被攻击方的昏睡状态终止。 <!--/HTMLBUILERPART0--></font><font style="font-size: 16pt"><br>
+<br>
+<br>
+</font>
+<br>
+</DIV></td>
+</tr>
+<tr>
+<td height="25" align="center"><img src="N01.GIF" width="600" height="17"></td>
+</tr>
+</table></td>
+</tr>
+<tr> 
+<td width="100%" height="27" background="PAPER10.JPG" bgcolor="#F7F7F7">
+<table border="0" cellpadding="0"
+        cellspacing="0" width="100%" id="table6">
+<tr> 
+<td width="61%"><p class="9"><font color="#CCCCCC">&nbsp;</font></font></td>
+<td width="39%"><p align="right" class="9"><a href="第三章%20伤害详解04.htm">上一页</a> <a href="第三章%20伤害详解.htm" title="目录页"><img src="contents.gif" border=0 align="absmiddle"></a> <a href="第三章%20伤害详解06.htm">下一页</a></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" id="table7" width="769" height="44">
+	<!-- MSTableType="layout" -->
+	<tr>
+		<td valign="top" align="center" height="44" width="769">
+		<img border="0" src="TQ模板3.jpg" width="853" height="49"></td>
+	</tr>
+</table>
+</center>
+</div></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

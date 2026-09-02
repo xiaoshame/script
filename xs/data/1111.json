@@ -1,0 +1,86 @@
+{
+    "哔哩哔哩番剧": {
+        "chapterContent": {
+            "validConfig": "",
+            "responseFormatType": "json",
+            "content": "result/dash/video[1]/base_url| result/dash/video[1]/baseUrl",
+            "host": "https://api.bilibili.com/",
+            "parserID": "DOM",
+            "actionID": "chapterContent"
+        },
+        "enable": 1,
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "authorId": "",
+        "bookDetail": {
+            "actionID": "bookDetail",
+            "parserID": "DOM"
+        },
+        "bookWorld": {
+            "索引": {
+                "lastChapterTitle": "index_show",
+                "responseFormatType": "json",
+                "bookName": "title",
+                "requestInfo": "https://api.bilibili.com/pgc/season/index/result?season_version=-1&spoken_language_type=-1&area=-1&is_finish=-1&copyright=-1&season_status=-1&season_month=-1&year=-1&style_id=-1&order=3&st=1&sort=0&page=1&season_type=1&pagesize=20&type=1",
+                "host": "https://api.bilibili.com/",
+                "actionID": "bookWorld",
+                "detailUrl": "season_id|@js:\nreturn 'https://api.bilibili.com/pgc/view/web/season?ep_id=' + result;",
+                "cover": "cover",
+                "validConfig": "",
+                "parserID": "DOM",
+                "list": "data/list",
+                "status": "is_finish"
+            }
+        },
+        "shudanList": {},
+        "sourceType": "video",
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "weight": "1",
+        "sourceName": "哔哩哔哩番剧",
+        "sourceUrl": "https://api.bilibili.com/",
+        "miniAppVersion": "2.52.0",
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1637841035.261277",
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "searchBook": {
+            "cat": "styles",
+            "author": "staff",
+            "responseFormatType": "json",
+            "bookName": "title||@js:\nvar one = result.replace('<em class=\\\"keyword\\\">', '');\nreturn one.replace('<\\/em>', '');",
+            "desc": "desc",
+            "requestInfo": "@js:\n\nlet httpParams={'keyword':params.keyWord, 'page_num':params.pageIndex};\n\nlet url = 'http://api.bilibili.com/x/web-interface/search/all/v2';\nreturn {'url':url , 'POST':false, 'httpParams':httpParams};",
+            "host": "https://api.bilibili.com/",
+            "actionID": "searchBook",
+            "detailUrl": "eps[0]/id||@js:\nreturn 'https://api.bilibili.com/pgc/view/web/season?ep_id=' + result;",
+            "cover": "cover",
+            "validConfig": "",
+            "parserID": "DOM",
+            "list": "data/result[6]/data"
+        },
+        "chapterList": {
+            "actionID": "chapterList",
+            "validConfig": "",
+            "title": "long_title",
+            "host": "https://api.bilibili.com/",
+            "list": "result/episodes",
+            "responseFormatType": "json",
+            "parserID": "DOM",
+            "url": "@js:\nreturn 'https://api.bilibili.com/pgc/player/web/playurl?avid=' + result.aid + '&bvid=' + result.bvid + '&cid=' + result.cid + '&qn=0&fnver=0&fnval=80&fourk=1&ep_id=' + result.id;"
+        }
+    }
+}

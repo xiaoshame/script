@@ -1,0 +1,104 @@
+{
+    "猫猫小说网": {
+        "chapterContent": {
+            "actionID": "chapterContent",
+            "content": "//div[@id=\"booktxt\"]",
+            "validConfig": "",
+            "moreKeys": {
+                "maxPage": 7
+            },
+            "host": "https://www.maotxt.net",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "nextPageUrl": "//a[contains(text(),'下一页')]/@href||@js:\n\nif(result){\nvar pageid=params.pageIndex+1;\nvar url = params.queryInfo.url.replace(/.html/,\"\");\n\nurl = url+\"_\"+pageid+\".html\";\n\nparams.nativeTool.log(url) ;\nreturn url;\n\n}else{\n\nreturn \"\"\n}"
+        },
+        "enable": 1,
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "bookDetail": {
+            "validConfig": "",
+            "status": "//div[@id=\"info\"]/p[4] ||@js: return result.replace(/状态：/, \"\");",
+            "actionID": "bookDetail",
+            "wordCount": "//div[@id=\"info\"]/p[3] ||@js: return result.replace(/字数：/, \"\");",
+            "lastChapterTitle": "//div[@id=\"info\"]/p[6]/a",
+            "host": "https://www.maotxt.net",
+            "cat": "//div[@class=\"con_top\"]/a[2]",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "desc": "//div[@id=\"intro\"]/text()[1]"
+        },
+        "shudanList": {},
+        "bookWorld": {
+            "cat": {
+                "author": "//dl/div/a",
+                "responseFormatType": "html",
+                "bookName": "//dl/dt/a",
+                "requestInfo": "@js:\nlet {_type}=params.filters\nlet url=`https://www.maotxt.net/sort/${_type}/${params.pageIndex}/`;\n\nreturn {url:url,'httpHeaders':config.httpHeaders}",
+                "host": "https://www.maotxt.net",
+                "actionID": "bookWorld",
+                "moreKeys": {
+                    "pageSize": 24,
+                    "requestFilters": "_type\n玄幻::1\n武侠::2\n都市::3\n历史::4\n网游::5\n科幻::6\n恐怖::7\n女生::8\n其他::9"
+                },
+                "detailUrl": "//dl/dt/a/@href",
+                "validConfig": "",
+                "list": "//div[@id=\"hotcontent\"][2]/div/div",
+                "_sIndex": 0,
+                "parserID": "DOM",
+                "cover": "//img/@data-original"
+            }
+        },
+        "sourceUrl": "https://www.maotxt.net",
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "weight": "9999",
+        "sourceName": "猫猫小说网",
+        "miniAppVersion": "2.53.2",
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1703216548.806952",
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "searchBook": {
+            "author": "//dl/div/a",
+            "responseFormatType": "html",
+            "bookName": "//dl/dt/a",
+            "requestInfo": "@js:\nlet url = 'https://www.maotxt.net/search/';\nreturn {'url':url, 'POST':true, 'webView':true,'httpParams':{'searchkey':params.keyWord}};",
+            "host": "https://www.maotxt.net",
+            "actionID": "searchBook",
+            "detailUrl": "//dl/dt/a/@href",
+            "wordCount": "//dl/div/em[1]",
+            "validConfig": "",
+            "cover": "//img/@data-original",
+            "parserID": "DOM",
+            "list": "//div[@class=\"l rank\"]/div"
+        },
+        "chapterList": {
+            "actionID": "chapterList",
+            "validConfig": "",
+            "url": "//a/@href",
+            "requestInfo": "@js:\nreturn result.replace('book', 'indexlist');",
+            "title": "//dd",
+            "moreKeys": {
+                "maxPage": 500
+            },
+            "host": "https://www.maotxt.net",
+            "list": "//div[@id=\"content_1\"]/a",
+            "responseFormatType": "html",
+            "parserID": "DOM",
+            "nextPageUrl": "//div[@id=\"list\"]//div/a[2][text()=\"下一页\"]/@href"
+        }
+    }
+}

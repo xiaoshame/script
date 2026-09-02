@@ -1,0 +1,45 @@
+{
+    "斗鱼影视(芒果TV授权)": {
+        "sourceName": "斗鱼影视(芒果TV授权)",
+        "sourceType": "video",
+        "sourceUrl": "http://127.0.0.1:8080/",
+        "host": "http://127.0.0.1:8080/",
+        "enable": 1,
+        "weight": "1",
+        "responseFormatType": "json",
+        "parserID": "DOM",
+
+        "searchBook": {
+            "actionID": "searchBook",
+            "parserID": "DOM",
+            "responseFormatType": "json",
+            "host": "http://127.0.0.1:8080/",
+            "requestInfo": "@js:\nlet url = 'http://127.0.0.1:8080/search';\nlet httpParams = {'wd': params.keyWord, 'limit': 20};\nreturn {'url': url, 'POST': false, 'httpParams': httpParams};",
+            "list": "data/list",
+            "bookName": "bookName",
+            "cover": "cover",
+            "desc": "desc",
+            "author": "author",
+            "lastChapterTitle": "lastChapterTitle",
+            "detailUrl": "detailUrl"
+        },
+
+        "chapterList": {
+            "actionID": "chapterList",
+            "parserID": "DOM",
+            "responseFormatType": "json",
+            "host": "http://127.0.0.1:8080/",
+            "list": "data/chapters",
+            "title": "title",
+            "url": "streamUrl"
+        },
+
+        "chapterContent": {
+            "actionID": "chapterContent",
+            "parserID": "DOM",
+            "responseFormatType": "json",
+            "host": "http://127.0.0.1:8080/",
+            "content": "data/url"
+        }
+    }
+}

@@ -1,0 +1,180 @@
+{
+    "x-猫眼看书": {
+        "bookDetail": {
+            "cat": "$..className\r\n||@js:\r\nreturn result.join(\" \")",
+            "lastChapterTitle": "data/lastChapter/chapterName",
+            "responseFormatType": "json",
+            "httpHeaders": {
+                "client-device": "36ecb4988a6b42b1b227541240a4a755",
+                "User-Agent": "okhttp/4.9.2",
+                "client-version": "2.3.0",
+                "client-source": "android",
+                "client-name": "app.maoyankanshu.novel",
+                "Authorization": "bearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkuam1sbGRzYy5jb21cL2F1dGhcL3RoaXJkIiwiaWF0IjoxNjY5Nzk2MzQyLCJleHAiOjE3NjMxMDgzNDIsIm5iZiI6MTY2OTc5NjM0MiwianRpIjoidzlVbkV0Z0FVYzlic3JjYiIsInN1YiI6NDYxMTg5LCJwcnYiOiJhMWNiMDM3MTgwMjk2YzZhMTkzOGVmMzBiNDM3OTQ2NzJkZDAxNmM1In0.MPr_U2LLEI6ZoA7icHITs83dV4NDlNpMKNxFGVBA6Xk",
+                "client-brand": "HONOR"
+            },
+            "requestInfo": "@js:\r\n\r\nlet url = \"/novel/\" + result\r\nlet hp = {\r\n    \"isSearch\": 1,\r\n}\r\n\r\nreturn {\r\n    \"url\": url,\r\n    \"httpParams\": hp,\r\n    \"httpHeaders\": config.httpHeaders,\r\n    \"cacheTime\": 600,\r\n}",
+            "host": "http://api.jxgtzxc.com",
+            "actionID": "bookDetail",
+            "desc": "@js:\r\nlet male = result.data.channel == 1 ? \"[男频]\" : \"[女频]\"\r\nreturn `${male}[${result.data.averageScore}分]${result.data.summary}`",
+            "wordCount": "$.wordNum",
+            "validConfig": "",
+            "parserID": "DOM",
+            "status": "$..isComplete\r\n||@js:\r\nreturn result.join(\"\")"
+        },
+        "weight": "9999",
+        "miniAppVersion": "2.53.2",
+        "chapterList": {
+            "actionID": "chapterList",
+            "validConfig": "",
+            "updateTime": "$.data.list[-1].updatedAt",
+            "requestInfo": "@js:\r\nreturn `/novel/${result}/chapters`",
+            "title": "$.chapterName",
+            "host": "http://api.jxgtzxc.com",
+            "httpHeaders": {
+                "client-device": "36ecb4988a6b42b1b227541240a4a755",
+                "User-Agent": "okhttp/4.9.2",
+                "client-version": "2.3.0",
+                "client-source": "android",
+                "client-name": "app.maoyankanshu.novel",
+                "Authorization": "bearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkuam1sbGRzYy5jb21cL2F1dGhcL3RoaXJkIiwiaWF0IjoxNjY5Nzk2MzQyLCJleHAiOjE3NjMxMDgzNDIsIm5iZiI6MTY2OTc5NjM0MiwianRpIjoidzlVbkV0Z0FVYzlic3JjYiIsInN1YiI6NDYxMTg5LCJwcnYiOiJhMWNiMDM3MTgwMjk2YzZhMTkzOGVmMzBiNDM3OTQ2NzJkZDAxNmM1In0.MPr_U2LLEI6ZoA7icHITs83dV4NDlNpMKNxFGVBA6Xk",
+                "client-brand": "HONOR"
+            },
+            "list": "$.data.list",
+            "responseFormatType": "json",
+            "parserID": "DOM",
+            "url": "$.path \r\n||@js:\r\nlet ids = params.nativeTool.dataByAesDecryptWithBase64StringWithKeyWithIv(result, \"f041c49714d39908\", \"0123456789abcdef\")\r\nreturn params.nativeTool.stringByObject(ids)"
+        },
+        "searchShudan": {
+            "actionID": "searchShudan",
+            "parserID": "DOM"
+        },
+        "relatedWord": {
+            "actionID": "relatedWord",
+            "parserID": "DOM"
+        },
+        "enable": 1,
+        "sourceName": "x-猫眼看书",
+        "sourceType": "text",
+        "sourceUrl": "http://api.jxgtzxc.com",
+        "httpHeaders": {
+            "client-device": "36ecb4988a6b42b1b227541240a4a755",
+            "User-Agent": "okhttp/4.9.2",
+            "client-version": "2.3.0",
+            "client-source": "android",
+            "client-name": "app.maoyankanshu.novel",
+            "Authorization": "bearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkuam1sbGRzYy5jb21cL2F1dGhcL3RoaXJkIiwiaWF0IjoxNjY5Nzk2MzQyLCJleHAiOjE3NjMxMDgzNDIsIm5iZiI6MTY2OTc5NjM0MiwianRpIjoidzlVbkV0Z0FVYzlic3JjYiIsInN1YiI6NDYxMTg5LCJwcnYiOiJhMWNiMDM3MTgwMjk2YzZhMTkzOGVmMzBiNDM3OTQ2NzJkZDAxNmM1In0.MPr_U2LLEI6ZoA7icHITs83dV4NDlNpMKNxFGVBA6Xk",
+            "client-brand": "HONOR"
+        },
+        "shudanDetail": {
+            "actionID": "shudanDetail",
+            "parserID": "DOM"
+        },
+        "lastModifyTime": "1735090558.286214",
+        "searchBook": {
+            "author": "$.authorName\r\n||@js:\r\nreturn result.replace(\"辰东\", \"辰東\")",
+            "responseFormatType": "json",
+            "bookName": "$.novelName",
+            "httpHeaders": {
+                "client-device": "36ecb4988a6b42b1b227541240a4a755",
+                "User-Agent": "okhttp/4.9.2",
+                "client-version": "2.3.0",
+                "client-source": "android",
+                "client-name": "app.maoyankanshu.novel",
+                "Authorization": "bearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkuam1sbGRzYy5jb21cL2F1dGhcL3RoaXJkIiwiaWF0IjoxNjY5Nzk2MzQyLCJleHAiOjE3NjMxMDgzNDIsIm5iZiI6MTY2OTc5NjM0MiwianRpIjoidzlVbkV0Z0FVYzlic3JjYiIsInN1YiI6NDYxMTg5LCJwcnYiOiJhMWNiMDM3MTgwMjk2YzZhMTkzOGVmMzBiNDM3OTQ2NzJkZDAxNmM1In0.MPr_U2LLEI6ZoA7icHITs83dV4NDlNpMKNxFGVBA6Xk",
+                "client-brand": "HONOR"
+            },
+            "requestInfo": "@js:\r\n\r\nlet url = \"/search\"\r\nlet hp = {\r\n    \"keyword\": params.keyWord,\r\n    \"page\": params.pageIndex,\r\n}\r\n\r\nreturn {\r\n    \"url\": url,\r\n    \"httpParams\": hp,\r\n    \"httpHeaders\": config.httpHeaders,\r\n    \"cacheTime\": 600,\r\n}",
+            "host": "http://api.jxgtzxc.com",
+            "actionID": "searchBook",
+            "detailUrl": "$.novelId",
+            "cover": "$.cover",
+            "validConfig": "",
+            "list": "$.data",
+            "parserID": "DOM"
+        },
+        "chapterContent": {
+            "validConfig": "",
+            "content": "$.content\n||@js:\r\nreturn ad(result)\r\nfunction ad(str) {\r\n    let ad_reg = /(精校完本小说，尽在|请收藏).*?c.?o.?m|[\\(|（]本章未完.*?[）|\\)]|本章.{1,50}(?:加载完毕|继续阅读)|为您提供.{1,50}(?:最快更新|保存好书签.)|第.{1,10}章.{1,50}(请收藏.{0,3}|免费阅读.{0,3})|.{1,10}免?费?阅?读.*?请收藏?|正在手打中.{1,50}获取最新更新.|以下是为你提供的.{1,50}敬请欣赏！|看《.{1,50}浏览器输入.{1,50}查看?|看.*?章节.*?更新越快.|温馨提示.{1,50}阅读模式.|首发更新.*?本章未完.{1,2}|网页版章节.*?阅读最新内容|请退出转码页面.*?最新章节?|.{1,3}为你提供最快的.*?更新.{1,10}|.{1,10}提醒您.看?完?记?得?收?藏.*?(\\S|\\s).*?畅阅无阻.{0,4}|.{1,10}向你推荐他的其他作品.*?希望你也喜欢|.喜欢看.*?完整章节?|《收藏.*?完本小说》|.{0,2}(神|精).{0,2}(仙|华).{0,2}书.{0,2}阁.{1,50}(首发更新|无错首发|\\s最新章节|最快更新).{0,2}|紧急通知.*?收藏书签.|@(神|精)?(仙|华)?书?阁|『章节有误.*?』|「.*?退?出?阅?读?模?式.*?」|百?度?搜?索.{1,50}(?:秒?更|首?发|打造你的书库.)|一?秒?记?住.{1,100}不?迷?路.|(。|！|，|!).{2,10}最新链接.{1,50}[\"|\\/]|【.*?(野*果*阅*读|换*源*app)(?:\\S|\\s)*?】|无错更新.|147小说|1秒记住.*?网.*?网址.*?。$|手机阅读.{1,50}m|(\\(|（)http.*?html(\\)|）)|a？h?z?w?x?\\.c?o?m.{0,20}(秒更|首发)|a?h?1?2?3?z\\.c?o?m|http:..m.ahzww.net|ahwzw.net.*?爱*好*中*文*网|.{0,7}s?h?e?n?x?i?a?n?f?a?k?a.t?o?p?|\\(txt.*?www.*?com\\)/gi\r\n    return str.replace(ad_reg, \"\")\r\n}",
+            "actionID": "chapterContent",
+            "host": "http://api.jxgtzxc.com",
+            "httpHeaders": {
+                "client-device": "36ecb4988a6b42b1b227541240a4a755",
+                "User-Agent": "okhttp/4.9.2",
+                "client-version": "2.3.0",
+                "client-source": "android",
+                "client-name": "app.maoyankanshu.novel",
+                "Authorization": "bearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkuam1sbGRzYy5jb21cL2F1dGhcL3RoaXJkIiwiaWF0IjoxNjY5Nzk2MzQyLCJleHAiOjE3NjMxMDgzNDIsIm5iZiI6MTY2OTc5NjM0MiwianRpIjoidzlVbkV0Z0FVYzlic3JjYiIsInN1YiI6NDYxMTg5LCJwcnYiOiJhMWNiMDM3MTgwMjk2YzZhMTkzOGVmMzBiNDM3OTQ2NzJkZDAxNmM1In0.MPr_U2LLEI6ZoA7icHITs83dV4NDlNpMKNxFGVBA6Xk",
+                "client-brand": "HONOR"
+            },
+            "responseFormatType": "json",
+            "parserID": "DOM"
+        },
+        "shupingList": {
+            "actionID": "shupingList",
+            "parserID": "DOM"
+        },
+        "shudanList": {},
+        "authorId": "",
+        "bookWorld": {
+            "排行": {
+                "author": "$.authorName\r\n||@js:\r\nreturn result.replace(\"辰东\", \"辰東\")",
+                "responseFormatType": "json",
+                "bookName": "$.novelName",
+                "httpHeaders": {
+                    "client-device": "36ecb4988a6b42b1b227541240a4a755",
+                    "User-Agent": "okhttp/4.9.2",
+                    "client-version": "2.3.0",
+                    "client-source": "android",
+                    "client-name": "app.maoyankanshu.novel",
+                    "Authorization": "bearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkuam1sbGRzYy5jb21cL2F1dGhcL3RoaXJkIiwiaWF0IjoxNjY5Nzk2MzQyLCJleHAiOjE3NjMxMDgzNDIsIm5iZiI6MTY2OTc5NjM0MiwianRpIjoidzlVbkV0Z0FVYzlic3JjYiIsInN1YiI6NDYxMTg5LCJwcnYiOiJhMWNiMDM3MTgwMjk2YzZhMTkzOGVmMzBiNDM3OTQ2NzJkZDAxNmM1In0.MPr_U2LLEI6ZoA7icHITs83dV4NDlNpMKNxFGVBA6Xk",
+                    "client-brand": "HONOR"
+                },
+                "requestInfo": "@js:\r\n\r\nlet { _type, _male } = params.filters\r\nlet url = `/module/rank?type=${_type}&channel=${_male}&page=${params.pageIndex}`\r\n\r\nreturn {\r\n    \"url\": url,\r\n    \"httpHeaders\": config.httpHeaders,\r\n    \"cacheTime\": 600,\r\n}",
+                "host": "http://api.jxgtzxc.com",
+                "actionID": "bookWorld",
+                "detailUrl": "$.novelId",
+                "cover": "$.cover",
+                "moreKeys": {
+                    "pageSize": 15,
+                    "requestFilters": "_type\n必读榜::1\n潜力榜::5\n完本榜::2\n更新榜::3\n搜索榜::4\n评论榜::6\n\n_male\n男生::1\n女生::2\n"
+                },
+                "parserID": "DOM",
+                "_sIndex": 0,
+                "list": "$.data",
+                "validConfig": ""
+            },
+            "分类": {
+                "author": "$.authorName\r\n||@js:\r\nreturn result.replace(\"辰东\", \"辰東\")",
+                "responseFormatType": "json",
+                "bookName": "$.novelName",
+                "httpHeaders": {
+                    "client-device": "36ecb4988a6b42b1b227541240a4a755",
+                    "User-Agent": "okhttp/4.9.2",
+                    "client-version": "2.3.0",
+                    "client-source": "android",
+                    "client-name": "app.maoyankanshu.novel",
+                    "Authorization": "bearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkuam1sbGRzYy5jb21cL2F1dGhcL3RoaXJkIiwiaWF0IjoxNjY5Nzk2MzQyLCJleHAiOjE3NjMxMDgzNDIsIm5iZiI6MTY2OTc5NjM0MiwianRpIjoidzlVbkV0Z0FVYzlic3JjYiIsInN1YiI6NDYxMTg5LCJwcnYiOiJhMWNiMDM3MTgwMjk2YzZhMTkzOGVmMzBiNDM3OTQ2NzJkZDAxNmM1In0.MPr_U2LLEI6ZoA7icHITs83dV4NDlNpMKNxFGVBA6Xk",
+                    "client-brand": "HONOR"
+                },
+                "requestInfo": "@js:\r\n\r\nlet { _type } = params.filters\r\nlet url = `/novel?sort=1&page=${params.pageIndex}&categoryId=${_type}`\r\n\r\nreturn {\r\n    \"url\": url,\r\n    \"httpHeaders\": config.httpHeaders,\r\n    \"cacheTime\": 600,\r\n}",
+                "host": "http://api.jxgtzxc.com",
+                "actionID": "bookWorld",
+                "detailUrl": "$.novelId",
+                "cover": "$.cover",
+                "moreKeys": {
+                    "pageSize": 15,
+                    "requestFilters": "_type\n玄幻::lejRej\n武侠::nel5aK\n都市::mbk5ez\n仙侠::vbmOeY\n军事::penRe7\n历史::xbojag\n游戏::mep2bM\n科幻::zbq2dp\n轻小说::YerEdO\n现代言情::9avmeG\n古代言情::DdwRb1\n幻想言情::7ax9by\n青春校园::Pdy7aQ\n唯美纯爱::kazYeJ\n同人衍生::9aAOdv"
+                },
+                "parserID": "DOM",
+                "_sIndex": 1,
+                "list": "$.data",
+                "validConfig": ""
+            }
+        },
+        "shupingHome": {
+            "actionID": "shupingHome",
+            "parserID": "DOM"
+        }
+    }
+}

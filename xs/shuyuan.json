@@ -1,0 +1,530 @@
+[
+    {
+        "bookSourceName": "错层小说网",
+        "bookSourceGroup": "【小说源】",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://m.cuoceng.org/",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledCookieJar": false,
+        "lastUpdateTime": "1783245325095",
+        "respondTime": 180000,
+        "weight": 0,
+        "header": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\"}",
+        "searchUrl": "/book/so/{{key}}/{{page}}.html",
+        "ruleSearch": {
+            "bookList": ".bookbox",
+            "name": ".bookname@text",
+            "author": ".author.0@text",
+            "intro": ".update@text",
+            "kind": "",
+            "lastChapter": ".cat@tag.a@text",
+            "bookUrl": ".bookname@tag.a@href",
+            "wordCount": ".author.1@text"
+        },
+        "ruleBookInfo": {
+            "name": "",
+            "author": "",
+            "intro": "",
+            "kind": ".content@.book.0@.bookinfo@tag.a.1@text",
+            "lastChapter": "",
+            "tocUrl": "id.allchapter@tag.a.3@href",
+            "coverUrl": ".content@.book.0@.bookcover@tag.img@src",
+            "wordCount": ""
+        },
+        "ruleToc": {
+            "chapterList": "id.allchapter@tag.dl@tag.dd@tag.a",
+            "chapterName": "text",
+            "chapterUrl": "href",
+            "nextTocUrl": "text.下一页@href"
+        },
+        "ruleContent": {
+            "content": "id.content@html",
+            "replaceRegex": ""
+        }
+    },
+    {
+        "bookSourceName": "精华书阁手机版",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://m.jhssd.com/",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledCookieJar": true,
+        "lastUpdateTime": 1663661896731,
+        "respondTime": 180000,
+        "weight": 0,
+        "searchUrl": "https://m.jhssd.com/search.html?ie=utf-8&word={{key}}",
+        "ruleSearch": {
+            "bookList": "class.searchbook",
+            "name": "h4@text",
+            "author": "class.author@text",
+            "bookUrl": "class.bookimg@tag.a@href",
+            "coverUrl": "class.bookimg@tag.img@src",
+            "checkKeyWord": "7号基地"
+        },
+        "ruleBookInfo": {
+            "name": "class.block_txt2@a.1@text",
+            "author": "p.2@text",
+            "intro": "class.intro_info@textNodes",
+            "lastChapter": "@li.0@text",
+            "coverUrl": "class.block_img2@tag.img@src"
+        },
+        "ruleToc": {
+            "chapterList": "li!0:1:2:3:4@a",
+            "chapterName": "text",
+            "chapterUrl": "href",
+            "nextTocUrl": "option!0@value"
+        },
+        "ruleContent": {
+            "content": "#nr1@textNodes",
+            "nextContentUrl": "text.下一页@href",
+            "replaceRegex": "##精华书阁.*|.*免费阅读.*https.*com.*|为您提供.*请务必保存好书签.|最新章节！|（本章未完，请点击下一页继续阅读）|@"
+        }
+    },
+    {
+        "bookSourceName": "篱笆好",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://m.libahao.com",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledCookieJar": true,
+        "lastUpdateTime": "1769241092917",
+        "respondTime": 180000,
+        "weight": 0,
+        "searchUrl": "https://m.libahao.com/sou?wd={{key}}",
+        "bookUrlPattern": "https://m.libahao.com/book/.+",
+        "ruleSearch": {
+            "bookList": ".book-item",
+            "name": ".book-title@text",
+            "author": ".book-author@text",
+            "intro": ".book-description@text",
+            "bookUrl": "href",
+            "coverUrl": "img@src"
+        },
+        "ruleBookInfo": {
+            "name": "[property=\"og:novel:book_name\"]@content",
+            "author": "[property=\"og:novel:author\"]@content",
+            "intro": "[property=\"og:description\"]@content",
+            "kind": "[property～=category|status|update_time]@content",
+            "lastChapter": "[property~=las?test_chapter_name]@content",
+            "tocUrl": "[property=\"og:novel:read_url\"]@content",
+            "coverUrl": "img@src"
+        },
+        "ruleToc": {
+            "chapterList": ".chapter-list.1@a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "ruleContent": {
+            "content": ".chapter-content@html",
+            "nextContentUrl": "text.下一页@href"
+        }
+    },
+    {
+        "bookSourceName": "PO文屋",
+        "bookSourceGroup": "",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://m.powenwu16.com",
+        "customOrder": 1,
+        "enabled": true,
+        "enabledCookieJar": false,
+        "lastUpdateTime": "1722253486513",
+        "respondTime": 180000,
+        "weight": 0,
+        "searchUrl": "/s.php,{\n  'method': 'POST',\n  'body': 'keyword={{key}}'\n}",
+        "ruleSearch": {
+            "bookList": ".hot_sale",
+            "name": "p.0@text",
+            "author": "p.1@text",
+            "intro": "",
+            "kind": "p.1:2@text",
+            "lastChapter": "p.2@text",
+            "bookUrl": "a@href",
+            "coverUrl": "tag.img@src",
+            "wordCount": "",
+            "checkKeyWord": ""
+        },
+        "ruleBookInfo": {
+            "name": ".title@text",
+            "author": ".author a.1@text",
+            "intro": ".review@html",
+            "kind": ".synopsisArea_detail p.1:2:4@text",
+            "lastChapter": ".directoryArea@a.1@text",
+            "tocUrl": "text.查看完整目录@href",
+            "coverUrl": "[property=\"og:image\"]@content",
+            "wordCount": ""
+        },
+        "ruleToc": {
+            "chapterList": ".directoryArea p!0@a",
+            "chapterName": "text",
+            "chapterUrl": "href",
+            "nextTocUrl": ""
+        },
+        "ruleContent": {
+            "content": "id.chaptercontent@html",
+            "nextContentUrl": "",
+            "replaceRegex": ""
+        }
+    },
+    {
+        "bookSourceName": "20小说网",
+        "bookSourceGroup": "",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://www.20xs.org/",
+        "customOrder": 10,
+        "enabled": true,
+        "enabledCookieJar": false,
+        "lastUpdateTime": 1695388885898,
+        "respondTime": 180000,
+        "weight": 0,
+        "searchUrl": "https://www.20xs.org/search.html,{\n\"method\": \"post\",\n\"body\": \"searchkey={{key}}\"}",
+        "bookUrlPattern": "",
+        "ruleSearch": {
+            "bookList": "id.sitembox@tag.dl||tag.ul@li||",
+            "name": ".bookname@tag.a@text||tag.dd@tag.h3@text",
+            "author": ".data.0@tag.a@text||.book_other@tag.span.0@text",
+            "intro": ".intro@text||.book_des@text",
+            "kind": ".book_other@tag.span.2@text",
+            "lastChapter": ".data.0@tag.a@href||.book_other@tag.a@text",
+            "bookUrl": "tag.dt@tag.a@href",
+            "coverUrl": "tag.dt@tag.a@tag.img@src",
+            "wordCount": ".book_other@tag.span.3@text",
+            "checkKeyWord": "末日"
+        },
+        "ruleBookInfo": {
+            "init": "",
+            "name": "id.info@tag.h1@text||class.name@tag.strong@text",
+            "author": "id.info@tag.p.0@text||class.author@tag.a@text",
+            "intro": "",
+            "kind": "",
+            "lastChapter": "$.info@tag.p.2@href||class.new@tag.a@text",
+            "tocUrl": "",
+            "coverUrl": ""
+        },
+        "ruleToc": {
+            "chapterList": "id.list@tag.dl@tag.dd||class.read@li",
+            "chapterName": "tag.a@text",
+            "chapterUrl": "tag.a@href"
+        },
+        "ruleContent": {
+            "content": "id.content@p@html",
+            "imageStyle": "0"
+        }
+    },
+    {
+        "bookSourceName": "三八小说",
+        "bookSourceGroup": "自制,源仓库,网页源",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://www.38xs.com",
+        "customOrder": 3,
+        "enabled": true,
+        "enabledCookieJar": true,
+        "lastUpdateTime": 1695290649846,
+        "respondTime": 180000,
+        "weight": 0,
+        "header": "",
+        "searchUrl": "/search.html,{\n  \"body\": \"searchtype=all&searchkey={{key}}&submit=搜索\",\n  \"method\": \"POST\"\n}",
+        "bookUrlPattern": "",
+        "ruleSearch": {
+            "bookList": "#sitembox dl",
+            "name": "h3@text",
+            "author": "span.0@text",
+            "intro": "dd.-2@text",
+            "kind": "span.-3:-4:-1@text",
+            "lastChapter": "a.-1@text",
+            "bookUrl": "a.1@href",
+            "coverUrl": "img@src",
+            "wordCount": "span.-2@text",
+            "checkKeyWord": "剑来"
+        },
+        "ruleBookInfo": {
+            "init": "@put:{n:\"[property$=book_name]@content\",\na:\"[property$=author]@content\",\nk:\"[property~=category|status|update_time]@content\",\nl:\"[property$=latest_chapter_name]@content\",\ni:\"[property$=description]@content\",\nc:\"[property$=image]@content\"}",
+            "name": "@get:{n}",
+            "author": "@get:{a}",
+            "intro": "@get:{i}##.*观看小说:",
+            "kind": "@get:{k}",
+            "lastChapter": "@get:{l}",
+            "coverUrl": "@get:{c}"
+        },
+        "ruleToc": {
+            "chapterList": "#list dd a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "ruleContent": {
+            "content": "#content@html",
+            "nextContentUrl": "text.下一页@href",
+            "replaceRegex": "##喜欢.*请大家收藏.+更新速度全网最快。"
+        }
+    },
+    {
+        "bookSourceName": "笔趣阁[biquge7]",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://www.biquge7.top/",
+        "customOrder": 0,
+        "enabled": true,
+        "lastUpdateTime": 1648643452870,
+        "respondTime": 180000,
+        "weight": 0,
+        "searchUrl": "https://www.biquge7.top/search?keyword={{key}}",
+        "ruleSearch": {
+            "bookList": "class.tui_1_item",
+            "name": "class.tui_1_item@a@text",
+            "author": "",
+            "bookUrl": "class.tui_1_item@a@href",
+            "coverUrl": "class.tui_1_item@img@src"
+        },
+        "ruleBookInfo": {
+            "init": "",
+            "name": "",
+            "author": "class.up@span.0@text",
+            "intro": "p.0@text",
+            "lastChapter": "class.upd@a@text",
+            "wordCount": ""
+        },
+        "ruleToc": {
+            "chapterList": "class.list@li@tag.a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "ruleContent": {
+            "content": "class.text@textNodes",
+            "nextContentUrl": ""
+        }
+    },
+    {
+        "bookSourceName": "新笔趣阁",
+        "bookSourceGroup": "网文",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://www.biquges123.com",
+        "customOrder": 1,
+        "enabled": true,
+        "enabledCookieJar": true,
+        "lastUpdateTime": "1759264712653",
+        "respondTime": 180000,
+        "weight": 0,
+        "searchUrl": "/search?keyword={{key}}&page={{page}}",
+        "bookUrlPattern": "https://www.biquges123.com\\d+",
+        "ruleSearch": {
+            "bookList": "class.hot_4@tag.li",
+            "name": ".hot_name@text",
+            "author": ".author@text",
+            "intro": "class.hot_des@text",
+            "bookUrl": "class.hot_4_item@tag.a@href",
+            "coverUrl": "class.cover@tag.img@src"
+        },
+        "ruleBookInfo": {
+            "init": "tag.main",
+            "name": "class.info_title@text",
+            "author": "class.info_ct@tag.div.2@text",
+            "intro": "class.des@tag.span@text",
+            "kind": "class.bread@tag.a.1@text",
+            "lastChapter": "class.ud@tag.a@text",
+            "coverUrl": "class.info_lt@tag.img@src"
+        },
+        "ruleToc": {
+            "chapterList": "class.list@tag.li",
+            "chapterName": "tag.a@title",
+            "chapterUrl": "tag.a@href"
+        },
+        "ruleContent": {
+            "content": "class.article@html",
+            "title": "class.text@tag.h1@text",
+            "nextContentUrl": ""
+        }
+    },
+    {
+        "bookSourceName": "笔趣阁[biqusa]",
+        "bookSourceGroup": "",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://www.biqusa.com/",
+        "customOrder": 0,
+        "enabled": true,
+        "lastUpdateTime": 1652413288651,
+        "respondTime": 180000,
+        "weight": 0,
+        "searchUrl": "https://www.biqusa.com/search.html?name={{key}}",
+        "ruleSearch": {
+            "bookList": "class.novelslist2@li!0",
+            "name": "class.s2 wid@text",
+            "author": "class.s4 wid@text",
+            "lastChapter": "class.s3 wid3@text",
+            "bookUrl": "class.s2 wid@a@href"
+        },
+        "ruleBookInfo": {
+            "init": "",
+            "intro": "id.intro@textNodes",
+            "coverUrl": "id.fmimg@img@src"
+        },
+        "ruleToc": {
+            "chapterList": "id.list@tag.dd!0:1:2:3:4:5:6:7:8:9:10:11@a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "ruleContent": {
+            "content": "id.content@textNodes",
+            "nextContentUrl": ""
+        }
+    },
+    {
+        "bookSourceName": "看书网",
+        "bookSourceGroup": "源论坛",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://www.kanshuw.com",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledCookieJar": true,
+        "lastUpdateTime": "1733932666780",
+        "respondTime": 180000,
+        "weight": 0,
+        "searchUrl": "/search.php?q={{key}}",
+        "ruleSearch": {
+            "bookList": ".row@dl",
+            "name": "h3@text##\\[|.*\\]|免费阅读.*",
+            "author": "span@text",
+            "kind": "h3@text##\\[|\\].*",
+            "lastChapter": "a[-1]@text",
+            "bookUrl": "a[0]@href",
+            "coverUrl": "tag.dt@tag.a@img@src",
+            "checkKeyWord": "我的"
+        },
+        "ruleBookInfo": {
+            "init": "",
+            "name": "class.row book_info@h1@text##免费阅读.*",
+            "author": "class.row book_info@a[0]@text",
+            "intro": "class.row book_info@id.intro_pc@oweText",
+            "kind": "class.title@a[1]@text",
+            "lastChapter": "class.row book_info@a[2]@text",
+            "tocUrl": "",
+            "coverUrl": "class.row book_info@img@src"
+        },
+        "ruleToc": {
+            "chapterList": ".row[-1]@a",
+            "chapterName": "text",
+            "chapterUrl": "href",
+            "nextTocUrl": "class.pages@tag.ul@tag.li.!0:1:-1@tag.a@href"
+        },
+        "ruleContent": {
+            "content": ".font_max@html##第\\(\\d+/\\d+\\)页",
+            "nextContentUrl": "text.下一章@href",
+            "replaceRegex": "##[a-zA-Z0-9-]+[a-zA-Z0-9-].*\\.[a-zA-Z0-9-].*"
+        }
+    },
+    {
+        "bookSourceName": "开心文学网",
+        "bookSourceGroup": "自写0625",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://www.kxwx.org",
+        "customOrder": 0,
+        "enabled": true,
+        "enabledCookieJar": true,
+        "lastUpdateTime": 1719586749845,
+        "respondTime": 180000,
+        "weight": 0,
+        "searchUrl": "/search/{{key}}.html",
+        "ruleSearch": {
+            "bookList": ".grid@tr!0",
+            "name": "a.0@text",
+            "author": "a.2@text",
+            "kind": "td.-1:-2@text",
+            "lastChapter": "a.1@text",
+            "bookUrl": "a.0@href",
+            "wordCount": "td.-3@text"
+        },
+        "ruleBookInfo": {
+            "intro": "[property=\"og:description\"]@content",
+            "kind": "[property=\"og:novel:category\"]@content",
+            "coverUrl": "[property=\"og:image\"]@content"
+        },
+        "ruleToc": {
+            "chapterList": ".chapterNum@li@a",
+            "chapterName": "text",
+            "chapterUrl": "href"
+        },
+        "ruleContent": {
+            "content": ".mainContenr@p@text"
+        }
+    },
+    {
+        "bookSourceName": "速读谷",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://www.sudugu.org/",
+        "customOrder": 6,
+        "enabled": true,
+        "enabledCookieJar": false,
+        "lastUpdateTime": "1770440514445",
+        "respondTime": 4256,
+        "weight": 0,
+        "searchUrl": "i/sor.aspx?key={{key}}",
+        "ruleSearch": {
+            "bookList": ".item",
+            "name": "class.itemtxt@h3@a@text",
+            "author": "class.itemtxt@p.1@a@text##作者：",
+            "kind": "class.itemtxt@p.0@span.1@text",
+            "lastChapter": "ul@li.0@a@text",
+            "bookUrl": "class.itemtxt@h3@a@href",
+            "coverUrl": "img@src"
+        },
+        "ruleBookInfo": {
+            "name": "class.itemtxt@h1@a@text",
+            "author": "class.itemtxt@p.1@a@text",
+            "intro": "class.des bb.0@html",
+            "kind": "class.itemtxt@p.0@span.-1@text",
+            "lastChapter": "class.itemtxt@ul@li.0@a@text",
+            "wordCount": "class.itemtxt@h1@i@text"
+        },
+        "ruleToc": {
+            "chapterList": "class.dir@li",
+            "chapterName": "a@text",
+            "chapterUrl": "a@href",
+            "nextTocUrl": "id.pages@a@class.gr@href"
+        },
+        "ruleContent": {
+            "content": "class.con@html",
+            "nextContentUrl": "class.prenext@span.-1@a@href"
+        }
+    },
+    {
+        "bookSourceName": "影书小说[修复]",
+        "bookSourceGroup": "自写修复0909",
+        "bookSourceType": 0,
+        "bookSourceUrl": "https://www.yingsx.com",
+        "customOrder": 951,
+        "enabled": true,
+        "enabledCookieJar": false,
+        "lastUpdateTime": 1694193421810,
+        "respondTime": 8493,
+        "weight": 0,
+        "searchUrl": "https://www.yingsx.com/cse/search?q={{key}}&s=",
+        "ruleSearch": {
+            "bookList": ".novelslist2@li!0",
+            "name": "a@text",
+            "author": ".s4@text",
+            "intro": "",
+            "kind": ".s1@text",
+            "lastChapter": ".s3@text",
+            "bookUrl": "a@href",
+            "coverUrl": "",
+            "wordCount": "",
+            "checkKeyWord": "我的"
+        },
+        "ruleBookInfo": {
+            "name": "id.info@h1@text",
+            "author": "id.info@p.0@text",
+            "intro": "id.intro@p@text",
+            "kind": "class.con_top@a.1@text",
+            "lastChapter": "id.list@a.0@text&&id.info@p.-2@text##最后更新：|..:.*",
+            "tocUrl": "",
+            "coverUrl": "id.fmimg@img@src"
+        },
+        "ruleToc": {
+            "chapterList": "id.list@dd!0:1:2:3:4:5:6:7:8",
+            "chapterName": "a@text",
+            "chapterUrl": "a@href"
+        },
+        "ruleContent": {
+            "content": "id.content@html",
+            "nextContentUrl": ""
+        }
+    }
+]

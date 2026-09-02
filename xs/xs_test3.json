@@ -1,0 +1,235 @@
+{
+  "笔趣阁[biqusa]": {
+    "enable": 1,
+    "sourceName": "笔趣阁[biqusa]",
+    "sourceUrl": "https://www.biqusa.com",
+    "sourceType": "text",
+    "weight": "9999",
+    "miniAppVersion": "2.53.2",
+    "lastModifyTime": "1652413288.0",
+    "httpHeaders": {},
+    "searchBook": {
+      "actionID": "searchBook",
+      "host": "https://www.biqusa.com",
+      "parserID": "DOM",
+      "responseFormatType": "html",
+      "validConfig": "",
+      "requestInfo": "@js:\nlet url = `https://www.biqusa.com/search.html?name=${encodeURIComponent(params.keyWord)}`;\nreturn {\n  \"url\": url,\n  \"httpHeaders\": config.httpHeaders,\n  \"cacheTime\": 600\n};",
+      "list": "(//*[contains(concat(\" \", normalize-space(@class), \" \"), \" novelslist2 \")]//li)[not(position()=1)]",
+      "bookName": "//*[contains(concat(\" \", normalize-space(@class), \" \"), \" s2 \") and contains(concat(\" \", normalize-space(@class), \" \"), \" wid \")]",
+      "author": "//*[contains(concat(\" \", normalize-space(@class), \" \"), \" s4 \") and contains(concat(\" \", normalize-space(@class), \" \"), \" wid \")]",
+      "detailUrl": "//*[contains(concat(\" \", normalize-space(@class), \" \"), \" s2 \") and contains(concat(\" \", normalize-space(@class), \" \"), \" wid \")]//a/@href",
+      "lastChapterTitle": "//*[contains(concat(\" \", normalize-space(@class), \" \"), \" s3 \") and contains(concat(\" \", normalize-space(@class), \" \"), \" wid3 \")]"
+    },
+    "bookDetail": {
+      "actionID": "bookDetail",
+      "host": "https://www.biqusa.com",
+      "parserID": "DOM",
+      "responseFormatType": "html",
+      "validConfig": "",
+      "cover": "//*[@id=\"fmimg\"]//img/@src",
+      "desc": "//*[@id=\"intro\"]/text()"
+    },
+    "chapterList": {
+      "actionID": "chapterList",
+      "host": "https://www.biqusa.com",
+      "parserID": "DOM",
+      "responseFormatType": "html",
+      "validConfig": "",
+      "list": "(//*[@id=\"list\"]//dd)[not(position()=1 or position()=2 or position()=3 or position()=4 or position()=5 or position()=6 or position()=7 or position()=8 or position()=9 or position()=10 or position()=11 or position()=12)]//a",
+      "title": "//a",
+      "url": "//a/@href"
+    },
+    "chapterContent": {
+      "actionID": "chapterContent",
+      "host": "https://www.biqusa.com",
+      "parserID": "DOM",
+      "responseFormatType": "html",
+      "validConfig": "",
+      "content": "//*[@id=\"content\"]/text()"
+    },
+    "bookWorld": {},
+    "shudanList": {},
+    "shudanDetail": {
+      "actionID": "shudanDetail",
+      "parserID": "DOM"
+    },
+    "searchShudan": {
+      "actionID": "searchShudan",
+      "parserID": "DOM"
+    },
+    "relatedWord": {
+      "actionID": "relatedWord",
+      "parserID": "DOM"
+    },
+    "shupingList": {
+      "actionID": "shupingList",
+      "parserID": "DOM"
+    },
+    "shupingHome": {
+      "actionID": "shupingHome",
+      "parserID": "DOM"
+    }
+  },
+  "开心文学网": {
+    "enable": 1,
+    "sourceName": "开心文学网",
+    "sourceUrl": "https://www.kxwx.org",
+    "sourceType": "text",
+    "weight": "9999",
+    "miniAppVersion": "2.53.2",
+    "lastModifyTime": "1719586749.0",
+    "httpHeaders": {},
+    "searchBook": {
+      "actionID": "searchBook",
+      "host": "https://www.kxwx.org",
+      "parserID": "DOM",
+      "responseFormatType": "html",
+      "validConfig": "",
+      "requestInfo": "@js:\nlet url = `https://www.kxwx.org/search/${encodeURIComponent(params.keyWord)}.html`;\nreturn {\n  \"url\": url,\n  \"httpHeaders\": config.httpHeaders,\n  \"cacheTime\": 600\n};",
+      "list": "(//*[contains(concat(\" \", normalize-space(@class), \" \"), \" grid \")]//tr)[not(position()=1)]",
+      "bookName": "(//a)[position()=1]",
+      "author": "(//a)[position()=3]",
+      "detailUrl": "(//a)[position()=1]/@href",
+      "cat": "(//td)[position()=last() or position()=last()-1]",
+      "wordCount": "(//td)[position()=last()-2]",
+      "lastChapterTitle": "(//a)[position()=2]"
+    },
+    "bookDetail": {
+      "actionID": "bookDetail",
+      "host": "https://www.kxwx.org",
+      "parserID": "DOM",
+      "responseFormatType": "html",
+      "validConfig": "",
+      "cover": "//*[@property=\"og:image\"]/@content",
+      "desc": "//*[@property=\"og:description\"]/@content",
+      "cat": "//*[@property=\"og:novel:category\"]/@content"
+    },
+    "chapterList": {
+      "actionID": "chapterList",
+      "host": "https://www.kxwx.org",
+      "parserID": "DOM",
+      "responseFormatType": "html",
+      "validConfig": "",
+      "list": "//*[contains(concat(\" \", normalize-space(@class), \" \"), \" chapterNum \")]//li//a",
+      "title": "//a",
+      "url": "//a/@href"
+    },
+    "chapterContent": {
+      "actionID": "chapterContent",
+      "host": "https://www.kxwx.org",
+      "parserID": "DOM",
+      "responseFormatType": "html",
+      "validConfig": "",
+      "content": "//*[contains(concat(\" \", normalize-space(@class), \" \"), \" mainContenr \")]//p"
+    },
+    "bookWorld": {},
+    "shudanList": {},
+    "shudanDetail": {
+      "actionID": "shudanDetail",
+      "parserID": "DOM"
+    },
+    "searchShudan": {
+      "actionID": "searchShudan",
+      "parserID": "DOM"
+    },
+    "relatedWord": {
+      "actionID": "relatedWord",
+      "parserID": "DOM"
+    },
+    "shupingList": {
+      "actionID": "shupingList",
+      "parserID": "DOM"
+    },
+    "shupingHome": {
+      "actionID": "shupingHome",
+      "parserID": "DOM"
+    }
+  },
+  "速读谷": {
+    "enable": 1,
+    "sourceName": "速读谷",
+    "sourceUrl": "https://www.sudugu.org",
+    "sourceType": "text",
+    "weight": "9999",
+    "miniAppVersion": "2.53.2",
+    "lastModifyTime": "1770440514.0",
+    "httpHeaders": {},
+    "searchBook": {
+      "actionID": "searchBook",
+      "host": "https://www.sudugu.org",
+      "parserID": "DOM",
+      "responseFormatType": "html",
+      "validConfig": "",
+      "requestInfo": "@js:\nlet url = `https://www.sudugu.org/i/sor.aspx?key=${encodeURIComponent(params.keyWord)}`;\nreturn {\n  \"url\": url,\n  \"httpHeaders\": config.httpHeaders,\n  \"cacheTime\": 600\n};",
+      "list": "//*[contains(concat(\" \", normalize-space(@class), \" \"), \" item \")]",
+      "bookName": "//*[contains(concat(\" \", normalize-space(@class), \" \"), \" itemtxt \")]//h3//a",
+      "author": "(//*[contains(concat(\" \", normalize-space(@class), \" \"), \" itemtxt \")]//p)[position()=2]//a||@js:\nif (typeof result === 'string') {\n  result = result.replace(/作者：/g, \"\");\n}\nreturn result;",
+      "cover": "//img/@src",
+      "detailUrl": "//*[contains(concat(\" \", normalize-space(@class), \" \"), \" itemtxt \")]//h3//a/@href",
+      "cat": "((//*[contains(concat(\" \", normalize-space(@class), \" \"), \" itemtxt \")]//p)[position()=1]//span)[position()=2]",
+      "lastChapterTitle": "(//ul//li)[position()=1]//a"
+    },
+    "bookDetail": {
+      "actionID": "bookDetail",
+      "host": "https://www.sudugu.org",
+      "parserID": "DOM",
+      "responseFormatType": "html",
+      "validConfig": "",
+      "bookName": "//*[contains(concat(\" \", normalize-space(@class), \" \"), \" itemtxt \")]//h1//a",
+      "author": "(//*[contains(concat(\" \", normalize-space(@class), \" \"), \" itemtxt \")]//p)[position()=2]//a",
+      "desc": "(//*[contains(concat(\" \", normalize-space(@class), \" \"), \" des \") and contains(concat(\" \", normalize-space(@class), \" \"), \" bb \")])[position()=1]",
+      "cat": "((//*[contains(concat(\" \", normalize-space(@class), \" \"), \" itemtxt \")]//p)[position()=1]//span)[position()=last()]",
+      "wordCount": "//*[contains(concat(\" \", normalize-space(@class), \" \"), \" itemtxt \")]//h1//i",
+      "lastChapterTitle": "(//*[contains(concat(\" \", normalize-space(@class), \" \"), \" itemtxt \")]//ul//li)[position()=1]//a"
+    },
+    "chapterList": {
+      "actionID": "chapterList",
+      "host": "https://www.sudugu.org",
+      "parserID": "DOM",
+      "responseFormatType": "html",
+      "validConfig": "",
+      "list": "//*[contains(concat(\" \", normalize-space(@class), \" \"), \" dir \")]//li",
+      "title": "//a",
+      "url": "//a/@href",
+      "nextPageUrl": "//*[@id=\"pages\"]//a/descendant-or-self::*[contains(concat(\" \", normalize-space(@class), \" \"), \" gr \")]/@href",
+      "moreKeys": {
+        "maxPage": 200
+      }
+    },
+    "chapterContent": {
+      "actionID": "chapterContent",
+      "host": "https://www.sudugu.org",
+      "parserID": "DOM",
+      "responseFormatType": "html",
+      "validConfig": "",
+      "content": "//*[contains(concat(\" \", normalize-space(@class), \" \"), \" con \")]",
+      "nextPageUrl": "(//*[contains(concat(\" \", normalize-space(@class), \" \"), \" prenext \")]//span)[position()=last()]//a/@href",
+      "moreKeys": {
+        "maxPage": 50
+      }
+    },
+    "bookWorld": {},
+    "shudanList": {},
+    "shudanDetail": {
+      "actionID": "shudanDetail",
+      "parserID": "DOM"
+    },
+    "searchShudan": {
+      "actionID": "searchShudan",
+      "parserID": "DOM"
+    },
+    "relatedWord": {
+      "actionID": "relatedWord",
+      "parserID": "DOM"
+    },
+    "shupingList": {
+      "actionID": "shupingList",
+      "parserID": "DOM"
+    },
+    "shupingHome": {
+      "actionID": "shupingHome",
+      "parserID": "DOM"
+    }
+  }
+}

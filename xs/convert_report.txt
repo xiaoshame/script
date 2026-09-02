@@ -1,0 +1,15 @@
+错层小说网: ruleBookInfo.tocUrl 需从详情页 HTML 提取，香色无法表达；请人工在 chapterList.requestInfo 里用字符串规则推导 -> id.allchapter@tag.a.3@href
+篱笆好: ruleBookInfo.tocUrl 需从详情页 HTML 提取，香色无法表达；请人工在 chapterList.requestInfo 里用字符串规则推导 -> [property="og:novel:read_url"]@content
+PO文屋: ruleBookInfo.tocUrl 需从详情页 HTML 提取，香色无法表达；请人工在 chapterList.requestInfo 里用字符串规则推导 -> text.查看完整目录@href
+20小说网.ruleSearch.bookList: 多分支规则降级处理，需人工确认 -> id.sitembox@tag.dl||tag.ul@li||
+20小说网.ruleSearch.name: 多分支规则降级处理，需人工确认 -> .bookname@tag.a@text||tag.dd@tag.h3@text
+20小说网.ruleSearch.author: 多分支规则降级处理，需人工确认 -> .data.0@tag.a@text||.book_other@tag.span.0@text
+20小说网.ruleSearch.intro: 多分支规则降级处理，需人工确认 -> .intro@text||.book_des@text
+20小说网.ruleSearch.lastChapter: 多分支规则降级处理，需人工确认 -> .data.0@tag.a@href||.book_other@tag.a@text
+20小说网.ruleBookInfo.name: 多分支规则降级处理，需人工确认 -> id.info@tag.h1@text||class.name@tag.strong@text
+20小说网.ruleBookInfo.author: 多分支规则降级处理，需人工确认 -> id.info@tag.p.0@text||class.author@tag.a@text
+20小说网.ruleBookInfo.lastChapter: 部分分支无法转换已丢弃 -> $.info@tag.p.2@href (无法识别的选择器片段 '$.info')
+20小说网.ruleToc.chapterList: 多分支规则降级处理，需人工确认 -> id.list@tag.dl@tag.dd||class.read@li
+新笔趣阁: ruleBookInfo.init 限定了解析根节点，香色无对应字段已忽略 -> tag.main
+看书网: content 同时存在选择器正则与 replaceRegex，仅保留前者
+影书小说[修复].ruleBookInfo.lastChapter: 多分支规则降级处理，需人工确认 -> id.list@a.0@text&&id.info@p.-2@text##最后更新：|..:.*

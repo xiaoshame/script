@@ -8,10 +8,11 @@
 - gzh_to_rss: 公众号内容转换成RSS,用于feedly订阅
 - xiaohongshu: 支持搜索小红书，搜索到的文章导出为execel
 - m3u8: mu38视频下载脚本
-- xs: 香色闺阁书源和语音tts相关脚本
+- xs: 香色闺阁书源解密，阅读源转换成香色源，语音tts相关脚本
 - chrome: 自己写的chrome脚本和插件
 - qinglong: 自己日常使用的青龙脚本
 - tq: 泰坦之旅百科 - Flask Web 应用
+- douyu: douyu插件
 
 ## 脚本详情
 

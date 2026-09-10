@@ -13,6 +13,7 @@
 - qinglong: 自己日常使用的青龙脚本
 - tq: 泰坦之旅百科 - Flask Web 应用
 - douyu: douyu插件
+- twitter: X视频下载插件
 
 ## 脚本详情
 

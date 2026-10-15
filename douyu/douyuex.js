@@ -57,9 +57,176 @@
 // @connect      fz996.com
 // @connect      toubang.tv
 // @connect      doseeing.com
+// @connect      13.xiebin.best
+// @connect      dy.roozj.com
 // @antifeature  tracking
 // @run-at       document-start
 // ==/UserScript==
+function createExStreamerRevenue(roomId) {
+    const element = document.createElement("span");
+    element.id = "ex-streamer-revenue";
+    element.style.cssText = "display:inline-flex;align-items:center;gap:6px;white-space:nowrap;color:inherit;";
+    if (!document.getElementById("ex-streamer-revenue-style")) {
+        const style = document.createElement("style");
+        style.id = "ex-streamer-revenue-style";
+        style.textContent = `
+            #ex-streamer-revenue .ex-revenue-period { position:relative;display:inline-flex;align-items:center; }
+            #ex-streamer-revenue .ex-revenue-period::after { content:"";position:absolute;right:9px;top:50%;width:5px;height:5px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:translateY(-70%) rotate(45deg);opacity:.65;pointer-events:none; }
+            #ex-streamer-revenue-period { appearance:none;box-sizing:border-box;width:62px;height:24px;padding:0 20px 0 9px;border:1px solid transparent;border-radius:4px;background:rgba(127,127,127,.08);color:inherit;font:inherit;line-height:normal;cursor:pointer; }
+            #ex-streamer-revenue-period:hover { background:rgba(127,127,127,.14);border-color:rgba(127,127,127,.2); }
+            #ex-streamer-revenue-period:focus-visible { outline:2px solid currentColor;outline-offset:2px; }
+            #ex-streamer-revenue-period option { background:Canvas;color:CanvasText; }
+        `;
+        (document.head || document.documentElement).appendChild(style);
+    }
+    const periodControl = document.createElement("span");
+    periodControl.className = "ex-revenue-period";
+    const periodSelect = document.createElement("select");
+    periodSelect.id = "ex-streamer-revenue-period";
+    periodSelect.setAttribute("aria-label", "流水统计周期");
+    periodSelect.title = "流水统计周期";
+    for (const [value, label] of [["revenue", "今日"], ["yesterday", "昨日"], ["month", "本月"]]) {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = label;
+        periodSelect.appendChild(option);
+    }
+    periodSelect.value = "revenue";
+    const revenueValue = document.createElement("span");
+    revenueValue.id = "ex-streamer-revenue-value";
+    revenueValue.style.cssText = "cursor:pointer;";
+    revenueValue.textContent = "流水:加载中";
+    periodControl.appendChild(periodSelect);
+    element.append(periodControl, revenueValue);
+    const requests = new Set();
+    let busy = false;
+    let stopped = false;
+    let lastData = null;
+    let lastError = "";
+    let rangeCache = null;
+    const number = value => {
+        if (!["number", "string"].includes(typeof value) || String(value).trim() === "") return null;
+        const parsed = Number(value);
+        return Number.isFinite(parsed) && parsed >= 0 ? parsed : null;
+    };
+    const money = value => value === null ? "—" : "¥" + value.toLocaleString("zh-CN", { maximumFractionDigits: 2 });
+    const count = value => value === null ? "—" : value.toLocaleString("zh-CN");
+    const today = () => new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Shanghai" });
+    const request = url => new Promise((resolve, reject) => {
+        let handle;
+        const finish = callback => value => {
+            requests.delete(handle);
+            callback(value);
+        };
+        handle = GM_xmlhttpRequest({
+            method: "GET", url, anonymous: true, responseType: "json", timeout: 15000,
+            onload: finish(response => {
+                if (response.status !== 200 || response.response?.code !== 0) {
+                    reject(new Error(response.status !== 200 ? "HTTP " + response.status : "数据格式异常"));
+                    return;
+                }
+                resolve(response.response.data);
+            }),
+            onerror: finish(() => reject(new Error("网络错误"))),
+            ontimeout: finish(() => reject(new Error("请求超时"))),
+            onabort: finish(() => reject(new Error("请求中止")))
+        });
+        requests.add(handle);
+    });
+    const render = (data, error = "") => {
+        lastError = error;
+        const current = data.date === today();
+        const value = data[periodSelect.value];
+        const amount = value === null ? "—" : value >= 10000 ? "¥" + (value / 10000).toFixed(2) + "万" : money(value);
+        revenueValue.textContent = "流水:" + amount + (!current ? "（统计日:" + data.date + "）" : "") + (error ? "（旧数据）" : "");
+        element.title = [
+            data.name || "主播流水", "统计日期:" + data.date, "数据源:" + data.source,
+            "礼物金额:" + money(data.revenue), "昨日金额:" + money(data.yesterday),
+            "本月金额:" + money(data.month), "累计金额:" + money(data.total),
+            "送礼人数:" + count(data.payingUsers), "贵宾峰值:" + count(data.vipPeak),
+            "弹幕人数:" + count(data.danmakuUsers), "弹幕条数:" + count(data.danmaku),
+            data.note || "", error ? "更新失败:" + error : "",
+            "金额按礼物价值统计，不等于主播实际收入。",
+            "每2.5分钟刷新，点击打开数据站。"
+        ].filter(Boolean).join("\n");
+    };
+    const queryPrimary = async () => {
+        const data = await request("https://13.xiebin.best/api/revenue/live/snapshot?key=profile:" + encodeURIComponent(roomId));
+        const snapshot = data?.today;
+        if (String(data?.streamer?.roomId) !== String(roomId) || !/^\d{4}-\d{2}-\d{2}$/.test(snapshot?.period || "")) throw new Error("未收录本直播间");
+        const date = new Date(snapshot.period + "T00:00:00Z");
+        if (!Number.isFinite(date.getTime()) || date.toISOString().slice(0, 10) !== snapshot.period) throw new Error("统计日期异常");
+        const revenueFen = number(snapshot.revenueFen);
+        if (revenueFen === null) throw new Error("流水金额缺失");
+        const daily = (Array.isArray(data.daily) ? data.daily : []).find(item => item?.revenueDate === snapshot.period);
+        const monthly = (Array.isArray(data.monthly) ? data.monthly : []).find(item => item?.yearMonth === snapshot.period.slice(0, 7));
+        const yesterday = new Date(date.getTime() - 86400000).toISOString().slice(0, 10);
+        const yesterdayFen = data.yesterday?.period === yesterday ? number(data.yesterday.revenueFen) : null;
+        return {
+            name: data.streamer.name, date: snapshot.period, source: "xiebin.best",
+            url: "https://13.xiebin.best/streamers/" + encodeURIComponent(roomId),
+            revenue: revenueFen / 100, yesterday: yesterdayFen === null ? null : yesterdayFen / 100,
+            month: number(monthly?.revenue), total: number(data.allTimeTotalRevenue),
+            payingUsers: number(snapshot.payingUserCount), vipPeak: number(daily?.vipPeak),
+            danmakuUsers: number(snapshot.danmakuUserCount), danmaku: number(snapshot.danmakuCount),
+            note: monthly?.source === "daily" ? "本月金额为已有日报合计，缺记录的日子未计入。" : ""
+        };
+    };
+    const queryFallback = async () => {
+        const date = today();
+        const ranking = async (startDate, endDate) => {
+            const data = await request("https://dy.roozj.com/api/ranking/anchors?" + new URLSearchParams({ startDate, endDate, clubName: "all", search: String(roomId), limit: "20" }));
+            if (!Array.isArray(data)) throw new Error("数据格式异常");
+            return data.find(item => String(item?.room_id) === String(roomId));
+        };
+        const data = await ranking(date, date);
+        const revenue = number(data?.total_income);
+        if (revenue === null) throw new Error("未收录本直播间");
+        if (!rangeCache || rangeCache.date !== date || Date.now() - rangeCache.time >= 1800000) {
+            const yesterday = new Date(Date.parse(date + "T00:00:00Z") - 86400000).toISOString().slice(0, 10);
+            const ranges = await Promise.all([[yesterday, yesterday], [date.slice(0, 8) + "01", date], ["2020-01-01", date]].map(async ([start, end]) => {
+                try { return number((await ranking(start, end))?.total_income); } catch (error) { return null; }
+            }));
+            rangeCache = { date, time: ranges.includes(null) ? 0 : Date.now(), ranges };
+        }
+        return {
+            name: data.anchor_name, date, source: "dy.roozj.com", url: "https://dy.roozj.com/",
+            revenue, yesterday: rangeCache.ranges[0], month: rangeCache.ranges[1], total: rangeCache.ranges[2],
+            payingUsers: number(data.paid_fans), vipPeak: number(data.peak_vip),
+            danmakuUsers: number(data.danmu_users), danmaku: number(data.danmu_count),
+            note: "备用数据源；送礼人数为付费人数，累计金额为收录以来。"
+        };
+    };
+    const refresh = async () => {
+        if (busy || stopped || !element.isConnected) return;
+        busy = true;
+        try {
+            let data;
+            try { data = await queryPrimary(); } catch (error) {
+                if (stopped) return;
+                data = await queryFallback();
+            }
+            if (stopped || !element.isConnected) return;
+            lastData = data;
+            render(data);
+        } catch (error) {
+            if (stopped || !element.isConnected) return;
+            if (lastData) render(lastData, error.message);
+            else {
+                revenueValue.textContent = "流水:暂不可用";
+                element.title = "两个数据源均未返回有效数据:" + error.message;
+            }
+        } finally { busy = false; }
+    };
+    periodSelect.addEventListener("change", () => {
+        if (lastData) render(lastData, lastError);
+    });
+    revenueValue.addEventListener("click", () => {
+        if (lastData) GM_openInTab(lastData.url, { active: true });
+        else refresh();
+    });
+    return { element, refresh, stop() { stopped = true; for (const handle of requests) handle?.abort(); requests.clear(); } };
+}
 function s() {
     Kr({ url: "/firstqueue", callback: e => { let t = e; return t = t.replace("e.display=new e.renderer(e);", "e.display=new e.renderer(e);e.display.raw.comment=e;") } }), Kr({ inline: !0, callback: Un }); { let t = Node.prototype.appendChild, o = Node.prototype.insertBefore; Node.prototype.appendChild = function (e) { if ("SCRIPT" === e.tagName) { if (e.src && Xr(e, t, this)) return document.createDocumentFragment(); e = Zr(e) } return t.call(this, e) }, Node.prototype.insertBefore = function (e, t) { if ("SCRIPT" === e.tagName) { if (e.src && Xr(e, o, this)) return document.createDocumentFragment(); e = Zr(e) } return o.call(this, e, t) } } var e; null != (o = localStorage.getItem("ExSave_Mode")) && ("mode" in (o = JSON.parse(o)) == 0 && (o.mode = 0), 1 == o.mode) && Ko(); { let t = unsafeWindow.XMLHttpRequest.prototype.send, i = (unsafeWindow.XMLHttpRequest.prototype.send = function (e) { Yr.set(this, e), t.call(this, e) }, Object.getOwnPropertyDescriptor(unsafeWindow.XMLHttpRequest.prototype, "responseText")); Object.defineProperty(unsafeWindow.XMLHttpRequest.prototype, "responseText", { get: function () { let e = i.get.call(this); var t, o = Yr.get(this); for (t of Wr) { var n = t(this.responseURL, e, o); void 0 !== n && (e = n) } return Yr.delete(this), e }, configurable: !0 }) } { function t() { } Qr((e, t) => -1 !== e.indexOf("/betard") ? Un(t) : t), di(), null != (o = localStorage.getItem("ExSave_P2P")) && JSON.parse(o).isKillP2P && ["RTCPeerConnection", "webkitRTCPeerConnection", "mozRTCPeerConnection", "msRTCPeerConnectio"].forEach(e => { void 0 === unsafeWindow.RTCPeerConnection && (unsafeWindow.RTCPeerConnection = unsafeWindow[e]), void 0 !== unsafeWindow[e] && (unsafeWindow[e] = t) }) } if (null != (o = localStorage.getItem("ExSave_FullScreen")) && JSON.parse(o).isFullScreen) { let e = 0, t = setInterval(() => { if (100 < ++e && clearInterval(t), E([".wfs-2a8e83", ".icon-c8be96"])) { clearInterval(t); let e = document.querySelector("div.wfs-2a8e83"); e ? e.click() : 2 <= (e = document.querySelectorAll(".icon-c8be96")).length && e[e.length - 2].click() } }, 1e3) } if (null != (o = localStorage.getItem("ExSave_HighestVideoQuality")) && JSON.parse(o).isHighestVideoQuality) { let t = 0, o = setInterval(() => { 100 < ++t && clearInterval(o); var e = document.querySelector('[class^="tipItem-"]:has([value^="画质"])') || document.querySelector('[class^="tip-"]:has([value^="画质"])'); e && (clearInterval(o), e = e.querySelector("ul > li:first-child")) && !e.matches('[class^="selected-"]') && e.click() }, 1e3) } var o = "rateRecordTime_h5p_room"; try { var n = localStorage.getItem(o); let e = n ? JSON.parse(n) : {}; "v" !== (e = "object" == typeof e && null !== e ? e : {}).v && (e.v = "v", localStorage.setItem(o, JSON.stringify(e))) } catch (e) { } bn(), (o = document.createElement("script")).src = "https://hm.baidu.com/hm.js?4dc4fb0549a56fe03ba53c022b1ff455", (e = document.getElementsByTagName("script")[0]).parentNode.insertBefore(o, e), console.log(`%c
    ______                    _____)
@@ -113,7 +280,8 @@ var t, o, i = document.querySelectorAll(".VideoEntry-tabItem>a")[0]; null != i &
                 liveDuration.style.whiteSpace = watchDuration.style.whiteSpace = "nowrap";
                 liveDuration.textContent = "已播:加载中";
                 watchDuration.textContent = "已观看:加载中";
-                durations.append(liveDuration, watchDuration);
+                const streamerRevenue = createExStreamerRevenue(B);
+                durations.append(liveDuration, watchDuration, streamerRevenue.element);
                 audioLine.insertAdjacentElement("afterend", durations);
                 let showTime = null;
                 let isLive = false;
@@ -152,10 +320,12 @@ var t, o, i = document.querySelectorAll(".VideoEntry-tabItem>a")[0]; null != i &
                 };
                 refreshLiveDuration();
                 refreshWatchDuration();
+                streamerRevenue.refresh();
                 const clockTimer = setInterval(() => {
                     if (!durations.isConnected) {
                         clearInterval(clockTimer);
                         clearInterval(refreshTimer);
+                        streamerRevenue.stop();
                         return;
                     }
                     renderLiveDuration();
@@ -163,6 +333,7 @@ var t, o, i = document.querySelectorAll(".VideoEntry-tabItem>a")[0]; null != i &
                 const refreshTimer = setInterval(() => {
                     refreshLiveDuration();
                     refreshWatchDuration();
+                    streamerRevenue.refresh();
                 }, 150000);
             }
         }

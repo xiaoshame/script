@@ -829,8 +829,496 @@ var t, o, i = document.querySelectorAll(".VideoEntry-tabItem>a")[0]; null != i &
                 }, 1e3)
             }
         }
-    } { let t = setInterval(() => { var e = document.querySelector(".volume-07c230"); let n = document.getElementById("__video2"); e && n && (clearInterval(t), e.addEventListener("wheel", function (e) { e.preventDefault(), e.stopPropagation(); var t = n.volume, o = e.deltaY < 0 ? Math.min(t + .05, 1) : Math.max(t - .05, 0), e = document.getElementById("__video2"); if (e) { e.muted = 0 === o, e.volume = o; try { ["volume_muted_before_key", "player_storage_volume_h5p_room"].forEach(e => { var t = localStorage.getItem(e); t && ((t = JSON.parse(t)).v = o, localStorage.setItem(e, JSON.stringify(t))) }) } catch (e) { } } }, { passive: !1, capture: !0 }), n.addEventListener("volumechange", () => { Sr(n.volume) }), Sr(n.volume)) }, 500) }
-} function c() { (async () => { Qt(), setInterval(Qt, 35e3) })(), Kn(), setInterval(Kn, 3e5), setInterval(() => { var e = document.querySelector(".ClosingRecommend .dy-ModalRadius-close-x"); e && e.click() }, 1e3) } function y() {
+    } initNativeMultiAudio(), initUniversalMultiScreen();
+}
+function parseDouyuMultiRoom(input) {
+    let roomId = input.trim();
+    if (!/^\d+$/.test(roomId)) {
+        let url;
+        try {
+            url = new URL(/^https?:\/\//i.test(roomId) ? roomId : `https://${roomId}`);
+        } catch (error) {
+            throw new Error("请输入斗鱼数字房间号或直播间链接");
+        }
+        if (!["http:", "https:"].includes(url.protocol) || !["douyu.com", "www.douyu.com", "m.douyu.com"].includes(url.hostname) || url.username || url.password || url.port) {
+            throw new Error("仅支持斗鱼直播间链接");
+        }
+        roomId = url.pathname.replace(/^\/|\/$/g, "");
+    }
+    roomId = roomId.replace(/^0+/, "");
+    if (!/^[1-9]\d{0,11}$/.test(roomId)) throw new Error("请使用数字房间号或包含数字房间号的斗鱼链接");
+    return roomId;
+}
+function getDouyuMultiStreamUrl(roomId, signal) {
+    return new Promise((resolve, reject) => {
+        let timer;
+        const finish = (error, url) => {
+            clearTimeout(timer);
+            signal.removeEventListener("abort", cancel);
+            if (error) reject(error);
+            else resolve(url);
+        };
+        const cancel = () => finish(new Error("播放请求已取消"));
+        if (signal.aborted) return cancel();
+        signal.addEventListener("abort", cancel, { once: true });
+        timer = setTimeout(() => finish(new Error("获取直播流超时，请重试")), 20000);
+        try {
+            qr(roomId, true, 0, "2", url => {
+                if (typeof url !== "string" || !/^https?:\/\//i.test(url)) {
+                    finish(new Error("直播间未开播、无观看权限或暂时无法获取直播流"));
+                } else {
+                    finish(null, url);
+                }
+            });
+        } catch (error) {
+            finish(error);
+        }
+    });
+}
+function initUniversalMultiScreen() {
+    if (document.getElementById("ex-universal-multi")) return;
+    let container = null;
+    const rooms = new Map();
+    const panel = document.createElement("details");
+    panel.id = "ex-universal-multi";
+    panel.innerHTML = `
+        <summary>通用多屏</summary>
+        <div class="ex-universal-panel">
+            <form><label>添加直播间<input aria-label="多屏房间号或链接" placeholder="数字房间号或斗鱼链接" required></label><button type="submit">添加</button></form>
+            <p role="status">可添加 4 个副屏，使用“多屏声源”选择收听。</p>
+            <div class="ex-universal-rooms"></div>
+            <button type="button" class="ex-universal-exit">退出通用多屏</button>
+        </div>`;
+    const form = panel.querySelector("form");
+    const input = panel.querySelector("input");
+    const status = panel.querySelector('[role="status"]');
+    const list = panel.querySelector(".ex-universal-rooms");
+    const exit = panel.querySelector(".ex-universal-exit");
+    const style = document.createElement("style");
+    style.textContent = `
+        #ex-universal-multi { position:absolute; right:12px; bottom:94px; z-index:1501; color:#fff; font-size:12px; }
+        #ex-universal-multi[hidden] { display:none; }
+        #ex-universal-multi summary { cursor:pointer; list-style:none; padding:5px 9px; border-radius:4px; white-space:nowrap; background:rgba(15,15,35,.92); }
+        #ex-universal-multi summary::-webkit-details-marker { display:none; }
+        #ex-universal-multi summary:hover, #ex-universal-multi[open] summary { background:rgba(255,255,255,.15); }
+        #ex-universal-multi .ex-universal-panel { position:absolute; bottom:calc(100% + 8px); right:0; width:min(300px,70vw); max-height:55vh; overflow:auto; padding:12px; border-radius:6px; background:rgba(15,15,35,.96); }
+        #ex-universal-multi form, #ex-universal-multi label { display:flex; gap:6px; align-items:center; }
+        #ex-universal-multi label { flex:1; min-width:0; flex-wrap:wrap; }
+        #ex-universal-multi input { width:100%; min-width:0; color:#fff; background:#252536; border:1px solid #777; padding:4px; }
+        #ex-universal-multi button { cursor:pointer; padding:4px 7px; color:#fff; background:#535366; border:0; border-radius:4px; }
+        #ex-universal-multi p { margin:8px 0; line-height:1.5; }
+        #ex-universal-multi .ex-universal-row { display:flex; gap:5px; align-items:center; margin:8px 0; }
+        #ex-universal-multi .ex-universal-row span { flex:1; }
+        #js-player-multiContainer[data-ex-universal-multi] { display:grid !important; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:repeat(1,minmax(0,1fr)); grid-auto-rows:minmax(0,1fr); height:100% !important; min-height:0 !important; max-height:100%; box-sizing:border-box; overflow:hidden; gap:2px; background:#111; }
+        #js-player-multiContainer[data-ex-universal-count="3"],
+        #js-player-multiContainer[data-ex-universal-count="4"],
+        #js-player-multiContainer[data-ex-universal-count="5"] { grid-template-rows:repeat(2,minmax(0,1fr)); }
+        #js-player-multiContainer[data-ex-universal-count="5"] { grid-template-columns:repeat(3,minmax(0,1fr)); }
+        #js-player-multiContainer[data-ex-universal-multi] > :not(#js-player-video-first):not(.ex-universal-screen) { display:none !important; }
+        #js-player-multiContainer[data-ex-universal-multi] > #js-player-video-first,
+        #js-player-multiContainer[data-ex-universal-multi] > .ex-universal-screen { display:block !important; position:relative !important; inset:auto !important; width:100% !important; height:100% !important; transform:none !important; transition:none !important; visibility:visible !important; min-width:0; min-height:0; overflow:hidden; }
+        #js-player-multiContainer[data-ex-universal-count="3"] > #js-player-video-first,
+        #js-player-multiContainer[data-ex-universal-count="5"] > #js-player-video-first { grid-row:span 2; }
+        #js-player-multiContainer[data-ex-universal-multi] #js-player-video-first video,
+        #js-player-multiContainer[data-ex-universal-multi] .ex-universal-screen video { object-fit:cover !important; }
+        .ex-universal-screen video { width:100%; height:100%; background:#000; }
+        .ex-universal-screen .multi-screen-nick-icon { position:absolute; bottom:6px; left:6px; color:#fff; background:rgba(0,0,0,.6); padding:3px 5px; font-size:12px; }
+        .ex-universal-screen .ex-universal-state { position:absolute; top:8px; left:8px; right:8px; color:#fff; background:rgba(0,0,0,.65); font-size:12px; }`;
+    document.head.appendChild(style);
+
+    function updateGrid() {
+        if (!container) return;
+        if (rooms.size) {
+            container.dataset.exUniversalMulti = "true";
+            container.dataset.exUniversalCount = String(rooms.size + 1);
+        } else {
+            delete container.dataset.exUniversalMulti;
+            delete container.dataset.exUniversalCount;
+        }
+        exit.disabled = rooms.size === 0;
+    }
+    function dispose(entry) {
+        entry.request?.abort();
+        entry.request = null;
+        const player = entry.player;
+        entry.player = null;
+        entry.video.muted = true;
+        entry.video.volume = 0;
+        if (player) player.destroy();
+    }
+    function removeRoom(roomId) {
+        const entry = rooms.get(roomId);
+        if (!entry) return;
+        rooms.delete(roomId);
+        dispose(entry);
+        entry.tile.remove();
+        entry.row.remove();
+        updateGrid();
+    }
+    function close() {
+        for (const roomId of [...rooms.keys()]) removeRoom(roomId);
+        status.textContent = "已退出通用多屏，恢复当前直播间。";
+    }
+    function showState(entry, message) {
+        entry.state.textContent = message;
+        entry.tileState.textContent = message;
+    }
+    function showError(entry, error) {
+        console.error(`[DouyuEx] 多屏直播间 ${entry.roomId} 播放失败`, error);
+        showState(entry, error.message);
+    }
+    async function load(entry) {
+        dispose(entry);
+        const request = new AbortController();
+        entry.request = request;
+        showState(entry, "正在获取直播流…");
+        try {
+            const url = await getDouyuMultiStreamUrl(entry.roomId, request.signal);
+            if (rooms.get(entry.roomId) !== entry || entry.request !== request) return;
+            const player = flvjs.createPlayer({ type: "flv", url }, { fixAudioTimestampGap: false });
+            entry.player = player;
+            player.on(flvjs.Events.ERROR, (type, detail) => {
+                if (entry.player !== player) return;
+                const unsupported = entry.video.error?.message.includes("DECODER_ERROR_NOT_SUPPORTED");
+                showError(entry, new Error(unsupported ? "当前浏览器无法解码该直播流，请更换浏览器后重试" : `直播流错误：${type} / ${detail}，可点击重试`));
+                dispose(entry);
+            });
+            player.on(flvjs.Events.MEDIA_INFO, () => {
+                if (entry.player === player) showState(entry, "");
+            });
+            player.attachMediaElement(entry.video);
+            player.load();
+            if (entry.player !== player) return;
+            showState(entry, "正在加载画面…");
+            await player.play();
+        } catch (error) {
+            if (rooms.get(entry.roomId) === entry && entry.request === request) {
+                showError(entry, error);
+                dispose(entry);
+            }
+        }
+    }
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+        try {
+            if (!container || !document.getElementById("__video2")) throw new Error("当前页面的播放器尚未就绪");
+            if (container.classList.contains("is-multi")) throw new Error("请先退出平台多屏，再使用通用多屏");
+            const roomId = parseDouyuMultiRoom(input.value);
+            if (roomId === String(B)) throw new Error("该房间就是当前直播间，无需重复添加");
+            if (rooms.has(roomId)) throw new Error("该房间已在多屏列表中");
+            if (rooms.size >= 4) throw new Error("最多同时观看 5 个直播间（当前房间 + 4 个副屏）");
+            if (typeof flvjs === "undefined" || !flvjs.isSupported()) throw new Error("当前浏览器不支持直播流播放，请检查 flv.js 是否加载成功");
+            const tile = document.createElement("div");
+            tile.className = "layout-Player-multiPlayer ex-universal-screen";
+            const video = document.createElement("video");
+            video.id = `__video3_p${roomId}`;
+            video.muted = true;
+            video.volume = 0;
+            video.playsInline = true;
+            const name = document.createElement("span");
+            name.className = "multi-screen-nick-icon";
+            name.textContent = `房间 ${roomId}`;
+            const tileState = document.createElement("span");
+            tileState.className = "ex-universal-state";
+            tile.append(video, name, tileState);
+            const row = document.createElement("div");
+            row.className = "ex-universal-row";
+            const state = document.createElement("span");
+            const retry = document.createElement("button");
+            retry.type = "button";
+            retry.textContent = "重试";
+            const remove = document.createElement("button");
+            remove.type = "button";
+            remove.textContent = "移除";
+            const entry = { roomId, video, tile, row, state, tileState, player: null, request: null };
+            row.append(name.cloneNode(true), state, retry, remove);
+            retry.addEventListener("click", () => load(entry));
+            remove.addEventListener("click", () => removeRoom(roomId));
+            rooms.set(roomId, entry);
+            list.appendChild(row);
+            container.appendChild(tile);
+            updateGrid();
+            input.value = "";
+            status.textContent = "已添加副屏；可在“多屏声源”中选择收听。";
+            load(entry);
+        } catch (error) {
+            status.textContent = error.message;
+            console.error("[DouyuEx] 添加多屏直播间失败", error);
+        }
+    });
+    exit.addEventListener("click", close);
+    for (const type of ["click", "mousedown", "pointerdown", "keydown", "wheel"]) {
+        panel.addEventListener(type, event => event.stopPropagation());
+    }
+    for (const type of ["click", "mousedown"]) {
+        document.addEventListener(type, event => {
+            if (!rooms.size || !(event.target instanceof Element)) return;
+            if (event.target.closest("#ex-universal-multi, #ex-native-multi-audio")) return;
+            if (event.target.closest(".mutiPlayerBox-693832")) {
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                panel.open = true;
+                status.textContent = "请先退出通用多屏，再使用平台多屏。";
+                return;
+            }
+            for (const entry of rooms.values()) {
+                const rect = entry.tile.getBoundingClientRect();
+                if (event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom) {
+                    event.stopImmediatePropagation();
+                    return;
+                }
+            }
+        }, true);
+    }
+    function refresh() {
+        const next = document.getElementById("js-player-multiContainer");
+        if (container !== next) {
+            if (container) close();
+            container = next;
+        }
+        const root = document.getElementById("__h5player");
+        if (root && panel.parentElement !== root) root.appendChild(panel);
+        panel.hidden = !root || !container;
+        if (rooms.size && container.classList.contains("is-multi")) {
+            close();
+            status.textContent = "平台多屏已启用，已退出通用多屏以避免冲突。";
+        }
+        updateGrid();
+    }
+    refresh();
+    setInterval(refresh, 500);
+}
+function initNativeMultiAudio() {
+    let container = null, observer = null, main = null, selectedId = "__video2";
+    let active = false, volume = .5, muted = false, signature = "";
+    const bound = new Map();
+    const panel = document.createElement("details");
+    panel.id = "ex-native-multi-audio";
+    panel.hidden = true;
+    panel.innerHTML = `
+        <summary>多屏声源</summary>
+        <div class="ex-native-audio-panel">
+            <label>收听 <select aria-label="多屏声源"></select></label>
+            <label>音量 <input type="range" min="0" max="100" step="1" aria-label="多屏音量"><output></output></label>
+            <label><input type="checkbox"> 静音</label>
+        </div>`;
+    const select = panel.querySelector("select");
+    const range = panel.querySelector('input[type="range"]');
+    const mute = panel.querySelector('input[type="checkbox"]');
+    const output = panel.querySelector("output");
+    const style = document.createElement("style");
+    style.textContent = `
+        #ex-native-multi-audio { position:absolute; right:12px; bottom:54px; z-index:1500; color:#fff; font-size:12px; }
+        #ex-native-multi-audio[hidden] { display:none; }
+        #ex-native-multi-audio summary { cursor:pointer; padding:5px 9px; border-radius:5px; background:rgba(15,15,35,.92); }
+        #ex-native-multi-audio .ex-native-audio-panel { position:absolute; right:0; bottom:100%; width:240px; padding:12px; border-radius:6px; background:rgba(15,15,35,.96); }
+        #ex-native-multi-audio label { display:flex; align-items:center; gap:6px; margin:6px 0; }
+        #ex-native-multi-audio select { flex:1; min-width:0; color:#fff; background:#252536; }
+        #ex-native-multi-audio input[type="range"] { flex:1; min-width:0; accent-color:#ff7700; }
+        #ex-native-multi-audio output { min-width:34px; }`;
+    document.head.appendChild(style);
+
+    function videos() {
+        if (!container) return [];
+        return [...container.querySelectorAll("video")].filter(video =>
+            video.id === "__video2" || video.id.startsWith("__video3_p"));
+    }
+    function selectedVideo() {
+        return videos().find(video => video.id === selectedId) || main;
+    }
+    function persistVolume() {
+        try {
+            for (const key of ["volume_muted_before_key", "player_storage_volume_h5p_room"]) {
+                const stored = localStorage.getItem(key);
+                if (stored) {
+                    const value = JSON.parse(stored);
+                    value.v = muted ? 0 : volume;
+                    localStorage.setItem(key, JSON.stringify(value));
+                }
+            }
+        } catch (error) {
+            console.error("[DouyuEx] 保存音量失败", error);
+        }
+    }
+    function updateControls() {
+        select.value = selectedId;
+        range.value = String(Math.round(volume * 100));
+        output.textContent = `${Math.round(volume * 100)}%`;
+        mute.checked = muted;
+        Sr(muted ? 0 : volume);
+    }
+    function writeAudio(video, nextVolume, nextMuted) {
+        const state = bound.get(video);
+        if (state) {
+            state.volume = nextVolume;
+            state.muted = nextMuted;
+        }
+        if (video.volume !== nextVolume) video.volume = nextVolume;
+        if (video.muted !== nextMuted) video.muted = nextMuted;
+    }
+    function applyAudio() {
+        if (!main) return;
+        if (active) {
+            const selected = selectedVideo();
+            for (const video of videos()) {
+                writeAudio(video, video === selected ? volume : 0, video !== selected || muted);
+            }
+        } else {
+            for (const video of videos()) {
+                if (video !== main) writeAudio(video, 0, true);
+            }
+            writeAudio(main, volume, muted);
+        }
+        updateControls();
+    }
+    function changeVolume(nextVolume) {
+        volume = Math.max(0, Math.min(1, nextVolume));
+        muted = volume === 0;
+        applyAudio();
+        persistVolume();
+    }
+    function onVolumeChange(event) {
+        const video = event.currentTarget;
+        const expected = bound.get(video);
+        if (!expected || (video.volume === expected.volume && video.muted === expected.muted)) return;
+        if (video === main && (!active || video === selectedVideo())) {
+            volume = video.volume;
+            muted = video.muted;
+        } else if (video === main) {
+            // Native sliders and shortcuts still write to the main video.
+            if (video.volume !== expected.volume) {
+                volume = video.volume;
+                muted = volume === 0;
+            } else {
+                muted = video.muted;
+            }
+        }
+        applyAudio();
+    }
+    function onMediaReady() {
+        applyAudio();
+    }
+    function refresh() {
+        const nextContainer = document.getElementById("js-player-multiContainer");
+        const nextMain = document.getElementById("__video2");
+        if (nextContainer !== container) {
+            observer?.disconnect();
+            container = nextContainer;
+            signature = "";
+            if (container) {
+                observer = new MutationObserver(refresh);
+                observer.observe(container, { childList: true, subtree: true, attributes: true, attributeFilter: ["class"] });
+            }
+        }
+        if (nextMain !== main) {
+            main = nextMain;
+            if (main && !active) {
+                volume = main.volume;
+                muted = main.muted;
+            }
+        }
+        const list = videos();
+        for (const [video] of bound) {
+            if (!list.includes(video)) {
+                writeAudio(video, 0, true);
+                video.removeEventListener("volumechange", onVolumeChange);
+                video.removeEventListener("loadedmetadata", onMediaReady);
+                bound.delete(video);
+            }
+        }
+        for (const video of list) {
+            if (!bound.has(video)) {
+                bound.set(video, { volume: video.volume, muted: video.muted });
+                video.addEventListener("volumechange", onVolumeChange);
+                video.addEventListener("loadedmetadata", onMediaReady);
+            }
+        }
+        const wasActive = active;
+        active = !!main && !!container && (container.classList.contains("is-multi") || container.dataset.exUniversalMulti === "true") && list.length > 1;
+        if (!active || !list.some(video => video.id === selectedId)) selectedId = "__video2";
+        const root = document.getElementById("__h5player");
+        if (root && panel.parentElement !== root) root.appendChild(panel);
+        panel.hidden = !active;
+        if (!active) panel.open = false;
+        const entries = list.map(video => {
+            const screen = video.closest(".layout-Player-multiPlayer, .layout-Player-videoEntity");
+            const name = screen?.querySelector(".multi-screen-nick-icon")?.textContent.trim();
+            return [video.id, video === main ? "当前直播间" : name || `直播间 ${video.id.slice("__video3_p".length)}`];
+        });
+        const nextSignature = JSON.stringify(entries);
+        if (signature !== nextSignature) {
+            signature = nextSignature;
+            select.replaceChildren(...entries.map(([id, name]) => {
+                const option = document.createElement("option");
+                option.value = id;
+                option.textContent = name;
+                return option;
+            }));
+        }
+        if (active || wasActive) applyAudio();
+    }
+    select.addEventListener("change", () => {
+        selectedId = select.value;
+        applyAudio();
+    });
+    range.addEventListener("input", () => changeVolume(Number(range.value) / 100));
+    mute.addEventListener("change", () => {
+        muted = mute.checked;
+        applyAudio();
+    });
+    for (const type of ["click", "mousedown", "pointerdown", "keydown"]) {
+        panel.addEventListener(type, event => event.stopPropagation());
+    }
+    document.addEventListener("wheel", event => {
+        if (!(event.target instanceof Element) || !event.target.closest(".volume-07c230, #ex-native-multi-audio")) return;
+        if (!main || !event.deltaY) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        changeVolume(volume + (event.deltaY < 0 ? .05 : -.05));
+    }, { passive: false, capture: true });
+    document.addEventListener("click", event => {
+        if (!active || selectedId === "__video2" || !(event.target instanceof Element)) return;
+        if (!event.target.closest(".volume-07c230")) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        if (event.target.closest(".volume-bar-all-00f43d")) return;
+        muted = !muted;
+        if (!muted && volume === 0) volume = .5;
+        applyAudio();
+    }, true);
+    document.addEventListener("mousedown", event => {
+        if (!active || selectedId === "__video2" || event.button !== 0 || !(event.target instanceof Element)) return;
+        const bar = event.target.closest(".volume-bar-all-00f43d");
+        const track = bar?.querySelector(".back-85f312");
+        if (!track) return;
+        const rect = track.getBoundingClientRect();
+        if (!rect.height) return;
+        const move = event => {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            changeVolume(Math.round((rect.bottom - event.clientY) / rect.height * 100) / 100);
+        };
+        const end = event => {
+            move(event);
+            document.removeEventListener("mousemove", move, true);
+            document.removeEventListener("mouseup", end, true);
+        };
+        move(event);
+        document.addEventListener("mousemove", move, true);
+        document.addEventListener("mouseup", end, true);
+    }, true);
+    document.addEventListener("keydown", event => {
+        if (!active || selectedId === "__video2" || !["ArrowUp", "ArrowDown"].includes(event.key)) return;
+        if (!(event.target instanceof Element) || event.target.closest("input, select, textarea, [contenteditable]")) return;
+        if (!document.getElementById("__h5player")?.contains(event.target)) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        changeVolume(volume + (event.key === "ArrowUp" ? .1 : -.1));
+    }, true);
+    refresh();
+    setInterval(refresh, 500);
+}
+function c() { (async () => { Qt(), setInterval(Qt, 35e3) })(), Kn(), setInterval(Kn, 3e5), setInterval(() => { var e = document.querySelector(".ClosingRecommend .dy-ModalRadius-close-x"); e && e.click() }, 1e3) } function y() {
     var e = document.createElement("style"); e.appendChild(document.createTextNode(`
 		body{position:relative;}
 		#ex-accountList-wrap {    left: -152px;    top: -16px;    /* max-height: 330px;    overflow-y: scroll;    scrollbar-width: none;    -ms-overflow-style: none; */    -webkit-transition: all .2s cubic-bezier(.22,.58,.12,.98);    -o-transition: all cubic-bezier(.22,.58,.12,.98) .2s;    -moz-transition: all cubic-bezier(.22,.58,.12,.98) .2s;    transition: all .2s cubic-bezier(.22,.58,.12,.98);    -webkit-transform-origin: 80% 0;    -moz-transform-origin: 80% 0;    -ms-transform-origin: 80% 0;    -o-transform-origin: 80% 0;    transform-origin: 80% 0;    -webkit-animation: scale-in-ease .5s cubic-bezier(.22,.58,.12,.98);    -moz-animation: scale-in-ease cubic-bezier(.22,.58,.12,.98) .5s;    -o-animation: scale-in-ease cubic-bezier(.22,.58,.12,.98) .5s;    animation: scale-in-ease .5s cubic-bezier(.22,.58,.12,.98);}/* #ex-accountList-wrap::-webkit-scrollbar {    display: none;} */.ex-accountList-item {    padding: 10px;    display: flex;    border-radius: 10px;    align-items: center;}.ex-accountList-item:hover {    background-color: rgb(244,244,244);}#ex-accountList-iframe {    display: none;}#ex-accountList-iframe2 {    display: none;}#ex-accountList-item-add {    padding: 10px;    text-align: center;    margin-bottom:0px;    border-radius: 10px;}#ex-accountList-item-add:hover {    background-color: rgb(244,244,244);}.ex-accountList-item__imgWrap {    flex: 0 0 25%;}.ex-accountList-item__img {    width: 50px;    height: 50px;    border-radius: 50%;}.ex-accountList-item__name {    line-height: 50px;    flex: 0 0 55%;}.ex-accountList-item__btn {    height: 30px;    width: 50px;    border-radius: 10px;    align-items: center;    flex: auto;    text-align: center;    line-height: 28px;    color: white;    background-color: rgb(245,108,108);}.ex-accountList-item__btn:hover {    background-color: rgb(247,137,137);}#ex-accountList-icon:hover > #ex-accountList-wrap {    display: block;}#ex-accountList-content {    background-color: white;}#ex-audio-line {    cursor: pointer;}.live-next-body #ex-audio-line {    margin-left: 4px;}.bag-info {    position: absolute;    background-color: rgba(0, 0, 0, 0.6);    color: white;    width: 20px;    font-weight: 800;    height: 20px;    text-align: center;    z-index: 10;    bottom: 0;}.bag-button {    color: rgb(255, 255, 255);    text-align: center;    height: 15px;    line-height: 15px;    cursor: pointer;    margin-left: 5px;    background: rgb(70, 171, 255);    border-radius: 9px;    padding: 0px 10px;    right: 20px;}.bloop {	background-color: rgba(255,255,255,0.9);	width: 100%;	height: 200px;	position: relative;	bottom: 200px;	display: none;	z-index: 1428;	color: #333;}.bloop__switch {	position: absolute;	right: 0;	bottom: 0;}.bloop__mode {	display: inline-block;}#bloop__select {	width: 150px;}.barragePanel__funcPanel {    position: absolute;    width: 232px;    height: 270px;    display: block;    background: white;    overflow-y: scroll;}.barragePanel__funcPanel::-webkit-scrollbar {display:none}.barragePanel__muteTime {    /* position: absolute;    left: 25px;    top: 123px; */    z-index: 5;}.danmuContent-25f266 {    pointer-events: auto !important;}.thirdBtn-06cde5, .fourBtn-0845d4 {    /* 加宽按钮方便点击 */    margin-left: 0px !important;    margin-right: 0px !important;    padding: 0 17px !important;}#copy-real-live {    cursor: pointer;}.Title-row-span, .Title-row-icon  {    display: flex;    align-items: center;    justify-content: center;}.Title-row-icon {    margin-right: 4px;}.live-next-body #copy-real-live {    margin-left: 4px;}.ChatBarrageCollect .TagItem {  height: auto !important;}.ChatBarrageCollect .TagItem-txt {  overflow: auto !important;  white-space: normal !important;  text-overflow: clip !important;}.ChatToolBar-DanmakuTail {    display: inline-block;    vertical-align: middle;    width: 18px;    height: 18px;    -webkit-border-radius: 4px;    -moz-border-radius: 4px;    border-radius: 4px;    margin-right: 8px;    color: #bbb;    cursor: pointer;}[data-mantine-color-scheme=dark] .ChatToolBar-DanmakuTail-tip {    background: url(data:image/png;base64,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) 50% / 18px 18px no-repeat;}.ChatToolBar-DanmakuTail-tip {    width: 18px;    height: 18px;    text-align: center;    line-height: 18px;    border-radius: 4px;    font-size: 12px;    color: #fff;    cursor: pointer;    -webkit-box-sizing: border-box;    -moz-box-sizing: border-box;    box-sizing: border-box;    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAPFBMVEUAAADKy8zKy8zExMzKy83Ky83KzMzKzM7Kys3Ky8zKy83Jy8zJy83Ky8zLzMzJzMzIyM3MzMzKzMzKy8zUpkOsAAAAE3RSTlMA5PgF2qdrQ+rqysOOhzw3HBnqZkz8cgAAAN5JREFUOMuNlEkOAyEMBNs2y+xL/P+/JgoJaGCAqZOFSk0fLOOL7M7ONLBGeDCTdZsgcq6kdzAtBwLiSauMPoR5ow2Mx4dj1CZ0ArJoh1Ww/Quh5Be1w3F0apaD1a5kMSVJLyRphuknEYaGpIEXuC7pD4YWnaITuUiIdKRkVCRNRlUq+te+a0p4Ujy9ZkMpIaeUgJrEld6aYAxZJS2nF+hGwnUwmHOp/HSCzffybn1dubyZww47aQfaIGtPWgQ4O1Hj8fRgQPzYKOQFgWMhvlfWExHZnJ3M9RzSbN0eYt4fdzsuAVjiHAAAAABJRU5ErkJggg==) 50% / 18px 18px no-repeat;}.ChatToolBar-DanmakuTail-tip-active,.ChatToolBar-DanmakuTail-tip:hover {    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAPFBMVEUAAAD6aDP7ZTD2cUHxeU/pjGvmkHPfjnH4azj4bDruf1fshWHrhmLpjW3njm3kk3/ugFnugVn/XSP+YCg/+VboAAAAEnRSTlMA/P3z4XQyCPr5za2namIOx8bnayGzAAAA3klEQVQ4y43U2w6EIAxF0dNyc7xP+///Ook6EEHA/UTMSukDEUdhna0hVokpD8ZOy4aY/5I8pTT6iwRHUo1dOJD7SKOPO+5iaUYe2EbptAcs/4VQdo1aMWk0NTXDShdZmITkVkIGQ38SgRtIzhhaR3KlkGKnaGI3hFgHJVFBkkQVFfvXrmsivFk8fc0OJUJeiYAa0sreklJwtpKUJwY9INwPA0yOyksNbP4un57vXD7ezOiElaQTLQh7D40b4Duj2L/9YSA4bizkAs78SPpMdo/YtkzWDPffIRk7r+eYH6dAOJwNbfZEAAAAAElFTkSuQmCC) 50% / 18px 18px no-repeat;}.ChatToolBar-DanmakuTail-Panel {    background-color: rgba(255, 255, 255, 0.9);    width: 100%;    height: 140px;    position: relative;    display: none;    z-index: 1015;    color: #333;}.ChatToolBar-DanmakuTail-Panel__cell {    position: relative;    display: -webkit-box;    display: -webkit-flex;    display: flex;    box-sizing: border-box;    width: 100%;    padding: 10px 16px;    overflow: hidden;    color: #323233;    font-size: 14px;    line-height: 24px;    background-color: #fff;    border-bottom: 1px solid rgba(0, 0, 0, 0.2);    flex-wrap: wrap;    -webkit-flex-wrap: wrap;}.ChatToolBar-DanmakuTail-Panel__cell_title {    flex: 1;    -webkit-box-flex: 1;}.ChatToolBar-DanmakuTail-Panel__cell_option {    text-align: right;}.ChatToolBar-DanmakuTail-Panel__cell_switch {    float: right;}.ChatToolBar-DanmakuTail-title {    margin: 0 10px;    font-size: 16px;    font-weight: bold;}.DanmakuTail-input {    margin: 10px;    width: calc(100% - 20px);    height: 2.2em;}.DanmakuTail-checkbox-label,.DanmakuTail-option-label {    margin: 10px;    width: calc(100% - 20px);    display: block;    text-align: right;}.EnergyBarrageIcon {    margin-right: 8px;}.ex-icon {	display: inline-block;	vertical-align: middle;	margin-right: 8px;	-moz-user-select:none; /*火狐*/    -webkit-user-select:none; /*webkit浏览器*/    -ms-user-select:none; /*IE10*/    -khtml-user-select:none; /*早期浏览器*/    user-select:none;}.ex-icon a {    display: flex;    justify-items: center;    align-items: center;}.ex-icon svg:hover {    transform: scale(1.1);}.extool {

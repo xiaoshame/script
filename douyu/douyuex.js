@@ -881,6 +881,7 @@ function initUniversalMultiScreen() {
     const rooms = new Map();
     const panel = document.createElement("details");
     panel.id = "ex-universal-multi";
+    panel.hidden = true;
     panel.innerHTML = `
         <summary>通用多屏</summary>
         <div class="ex-universal-panel">
@@ -896,9 +897,9 @@ function initUniversalMultiScreen() {
     const exit = panel.querySelector(".ex-universal-exit");
     const style = document.createElement("style");
     style.textContent = `
-        #ex-universal-multi { position:absolute; right:12px; bottom:94px; z-index:1501; color:#fff; font-size:12px; }
+        #ex-universal-multi { position:relative; flex-shrink:0; margin:0 6px; z-index:1501; color:#fff; font-size:12px; line-height:normal; }
         #ex-universal-multi[hidden] { display:none; }
-        #ex-universal-multi summary { cursor:pointer; list-style:none; padding:5px 9px; border-radius:4px; white-space:nowrap; background:rgba(15,15,35,.92); }
+        #ex-universal-multi summary { cursor:pointer; list-style:none; padding:5px 9px; border-radius:4px; white-space:nowrap; }
         #ex-universal-multi summary::-webkit-details-marker { display:none; }
         #ex-universal-multi summary:hover, #ex-universal-multi[open] summary { background:rgba(255,255,255,.15); }
         #ex-universal-multi .ex-universal-panel { position:absolute; bottom:calc(100% + 8px); right:0; width:min(300px,70vw); max-height:55vh; overflow:auto; padding:12px; border-radius:6px; background:rgba(15,15,35,.96); }
@@ -926,6 +927,10 @@ function initUniversalMultiScreen() {
         .ex-universal-screen .ex-universal-state { position:absolute; top:8px; left:8px; right:8px; color:#fff; background:rgba(0,0,0,.65); font-size:12px; }`;
     document.head.appendChild(style);
 
+    function hasOfficialMultiScreen() {
+        return !!(container?.classList.contains("is-multi") ||
+            document.querySelector('[class*="mutiPlayerBox-"]'));
+    }
     function updateGrid() {
         if (!container) return;
         if (rooms.size) {
@@ -1002,7 +1007,7 @@ function initUniversalMultiScreen() {
         event.preventDefault();
         try {
             if (!container || !document.getElementById("__video2")) throw new Error("当前页面的播放器尚未就绪");
-            if (container.classList.contains("is-multi")) throw new Error("请先退出平台多屏，再使用通用多屏");
+            if (hasOfficialMultiScreen()) throw new Error("当前房间已开启官方多屏，请使用官方多屏功能");
             const roomId = parseDouyuMultiRoom(input.value);
             if (roomId === String(B)) throw new Error("该房间就是当前直播间，无需重复添加");
             if (rooms.has(roomId)) throw new Error("该房间已在多屏列表中");
@@ -1054,11 +1059,10 @@ function initUniversalMultiScreen() {
         document.addEventListener(type, event => {
             if (!rooms.size || !(event.target instanceof Element)) return;
             if (event.target.closest("#ex-universal-multi, #ex-native-multi-audio")) return;
-            if (event.target.closest(".mutiPlayerBox-693832")) {
-                event.preventDefault();
-                event.stopImmediatePropagation();
-                panel.open = true;
-                status.textContent = "请先退出通用多屏，再使用平台多屏。";
+            if (event.target.closest('[class*="mutiPlayerBox-"]')) {
+                close();
+                panel.hidden = true;
+                panel.open = false;
                 return;
             }
             for (const entry of rooms.values()) {
@@ -1077,11 +1081,14 @@ function initUniversalMultiScreen() {
             container = next;
         }
         const root = document.getElementById("__h5player");
-        if (root && panel.parentElement !== root) root.appendChild(panel);
-        panel.hidden = !root || !container;
-        if (rooms.size && container.classList.contains("is-multi")) {
+        const controls = document.querySelector("#js-player-controlbar .right-e7ea5d, #js-player-controlbar .right-17e251");
+        if (controls && panel.parentElement !== controls) controls.appendChild(panel);
+        const officialMultiScreen = hasOfficialMultiScreen();
+        panel.hidden = !root || !controls || !container || officialMultiScreen;
+        if (panel.hidden) panel.open = false;
+        if (rooms.size && officialMultiScreen) {
             close();
-            status.textContent = "平台多屏已启用，已退出通用多屏以避免冲突。";
+            status.textContent = "当前房间已开启官方多屏，已退出通用多屏以避免冲突。";
         }
         updateGrid();
     }
@@ -2913,6 +2920,202 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         } return
     } else if (-1 !== String(e).indexOf("exid=chun")) { bn(); let t = setInterval(() => { var e; void 0 !== document.querySelector("div.wfs-2a8e83") && (document.querySelector("div.wfs-2a8e83").click(), document.querySelector("label.layout-Player-asidetoggleButton").click(), e = document.querySelectorAll(".tip-e3420a > ul > li").length, document.querySelectorAll(".tip-e3420a > ul > li")[e - 1].click(), clearInterval(t)) }, 1e3); return } else if (-1 === String(e).indexOf("template/") && -1 === String(e).indexOf("h5/")) { document.domain = "douyu.com", s(); let n = setInterval(() => { var e = document.getElementsByClassName("BackpackButton")[0], t = document.getElementsByClassName("Barrage-main")[0], o = document.querySelector("#js-backpack-enter"); t && (e || o) && (setTimeout(() => { y(), d(), c() }, 1500), clearInterval(n)) }, 1e3) }
 } (async () => { il(window.location.href) })();
+
+// ============ 合成西瓜自动合成与无限空间 ============
+(function watermelonAuto() {
+    const win = typeof unsafeWindow !== 'undefined' ? unsafeWindow : window;
+    if (!/\/pages\/vibe-lab-act202607-game(?:\/|$)/.test(location.pathname) &&
+        !/\/front-publish\/make-watermelon[^/]*\//.test(location.pathname)) return;
+    if (win.__ExXiGuaAuto) return;
+    const key = 'ExSave_XiGuaAuto';
+    let saved;
+    try { saved = JSON.parse(localStorage.getItem(key) || '{}'); } catch (error) { saved = {}; }
+    const cfg = {
+        enabled: saved?.enabled === true,
+        interval: Math.max(460, Number(saved?.interval) || 600),
+        unlimitedSpace: saved?.unlimitedSpace !== false
+    };
+    let engine = null;
+    let loading = false;
+    let lastDrop = 0;
+    let lastError = '';
+    let button = null;
+    let hookedGame = null;
+    let dangerHooks = [];
+    let lastSpaceCheck = 0;
+    let highPileChecks = 0;
+    function restoreDangerChecks() {
+        for (const { game, name, descriptor, wrapper } of dangerHooks) {
+            if (game[name] !== wrapper) continue;
+            if (descriptor) Object.defineProperty(game, name, descriptor);
+            else delete game[name];
+        }
+        dangerHooks = [];
+        hookedGame = null;
+        highPileChecks = 0;
+        lastSpaceCheck = 0;
+    }
+    function updateDangerChecks(game) {
+        if (hookedGame !== game || !cfg.unlimitedSpace) restoreDangerChecks();
+        if (!game || !cfg.unlimitedSpace || hookedGame === game) return;
+        hookedGame = game;
+        for (const name of ['hasFruitAboveDangerLine', 'hasDroppedFruitInDangerZone']) {
+            const original = game[name];
+            if (typeof original !== 'function') continue;
+            const descriptor = Object.getOwnPropertyDescriptor(game, name);
+            const wrapper = function (...args) {
+                if (cfg.enabled && cfg.unlimitedSpace && this.isPlaying && !this.gameOver && !this.isLotteryMode?.()) return false;
+                return original.apply(this, args);
+            };
+            Object.defineProperty(game, name, { configurable: true, writable: true, value: wrapper });
+            dangerHooks.push({ game, name, descriptor, wrapper });
+        }
+        game.failingTime = 0;
+    }
+    function makeSpace(game, now) {
+        if (!cfg.unlimitedSpace || typeof game.removeFruit !== 'function' || now - lastSpaceCheck < 600) return;
+        lastSpaceCheck = now;
+        const placed = Array.from(game.fruits.values()).filter(state =>
+            state !== game.currentFruit && state.node?.isValid !== false && state.node?.position &&
+            state.dropped && !state.merging && state.id !== game.droppingFruitId &&
+            state.kind === 'normal' && Number.isFinite(state.bornAt) &&
+            now / 1000 - state.bornAt >= 0.6 && Number.isFinite(state.radius));
+        for (const state of placed) {
+            if (state.level === 11) game.removeFruit(state);
+        }
+        const remaining = placed.filter(state => state.level < 11);
+        const crowded = Number.isFinite(game.dangerY) && remaining.some(state =>
+            state.node.position.y + state.radius > game.dangerY);
+        highPileChecks = crowded ? highPileChecks + 1 : 0;
+        if (highPileChecks < 8 || remaining.length < 5 || game.pendingDrop || game.mergeQueue?.length) return;
+        const bottom = Math.min(...remaining.map(state => state.node.position.y - state.radius));
+        for (const state of remaining) {
+            if (state.node.position.y - state.radius <= bottom + 80) game.removeFruit(state);
+        }
+        highPileChecks = 0;
+    }
+    function getGame() {
+        const scene = (win.cc || engine)?.director?.getScene();
+        if (!scene) return null;
+        const nodes = [scene];
+        while (nodes.length) {
+            const node = nodes.pop();
+            if (node.isValid === false || node.activeInHierarchy === false) continue;
+            for (const component of node.components || node._components || []) {
+                if (component.enabledInHierarchy !== false && component.fruits &&
+                    typeof component.fruits.values === 'function' &&
+                    typeof component.dropCurrentFruitAt === 'function' &&
+                    typeof component.canStartDropTouch === 'function') return component;
+            }
+            nodes.push(...(node.children || []));
+        }
+        return null;
+    }
+    function targetX(game) {
+        const fruit = game.currentFruit;
+        const halfWidth = game.playWidth / 2;
+        const clamp = value => Math.max(-halfWidth + fruit.radius, Math.min(halfWidth - fruit.radius, value));
+        const placed = Array.from(game.fruits.values()).filter(state =>
+            state !== fruit && state.node?.isValid !== false && state.node?.position &&
+            state.dropped && !state.merging);
+        let best = null;
+        let bestHeight = Infinity;
+        for (const candidate of placed) {
+            if (candidate.level !== fruit.level || candidate.kind !== fruit.kind) continue;
+            const x = clamp(candidate.node.position.x);
+            const blocked = placed.some(other => other !== candidate &&
+                Math.abs(other.node.position.x - x) < other.radius + fruit.radius &&
+                other.node.position.y > candidate.node.position.y + candidate.radius);
+            if (!blocked && candidate.node.position.y < bestHeight) {
+                best = x;
+                bestHeight = candidate.node.position.y;
+            }
+        }
+        if (best !== null) return best;
+        let result = 0;
+        let lowest = Infinity;
+        for (let column = 0; column < 5; column++) {
+            const x = clamp(-halfWidth + (column + 0.5) * game.playWidth / 5);
+            let height = Number.isFinite(game.playBottom) ? game.playBottom : -540;
+            for (const state of placed) {
+                if (Math.abs(state.node.position.x - x) < state.radius + fruit.radius) {
+                    height = Math.max(height, state.node.position.y + state.radius);
+                }
+            }
+            if (height < lowest) { lowest = height; result = x; }
+        }
+        return result;
+    }
+    function render() {
+        if (!button) return;
+        button.textContent = cfg.enabled ? '西瓜：停止' : '西瓜：启动';
+        button.setAttribute('aria-pressed', String(cfg.enabled));
+        button.title = lastError || (cfg.unlimitedSpace ? '自动合成 + 无限空间' : '自动合成');
+    }
+    function save() {
+        try { localStorage.setItem(key, JSON.stringify(cfg)); } catch (error) { lastError = error.message; }
+        render();
+    }
+    function tick() {
+        if (!cfg.enabled) return;
+        try {
+            if (!win.cc && !engine && !loading && win.__MAKE_WATERMELON_HOST__ && win.System?.import) {
+                loading = true;
+                Promise.resolve(win.System.import('cc')).then(module => { engine = module; }).catch(error => {
+                    lastError = error.message;
+                    render();
+                }).finally(() => { loading = false; });
+                return;
+            }
+            const game = getGame();
+            updateDangerChecks(game);
+            if (!game || !game.isPlaying || game.gameOver || game.isLotteryMode?.() ||
+                (game.toolMode && game.toolMode !== 'none')) return;
+            const now = Date.now();
+            makeSpace(game, now);
+            if (game.pendingDrop || !game.currentFruit || game.currentFruit.dropped ||
+                !Number.isFinite(game.playWidth) || game.playWidth <= 0 ||
+                !Number.isFinite(game.currentFruit.radius) || !game.canStartDropTouch()) return;
+            if (now - lastDrop < cfg.interval) return;
+            const fruit = game.currentFruit;
+            game.dropCurrentFruitAt(targetX(game));
+            if (game.pendingDrop || fruit.dropped || game.currentFruit !== fruit) {
+                lastDrop = now;
+            }
+            lastError = '';
+        } catch (error) { lastError = error.message; }
+        render();
+    }
+    const api = {
+        cfg,
+        start() { cfg.enabled = true; save(); },
+        stop() { cfg.enabled = false; restoreDangerChecks(); save(); },
+        setUnlimitedSpace(enabled) {
+            cfg.unlimitedSpace = Boolean(enabled);
+            if (!cfg.unlimitedSpace) restoreDangerChecks();
+            save();
+        },
+        status() { return { enabled: cfg.enabled, unlimitedSpace: cfg.unlimitedSpace, ready: Boolean(getGame()), error: lastError }; }
+    };
+    win.__ExXiGuaAuto = api;
+    function mount() {
+        if (button || !document.body) return;
+        button = document.createElement('button');
+        button.type = 'button';
+        button.id = 'ex-xigua-auto';
+        button.style.cssText = 'position:fixed;left:12px;bottom:60px;z-index:2147483647;padding:6px 10px;border:1px solid #278646;border-radius:4px;background:#fff;color:#176332;cursor:pointer;font-size:13px;';
+        button.addEventListener('click', () => { if (cfg.enabled) api.stop(); else api.start(); });
+        document.body.appendChild(button);
+        render();
+    }
+    if (document.body) mount();
+    else document.addEventListener('DOMContentLoaded', mount, { once: true });
+    if (typeof GM_registerMenuCommand === 'function') {
+        GM_registerMenuCommand('合成西瓜自动合成：开/关', () => { if (cfg.enabled) api.stop(); else api.start(); });
+        GM_registerMenuCommand('合成西瓜无限空间：开/关', () => api.setUnlimitedSpace(!cfg.unlimitedSpace));
+    }
+    setInterval(tick, 100);
+})();
 
 // ============ 游戏加速功能 ============
 (function () {

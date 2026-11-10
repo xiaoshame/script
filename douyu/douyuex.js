@@ -1325,6 +1325,49 @@ function initNativeMultiAudio() {
     refresh();
     setInterval(refresh, 500);
 }
+// 积分任务每日自动签到（与「一键签到」中的【积分任务】相同接口），每天成功一次后不再请求
+var EX_POINT_SIGN_KEY = "ExSave_PointSignDate", EX_POINT_SIGN_LOCK = "ExSave_PointSignLock";
+function exPointSignToday() { var d = new Date; return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate() }
+function exGetPointSignCsrf() {
+    return new Promise(resolve => {
+        GM_xmlhttpRequest({
+            method: "POST", url: "https://www.douyu.com/japi/carnival/nc/common/generateCsrf",
+            headers: { "Content-Type": "application/json", Cookie: document.cookie }, anonymous: !1, withCredentials: !0,
+            onload: function (e) {
+                var headers = (e.responseHeaders || "").match(/set-cookie:[^\n\r]+/gi) || [];
+                for (var h of headers) { var m = h.match(/cvl_csrf_token=([^;]+)/); if (m) return resolve(m[1]) }
+                resolve("")
+            },
+            onerror: function () { resolve("") }
+        })
+    })
+}
+async function exAutoPointSign() {
+    var today = exPointSignToday();
+    if (localStorage.getItem(EX_POINT_SIGN_KEY) === today) return;
+    // 多个直播间标签页同时打开时，60秒内只允许一个页面发起签到
+    var lock = Number(localStorage.getItem(EX_POINT_SIGN_LOCK)) || 0;
+    if (Date.now() - lock < 6e4) return;
+    localStorage.setItem(EX_POINT_SIGN_LOCK, String(Date.now()));
+    try {
+        var csrf = await exGetPointSignCsrf();
+        if (!csrf) { console.log("[积分签到] 获取CSRF失败，稍后重试"); return }
+        var res = await fetch("https://www.douyu.com/japi/carnivalApi/sign/doSign", {
+            method: "POST", credentials: "include",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: `csrfToken=${csrf}&signAlias=20250521OPFOY_qd2&useJiYan=false`
+        }).then(e => e.json());
+        if (0 == res.error || 31200 == res.error) {
+            localStorage.setItem(EX_POINT_SIGN_KEY, today);
+            0 == res.error && T("【积分任务】自动签到：" + res.msg, "success");
+            console.log("[积分签到]", res.msg);
+        } else {
+            console.log("[积分签到] 签到失败:", res.error, res.msg);
+        }
+    } catch (e) {
+        console.log("[积分签到] 请求失败:", e);
+    }
+}
 function c() { (async () => { Qt(), setInterval(Qt, 35e3) })(), Kn(), setInterval(Kn, 3e5), setInterval(() => { var e = document.querySelector(".ClosingRecommend .dy-ModalRadius-close-x"); e && e.click() }, 1e3) } function y() {
     var e = document.createElement("style"); e.appendChild(document.createTextNode(`
 		body{position:relative;}
@@ -2920,6 +2963,8 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         } return
     } else if (-1 !== String(e).indexOf("exid=chun")) { bn(); let t = setInterval(() => { var e; void 0 !== document.querySelector("div.wfs-2a8e83") && (document.querySelector("div.wfs-2a8e83").click(), document.querySelector("label.layout-Player-asidetoggleButton").click(), e = document.querySelectorAll(".tip-e3420a > ul > li").length, document.querySelectorAll(".tip-e3420a > ul > li")[e - 1].click(), clearInterval(t)) }, 1e3); return } else if (-1 === String(e).indexOf("template/") && -1 === String(e).indexOf("h5/")) { document.domain = "douyu.com", s(); let n = setInterval(() => { var e = document.getElementsByClassName("BackpackButton")[0], t = document.getElementsByClassName("Barrage-main")[0], o = document.querySelector("#js-backpack-enter"); t && (e || o) && (setTimeout(() => { y(), d(), c() }, 1500), clearInterval(n)) }, 1e3) }
 } (async () => { il(window.location.href) })();
+// 不依赖直播间元素加载，页面打开即尝试签到
+if (location.hostname.endsWith("douyu.com") && window.top === window.self) setTimeout(() => { exAutoPointSign(); setInterval(exAutoPointSign, 3e5) }, 3e3);
 
 // ============ 合成西瓜自动合成与无限空间 ============
 (function watermelonAuto() {

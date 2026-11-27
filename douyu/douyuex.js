@@ -3360,7 +3360,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     } else if (-1 !== String(e).indexOf("exid=chun")) { bn(); let t = setInterval(() => { var e; void 0 !== document.querySelector("div.wfs-2a8e83") && (document.querySelector("div.wfs-2a8e83").click(), document.querySelector("label.layout-Player-asidetoggleButton").click(), e = document.querySelectorAll(".tip-e3420a > ul > li").length, document.querySelectorAll(".tip-e3420a > ul > li")[e - 1].click(), clearInterval(t)) }, 1e3); return } else if (-1 === String(e).indexOf("template/") && -1 === String(e).indexOf("h5/")) { document.domain = "douyu.com", s(); let n = setInterval(() => { var e = document.getElementsByClassName("BackpackButton")[0], t = document.getElementsByClassName("Barrage-main")[0], o = document.querySelector("#js-backpack-enter"); t && (e || o) && (setTimeout(() => { y(), d(), c() }, 1500), clearInterval(n)) }, 1e3) }
 } (async () => { il(window.location.href) })();
 
-// ============ 合成西瓜自动合成与无限空间 ============
+// ============ 合成西瓜自动合成、无限空间与指定掉落 ============
 (function watermelonAuto() {
     const win = typeof unsafeWindow !== 'undefined' ? unsafeWindow : window;
     if (!/\/pages\/vibe-lab-act202607-game(?:\/|$)/.test(location.pathname) &&
@@ -3372,8 +3372,10 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     const cfg = {
         enabled: saved?.enabled === true,
         interval: Math.max(460, Number(saved?.interval) || 600),
-        unlimitedSpace: saved?.unlimitedSpace !== false
+        unlimitedSpace: saved?.unlimitedSpace !== false,
+        forceLevel: normalizeLevel(saved?.forceLevel)
     };
+    const COCONUT_LEVEL = 9;
     let engine = null;
     let loading = false;
     let lastDrop = 0;
@@ -3383,6 +3385,34 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     let dangerHooks = [];
     let lastSpaceCheck = 0;
     let highPileChecks = 0;
+    let coconutButton = null;
+    let levelHook = null;
+    function normalizeLevel(value) {
+        const level = Number(value);
+        return Number.isInteger(level) && level >= 1 && level <= 11 ? level : 0;
+    }
+    function restoreLevelHook() {
+        if (!levelHook) return;
+        const { game, descriptor, wrapper } = levelHook;
+        if (game.randomStartLevel === wrapper) {
+            if (descriptor) Object.defineProperty(game, 'randomStartLevel', descriptor);
+            else delete game.randomStartLevel;
+        }
+        levelHook = null;
+    }
+    // 先调用原函数以消费服务端掉落队列并维护 stage，再替换生成的等级
+    function updateLevelHook(game) {
+        if (levelHook && (levelHook.game !== game || !cfg.forceLevel)) restoreLevelHook();
+        if (!game || !cfg.forceLevel || levelHook || typeof game.randomStartLevel !== 'function') return;
+        const original = game.randomStartLevel;
+        const descriptor = Object.getOwnPropertyDescriptor(game, 'randomStartLevel');
+        const wrapper = function (...args) {
+            const level = original.apply(this, args);
+            return cfg.forceLevel && !this.isLotteryMode?.() ? cfg.forceLevel : level;
+        };
+        Object.defineProperty(game, 'randomStartLevel', { configurable: true, writable: true, value: wrapper });
+        levelHook = { game, descriptor, wrapper };
+    }
     function restoreDangerChecks() {
         for (const { game, name, descriptor, wrapper } of dangerHooks) {
             if (game[name] !== wrapper) continue;
@@ -3490,13 +3520,18 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         button.textContent = cfg.enabled ? '西瓜：停止' : '西瓜：启动';
         button.setAttribute('aria-pressed', String(cfg.enabled));
         button.title = lastError || (cfg.unlimitedSpace ? '自动合成 + 无限空间' : '自动合成');
+        if (coconutButton) {
+            coconutButton.textContent = cfg.forceLevel === COCONUT_LEVEL ? '椰子：关闭' : '椰子：开启';
+            coconutButton.setAttribute('aria-pressed', String(cfg.forceLevel === COCONUT_LEVEL));
+            coconutButton.title = '指定下一个掉落水果为椰子（9 级）';
+        }
     }
     function save() {
         try { localStorage.setItem(key, JSON.stringify(cfg)); } catch (error) { lastError = error.message; }
         render();
     }
     function tick() {
-        if (!cfg.enabled) return;
+        if (!cfg.enabled && !cfg.forceLevel) { restoreLevelHook(); return; }
         try {
             if (!win.cc && !engine && !loading && win.__MAKE_WATERMELON_HOST__ && win.System?.import) {
                 loading = true;
@@ -3507,6 +3542,8 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
                 return;
             }
             const game = getGame();
+            updateLevelHook(game);
+            if (!cfg.enabled) return;
             updateDangerChecks(game);
             if (!game || !game.isPlaying || game.gameOver || game.isLotteryMode?.() ||
                 (game.toolMode && game.toolMode !== 'none')) return;
@@ -3534,7 +3571,13 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             if (!cfg.unlimitedSpace) restoreDangerChecks();
             save();
         },
-        status() { return { enabled: cfg.enabled, unlimitedSpace: cfg.unlimitedSpace, ready: Boolean(getGame()), error: lastError }; }
+        setForceLevel(level) {
+            cfg.forceLevel = normalizeLevel(level);
+            if (!cfg.forceLevel) restoreLevelHook();
+            save();
+        },
+        setCoconut(enabled) { api.setForceLevel(enabled ? COCONUT_LEVEL : 0); },
+        status() { return { enabled: cfg.enabled, unlimitedSpace: cfg.unlimitedSpace, forceLevel: cfg.forceLevel, ready: Boolean(getGame()), error: lastError }; }
     };
     win.__ExXiGuaAuto = api;
     function mount() {
@@ -3545,6 +3588,12 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         button.style.cssText = 'position:fixed;left:12px;bottom:60px;z-index:2147483647;padding:6px 10px;border:1px solid #278646;border-radius:4px;background:#fff;color:#176332;cursor:pointer;font-size:13px;';
         button.addEventListener('click', () => { if (cfg.enabled) api.stop(); else api.start(); });
         document.body.appendChild(button);
+        coconutButton = document.createElement('button');
+        coconutButton.type = 'button';
+        coconutButton.id = 'ex-xigua-coconut';
+        coconutButton.style.cssText = button.style.cssText.replace('bottom:60px', 'bottom:96px');
+        coconutButton.addEventListener('click', () => api.setCoconut(cfg.forceLevel !== COCONUT_LEVEL));
+        document.body.appendChild(coconutButton);
         render();
     }
     if (document.body) mount();
@@ -3552,6 +3601,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     if (typeof GM_registerMenuCommand === 'function') {
         GM_registerMenuCommand('合成西瓜自动合成：开/关', () => { if (cfg.enabled) api.stop(); else api.start(); });
         GM_registerMenuCommand('合成西瓜无限空间：开/关', () => api.setUnlimitedSpace(!cfg.unlimitedSpace));
+        GM_registerMenuCommand('合成西瓜指定掉落椰子：开/关', () => api.setCoconut(cfg.forceLevel !== COCONUT_LEVEL));
     }
     setInterval(tick, 100);
 })();
